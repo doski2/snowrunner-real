@@ -134,6 +134,36 @@ class TestProtocols(unittest.TestCase):
             self.assertIn(vid, DEFAULT_ASPHALT_PROTOCOL)
             self.assertIn(vid, DEFAULT_LOADED_MUD_PROTOCOL)
 
+    def test_default_protocol_ids_exist_in_test_protocols(self) -> None:
+        from telemetria import (
+            DEFAULT_ASPHALT_PROTOCOL,
+            DEFAULT_LOADED_MUD_PROTOCOL,
+            DEFAULT_MUD_PROTOCOL,
+            TEST_PROTOCOLS,
+        )
+
+        known = {p.id for p in TEST_PROTOCOLS}
+        for mapping in (
+            DEFAULT_MUD_PROTOCOL,
+            DEFAULT_ASPHALT_PROTOCOL,
+            DEFAULT_LOADED_MUD_PROTOCOL,
+        ):
+            for vehicle_id, protocol_id in mapping.items():
+                self.assertIn(
+                    protocol_id,
+                    known,
+                    f"{vehicle_id} -> {protocol_id} no esta en TEST_PROTOCOLS",
+                )
+
+    def test_setup_from_protocol_i6_sets_engine_ui(self) -> None:
+        from datos.session_context import setup_from_protocol
+        from telemetria import TEST_PROTOCOLS
+
+        proto = next(p for p in TEST_PROTOCOLS if p.id == "f1_asfalto_i6")
+        setup = setup_from_protocol(proto)
+        self.assertEqual(setup["engine_name_xml"], "us_scout_old_engine_ck1500")
+        self.assertEqual(setup["engine_ui"], "250/292 I6 mod")
+
     def test_protocol_phases_cover_core(self) -> None:
         phases = {p.phase for p in TEST_PROTOCOLS}
         self.assertTrue({1, 2, 3, 4}.issubset(phases))

@@ -875,7 +875,11 @@ def resolve_auto_protocol(
             )
 
     p = next((x for x in TEST_PROTOCOLS if x.id == proto), None)
-    pname = p.label if p else proto
+    if not p:
+        raise ValueError(
+            f"protocolo {proto!r} no definido en TEST_PROTOCOLS (vehiculo {vid!r})"
+        )
+    pname = p.label
     return proto, f"{label} | {detail} -> {proto} ({pname})"
 
 

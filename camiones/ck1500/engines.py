@@ -7,6 +7,7 @@ from sim.core import ENGINE_I6, ENGINE_STOCK, EngineConfig
 # Mejora de taller "AAT-8V 5,2 Custom" (Black River)
 AAT8V_ENGINE_XML = "us_scout_old_engine_ck1500"
 AAT8V_UI_LABEL = "AAT-8V 5.2 Custom"
+I6_UI_LABEL = "250/292 I6 mod"
 
 
 def engine_for_ck1500(engine_id: str, engine_name_xml: str = "") -> EngineConfig:

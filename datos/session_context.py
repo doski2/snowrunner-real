@@ -69,11 +69,10 @@ def setup_from_protocol(protocol) -> dict[str, Any]:
         "trailer": "",
     }
     if protocol.engine_id in ("aat8v", "i6"):
-        from camiones.ck1500.engines import AAT8V_ENGINE_XML, AAT8V_UI_LABEL
+        from camiones.ck1500.engines import AAT8V_ENGINE_XML, AAT8V_UI_LABEL, I6_UI_LABEL
 
         setup["engine_name_xml"] = AAT8V_ENGINE_XML
-        if protocol.engine_id == "aat8v":
-            setup["engine_ui"] = AAT8V_UI_LABEL
+        setup["engine_ui"] = AAT8V_UI_LABEL if protocol.engine_id == "aat8v" else I6_UI_LABEL
     if protocol.engine_id == "aat6v":
         from camiones.scout800.engines import AAT6V_ENGINE_XML, AAT6V_UI_LABEL
 
