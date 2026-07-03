@@ -567,6 +567,67 @@ class TestGrabarLive(unittest.TestCase):
         self.assertIn("pos_y=-0.420", line)
 
 
+class TestDriveState(unittest.TestCase):
+    def test_truck_drive_catalog_hints_fleetstar(self) -> None:
+        from datos.catalog_lookup import truck_drive_catalog_hints
+
+        hints = truck_drive_catalog_hints("fleetstar")
+        self.assertEqual(hints.get("diff_lock_catalog"), "Installed")
+        self.assertIn("gearbox_awd_modifier_xml", hints)
+
+    def test_fuel_rate_tracker(self) -> None:
+        import memoria_havok as mh
+
+        tr = mh.FuelRateTracker()
+        self.assertEqual(tr.update(0.0, "100.0"), "")
+        self.assertEqual(tr.update(0.5, "100.0"), "0.00")
+        rate = tr.update(30.5, "99.0")
+        self.assertTrue(rate)
+        self.assertAlmostEqual(float(rate), 1.97, places=1)
+
+    def test_format_csv_row_drive_columns(self) -> None:
+        import memoria_havok as mh
+
+        sample = {
+            "speed_kmh": 0.0,
+            "vel_x": 0.0,
+            "vel_y": 0.0,
+            "vel_z": 0.0,
+            "ang_yaw": 0.0,
+            "pos_y": 0.0,
+            "diff_lock_live": "1",
+            "awd_live": "1",
+            "low_gear_live": "0",
+            "throttle": "0.450",
+            "engine_rpm": "1200",
+            "fuel_rate_pct_min": "2.50",
+        }
+        row = mh.format_csv_row(1.0, sample)
+        self.assertIn(",1,1,0,0.450,1200,2.50", row)
+
+    def test_idle_fuel_consumption_at_zero_throttle(self) -> None:
+        from sim.core import ENGINE_I6, SURFACES, VEHICLE_I6, run_sim
+
+        mud = next(s for s in SURFACES if s.name == "Barro")
+        s = run_sim(VEHICLE_I6, ENGINE_I6, mud, 10.0, low_gear=True)
+        self.assertGreater(s.state.fuel_used, 0.0)
+
+    def test_aat8v_engine_maps_to_i6_sim(self) -> None:
+        from camiones.ck1500.engines import AAT8V_ENGINE_XML, engine_for_ck1500
+        from sim.core import ENGINE_I6
+
+        self.assertIs(engine_for_ck1500("aat8v"), ENGINE_I6)
+        self.assertIs(engine_for_ck1500("i6", AAT8V_ENGINE_XML), ENGINE_I6)
+
+    def test_f1_asfalto_aat8v_protocol_exists(self) -> None:
+        from telemetria import TEST_PROTOCOLS
+
+        proto = next(p for p in TEST_PROTOCOLS if p.id == "f1_asfalto_aat8v")
+        self.assertEqual(proto.engine_id, "aat8v")
+        self.assertFalse(proto.diff_lock)
+        self.assertEqual(proto.tire, "highway")
+
+
 class TestCatalogLookup(unittest.TestCase):
     def test_setup_xml_marshall(self) -> None:
         from datos.catalog_lookup import setup_xml_from_catalog

@@ -59,6 +59,7 @@ class TestRegistryCeIds(unittest.TestCase):
             "khan_39_marshall": "marshall",
             "s_chevrolet_kodiakc70": "kodiak",
             "chevrolet_ck1500": "ck1500",
+            "s_international_scout_800": "scout800",
         }
         for game_id, expected in cases.items():
             with self.subTest(game_id=game_id):
@@ -75,6 +76,7 @@ class TestRegistryMass(unittest.TestCase):
         from camiones.fleetstar.simulador import VEHICLE_REAL as FS_REAL
         from camiones.kodiak.simulador import VEHICLE_REAL as KD_REAL
         from camiones.marshall.simulador import VEHICLE_REAL as KM_REAL
+        from camiones.scout800.simulador import VEHICLE_REAL as S8_REAL
         from camiones.mh9500.simulador import VEHICLE_REAL as MH_REAL
 
         expected = {
@@ -83,6 +85,7 @@ class TestRegistryMass(unittest.TestCase):
             "fleetstar": FS_REAL.mass_kg,
             "marshall": KM_REAL.mass_kg,
             "kodiak": KD_REAL.mass_kg,
+            "scout800": S8_REAL.mass_kg,
         }
         self.assertEqual(EMPTY_MASS_KG, expected)
 

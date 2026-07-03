@@ -177,3 +177,37 @@ def setup_xml_from_catalog(vehicle_mod_id: str) -> dict[str, float | str | bool]
         if high_ang is not None:
             setup["gearbox_high_gear_ang_vel_xml"] = high_ang
     return setup
+
+
+def truck_drive_catalog_hints(vehicle_mod_id: str) -> dict[str, str]:
+    """Traccion/diff del XML stock (no estado runtime en marcha)."""
+    if not vehicle_mod_id:
+        return {}
+    from camiones.registry import VEHICLES
+
+    mod = VEHICLES.get(vehicle_mod_id)
+    if not mod:
+        return {}
+    truck = _load_catalog("trucks").get(mod.xml_file.removesuffix(".xml"))
+    if not truck:
+        return {}
+    hints: dict[str, str] = {}
+    diff_type = (truck.get("diff_lock_type") or "").strip()
+    if diff_type:
+        hints["diff_lock_catalog"] = diff_type
+    truck_type = (truck.get("truck_type") or "").strip()
+    if truck_type:
+        hints["truck_type_catalog"] = truck_type
+    gb_name = truck.get("default_gearbox") or ""
+    gb = _gearbox_by_name(gb_name)
+    if gb:
+        awd_mod = gb.get("awd_consumption_modifier")
+        if awd_mod is not None:
+            hints["gearbox_awd_modifier_xml"] = str(awd_mod)
+        lower = _xml_bool(gb.get("is_lower_gear_exists"))
+        high = _xml_bool(gb.get("is_high_gear_exists"))
+        if lower is not None:
+            hints["gearbox_lower_gear_xml"] = "yes" if lower else "no"
+        if high is not None:
+            hints["gearbox_high_gear_xml"] = "yes" if high else "no"
+    return hints

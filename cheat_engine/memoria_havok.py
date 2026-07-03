@@ -146,7 +146,8 @@ CSV_HEADER = (
     "surface_deform_avg,contact_min,contact_max,mud_grade,mud_grade_label,"
     "load_hint,trailer_id,cargo_mass_kg,total_mass_kg,empty_mass_kg,payload_kg,"
     "trailer_mass_kg,truck_mass_kg,attached_cargo_mass_kg,yaw_rate_deg_s,turn_radius_m,"
-    "packed_cargo_slots,path_cargo_type,frame_addon\n"
+    "packed_cargo_slots,path_cargo_type,frame_addon,"
+    "diff_lock_live,awd_live,low_gear_live,throttle,engine_rpm,fuel_rate_pct_min\n"
 )
 
 BASE_DIR = os.path.join(os.path.expanduser("~"), "Documents", "My Games", "SnowRunner", "base")
@@ -1601,6 +1602,11 @@ def read_u32(h: int, addr: int) -> int | None:
     return struct.unpack("<I", b)[0] if b else None
 
 
+def read_u8(h: int, addr: int) -> int | None:
+    b = read_bytes(h, addr, 1)
+    return b[0] if b else None
+
+
 def read_f32(h: int, addr: int) -> float | None:
     b = read_bytes(h, addr, 4)
     return struct.unpack("<f", b)[0] if b else None
@@ -1652,6 +1658,270 @@ def read_fuel_pct(h: int, veh: int) -> str:
         if 0 <= pct <= 100:
             return f"{pct:.1f}"
     return ""
+
+
+_OFFSETS_REF_CACHE: dict[str, Any] | None = None
+
+
+def load_offsets_reference() -> dict[str, Any]:
+    global _OFFSETS_REF_CACHE
+    if _OFFSETS_REF_CACHE is not None:
+        return _OFFSETS_REF_CACHE
+    path = os.path.join(os.path.dirname(__file__), "offsets_referencia.json")
+    try:
+        with open(path, encoding="utf-8") as f:
+            import json
+
+            _OFFSETS_REF_CACHE = json.load(f)
+    except OSError:
+        _OFFSETS_REF_CACHE = {}
+    return _OFFSETS_REF_CACHE
+
+
+def _parse_hex_offset(raw: str | int | None) -> int | None:
+    if raw is None:
+        return None
+    if isinstance(raw, int):
+        return raw
+    s = str(raw).strip().lower()
+    if not s:
+        return None
+    if s.startswith("+0x"):
+        s = s[1:]
+    if s.startswith("0x"):
+        return int(s, 16)
+    if s.startswith("+"):
+        return int(s[1:], 16)
+    return None
+
+
+def resolve_drive_logic(h: int, base: int) -> tuple[int, int, str]:
+    """Devuelve (drive_logic_singleton, veh, chain_tag)."""
+    singleton = read_u64(h, base + DRIVE_LOGIC_OFF)
+    if not singleton:
+        return 0, 0, ""
+    veh = read_u64(h, singleton + OFF_VEH_DRIVE)
+    if veh and veh > 0x10000:
+        return singleton, veh, "DRIVE_LOGIC"
+    veh = read_u64(h, singleton + OFF_VEH_TRUCK)
+    if veh and veh > 0x10000:
+        return singleton, veh, "DRIVE_LOGIC+8"
+    return singleton, 0, "DRIVE_LOGIC"
+
+
+def _vehicle_mod_id(game_id: str) -> str:
+    if _PROJECT_ROOT not in sys.path:
+        sys.path.insert(0, _PROJECT_ROOT)
+    try:
+        from camiones.registry import vehicle_id_from_ce
+
+        return vehicle_id_from_ce(game_id) or ""
+    except ImportError:
+        return ""
+
+
+def _catalog_drive_hints(game_id: str) -> dict[str, str]:
+    mod_id = _vehicle_mod_id(game_id)
+    if not mod_id:
+        return {}
+    try:
+        from datos.catalog_lookup import truck_drive_catalog_hints
+
+        return truck_drive_catalog_hints(mod_id)
+    except ImportError:
+        return {}
+
+
+def _read_field_at(
+    h: int, base_ptr: int, offset_spec: str | int | None, *, kind: str
+) -> str:
+    off = _parse_hex_offset(offset_spec)
+    if off is None or not base_ptr:
+        return ""
+    addr = base_ptr + off
+    if kind == "u8":
+        v = read_u8(h, addr)
+        if v in (0, 1):
+            return "1" if v else "0"
+        return ""
+    if kind == "f32":
+        v = read_f32(h, addr)
+    if v is None or v != v or abs(v) > 1e6:
+        return ""
+    if 0.0 <= v <= 1.05:
+        return f"{v:.3f}"
+    return f"{v:.1f}"
+    return ""
+
+
+def read_drive_state(h: int, base: int, veh: int | None = None) -> dict[str, Any]:
+    """Estado traccion/diff/marcha en vivo (offsets en offsets_referencia.json)."""
+    drive_ref = load_offsets_reference().get("drive_runtime") or {}
+    candidates = drive_ref.get("candidates") or {}
+    dl, dl_veh, chain = resolve_drive_logic(h, base)
+    if veh is None or veh < 0x10000:
+        veh = dl_veh
+    game_id = read_vehicle_id(h, veh) if veh else ""
+    out: dict[str, Any] = {
+        "drive_chain": chain,
+        "drive_logic": hex(dl) if dl else "",
+        "diff_lock_catalog": "",
+        "gearbox_awd_modifier_xml": "",
+    }
+    out.update(_catalog_drive_hints(game_id))
+
+    bases = [("drive_logic", dl), ("vehicle", veh)]
+    field_map = (
+        ("diff_lock_u8", "diff_lock_live", "u8"),
+        ("awd_active_u8", "awd_live", "u8"),
+        ("low_gear_u8", "low_gear_live", "u8"),
+        ("throttle_f32", "throttle", "f32"),
+        ("engine_rpm_f32", "engine_rpm", "f32"),
+    )
+    for key, out_key, kind in field_map:
+        spec = candidates.get(key)
+        if not spec:
+            out[out_key] = ""
+            continue
+        if isinstance(spec, dict):
+            base_name = spec.get("base", "drive_logic")
+            off = spec.get("offset")
+            base_ptr = dl if base_name == "drive_logic" else veh
+            out[out_key] = _read_field_at(h, base_ptr, off, kind=kind)
+        else:
+            val = ""
+            for base_name, base_ptr in bases:
+                if not base_ptr:
+                    continue
+                val = _read_field_at(h, base_ptr, spec, kind=kind)
+                if val:
+                    break
+            out[out_key] = val
+    return out
+
+
+def discover_drive_candidates(
+    h: int, base: int, *, max_flags: int = 40, max_floats: int = 30
+) -> dict[str, Any]:
+    """Lista u8 0/1 y floats 0..1 / rpm-like para calibrar offsets."""
+    dl, veh, chain = resolve_drive_logic(h, base)
+    sample = read_active_sample(h, base) or {}
+    result: dict[str, Any] = {
+        "vehicle_id": sample.get("vehicle_id", ""),
+        "speed_kmh": sample.get("speed_kmh"),
+        "fuel_pct": sample.get("fuel_pct", ""),
+        "drive_chain": chain,
+        "flags_u8": [],
+        "floats_throttle": [],
+        "floats_rpm": [],
+    }
+
+    def scan_flags(label: str, ptr: int, start: int, end: int) -> None:
+        if not ptr:
+            return
+        for off in range(start, end, 4):
+            v = read_u8(h, ptr + off)
+            if v in (0, 1):
+                result["flags_u8"].append(
+                    {"base": label, "offset": f"+{off:03X}", "u8": v}
+                )
+            if len(result["flags_u8"]) >= max_flags:
+                return
+
+    def scan_floats(label: str, ptr: int, start: int, end: int) -> None:
+        if not ptr:
+            return
+        for off in range(start, end, 4):
+            v = read_f32(h, ptr + off)
+            if v is None or v != v or abs(v) < 1e-6:
+                continue
+            if 0.0 <= v <= 1.05:
+                result["floats_throttle"].append(
+                    {"base": label, "offset": f"+{off:03X}", "f": round(v, 4)}
+                )
+            elif 100.0 <= v <= 8000.0:
+                result["floats_rpm"].append(
+                    {"base": label, "offset": f"+{off:03X}", "f": round(v, 1)}
+                )
+            if (
+                len(result["floats_throttle"]) >= max_floats
+                and len(result["floats_rpm"]) >= max_floats
+            ):
+                return
+
+    discover = (load_offsets_reference().get("drive_runtime") or {}).get("discover") or {}
+    dl_rng = discover.get("drive_logic", ["0x0", "0x400"])
+    veh_rng = discover.get("vehicle", ["0x100", "0xA00"])
+    dl_start = _parse_hex_offset(dl_rng[0]) or 0
+    dl_end = _parse_hex_offset(dl_rng[1]) or 0x400
+    veh_start = _parse_hex_offset(veh_rng[0]) or 0x100
+    veh_end = _parse_hex_offset(veh_rng[1]) or 0xA00
+    scan_flags("drive_logic", dl, dl_start, dl_end)
+    scan_flags("vehicle", veh, veh_start, veh_end)
+    scan_floats("drive_logic", dl, dl_start, dl_end)
+    scan_floats("vehicle", veh, veh_start, veh_end)
+    return result
+
+
+class FuelRateTracker:
+    """Deriva fuel_pct/min desde lecturas sucesivas de % tanque."""
+
+    def __init__(self) -> None:
+        self._last: tuple[float, float] | None = None
+
+    def reset(self) -> None:
+        self._last = None
+
+    def update(self, t_s: float, fuel_pct: str) -> str:
+        raw = (fuel_pct or "").strip()
+        if not raw:
+            return ""
+        try:
+            pct = float(raw)
+        except ValueError:
+            return ""
+        if self._last is None:
+            self._last = (t_s, pct)
+            return ""
+        dt = t_s - self._last[0]
+        if dt < 0.25:
+            return ""
+        rate = (self._last[1] - pct) / dt * 60.0
+        self._last = (t_s, pct)
+        return f"{rate:.2f}"
+
+
+_FUEL_RATE_TRACKER = FuelRateTracker()
+
+
+def update_fuel_rate(sample: dict[str, Any], t_s: float) -> dict[str, Any]:
+    sample["fuel_rate_pct_min"] = _FUEL_RATE_TRACKER.update(t_s, sample.get("fuel_pct", ""))
+    return sample
+
+
+def enrich_drive_fields(
+    h: int, base: int, sample: dict[str, Any], *, t_s: float | None = None
+) -> dict[str, Any]:
+    veh_hex = sample.get("veh") or ""
+    try:
+        veh = int(veh_hex, 16)
+    except (TypeError, ValueError):
+        veh = 0
+    drive = read_drive_state(h, base, veh)
+    for key in (
+        "diff_lock_live",
+        "awd_live",
+        "low_gear_live",
+        "throttle",
+        "engine_rpm",
+        "diff_lock_catalog",
+        "gearbox_awd_modifier_xml",
+    ):
+        if drive.get(key) not in (None, ""):
+            sample[key] = drive[key]
+    if t_s is not None:
+        update_fuel_rate(sample, t_s)
+    return sample
 
 
 def probe_chain(h: int, base: int, off: int, veh_off: int, tag: str) -> dict[str, Any]:
@@ -1813,7 +2083,10 @@ def format_csv_row(
         f"{sample.get('truck_mass_kg', '')},{sample.get('attached_cargo_mass_kg', '')},"
         f"{sample.get('yaw_rate_deg_s', '')},{sample.get('turn_radius_m', '')},"
         f"{sample.get('packed_cargo_slots', '')},{sample.get('path_cargo_type', '')},"
-        f"{sample.get('frame_addon', '')}\n"
+        f"{sample.get('frame_addon', '')},"
+        f"{sample.get('diff_lock_live', '')},{sample.get('awd_live', '')},"
+        f"{sample.get('low_gear_live', '')},{sample.get('throttle', '')},"
+        f"{sample.get('engine_rpm', '')},{sample.get('fuel_rate_pct_min', '')}\n"
     )
 
 

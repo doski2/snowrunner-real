@@ -210,6 +210,25 @@ def format_live_line(t_elapsed: float, sample: dict) -> str:
             parts.append(f"pos_y={float(pos_y):.3f}")
         except ValueError:
             pass
+    fuel = sample.get("fuel_pct")
+    if fuel not in (None, ""):
+        parts.append(f"fuel={fuel}%")
+    rate = sample.get("fuel_rate_pct_min")
+    if rate not in (None, ""):
+        try:
+            if float(rate) > 0.05:
+                parts.append(f"fuel_rate={rate}%/min")
+        except ValueError:
+            pass
+    diff = sample.get("diff_lock_live")
+    if diff not in (None, ""):
+        parts.append(f"diff={diff}")
+    lg = sample.get("low_gear_live")
+    if lg not in (None, ""):
+        parts.append(f"L={lg}")
+    thr = sample.get("throttle")
+    if thr not in (None, ""):
+        parts.append(f"thr={thr}")
     return " | ".join(parts)
 
 
@@ -419,6 +438,7 @@ def main() -> int:
             )
 
         t0 = time.monotonic()
+        mh._FUEL_RATE_TRACKER.reset()
         last_vehicle_id = ""
         last_terrain_kind = (sample.get("terrain_kind") or "").strip()
         last_mud_grade = (sample.get("mud_grade_label") or "").strip()
@@ -438,6 +458,8 @@ def main() -> int:
                 if now >= next_sample:
                     row_sample = mh.read_active_sample(h, base)
                     if row_sample:
+                        t_elapsed = now - t0
+                        mh.enrich_drive_fields(h, base, row_sample, t_s=t_elapsed)
                         event = ""
                         vid = row_sample.get("vehicle_id") or ""
                         if vid and last_vehicle_id and vid != last_vehicle_id:

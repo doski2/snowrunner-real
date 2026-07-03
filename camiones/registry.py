@@ -9,6 +9,7 @@ from camiones.fleetstar.patches import PATCHES as FLEETSTAR_PATCHES
 from camiones.kodiak.patches import PATCHES as KODIAK_PATCHES
 from camiones.marshall.patches import PATCHES as MARSHALL_PATCHES
 from camiones.mh9500.patches import PATCHES as MH9500_PATCHES
+from camiones.scout800.patches import PATCHES as SCOUT800_PATCHES
 
 PatchRules = dict[str, list[tuple[str, str]]]
 
@@ -19,6 +20,7 @@ __all__ = [
     "KODIAK_PATCHES",
     "MARSHALL_PATCHES",
     "MH9500_PATCHES",
+    "SCOUT800_PATCHES",
     "PatchRules",
     "VEHICLES",
     "VehicleMod",
@@ -93,6 +95,16 @@ VEHICLES: dict[str, VehicleMod] = {
         ce_id="s_chevrolet_kodiakc70",
         notes="HEAVY_DUTY 4x4; Si-6V; 39\" UHD I; ~7900 kg mod",
     ),
+    "scout800": VehicleMod(
+        id="scout800",
+        label="International Scout 800",
+        game_id="international_scout_800",
+        xml_file="international_scout_800.xml",
+        patches=SCOUT800_PATCHES,
+        sim_module="camiones.scout800.simulador",
+        ce_id="s_international_scout_800",
+        notes="Scout 4x4 ~1960s; AAT-6V; diff Always; HS I 33\"",
+    ),
 }
 
 
@@ -126,6 +138,8 @@ _CE_ID_ALIASES: dict[str, str] = {
     "s_chevrolet_kodiakc70": "kodiak",
     "s_chevrolet_kodiakC70": "kodiak",
     "chevrolet_kodiakc70": "kodiak",
+    "s_international_scout_800": "scout800",
+    "international_scout_800": "scout800",
 }
 
 
@@ -149,6 +163,7 @@ EMPTY_MASS_KG: dict[str, float] = {
     "fleetstar": 6650.0,
     "marshall": 1780.0,
     "kodiak": 7900.0,
+    "scout800": 2350.0,
 }
 
 

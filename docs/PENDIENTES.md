@@ -19,6 +19,7 @@ grabar_telemetria.bat snap barro_ligero  # snapshot TERR (sin sesión)
 grabar_telemetria.bat diff tierra_seca barro_ligero
 grabar_telemetria.bat tire             # neumático montado (CE)
 grabar_telemetria.bat cargo            # carga bastidor / remolque (CE)
+grabar_telemetria.bat drive            # traccion / diff / fuel rate (CE)
 python importar_ce_csv.py --auto --compare --index
 python verify_pak.py
 python organizar_sesiones.py --apply   # solo si quedan JSON sueltos en sesiones/
@@ -33,6 +34,7 @@ telemetria/sesiones/
   kodiak/
   marshall/     ← ce_km_*.json
   mh9500/
+  scout800/     ← ce_s8_*.json
   _archivo/     ← sesiones inválidas / histórico
 ```
 
@@ -47,8 +49,9 @@ telemetria/sesiones/
 | Chevrolet Kodiak C70 | `kodiak` | F1 asfalto | `camiones/kodiak/FASES.md` |
 | KHAN 39 Marshall | `marshall` | F1 asfalto (F2 barro **hecho**) | `camiones/marshall/FASES.md` |
 | GMC MH9500 | `mh9500` | Re-grabar `mh_f2_barro_offroad` | `camiones/mh9500/FASES.md` |
+| International Scout 800 | `scout800` | F1 AAT-6V *(en espera)* | `camiones/scout800/FASES.md` |
 
-**Vehículo activo recomendado:** `fleetstar` (MOT-2100 o F3 carga; F2 barro cerrado) o `marshall` (F1 asfalto).
+**Vehículo activo recomendado:** `ck1500` (CK-F1 AAT-8V) → luego `scout800` o `fleetstar`.
 
 **Motor compartido:** Fleetstar y Kodiak usan `e_us_truck_old.xml` (`us_truck_old_engine_0` / `_1`). Calibrar motor en un camión y **repetir F1** en el otro.
 
@@ -60,9 +63,11 @@ Referencia Scout · CE: `s_chevrolet_ck1500` · Masa mod ~1750 kg
 
 | ID | Fase | Estado | Protocolo | Qué probar | Cierre |
 |----|------|--------|-----------|------------|--------|
-| CK-F1 | 1 | [ ] | `f1_asfalto_i6` | Asfalto, motor I6 mod | Sesión indexada; MAE asfalto |
+| CK-F1 | 1 | [ ] | `f1_asfalto_aat8v` | **AAT-8V 5.2** solo motor; highway stock; sin diff/caja | `grabar_telemetria.bat motor`; MAE asfalto |
+| CK-F1i6 | 1 | — | `f1_asfalto_i6` | Alias sim (mismo XML `us_scout_old_engine_ck1500` con mod) | Usar `f1_asfalto_aat8v` en CE |
 | CK-F2h | 2 | [ ] | F2 highway | Highway en barro ~0 km/h | Comentario sensación |
 | CK-F2o | 2 | [x] | `f2_barro_offroad` | Offroad + diff + L, barro Michigan | MAE mud **3.5** (sesión 2026-06-30) |
+| CK-F3 | 3 | [ ] | `f3_carga_barro` | Remolque scout + vigas en barro | `load=cargado` estable; `scan_cargo` |
 
 **Sesiones CE**
 
@@ -70,6 +75,7 @@ Referencia Scout · CE: `s_chevrolet_ck1500` · Masa mod ~1750 kg
 |---------|-----------|-------------|
 | `telemetria/sesiones/ck1500/ce_f2_barro_offroad_20260630_220307.json` | `f2_barro_offroad` | **MAE mud 3.5** (1260 muestras); crawl ~0–9 km/h (mediana 0.14); indexada |
 | `telemetria/sesiones/ck1500/ce_f2_barro_offroad_20260702_215951.json` | `f2_barro_offroad` | Mezcla hard/mud; CE neumático **allterrain** (`wheels_scout2`, AT I) — **no offroad**; re-grabar con OS I si cierras F2o de libro |
+| `telemetria/sesiones/ck1500/ce_f3_carga_barro_20260703_223237.json` | `f3_carga_barro` *(inválida)* | Scout **sin carga** en juego; meta `trailer_metal_planks` erróneo; 232× falsos `cargado` — **no indexar F3** |
 
 **Comentarios**
 
@@ -81,7 +87,31 @@ Resultado: MAE mud=3.5 | v30 juego 7.96 | v30 sim 39.9 | vmax barro ~9 km/h
 Sensación: patina en barro profundo — grip ~0.02, contact ~0.36 → **mud_grade=3 (mud_deep)**
 Sim vs juego: MAE bajo porque ambos pasan mucho tiempo en crawl; sim v30 alto = no replica el patinaje extremo del juego
 Siguiente: CK-F1 asfalto dedicado; opcional CK-F2h highway en barro
+
+2026-07-03 | CK-F3 | f3_carga_barro | ce_f3_carga_barro_20260703_223237 — **INVÁLIDA**
+Setup: I6, offroad, L+diff, Black River — **scout sin carga** (confirmado en juego)
+CE: load=vacio 835× (mass 1750 correcto) | cargado 232× = falsos positivos (2950/3162 fantasma)
+Import: meta trailer_metal_planks por max_payload; indexación F3 retirada de calibracion.json
+Siguiente: re-grabar F3 con remolque + 2 slots vigas; `grabar_telemetria.bat cargo` quieto 30 s antes
 ```
+
+---
+
+## International Scout 800 (`scout800`)
+
+CE: `s_international_scout_800` · Masa mod objetivo **2350 kg** · Diff **Always**
+
+| ID | Fase | Estado | Protocolo | Qué probar | Cierre |
+|----|------|--------|-----------|------------|--------|
+| S8-F1 | 1 | [ ] | `s8_f1_asfalto_aat6v` | AAT-6V 4.0 + 33\" HS I; asfalto WOT | `grabar_telemetria.bat motor_scout` |
+| S8-F2 | 2 | [ ] | `s8_f2_barro_hs` | Mismo tramo barro; diff+L | MAE mud; `S8_MUD_*` |
+| S8-F3 | 3 | [ ] | `s8_f3_carga_barro` | Remolque scout + vigas | `cargo` quieto 30 s |
+
+**Setup actual (tu camioneta):** motor AAT-6V 4.0 · neumático 33\" HS I · sin más mejoras aún.
+
+**Notas:** motor `us_scout_old_engine_0` compartido — no parchear `e_us_scout_old.xml` hasta cerrar S8-F1. Doc: `camiones/scout800/FASES.md`.
+
+**Sesiones CE:** *(ninguna válida aún)* → `telemetria/sesiones/scout800/`
 
 ---
 
@@ -105,6 +135,7 @@ CE: `s_fleetstar_f2070a` · Masa mod **6650 kg** · 6×4 · 42" UHD · Si-6V
 |---------|-----------|-------------|
 | `telemetria/sesiones/fleetstar/ce_fs_f2_barro_uhd_20260702_223218.json` | `fs_f2_barro_uhd` | **MAE mud 4.6** (133–443 s) y **2.0** (488–584 s); 401× mud; mezcla hard — indexada |
 | `telemetria/sesiones/fleetstar/ce_fs_f3_carga_20260630_223710.json` | `fs_f3_carga` | **MAE mud 6.3** (349–866 s); carga CE casi siempre `vacio` (7/1495) — barro OK, **re-grabar F3** |
+| `telemetria/sesiones/fleetstar/ce_fs_f3_carga_20260703_220658.json` | `fs_f3_carga` *(inválida)* | Camión **vacío** en juego; meta `frame_cargado` erróneo; 489× falsos `cargado` (fantasmas Havok) — **no indexar F3** |
 | `telemetria/sesiones/fleetstar/ce_fs_f1_asfalto_20260630_225129.json` | `fs_f1_asfalto` | Mezcla 50/50 mud/hard; MAE whole 16.7; tramos hard 25–42 — **borrador**, no cerrar F1 |
 | `ce_fs_f1_asfalto_20260625_*` | `fs_f1_asfalto` | MOT-1900 (histórico) |
 
@@ -123,6 +154,12 @@ Setup: fs_real, highway, L+diff, Black River, meta frame_cargado
 MAE mud=6.3 | contact suavizado Havok (1.0→0.34 al entrar barro)
 Carga: load=vacio 1488 muestras, cargado 7 — masa 6650–10250 kg inestable
 Siguiente: re-grabar F3 quieto 30 s con bastidor lleno
+
+2026-07-03 | FS-F3 | fs_f3_carga | ce_fs_f3_carga_20260703_220658 — **INVÁLIDA**
+Setup: fs_real, highway, L+diff, Black River — **camión vacío** (confirmado en juego)
+CE: load=vacio 1735× (mass 6650 correcto) | cargado 489× = falsos positivos (cargo_kg 1200–2400 fantasma)
+Import: meta frame_cargado por max_payload>300; indexación F3 retirada de calibracion.json
+Siguiente: re-grabar F3 con bastidor lleno; `grabar_telemetria.bat cargo` quieto 30 s antes de F3
 
 2026-06-30 | FS-F1 borrador | fs_f1_asfalto | ce_fs_f1_asfalto_20260630_225129
 Arranque mud_deep; mitad sesión barro — no usar para MOT-2100 ni cerrar F1
@@ -282,6 +319,8 @@ Snapshots dedicados TERR-2…4 (`barro_ligero`, `barro_profundo`, `agua_vado`) s
 | Tema | Problema | Vehículo | Acción |
 |------|----------|----------|--------|
 | `ce_fs_f3_carga_20260630` | carga CE inestable (`vacio` 99 %) | fleetstar | Barro indexado (MAE 6.3); re-grabar F3 con carga |
+| `ce_fs_f3_carga_20260703` | camión vacío; meta `frame_cargado` falso; 489× `cargado` fantasma | fleetstar | Retirada de calibracion; no usar para F3 ni barro cargado |
+| `ce_f3_carga_barro_20260703` | scout sin carga; meta `trailer_metal_planks` falso; 232× `cargado` fantasma | ck1500 | Retirada de calibracion; no usar para F3 |
 | CE sin `contact_avg` | pipeline viejo | varios | Re-grabar |
 | `ce_km_f2_*_20260629` | MAE ~12 vs 5.3 nueva | marshall | Usar solo 20260630 |
 
@@ -324,4 +363,4 @@ CK1500: cerrar referencias F1/F2
 | Notas personales | `personal.txt` |
 | CE / offsets | `cheat_engine/README.md`, `docs/FASE-6.md` |
 
-*Última revisión: 2026-07-02 — Fleetstar F2 barro UHD cerrado (MAE 4.6/2.0); CE tire/snap en grabar_telemetria.bat; sin terrain_map.*
+*Última revisión: 2026-07-03 — CK-F3 y FS-F3 `20260703` invalidadas (vacío real); retiradas de calibracion.json.*

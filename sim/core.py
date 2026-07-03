@@ -21,6 +21,7 @@ NUM_WHEELS = 4
 G = 9.81
 TORQUE_SCALE = 0.028
 FUEL_UNIT_SCALE = 0.0011
+IDLE_FUEL_FRAC = 0.09  # ralenti motor encendido (~9 % del consumo a pleno gas)
 ANGVEL_RAMP = 120.0
 DT = 0.02
 
@@ -692,17 +693,25 @@ def step(
     state.ground_speed = v_new
 
     gear_fuel_mod = GEARBOX.gears[gear_idx].fuel_mod if gear_idx >= 0 else 1.8
-    gear_fuel_mod *= GEARBOX.awd_modifier
-    fuel_mult = engine_fuel_mult(engine) * (1.0 + slip * 0.35)
-    state.fuel_used += (
+    if vehicle.diff_lock:
+        gear_fuel_mod *= GEARBOX.awd_modifier
+    fuel_mult = engine_fuel_mult(engine)
+    slip_fuel = 1.0 + slip * 0.35
+    fuel_line = (
         engine.fuel_consumption
         * GEARBOX.fuel_consumption
         * gear_fuel_mod
         * FUEL_UNIT_SCALE
-        * state.throttle_filt
         * fuel_mult
         * dt
     )
+    throttle = max(0.0, min(1.0, state.throttle_filt))
+    # Ralenti base + gas (incl. patinaje parado: throttle alto, v bajo)
+    rev_boost = 1.0
+    if v < 0.5 and throttle > 0.05:
+        rev_boost = 1.0 + min(1.5, throttle * slip * 2.0)
+    drive_frac = throttle * slip_fuel * rev_boost
+    state.fuel_used += fuel_line * (IDLE_FUEL_FRAC + drive_frac * (1.0 - IDLE_FUEL_FRAC))
 
     return v_new, engine_torque
 

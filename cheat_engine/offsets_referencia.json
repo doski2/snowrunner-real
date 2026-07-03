@@ -79,6 +79,32 @@
     "note": "tire_kind CE != meta.tire del protocolo de grabacion",
     "calibrate": "scan_wheel_addons.py --save <etiqueta>"
   },
+  "drive_runtime": {
+    "source": "DRIVE_LOGIC singleton + veh addon — calibrar con scan_drive_state.py",
+    "singleton": "SnowRunner.exe+2A8EDC8",
+    "vehicle_ptr": "+0x20",
+    "status": "candidates null hasta calibracion in-game",
+    "candidates": {
+      "diff_lock_u8": null,
+      "awd_active_u8": null,
+      "low_gear_u8": null,
+      "throttle_f32": null,
+      "engine_rpm_f32": null
+    },
+    "discover": {
+      "drive_logic": ["0x0", "0x400"],
+      "vehicle": ["0x100", "0xA00"]
+    },
+    "csv_fields": [
+      "diff_lock_live",
+      "awd_live",
+      "low_gear_live",
+      "throttle",
+      "engine_rpm",
+      "fuel_rate_pct_min"
+    ],
+    "calibrate": "grabar_telemetria.bat drive --discover; togglear diff/L; --save diff_off diff_on"
+  },
   "telemetry": {
     "speed_kmh_formula": "sqrt(vx^2 + vz^2) * 3.6",
     "velocity_unit": "m/s"

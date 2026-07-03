@@ -168,6 +168,14 @@ class TestProtocols(unittest.TestCase):
         pid2, _ = resolve_auto_protocol("khan_39_marshall", "hard", "0.85")
         self.assertEqual(pid2, "km_f1_asfalto")
 
+    def test_auto_protocol_scout800(self) -> None:
+        from telemetria import resolve_auto_protocol
+
+        pid, _ = resolve_auto_protocol("s_international_scout_800", "hard", "0.85", "hard", "0.80")
+        self.assertEqual(pid, "s8_f1_asfalto_aat6v")
+        pid2, _ = resolve_auto_protocol("international_scout_800", "mud", "0.05", "mud", "0.35")
+        self.assertEqual(pid2, "s8_f2_barro_hs")
+
     def test_auto_protocol_fleetstar_loaded_mud(self) -> None:
         from telemetria import LoadDetection, resolve_auto_protocol
 

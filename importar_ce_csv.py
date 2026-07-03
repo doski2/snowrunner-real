@@ -87,6 +87,13 @@ def suggest_protocol(vehicle_id: str, protocol_id: str) -> str | None:
             return "km_f1_asfalto"
         if protocol_id.startswith("f3_"):
             return "km_f3_carga"
+    if vehicle_id == "scout800":
+        if protocol_id == "f2_barro_offroad":
+            return "s8_f2_barro_hs"
+        if protocol_id in ("f1_asfalto_i6", "f1_asfalto_aat8v"):
+            return "s8_f1_asfalto_aat6v"
+        if protocol_id.startswith("f3_"):
+            return "s8_f3_carga_barro"
     return None
 
 

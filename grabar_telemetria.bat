@@ -7,6 +7,11 @@ if /i "%1"=="terr" goto SNAP
 if /i "%1"=="diff" goto DIFF
 if /i "%1"=="tire" goto TIRE
 if /i "%1"=="cargo" goto CARGO
+if /i "%1"=="drive" goto DRIVE
+if /i "%1"=="drive_snap" goto DRIVE_SNAP
+if /i "%1"=="drive_diff" goto DRIVE_DIFF
+if /i "%1"=="motor" goto MOTOR
+if /i "%1"=="motor_scout" goto MOTOR_SCOUT
 goto RECORD
 
 :PROBE
@@ -23,8 +28,75 @@ if errorlevel 1 set ERR=1
 goto PAUSE_ERR
 
 :CARGO
-shift
-python cheat_engine/scan_cargo.py %*
+python cheat_engine/scan_cargo.py %2 %3 %4 %5 %6 %7 %8 %9
+set ERR=%ERRORLEVEL%
+goto PAUSE_ERR
+
+:DRIVE
+python cheat_engine/scan_drive_state.py %2 %3 %4 %5 %6 %7 %8 %9
+set ERR=%ERRORLEVEL%
+goto PAUSE_ERR
+
+:DRIVE_SNAP
+if "%2"=="" (
+    echo Uso: grabar_telemetria.bat drive_snap ^<nombre^>
+    echo.
+    echo Calibracion diff/L — mismo camion, mapa, 0 km/h, motor ON:
+    echo   1. diff OFF, marcha H:  grabar_telemetria.bat drive_snap diff_off
+    echo   2. diff ON,  marcha H:  grabar_telemetria.bat drive_snap diff_on
+    echo   3. marcha L:            grabar_telemetria.bat drive_snap low_on
+    echo   4. comparar:             grabar_telemetria.bat drive_diff diff_off diff_on
+    echo   5. comparar L:           grabar_telemetria.bat drive_diff diff_on low_on
+    echo.
+    echo Verifica vehicle_id igual en los 3 antes de comparar.
+    exit /b 1
+)
+echo === Snapshot DRIVE discover: %2 ===
+echo Motor ON, 0 km/h, togglear diff/L segun el nombre del snap.
+echo.
+python grabar_ce.py --probe
+if errorlevel 1 goto PAUSE_ERR
+python cheat_engine/scan_drive_state.py --discover --save %2
+set ERR=%ERRORLEVEL%
+goto PAUSE_ERR
+
+:DRIVE_DIFF
+if "%3"=="" (
+    echo Uso: grabar_telemetria.bat drive_diff ^<A^> ^<B^>
+    echo   ej. grabar_telemetria.bat drive_diff diff_off diff_on
+    echo   ej. grabar_telemetria.bat drive_diff diff_on low_on
+    exit /b 1
+)
+python cheat_engine/scan_drive_state.py --diff %2 %3
+set ERR=%ERRORLEVEL%
+goto PAUSE_ERR
+
+:MOTOR
+echo === F1 CK1500 — AAT-8V 5.2 (solo motor, resto stock) ===
+echo.
+echo Setup en taller ANTES de diff/offroad/caja/remolque:
+echo   - Motor: AAT-8V 5,2 Custom (us_scout_old_engine_ck1500)
+echo   - Neumatico: Highway 31 stock
+echo   - Caja / diff / AWD: de serie (sin mejoras)
+echo   - Mapa: asfalto recto, vacio, WOT ~60 s
+echo.
+echo Ctrl+C para parar - importa con protocolo f1_asfalto_aat8v
+echo.
+python grabar_ce.py --probe
+if errorlevel 1 goto PAUSE_ERR
+python grabar_ce.py --import --compare --index --live --protocol f1_asfalto_aat8v --map Michigan --location "Black River asfalto F1 AAT-8V" --baseline ck_aat8v_f1 %2 %3 %4 %5 %6 %7 %8 %9
+set ERR=%ERRORLEVEL%
+goto PAUSE_ERR
+
+:MOTOR_SCOUT
+echo === F1 Scout 800 — AAT-6V 4.0 + 33 HS I ===
+echo.
+echo Setup: solo motor AAT-6V y neumatico HS I; diff siempre; caja stock; vacio.
+echo   Asfalto recto WOT ~60 s — Ctrl+C para parar
+echo.
+python grabar_ce.py --probe
+if errorlevel 1 goto PAUSE_ERR
+python grabar_ce.py --import --compare --index --live --protocol s8_f1_asfalto_aat6v --map Michigan --location "Black River asfalto F1 S800" --baseline s8_aat6v_f1 %2 %3 %4 %5 %6 %7 %8 %9
 set ERR=%ERRORLEVEL%
 goto PAUSE_ERR
 
@@ -53,8 +125,7 @@ set ERR=%ERRORLEVEL%
 goto PAUSE_ERR
 
 :TIRE
-shift
-python cheat_engine/scan_wheel_addons.py %*
+python cheat_engine/scan_wheel_addons.py %2 %3 %4 %5 %6 %7 %8 %9
 set ERR=%ERRORLEVEL%
 goto PAUSE_ERR
 
@@ -73,6 +144,12 @@ echo   grabar_telemetria.bat diff tierra_seca barro_ligero
 echo   grabar_telemetria.bat tire
 echo   grabar_telemetria.bat cargo
 echo   grabar_telemetria.bat cargo --save cargado
+echo   grabar_telemetria.bat drive
+echo   grabar_telemetria.bat drive --watch 30
+echo   grabar_telemetria.bat drive_snap diff_off
+echo   grabar_telemetria.bat drive_diff diff_off diff_on
+echo   grabar_telemetria.bat motor
+echo   grabar_telemetria.bat motor_scout
 echo.
 
 echo Preflight CE...

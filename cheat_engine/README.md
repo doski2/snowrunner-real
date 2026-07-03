@@ -38,7 +38,11 @@ python grabar_ce.py --duration 60 --import --auto --compare
 python cheat_engine/scan_cargo.py
 python cheat_engine/scan_wheel_substance.py
 python cheat_engine/scan_wheel_addons.py
+python cheat_engine/scan_drive_state.py
+python cheat_engine/scan_drive_state.py --watch 30
 ```
+
+**Tracción / diff:** calibrar offsets con `grabar_telemetria.bat drive --discover` (diff OFF/ON, `--save`, `--diff`). CSV: `fuel_rate_pct_min`, `diff_lock_live`, etc.
 
 ---
 
@@ -91,6 +95,7 @@ Detalle: `offsets_referencia.json` · código: `memoria_havok.py`.
 | `wheel_addon_snaps/` | Snapshots neumatico (`scan_wheel_addons.py --save`) |
 | `suspension_snaps/` | Snapshots vacío/cargado/bounce (`scan_suspension.py`) |
 | `load_snaps/` | Snapshots vacío/cargado (`--save`, `--diff`) |
+| `drive_snaps/` | Snapshots diff/L/gas (`scan_drive_state.py`) |
 | `grabar_telemetria.ps1` | Alternativa PowerShell |
 
 ---

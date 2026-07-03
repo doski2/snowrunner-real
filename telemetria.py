@@ -48,6 +48,7 @@ _SESSION_PREFIX_VEHICLE: dict[str, str] = {
     "f1": "ck1500",
     "f2": "ck1500",
     "f3": "ck1500",
+    "s8": "scout800",
 }
 
 
@@ -204,6 +205,21 @@ TEST_PROTOCOLS: tuple[TestProtocol, ...] = (
         "i6",
         60.0,
         "Carretera recta; anotar velocidad cada 5 s a fondo.",
+    ),
+    TestProtocol(
+        "f1_asfalto_aat8v",
+        "Fase 1 — asfalto AAT-8V 5.2 (solo motor, resto stock)",
+        1,
+        "asphalt",
+        "Asfalto",
+        "highway",
+        False,
+        False,
+        "vacio",
+        True,
+        "aat8v",
+        60.0,
+        "CK1500: AAT-8V instalado; highway 31 stock; sin diff/caja/remolque; WOT ~60 s.",
     ),
     TestProtocol(
         "f2_barro_highway",
@@ -521,6 +537,54 @@ TEST_PROTOCOLS: tuple[TestProtocol, ...] = (
         "marshall",
     ),
     TestProtocol(
+        "s8_f1_asfalto_aat6v",
+        "Scout 800 F1 — asfalto AAT-6V + 33 HS I",
+        1,
+        "asphalt",
+        "Asfalto",
+        "highway_hs_i",
+        True,
+        False,
+        "vacio",
+        True,
+        "aat6v",
+        60.0,
+        "Solo motor AAT-6V y HS I; diff siempre; WOT recto.",
+        "scout800",
+    ),
+    TestProtocol(
+        "s8_f2_barro_hs",
+        "Scout 800 F2 — barro 33 HS I + diff",
+        2,
+        "mud",
+        "Barro",
+        "highway_hs_i",
+        True,
+        True,
+        "vacio",
+        True,
+        "aat6v",
+        45.0,
+        "Mismo tramo barro; marcha L; calibrar S8_MUD_*.",
+        "scout800",
+    ),
+    TestProtocol(
+        "s8_f3_carga_barro",
+        "Scout 800 F3 — remolque scout cargado barro",
+        3,
+        "mud",
+        "Barro",
+        "highway_hs_i",
+        True,
+        True,
+        "trailer_metal_planks",
+        True,
+        "aat6v",
+        60.0,
+        "Remolque scout + vigas; HS I.",
+        "scout800",
+    ),
+    TestProtocol(
         "f7_barro_dia",
         "Fase 7 — barro mediodia (misma ruta F2)",
         7,
@@ -592,6 +656,7 @@ DEFAULT_MUD_PROTOCOL: dict[str, str] = {
     "fleetstar": "fs_f2_barro_uhd",
     "marshall": "km_f2_barro_tm2",
     "kodiak": "kd_f2_barro_uhd",
+    "scout800": "s8_f2_barro_hs",
 }
 DEFAULT_ASPHALT_PROTOCOL: dict[str, str] = {
     "ck1500": "f1_asfalto_i6",
@@ -599,6 +664,7 @@ DEFAULT_ASPHALT_PROTOCOL: dict[str, str] = {
     "fleetstar": "fs_f1_asfalto",
     "marshall": "km_f1_asfalto",
     "kodiak": "kd_f1_asfalto",
+    "scout800": "s8_f1_asfalto_aat6v",
 }
 DEFAULT_LOADED_MUD_PROTOCOL: dict[str, str] = {
     "ck1500": "f3_carga_barro",
@@ -606,6 +672,7 @@ DEFAULT_LOADED_MUD_PROTOCOL: dict[str, str] = {
     "fleetstar": "fs_f3_carga",
     "marshall": "km_f3_carga",
     "kodiak": "kd_f3_carga",
+    "scout800": "s8_f3_carga_barro",
 }
 
 PAYLOAD_LOAD_THRESHOLD_KG = 300.0
@@ -637,6 +704,8 @@ def load_scenario_for_vehicle(vehicle_id: str, load_hint: str, *, loaded: bool) 
     if vehicle_id == "mh9500":
         return "semi_cargado"
     if vehicle_id == "ck1500":
+        return "trailer_metal_planks"
+    if vehicle_id == "scout800":
         return "trailer_metal_planks"
     if vehicle_id == "marshall":
         return "trailer_metal_planks"
@@ -1173,6 +1242,14 @@ def _engine_for_id(engine_id: str) -> EngineConfig:
         from camiones.marshall.simulador import ENGINE_STOCK_KM
 
         return ENGINE_STOCK_KM
+    if engine_id == "aat8v":
+        from camiones.ck1500.engines import engine_for_ck1500
+
+        return engine_for_ck1500(engine_id)
+    if engine_id in ("aat6v", "s8_real", "s8_stock"):
+        from camiones.scout800.engines import engine_for_scout800
+
+        return engine_for_scout800(engine_id)
     return ENGINE_I6 if engine_id == "i6" else ENGINE_STOCK
 
 
@@ -1197,6 +1274,14 @@ def _engine_for_session(meta: SessionMeta) -> EngineConfig:
         elif eid == "kd_stock":
             eid = "fs_stock"
         return engine_for_fleetstar(eid, _engine_name_xml_from_meta(meta))
+    if meta.vehicle_id == "ck1500":
+        from camiones.ck1500.engines import engine_for_ck1500
+
+        return engine_for_ck1500(meta.engine_id, _engine_name_xml_from_meta(meta))
+    if meta.vehicle_id == "scout800":
+        from camiones.scout800.engines import engine_for_scout800
+
+        return engine_for_scout800(meta.engine_id, _engine_name_xml_from_meta(meta))
     return _engine_for_id(meta.engine_id)
 
 
@@ -1244,6 +1329,12 @@ def build_vehicle_for_session(meta: SessionMeta) -> VehicleConfig:
 
         tire_key = meta.tire if meta.tire in KM_TIRES else "mudtires"
         base = make_vehicle(tire_key, diff_lock=meta.diff_lock, drive_layout="4wd")
+        return apply_load(base, _load_for_id(meta.load_scenario_id))
+    if meta.vehicle_id == "scout800":
+        from camiones.scout800.simulador import TIRES as S8_TIRES, make_vehicle
+
+        tire_key = meta.tire if meta.tire in S8_TIRES else "highway_hs_i"
+        base = make_vehicle(tire_key, diff_lock=True, drive_layout="4wd")
         return apply_load(base, _load_for_id(meta.load_scenario_id))
     base = replace(
         VEHICLE_I6,
