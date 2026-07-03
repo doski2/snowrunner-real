@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "updated_utc": "2026-06-28T16:08:05.619097+00:00",
+  "mod_commit": "",
+  "game_version": "Steam update jun-2026; initial.pak 28880896 B",
+  "offsets_source": "scan_singleton.py brute + probe — build Steam 2026-06-25",
+  "singletons": {
+    "TRUCK_CONTROL": "0x2A8EDD8",
+    "TRUCK_CONTROL_note": "SnowRunner.exe+2A8EDD8 -> combine_TRUCK_CONTROL* (antes +2A876A8)",
+    "DRIVE_LOGIC": "0x2A8EDC8",
+    "DRIVE_LOGIC_note": "validado mismo build (antes +2E5DA08 obsoleto)",
+    "UI_FUEL_SINGLETON": "0x2E5BBEC"
+  },
+  "empty_mass_kg": {
+    "ck1500": 1750.0,
+    "mh9500": 7500.0,
+    "fleetstar": 6650.0,
+    "marshall": 1780.0
+  },
+  "vehicles_mod": {
+    "ck1500": {
+      "label": "Chevrolet CK1500",
+      "game_id": "s_chevrolet_ck1500",
+      "ce_id": "s_chevrolet_ck1500",
+      "xml_file": "chevrolet_ck1500.xml",
+      "sim_module": "sim.core",
+      "empty_mass_kg": 1750.0,
+      "notes": "Scout 4x4 K10 ~1971"
+    },
+    "mh9500": {
+      "label": "GMC MH9500",
+      "game_id": "s_gmc_9500",
+      "ce_id": "s_gmc_9500",
+      "xml_file": "gmc_9500.xml",
+      "sim_module": "camiones.mh9500.simulador",
+      "empty_mass_kg": 7500.0,
+      "notes": "Highway 6x4 diesel Class 8"
+    },
+    "fleetstar": {
+      "label": "Fleetstar F2070A",
+      "game_id": "international_fleetstar_f2070a",
+      "ce_id": "s_fleetstar_f2070a",
+      "xml_file": "international_fleetstar_f2070a.xml",
+      "sim_module": "camiones.fleetstar.simulador",
+      "empty_mass_kg": 6650.0,
+      "notes": "Heavy 6x4; Si-6V/1900; 42 UHD I"
+    },
+    "marshall": {
+      "label": "KHAN 39 Marshall",
+      "game_id": "khan_39_marshall",
+      "ce_id": "s_khan_39_marshall",
+      "xml_file": "khan_39_marshall.xml",
+      "sim_module": "camiones.marshall.simulador",
+      "empty_mass_kg": 1780.0,
+      "notes": "Scout UAZ/TREKOL; Kr 104; 45 TM II; AWD+diff"
+    }
+  },
+  "pak": {
+    "backup": {
+      "path": "C:\\Users\\doski\\snowrunner real\\initial.pak.bak",
+      "size_bytes": 28880896,
+      "mtime_utc": "2026-06-25T20:35:24.262103+00:00"
+    },
+    "mod_out": {
+      "path": "C:\\Users\\doski\\snowrunner real\\initial.pak",
+      "size_bytes": 28880927,
+      "mtime_utc": "2026-06-26T23:08:29.845380+00:00"
+    }
+  },
+  "paths": {
+    "telemetry_sessions": "C:\\Users\\doski\\snowrunner real\\telemetria\\sesiones",
+    "catalogo": "C:\\Users\\doski\\snowrunner real\\datos\\catalogo",
+    "ce_log_primary": "C:\\Users\\doski\\Documents\\My Games\\SnowRunner\\base\\telemetria_ce_log.csv"
+  }
+}

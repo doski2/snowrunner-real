@@ -1,0 +1,3774 @@
+{
+  "source": "C:\\Users\\doski\\snowrunner real\\initial.pak.bak",
+  "counts": {
+    "trucks": 42,
+    "engines": 125,
+    "wheels": 153,
+    "gearboxes": 76,
+    "suspensions": 116
+  },
+  "suspensions": {
+    "s_gmc8000": {
+      "id": "s_gmc8000",
+      "pak_path": "[media]/_dlc/DLC_trial_6/classes/suspensions/s_gmc8000.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.3,
+          "height": 0.12,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.05,
+          "damping": 0.3,
+          "height": 0.1,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.4,
+          "height": 0.22,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.05,
+          "damping": 0.4,
+          "height": 0.2,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.4,
+          "height": 0.27,
+          "suspension_min": -0.4
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.05,
+          "damping": 0.4,
+          "height": 0.25,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_kenworth_963": {
+      "id": "s_kenworth_963",
+      "pak_path": "[media]/_dlc/dlc_10/classes/suspensions/s_kenworth_963.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.06,
+          "damping": 0.7,
+          "height": 0.15,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.0,
+          "damping": 0.0,
+          "height": 0.0,
+          "suspension_min": 0.0
+        }
+      ]
+    },
+    "s_kenworth_w990": {
+      "id": "s_kenworth_w990",
+      "pak_path": "[media]/_dlc/dlc_10/classes/suspensions/s_kenworth_w990.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.12,
+          "damping": 0.15,
+          "height": 0.18,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.015,
+          "damping": 0.2,
+          "height": 0.2,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "middle",
+          "strength": 0.017,
+          "damping": 0.6,
+          "height": 0.0,
+          "suspension_min": -0.1
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.1,
+          "damping": 0.15,
+          "height": 0.32,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.013,
+          "damping": 0.2,
+          "height": 0.32,
+          "suspension_min": -0.2
+        },
+        {
+          "wheel_type": "middle",
+          "strength": 0.017,
+          "damping": 0.6,
+          "height": 0.0,
+          "suspension_min": -0.1
+        }
+      ]
+    },
+    "s_mack_defense_m917": {
+      "id": "s_mack_defense_m917",
+      "pak_path": "[media]/_dlc/dlc_10/classes/suspensions/s_mack_defense_m917.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.4,
+          "height": 0.18,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": 0.3,
+          "height": 0.12,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.3,
+          "height": 0.23,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": 0.3,
+          "height": 0.17,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.04,
+          "damping": 0.4,
+          "height": 0.19,
+          "suspension_min": -0.2
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.02,
+          "damping": 0.3,
+          "height": 0.13,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_burlak_6x6": {
+      "id": "s_burlak_6x6",
+      "pak_path": "[media]/_dlc/dlc_11/classes/suspensions/s_burlak_6x6.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.02,
+          "damping": 0.3,
+          "height": 0.15,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.02,
+          "damping": 0.3,
+          "height": 0.15,
+          "suspension_min": -0.25
+        }
+      ]
+    },
+    "s_neo_falcon_2000": {
+      "id": "s_neo_falcon_2000",
+      "pak_path": "[media]/_dlc/dlc_11/classes/suspensions/s_neo_falcon_2000.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.025,
+          "damping": 0.2,
+          "height": 0.125,
+          "suspension_min": -0.18
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.025,
+          "damping": 0.2,
+          "height": 0.14,
+          "suspension_min": -0.14
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.03,
+          "damping": 0.3,
+          "height": 0.25,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": 0.3,
+          "height": 0.25,
+          "suspension_min": -0.25
+        }
+      ]
+    },
+    "s_femm_37at": {
+      "id": "s_femm_37at",
+      "pak_path": "[media]/_dlc/dlc_12/classes/suspensions/s_femm_37at.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.06,
+          "damping": 0.7,
+          "height": 0.15,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.5,
+          "height": 0.09,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_mtb_8106": {
+      "id": "s_mtb_8106",
+      "pak_path": "[media]/_dlc/dlc_12/classes/suspensions/s_mtb_8106.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.035,
+          "damping": 0.55,
+          "height": 0.23,
+          "suspension_min": -0.2
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.043,
+          "damping": 0.55,
+          "height": 0.24,
+          "suspension_min": -0.23
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.03,
+          "damping": 0.55,
+          "height": 0.33,
+          "suspension_min": -0.27
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.035,
+          "damping": 0.55,
+          "height": 0.34,
+          "suspension_min": -0.29
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.02,
+          "damping": 0.55,
+          "height": 0.43,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.021,
+          "damping": 0.55,
+          "height": 0.44,
+          "suspension_min": -0.4
+        }
+      ]
+    },
+    "s_azov_670963n": {
+      "id": "s_azov_670963n",
+      "pak_path": "[media]/_dlc/dlc_12_5/classes/suspensions/s_azov_670963n.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.07,
+          "damping": 0.42,
+          "height": 0.18,
+          "suspension_min": -0.22
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.42,
+          "height": 0.15,
+          "suspension_min": -0.22
+        }
+      ]
+    },
+    "s_aac_58dw": {
+      "id": "s_aac_58dw",
+      "pak_path": "[media]/_dlc/dlc_13/classes/suspensions/s_aac_58dw.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.11,
+          "damping": 0.45,
+          "height": 0.11,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.09,
+          "damping": 0.45,
+          "height": 0.1,
+          "suspension_min": -0.22
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.07,
+          "damping": 0.4,
+          "height": 0.22,
+          "suspension_min": -0.33
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.4,
+          "height": 0.19,
+          "suspension_min": -0.36
+        }
+      ]
+    },
+    "s_plad_450": {
+      "id": "s_plad_450",
+      "pak_path": "[media]/_dlc/dlc_13/classes/suspensions/s_plad_450.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.03,
+          "damping": 0.15,
+          "height": 0.18,
+          "suspension_min": -0.22
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.04,
+          "damping": 0.22,
+          "height": 0.11,
+          "suspension_min": -0.22
+        }
+      ]
+    },
+    "s_rezvani_tank": {
+      "id": "s_rezvani_tank",
+      "pak_path": "[media]/_dlc/dlc_13_5/classes/suspensions/s_rezvani_tank.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.4,
+          "height": 0.12,
+          "suspension_min": -0.14
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.05,
+          "damping": 0.4,
+          "height": 0.12,
+          "suspension_min": -0.14
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.4,
+          "height": 0.2,
+          "suspension_min": -0.28
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.04,
+          "damping": 0.4,
+          "height": 0.22,
+          "suspension_min": -0.37
+        }
+      ]
+    },
+    "s_ankatra_1160": {
+      "id": "s_ankatra_1160",
+      "pak_path": "[media]/_dlc/dlc_14/classes/suspensions/s_ankatra_1160.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.03,
+          "damping": 0.12,
+          "height": 0.1,
+          "suspension_min": -0.1
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.2,
+          "damping": 0.6,
+          "height": 0.0,
+          "suspension_min": 0.0
+        }
+      ]
+    },
+    "s_earthroamer_lti": {
+      "id": "s_earthroamer_lti",
+      "pak_path": "[media]/_dlc/dlc_14/classes/suspensions/s_earthroamer_lti.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.06,
+          "damping": 0.45,
+          "height": 0.3,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.063,
+          "damping": 0.34,
+          "height": 0.18,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.07,
+          "damping": 0.56,
+          "height": 0.32,
+          "suspension_min": -0.4
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.56,
+          "height": 0.21,
+          "suspension_min": -0.4
+        }
+      ]
+    },
+    "s_earthroamer_sx": {
+      "id": "s_earthroamer_sx",
+      "pak_path": "[media]/_dlc/dlc_14/classes/suspensions/s_earthroamer_sx.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.08,
+          "damping": 0.5,
+          "height": 0.25,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.07,
+          "damping": 0.5,
+          "height": 0.18,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.09,
+          "damping": 0.58,
+          "height": 0.3,
+          "suspension_min": -0.4
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.58,
+          "height": 0.23,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_futom_7290ra": {
+      "id": "s_futom_7290ra",
+      "pak_path": "[media]/_dlc/dlc_14/classes/suspensions/s_futom_7290ra.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.01,
+          "damping": 0.3,
+          "height": 0.015,
+          "suspension_min": -0.1
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.01,
+          "damping": 0.3,
+          "height": 0.015,
+          "suspension_min": -0.1
+        }
+      ]
+    },
+    "s_kenworth_c500": {
+      "id": "s_kenworth_c500",
+      "pak_path": "[media]/_dlc/dlc_14_1/classes/suspensions/s_kenworth_c500.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.15,
+          "damping": 0.5,
+          "height": 0.1,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 1.0,
+          "damping": 0.7,
+          "height": 0.0,
+          "suspension_min": 0.0
+        }
+      ]
+    },
+    "s_kenworth_t880": {
+      "id": "s_kenworth_t880",
+      "pak_path": "[media]/_dlc/dlc_14_1/classes/suspensions/s_kenworth_t880.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.13,
+          "damping": 0.32,
+          "height": 0.24,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.023,
+          "damping": 0.17,
+          "height": 0.21,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.13,
+          "damping": 0.32,
+          "height": 0.3,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.019,
+          "damping": 0.19,
+          "height": 0.3,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.18,
+          "damping": 0.2,
+          "height": 0.23,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.12,
+          "damping": 0.2,
+          "height": 0.25,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_mack_pinnacle": {
+      "id": "s_mack_pinnacle",
+      "pak_path": "[media]/_dlc/dlc_14_2/classes/suspensions/s_mack_pinnacle.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.09,
+          "damping": 0.3,
+          "height": 0.14,
+          "suspension_min": -0.2
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.032,
+          "damping": 0.3,
+          "height": 0.17,
+          "suspension_min": -0.2
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.08,
+          "damping": 0.35,
+          "height": 0.26,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.02,
+          "damping": 0.35,
+          "height": 0.28,
+          "suspension_min": -0.25
+        }
+      ]
+    },
+    "s_mack_terra_pro": {
+      "id": "s_mack_terra_pro",
+      "pak_path": "[media]/_dlc/dlc_14_2/classes/suspensions/s_mack_terra_pro.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.13,
+          "damping": 0.6,
+          "height": 0.18,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.022,
+          "damping": 0.2,
+          "height": 0.15,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.1,
+          "damping": 0.5,
+          "height": 0.3,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.015,
+          "damping": 0.25,
+          "height": 0.3,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_mercer_k520": {
+      "id": "s_mercer_k520",
+      "pak_path": "[media]/_dlc/dlc_15/classes/suspensions/s_mercer_k520.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.08,
+          "damping": 0.16,
+          "height": 0.1,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.16,
+          "height": 0.07,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.09,
+          "damping": 0.17,
+          "height": 0.17,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.1,
+          "damping": 0.17,
+          "height": 0.14,
+          "suspension_min": -0.25
+        }
+      ]
+    },
+    "s_sleiter_mfk816": {
+      "id": "s_sleiter_mfk816",
+      "pak_path": "[media]/_dlc/dlc_15/classes/suspensions/s_sleiter_mfk816.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.032,
+          "damping": 0.4,
+          "height": 0.2,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.038,
+          "damping": 0.4,
+          "height": 0.11,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.03,
+          "damping": 0.4,
+          "height": 0.23,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.045,
+          "damping": 0.4,
+          "height": 0.1,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_freightliner_fld120": {
+      "id": "s_freightliner_fld120",
+      "pak_path": "[media]/_dlc/dlc_15_5/classes/suspensions/s_freightliner_fld120.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.15,
+          "damping": 0.2,
+          "height": 0.2,
+          "suspension_min": -0.2
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.032,
+          "damping": 0.2,
+          "height": 0.14,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.1,
+          "damping": 0.45,
+          "height": 0.32,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.023,
+          "damping": 0.34,
+          "height": 0.25,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_western_star_6900xd": {
+      "id": "s_western_star_6900xd",
+      "pak_path": "[media]/_dlc/dlc_15_5/classes/suspensions/s_western_star_6900xd.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.08,
+          "damping": 0.3,
+          "height": 0.13,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.052,
+          "damping": 0.25,
+          "height": 0.1,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.1,
+          "damping": 0.35,
+          "height": 0.2,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.06,
+          "damping": 0.3,
+          "height": 0.16,
+          "suspension_min": -0.45
+        }
+      ]
+    },
+    "s_hib_billert_1980": {
+      "id": "s_hib_billert_1980",
+      "pak_path": "[media]/_dlc/dlc_16/classes/suspensions/s_hib_billert_1980.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.08,
+          "damping": 0.23,
+          "height": 0.24,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.18,
+          "height": 0.2,
+          "suspension_min": -0.165
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.1,
+          "damping": 0.26,
+          "height": 0.28,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.065,
+          "damping": 0.22,
+          "height": 0.29,
+          "suspension_min": -0.275
+        }
+      ]
+    },
+    "s_plad_440": {
+      "id": "s_plad_440",
+      "pak_path": "[media]/_dlc/dlc_16/classes/suspensions/s_plad_440.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.08,
+          "damping": 0.8,
+          "height": 0.35,
+          "suspension_min": -0.2
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.11,
+          "damping": 0.26,
+          "height": 0.26,
+          "suspension_min": -0.17
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.14,
+          "damping": 0.65,
+          "height": 0.38,
+          "suspension_min": -0.23
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.075,
+          "damping": 0.26,
+          "height": 0.32,
+          "suspension_min": -0.27
+        }
+      ]
+    },
+    "s_sleiter_st833_chimera": {
+      "id": "s_sleiter_st833_chimera",
+      "pak_path": "[media]/_dlc/dlc_16/classes/suspensions/s_sleiter_st833_chimera.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.11,
+          "damping": 0.73,
+          "height": 0.13,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.6,
+          "height": 0.1,
+          "suspension_min": -0.25
+        }
+      ]
+    },
+    "s_avenhorn_a15": {
+      "id": "s_avenhorn_a15",
+      "pak_path": "[media]/_dlc/dlc_16_5/classes/suspensions/s_avenhorn_a15.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.085,
+          "damping": 0.38,
+          "height": 0.1,
+          "suspension_min": -0.22
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.04,
+          "damping": 0.17,
+          "height": 0.13,
+          "suspension_min": -0.2
+        }
+      ]
+    },
+    "s_padera_std4": {
+      "id": "s_padera_std4",
+      "pak_path": "[media]/_dlc/dlc_16_5/classes/suspensions/s_padera_std4.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.045,
+          "damping": 0.35,
+          "height": 0.15,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.065,
+          "damping": 0.3,
+          "height": 0.07,
+          "suspension_min": -0.22
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.075,
+          "damping": 0.42,
+          "height": 0.17,
+          "suspension_min": -0.196
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.085,
+          "damping": 0.38,
+          "height": 0.17,
+          "suspension_min": -0.196
+        }
+      ]
+    },
+    "s_jangsu_rx600": {
+      "id": "s_jangsu_rx600",
+      "pak_path": "[media]/_dlc/dlc_17/classes/suspensions/s_jangsu_rx600.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.022,
+          "damping": 0.3,
+          "height": 0.14,
+          "suspension_min": -0.28
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.04,
+          "damping": 0.32,
+          "height": 0.0565,
+          "suspension_min": -0.2
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.034,
+          "damping": 0.42,
+          "height": 0.2,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.05,
+          "damping": 0.55,
+          "height": 0.15,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.022,
+          "damping": 0.48,
+          "height": 0.23,
+          "suspension_min": -0.38
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.035,
+          "damping": 0.662,
+          "height": 0.15,
+          "suspension_min": -0.26
+        }
+      ]
+    },
+    "s_voron_g5352": {
+      "id": "s_voron_g5352",
+      "pak_path": "[media]/_dlc/dlc_17/classes/suspensions/s_voron_g5352.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.028,
+          "damping": 0.315,
+          "height": 0.085,
+          "suspension_min": -0.28
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.024,
+          "damping": 0.32,
+          "height": 0.065,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.048,
+          "damping": 0.345,
+          "height": 0.17,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.055,
+          "damping": 0.362,
+          "height": 0.15,
+          "suspension_min": -0.26
+        }
+      ]
+    },
+    "s_mercedes_benz_actros_6x6": {
+      "id": "s_mercedes_benz_actros_6x6",
+      "pak_path": "[media]/_dlc/dlc_17_5/classes/suspensions/s_mercedes_benz_actros_6x6.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.088,
+          "damping": 0.722,
+          "height": 0.12,
+          "suspension_min": -0.215
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.068,
+          "damping": 0.52,
+          "height": 0.03,
+          "suspension_min": -0.2
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.085,
+          "damping": 0.67,
+          "height": 0.3,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.065,
+          "damping": 0.5,
+          "height": 0.2,
+          "suspension_min": -0.24
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.72,
+          "height": 0.33,
+          "suspension_min": -0.45
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.025,
+          "damping": 0.35,
+          "height": 0.2,
+          "suspension_min": -0.32
+        }
+      ]
+    },
+    "s_mercedes_benz_zetros_6x6": {
+      "id": "s_mercedes_benz_zetros_6x6",
+      "pak_path": "[media]/_dlc/dlc_17_5/classes/suspensions/s_mercedes_benz_zetros_6x6.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.085,
+          "damping": 0.95,
+          "height": 0.145,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.09,
+          "damping": 0.4,
+          "height": 0.055,
+          "suspension_min": -0.18
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.1,
+          "damping": 0.95,
+          "height": 0.26,
+          "suspension_min": -0.31
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.135,
+          "damping": 0.55,
+          "height": 0.165,
+          "suspension_min": -0.21
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.056,
+          "damping": 0.8,
+          "height": 0.35,
+          "suspension_min": -0.45
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.05,
+          "damping": 0.48,
+          "height": 0.215,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_hib_billert_m816": {
+      "id": "s_hib_billert_m816",
+      "pak_path": "[media]/_dlc/dlc_18/classes/suspensions/s_hib_billert_m816.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.065,
+          "damping": 0.35,
+          "height": 0.12,
+          "suspension_min": -0.2
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.05,
+          "damping": 0.3,
+          "height": 0.075,
+          "suspension_min": -0.18
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.07,
+          "damping": 0.42,
+          "height": 0.18,
+          "suspension_min": -0.22
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.0575,
+          "damping": 0.2,
+          "height": 0.135,
+          "suspension_min": -0.18
+        }
+      ]
+    },
+    "s_mercer_6x6r_230": {
+      "id": "s_mercer_6x6r_230",
+      "pak_path": "[media]/_dlc/dlc_18/classes/suspensions/s_mercer_6x6r_230.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.035,
+          "damping": 0.4,
+          "height": 0.22,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.02,
+          "damping": 0.3,
+          "height": 0.16,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.045,
+          "damping": 0.42,
+          "height": 0.27,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.035,
+          "damping": 0.3,
+          "height": 0.22,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.021,
+          "damping": 0.48,
+          "height": 0.41,
+          "suspension_min": -0.5
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.0135,
+          "damping": 0.28,
+          "height": 0.3,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_ford_f750": {
+      "id": "s_ford_f750",
+      "pak_path": "[media]/_dlc/dlc_1_1/classes/suspensions/s_ford_f750.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.042,
+          "damping": 0.2,
+          "height": 0.2,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.1,
+          "damping": 0.25,
+          "height": 0.1,
+          "suspension_min": -0.15
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.042,
+          "damping": 0.3,
+          "height": 0.27,
+          "suspension_min": -0.37
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.3,
+          "height": 0.17,
+          "suspension_min": -0.15
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.3,
+          "height": 0.32,
+          "suspension_min": -0.5
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.3,
+          "height": 0.22,
+          "suspension_min": -0.25
+        }
+      ]
+    },
+    "s_tuz_16_actaeon": {
+      "id": "s_tuz_16_actaeon",
+      "pak_path": "[media]/_dlc/dlc_1_1/classes/suspensions/s_tuz_16_actaeon.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.3,
+          "height": 0.1,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.05,
+          "damping": 0.3,
+          "height": 0.1,
+          "suspension_min": -0.13
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.04,
+          "damping": 0.3,
+          "height": 0.2,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.04,
+          "damping": 0.3,
+          "height": 0.2,
+          "suspension_min": -0.16
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.04,
+          "damping": 0.4,
+          "height": 0.1,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.04,
+          "damping": 0.4,
+          "height": 0.1,
+          "suspension_min": -0.13
+        }
+      ]
+    },
+    "s_chevy_apache": {
+      "id": "s_chevy_apache",
+      "pak_path": "[media]/_dlc/dlc_1_2/classes/suspensions/s_chevy_apache.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.02,
+          "damping": null,
+          "height": 0.15,
+          "suspension_min": -0.4
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.02,
+          "damping": null,
+          "height": 0.0,
+          "suspension_min": -0.2
+        }
+      ]
+    },
+    "s_tuz_108_warthog": {
+      "id": "s_tuz_108_warthog",
+      "pak_path": "[media]/_dlc/dlc_1_2/classes/suspensions/s_tuz_108_warthog.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.06,
+          "damping": 0.6,
+          "height": 0.08,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.6,
+          "height": 0.08,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.06,
+          "damping": 0.6,
+          "height": 0.18,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.6,
+          "height": 0.18,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.06,
+          "damping": 0.4,
+          "height": 0.13,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.4,
+          "height": 0.13,
+          "suspension_min": -0.15
+        }
+      ]
+    },
+    "s_cat_770g": {
+      "id": "s_cat_770g",
+      "pak_path": "[media]/_dlc/dlc_2_1/classes/suspensions/s_cat_770g.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.1,
+          "damping": 0.3,
+          "height": 0.05,
+          "suspension_min": -0.2
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.05,
+          "damping": 0.05,
+          "height": 0.05,
+          "suspension_min": -0.1
+        }
+      ]
+    },
+    "s_cat_th357": {
+      "id": "s_cat_th357",
+      "pak_path": "[media]/_dlc/dlc_2_1/classes/suspensions/s_cat_th357.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.8,
+          "damping": 0.8,
+          "height": 0.01,
+          "suspension_min": -0.0
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.8,
+          "damping": 0.8,
+          "height": 0.01,
+          "suspension_min": -0.0
+        }
+      ]
+    },
+    "s_western_star_49x": {
+      "id": "s_western_star_49x",
+      "pak_path": "[media]/_dlc/dlc_2_1/classes/suspensions/s_western_star_49x.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.12,
+          "damping": 0.15,
+          "height": 0.3,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.015,
+          "damping": 0.2,
+          "height": 0.35,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "middle",
+          "strength": 0.017,
+          "damping": 0.6,
+          "height": 0.0,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_krs_58_bandit": {
+      "id": "s_krs_58_bandit",
+      "pak_path": "[media]/_dlc/dlc_2_2/classes/suspensions/s_krs_58_bandit.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.06,
+          "damping": 0.2,
+          "height": 0.16,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.06,
+          "damping": 0.2,
+          "height": 0.16,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_boar_45318": {
+      "id": "s_boar_45318",
+      "pak_path": "[media]/_dlc/dlc_3/classes/suspensions/s_boar_45318.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.1,
+          "damping": 0.3,
+          "height": 0.25,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.3,
+          "height": 0.15,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.2,
+          "damping": 0.3,
+          "height": 0.25,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.3,
+          "height": 0.25,
+          "suspension_min": -0.35
+        }
+      ]
+    },
+    "s_pacific_p512": {
+      "id": "s_pacific_p512",
+      "pak_path": "[media]/_dlc/dlc_3/classes/suspensions/s_pacific_p512.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.06,
+          "damping": 0.3,
+          "height": 0.09,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.04,
+          "damping": 0.3,
+          "height": 0.11,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_paystar_5600ts": {
+      "id": "s_paystar_5600ts",
+      "pak_path": "[media]/_dlc/dlc_3/classes/suspensions/s_paystar_5600ts.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.08,
+          "damping": 0.3,
+          "height": 0.08,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.025,
+          "damping": 0.2,
+          "height": 0.08,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.07,
+          "damping": 0.3,
+          "height": 0.18,
+          "suspension_min": -0.4
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.022,
+          "damping": 0.2,
+          "height": 0.2,
+          "suspension_min": -0.45
+        }
+      ]
+    },
+    "s_khan_317_sentinel": {
+      "id": "s_khan_317_sentinel",
+      "pak_path": "[media]/_dlc/dlc_4/classes/suspensions/s_khan_317_sentinel.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.04,
+          "damping": 0.3,
+          "height": 0.12,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.04,
+          "damping": 0.3,
+          "height": 0.12,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.03,
+          "damping": 0.3,
+          "height": 0.25,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": 0.3,
+          "height": 0.25,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.02,
+          "damping": 0.3,
+          "height": 0.37,
+          "suspension_min": -0.38
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.02,
+          "damping": 0.3,
+          "height": 0.37,
+          "suspension_min": -0.38
+        }
+      ]
+    },
+    "s_tatra_805": {
+      "id": "s_tatra_805",
+      "pak_path": "[media]/_dlc/dlc_4/classes/suspensions/s_tatra_805.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.035,
+          "damping": 0.3,
+          "height": 0.15,
+          "suspension_min": -0.27
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.055,
+          "damping": 0.3,
+          "height": 0.15,
+          "suspension_min": -0.2
+        }
+      ]
+    },
+    "s_tatra_t813": {
+      "id": "s_tatra_t813",
+      "pak_path": "[media]/_dlc/dlc_4/classes/suspensions/s_tatra_t813.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.035,
+          "damping": 0.3,
+          "height": 0.2,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.032,
+          "damping": 0.3,
+          "height": 0.12,
+          "suspension_min": -0.35
+        }
+      ]
+    },
+    "s_zikz_605r": {
+      "id": "s_zikz_605r",
+      "pak_path": "[media]/_dlc/dlc_4/classes/suspensions/s_zikz_605r.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.03,
+          "damping": 0.2,
+          "height": 0.1,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.8,
+          "damping": 0.8,
+          "height": 0.001,
+          "suspension_min": 0.0
+        }
+      ]
+    },
+    "s_cat_ct681": {
+      "id": "s_cat_ct681",
+      "pak_path": "[media]/_dlc/dlc_4_1/classes/suspensions/s_cat_ct681.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.06,
+          "damping": 0.5,
+          "height": 0.15,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "middle",
+          "strength": 0.02,
+          "damping": 0.6,
+          "height": 0.04,
+          "suspension_min": -0.18
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.07,
+          "damping": 0.5,
+          "height": 0.0,
+          "suspension_min": 0.0
+        }
+      ]
+    },
+    "s_international_hx_520": {
+      "id": "s_international_hx_520",
+      "pak_path": "[media]/_dlc/dlc_4_1/classes/suspensions/s_international_hx_520.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.5,
+          "height": 0.15,
+          "suspension_min": -0.4
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.07,
+          "damping": 0.5,
+          "height": 0.0,
+          "suspension_min": 0.0
+        }
+      ]
+    },
+    "s_jeep_cj7_renegade": {
+      "id": "s_jeep_cj7_renegade",
+      "pak_path": "[media]/_dlc/dlc_5/classes/suspensions/s_jeep_cj7_renegade.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.03,
+          "damping": 0.2,
+          "height": 0.08,
+          "suspension_min": -0.27
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": 0.2,
+          "height": 0.12,
+          "suspension_min": -0.27
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.03,
+          "damping": 0.2,
+          "height": 0.18,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": 0.2,
+          "height": 0.22,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_jeep_wrangler": {
+      "id": "s_jeep_wrangler",
+      "pak_path": "[media]/_dlc/dlc_5/classes/suspensions/s_jeep_wrangler.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.03,
+          "damping": 0.2,
+          "height": 0.03,
+          "suspension_min": -0.27
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": 0.2,
+          "height": 0.07,
+          "suspension_min": -0.27
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.03,
+          "damping": 0.2,
+          "height": 0.08,
+          "suspension_min": -0.27
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": 0.2,
+          "height": 0.12,
+          "suspension_min": -0.27
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.03,
+          "damping": 0.2,
+          "height": 0.13,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": 0.2,
+          "height": 0.17,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.012,
+          "damping": 0.2,
+          "height": 0.3,
+          "suspension_min": -0.47
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.012,
+          "damping": 0.2,
+          "height": 0.35,
+          "suspension_min": -0.47
+        }
+      ]
+    },
+    "s_tatra_force_t815_7": {
+      "id": "s_tatra_force_t815_7",
+      "pak_path": "[media]/_dlc/dlc_5/classes/suspensions/s_tatra_force_t815_7.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.035,
+          "damping": 0.3,
+          "height": 0.2,
+          "suspension_min": -0.32
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.035,
+          "damping": 0.3,
+          "height": 0.2,
+          "suspension_min": -0.32
+        }
+      ]
+    },
+    "s_tatra_phoenix": {
+      "id": "s_tatra_phoenix",
+      "pak_path": "[media]/_dlc/dlc_5/classes/suspensions/s_tatra_phoenix.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.035,
+          "damping": 0.3,
+          "height": 0.2,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.065,
+          "damping": 0.3,
+          "height": 0.12,
+          "suspension_min": -0.25
+        }
+      ]
+    },
+    "s_ank_mk38_ht": {
+      "id": "s_ank_mk38_ht",
+      "pak_path": "[media]/_dlc/dlc_6/classes/suspensions/s_ank_mk38_ht.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.35,
+          "height": 0.15,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": 0.3,
+          "height": 0.08,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.4,
+          "height": 0.25,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": 0.3,
+          "height": 0.18,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.04,
+          "damping": 0.4,
+          "height": 0.25,
+          "suspension_min": -0.2
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.02,
+          "damping": 0.3,
+          "height": 0.18,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_aramatsu_forester": {
+      "id": "s_aramatsu_forester",
+      "pak_path": "[media]/_dlc/dlc_6/classes/suspensions/s_aramatsu_forester.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.1,
+          "damping": 0.1,
+          "height": 0.0,
+          "suspension_min": 0.0
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.7,
+          "damping": 0.4,
+          "height": 0.0,
+          "suspension_min": 0.0
+        }
+      ]
+    },
+    "s_land_rover_defender_110": {
+      "id": "s_land_rover_defender_110",
+      "pak_path": "[media]/_dlc/dlc_6/classes/suspensions/s_land_rover_defender_110.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.04,
+          "damping": 0.2,
+          "height": 0.11,
+          "suspension_min": -0.17
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.04,
+          "damping": 0.2,
+          "height": 0.1,
+          "suspension_min": -0.17
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.055,
+          "damping": 0.35,
+          "height": 0.16,
+          "suspension_min": -0.2
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.055,
+          "damping": 0.35,
+          "height": 0.16,
+          "suspension_min": -0.2
+        }
+      ]
+    },
+    "s_land_rover_defender_90": {
+      "id": "s_land_rover_defender_90",
+      "pak_path": "[media]/_dlc/dlc_6/classes/suspensions/s_land_rover_defender_90.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.03,
+          "damping": 0.2,
+          "height": 0.03,
+          "suspension_min": -0.27
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": 0.2,
+          "height": 0.07,
+          "suspension_min": -0.27
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.03,
+          "damping": 0.2,
+          "height": 0.14,
+          "suspension_min": -0.26
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": 0.2,
+          "height": 0.18,
+          "suspension_min": -0.26
+        }
+      ]
+    },
+    "s_step_3364_crocodile": {
+      "id": "s_step_3364_crocodile",
+      "pak_path": "[media]/_dlc/dlc_6/classes/suspensions/s_step_3364_crocodile.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.04,
+          "damping": 0.2,
+          "height": 0.19,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.06,
+          "damping": 0.3,
+          "height": 0.19,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.03,
+          "damping": 0.3,
+          "height": 0.29,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.05,
+          "damping": 0.4,
+          "height": 0.29,
+          "suspension_min": -0.25
+        }
+      ]
+    },
+    "s_tayga_6455b": {
+      "id": "s_tayga_6455b",
+      "pak_path": "[media]/_dlc/dlc_6/classes/suspensions/s_tayga_6455b.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.1,
+          "height": 0.13,
+          "suspension_min": -0.4
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.063,
+          "damping": 0.15,
+          "height": 0.086,
+          "suspension_min": -0.18
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.04,
+          "damping": 0.2,
+          "height": 0.2,
+          "suspension_min": -0.4
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.025,
+          "damping": 0.2,
+          "height": 0.2,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_azov_43_191_sprinter": {
+      "id": "s_azov_43_191_sprinter",
+      "pak_path": "[media]/_dlc/dlc_7/classes/suspensions/s_azov_43_191_sprinter.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.06,
+          "damping": 0.4,
+          "height": 0.07,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.4,
+          "height": 0.058,
+          "suspension_min": -0.25
+        }
+      ]
+    },
+    "s_gor_by4": {
+      "id": "s_gor_by4",
+      "pak_path": "[media]/_dlc/dlc_7/classes/suspensions/s_gor_by4.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.03,
+          "damping": 0.18,
+          "height": 0.08,
+          "suspension_min": -0.19
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": 0.18,
+          "height": 0.1,
+          "suspension_min": -0.19
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.02,
+          "damping": 0.16,
+          "height": 0.19,
+          "suspension_min": -0.28
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.02,
+          "damping": 0.18,
+          "height": 0.21,
+          "suspension_min": -0.24
+        }
+      ]
+    },
+    "s_western_star_57x": {
+      "id": "s_western_star_57x",
+      "pak_path": "[media]/_dlc/dlc_7/classes/suspensions/s_western_star_57x.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.07,
+          "damping": 0.15,
+          "height": 0.08,
+          "suspension_min": -0.17
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.2,
+          "height": 0.07,
+          "suspension_min": -0.21
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.09,
+          "damping": 0.05,
+          "height": 0.16,
+          "suspension_min": -0.17
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.1,
+          "damping": 0.5,
+          "height": 0.15,
+          "suspension_min": -0.21
+        }
+      ]
+    },
+    "s_kirovets_k700": {
+      "id": "s_kirovets_k700",
+      "pak_path": "[media]/_dlc/dlc_8/classes/suspensions/s_kirovets_k700.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.1,
+          "damping": 0.8,
+          "height": 0.02,
+          "suspension_min": -0.134
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.9,
+          "damping": null,
+          "height": 0.0,
+          "suspension_min": -0.0
+        }
+      ]
+    },
+    "s_kirovets_k7m": {
+      "id": "s_kirovets_k7m",
+      "pak_path": "[media]/_dlc/dlc_8/classes/suspensions/s_kirovets_k7m.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.1,
+          "damping": 0.5,
+          "height": 0.0,
+          "suspension_min": -0.13
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.0,
+          "damping": 0.0,
+          "height": 0.0,
+          "suspension_min": 0.0
+        }
+      ]
+    },
+    "s_rezvani_hercules_6x6": {
+      "id": "s_rezvani_hercules_6x6",
+      "pak_path": "[media]/_dlc/dlc_8/classes/suspensions/s_rezvani_hercules_6x6.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.06,
+          "damping": 0.17,
+          "height": 0.06,
+          "suspension_min": -0.19
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.05,
+          "damping": 0.17,
+          "height": 0.08,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.2,
+          "height": 0.18,
+          "suspension_min": -0.28
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.04,
+          "damping": 0.2,
+          "height": 0.2,
+          "suspension_min": -0.37
+        }
+      ]
+    },
+    "s_step_39331_pike": {
+      "id": "s_step_39331_pike",
+      "pak_path": "[media]/_dlc/dlc_8/classes/suspensions/s_step_39331_pike.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.04,
+          "damping": 0.2,
+          "height": 0.05,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.06,
+          "damping": 0.3,
+          "height": 0.05,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.3,
+          "height": 0.1,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.07,
+          "damping": 0.3,
+          "height": 0.1,
+          "suspension_min": -0.25
+        }
+      ]
+    },
+    "s_western_star_nf1424": {
+      "id": "s_western_star_nf1424",
+      "pak_path": "[media]/_dlc/dlc_8/classes/suspensions/s_western_star_nf1424.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.12,
+          "damping": 0.33,
+          "height": 0.16,
+          "suspension_min": -0.15
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.1,
+          "damping": 0.38,
+          "height": 0.07,
+          "suspension_min": -0.15
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.07,
+          "damping": 0.44,
+          "height": 0.3,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.5,
+          "height": 0.23,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.1,
+          "damping": null,
+          "height": 0.17,
+          "suspension_min": -0.2
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.1,
+          "damping": null,
+          "height": 0.1,
+          "suspension_min": -0.2
+        }
+      ]
+    },
+    "s_western_star_nf1430": {
+      "id": "s_western_star_nf1430",
+      "pak_path": "[media]/_dlc/dlc_8/classes/suspensions/s_western_star_nf1430.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.09,
+          "damping": 0.45,
+          "height": 0.2,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.06,
+          "damping": 0.2,
+          "height": 0.15,
+          "suspension_min": -0.17
+        },
+        {
+          "wheel_type": "middle",
+          "strength": 0.07,
+          "damping": 0.6,
+          "height": 0.09,
+          "suspension_min": -0.17
+        }
+      ]
+    },
+    "s_derry_special_15c177": {
+      "id": "s_derry_special_15c177",
+      "pak_path": "[media]/_dlc/dlc_9/classes/suspensions/s_derry_special_15c177.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.09,
+          "damping": 0.5,
+          "height": 0.045,
+          "suspension_min": -0.17
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.065,
+          "damping": 0.35,
+          "height": 0.02,
+          "suspension_min": -0.15
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.09,
+          "damping": 0.45,
+          "height": 0.055,
+          "suspension_min": -0.17
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.065,
+          "damping": 0.3,
+          "height": 0.03,
+          "suspension_min": -0.15
+        }
+      ]
+    },
+    "s_zikz_566a": {
+      "id": "s_zikz_566a",
+      "pak_path": "[media]/_dlc/dlc_9/classes/suspensions/s_zikz_566a.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.8,
+          "height": 0.2,
+          "suspension_min": -0.21
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.6,
+          "height": 0.12,
+          "suspension_min": -0.14
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.8,
+          "height": 0.26,
+          "suspension_min": -0.27
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.6,
+          "height": 0.24,
+          "suspension_min": -0.21
+        }
+      ]
+    },
+    "s_zikz_612h_mastodont": {
+      "id": "s_zikz_612h_mastodont",
+      "pak_path": "[media]/_dlc/dlc_9/classes/suspensions/s_zikz_612h_mastodont.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.065,
+          "damping": 0.5,
+          "height": 0.065,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front2",
+          "strength": 0.07,
+          "damping": 0.55,
+          "height": 0.07,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.1,
+          "damping": 0.75,
+          "height": 0.03,
+          "suspension_min": -0.2
+        },
+        {
+          "wheel_type": "rear2",
+          "strength": 0.12,
+          "damping": 0.85,
+          "height": 0.03,
+          "suspension_min": -0.2
+        }
+      ]
+    },
+    "s_ank_mk38": {
+      "id": "s_ank_mk38",
+      "pak_path": "[media]/classes/suspensions/s_ank_mk38.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.3,
+          "height": 0.15,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": 0.3,
+          "height": 0.08,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.3,
+          "height": 0.25,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": 0.3,
+          "height": 0.18,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.3,
+          "height": 0.35,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": 0.3,
+          "height": 0.28,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.04,
+          "damping": 0.2,
+          "height": 0.25,
+          "suspension_min": -0.2
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.025,
+          "damping": 0.2,
+          "height": 0.18,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_azov_4220_antarctic": {
+      "id": "s_azov_4220_antarctic",
+      "pak_path": "[media]/classes/suspensions/s_azov_4220_antarctic.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": null,
+          "height": 0.1,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.6,
+          "damping": null,
+          "height": 0.1,
+          "suspension_min": -0.1
+        }
+      ]
+    },
+    "s_azov_5319": {
+      "id": "s_azov_5319",
+      "pak_path": "[media]/classes/suspensions/s_azov_5319.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.07,
+          "damping": 0.4,
+          "height": 0.079,
+          "suspension_min": -0.19
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.4,
+          "height": 0.018,
+          "suspension_min": -0.19
+        }
+      ]
+    },
+    "s_azov_64131": {
+      "id": "s_azov_64131",
+      "pak_path": "[media]/classes/suspensions/s_azov_64131.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.06,
+          "damping": 0.4,
+          "height": 0.07,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.4,
+          "height": 0.058,
+          "suspension_min": -0.25
+        }
+      ]
+    },
+    "s_azov_73210": {
+      "id": "s_azov_73210",
+      "pak_path": "[media]/classes/suspensions/s_azov_73210.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.03,
+          "damping": 0.4,
+          "height": 0.16,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.04,
+          "damping": 0.4,
+          "height": 0.14,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.03,
+          "damping": 0.4,
+          "height": 0.2,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.04,
+          "damping": 0.4,
+          "height": 0.18,
+          "suspension_min": -0.25
+        }
+      ]
+    },
+    "s_cat_745c": {
+      "id": "s_cat_745c",
+      "pak_path": "[media]/classes/suspensions/s_cat_745c.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.1,
+          "damping": 0.1,
+          "height": 0.05,
+          "suspension_min": -0.2
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.7,
+          "damping": 0.4,
+          "height": 0.05,
+          "suspension_min": -0.1
+        }
+      ]
+    },
+    "s_cat_ct680": {
+      "id": "s_cat_ct680",
+      "pak_path": "[media]/classes/suspensions/s_cat_ct680.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.06,
+          "damping": 0.5,
+          "height": 0.2,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.07,
+          "damping": 0.5,
+          "height": 0.0,
+          "suspension_min": 0.0
+        }
+      ]
+    },
+    "s_chevrolet_ck1500": {
+      "id": "s_chevrolet_ck1500",
+      "pak_path": "[media]/classes/suspensions/s_chevrolet_ck1500.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.035,
+          "damping": 0.2,
+          "height": 0.065,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.025,
+          "damping": 0.35,
+          "height": 0.12,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.045,
+          "damping": 0.4,
+          "height": 0.25,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.05,
+          "damping": 0.45,
+          "height": 0.28,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.015,
+          "damping": 0.55,
+          "height": 0.35,
+          "suspension_min": -0.45
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.02,
+          "damping": 0.6,
+          "height": 0.33,
+          "suspension_min": -0.42
+        }
+      ]
+    },
+    "s_chevrolet_kodiakC70": {
+      "id": "s_chevrolet_kodiakC70",
+      "pak_path": "[media]/classes/suspensions/s_chevrolet_kodiakC70.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.2,
+          "height": 0.15,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.2,
+          "height": 0.15,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.3,
+          "height": 0.25,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.3,
+          "height": 0.25,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_dan_96320": {
+      "id": "s_dan_96320",
+      "pak_path": "[media]/classes/suspensions/s_dan_96320.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.08,
+          "damping": null,
+          "height": 0.2,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.04,
+          "damping": null,
+          "height": 0.1,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.08,
+          "damping": null,
+          "height": 0.2,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.04,
+          "damping": null,
+          "height": 0.1,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_derry_longhorn_3194": {
+      "id": "s_derry_longhorn_3194",
+      "pak_path": "[media]/classes/suspensions/s_derry_longhorn_3194.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.06,
+          "damping": 0.2,
+          "height": 0.13,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.015,
+          "damping": 0.2,
+          "height": 0.17,
+          "suspension_min": -0.4
+        },
+        {
+          "wheel_type": "middle",
+          "strength": 0.1,
+          "damping": 0.2,
+          "height": -0.35,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_derry_longhorn_4520": {
+      "id": "s_derry_longhorn_4520",
+      "pak_path": "[media]/classes/suspensions/s_derry_longhorn_4520.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.06,
+          "damping": 0.2,
+          "height": 0.15,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.05,
+          "damping": 0.2,
+          "height": 0.07,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_don_71": {
+      "id": "s_don_71",
+      "pak_path": "[media]/classes/suspensions/s_don_71.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.025,
+          "damping": null,
+          "height": 0.1,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.025,
+          "damping": null,
+          "height": 0.1,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.025,
+          "damping": null,
+          "height": 0.15,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.025,
+          "damping": null,
+          "height": 0.15,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.025,
+          "damping": null,
+          "height": 0.25,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.025,
+          "damping": null,
+          "height": 0.25,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_fleetstar_f2070a": {
+      "id": "s_fleetstar_f2070a",
+      "pak_path": "[media]/classes/suspensions/s_fleetstar_f2070a.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": null,
+          "height": 0.05,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": null,
+          "height": 0.1,
+          "suspension_min": -0.2
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": null,
+          "height": 0.18,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": null,
+          "height": 0.23,
+          "suspension_min": -0.25
+        }
+      ]
+    },
+    "s_ford_clt9000": {
+      "id": "s_ford_clt9000",
+      "pak_path": "[media]/classes/suspensions/s_ford_clt9000.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.3,
+          "height": 0.25,
+          "suspension_min": -0.2
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.05,
+          "damping": 0.3,
+          "height": 0.2,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.04,
+          "damping": 0.3,
+          "height": 0.4,
+          "suspension_min": -0.45
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.04,
+          "damping": 0.3,
+          "height": 0.3,
+          "suspension_min": -0.35
+        }
+      ]
+    },
+    "s_freightliner_114sd": {
+      "id": "s_freightliner_114sd",
+      "pak_path": "[media]/classes/suspensions/s_freightliner_114sd.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.06,
+          "damping": 0.2,
+          "height": 0.15,
+          "suspension_min": -0.4
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.035,
+          "damping": 0.2,
+          "height": 0.15,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.06,
+          "damping": 0.2,
+          "height": 0.25,
+          "suspension_min": -0.4
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.035,
+          "damping": 0.2,
+          "height": 0.25,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_freightliner_m916a1": {
+      "id": "s_freightliner_m916a1",
+      "pak_path": "[media]/classes/suspensions/s_freightliner_m916a1.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.1,
+          "damping": 0.2,
+          "height": 0.1,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.1,
+          "damping": 0.2,
+          "height": 0.02,
+          "suspension_min": -0.15
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.1,
+          "damping": 0.2,
+          "height": 0.2,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.1,
+          "damping": 0.2,
+          "height": 0.12,
+          "suspension_min": -0.15
+        }
+      ]
+    },
+    "s_gmc9500": {
+      "id": "s_gmc9500",
+      "pak_path": "[media]/classes/suspensions/s_gmc9500.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.04,
+          "damping": 0.3,
+          "height": 0.2,
+          "suspension_min": -0.4
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.04,
+          "damping": 0.3,
+          "height": 0.15,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.08,
+          "damping": 0.3,
+          "height": 0.3,
+          "suspension_min": -0.45
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.3,
+          "height": 0.25,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_hummer_h2": {
+      "id": "s_hummer_h2",
+      "pak_path": "[media]/classes/suspensions/s_hummer_h2.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.06,
+          "damping": 0.2,
+          "height": 0.08,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.07,
+          "damping": 0.2,
+          "height": 0.08,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.2,
+          "height": 0.18,
+          "suspension_min": -0.4
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.05,
+          "damping": 0.2,
+          "height": 0.2,
+          "suspension_min": -0.4
+        }
+      ]
+    },
+    "s_international_loadstar_1700": {
+      "id": "s_international_loadstar_1700",
+      "pak_path": "[media]/classes/suspensions/s_international_loadstar_1700.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.042,
+          "damping": 0.1,
+          "height": 0.2,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.06,
+          "damping": 0.15,
+          "height": 0.03,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.035,
+          "damping": 0.2,
+          "height": 0.35,
+          "suspension_min": -0.45
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.045,
+          "damping": 0.2,
+          "height": 0.18,
+          "suspension_min": -0.4
+        }
+      ]
+    },
+    "s_international_paystar_5070": {
+      "id": "s_international_paystar_5070",
+      "pak_path": "[media]/classes/suspensions/s_international_paystar_5070.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.04,
+          "damping": 0.2,
+          "height": 0.3,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.04,
+          "damping": 0.2,
+          "height": 0.15,
+          "suspension_min": -0.1
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.04,
+          "damping": 0.2,
+          "height": 0.4,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.04,
+          "damping": 0.2,
+          "height": 0.25,
+          "suspension_min": -0.25
+        }
+      ]
+    },
+    "s_international_scout_800": {
+      "id": "s_international_scout_800",
+      "pak_path": "[media]/classes/suspensions/s_international_scout_800.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.03,
+          "damping": 0.52,
+          "height": 0.36,
+          "suspension_min": -0.36
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.028,
+          "damping": 0.38,
+          "height": 0.38,
+          "suspension_min": -0.38
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.056,
+          "damping": 0.78,
+          "height": 0.41,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.048,
+          "damping": 0.7,
+          "height": 0.44,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.022,
+          "damping": 0.58,
+          "height": 0.43,
+          "suspension_min": -0.45
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.02,
+          "damping": 0.5,
+          "height": 0.48,
+          "suspension_min": -0.48
+        }
+      ]
+    },
+    "s_international_transtar_4070a": {
+      "id": "s_international_transtar_4070a",
+      "pak_path": "[media]/classes/suspensions/s_international_transtar_4070a.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.07,
+          "damping": null,
+          "height": 0.23,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.04,
+          "damping": null,
+          "height": 0.23,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.06,
+          "damping": null,
+          "height": 0.33,
+          "suspension_min": -0.27
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": null,
+          "height": 0.3,
+          "suspension_min": -0.27
+        }
+      ]
+    },
+    "s_khan_39_marshall": {
+      "id": "s_khan_39_marshall",
+      "pak_path": "[media]/classes/suspensions/s_khan_39_marshall.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.016,
+          "damping": 0.23,
+          "height": 0.22,
+          "suspension_min": -0.36
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.014,
+          "damping": 0.22,
+          "height": 0.2,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.012,
+          "damping": 0.24,
+          "height": 0.3,
+          "suspension_min": -0.48
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.01,
+          "damping": 0.26,
+          "height": 0.3,
+          "suspension_min": -0.46
+        }
+      ]
+    },
+    "s_khan_lo4f": {
+      "id": "s_khan_lo4f",
+      "pak_path": "[media]/classes/suspensions/s_khan_lo4f.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.03,
+          "damping": 0.47,
+          "height": 0.09,
+          "suspension_min": -0.2
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.033,
+          "damping": 0.35,
+          "height": 0.1,
+          "suspension_min": -0.2
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.032,
+          "damping": 0.52,
+          "height": 0.28,
+          "suspension_min": -0.26
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.035,
+          "damping": 0.48,
+          "height": 0.32,
+          "suspension_min": -0.265
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.013,
+          "damping": 0.58,
+          "height": 0.41,
+          "suspension_min": -0.36
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.015,
+          "damping": 0.54,
+          "height": 0.425,
+          "suspension_min": -0.35
+        }
+      ]
+    },
+    "s_kolob_74760": {
+      "id": "s_kolob_74760",
+      "pak_path": "[media]/classes/suspensions/s_kolob_74760.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.08,
+          "height": 0.0,
+          "suspension_min": -0.15
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": 0.2,
+          "height": 0.0,
+          "suspension_min": -0.15
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.08,
+          "height": 0.0,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": 0.2,
+          "height": 0.0,
+          "suspension_min": -0.25
+        }
+      ]
+    },
+    "s_kolob_74941": {
+      "id": "s_kolob_74941",
+      "pak_path": "[media]/classes/suspensions/s_kolob_74941.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.025,
+          "damping": null,
+          "height": 0.15,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.022,
+          "damping": null,
+          "height": 0.15,
+          "suspension_min": -0.15
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.025,
+          "damping": null,
+          "height": 0.15,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.022,
+          "damping": null,
+          "height": 0.15,
+          "suspension_min": -0.25
+        }
+      ]
+    },
+    "s_navistar_5000mv": {
+      "id": "s_navistar_5000mv",
+      "pak_path": "[media]/classes/suspensions/s_navistar_5000mv.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.08,
+          "damping": 0.27,
+          "height": 0.2,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": 0.2,
+          "height": 0.15,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.07,
+          "damping": 0.15,
+          "height": 0.3,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": 0.15,
+          "height": 0.25,
+          "suspension_min": -0.25
+        }
+      ]
+    },
+    "s_pacific_p12w": {
+      "id": "s_pacific_p12w",
+      "pak_path": "[media]/classes/suspensions/s_pacific_p12w.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.042,
+          "damping": 0.41,
+          "height": 0.15,
+          "suspension_min": -0.55
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.055,
+          "damping": 0.344,
+          "height": 0.05,
+          "suspension_min": -0.4
+        }
+      ]
+    },
+    "s_pacific_p16": {
+      "id": "s_pacific_p16",
+      "pak_path": "[media]/classes/suspensions/s_pacific_p16.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.075,
+          "damping": 0.38,
+          "height": 0.24,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.062,
+          "damping": 0.235,
+          "height": 0.085,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_royal_bm17": {
+      "id": "s_royal_bm17",
+      "pak_path": "[media]/classes/suspensions/s_royal_bm17.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.1,
+          "damping": 0.2,
+          "height": 0.09,
+          "suspension_min": -0.22
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.07,
+          "damping": 0.2,
+          "height": 0.03,
+          "suspension_min": -0.15
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.1,
+          "damping": 0.2,
+          "height": 0.17,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.08,
+          "damping": 0.2,
+          "height": 0.15,
+          "suspension_min": -0.23
+        }
+      ]
+    },
+    "s_step_310e": {
+      "id": "s_step_310e",
+      "pak_path": "[media]/classes/suspensions/s_step_310e.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.2,
+          "height": 0.1,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.04,
+          "damping": 0.2,
+          "height": 0.06,
+          "suspension_min": -0.28
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.2,
+          "height": 0.15,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.04,
+          "damping": 0.2,
+          "height": 0.11,
+          "suspension_min": -0.28
+        }
+      ]
+    },
+    "s_tayga_6436": {
+      "id": "s_tayga_6436",
+      "pak_path": "[media]/classes/suspensions/s_tayga_6436.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.04,
+          "damping": 0.2,
+          "height": 0.11,
+          "suspension_min": -0.4
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.025,
+          "damping": 0.2,
+          "height": 0.07,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.04,
+          "damping": 0.2,
+          "height": 0.2,
+          "suspension_min": -0.4
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.025,
+          "damping": 0.2,
+          "height": 0.2,
+          "suspension_min": -0.3
+        }
+      ]
+    },
+    "s_tuz_166": {
+      "id": "s_tuz_166",
+      "pak_path": "[media]/classes/suspensions/s_tuz_166.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.03,
+          "damping": 0.2,
+          "height": 0.1,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": 0.2,
+          "height": 0.1,
+          "suspension_min": -0.22
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.03,
+          "damping": 0.2,
+          "height": 0.15,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": 0.2,
+          "height": 0.15,
+          "suspension_min": -0.22
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.02,
+          "damping": null,
+          "height": 0.3,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.02,
+          "damping": null,
+          "height": 0.25,
+          "suspension_min": -0.22
+        }
+      ]
+    },
+    "s_tuz_420_tatarin": {
+      "id": "s_tuz_420_tatarin",
+      "pak_path": "[media]/classes/suspensions/s_tuz_420_tatarin.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.2,
+          "height": 0.15,
+          "suspension_min": -0.2
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.05,
+          "damping": 0.2,
+          "height": 0.15,
+          "suspension_min": -0.2
+        }
+      ]
+    },
+    "s_voron_ae4380": {
+      "id": "s_voron_ae4380",
+      "pak_path": "[media]/classes/suspensions/s_voron_ae4380.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.3,
+          "height": 0.1,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.05,
+          "damping": 0.3,
+          "height": 0.05,
+          "suspension_min": -0.15
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.3,
+          "height": 0.2,
+          "suspension_min": -0.45
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.05,
+          "damping": 0.3,
+          "height": 0.15,
+          "suspension_min": -0.25
+        }
+      ]
+    },
+    "s_voron_d53233": {
+      "id": "s_voron_d53233",
+      "pak_path": "[media]/classes/suspensions/s_voron_d53233.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.2,
+          "height": 0.15,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": 0.2,
+          "height": 0.05,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.2,
+          "height": 0.25,
+          "suspension_min": -0.45
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.03,
+          "damping": 0.2,
+          "height": 0.15,
+          "suspension_min": -0.2
+        }
+      ]
+    },
+    "s_voron_grad": {
+      "id": "s_voron_grad",
+      "pak_path": "[media]/classes/suspensions/s_voron_grad.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.3,
+          "height": 0.1,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.05,
+          "damping": 0.3,
+          "height": 0.1,
+          "suspension_min": -0.15
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.3,
+          "height": 0.2,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.05,
+          "damping": 0.3,
+          "height": 0.2,
+          "suspension_min": -0.25
+        }
+      ]
+    },
+    "s_white_ws4964": {
+      "id": "s_white_ws4964",
+      "pak_path": "[media]/classes/suspensions/s_white_ws4964.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.04,
+          "damping": 0.2,
+          "height": 0.15,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.04,
+          "damping": 0.2,
+          "height": 0.1,
+          "suspension_min": -0.18
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.04,
+          "damping": 0.2,
+          "height": 0.3,
+          "suspension_min": -0.35
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.04,
+          "damping": 0.2,
+          "height": 0.25,
+          "suspension_min": -0.33
+        }
+      ]
+    },
+    "s_ws_6900xd_twin": {
+      "id": "s_ws_6900xd_twin",
+      "pak_path": "[media]/classes/suspensions/s_ws_6900xd_twin.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.025,
+          "damping": 0.2,
+          "height": 0.1,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.025,
+          "damping": 0.2,
+          "height": 0.15,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.04,
+          "damping": 0.2,
+          "height": 0.25,
+          "suspension_min": -0.4
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.022,
+          "damping": 0.2,
+          "height": 0.3,
+          "suspension_min": -0.45
+        }
+      ]
+    },
+    "s_yar_87": {
+      "id": "s_yar_87",
+      "pak_path": "[media]/classes/suspensions/s_yar_87.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.02,
+          "damping": null,
+          "height": 0.35,
+          "suspension_min": -0.4
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.02,
+          "damping": null,
+          "height": 0.2,
+          "suspension_min": -0.35
+        }
+      ]
+    },
+    "s_zikz_5368": {
+      "id": "s_zikz_5368",
+      "pak_path": "[media]/classes/suspensions/s_zikz_5368.xml",
+      "suspensions": [
+        {
+          "wheel_type": "front",
+          "strength": 0.1,
+          "damping": 0.2,
+          "height": 0.1,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.12,
+          "damping": 0.2,
+          "height": 0.06,
+          "suspension_min": -0.25
+        },
+        {
+          "wheel_type": "front",
+          "strength": 0.05,
+          "damping": 0.4,
+          "height": 0.3,
+          "suspension_min": -0.3
+        },
+        {
+          "wheel_type": "rear",
+          "strength": 0.04,
+          "damping": 0.4,
+          "height": 0.26,
+          "suspension_min": -0.28
+        }
+      ]
+    }
+  }
+}

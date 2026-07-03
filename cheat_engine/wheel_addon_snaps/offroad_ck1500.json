@@ -1,0 +1,10 @@
+{
+  "speed_kmh": 0.01,
+  "veh": "0x10b041ba040",
+  "vehicle_id": "s_chevrolet_ck1500",
+  "wheel_count": 4,
+  "tire_kind": "unknown",
+  "tire_mixed": false,
+  "tire_game_ids": [],
+  "tire_hits": []
+}

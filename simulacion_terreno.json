@@ -1,0 +1,635 @@
+{
+  "game_factors": {
+    "asphalt": {
+      "extrudable": false,
+      "uses_substance_friction": false,
+      "map_layers": "Superficie rigida",
+      "patchable_per_truck": false
+    },
+    "dirt": {
+      "extrudable": true,
+      "uses_substance_friction": false,
+      "map_layers": "Viscosidad base + tint + humedad",
+      "patchable_per_truck": false
+    },
+    "gravel": {
+      "extrudable": true,
+      "uses_substance_friction": false,
+      "map_layers": "BodyFriction neumatico",
+      "patchable_per_truck": false
+    },
+    "mud": {
+      "extrudable": true,
+      "uses_substance_friction": true,
+      "map_layers": "SubstanceFriction + deformacion",
+      "patchable_per_truck": false
+    },
+    "deep_mud": {
+      "extrudable": true,
+      "uses_substance_friction": true,
+      "map_layers": "Substance + extrusion + humedad",
+      "patchable_per_truck": false
+    },
+    "snow": {
+      "extrudable": true,
+      "uses_substance_friction": true,
+      "map_layers": "Profundidad nieve + substance",
+      "patchable_per_truck": false
+    },
+    "ice": {
+      "extrudable": false,
+      "uses_substance_friction": false,
+      "map_layers": "Friccion baja; cadenas ignoran hielo",
+      "patchable_per_truck": false
+    },
+    "water": {
+      "extrudable": true,
+      "uses_substance_friction": true,
+      "map_layers": "Profundidad + flujo + snorkel",
+      "patchable_per_truck": false
+    }
+  },
+  "real_bands": {
+    "Asfalto": {
+      "stock": [
+        70,
+        110
+      ],
+      "equipped": [
+        70,
+        110
+      ],
+      "note": "Carretera / firme"
+    },
+    "Tierra": {
+      "stock": [
+        35,
+        65
+      ],
+      "equipped": [
+        45,
+        75
+      ],
+      "note": "Camino rural compactado"
+    },
+    "Grava": {
+      "stock": [
+        25,
+        55
+      ],
+      "equipped": [
+        35,
+        65
+      ],
+      "note": "Ripio / shoulder"
+    },
+    "Barro": {
+      "stock": [
+        5,
+        15
+      ],
+      "equipped": [
+        15,
+        40
+      ],
+      "note": "Barro ligero-medio; stock bias-ply"
+    },
+    "Barro profundo": {
+      "stock": [
+        0,
+        5
+      ],
+      "equipped": [
+        5,
+        20
+      ],
+      "note": "Atasco probable sin preparacion"
+    },
+    "Nieve": {
+      "stock": [
+        10,
+        30
+      ],
+      "equipped": [
+        25,
+        50
+      ],
+      "note": "Nieve suelta; M&S o cadenas"
+    },
+    "Hielo": {
+      "stock": [
+        5,
+        15
+      ],
+      "equipped": [
+        20,
+        40
+      ],
+      "note": "Cadenas o neumatico M&S"
+    },
+    "Agua poco prof.": {
+      "stock": [
+        5,
+        20
+      ],
+      "equipped": [
+        10,
+        25
+      ],
+      "note": "Vado; sin snorkel limitado"
+    },
+    "Agua profunda": {
+      "stock": [
+        0,
+        5
+      ],
+      "equipped": [
+        0,
+        10
+      ],
+      "note": "Inundacion; snorkel o vado corto"
+    }
+  },
+  "surfaces": [
+    "Asfalto",
+    "Tierra",
+    "Grava",
+    "Barro",
+    "Barro profundo",
+    "Nieve",
+    "Hielo",
+    "Agua poco prof.",
+    "Agua profunda"
+  ],
+  "audit": [
+    {
+      "surface": "Asfalto",
+      "kind": "asphalt",
+      "tire": "highway",
+      "diff_lock": false,
+      "v30_kmh": 149.9,
+      "v45_kmh": 167.9,
+      "start_mu": 2.0,
+      "realism": "ok",
+      "real_band": "firme (>70 esperado)",
+      "game_factors": "Superficie rigida"
+    },
+    {
+      "surface": "Asfalto",
+      "kind": "asphalt",
+      "tire": "offroad",
+      "diff_lock": true,
+      "v30_kmh": 149.9,
+      "v45_kmh": 167.9,
+      "start_mu": 1.0,
+      "realism": "ok",
+      "real_band": "firme (>70 esperado)",
+      "game_factors": "Superficie rigida"
+    },
+    {
+      "surface": "Asfalto",
+      "kind": "asphalt",
+      "tire": "mudtires",
+      "diff_lock": true,
+      "v30_kmh": 149.9,
+      "v45_kmh": 167.9,
+      "start_mu": 0.5,
+      "realism": "ok",
+      "real_band": "firme (>70 esperado)",
+      "game_factors": "Superficie rigida"
+    },
+    {
+      "surface": "Tierra",
+      "kind": "dirt",
+      "tire": "highway",
+      "diff_lock": false,
+      "v30_kmh": 149.9,
+      "v45_kmh": 167.9,
+      "start_mu": 0.8,
+      "realism": "ok",
+      "real_band": "firme (>35 esperado)",
+      "game_factors": "Viscosidad base + tint + humedad"
+    },
+    {
+      "surface": "Tierra",
+      "kind": "dirt",
+      "tire": "offroad",
+      "diff_lock": true,
+      "v30_kmh": 149.9,
+      "v45_kmh": 167.9,
+      "start_mu": 2.0,
+      "realism": "ok",
+      "real_band": "firme (>45 esperado)",
+      "game_factors": "Viscosidad base + tint + humedad"
+    },
+    {
+      "surface": "Tierra",
+      "kind": "dirt",
+      "tire": "mudtires",
+      "diff_lock": true,
+      "v30_kmh": 149.9,
+      "v45_kmh": 167.9,
+      "start_mu": 3.0,
+      "realism": "ok",
+      "real_band": "firme (>45 esperado)",
+      "game_factors": "Viscosidad base + tint + humedad"
+    },
+    {
+      "surface": "Grava",
+      "kind": "gravel",
+      "tire": "highway",
+      "diff_lock": false,
+      "v30_kmh": 149.9,
+      "v45_kmh": 167.9,
+      "start_mu": 0.68,
+      "realism": "ok",
+      "real_band": "firme (>25 esperado)",
+      "game_factors": "BodyFriction neumatico"
+    },
+    {
+      "surface": "Grava",
+      "kind": "gravel",
+      "tire": "offroad",
+      "diff_lock": true,
+      "v30_kmh": 149.9,
+      "v45_kmh": 167.9,
+      "start_mu": 1.7,
+      "realism": "ok",
+      "real_band": "firme (>35 esperado)",
+      "game_factors": "BodyFriction neumatico"
+    },
+    {
+      "surface": "Grava",
+      "kind": "gravel",
+      "tire": "mudtires",
+      "diff_lock": true,
+      "v30_kmh": 149.9,
+      "v45_kmh": 167.9,
+      "start_mu": 2.55,
+      "realism": "ok",
+      "real_band": "firme (>35 esperado)",
+      "game_factors": "BodyFriction neumatico"
+    },
+    {
+      "surface": "Barro",
+      "kind": "mud",
+      "tire": "highway",
+      "diff_lock": false,
+      "v30_kmh": 0.0,
+      "v45_kmh": 0.0,
+      "start_mu": 0.378,
+      "realism": "game_harder",
+      "real_band": "5–15 km/h",
+      "game_factors": "SubstanceFriction + deformacion"
+    },
+    {
+      "surface": "Barro",
+      "kind": "mud",
+      "tire": "offroad",
+      "diff_lock": true,
+      "v30_kmh": 39.9,
+      "v45_kmh": 15.5,
+      "start_mu": 0.906,
+      "realism": "ok",
+      "real_band": "15–40 km/h",
+      "game_factors": "SubstanceFriction + deformacion"
+    },
+    {
+      "surface": "Barro",
+      "kind": "mud",
+      "tire": "mudtires",
+      "diff_lock": true,
+      "v30_kmh": 62.4,
+      "v45_kmh": 37.6,
+      "start_mu": 1.208,
+      "realism": "game_softer",
+      "real_band": "15–40 km/h",
+      "game_factors": "SubstanceFriction + deformacion"
+    },
+    {
+      "surface": "Barro profundo",
+      "kind": "deep_mud",
+      "tire": "highway",
+      "diff_lock": false,
+      "v30_kmh": 0.0,
+      "v45_kmh": 0.0,
+      "start_mu": 0.187,
+      "realism": "ok",
+      "real_band": "0–5 km/h",
+      "game_factors": "Substance + extrusion + humedad"
+    },
+    {
+      "surface": "Barro profundo",
+      "kind": "deep_mud",
+      "tire": "offroad",
+      "diff_lock": true,
+      "v30_kmh": 0.0,
+      "v45_kmh": 0.0,
+      "start_mu": 0.449,
+      "realism": "game_harder",
+      "real_band": "5–20 km/h",
+      "game_factors": "Substance + extrusion + humedad"
+    },
+    {
+      "surface": "Barro profundo",
+      "kind": "deep_mud",
+      "tire": "mudtires",
+      "diff_lock": true,
+      "v30_kmh": 15.0,
+      "v45_kmh": 0.0,
+      "start_mu": 0.599,
+      "realism": "ok",
+      "real_band": "5–20 km/h",
+      "game_factors": "Substance + extrusion + humedad"
+    },
+    {
+      "surface": "Nieve",
+      "kind": "snow",
+      "tire": "highway",
+      "diff_lock": false,
+      "v30_kmh": 112.4,
+      "v45_kmh": 129.4,
+      "start_mu": 0.5,
+      "realism": "game_softer",
+      "real_band": "10–30 km/h",
+      "game_factors": "Profundidad nieve + substance"
+    },
+    {
+      "surface": "Nieve",
+      "kind": "snow",
+      "tire": "offroad",
+      "diff_lock": true,
+      "v30_kmh": 149.9,
+      "v45_kmh": 168.0,
+      "start_mu": 1.2,
+      "realism": "game_softer",
+      "real_band": "25–50 km/h",
+      "game_factors": "Profundidad nieve + substance"
+    },
+    {
+      "surface": "Nieve",
+      "kind": "snow",
+      "tire": "mudtires",
+      "diff_lock": true,
+      "v30_kmh": 149.9,
+      "v45_kmh": 168.0,
+      "start_mu": 1.6,
+      "realism": "game_softer",
+      "real_band": "25–50 km/h",
+      "game_factors": "Profundidad nieve + substance"
+    },
+    {
+      "surface": "Hielo",
+      "kind": "ice",
+      "tire": "highway",
+      "diff_lock": false,
+      "v30_kmh": 2.3,
+      "v45_kmh": 0.4,
+      "start_mu": 0.08,
+      "realism": "game_harder",
+      "real_band": "5–15 km/h",
+      "game_factors": "Friccion baja; cadenas ignoran hielo"
+    },
+    {
+      "surface": "Hielo",
+      "kind": "ice",
+      "tire": "chains",
+      "diff_lock": false,
+      "v30_kmh": 24.5,
+      "v45_kmh": 22.4,
+      "start_mu": 0.85,
+      "realism": "ok",
+      "real_band": "20–40 km/h",
+      "game_factors": "Friccion baja; cadenas ignoran hielo"
+    },
+    {
+      "surface": "Agua poco prof.",
+      "kind": "water",
+      "tire": "highway",
+      "diff_lock": false,
+      "v30_kmh": 0.0,
+      "v45_kmh": 0.0,
+      "start_mu": 0.219,
+      "realism": "game_harder",
+      "real_band": "5–20 km/h",
+      "game_factors": "Profundidad + flujo + snorkel"
+    },
+    {
+      "surface": "Agua poco prof.",
+      "kind": "water",
+      "tire": "offroad",
+      "diff_lock": true,
+      "v30_kmh": 22.4,
+      "v45_kmh": 1.2,
+      "start_mu": 0.525,
+      "realism": "ok",
+      "real_band": "10–25 km/h",
+      "game_factors": "Profundidad + flujo + snorkel"
+    },
+    {
+      "surface": "Agua poco prof.",
+      "kind": "water",
+      "tire": "mudtires",
+      "diff_lock": true,
+      "v30_kmh": 37.6,
+      "v45_kmh": 12.3,
+      "start_mu": 0.701,
+      "realism": "game_softer",
+      "real_band": "10–25 km/h",
+      "game_factors": "Profundidad + flujo + snorkel"
+    },
+    {
+      "surface": "Agua profunda",
+      "kind": "water",
+      "tire": "highway",
+      "diff_lock": false,
+      "v30_kmh": 0.0,
+      "v45_kmh": 0.0,
+      "start_mu": 0.024,
+      "realism": "ok",
+      "real_band": "0–5 km/h",
+      "game_factors": "Profundidad + flujo + snorkel"
+    },
+    {
+      "surface": "Agua profunda",
+      "kind": "water",
+      "tire": "offroad",
+      "diff_lock": true,
+      "v30_kmh": 0.0,
+      "v45_kmh": 0.0,
+      "start_mu": 0.057,
+      "realism": "ok",
+      "real_band": "0–10 km/h",
+      "game_factors": "Profundidad + flujo + snorkel"
+    },
+    {
+      "surface": "Agua profunda",
+      "kind": "water",
+      "tire": "mudtires",
+      "diff_lock": true,
+      "v30_kmh": 0.0,
+      "v45_kmh": 0.0,
+      "start_mu": 0.076,
+      "realism": "ok",
+      "real_band": "0–10 km/h",
+      "game_factors": "Profundidad + flujo + snorkel"
+    }
+  ],
+  "summary": {
+    "by_verdict": {
+      "ok": 17,
+      "game_harder": 4,
+      "game_softer": 5
+    },
+    "gaps": [
+      {
+        "surface": "Barro",
+        "tire": "highway",
+        "diff_lock": false,
+        "v30_kmh": 0.0,
+        "realism": "game_harder",
+        "real_band": "5–15 km/h"
+      },
+      {
+        "surface": "Barro",
+        "tire": "mudtires",
+        "diff_lock": true,
+        "v30_kmh": 62.4,
+        "realism": "game_softer",
+        "real_band": "15–40 km/h"
+      },
+      {
+        "surface": "Barro profundo",
+        "tire": "offroad",
+        "diff_lock": true,
+        "v30_kmh": 0.0,
+        "realism": "game_harder",
+        "real_band": "5–20 km/h"
+      },
+      {
+        "surface": "Nieve",
+        "tire": "highway",
+        "diff_lock": false,
+        "v30_kmh": 112.4,
+        "realism": "game_softer",
+        "real_band": "10–30 km/h"
+      },
+      {
+        "surface": "Nieve",
+        "tire": "offroad",
+        "diff_lock": true,
+        "v30_kmh": 149.9,
+        "realism": "game_softer",
+        "real_band": "25–50 km/h"
+      },
+      {
+        "surface": "Nieve",
+        "tire": "mudtires",
+        "diff_lock": true,
+        "v30_kmh": 149.9,
+        "realism": "game_softer",
+        "real_band": "25–50 km/h"
+      },
+      {
+        "surface": "Hielo",
+        "tire": "highway",
+        "diff_lock": false,
+        "v30_kmh": 2.3,
+        "realism": "game_harder",
+        "real_band": "5–15 km/h"
+      },
+      {
+        "surface": "Agua poco prof.",
+        "tire": "highway",
+        "diff_lock": false,
+        "v30_kmh": 0.0,
+        "realism": "game_harder",
+        "real_band": "5–20 km/h"
+      },
+      {
+        "surface": "Agua poco prof.",
+        "tire": "mudtires",
+        "diff_lock": true,
+        "v30_kmh": 37.6,
+        "realism": "game_softer",
+        "real_band": "10–25 km/h"
+      }
+    ],
+    "highlights": [
+      {
+        "surface": "Asfalto",
+        "tire": "highway",
+        "diff_lock": false,
+        "v30_kmh": 149.9,
+        "realism": "ok",
+        "real_band": "firme (>70 esperado)"
+      },
+      {
+        "surface": "Asfalto",
+        "tire": "offroad",
+        "diff_lock": true,
+        "v30_kmh": 149.9,
+        "realism": "ok",
+        "real_band": "firme (>70 esperado)"
+      },
+      {
+        "surface": "Tierra",
+        "tire": "highway",
+        "diff_lock": false,
+        "v30_kmh": 149.9,
+        "realism": "ok",
+        "real_band": "firme (>35 esperado)"
+      },
+      {
+        "surface": "Tierra",
+        "tire": "offroad",
+        "diff_lock": true,
+        "v30_kmh": 149.9,
+        "realism": "ok",
+        "real_band": "firme (>45 esperado)"
+      },
+      {
+        "surface": "Barro",
+        "tire": "highway",
+        "diff_lock": false,
+        "v30_kmh": 0.0,
+        "realism": "game_harder",
+        "real_band": "5–15 km/h"
+      },
+      {
+        "surface": "Barro",
+        "tire": "offroad",
+        "diff_lock": true,
+        "v30_kmh": 39.9,
+        "realism": "ok",
+        "real_band": "15–40 km/h"
+      },
+      {
+        "surface": "Nieve",
+        "tire": "highway",
+        "diff_lock": false,
+        "v30_kmh": 112.4,
+        "realism": "game_softer",
+        "real_band": "10–30 km/h"
+      },
+      {
+        "surface": "Nieve",
+        "tire": "offroad",
+        "diff_lock": true,
+        "v30_kmh": 149.9,
+        "realism": "game_softer",
+        "real_band": "25–50 km/h"
+      },
+      {
+        "surface": "Hielo",
+        "tire": "highway",
+        "diff_lock": false,
+        "v30_kmh": 2.3,
+        "realism": "game_harder",
+        "real_band": "5–15 km/h"
+      }
+    ],
+    "patchable_terrain_xml": false,
+    "ck1500_terrain_patches": []
+  }
+}

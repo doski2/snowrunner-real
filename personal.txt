@@ -1,0 +1,29 @@
+en la face 1 hemos modificado el vehiculo terminada nos servira para el siguente vehiculo.
+face 2:
+mirar aver si modificamos las ruedas buscar toneladas de informacion sobre como se comportartan en el juego y real utilizar el simulator si es valido
+para simular simulator_cj1500.py los efectos y ver,comparar resultados.
+prueba/consulta:buscar informacion sobre neumaticos y un simulador como se debe de comportar y porque
+Fase 3:
+peso y carga? comportamiento del vehiculo y mirar el peso y tipo de cargar,
+ hacer simulacion 
+ face 4:
+ Tipo de terreno estudiar si su comportamiento es adecuado y saber como deberia de ser
+ face 5:
+ debemos intentar obtener datos del juego algun tipo de telemetria como se comportar para estudiar las faces ateriores es difil saber si lo facil o difil es real.
+ lo ideal seria obtener telemetria revisa "C:\Program Files (x86)\Steam\steamapps\common\SnowRunner\Sources\BinEditor\Guides"
+ face 6:
+ deberiamos utilizar engine cheat para investigar y ver los datos del juego hay varios proyectos en github
+ preparar y documentar
+ Face 7:
+ entorno,clima y tiempo
+ en que afecta el clima cuando llueve hay efecto en el barro deberia de posponer alguna ruta si llueve?
+ el tiempo dia y noche tiene efectos sobre el terreno es mejor por la noche porque baja la temperatura y el barro esta mas seco?
+ cambiar el avance del tiempo mas real o del todo real?
+ Face 8:
+ debemos revisar el peso y la distribucion de los remolques?
+
+consultas: detectamos el tipo de motor,caja de cambios,suspension,diferncial y traccion
+
+
+pendiente: mas pruebas con KHAN 39 Marshall
+probar motor 6v 2100t y comentar

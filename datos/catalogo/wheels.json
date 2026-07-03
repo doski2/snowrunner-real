@@ -1,0 +1,4460 @@
+{
+  "source": "C:\\Users\\doski\\snowrunner real\\initial.pak.bak",
+  "counts": {
+    "trucks": 42,
+    "engines": 125,
+    "wheels": 153,
+    "gearboxes": 76,
+    "suspensions": 116
+  },
+  "wheels": {
+    "wheels_kenworth_963": {
+      "id": "wheels_kenworth_963",
+      "pak_path": "[media]/_dlc/dlc_10/classes/wheels/wheels_kenworth_963.xml",
+      "radius_default": 1.0,
+      "width_default": 0.84,
+      "tires": [
+        {
+          "name": "allterrain_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.0,
+          "body_friction": 1.7,
+          "template": "Allterrain"
+        }
+      ]
+    },
+    "wheels_kenworth_990": {
+      "id": "wheels_kenworth_990",
+      "pak_path": "[media]/_dlc/dlc_10/classes/wheels/wheels_kenworth_990.xml",
+      "radius_default": 1.0,
+      "width_default": 0.611,
+      "tires": [
+        {
+          "name": "offroad",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 3.4,
+          "body_friction": 3.1,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_mack_defense_m917": {
+      "id": "wheels_mack_defense_m917",
+      "pak_path": "[media]/_dlc/dlc_10/classes/wheels/wheels_mack_defense_m917.xml",
+      "radius_default": 1.0,
+      "width_default": 0.706,
+      "tires": [
+        {
+          "name": "offroad",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.8,
+          "body_friction": 2.8,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_heavy_allterrain_double": {
+      "id": "wheels_heavy_allterrain_double",
+      "pak_path": "[media]/_dlc/dlc_11/classes/wheels/wheels_heavy_allterrain_double.xml",
+      "radius_default": 1.0,
+      "width_default": 0.62,
+      "tires": [
+        {
+          "name": "JAT ATHD I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.0,
+          "body_friction": 1.7,
+          "template": "Allterrain"
+        },
+        {
+          "name": "JAT ATHD II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.1,
+          "body_friction": 1.5,
+          "template": "Allterrain"
+        },
+        {
+          "name": "JAT ATHD III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.4,
+          "body_friction": 1.5,
+          "template": "Allterrain"
+        }
+      ]
+    },
+    "wheels_heavy_highway_double": {
+      "id": "wheels_heavy_highway_double",
+      "pak_path": "[media]/_dlc/dlc_11/classes/wheels/wheels_heavy_highway_double.xml",
+      "radius_default": 1.0,
+      "width_default": 0.45,
+      "tires": [
+        {
+          "name": "JAT HHD I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.4,
+          "body_friction": 1.0,
+          "template": "Highway"
+        },
+        {
+          "name": "JAT HHD II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.3,
+          "body_friction": 1.1,
+          "template": "Highway"
+        },
+        {
+          "name": "JAT HHD III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.4,
+          "body_friction": 0.9,
+          "template": "Highway"
+        }
+      ]
+    },
+    "wheels_heavy_mudtires_single": {
+      "id": "wheels_heavy_mudtires_single",
+      "pak_path": "[media]/_dlc/dlc_11/classes/wheels/wheels_heavy_mudtires_single.xml",
+      "radius_default": 1.0,
+      "width_default": 0.79,
+      "tires": [
+        {
+          "name": "JAT MHS I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.2,
+          "body_friction": 1.8,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MHS II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.0,
+          "body_friction": 2.3,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MHS III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.4,
+          "body_friction": 1.9,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_heavy_mudtires_single2": {
+      "id": "wheels_heavy_mudtires_single2",
+      "pak_path": "[media]/_dlc/dlc_11/classes/wheels/wheels_heavy_mudtires_single2.xml",
+      "radius_default": 1.0,
+      "width_default": 0.79,
+      "tires": [
+        {
+          "name": "JAT MHS IV",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.6,
+          "body_friction": 1.8,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MHS V",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.1,
+          "body_friction": 2.4,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MHS VI",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.5,
+          "body_friction": 1.8,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_heavy_offroad_double": {
+      "id": "wheels_heavy_offroad_double",
+      "pak_path": "[media]/_dlc/dlc_11/classes/wheels/wheels_heavy_offroad_double.xml",
+      "radius_default": 1.0,
+      "width_default": 0.62,
+      "tires": [
+        {
+          "name": "JAT OHD I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.7,
+          "body_friction": 3.0,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHD II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 3.1,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHD III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 3.2,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_heavy_offroad_single": {
+      "id": "wheels_heavy_offroad_single",
+      "pak_path": "[media]/_dlc/dlc_11/classes/wheels/wheels_heavy_offroad_single.xml",
+      "radius_default": 1.0,
+      "width_default": 0.62,
+      "tires": [
+        {
+          "name": "JAT OHS I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 3.0,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHS II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.3,
+          "body_friction": 3.2,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHS III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.7,
+          "body_friction": 3.0,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_medium_allterrain_double": {
+      "id": "wheels_medium_allterrain_double",
+      "pak_path": "[media]/_dlc/dlc_11/classes/wheels/wheels_medium_allterrain_double.xml",
+      "radius_default": 1.0,
+      "width_default": 0.65,
+      "tires": [
+        {
+          "name": "JAT ATMD I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.0,
+          "body_friction": 1.7,
+          "template": "Allterrain"
+        },
+        {
+          "name": "JAT ATMD II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.1,
+          "body_friction": 1.5,
+          "template": "Allterrain"
+        },
+        {
+          "name": "JAT ATMD III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.4,
+          "body_friction": 1.5,
+          "template": "Allterrain"
+        }
+      ]
+    },
+    "wheels_medium_allterrain_single": {
+      "id": "wheels_medium_allterrain_single",
+      "pak_path": "[media]/_dlc/dlc_11/classes/wheels/wheels_medium_allterrain_single.xml",
+      "radius_default": 1.0,
+      "width_default": 0.65,
+      "tires": [
+        {
+          "name": "JAT ATMS I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.0,
+          "body_friction": 1.7,
+          "template": "Allterrain"
+        },
+        {
+          "name": "JAT ATMS II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.1,
+          "body_friction": 1.5,
+          "template": "Allterrain"
+        },
+        {
+          "name": "JAT ATMS III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.4,
+          "body_friction": 1.5,
+          "template": "Allterrain"
+        }
+      ]
+    },
+    "wheels_medium_highway_double": {
+      "id": "wheels_medium_highway_double",
+      "pak_path": "[media]/_dlc/dlc_11/classes/wheels/wheels_medium_highway_double.xml",
+      "radius_default": 1.0,
+      "width_default": 0.65,
+      "tires": [
+        {
+          "name": "JAT HMD I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.4,
+          "body_friction": 1.0,
+          "template": "Highway"
+        },
+        {
+          "name": "JAT HMD II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.3,
+          "body_friction": 1.1,
+          "template": "Highway"
+        },
+        {
+          "name": "JAT HMD III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.4,
+          "body_friction": 0.9,
+          "template": "Highway"
+        }
+      ]
+    },
+    "wheels_medium_highway_single": {
+      "id": "wheels_medium_highway_single",
+      "pak_path": "[media]/_dlc/dlc_11/classes/wheels/wheels_medium_highway_single.xml",
+      "radius_default": 1.0,
+      "width_default": 0.65,
+      "tires": [
+        {
+          "name": "JAT HMS I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.4,
+          "body_friction": 1.0,
+          "template": "Highway"
+        },
+        {
+          "name": "JAT HMS II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.3,
+          "body_friction": 1.1,
+          "template": "Highway"
+        },
+        {
+          "name": "JAT HMS III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.4,
+          "body_friction": 0.9,
+          "template": "Highway"
+        }
+      ]
+    },
+    "wheels_medium_mudtires_double": {
+      "id": "wheels_medium_mudtires_double",
+      "pak_path": "[media]/_dlc/dlc_11/classes/wheels/wheels_medium_mudtires_double.xml",
+      "radius_default": 1.0,
+      "width_default": 0.65,
+      "tires": [
+        {
+          "name": "JAT MMD I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.2,
+          "body_friction": 2.0,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MMD II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.0,
+          "body_friction": 2.2,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MMD III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.1,
+          "body_friction": 2.1,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_medium_offroad_double": {
+      "id": "wheels_medium_offroad_double",
+      "pak_path": "[media]/_dlc/dlc_11/classes/wheels/wheels_medium_offroad_double.xml",
+      "radius_default": 1.0,
+      "width_default": 0.65,
+      "tires": [
+        {
+          "name": "JAT OMD I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.7,
+          "body_friction": 3.0,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OMD II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 3.1,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OMD III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.8,
+          "body_friction": 3.1,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_medium_offroad_single": {
+      "id": "wheels_medium_offroad_single",
+      "pak_path": "[media]/_dlc/dlc_11/classes/wheels/wheels_medium_offroad_single.xml",
+      "radius_default": 1.0,
+      "width_default": 0.65,
+      "tires": [
+        {
+          "name": "JAT OMS I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.7,
+          "body_friction": 3.0,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OMS II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 3.1,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OMS III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 3.2,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_scout_apache_offroad": {
+      "id": "wheels_scout_apache_offroad",
+      "pak_path": "[media]/_dlc/dlc_11/classes/wheels/wheels_scout_apache_offroad.xml",
+      "radius_default": 1.0,
+      "width_default": 0.76,
+      "tires": [
+        {
+          "name": "JAT OS I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": 2.0,
+          "template": "ScoutOffroad"
+        },
+        {
+          "name": "JAT OS II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": 2.2,
+          "template": "ScoutOffroad"
+        },
+        {
+          "name": "JAT OS III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.1,
+          "body_friction": 2.3,
+          "template": "ScoutOffroad"
+        },
+        {
+          "name": "JAT OS IV",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": 2.2,
+          "template": "ScoutOffroad"
+        },
+        {
+          "name": "Ultima AT I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.4,
+          "body_friction": 1.1,
+          "template": "ScoutAllterrain"
+        },
+        {
+          "name": "Ultima AT II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.3,
+          "body_friction": 1.1,
+          "template": "ScoutAllterrain"
+        },
+        {
+          "name": "Ultima AT III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": 1.1,
+          "template": "ScoutAllterrain"
+        },
+        {
+          "name": "Ultima AT IV",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.1,
+          "body_friction": 1.3,
+          "template": "ScoutAllterrain"
+        }
+      ]
+    },
+    "wheels_scout_burlak_offroad": {
+      "id": "wheels_scout_burlak_offroad",
+      "pak_path": "[media]/_dlc/dlc_11/classes/wheels/wheels_scout_burlak_offroad.xml",
+      "radius_default": 1.0,
+      "width_default": 0.79,
+      "tires": [
+        {
+          "name": "tire",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.2,
+          "body_friction": 3.3,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_scout_highway": {
+      "id": "wheels_scout_highway",
+      "pak_path": "[media]/_dlc/dlc_11/classes/wheels/wheels_scout_highway.xml",
+      "radius_default": 1.0,
+      "width_default": 0.57,
+      "tires": [
+        {
+          "name": "JAT HS I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.3,
+          "body_friction": 0.7,
+          "template": "ScoutHighway"
+        },
+        {
+          "name": "JAT HS II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.2,
+          "body_friction": 1.0,
+          "template": "ScoutHighway"
+        }
+      ]
+    },
+    "wheels_scout_mudtires": {
+      "id": "wheels_scout_mudtires",
+      "pak_path": "[media]/_dlc/dlc_11/classes/wheels/wheels_scout_mudtires.xml",
+      "radius_default": 1.0,
+      "width_default": 0.93,
+      "tires": [
+        {
+          "name": "JAT MS I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.8,
+          "body_friction": 2.7,
+          "template": "ScoutMudtires"
+        },
+        {
+          "name": "JAT MS II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.1,
+          "body_friction": 2.4,
+          "template": "ScoutMudtires"
+        },
+        {
+          "name": "JAT MS III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.5,
+          "body_friction": 2.1,
+          "template": "ScoutMudtires"
+        }
+      ]
+    },
+    "wheels_scout_offroad": {
+      "id": "wheels_scout_offroad",
+      "pak_path": "[media]/_dlc/dlc_11/classes/wheels/wheels_scout_offroad.xml",
+      "radius_default": 1.0,
+      "width_default": 0.76,
+      "tires": [
+        {
+          "name": "JAT OS I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": 2.0,
+          "template": "ScoutOffroad"
+        },
+        {
+          "name": "JAT OS II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": 2.2,
+          "template": "ScoutOffroad"
+        },
+        {
+          "name": "JAT OS III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.1,
+          "body_friction": 2.3,
+          "template": "ScoutOffroad"
+        },
+        {
+          "name": "JAT OS IV",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": 2.2,
+          "template": "ScoutOffroad"
+        }
+      ]
+    },
+    "wheels_scout_yar87_mudtires": {
+      "id": "wheels_scout_yar87_mudtires",
+      "pak_path": "[media]/_dlc/dlc_11/classes/wheels/wheels_scout_yar87_mudtires.xml",
+      "radius_default": 1.0,
+      "width_default": 0.93,
+      "tires": [
+        {
+          "name": "JAT MS I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.8,
+          "body_friction": 2.7,
+          "template": "ScoutMudtires"
+        },
+        {
+          "name": "JAT MS II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.1,
+          "body_friction": 2.4,
+          "template": "ScoutMudtires"
+        },
+        {
+          "name": "JAT MS III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.5,
+          "body_friction": 2.1,
+          "template": "ScoutMudtires"
+        }
+      ]
+    },
+    "wheels_superheavy_mudtires": {
+      "id": "wheels_superheavy_mudtires",
+      "pak_path": "[media]/_dlc/dlc_11/classes/wheels/wheels_superheavy_mudtires.xml",
+      "radius_default": 1.0,
+      "width_default": 0.95,
+      "tires": [
+        {
+          "name": "JAT MSH I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 3.0,
+          "body_friction": 1.6,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MSH II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 3.2,
+          "body_friction": 1.7,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MSH III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 3.1,
+          "body_friction": 2.0,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_femm_37at": {
+      "id": "wheels_femm_37at",
+      "pak_path": "[media]/_dlc/dlc_12/classes/wheels/wheels_femm_37at.xml",
+      "radius_default": 1.0,
+      "width_default": 1.26,
+      "tires": [
+        {
+          "name": "tire",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.0,
+          "body_friction": 1.7,
+          "template": "Allterrain"
+        }
+      ]
+    },
+    "wheels_azov_670963n": {
+      "id": "wheels_azov_670963n",
+      "pak_path": "[media]/_dlc/dlc_12_5/classes/wheels/wheels_azov_670963n.xml",
+      "radius_default": 1.0,
+      "width_default": 0.665,
+      "tires": [
+        {
+          "name": "tire",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.8,
+          "body_friction": 3.0,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_aac_58dw": {
+      "id": "wheels_aac_58dw",
+      "pak_path": "[media]/_dlc/dlc_13/classes/wheels/wheels_aac_58dw.xml",
+      "radius_default": 1.0,
+      "width_default": 0.7,
+      "tires": [
+        {
+          "name": "tire",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": 2.1,
+          "template": "ScoutOffroad"
+        }
+      ]
+    },
+    "wheels_heavy_mudtires_single2_s": {
+      "id": "wheels_heavy_mudtires_single2_s",
+      "pak_path": "[media]/_dlc/dlc_13/classes/wheels/wheels_heavy_mudtires_single2_s.xml",
+      "radius_default": 1.0,
+      "width_default": 0.79,
+      "tires": [
+        {
+          "name": "JAT MHS IV",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.6,
+          "body_friction": 1.8,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MHS V",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.1,
+          "body_friction": 2.4,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MHS VI",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.5,
+          "body_friction": 1.8,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_heavy_mudtires_single_s": {
+      "id": "wheels_heavy_mudtires_single_s",
+      "pak_path": "[media]/_dlc/dlc_13/classes/wheels/wheels_heavy_mudtires_single_s.xml",
+      "radius_default": 1.0,
+      "width_default": 0.79,
+      "tires": [
+        {
+          "name": "JAT MHS I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.2,
+          "body_friction": 1.8,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MHS II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.0,
+          "body_friction": 2.3,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MHS III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.4,
+          "body_friction": 1.9,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_heavy_offroad_single_s": {
+      "id": "wheels_heavy_offroad_single_s",
+      "pak_path": "[media]/_dlc/dlc_13/classes/wheels/wheels_heavy_offroad_single_s.xml",
+      "radius_default": 1.0,
+      "width_default": 0.62,
+      "tires": [
+        {
+          "name": "JAT OHS I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 3.0,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHS II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.3,
+          "body_friction": 3.2,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHS III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.7,
+          "body_friction": 3.0,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_heavy_single_s": {
+      "id": "wheels_heavy_single_s",
+      "pak_path": "[media]/_dlc/dlc_13/classes/wheels/wheels_heavy_single_s.xml",
+      "radius_default": 1.0,
+      "width_default": 0.65,
+      "tires": [
+        {
+          "name": "allterrain_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": null,
+          "template": "Allterrain"
+        },
+        {
+          "name": "offroad_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "offroad_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.8,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "mudtires_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "chains_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Chains"
+        },
+        {
+          "name": "mudtires_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "mudtires_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "mudtires_4",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_plad_450": {
+      "id": "wheels_plad_450",
+      "pak_path": "[media]/_dlc/dlc_13/classes/wheels/wheels_plad_450.xml",
+      "radius_default": 1.0,
+      "width_default": 0.69,
+      "tires": [
+        {
+          "name": "offroad",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.8,
+          "body_friction": 3.0,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_rezvani_tank": {
+      "id": "wheels_rezvani_tank",
+      "pak_path": "[media]/_dlc/dlc_13_5/classes/wheels/wheels_rezvani_tank.xml",
+      "radius_default": 1.0,
+      "width_default": 0.66,
+      "tires": [
+        {
+          "name": "tire",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.3,
+          "body_friction": 2.2,
+          "template": "ScoutOffroad"
+        }
+      ]
+    },
+    "wheels_scout_allterrain": {
+      "id": "wheels_scout_allterrain",
+      "pak_path": "[media]/_dlc/dlc_13_5/classes/wheels/wheels_scout_allterrain.xml",
+      "radius_default": 1.0,
+      "width_default": 0.73,
+      "tires": [
+        {
+          "name": "Ultima AT I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.4,
+          "body_friction": 1.1,
+          "template": "ScoutAllterrain"
+        },
+        {
+          "name": "Ultima AT II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.3,
+          "body_friction": 1.1,
+          "template": "ScoutAllterrain"
+        },
+        {
+          "name": "Ultima AT III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": 1.1,
+          "template": "ScoutAllterrain"
+        },
+        {
+          "name": "Ultima AT IV",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.1,
+          "body_friction": 1.3,
+          "template": "ScoutAllterrain"
+        }
+      ]
+    },
+    "wheels_scout_allterrain_chain": {
+      "id": "wheels_scout_allterrain_chain",
+      "pak_path": "[media]/_dlc/dlc_13_5/classes/wheels/wheels_scout_allterrain_chain.xml",
+      "radius_default": 1.0,
+      "width_default": 0.746,
+      "tires": [
+        {
+          "name": "Ultima CS I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": 1.3,
+          "template": "ScoutChains"
+        }
+      ]
+    },
+    "wheels_scout_yar87_allterrain": {
+      "id": "wheels_scout_yar87_allterrain",
+      "pak_path": "[media]/_dlc/dlc_13_5/classes/wheels/wheels_scout_yar87_allterrain.xml",
+      "radius_default": 1.0,
+      "width_default": 0.93,
+      "tires": [
+        {
+          "name": "Ultima AT I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.4,
+          "body_friction": 1.1,
+          "template": "ScoutAllterrain"
+        },
+        {
+          "name": "Ultima AT II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.3,
+          "body_friction": 1.1,
+          "template": "ScoutAllterrain"
+        },
+        {
+          "name": "Ultima AT III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": 1.1,
+          "template": "ScoutAllterrain"
+        },
+        {
+          "name": "Ultima AT IV",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.1,
+          "body_friction": 1.3,
+          "template": "ScoutAllterrain"
+        }
+      ]
+    },
+    "wheels_scout_yar87_allterrain_chain": {
+      "id": "wheels_scout_yar87_allterrain_chain",
+      "pak_path": "[media]/_dlc/dlc_13_5/classes/wheels/wheels_scout_yar87_allterrain_chain.xml",
+      "radius_default": 1.0,
+      "width_default": 0.93,
+      "tires": [
+        {
+          "name": "Ultima CS I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": 1.3,
+          "template": "ScoutChains"
+        }
+      ]
+    },
+    "wheels_ankatra_1160": {
+      "id": "wheels_ankatra_1160",
+      "pak_path": "[media]/_dlc/dlc_14/classes/wheels/wheels_ankatra_1160.xml",
+      "radius_default": 1.0,
+      "width_default": 0.67,
+      "tires": [
+        {
+          "name": "tire",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 2.2,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_earthroamer": {
+      "id": "wheels_earthroamer",
+      "pak_path": "[media]/_dlc/dlc_14/classes/wheels/wheels_earthroamer.xml",
+      "radius_default": 1.0,
+      "width_default": 0.676,
+      "tires": [
+        {
+          "name": "earthroamer_offroad",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 3.1,
+          "template": ""
+        }
+      ]
+    },
+    "wheels_extend_ankatra_1160": {
+      "id": "wheels_extend_ankatra_1160",
+      "pak_path": "[media]/_dlc/dlc_14/classes/wheels/wheels_extend_ankatra_1160.xml",
+      "radius_default": 1.0,
+      "width_default": 1.36,
+      "tires": [
+        {
+          "name": "tire_double",
+          "radius": null,
+          "mass_kg": 400.0,
+          "substance_friction": null,
+          "body_friction": 2.2,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_extend_futom_7290ra": {
+      "id": "wheels_extend_futom_7290ra",
+      "pak_path": "[media]/_dlc/dlc_14/classes/wheels/wheels_extend_futom_7290ra.xml",
+      "radius_default": 1.0,
+      "width_default": 1.5,
+      "tires": [
+        {
+          "name": "tire_double",
+          "radius": null,
+          "mass_kg": 1200.0,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        }
+      ]
+    },
+    "wheels_futom_7290ra": {
+      "id": "wheels_futom_7290ra",
+      "pak_path": "[media]/_dlc/dlc_14/classes/wheels/wheels_futom_7290ra.xml",
+      "radius_default": 1.0,
+      "width_default": 0.73,
+      "tires": [
+        {
+          "name": "tire",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        }
+      ]
+    },
+    "wheels_kenworth_c500": {
+      "id": "wheels_kenworth_c500",
+      "pak_path": "[media]/_dlc/dlc_14_1/classes/wheels/wheels_kenworth_c500.xml",
+      "radius_default": 1.0,
+      "width_default": 0.717,
+      "tires": [
+        {
+          "name": "tire_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.3,
+          "body_friction": 1.6,
+          "template": "Allterrain"
+        }
+      ]
+    },
+    "wheels_kenworth_t880": {
+      "id": "wheels_kenworth_t880",
+      "pak_path": "[media]/_dlc/dlc_14_1/classes/wheels/wheels_kenworth_t880.xml",
+      "radius_default": 1.0,
+      "width_default": 0.58,
+      "tires": [
+        {
+          "name": "tire_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.9,
+          "body_friction": 1.6,
+          "template": "Allterrain"
+        }
+      ]
+    },
+    "wheels_mack_pinnacle": {
+      "id": "wheels_mack_pinnacle",
+      "pak_path": "[media]/_dlc/dlc_14_2/classes/wheels/wheels_mack_pinnacle.xml",
+      "radius_default": 1.0,
+      "width_default": 0.61,
+      "tires": [
+        {
+          "name": "tire_mack",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.0,
+          "body_friction": 1.5,
+          "template": "Allterrain"
+        }
+      ]
+    },
+    "wheels_mercer_k520": {
+      "id": "wheels_mercer_k520",
+      "pak_path": "[media]/_dlc/dlc_15/classes/wheels/wheels_mercer_k520.xml",
+      "radius_default": 1.0,
+      "width_default": 0.706,
+      "tires": [
+        {
+          "name": "tire_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.8,
+          "body_friction": 3.1,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_mirror_test": {
+      "id": "wheels_mirror_test",
+      "pak_path": "[media]/_dlc/dlc_15/classes/wheels/wheels_mirror_test.xml",
+      "radius_default": 1.0,
+      "width_default": 0.725,
+      "tires": [
+        {
+          "name": "tire_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        },
+        {
+          "name": "tire_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        }
+      ]
+    },
+    "wheels_superheavy_single_sleiter_mfk816": {
+      "id": "wheels_superheavy_single_sleiter_mfk816",
+      "pak_path": "[media]/_dlc/dlc_15/classes/wheels/wheels_superheavy_single_sleiter_mfk816.xml",
+      "radius_default": 1.0,
+      "width_default": 0.973,
+      "tires": [
+        {
+          "name": "sleiter_tire_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        }
+      ]
+    },
+    "wheels_freightliner_fld120": {
+      "id": "wheels_freightliner_fld120",
+      "pak_path": "[media]/_dlc/dlc_15_5/classes/wheels/wheels_freightliner_fld120.xml",
+      "radius_default": 1.0,
+      "width_default": 0.574,
+      "tires": [
+        {
+          "name": "allterrain",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.7,
+          "body_friction": 1.4,
+          "template": "Allterrain"
+        }
+      ]
+    },
+    "wheels_western_star_6900xd": {
+      "id": "wheels_western_star_6900xd",
+      "pak_path": "[media]/_dlc/dlc_15_5/classes/wheels/wheels_western_star_6900xd.xml",
+      "radius_default": 1.0,
+      "width_default": 0.613,
+      "tires": [
+        {
+          "name": "allterrain_ws",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 1.4,
+          "template": "Allterrain"
+        }
+      ]
+    },
+    "wheels_offroad_double_faun": {
+      "id": "wheels_offroad_double_faun",
+      "pak_path": "[media]/_dlc/dlc_16/classes/wheels/wheels_offroad_double_faun.xml",
+      "radius_default": 1.0,
+      "width_default": 0.767,
+      "tires": [
+        {
+          "name": "tire_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        }
+      ]
+    },
+    "wheels_offroad_single_hib_billert_1980": {
+      "id": "wheels_offroad_single_hib_billert_1980",
+      "pak_path": "[media]/_dlc/dlc_16/classes/wheels/wheels_offroad_single_hib_billert_1980.xml",
+      "radius_default": 1.0,
+      "width_default": 0.657,
+      "tires": [
+        {
+          "name": "tire_billert_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 2.7,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_offroad_single_sleiter_st833_chimera": {
+      "id": "wheels_offroad_single_sleiter_st833_chimera",
+      "pak_path": "[media]/_dlc/dlc_16/classes/wheels/wheels_offroad_single_sleiter_st833_chimera.xml",
+      "radius_default": 1.0,
+      "width_default": 0.794,
+      "tires": [
+        {
+          "name": "tire_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        }
+      ]
+    },
+    "wheels_plad_440": {
+      "id": "wheels_plad_440",
+      "pak_path": "[media]/_dlc/dlc_16/classes/wheels/wheels_plad_440.xml",
+      "radius_default": 1.0,
+      "width_default": 0.622,
+      "tires": [
+        {
+          "name": "offroad_plad_440",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.9,
+          "body_friction": 3.1,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_avenhorn_a15": {
+      "id": "wheels_avenhorn_a15",
+      "pak_path": "[media]/_dlc/dlc_16_5/classes/wheels/wheels_avenhorn_a15.xml",
+      "radius_default": 1.0,
+      "width_default": 0.718,
+      "tires": [
+        {
+          "name": "offroad",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 3.1,
+          "body_friction": null,
+          "template": "HeavyMudtires"
+        }
+      ]
+    },
+    "wheels_heavy_allterrain_double_avenhorn_a15": {
+      "id": "wheels_heavy_allterrain_double_avenhorn_a15",
+      "pak_path": "[media]/_dlc/dlc_16_5/classes/wheels/wheels_heavy_allterrain_double_avenhorn_a15.xml",
+      "radius_default": 1.0,
+      "width_default": 0.62,
+      "tires": [
+        {
+          "name": "JAT ATHD I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.0,
+          "body_friction": 1.7,
+          "template": "Allterrain"
+        },
+        {
+          "name": "JAT ATHD II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.1,
+          "body_friction": 1.5,
+          "template": "Allterrain"
+        },
+        {
+          "name": "JAT ATHD III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.4,
+          "body_friction": 1.5,
+          "template": "Allterrain"
+        }
+      ]
+    },
+    "wheels_heavy_allterrain_double_padera_std4": {
+      "id": "wheels_heavy_allterrain_double_padera_std4",
+      "pak_path": "[media]/_dlc/dlc_16_5/classes/wheels/wheels_heavy_allterrain_double_padera_std4.xml",
+      "radius_default": 1.0,
+      "width_default": 0.62,
+      "tires": [
+        {
+          "name": "JAT ATHD I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.0,
+          "body_friction": 1.7,
+          "template": "Allterrain"
+        },
+        {
+          "name": "JAT ATHD II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.1,
+          "body_friction": 1.5,
+          "template": "Allterrain"
+        },
+        {
+          "name": "JAT ATHD III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.4,
+          "body_friction": 1.5,
+          "template": "Allterrain"
+        }
+      ]
+    },
+    "wheels_heavy_double1_avenhorn_a15": {
+      "id": "wheels_heavy_double1_avenhorn_a15",
+      "pak_path": "[media]/_dlc/dlc_16_5/classes/wheels/wheels_heavy_double1_avenhorn_a15.xml",
+      "radius_default": 1.0,
+      "width_default": 0.58,
+      "tires": [
+        {
+          "name": "highway_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.4,
+          "body_friction": null,
+          "template": "Highway"
+        },
+        {
+          "name": "highway_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 1.2,
+          "template": "Highway"
+        },
+        {
+          "name": "highway_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Highway"
+        },
+        {
+          "name": "allterrain_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Allterrain"
+        },
+        {
+          "name": "allterrain_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": null,
+          "template": "Allterrain"
+        },
+        {
+          "name": "allterrain_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 1.7,
+          "template": "Allterrain"
+        }
+      ]
+    },
+    "wheels_heavy_double1_padera_std4": {
+      "id": "wheels_heavy_double1_padera_std4",
+      "pak_path": "[media]/_dlc/dlc_16_5/classes/wheels/wheels_heavy_double1_padera_std4.xml",
+      "radius_default": 1.0,
+      "width_default": 0.58,
+      "tires": [
+        {
+          "name": "highway_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.4,
+          "body_friction": null,
+          "template": "Highway"
+        },
+        {
+          "name": "highway_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 1.2,
+          "template": "Highway"
+        },
+        {
+          "name": "highway_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Highway"
+        },
+        {
+          "name": "allterrain_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Allterrain"
+        },
+        {
+          "name": "allterrain_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": null,
+          "template": "Allterrain"
+        },
+        {
+          "name": "allterrain_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 1.7,
+          "template": "Allterrain"
+        }
+      ]
+    },
+    "wheels_heavy_double2_avenhorn_a15": {
+      "id": "wheels_heavy_double2_avenhorn_a15",
+      "pak_path": "[media]/_dlc/dlc_16_5/classes/wheels/wheels_heavy_double2_avenhorn_a15.xml",
+      "radius_default": 1.0,
+      "width_default": 0.52,
+      "tires": [
+        {
+          "name": "offroad_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.9,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "offroad_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 3.2,
+          "template": "Offroad"
+        },
+        {
+          "name": "offroad_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "chains_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Chains"
+        }
+      ]
+    },
+    "wheels_heavy_double2_padera_std4": {
+      "id": "wheels_heavy_double2_padera_std4",
+      "pak_path": "[media]/_dlc/dlc_16_5/classes/wheels/wheels_heavy_double2_padera_std4.xml",
+      "radius_default": 1.0,
+      "width_default": 0.52,
+      "tires": [
+        {
+          "name": "offroad_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.9,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "offroad_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 3.2,
+          "template": "Offroad"
+        },
+        {
+          "name": "offroad_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "chains_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Chains"
+        }
+      ]
+    },
+    "wheels_heavy_highway_double_avenhorn_a15": {
+      "id": "wheels_heavy_highway_double_avenhorn_a15",
+      "pak_path": "[media]/_dlc/dlc_16_5/classes/wheels/wheels_heavy_highway_double_avenhorn_a15.xml",
+      "radius_default": 1.0,
+      "width_default": 0.45,
+      "tires": [
+        {
+          "name": "JAT HHD I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.4,
+          "body_friction": 1.0,
+          "template": "Highway"
+        },
+        {
+          "name": "JAT HHD II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.3,
+          "body_friction": 1.1,
+          "template": "Highway"
+        },
+        {
+          "name": "JAT HHD III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.4,
+          "body_friction": 0.9,
+          "template": "Highway"
+        }
+      ]
+    },
+    "wheels_heavy_highway_double_padera_std4": {
+      "id": "wheels_heavy_highway_double_padera_std4",
+      "pak_path": "[media]/_dlc/dlc_16_5/classes/wheels/wheels_heavy_highway_double_padera_std4.xml",
+      "radius_default": 1.0,
+      "width_default": 0.45,
+      "tires": [
+        {
+          "name": "JAT HHD I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.4,
+          "body_friction": 1.0,
+          "template": "Highway"
+        },
+        {
+          "name": "JAT HHD II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.3,
+          "body_friction": 1.1,
+          "template": "Highway"
+        },
+        {
+          "name": "JAT HHD III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.4,
+          "body_friction": 0.9,
+          "template": "Highway"
+        }
+      ]
+    },
+    "wheels_heavy_offroad_double_avenhorn_a15": {
+      "id": "wheels_heavy_offroad_double_avenhorn_a15",
+      "pak_path": "[media]/_dlc/dlc_16_5/classes/wheels/wheels_heavy_offroad_double_avenhorn_a15.xml",
+      "radius_default": 1.0,
+      "width_default": 0.62,
+      "tires": [
+        {
+          "name": "JAT OHD I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.7,
+          "body_friction": 3.0,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHD II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 3.1,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHD III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 3.2,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_heavy_offroad_double_padera_std4": {
+      "id": "wheels_heavy_offroad_double_padera_std4",
+      "pak_path": "[media]/_dlc/dlc_16_5/classes/wheels/wheels_heavy_offroad_double_padera_std4.xml",
+      "radius_default": 1.0,
+      "width_default": 0.62,
+      "tires": [
+        {
+          "name": "JAT OHD I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.7,
+          "body_friction": 3.0,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHD II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 3.1,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHD III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 3.2,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_heavy_padera_std4": {
+      "id": "wheels_heavy_padera_std4",
+      "pak_path": "[media]/_dlc/dlc_16_5/classes/wheels/wheels_heavy_padera_std4.xml",
+      "radius_default": 1.0,
+      "width_default": 0.726,
+      "tires": [
+        {
+          "name": "mudtire_padera_std4",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.18,
+          "body_friction": null,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_heavy_mudtires_single2_voron_g5352": {
+      "id": "wheels_heavy_mudtires_single2_voron_g5352",
+      "pak_path": "[media]/_dlc/dlc_17/classes/wheels/wheels_heavy_mudtires_single2_voron_g5352.xml",
+      "radius_default": 1.0,
+      "width_default": 0.79,
+      "tires": [
+        {
+          "name": "JAT MHS IV",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.6,
+          "body_friction": 1.8,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MHS V",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.1,
+          "body_friction": 2.4,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MHS VI",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.5,
+          "body_friction": 1.8,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_heavy_mudtires_single_voron_g5352": {
+      "id": "wheels_heavy_mudtires_single_voron_g5352",
+      "pak_path": "[media]/_dlc/dlc_17/classes/wheels/wheels_heavy_mudtires_single_voron_g5352.xml",
+      "radius_default": 1.0,
+      "width_default": 0.79,
+      "tires": [
+        {
+          "name": "JAT MHS I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.2,
+          "body_friction": 1.8,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MHS II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.0,
+          "body_friction": 2.3,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MHS III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.4,
+          "body_friction": 1.9,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_heavy_offroad_single_voron_g5352": {
+      "id": "wheels_heavy_offroad_single_voron_g5352",
+      "pak_path": "[media]/_dlc/dlc_17/classes/wheels/wheels_heavy_offroad_single_voron_g5352.xml",
+      "radius_default": 1.0,
+      "width_default": 0.62,
+      "tires": [
+        {
+          "name": "JAT OHS I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 3.0,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHS II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.3,
+          "body_friction": 3.2,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHS III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.7,
+          "body_friction": 3.0,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_heavy_single2_voron_g5352": {
+      "id": "wheels_heavy_single2_voron_g5352",
+      "pak_path": "[media]/_dlc/dlc_17/classes/wheels/wheels_heavy_single2_voron_g5352.xml",
+      "radius_default": 1.0,
+      "width_default": 0.84,
+      "tires": [
+        {
+          "name": "mudtires_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.4,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "mudtires_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 2.4,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_heavy_single_voron_g5352": {
+      "id": "wheels_heavy_single_voron_g5352",
+      "pak_path": "[media]/_dlc/dlc_17/classes/wheels/wheels_heavy_single_voron_g5352.xml",
+      "radius_default": 1.0,
+      "width_default": 0.65,
+      "tires": [
+        {
+          "name": "allterrain_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": null,
+          "template": "Allterrain"
+        },
+        {
+          "name": "offroad_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "offroad_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.8,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "mudtires_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "chains_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Chains"
+        },
+        {
+          "name": "mudtires_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "mudtires_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "mudtires_4",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_jangsu_rx600": {
+      "id": "wheels_jangsu_rx600",
+      "pak_path": "[media]/_dlc/dlc_17/classes/wheels/wheels_jangsu_rx600.xml",
+      "radius_default": 1.0,
+      "width_default": 0.56,
+      "tires": [
+        {
+          "name": "jangsu_offroad_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_voron_g5352": {
+      "id": "wheels_voron_g5352",
+      "pak_path": "[media]/_dlc/dlc_17/classes/wheels/wheels_voron_g5352.xml",
+      "radius_default": 1.0,
+      "width_default": 0.595,
+      "tires": [
+        {
+          "name": "tire",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.8,
+          "body_friction": 3.0,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_heavy_allterrain_double_mercedes_actros": {
+      "id": "wheels_heavy_allterrain_double_mercedes_actros",
+      "pak_path": "[media]/_dlc/dlc_17_5/classes/wheels/wheels_heavy_allterrain_double_mercedes_actros.xml",
+      "radius_default": 1.0,
+      "width_default": 0.62,
+      "tires": [
+        {
+          "name": "JAT ATHD I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.0,
+          "body_friction": 1.7,
+          "template": "Allterrain"
+        },
+        {
+          "name": "JAT ATHD II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.1,
+          "body_friction": 1.5,
+          "template": "Allterrain"
+        },
+        {
+          "name": "JAT ATHD III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.4,
+          "body_friction": 1.5,
+          "template": "Allterrain"
+        }
+      ]
+    },
+    "wheels_heavy_double1_mercedes_actros": {
+      "id": "wheels_heavy_double1_mercedes_actros",
+      "pak_path": "[media]/_dlc/dlc_17_5/classes/wheels/wheels_heavy_double1_mercedes_actros.xml",
+      "radius_default": 1.0,
+      "width_default": 0.58,
+      "tires": [
+        {
+          "name": "highway_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.4,
+          "body_friction": null,
+          "template": "Highway"
+        },
+        {
+          "name": "highway_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 1.2,
+          "template": "Highway"
+        },
+        {
+          "name": "highway_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Highway"
+        },
+        {
+          "name": "allterrain_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Allterrain"
+        },
+        {
+          "name": "allterrain_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": null,
+          "template": "Allterrain"
+        },
+        {
+          "name": "allterrain_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 1.7,
+          "template": "Allterrain"
+        }
+      ]
+    },
+    "wheels_heavy_double2_mercedes_actros": {
+      "id": "wheels_heavy_double2_mercedes_actros",
+      "pak_path": "[media]/_dlc/dlc_17_5/classes/wheels/wheels_heavy_double2_mercedes_actros.xml",
+      "radius_default": 1.0,
+      "width_default": 0.52,
+      "tires": [
+        {
+          "name": "offroad_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.9,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "offroad_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 3.2,
+          "template": "Offroad"
+        },
+        {
+          "name": "offroad_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "chains_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Chains"
+        }
+      ]
+    },
+    "wheels_heavy_highway_double_mercedes_actros": {
+      "id": "wheels_heavy_highway_double_mercedes_actros",
+      "pak_path": "[media]/_dlc/dlc_17_5/classes/wheels/wheels_heavy_highway_double_mercedes_actros.xml",
+      "radius_default": 1.0,
+      "width_default": 0.45,
+      "tires": [
+        {
+          "name": "JAT HHD I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.4,
+          "body_friction": 1.0,
+          "template": "Highway"
+        },
+        {
+          "name": "JAT HHD II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.3,
+          "body_friction": 1.1,
+          "template": "Highway"
+        },
+        {
+          "name": "JAT HHD III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.4,
+          "body_friction": 0.9,
+          "template": "Highway"
+        }
+      ]
+    },
+    "wheels_heavy_mercedes_benz_actros_6x6": {
+      "id": "wheels_heavy_mercedes_benz_actros_6x6",
+      "pak_path": "[media]/_dlc/dlc_17_5/classes/wheels/wheels_heavy_mercedes_benz_actros_6x6.xml",
+      "radius_default": 1.0,
+      "width_default": 0.615,
+      "tires": [
+        {
+          "name": "mb_actros_offroad_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.7,
+          "body_friction": null,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_heavy_mercedes_benz_zetros_6x6": {
+      "id": "wheels_heavy_mercedes_benz_zetros_6x6",
+      "pak_path": "[media]/_dlc/dlc_17_5/classes/wheels/wheels_heavy_mercedes_benz_zetros_6x6.xml",
+      "radius_default": 1.0,
+      "width_default": 0.65,
+      "tires": [
+        {
+          "name": "mb_zetros_mudtires_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_heavy_mudtires_single2_mercedes_zetros": {
+      "id": "wheels_heavy_mudtires_single2_mercedes_zetros",
+      "pak_path": "[media]/_dlc/dlc_17_5/classes/wheels/wheels_heavy_mudtires_single2_mercedes_zetros.xml",
+      "radius_default": 1.0,
+      "width_default": 0.79,
+      "tires": [
+        {
+          "name": "JAT MHS IV",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.6,
+          "body_friction": 1.8,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MHS V",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.1,
+          "body_friction": 2.4,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MHS VI",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.5,
+          "body_friction": 1.8,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_heavy_mudtires_single_mercedes_zetros": {
+      "id": "wheels_heavy_mudtires_single_mercedes_zetros",
+      "pak_path": "[media]/_dlc/dlc_17_5/classes/wheels/wheels_heavy_mudtires_single_mercedes_zetros.xml",
+      "radius_default": 1.0,
+      "width_default": 0.79,
+      "tires": [
+        {
+          "name": "JAT MHS I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.2,
+          "body_friction": 1.8,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MHS II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.0,
+          "body_friction": 2.3,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MHS III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.4,
+          "body_friction": 1.9,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_heavy_mudtires_tayga_mercedes_zetros": {
+      "id": "wheels_heavy_mudtires_tayga_mercedes_zetros",
+      "pak_path": "[media]/_dlc/dlc_17_5/classes/wheels/wheels_heavy_mudtires_tayga_mercedes_zetros.xml",
+      "radius_default": 1.0,
+      "width_default": 1.118,
+      "tires": [
+        {
+          "name": "mudtires",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.4,
+          "body_friction": null,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_heavy_offroad_double_mercedes_actros": {
+      "id": "wheels_heavy_offroad_double_mercedes_actros",
+      "pak_path": "[media]/_dlc/dlc_17_5/classes/wheels/wheels_heavy_offroad_double_mercedes_actros.xml",
+      "radius_default": 1.0,
+      "width_default": 0.62,
+      "tires": [
+        {
+          "name": "JAT OHD I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.7,
+          "body_friction": 3.0,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHD II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 3.1,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHD III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 3.2,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_heavy_offroad_single_mercedes_zetros": {
+      "id": "wheels_heavy_offroad_single_mercedes_zetros",
+      "pak_path": "[media]/_dlc/dlc_17_5/classes/wheels/wheels_heavy_offroad_single_mercedes_zetros.xml",
+      "radius_default": 1.0,
+      "width_default": 0.62,
+      "tires": [
+        {
+          "name": "JAT OHS I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 3.0,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHS II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.3,
+          "body_friction": 3.2,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHS III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.7,
+          "body_friction": 3.0,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_heavy_single2_mercedes_zetros": {
+      "id": "wheels_heavy_single2_mercedes_zetros",
+      "pak_path": "[media]/_dlc/dlc_17_5/classes/wheels/wheels_heavy_single2_mercedes_zetros.xml",
+      "radius_default": 1.0,
+      "width_default": 0.84,
+      "tires": [
+        {
+          "name": "mudtires_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.4,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "mudtires_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 2.4,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_heavy_single_mercedes_zetros": {
+      "id": "wheels_heavy_single_mercedes_zetros",
+      "pak_path": "[media]/_dlc/dlc_17_5/classes/wheels/wheels_heavy_single_mercedes_zetros.xml",
+      "radius_default": 1.0,
+      "width_default": 0.65,
+      "tires": [
+        {
+          "name": "allterrain_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": null,
+          "template": "Allterrain"
+        },
+        {
+          "name": "offroad_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "offroad_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.8,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "mudtires_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "chains_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Chains"
+        },
+        {
+          "name": "mudtires_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "mudtires_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "mudtires_4",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_heavy_allterrain_double_mercer_6x6r_230": {
+      "id": "wheels_heavy_allterrain_double_mercer_6x6r_230",
+      "pak_path": "[media]/_dlc/dlc_18/classes/wheels/wheels_heavy_allterrain_double_mercer_6x6r_230.xml",
+      "radius_default": 1.0,
+      "width_default": 0.62,
+      "tires": [
+        {
+          "name": "JAT ATHD I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.0,
+          "body_friction": 1.7,
+          "template": "Allterrain"
+        },
+        {
+          "name": "JAT ATHD II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.1,
+          "body_friction": 1.5,
+          "template": "Allterrain"
+        },
+        {
+          "name": "JAT ATHD III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.4,
+          "body_friction": 1.5,
+          "template": "Allterrain"
+        }
+      ]
+    },
+    "wheels_heavy_double1_mercer_6x6r_230": {
+      "id": "wheels_heavy_double1_mercer_6x6r_230",
+      "pak_path": "[media]/_dlc/dlc_18/classes/wheels/wheels_heavy_double1_mercer_6x6r_230.xml",
+      "radius_default": 1.0,
+      "width_default": 0.58,
+      "tires": [
+        {
+          "name": "highway_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.4,
+          "body_friction": null,
+          "template": "Highway"
+        },
+        {
+          "name": "highway_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 1.2,
+          "template": "Highway"
+        },
+        {
+          "name": "highway_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Highway"
+        },
+        {
+          "name": "allterrain_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Allterrain"
+        },
+        {
+          "name": "allterrain_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": null,
+          "template": "Allterrain"
+        },
+        {
+          "name": "allterrain_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 1.7,
+          "template": "Allterrain"
+        }
+      ]
+    },
+    "wheels_heavy_double2_mercer_6x6r_230": {
+      "id": "wheels_heavy_double2_mercer_6x6r_230",
+      "pak_path": "[media]/_dlc/dlc_18/classes/wheels/wheels_heavy_double2_mercer_6x6r_230.xml",
+      "radius_default": 1.0,
+      "width_default": 0.52,
+      "tires": [
+        {
+          "name": "offroad_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.9,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "offroad_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 3.2,
+          "template": "Offroad"
+        },
+        {
+          "name": "offroad_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "chains_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Chains"
+        }
+      ]
+    },
+    "wheels_heavy_highway_double_mercer_6x6r_230": {
+      "id": "wheels_heavy_highway_double_mercer_6x6r_230",
+      "pak_path": "[media]/_dlc/dlc_18/classes/wheels/wheels_heavy_highway_double_mercer_6x6r_230.xml",
+      "radius_default": 1.0,
+      "width_default": 0.45,
+      "tires": [
+        {
+          "name": "JAT HHD I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.4,
+          "body_friction": 1.0,
+          "template": "Highway"
+        },
+        {
+          "name": "JAT HHD II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.3,
+          "body_friction": 1.1,
+          "template": "Highway"
+        },
+        {
+          "name": "JAT HHD III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.4,
+          "body_friction": 0.9,
+          "template": "Highway"
+        }
+      ]
+    },
+    "wheels_heavy_offroad_double_mercer_6x6r_230": {
+      "id": "wheels_heavy_offroad_double_mercer_6x6r_230",
+      "pak_path": "[media]/_dlc/dlc_18/classes/wheels/wheels_heavy_offroad_double_mercer_6x6r_230.xml",
+      "radius_default": 1.0,
+      "width_default": 0.62,
+      "tires": [
+        {
+          "name": "JAT OHD I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.7,
+          "body_friction": 3.0,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHD II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 3.1,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHD III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 3.2,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_hib_billert_m816": {
+      "id": "wheels_hib_billert_m816",
+      "pak_path": "[media]/_dlc/dlc_18/classes/wheels/wheels_hib_billert_m816.xml",
+      "radius_default": 1.0,
+      "width_default": 0.613,
+      "tires": [
+        {
+          "name": "alltearrain_1_hib_billert_m816",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.0,
+          "body_friction": 1.5,
+          "template": "Allterrain"
+        }
+      ]
+    },
+    "wheels_mercer_6x6r_230": {
+      "id": "wheels_mercer_6x6r_230",
+      "pak_path": "[media]/_dlc/dlc_18/classes/wheels/wheels_mercer_6x6r_230.xml",
+      "radius_default": 1.0,
+      "width_default": 0.518,
+      "tires": [
+        {
+          "name": "offroad_1_mercer_6x6r_230",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.7,
+          "body_friction": 2.75,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheel_cargo_cabin_01_narrow": {
+      "id": "wheel_cargo_cabin_01_narrow",
+      "pak_path": "[media]/_dlc/dlc_1_1/classes/wheels/wheel_cargo_cabin_01_narrow.xml",
+      "radius_default": 1.0,
+      "width_default": 1.0,
+      "tires": [
+        {
+          "name": "invisible",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.0,
+          "body_friction": 0.1,
+          "template": ""
+        }
+      ]
+    },
+    "wheels_ford_f750": {
+      "id": "wheels_ford_f750",
+      "pak_path": "[media]/_dlc/dlc_1_1/classes/wheels/wheels_ford_f750.xml",
+      "radius_default": 1.0,
+      "width_default": 0.546,
+      "tires": [
+        {
+          "name": "highway_ford_f750",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.4,
+          "body_friction": null,
+          "template": "Highway"
+        },
+        {
+          "name": "offroad_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "offroad_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.9,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "offroad_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 3.2,
+          "template": "Offroad"
+        },
+        {
+          "name": "chains_all",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        }
+      ]
+    },
+    "wheels_medium_mudtires_actaeon": {
+      "id": "wheels_medium_mudtires_actaeon",
+      "pak_path": "[media]/_dlc/dlc_1_1/classes/wheels/wheels_medium_mudtires_actaeon.xml",
+      "radius_default": 1.0,
+      "width_default": 1.118,
+      "tires": [
+        {
+          "name": "mudtires",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.4,
+          "body_friction": null,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_scout_apache_1": {
+      "id": "wheels_scout_apache_1",
+      "pak_path": "[media]/_dlc/dlc_1_2/classes/wheels/wheels_scout_apache_1.xml",
+      "radius_default": 1.0,
+      "width_default": 0.67,
+      "tires": [
+        {
+          "name": "offroad_apache_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        },
+        {
+          "name": "allterrain_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 1.4,
+          "template": "ScoutAllterrain"
+        },
+        {
+          "name": "allterrain_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": null,
+          "template": "ScoutAllterrain"
+        },
+        {
+          "name": "allterrain_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "ScoutAllterrain"
+        },
+        {
+          "name": "mudtires_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        },
+        {
+          "name": "chain_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        }
+      ]
+    },
+    "wheels_cat_th357_single": {
+      "id": "wheels_cat_th357_single",
+      "pak_path": "[media]/_dlc/dlc_2_1/classes/wheels/wheels_cat_th357_single.xml",
+      "radius_default": 1.0,
+      "width_default": 0.762,
+      "tires": [
+        {
+          "name": "mudtires_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        }
+      ]
+    },
+    "wheels_superheavy_cat770g_double": {
+      "id": "wheels_superheavy_cat770g_double",
+      "pak_path": "[media]/_dlc/dlc_2_1/classes/wheels/wheels_superheavy_cat770g_double.xml",
+      "radius_default": 1.0,
+      "width_default": 0.549,
+      "tires": [
+        {
+          "name": "mudtires_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 3.5,
+          "body_friction": null,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_medium_mudtires_ankmk38": {
+      "id": "wheels_medium_mudtires_ankmk38",
+      "pak_path": "[media]/_dlc/dlc_2_2/classes/wheels/wheels_medium_mudtires_ankmk38.xml",
+      "radius_default": 1.0,
+      "width_default": 1.118,
+      "tires": [
+        {
+          "name": "mudtires",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.4,
+          "body_friction": null,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_heavy_offroad_p512": {
+      "id": "wheels_heavy_offroad_p512",
+      "pak_path": "[media]/_dlc/dlc_3/classes/wheels/wheels_heavy_offroad_p512.xml",
+      "radius_default": 1.0,
+      "width_default": 0.459,
+      "tires": [
+        {
+          "name": "offroad",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 3.5,
+          "body_friction": null,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_tatra_t813": {
+      "id": "wheels_tatra_t813",
+      "pak_path": "[media]/_dlc/dlc_4/classes/wheels/wheels_tatra_t813.xml",
+      "radius_default": 1.0,
+      "width_default": 0.78,
+      "tires": [
+        {
+          "name": "tire",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        }
+      ]
+    },
+    "wheels_train_rocket": {
+      "id": "wheels_train_rocket",
+      "pak_path": "[media]/_dlc/dlc_4/classes/wheels/wheels_train_rocket.xml",
+      "radius_default": 1.0,
+      "width_default": 1.17,
+      "tires": [
+        {
+          "name": "tire",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.6,
+          "body_friction": 0.1,
+          "template": ""
+        }
+      ]
+    },
+    "wheels_zikz_605r_1": {
+      "id": "wheels_zikz_605r_1",
+      "pak_path": "[media]/_dlc/dlc_4/classes/wheels/wheels_zikz_605r_1.xml",
+      "radius_default": 1.0,
+      "width_default": 1.0,
+      "tires": [
+        {
+          "name": "mudtires_zikz605r_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        }
+      ]
+    },
+    "wheels_scout_offroad2_jeep_wrangler": {
+      "id": "wheels_scout_offroad2_jeep_wrangler",
+      "pak_path": "[media]/_dlc/dlc_5/classes/wheels/wheels_scout_offroad2_jeep_wrangler.xml",
+      "radius_default": 1.0,
+      "width_default": 0.66,
+      "tires": [
+        {
+          "name": "tire1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "ScoutOffroad"
+        }
+      ]
+    },
+    "wheels_tatra_force_815_7": {
+      "id": "wheels_tatra_force_815_7",
+      "pak_path": "[media]/_dlc/dlc_5/classes/wheels/wheels_tatra_force_815_7.xml",
+      "radius_default": 1.0,
+      "width_default": 0.58,
+      "tires": [
+        {
+          "name": "tire",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        }
+      ]
+    },
+    "wheels_tatra_phoenix": {
+      "id": "wheels_tatra_phoenix",
+      "pak_path": "[media]/_dlc/dlc_5/classes/wheels/wheels_tatra_phoenix.xml",
+      "radius_default": 1.0,
+      "width_default": 0.706,
+      "tires": [
+        {
+          "name": "tire",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        }
+      ]
+    },
+    "wheels_land_rover_defender_110": {
+      "id": "wheels_land_rover_defender_110",
+      "pak_path": "[media]/_dlc/dlc_6/classes/wheels/wheels_land_rover_defender_110.xml",
+      "radius_default": 1.0,
+      "width_default": 0.66,
+      "tires": [
+        {
+          "name": "tire",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "ScoutOffroad"
+        }
+      ]
+    },
+    "wheels_land_rover_defender_90": {
+      "id": "wheels_land_rover_defender_90",
+      "pak_path": "[media]/_dlc/dlc_6/classes/wheels/wheels_land_rover_defender_90.xml",
+      "radius_default": 1.0,
+      "width_default": 0.66,
+      "tires": [
+        {
+          "name": "tire",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "ScoutOffroad"
+        }
+      ]
+    },
+    "wheels_step_3364_crocodile": {
+      "id": "wheels_step_3364_crocodile",
+      "pak_path": "[media]/_dlc/dlc_6/classes/wheels/wheels_step_3364_crocodile.xml",
+      "radius_default": 1.0,
+      "width_default": 0.459,
+      "tires": [
+        {
+          "name": "tire_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.5,
+          "body_friction": 1.4,
+          "template": "Allterrain"
+        }
+      ]
+    },
+    "wheels_azov_43_191_sprinter": {
+      "id": "wheels_azov_43_191_sprinter",
+      "pak_path": "[media]/_dlc/dlc_7/classes/wheels/wheels_azov_43_191_sprinter.xml",
+      "radius_default": 1.0,
+      "width_default": 0.715,
+      "tires": [
+        {
+          "name": "tire",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.0,
+          "body_friction": null,
+          "template": "Allterrain"
+        }
+      ]
+    },
+    "wheels_gor_by4": {
+      "id": "wheels_gor_by4",
+      "pak_path": "[media]/_dlc/dlc_7/classes/wheels/wheels_gor_by4.xml",
+      "radius_default": 1.0,
+      "width_default": 0.715,
+      "tires": [
+        {
+          "name": "tire_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.1,
+          "body_friction": null,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_base_kirovets_k7m": {
+      "id": "wheels_base_kirovets_k7m",
+      "pak_path": "[media]/_dlc/dlc_8/classes/wheels/wheels_base_kirovets_k7m.xml",
+      "radius_default": 1.0,
+      "width_default": 0.731,
+      "tires": [
+        {
+          "name": "tire",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        }
+      ]
+    },
+    "wheels_extend_kirovets_k7m": {
+      "id": "wheels_extend_kirovets_k7m",
+      "pak_path": "[media]/_dlc/dlc_8/classes/wheels/wheels_extend_kirovets_k7m.xml",
+      "radius_default": 1.0,
+      "width_default": 1.57,
+      "tires": [
+        {
+          "name": "tire",
+          "radius": null,
+          "mass_kg": 1200.0,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        }
+      ]
+    },
+    "wheels_kirovets_k700": {
+      "id": "wheels_kirovets_k700",
+      "pak_path": "[media]/_dlc/dlc_8/classes/wheels/wheels_kirovets_k700.xml",
+      "radius_default": 1.0,
+      "width_default": 0.731,
+      "tires": [
+        {
+          "name": "tire",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        }
+      ]
+    },
+    "wheels_rezvani_hercules_6x6": {
+      "id": "wheels_rezvani_hercules_6x6",
+      "pak_path": "[media]/_dlc/dlc_8/classes/wheels/wheels_rezvani_hercules_6x6.xml",
+      "radius_default": 1.0,
+      "width_default": 0.66,
+      "tires": [
+        {
+          "name": "tire",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "ScoutOffroad"
+        }
+      ]
+    },
+    "wheels_step_39331_pike": {
+      "id": "wheels_step_39331_pike",
+      "pak_path": "[media]/_dlc/dlc_8/classes/wheels/wheels_step_39331_pike.xml",
+      "radius_default": 1.0,
+      "width_default": 0.459,
+      "tires": [
+        {
+          "name": "tire_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.5,
+          "body_friction": 1.4,
+          "template": "Allterrain"
+        }
+      ]
+    },
+    "wheels_derry_special_15c177": {
+      "id": "wheels_derry_special_15c177",
+      "pak_path": "[media]/_dlc/dlc_9/classes/wheels/wheels_derry_special_15c177.xml",
+      "radius_default": 1.0,
+      "width_default": 0.65,
+      "tires": [
+        {
+          "name": "tire",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.7,
+          "body_friction": null,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_heavy_mudtires_single2_derry_special_15c177": {
+      "id": "wheels_heavy_mudtires_single2_derry_special_15c177",
+      "pak_path": "[media]/_dlc/dlc_9/classes/wheels/wheels_heavy_mudtires_single2_derry_special_15c177.xml",
+      "radius_default": 1.0,
+      "width_default": 0.79,
+      "tires": [
+        {
+          "name": "JAT MHS IV",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.6,
+          "body_friction": 1.8,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MHS V",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.1,
+          "body_friction": 2.4,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MHS VI",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.5,
+          "body_friction": 1.8,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_heavy_mudtires_single_derry_special_15c177": {
+      "id": "wheels_heavy_mudtires_single_derry_special_15c177",
+      "pak_path": "[media]/_dlc/dlc_9/classes/wheels/wheels_heavy_mudtires_single_derry_special_15c177.xml",
+      "radius_default": 1.0,
+      "width_default": 0.79,
+      "tires": [
+        {
+          "name": "JAT MHS I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.2,
+          "body_friction": 1.8,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MHS II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.0,
+          "body_friction": 2.3,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MHS III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.4,
+          "body_friction": 1.9,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_heavy_offroad_single_derry_special_15c177": {
+      "id": "wheels_heavy_offroad_single_derry_special_15c177",
+      "pak_path": "[media]/_dlc/dlc_9/classes/wheels/wheels_heavy_offroad_single_derry_special_15c177.xml",
+      "radius_default": 1.0,
+      "width_default": 0.62,
+      "tires": [
+        {
+          "name": "JAT OHS I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 3.0,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHS II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.3,
+          "body_friction": 3.2,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHS III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.7,
+          "body_friction": 3.0,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_heavy_single2_derry_special_15c177": {
+      "id": "wheels_heavy_single2_derry_special_15c177",
+      "pak_path": "[media]/_dlc/dlc_9/classes/wheels/wheels_heavy_single2_derry_special_15c177.xml",
+      "radius_default": 1.0,
+      "width_default": 0.84,
+      "tires": [
+        {
+          "name": "mudtires_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.4,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "mudtires_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 2.4,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_heavy_single2_zikz_612h": {
+      "id": "wheels_heavy_single2_zikz_612h",
+      "pak_path": "[media]/_dlc/dlc_9/classes/wheels/wheels_heavy_single2_zikz_612h.xml",
+      "radius_default": 1.0,
+      "width_default": 0.84,
+      "tires": [
+        {
+          "name": "mudtires_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.4,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "mudtires_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 2.4,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_heavy_single_derry_special_15c177": {
+      "id": "wheels_heavy_single_derry_special_15c177",
+      "pak_path": "[media]/_dlc/dlc_9/classes/wheels/wheels_heavy_single_derry_special_15c177.xml",
+      "radius_default": 1.0,
+      "width_default": 0.65,
+      "tires": [
+        {
+          "name": "allterrain_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": null,
+          "template": "Allterrain"
+        },
+        {
+          "name": "offroad_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "offroad_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.8,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "mudtires_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "chains_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Chains"
+        },
+        {
+          "name": "mudtires_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "mudtires_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "mudtires_4",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_heavy_single_zikz_612h": {
+      "id": "wheels_heavy_single_zikz_612h",
+      "pak_path": "[media]/_dlc/dlc_9/classes/wheels/wheels_heavy_single_zikz_612h.xml",
+      "radius_default": 1.0,
+      "width_default": 0.75,
+      "tires": [
+        {
+          "name": "allterrain_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": null,
+          "template": "Allterrain"
+        },
+        {
+          "name": "offroad_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "offroad_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.8,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "mudtires_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "chains_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Chains"
+        },
+        {
+          "name": "mudtires_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "mudtires_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "mudtires_4",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_zikz_566a": {
+      "id": "wheels_zikz_566a",
+      "pak_path": "[media]/_dlc/dlc_9/classes/wheels/wheels_zikz_566a.xml",
+      "radius_default": 1.0,
+      "width_default": 0.618,
+      "tires": [
+        {
+          "name": "zikz_566_tire",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.3,
+          "body_friction": 3.0,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_zikz_612h_mastodont": {
+      "id": "wheels_zikz_612h_mastodont",
+      "pak_path": "[media]/_dlc/dlc_9/classes/wheels/wheels_zikz_612h_mastodont.xml",
+      "radius_default": 1.0,
+      "width_default": 0.8,
+      "tires": [
+        {
+          "name": "mudtires_zikz605r_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        }
+      ]
+    },
+    "wheels_derry_longhorn_4520": {
+      "id": "wheels_derry_longhorn_4520",
+      "pak_path": "[media]/classes/wheels/wheels_derry_longhorn_4520.xml",
+      "radius_default": 1.0,
+      "width_default": 0.65,
+      "tires": [
+        {
+          "name": "tire_longhorn_4520",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.7,
+          "body_friction": null,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_heavy_allterrain_double_p12": {
+      "id": "wheels_heavy_allterrain_double_p12",
+      "pak_path": "[media]/classes/wheels/wheels_heavy_allterrain_double_p12.xml",
+      "radius_default": 1.0,
+      "width_default": 0.62,
+      "tires": [
+        {
+          "name": "JAT ATHD I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.0,
+          "body_friction": 1.7,
+          "template": "Allterrain"
+        },
+        {
+          "name": "JAT ATHD II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.1,
+          "body_friction": 1.5,
+          "template": "Allterrain"
+        },
+        {
+          "name": "JAT ATHD III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.4,
+          "body_friction": 1.5,
+          "template": "Allterrain"
+        }
+      ]
+    },
+    "wheels_heavy_double1": {
+      "id": "wheels_heavy_double1",
+      "pak_path": "[media]/classes/wheels/wheels_heavy_double1.xml",
+      "radius_default": 1.0,
+      "width_default": 0.58,
+      "tires": [
+        {
+          "name": "highway_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.4,
+          "body_friction": null,
+          "template": "Highway"
+        },
+        {
+          "name": "highway_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 1.2,
+          "template": "Highway"
+        },
+        {
+          "name": "highway_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Highway"
+        },
+        {
+          "name": "allterrain_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Allterrain"
+        },
+        {
+          "name": "allterrain_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": null,
+          "template": "Allterrain"
+        },
+        {
+          "name": "allterrain_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 1.7,
+          "template": "Allterrain"
+        }
+      ]
+    },
+    "wheels_heavy_double2": {
+      "id": "wheels_heavy_double2",
+      "pak_path": "[media]/classes/wheels/wheels_heavy_double2.xml",
+      "radius_default": 1.0,
+      "width_default": 0.52,
+      "tires": [
+        {
+          "name": "offroad_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.9,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "offroad_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 3.2,
+          "template": "Offroad"
+        },
+        {
+          "name": "offroad_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "chains_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Chains"
+        }
+      ]
+    },
+    "wheels_heavy_double2_p12": {
+      "id": "wheels_heavy_double2_p12",
+      "pak_path": "[media]/classes/wheels/wheels_heavy_double2_p12.xml",
+      "radius_default": 1.0,
+      "width_default": 0.52,
+      "tires": [
+        {
+          "name": "offroad_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.9,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "offroad_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 3.2,
+          "template": "Offroad"
+        },
+        {
+          "name": "offroad_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "chains_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Chains"
+        }
+      ]
+    },
+    "wheels_heavy_double_p16": {
+      "id": "wheels_heavy_double_p16",
+      "pak_path": "[media]/classes/wheels/wheels_heavy_double_p16.xml",
+      "radius_default": 1.0,
+      "width_default": 0.52,
+      "tires": [
+        {
+          "name": "offroad_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 3.5,
+          "body_friction": null,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_heavy_mudtires_single2_p12": {
+      "id": "wheels_heavy_mudtires_single2_p12",
+      "pak_path": "[media]/classes/wheels/wheels_heavy_mudtires_single2_p12.xml",
+      "radius_default": 1.0,
+      "width_default": 0.79,
+      "tires": [
+        {
+          "name": "JAT MHS IV",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.6,
+          "body_friction": 1.8,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MHS V",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.1,
+          "body_friction": 2.4,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MHS VI",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.5,
+          "body_friction": 1.8,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_heavy_mudtires_single_p12": {
+      "id": "wheels_heavy_mudtires_single_p12",
+      "pak_path": "[media]/classes/wheels/wheels_heavy_mudtires_single_p12.xml",
+      "radius_default": 1.0,
+      "width_default": 0.79,
+      "tires": [
+        {
+          "name": "JAT MHS I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.2,
+          "body_friction": 1.8,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MHS II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.0,
+          "body_friction": 2.3,
+          "template": "Mudtires"
+        },
+        {
+          "name": "JAT MHS III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.4,
+          "body_friction": 1.9,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_heavy_mudtires_tayga": {
+      "id": "wheels_heavy_mudtires_tayga",
+      "pak_path": "[media]/classes/wheels/wheels_heavy_mudtires_tayga.xml",
+      "radius_default": 1.0,
+      "width_default": 1.118,
+      "tires": [
+        {
+          "name": "mudtires",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.4,
+          "body_friction": null,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_heavy_offroad_double_p12": {
+      "id": "wheels_heavy_offroad_double_p12",
+      "pak_path": "[media]/classes/wheels/wheels_heavy_offroad_double_p12.xml",
+      "radius_default": 1.0,
+      "width_default": 0.62,
+      "tires": [
+        {
+          "name": "JAT OHD I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.7,
+          "body_friction": 3.0,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHD II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 3.1,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHD III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 3.2,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_heavy_offroad_double_p16": {
+      "id": "wheels_heavy_offroad_double_p16",
+      "pak_path": "[media]/classes/wheels/wheels_heavy_offroad_double_p16.xml",
+      "radius_default": 1.0,
+      "width_default": 0.62,
+      "tires": [
+        {
+          "name": "JAT OHD I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.7,
+          "body_friction": 3.0,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHD II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 3.1,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHD III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 3.2,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_heavy_offroad_p12": {
+      "id": "wheels_heavy_offroad_p12",
+      "pak_path": "[media]/classes/wheels/wheels_heavy_offroad_p12.xml",
+      "radius_default": 1.0,
+      "width_default": 0.622,
+      "tires": [
+        {
+          "name": "allterrain",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Allterrain"
+        }
+      ]
+    },
+    "wheels_heavy_offroad_single_p12": {
+      "id": "wheels_heavy_offroad_single_p12",
+      "pak_path": "[media]/classes/wheels/wheels_heavy_offroad_single_p12.xml",
+      "radius_default": 1.0,
+      "width_default": 0.62,
+      "tires": [
+        {
+          "name": "JAT OHS I",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.6,
+          "body_friction": 3.0,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHS II",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.3,
+          "body_friction": 3.2,
+          "template": "Offroad"
+        },
+        {
+          "name": "JAT OHS III",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.7,
+          "body_friction": 3.0,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_heavy_single": {
+      "id": "wheels_heavy_single",
+      "pak_path": "[media]/classes/wheels/wheels_heavy_single.xml",
+      "radius_default": 1.0,
+      "width_default": 0.65,
+      "tires": [
+        {
+          "name": "allterrain_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": null,
+          "template": "Allterrain"
+        },
+        {
+          "name": "offroad_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "offroad_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.8,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "mudtires_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "chains_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Chains"
+        },
+        {
+          "name": "mudtires_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "mudtires_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "mudtires_4",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_heavy_single2": {
+      "id": "wheels_heavy_single2",
+      "pak_path": "[media]/classes/wheels/wheels_heavy_single2.xml",
+      "radius_default": 1.0,
+      "width_default": 0.84,
+      "tires": [
+        {
+          "name": "mudtires_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.4,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "mudtires_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 2.4,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_heavy_single_p12": {
+      "id": "wheels_heavy_single_p12",
+      "pak_path": "[media]/classes/wheels/wheels_heavy_single_p12.xml",
+      "radius_default": 1.0,
+      "width_default": 0.65,
+      "tires": [
+        {
+          "name": "allterrain_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": null,
+          "template": "Allterrain"
+        },
+        {
+          "name": "offroad_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "offroad_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.8,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "mudtires_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "chains_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Chains"
+        },
+        {
+          "name": "mudtires_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "mudtires_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "mudtires_4",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_invisible_heavy_single": {
+      "id": "wheels_invisible_heavy_single",
+      "pak_path": "[media]/classes/wheels/wheels_invisible_heavy_single.xml",
+      "radius_default": 1.0,
+      "width_default": 0.65,
+      "tires": [
+        {
+          "name": "invisible",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        }
+      ]
+    },
+    "wheels_medium_ank_mk38": {
+      "id": "wheels_medium_ank_mk38",
+      "pak_path": "[media]/classes/wheels/wheels_medium_ank_mk38.xml",
+      "radius_default": 1.0,
+      "width_default": 0.706,
+      "tires": [
+        {
+          "name": "offroad_ank_nk38_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.7,
+          "body_friction": null,
+          "template": "Offroad"
+        }
+      ]
+    },
+    "wheels_medium_double": {
+      "id": "wheels_medium_double",
+      "pak_path": "[media]/classes/wheels/wheels_medium_double.xml",
+      "radius_default": 1.0,
+      "width_default": 0.58,
+      "tires": [
+        {
+          "name": "highway_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.4,
+          "body_friction": null,
+          "template": "Highway"
+        },
+        {
+          "name": "highway_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 1.2,
+          "template": "Highway"
+        },
+        {
+          "name": "highway_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Highway"
+        },
+        {
+          "name": "allterrain_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Allterrain"
+        },
+        {
+          "name": "allterrain_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": null,
+          "template": "Allterrain"
+        },
+        {
+          "name": "allterrain_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 1.7,
+          "template": "Allterrain"
+        },
+        {
+          "name": "offroad_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "offroad_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.9,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "offroad_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 3.2,
+          "template": "Offroad"
+        },
+        {
+          "name": "chains_rear",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Chains"
+        },
+        {
+          "name": "chains_all",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        }
+      ]
+    },
+    "wheels_medium_double_front": {
+      "id": "wheels_medium_double_front",
+      "pak_path": "[media]/classes/wheels/wheels_medium_double_front.xml",
+      "radius_default": 1.0,
+      "width_default": 0.58,
+      "tires": [
+        {
+          "name": "highway_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.4,
+          "body_friction": null,
+          "template": "Highway"
+        },
+        {
+          "name": "highway_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 1.2,
+          "template": "Highway"
+        },
+        {
+          "name": "highway_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Highway"
+        },
+        {
+          "name": "allterrain_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Allterrain"
+        },
+        {
+          "name": "allterrain_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": null,
+          "template": "Allterrain"
+        },
+        {
+          "name": "allterrain_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 1.7,
+          "template": "Allterrain"
+        },
+        {
+          "name": "offroad_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "offroad_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.9,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "offroad_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 3.2,
+          "template": "Offroad"
+        },
+        {
+          "name": "chains_all",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        }
+      ]
+    },
+    "wheels_scout1": {
+      "id": "wheels_scout1",
+      "pak_path": "[media]/classes/wheels/wheels_scout1.xml",
+      "radius_default": 1.0,
+      "width_default": 0.509,
+      "tires": [
+        {
+          "name": "highway_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 0.4,
+          "body_friction": null,
+          "template": "ScoutHighway"
+        },
+        {
+          "name": "highway_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 1.0,
+          "template": "ScoutHighway"
+        },
+        {
+          "name": "highway_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "ScoutHighway"
+        },
+        {
+          "name": "invisible",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        }
+      ]
+    },
+    "wheels_scout2": {
+      "id": "wheels_scout2",
+      "pak_path": "[media]/classes/wheels/wheels_scout2.xml",
+      "radius_default": 1.0,
+      "width_default": 0.66,
+      "tires": [
+        {
+          "name": "allterrain_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 1.4,
+          "template": "ScoutAllterrain"
+        },
+        {
+          "name": "allterrain_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 1.2,
+          "body_friction": null,
+          "template": "ScoutAllterrain"
+        },
+        {
+          "name": "allterrain_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "ScoutAllterrain"
+        },
+        {
+          "name": "offroad_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        },
+        {
+          "name": "mudtires_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        },
+        {
+          "name": "chain_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        }
+      ]
+    },
+    "wheels_scout_btr": {
+      "id": "wheels_scout_btr",
+      "pak_path": "[media]/classes/wheels/wheels_scout_btr.xml",
+      "radius_default": 1.0,
+      "width_default": 0.67,
+      "tires": [
+        {
+          "name": "offroad_btr_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 8.0,
+          "body_friction": 3.0,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_scout_offroad2_hummer_h2": {
+      "id": "wheels_scout_offroad2_hummer_h2",
+      "pak_path": "[media]/classes/wheels/wheels_scout_offroad2_hummer_h2.xml",
+      "radius_default": 1.0,
+      "width_default": 0.66,
+      "tires": [
+        {
+          "name": "tire1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "ScoutOffroad"
+        }
+      ]
+    },
+    "wheels_scout_yar_87": {
+      "id": "wheels_scout_yar_87",
+      "pak_path": "[media]/classes/wheels/wheels_scout_yar_87.xml",
+      "radius_default": 1.0,
+      "width_default": 0.65,
+      "tires": [
+        {
+          "name": "allterrain_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Allterrain"
+        },
+        {
+          "name": "offroad_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Offroad"
+        },
+        {
+          "name": "mudtires_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Mudtires"
+        },
+        {
+          "name": "chains_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "Chains"
+        }
+      ]
+    },
+    "wheels_scout_yar_871": {
+      "id": "wheels_scout_yar_871",
+      "pak_path": "[media]/classes/wheels/wheels_scout_yar_871.xml",
+      "radius_default": 1.0,
+      "width_default": 0.863,
+      "tires": [
+        {
+          "name": "mudtires_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 2.4,
+          "template": "Mudtires"
+        },
+        {
+          "name": "mudtires_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 2.4,
+          "body_friction": null,
+          "template": "Mudtires"
+        }
+      ]
+    },
+    "wheels_superheavy_single": {
+      "id": "wheels_superheavy_single",
+      "pak_path": "[media]/classes/wheels/wheels_superheavy_single.xml",
+      "radius_default": 1.0,
+      "width_default": 0.78,
+      "tires": [
+        {
+          "name": "mudtires_1",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": ""
+        },
+        {
+          "name": "mudtires_2",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": 3.2,
+          "body_friction": null,
+          "template": "HeavyMudtires"
+        },
+        {
+          "name": "mudtires_3",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": 2.0,
+          "template": "HeavyMudtires"
+        },
+        {
+          "name": "mudtires_cat745",
+          "radius": null,
+          "mass_kg": null,
+          "substance_friction": null,
+          "body_friction": null,
+          "template": "HeavyMudtires"
+        }
+      ]
+    }
+  }
+}

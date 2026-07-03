@@ -1,0 +1,126 @@
+{
+  "source": "C:\\Users\\doski\\snowrunner real\\initial.pak.bak",
+  "trailers": {
+    "scout_trailer_offroad_cargo.xml": {
+      "mass_all_bodies_kg": 1315.0,
+      "mass_largest_body_kg": 800.0,
+      "mass_parts_kg": [
+        5.0,
+        10.0,
+        150.0,
+        100.0,
+        800.0,
+        200.0,
+        50.0
+      ],
+      "center_of_mass_offsets": [
+        "0; 0; 0"
+      ],
+      "attach_type": "Drawbar",
+      "wheel_count": 4,
+      "axle_count": 2,
+      "pak_path": "[media]/_dlc/dlc_6/classes/trucks/trailers/scout_trailer_offroad_cargo.xml",
+      "registry_tare_kg": 800.0
+    },
+    "scout_trailer_offroad.xml": {
+      "mass_all_bodies_kg": 850.0,
+      "mass_largest_body_kg": 600.0,
+      "mass_parts_kg": [
+        150.0,
+        100.0,
+        600.0
+      ],
+      "center_of_mass_offsets": [
+        "0; 0; 0"
+      ],
+      "attach_type": "Drawbar",
+      "wheel_count": 4,
+      "axle_count": 2,
+      "pak_path": "[media]/_dlc/dlc_6/classes/trucks/trailers/scout_trailer_offroad.xml",
+      "registry_tare_kg": 800.0
+    },
+    "scout_trailer_oiltank.xml": {
+      "mass_all_bodies_kg": 3555.0,
+      "mass_largest_body_kg": 2500.0,
+      "mass_parts_kg": [
+        2500.0,
+        100.0,
+        50.0,
+        5.0,
+        900.0
+      ],
+      "center_of_mass_offsets": [
+        "0; 0; 0"
+      ],
+      "attach_type": "Drawbar",
+      "wheel_count": 3,
+      "axle_count": 1,
+      "pak_path": "[media]/classes/trucks/trailers/scout_trailer_oiltank.xml",
+      "registry_tare_kg": 800.0
+    },
+    "semitrailer_flatbed_5.xml": {
+      "mass_all_bodies_kg": 4585.0,
+      "mass_largest_body_kg": 1000.0,
+      "mass_parts_kg": [
+        1000.0,
+        1000.0,
+        1000.0,
+        1000.0,
+        500.0,
+        40.0,
+        40.0,
+        5.0
+      ],
+      "center_of_mass_offsets": [
+        "0; 0; 0"
+      ],
+      "attach_type": "Saddle",
+      "wheel_count": 4,
+      "axle_count": 2,
+      "pak_path": "[media]/classes/trucks/trailers/semitrailer_flatbed_5.xml",
+      "registry_tare_kg": 2500.0
+    },
+    "semitrailer_sideboard_5.xml": {
+      "mass_all_bodies_kg": 4385.0,
+      "mass_largest_body_kg": 1000.0,
+      "mass_parts_kg": [
+        1000.0,
+        1000.0,
+        1000.0,
+        1000.0,
+        300.0,
+        40.0,
+        40.0,
+        5.0
+      ],
+      "center_of_mass_offsets": [
+        "0; 0; 0"
+      ],
+      "attach_type": "Saddle",
+      "wheel_count": 4,
+      "axle_count": 2,
+      "pak_path": "[media]/classes/trucks/trailers/semitrailer_sideboard_5.xml",
+      "registry_tare_kg": 2500.0
+    },
+    "semitrailer_oiltank.xml": {
+      "mass_all_bodies_kg": 8085.0,
+      "mass_largest_body_kg": 4000.0,
+      "mass_parts_kg": [
+        4000.0,
+        300.0,
+        40.0,
+        40.0,
+        5.0,
+        3700.0
+      ],
+      "center_of_mass_offsets": [
+        "0; 0; 0"
+      ],
+      "attach_type": "Saddle",
+      "wheel_count": 6,
+      "axle_count": 3,
+      "pak_path": "[media]/classes/trucks/trailers/semitrailer_oiltank.xml",
+      "registry_tare_kg": 2500.0
+    }
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "matrix": [
+    {
+      "tire": "highway",
+      "surface": "Asfalto",
+      "v30_kmh": 149.9,
+      "slip30": 0.0,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "highway",
+      "surface": "Tierra",
+      "v30_kmh": 149.9,
+      "slip30": 0.0,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "highway",
+      "surface": "Grava",
+      "v30_kmh": 149.9,
+      "slip30": 0.0,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "highway",
+      "surface": "Barro",
+      "v30_kmh": 0.0,
+      "slip30": 1.0,
+      "immersion30": 1.0
+    },
+    {
+      "tire": "highway",
+      "surface": "Barro profundo",
+      "v30_kmh": 0.0,
+      "slip30": 1.0,
+      "immersion30": 1.0
+    },
+    {
+      "tire": "highway",
+      "surface": "Nieve",
+      "v30_kmh": 107.2,
+      "slip30": 0.03,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "highway",
+      "surface": "Hielo",
+      "v30_kmh": 2.3,
+      "slip30": 0.79,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "highway",
+      "surface": "Agua poco prof.",
+      "v30_kmh": 0.0,
+      "slip30": 1.0,
+      "immersion30": 0.89
+    },
+    {
+      "tire": "highway",
+      "surface": "Agua profunda",
+      "v30_kmh": 0.0,
+      "slip30": 1.0,
+      "immersion30": 1.0
+    },
+    {
+      "tire": "offroad",
+      "surface": "Asfalto",
+      "v30_kmh": 149.9,
+      "slip30": 0.0,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "offroad",
+      "surface": "Tierra",
+      "v30_kmh": 149.9,
+      "slip30": 0.0,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "offroad",
+      "surface": "Grava",
+      "v30_kmh": 149.9,
+      "slip30": 0.0,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "offroad",
+      "surface": "Barro",
+      "v30_kmh": 15.7,
+      "slip30": 0.22,
+      "immersion30": 0.21
+    },
+    {
+      "tire": "offroad",
+      "surface": "Barro profundo",
+      "v30_kmh": 0.0,
+      "slip30": 1.0,
+      "immersion30": 1.0
+    },
+    {
+      "tire": "offroad",
+      "surface": "Nieve",
+      "v30_kmh": 112.4,
+      "slip30": 0.02,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "offroad",
+      "surface": "Hielo",
+      "v30_kmh": 2.3,
+      "slip30": 0.79,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "offroad",
+      "surface": "Agua poco prof.",
+      "v30_kmh": 22.4,
+      "slip30": 0.13,
+      "immersion30": 0.35
+    },
+    {
+      "tire": "offroad",
+      "surface": "Agua profunda",
+      "v30_kmh": 0.0,
+      "slip30": 1.0,
+      "immersion30": 1.0
+    },
+    {
+      "tire": "allterrain",
+      "surface": "Asfalto",
+      "v30_kmh": 149.9,
+      "slip30": 0.0,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "allterrain",
+      "surface": "Tierra",
+      "v30_kmh": 149.9,
+      "slip30": 0.0,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "allterrain",
+      "surface": "Grava",
+      "v30_kmh": 149.9,
+      "slip30": 0.0,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "allterrain",
+      "surface": "Barro",
+      "v30_kmh": 12.9,
+      "slip30": 0.26,
+      "immersion30": 0.22
+    },
+    {
+      "tire": "allterrain",
+      "surface": "Barro profundo",
+      "v30_kmh": 0.0,
+      "slip30": 1.0,
+      "immersion30": 1.0
+    },
+    {
+      "tire": "allterrain",
+      "surface": "Nieve",
+      "v30_kmh": 112.4,
+      "slip30": 0.02,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "allterrain",
+      "surface": "Hielo",
+      "v30_kmh": 2.3,
+      "slip30": 0.79,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "allterrain",
+      "surface": "Agua poco prof.",
+      "v30_kmh": 18.8,
+      "slip30": 0.15,
+      "immersion30": 0.35
+    },
+    {
+      "tire": "allterrain",
+      "surface": "Agua profunda",
+      "v30_kmh": 0.0,
+      "slip30": 1.0,
+      "immersion30": 1.0
+    },
+    {
+      "tire": "mudtires",
+      "surface": "Asfalto",
+      "v30_kmh": 149.9,
+      "slip30": 0.0,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "mudtires",
+      "surface": "Tierra",
+      "v30_kmh": 149.9,
+      "slip30": 0.0,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "mudtires",
+      "surface": "Grava",
+      "v30_kmh": 149.9,
+      "slip30": 0.0,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "mudtires",
+      "surface": "Barro",
+      "v30_kmh": 36.1,
+      "slip30": 0.11,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "mudtires",
+      "surface": "Barro profundo",
+      "v30_kmh": 0.0,
+      "slip30": 1.0,
+      "immersion30": 1.0
+    },
+    {
+      "tire": "mudtires",
+      "surface": "Nieve",
+      "v30_kmh": 112.4,
+      "slip30": 0.02,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "mudtires",
+      "surface": "Hielo",
+      "v30_kmh": 2.3,
+      "slip30": 0.79,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "mudtires",
+      "surface": "Agua poco prof.",
+      "v30_kmh": 37.6,
+      "slip30": 0.08,
+      "immersion30": 0.35
+    },
+    {
+      "tire": "mudtires",
+      "surface": "Agua profunda",
+      "v30_kmh": 0.0,
+      "slip30": 1.0,
+      "immersion30": 1.0
+    },
+    {
+      "tire": "chains",
+      "surface": "Asfalto",
+      "v30_kmh": 149.9,
+      "slip30": 0.0,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "chains",
+      "surface": "Tierra",
+      "v30_kmh": 149.9,
+      "slip30": 0.0,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "chains",
+      "surface": "Grava",
+      "v30_kmh": 149.9,
+      "slip30": 0.0,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "chains",
+      "surface": "Barro",
+      "v30_kmh": 14.8,
+      "slip30": 0.23,
+      "immersion30": 0.21
+    },
+    {
+      "tire": "chains",
+      "surface": "Barro profundo",
+      "v30_kmh": 0.0,
+      "slip30": 1.0,
+      "immersion30": 1.0
+    },
+    {
+      "tire": "chains",
+      "surface": "Nieve",
+      "v30_kmh": 112.4,
+      "slip30": 0.02,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "chains",
+      "surface": "Hielo",
+      "v30_kmh": 24.5,
+      "slip30": 0.12,
+      "immersion30": 0.0
+    },
+    {
+      "tire": "chains",
+      "surface": "Agua poco prof.",
+      "v30_kmh": 21.2,
+      "slip30": 0.14,
+      "immersion30": 0.35
+    },
+    {
+      "tire": "chains",
+      "surface": "Agua profunda",
+      "v30_kmh": 0.0,
+      "slip30": 1.0,
+      "immersion30": 1.0
+    }
+  ],
+  "configs": [
+    {
+      "vehicle": "Juego original",
+      "engine": "CK1500 exclusivo",
+      "t097_s": 14.6,
+      "v60_kmh": 235.4
+    },
+    {
+      "vehicle": "Realista I6",
+      "engine": "250/292 I6",
+      "t097_s": 18.5,
+      "v60_kmh": 187.9
+    },
+    {
+      "vehicle": "Realista I6 offroad",
+      "engine": "250/292 I6",
+      "t097_s": 18.5,
+      "v60_kmh": 187.9
+    },
+    {
+      "vehicle": "Realista I6 + diff lock",
+      "engine": "250/292 I6",
+      "t097_s": 18.5,
+      "v60_kmh": 187.9
+    },
+    {
+      "vehicle": "Realista I6 danado",
+      "engine": "250/292 I6",
+      "t097_s": 22.1,
+      "v60_kmh": 165.4
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Barro highway sin diff",
+      "v30": 0.0,
+      "v60": 0.0,
+      "max_slip": 1.0,
+      "max_immersion": 1.0,
+      "fuel_l": 0.4
+    },
+    {
+      "label": "Barro offroad sin diff",
+      "v30": 23.2,
+      "v60": 4.0,
+      "max_slip": 1.0,
+      "max_immersion": 0.21,
+      "fuel_l": 0.3
+    },
+    {
+      "label": "Barro offroad CON diff",
+      "v30": 39.9,
+      "v60": 8.7,
+      "max_slip": 0.99,
+      "max_immersion": 0.15,
+      "fuel_l": 0.3
+    },
+    {
+      "label": "Barro prof. mudtires+diff",
+      "v30": 7.7,
+      "v60": 0.0,
+      "max_slip": 1.0,
+      "max_immersion": 0.67,
+      "fuel_l": 0.32
+    },
+    {
+      "label": "Agua profunda sin snorkel",
+      "v30": 0.0,
+      "v60": 0.0,
+      "max_slip": 1.0,
+      "max_immersion": 1.0,
+      "fuel_l": 0.4
+    },
+    {
+      "label": "Agua profunda con snorkel",
+      "v30": 24.5,
+      "v60": 4.5,
+      "max_slip": 1.0,
+      "max_immersion": 0.82,
+      "fuel_l": 0.3
+    }
+  ],
+  "advanced": [
+    {
+      "motor_sano_v60": 156.2,
+      "motor_danado_v60": 126.8,
+      "motor_danado_fuel": 0.18,
+      "torque_mult_danado": 0.8
+    }
+  ],
+  "accel_097_s": 18.5
+}
