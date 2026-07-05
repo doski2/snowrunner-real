@@ -134,7 +134,7 @@ class TelemetrySample:
     t_s: float
     speed_kmh: float
     note: str = ""
-    terrain_kind: str = ""  # hard | mud | soft | mixed | unknown (CE por rueda)
+    terrain_kind: str = ""  # hard | mud | soft | snow | ice | mixed | unknown (CE por rueda)
     terrain_map: str = ""  # legacy (blend mapa); ya no se rellena — usar terrain_kind + mud_grade
 
 
@@ -474,7 +474,7 @@ TEST_PROTOCOLS: tuple[TestProtocol, ...] = (
     ),
     TestProtocol(
         "km_f1_asfalto",
-        "Marshall F1 — asfalto Kr 104 + TM II",
+        "Marshall F1 — asfalto Kr 135-T + TM II",
         1,
         "asphalt",
         "Asfalto",
@@ -483,7 +483,7 @@ TEST_PROTOCOLS: tuple[TestProtocol, ...] = (
         False,
         "vacio",
         True,
-        "km_kr104",
+        "km_kr135",
         60.0,
         "45 TM II; AWD+diff; aceleracion a fondo.",
         "marshall",
@@ -499,7 +499,7 @@ TEST_PROTOCOLS: tuple[TestProtocol, ...] = (
         True,
         "vacio",
         True,
-        "km_kr104",
+        "km_kr135",
         60.0,
         "Tu setup; marcha reducida; calibrar KM_MUD_* con CE.",
         "marshall",
@@ -515,7 +515,7 @@ TEST_PROTOCOLS: tuple[TestProtocol, ...] = (
         True,
         "vacio",
         True,
-        "km_kr104",
+        "km_kr135",
         60.0,
         "Tint oscuro / rutas ocultas; mismo tramo que km_f2_barro_tm2.",
         "marshall",
@@ -531,7 +531,7 @@ TEST_PROTOCOLS: tuple[TestProtocol, ...] = (
         True,
         "trailer_metal_planks",
         True,
-        "km_kr104",
+        "km_kr135",
         60.0,
         "Remolque scout + carga; TM II + diff.",
         "marshall",
@@ -674,8 +674,75 @@ DEFAULT_LOADED_MUD_PROTOCOL: dict[str, str] = {
     "kodiak": "kd_f3_carga",
     "scout800": "s8_f3_carga_barro",
 }
+DEFAULT_SNOW_PROTOCOL: dict[str, str] = {
+    "ck1500": "f4_nieve_highway",
+}
+DEFAULT_ICE_PROTOCOL: dict[str, str] = {
+    "ck1500": "f4_hielo_cadenas",
+}
 
 PAYLOAD_LOAD_THRESHOLD_KG = 300.0
+
+# Meta de sesion desde terrain_kind CE (no desde protocolo fijo)
+TERRAIN_KIND_SURFACE: dict[str, tuple[str, str]] = {
+    "hard": ("asphalt", "Asfalto/firme"),
+    "mud": ("mud", "Barro"),
+    "soft": ("dirt", "Intermedio"),
+    "snow": ("snow", "Nieve"),
+    "ice": ("ice", "Hielo"),
+    "mixed": ("mixed", "Mixto"),
+    "unknown": ("unknown", "Desconocido"),
+}
+
+
+def dominant_terrain_kind_from_rows(rows: list[dict]) -> str:
+    from collections import Counter
+
+    kinds = Counter((r.get("terrain_kind") or "").strip().lower() for r in rows)
+    kinds.pop("", None)
+    return kinds.most_common(1)[0][0] if kinds else ""
+
+
+def surface_meta_from_terrain_kind(terrain_kind: str) -> tuple[str, str]:
+    return TERRAIN_KIND_SURFACE.get(
+        (terrain_kind or "").strip().lower(),
+        ("unknown", "Desconocido"),
+    )
+
+
+def _ce_bool_majority(rows: list[dict], field: str) -> bool | None:
+    from collections import Counter
+
+    votes: list[bool] = []
+    for row in rows[-80:]:
+        raw = (row.get(field) or "").strip().lower()
+        if raw in ("1", "true", "on", "yes"):
+            votes.append(True)
+        elif raw in ("0", "false", "off", "no", "?"):
+            votes.append(False)
+    if not votes:
+        return None
+    return Counter(votes).most_common(1)[0][0]
+
+
+def setup_hints_from_ce_rows(rows: list[dict]) -> dict[str, object]:
+    """Traction / carga inferidos del CSV (auto-detectado en grabacion)."""
+    hints: dict[str, object] = {"ce_auto_detected": True}
+    diff = _ce_bool_majority(rows, "diff_lock_live")
+    if diff is not None:
+        hints["diff_lock"] = diff
+    low = _ce_bool_majority(rows, "low_gear_live")
+    if low is not None:
+        hints["low_gear"] = low
+    awd = _ce_bool_majority(rows, "awd_live")
+    if awd is not None:
+        hints["awd_live"] = awd
+    loads = [r.get("load_hint", "").strip() for r in rows if r.get("load_hint")]
+    if loads:
+        from collections import Counter
+
+        hints["load_hint_ce"] = Counter(loads).most_common(1)[0][0]
+    return hints
 
 
 @dataclass(frozen=True)
@@ -788,9 +855,9 @@ def classify_surface_kind(
     terrain_kind: str = "",
     contact_avg: str | float | None = None,
 ) -> str:
-    """mud | hard | soft | mixed | unknown — para elegir protocolo CE."""
+    """mud | hard | soft | snow | ice | mixed | unknown — para elegir protocolo CE."""
     tk = (terrain_kind or "").strip().lower()
-    if tk in ("mud", "hard", "soft", "mixed"):
+    if tk in ("mud", "hard", "soft", "mixed", "snow", "ice"):
         if tk == "soft":
             grip = _parse_grip(wheel_grip)
             contact = _parse_grip(contact_avg)
@@ -863,6 +930,12 @@ def resolve_auto_protocol(
             detail = f"firme + carga util (sim {load_detection.load_scenario_id if load_detection else 'cargado'})"
         else:
             detail = f"firme vacio (surface={surface_wheel or 'grip alto'})"
+    elif surface == "snow":
+        proto = DEFAULT_SNOW_PROTOCOL.get(vid, DEFAULT_MUD_PROTOCOL[vid])
+        detail = f"nieve (terrain_kind=snow, grip={wheel_grip or '?'})"
+    elif surface == "ice":
+        proto = DEFAULT_ICE_PROTOCOL.get(vid, DEFAULT_MUD_PROTOCOL[vid])
+        detail = f"hielo (terrain_kind=ice, grip={wheel_grip or '?'})"
     else:
         if loaded:
             proto = DEFAULT_LOADED_MUD_PROTOCOL[vid]
@@ -1242,6 +1315,10 @@ def _engine_for_id(engine_id: str) -> EngineConfig:
         from camiones.marshall.simulador import ENGINE_REAL_KM
 
         return ENGINE_REAL_KM
+    if engine_id == "km_kr135":
+        from camiones.marshall.simulador import ENGINE_REAL_KM_135
+
+        return ENGINE_REAL_KM_135
     if engine_id == "km_stock":
         from camiones.marshall.simulador import ENGINE_STOCK_KM
 
@@ -1286,6 +1363,10 @@ def _engine_for_session(meta: SessionMeta) -> EngineConfig:
         from camiones.scout800.engines import engine_for_scout800
 
         return engine_for_scout800(meta.engine_id, _engine_name_xml_from_meta(meta))
+    if meta.vehicle_id == "marshall":
+        from camiones.marshall.simulador import engine_for_marshall
+
+        return engine_for_marshall(meta.engine_id, _engine_name_xml_from_meta(meta))
     return _engine_for_id(meta.engine_id)
 
 

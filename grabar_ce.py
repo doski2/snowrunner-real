@@ -23,12 +23,15 @@ sys.path.insert(0, CE_DIR)
 
 import memoria_havok as mh  # noqa: E402
 from ctypes import windll  # noqa: E402
+from datos.map_detect import format_map_line, resolve_map_context  # noqa: E402
 
 kernel32 = windll.kernel32
 TERRAIN_LABELS = {
     "hard": "asfalto/firme",
     "mud": "barro",
     "soft": "intermedio",
+    "snow": "nieve",
+    "ice": "hielo",
     "mixed": "mixto (ruedas distintas)",
     "unknown": "?",
 }
@@ -309,11 +312,25 @@ def main() -> int:
     )
     parser.add_argument(
         "--auto",
+        dest="auto",
         action="store_true",
-        help="Detectar camion y terreno al importar; muestra terreno en vivo al grabar",
+        default=None,
+        help="Detectar camion/terreno al importar (default con --import)",
+    )
+    parser.add_argument(
+        "--no-auto",
+        dest="auto",
+        action="store_false",
+        help="Usar --protocol fijo al importar",
     )
     parser.add_argument("--compare", action="store_true", help="Comparar con sim tras importar")
-    parser.add_argument("--map", default="", help="Nombre del mapa (solo metadatos de sesion, ej. Michigan)")
+    parser.add_argument("--map", default="", help="Nombre del mapa (auto si vacio)")
+    parser.add_argument(
+        "--auto-map",
+        action="store_true",
+        default=None,
+        help="Detectar mapa desde log/memoria (default si --map vacio)",
+    )
     parser.add_argument("--location", default="", help="Ruta / tramo GPS")
     parser.add_argument("--clima", default="", help="Clima Fase 7")
     parser.add_argument("--hora-juego", default="", dest="hora_juego", help="Hora in-game")
@@ -337,6 +354,10 @@ def main() -> int:
     )
     parser.add_argument("--probe", action="store_true", help="Solo comprobar lectura y salir")
     args = parser.parse_args()
+    if args.auto_map is None:
+        args.auto_map = not bool(args.map.strip())
+    if args.auto is None:
+        args.auto = bool(args.do_import)
 
     opened = mh.open_snowrunner()
     if not opened:
@@ -348,6 +369,28 @@ def main() -> int:
     samples_written = 0
     protocol = args.protocol
     log_path = args.output or mh.resolve_log_path()
+    session_map_name = args.map.strip()
+    session_location = args.location.strip() or "CE Havok log"
+    session_map_ctx = None
+
+    def _resolve_session_map() -> None:
+        nonlocal session_map_name, session_location, session_map_ctx
+        if not args.map.strip() and not args.auto_map:
+            session_location = args.location.strip() or "CE Havok log"
+            session_map_ctx = None
+            return
+        ctx = resolve_map_context(
+            map_arg=args.map,
+            location_arg=args.location,
+            process_handle=h if args.auto_map else None,
+            sample=sample,
+        )
+        session_map_ctx = ctx
+        if ctx.map_name:
+            session_map_name = ctx.map_name
+        if ctx.location_note:
+            session_location = ctx.location_note
+
     try:
         sample = mh.read_active_sample(h, base)
         if args.probe:
@@ -379,10 +422,19 @@ def main() -> int:
                     "turn_radius_m",
                     "chain",
                     "terrain_hint",
+                    "pos_x",
+                    "pos_z",
                 ):
                     print(f"  {k}: {sample.get(k)}")
                 print_terrain_sample(sample, prefix="  ")
                 print_load_sample(sample, prefix="  ")
+                _resolve_session_map()
+                if session_map_ctx:
+                    px = sample.get("pos_x")
+                    pz = sample.get("pos_z")
+                    print(f"  {format_map_line(session_map_ctx, pos_x=px, pos_z=pz)}")
+                    if session_location:
+                        print(f"  ubicacion: {session_location}")
                 mh.write_status(f"grabar_ce probe OK km/h={sample['speed_kmh']}")
                 return 0
             print("Sin vehiculo activo. Entra al mapa conduciendo (no menu/garaje).")
@@ -412,7 +464,14 @@ def main() -> int:
                 return 1
 
         print(f"Grabando -> {log_path}")
+        _resolve_session_map()
         print(f"  vehiculo: {sample.get('vehicle_id')} | {sample.get('speed_kmh')} km/h")
+        if session_map_ctx:
+            px = sample.get("pos_x")
+            pz = sample.get("pos_z")
+            print(f"  {format_map_line(session_map_ctx, pos_x=px, pos_z=pz)}")
+            if session_location:
+                print(f"  ubicacion: {session_location}")
         print_terrain_sample(sample, prefix="  ")
         print_load_sample(sample, prefix="  ")
         print_catalog_xml_note(sample.get("vehicle_id") or "")
@@ -439,6 +498,7 @@ def main() -> int:
 
         t0 = time.monotonic()
         mh._FUEL_RATE_TRACKER.reset()
+        last_map_resolve = t0
         last_vehicle_id = ""
         last_terrain_kind = (sample.get("terrain_kind") or "").strip()
         last_mud_grade = (sample.get("mud_grade_label") or "").strip()
@@ -460,6 +520,13 @@ def main() -> int:
                     if row_sample:
                         t_elapsed = now - t0
                         mh.enrich_drive_fields(h, base, row_sample, t_s=t_elapsed)
+                        if now - last_map_resolve >= 60:
+                            _resolve_session_map()
+                            last_map_resolve = now
+                        row_sample["map_name"] = session_map_name
+                        row_sample["level_id"] = (
+                            session_map_ctx.level_id if session_map_ctx else ""
+                        )
                         event = ""
                         vid = row_sample.get("vehicle_id") or ""
                         if vid and last_vehicle_id and vid != last_vehicle_id:
@@ -600,8 +667,8 @@ def main() -> int:
             log_path,
             args.compare,
             auto_protocol=args.auto,
-            map_name=args.map,
-            location=args.location or "CE Havok log",
+            map_name=args.map.strip(),
+            location=session_location,
             clima=args.clima,
             hora_juego=args.hora_juego,
             baseline_tag=args.baseline_tag,

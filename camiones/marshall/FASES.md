@@ -8,7 +8,7 @@ Metodología general: `docs/FASE-1.md` … `docs/FASE-8.md`.
 
 | Pieza | En juego | XML |
 |-------|----------|-----|
-| Motor | **Kr 104** | `ru_scout_old_engine_0` |
+| Motor | **Kr 135-T** (objetivo) / Kr 104 (F2 `20260630`) | `ru_scout_old_engine_1` / `_0` |
 | Suspensión | **Reptadora** (Rock Crawler) | `khan_39_marshall_suspension_crawler` |
 | Neumáticos | **45" TM II** | `mudtires_2` / `wheels_scout_yar_871` |
 | Caja (prevista) | **SnowRunner** | `g_scout_offroad` en `gearboxes_scouts.xml` |
@@ -25,6 +25,7 @@ Metodología general: `docs/FASE-1.md` … `docs/FASE-8.md`.
 | TM II `SubstanceFriction` | 2.4 | **1.7** |
 | TM I `BodyFriction` | 2.4 | **2.0** |
 | Kr 104 | sin cambio | MaxDelta 0.01 ya OK |
+| Kr 135-T | sin cambio en mod | `ru_scout_old_engine_1`; torque 40k stock; sim `km_kr135` |
 
 **No se toca:** suspensión reptadora (taller), motor compartido `e_ru_scout_old.xml` (afecta Lo4F / Gor BY-4).
 
@@ -60,8 +61,8 @@ Copiar `initial.pak` → `...\SnowRunner\preload\paks\client\`
 
 | Fase | Protocolo | Notas |
 |------|-----------|-------|
-| F1 | `km_f1_asfalto` | Kr 104 + TM II + diff |
-| F2 | `km_f2_barro_tm2` | Mismo tramo barro, marcha baja |
+| F1 | `km_f1_asfalto` | Kr 135-T + TM II + diff |
+| F2 | `km_f2_barro_tm2` | Kr 135-T; marcha baja (F2 indexado `20260630` fue Kr 104) |
 | F2b | `km_f2_barro_profundo` | Barro tint oscuro / extrusion |
 | F3 | `km_f3_carga` | Remolque scout + carga |
 

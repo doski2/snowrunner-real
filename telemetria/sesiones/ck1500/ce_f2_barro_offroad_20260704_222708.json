@@ -1,0 +1,2645 @@
+{
+  "meta": {
+    "id": "ce_f2_barro_offroad_20260704_222708",
+    "created_utc": "2026-07-04T22:27:08.749421+00:00",
+    "map_name": "Michigan",
+    "location_note": "Black River partida libre",
+    "surface_kind": "mud",
+    "surface_label": "Barro",
+    "mod_applied": true,
+    "engine_id": "i6",
+    "tire": "offroad",
+    "diff_lock": true,
+    "low_gear": true,
+    "load_scenario_id": "vacio",
+    "protocol_id": "f2_barro_offroad",
+    "duration_s": 358.25,
+    "notes": "importado desde CE: telemetria_ce_log.csv; game_id=s_chevrolet_ck1500",
+    "vehicle_id": "ck1500",
+    "session_context": {
+      "build_juego": "Steam update jun-2026; initial.pak 28880896 B",
+      "mod_commit": "",
+      "map": "Michigan",
+      "location_note": "Black River partida libre",
+      "clima": "",
+      "hora_juego": "",
+      "baseline_tag": "play_free_v1",
+      "capture_tool": "importar_ce_csv.py",
+      "setup": {
+        "engine_id": "i6",
+        "tire": "offroad",
+        "diff_lock": true,
+        "low_gear": true,
+        "load_scenario_id": "vacio",
+        "catalog_source": "initial.pak.bak stock",
+        "steer_speed_xml": 0.03,
+        "responsiveness_xml": 0.7,
+        "default_suspension_xml": "chevrolet_ck1500_suspension_default",
+        "suspension_socket_xml": "s_chevrolet_ck1500",
+        "suspension_strength_front_xml": 0.035,
+        "suspension_strength_rear_xml": 0.025,
+        "suspension_damping_front_xml": 0.2,
+        "suspension_damping_rear_xml": 0.35,
+        "suspension_height_front_xml": 0.065,
+        "suspension_height_rear_xml": 0.12,
+        "engine_socket_type_xml": "e_us_scout_old, e_us_scout_old_ck1500",
+        "default_engine_xml": "us_scout_old_engine_0",
+        "engine_responsiveness_xml": 0.25,
+        "engine_name_xml": "us_scout_old_engine_0",
+        "gearbox_socket_type_xml": "gearboxes_scouts",
+        "default_gearbox_xml": "g_scout_default",
+        "gearbox_file_id_xml": "gearboxes_scouts",
+        "gearbox_lower_gear_xml": true,
+        "gearbox_high_gear_xml": false,
+        "gearbox_fuel_consumption_xml": 1.8,
+        "gearbox_first_gear_ang_vel_xml": 3.0,
+        "gearbox_high_gear_ang_vel_xml": 10.0
+      }
+    }
+  },
+  "samples": [
+    {
+      "t_s": 0.0,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=1.000; contact=1.000; deform=-0.0032; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(408.04010009765625,-611.0641479492188); id=s_chevrolet_ck1500; yaw_deg_s=0.02",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 0.94,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=1.000; contact=1.000; deform=-0.0032; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(408.0411376953125,-611.0640869140625); id=s_chevrolet_ck1500; yaw_deg_s=0.01",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 1.92,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=1.000; contact=1.000; deform=-0.0032; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(408.0426025390625,-611.0639038085938); id=s_chevrolet_ck1500; yaw_deg_s=-0.01",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 2.86,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=1.000; contact=1.000; deform=-0.0033; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(408.0440673828125,-611.0636596679688); id=s_chevrolet_ck1500; yaw_deg_s=0.05",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 3.81,
+      "speed_kmh": 0.0,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=1.000; contact=1.000; deform=-0.0033; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(408.0456848144531,-611.0634765625); id=s_chevrolet_ck1500; yaw_deg_s=-0.02",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 4.77,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=1.000; contact=1.000; deform=-0.0033; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(408.04742431640625,-611.0634765625); id=s_chevrolet_ck1500; yaw_deg_s=-0.02",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 5.72,
+      "speed_kmh": 0.02,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=1.000; contact=1.000; deform=-0.0032; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(408.0489807128906,-611.0633544921875); id=s_chevrolet_ck1500; yaw_deg_s=0.0",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 6.77,
+      "speed_kmh": 0.0,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=1.000; contact=1.000; deform=-0.0032; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(408.0508728027344,-611.063232421875); id=s_chevrolet_ck1500; yaw_deg_s=-0.0",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 7.72,
+      "speed_kmh": 0.0,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=1.000; contact=1.000; deform=-0.0032; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(408.0545959472656,-611.0663452148438); id=s_chevrolet_ck1500; yaw_deg_s=-0.01",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 8.69,
+      "speed_kmh": 0.0,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=1.000; contact=1.000; deform=-0.0022; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(408.05615234375,-611.0646362304688); id=s_chevrolet_ck1500; yaw_deg_s=0.01",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 9.7,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=1.000; contact=1.000; deform=-0.0022; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(408.057861328125,-611.0639038085938); id=s_chevrolet_ck1500; yaw_deg_s=0.01",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 10.69,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=1.000; contact=1.000; deform=-0.0022; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(408.0599670410156,-611.06298828125); id=s_chevrolet_ck1500; yaw_deg_s=0.0",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 11.67,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=1.000; contact=1.000; deform=-0.0022; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(408.0621032714844,-611.0624389648438); id=s_chevrolet_ck1500; yaw_deg_s=-0.04",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 12.64,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=1.000; contact=1.000; deform=-0.0023; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(408.06439208984375,-611.0619506835938); id=s_chevrolet_ck1500; yaw_deg_s=0.0",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 13.61,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=1.000; contact=1.000; deform=-0.0023; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(408.0999450683594,-611.0609741210938); id=s_chevrolet_ck1500; yaw_deg_s=-0.08",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 14.58,
+      "speed_kmh": 1.46,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=1.000; contact=1.000; deform=-0.0025; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(409.200439453125,-611.0773315429688); id=s_chevrolet_ck1500; yaw_deg_s=-1.43",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 15.53,
+      "speed_kmh": 5.87,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=1.000; contact=1.000; deform=-0.0019; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(410.8824462890625,-611.0742797851562); id=s_chevrolet_ck1500; yaw_deg_s=0.44",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 16.47,
+      "speed_kmh": 6.46,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=1.000; contact=1.000; deform=-0.0001; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(412.6170349121094,-611.07177734375); id=s_chevrolet_ck1500; yaw_deg_s=0.92",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 17.44,
+      "speed_kmh": 6.29,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=1.000; contact=1.000; deform=-0.0007; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(414.34039306640625,-611.0806884765625); id=s_chevrolet_ck1500; yaw_deg_s=-1.31; turn_r=76.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 18.42,
+      "speed_kmh": 6.42,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=1.000; contact=1.000; deform=0.0019; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(415.9400939941406,-611.3582153320312); id=s_chevrolet_ck1500; yaw_deg_s=17.56; turn_r=5.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 19.42,
+      "speed_kmh": 5.8,
+      "note": "terrain=crawl; surface=mixed; kind=mixed; grip=1.000; surf_avg=0.634; contact=1.000; deform=0.2050; mud_grade=soft_dirt; load=vacio; mass_havok=1750; pos=(417.4281005859375,-612.4194946289062); id=s_chevrolet_ck1500; yaw_deg_s=18.07; turn_r=5.1m",
+      "terrain_kind": "mixed",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 20.44,
+      "speed_kmh": 6.07,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.510; contact=1.000; deform=0.5103; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(418.4574890136719,-613.8292236328125); id=s_chevrolet_ck1500; yaw_deg_s=17.93; turn_r=5.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 21.42,
+      "speed_kmh": 6.18,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.756; contact=1.000; deform=0.7560; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(419.0234375,-615.3502807617188); id=s_chevrolet_ck1500; yaw_deg_s=13.56; turn_r=7.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 22.42,
+      "speed_kmh": 5.25,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.899; contact=1.000; deform=0.8992; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(419.1280517578125,-616.9946899414062); id=s_chevrolet_ck1500; yaw_deg_s=17.56; turn_r=4.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 23.39,
+      "speed_kmh": 6.06,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.986; contact=1.000; deform=0.9858; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(418.7571716308594,-618.5993041992188); id=s_chevrolet_ck1500; yaw_deg_s=21.77; turn_r=4.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 24.36,
+      "speed_kmh": 5.63,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.982; contact=1.000; deform=0.9818; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(417.88372802734375,-619.9605102539062); id=s_chevrolet_ck1500; yaw_deg_s=17.68; turn_r=5.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 25.3,
+      "speed_kmh": 6.25,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.887; contact=1.000; deform=0.8868; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(416.92041015625,-621.2449340820312); id=s_chevrolet_ck1500; yaw_deg_s=1.64; turn_r=60.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 26.23,
+      "speed_kmh": 6.2,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.858; contact=1.000; deform=0.8585; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(416.05078125,-622.706298828125); id=s_chevrolet_ck1500; yaw_deg_s=-1.85; turn_r=53.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 27.19,
+      "speed_kmh": 6.64,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.861; contact=1.000; deform=0.8606; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(415.0143737792969,-624.4517211914062); id=s_chevrolet_ck1500; yaw_deg_s=-1.95; turn_r=54.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 28.14,
+      "speed_kmh": 7.83,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.858; contact=1.000; deform=0.8580; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(413.9635925292969,-626.1923828125); id=s_chevrolet_ck1500; yaw_deg_s=2.69; turn_r=46.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 29.08,
+      "speed_kmh": 8.61,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.852; contact=1.000; deform=0.8520; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(412.78790283203125,-628.1071166992188); id=s_chevrolet_ck1500; yaw_deg_s=1.7; turn_r=80.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 30.09,
+      "speed_kmh": 7.88,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.852; contact=1.000; deform=0.8523; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(411.6451110839844,-629.9368896484375); id=s_chevrolet_ck1500; yaw_deg_s=2.66; turn_r=47.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 31.03,
+      "speed_kmh": 7.61,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.842; contact=1.000; deform=0.8420; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(410.3328857421875,-631.6812744140625); id=s_chevrolet_ck1500; yaw_deg_s=4.51; turn_r=26.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 32.0,
+      "speed_kmh": 7.91,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.801; contact=1.000; deform=0.8012; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(408.9122314453125,-633.1448364257812); id=s_chevrolet_ck1500; yaw_deg_s=14.13; turn_r=8.9m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 32.92,
+      "speed_kmh": 7.99,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.703; contact=1.000; deform=0.7035; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(407.0869445800781,-634.14208984375); id=s_chevrolet_ck1500; yaw_deg_s=13.27; turn_r=9.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 33.88,
+      "speed_kmh": 7.53,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.515; contact=1.000; deform=0.5154; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(405.14434814453125,-634.8382568359375); id=s_chevrolet_ck1500; yaw_deg_s=-3.97; turn_r=30.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 34.84,
+      "speed_kmh": 7.51,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.426; contact=1.000; deform=0.4256; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(403.113525390625,-635.8202514648438); id=s_chevrolet_ck1500; yaw_deg_s=0.26",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 35.81,
+      "speed_kmh": 7.86,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.426; contact=1.000; deform=0.4260; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(401.30535888671875,-636.6666870117188); id=s_chevrolet_ck1500; yaw_deg_s=3.33; turn_r=37.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 36.73,
+      "speed_kmh": 8.25,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.432; contact=1.000; deform=0.4322; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(399.30859375,-637.6399536132812); id=s_chevrolet_ck1500; yaw_deg_s=1.5; turn_r=87.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 37.72,
+      "speed_kmh": 8.98,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.432; contact=1.000; deform=0.4316; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(397.30035400390625,-638.6039428710938); id=s_chevrolet_ck1500; yaw_deg_s=1.66; turn_r=86.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 38.67,
+      "speed_kmh": 8.32,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.432; contact=1.000; deform=0.4320; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(395.3156433105469,-639.5551147460938); id=s_chevrolet_ck1500; yaw_deg_s=1.62; turn_r=81.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 39.66,
+      "speed_kmh": 8.49,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.436; contact=1.000; deform=0.4355; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(393.3006286621094,-640.538330078125); id=s_chevrolet_ck1500; yaw_deg_s=1.43; turn_r=94.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 40.64,
+      "speed_kmh": 7.8,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.439; contact=1.000; deform=0.4385; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(391.2759704589844,-641.5260009765625); id=s_chevrolet_ck1500; yaw_deg_s=0.02",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 41.64,
+      "speed_kmh": 7.46,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.438; contact=1.000; deform=0.4379; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(389.15679931640625,-642.5479125976562); id=s_chevrolet_ck1500; yaw_deg_s=-0.09",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 42.64,
+      "speed_kmh": 7.58,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.438; contact=1.000; deform=0.4378; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(387.14398193359375,-643.5288696289062); id=s_chevrolet_ck1500; yaw_deg_s=0.31",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 43.62,
+      "speed_kmh": 8.16,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.438; contact=1.000; deform=0.4383; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(385.14300537109375,-644.511474609375); id=s_chevrolet_ck1500; yaw_deg_s=-0.92",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 44.64,
+      "speed_kmh": 7.97,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.442; contact=1.000; deform=0.4416; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(383.1813049316406,-645.4556274414062); id=s_chevrolet_ck1500; yaw_deg_s=0.33",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 45.59,
+      "speed_kmh": 8.72,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.432; contact=1.000; deform=0.4319; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(381.1305847167969,-646.4242553710938); id=s_chevrolet_ck1500; yaw_deg_s=-1.96; turn_r=70.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 46.61,
+      "speed_kmh": 8.18,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.431; contact=1.000; deform=0.4313; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(379.18572998046875,-647.3526611328125); id=s_chevrolet_ck1500; yaw_deg_s=-1.65; turn_r=78.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 47.56,
+      "speed_kmh": 8.63,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.423; contact=1.000; deform=0.4235; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(377.1968078613281,-648.3081665039062); id=s_chevrolet_ck1500; yaw_deg_s=0.43",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 48.55,
+      "speed_kmh": 8.29,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.429; contact=1.000; deform=0.4287; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(375.31787109375,-649.1991577148438); id=s_chevrolet_ck1500; yaw_deg_s=0.14",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 49.55,
+      "speed_kmh": 6.36,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.425; contact=1.000; deform=0.4248; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(374.6724548339844,-649.5125732421875); id=s_chevrolet_ck1500; yaw_deg_s=-0.11",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 50.5,
+      "speed_kmh": 0.07,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=0.425; contact=1.000; deform=0.4247; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(374.6855163574219,-649.5051879882812); id=s_chevrolet_ck1500; yaw_deg_s=-0.02",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 51.41,
+      "speed_kmh": 0.03,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=0.425; contact=1.000; deform=0.4246; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(374.6904296875,-649.5018310546875); id=s_chevrolet_ck1500; yaw_deg_s=-0.03",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 52.33,
+      "speed_kmh": 0.0,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=0.425; contact=1.000; deform=0.4246; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(374.69195556640625,-649.5006713867188); id=s_chevrolet_ck1500; yaw_deg_s=0.04",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 53.25,
+      "speed_kmh": 0.0,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=0.425; contact=1.000; deform=0.4245; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(374.69268798828125,-649.500244140625); id=s_chevrolet_ck1500; yaw_deg_s=-0.03",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 54.22,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=0.424; contact=1.000; deform=0.4244; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(374.6931457519531,-649.4999389648438); id=s_chevrolet_ck1500; yaw_deg_s=-0.01",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 55.12,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=0.424; contact=1.000; deform=0.4245; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(374.69329833984375,-649.4999389648438); id=s_chevrolet_ck1500; yaw_deg_s=0.02",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 56.06,
+      "speed_kmh": 0.0,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=0.424; contact=1.000; deform=0.4244; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(374.693603515625,-649.4996337890625); id=s_chevrolet_ck1500; yaw_deg_s=0.05",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 57.0,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=0.424; contact=1.000; deform=0.4244; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(374.69354248046875,-649.499755859375); id=s_chevrolet_ck1500; yaw_deg_s=-0.0",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 57.94,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=0.424; contact=1.000; deform=0.4244; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(374.68756103515625,-649.5022583007812); id=s_chevrolet_ck1500; yaw_deg_s=0.06",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 58.89,
+      "speed_kmh": 0.02,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=0.424; contact=1.000; deform=0.4242; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(374.6171569824219,-649.536376953125); id=s_chevrolet_ck1500; yaw_deg_s=-0.25",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 59.89,
+      "speed_kmh": 3.67,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.424; contact=1.000; deform=0.4244; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(373.43170166015625,-650.0864868164062); id=s_chevrolet_ck1500; yaw_deg_s=-0.28",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 60.88,
+      "speed_kmh": 3.82,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.424; contact=1.000; deform=0.4238; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(372.7201232910156,-650.4242553710938); id=s_chevrolet_ck1500; yaw_deg_s=1.77; turn_r=34.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 61.83,
+      "speed_kmh": 1.87,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=1.000; surf_avg=0.423; contact=1.000; deform=0.4233; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(372.2977294921875,-650.6150512695312); id=s_chevrolet_ck1500; yaw_deg_s=-0.95",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 62.8,
+      "speed_kmh": 5.46,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.421; contact=1.000; deform=0.4213; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(369.6863098144531,-651.8486328125); id=s_chevrolet_ck1500; yaw_deg_s=-0.18",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 63.77,
+      "speed_kmh": 15.18,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=1.000; surf_avg=0.449; contact=1.000; deform=0.4491; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(365.86358642578125,-653.75439453125); id=s_chevrolet_ck1500; yaw_deg_s=0.63",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 64.7,
+      "speed_kmh": 16.75,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=1.000; surf_avg=0.445; contact=1.000; deform=0.4446; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(361.7975769042969,-655.75439453125); id=s_chevrolet_ck1500; yaw_deg_s=0.44",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 65.67,
+      "speed_kmh": 16.75,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=1.000; surf_avg=0.443; contact=1.000; deform=0.4427; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(356.6678161621094,-658.2008056640625); id=s_chevrolet_ck1500; yaw_deg_s=0.13",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 66.64,
+      "speed_kmh": 23.67,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=1.000; surf_avg=0.432; contact=1.000; deform=0.4324; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(350.90997314453125,-660.9406127929688); id=s_chevrolet_ck1500; yaw_deg_s=1.21; turn_r=310.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 67.61,
+      "speed_kmh": 24.01,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=1.000; surf_avg=0.427; contact=1.000; deform=0.4274; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(345.0367736816406,-663.6165771484375); id=s_chevrolet_ck1500; yaw_deg_s=5.7; turn_r=67.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 68.56,
+      "speed_kmh": 23.71,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=1.000; surf_avg=0.387; contact=1.000; deform=0.3875; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(338.5704650878906,-665.9462890625); id=s_chevrolet_ck1500; yaw_deg_s=7.85; turn_r=48.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 69.52,
+      "speed_kmh": 30.08,
+      "note": "terrain=hard_fast; surface=soft; kind=soft; grip=1.000; surf_avg=0.294; contact=1.000; deform=0.2943; mud_grade=soft_dirt; load=vacio; mass_havok=1750; pos=(330.2763977050781,-668.11083984375); id=s_chevrolet_ck1500; yaw_deg_s=6.5; turn_r=73.6m",
+      "terrain_kind": "soft",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 70.5,
+      "speed_kmh": 32.7,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=1.000; surf_avg=1.000; contact=1.000; deform=0.2233; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(320.9989929199219,-669.6974487304688); id=s_chevrolet_ck1500; yaw_deg_s=4.09; turn_r=127.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 71.52,
+      "speed_kmh": 32.87,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=1.000; surf_avg=1.000; contact=1.000; deform=0.0910; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(312.3149719238281,-670.0143432617188); id=s_chevrolet_ck1500; yaw_deg_s=-2.48; turn_r=211.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 72.47,
+      "speed_kmh": 33.71,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=1.000; surf_avg=1.000; contact=1.000; deform=0.0347; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(303.0942077636719,-671.3720092773438); id=s_chevrolet_ck1500; yaw_deg_s=-37.87; turn_r=14.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 73.47,
+      "speed_kmh": 34.22,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=1.000; surf_avg=0.428; contact=1.000; deform=0.4285; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(294.7052917480469,-675.3863525390625); id=s_chevrolet_ck1500; yaw_deg_s=10.0; turn_r=54.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 74.45,
+      "speed_kmh": 33.52,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=1.000; surf_avg=0.614; contact=1.000; deform=0.6142; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(287.56927490234375,-681.0070190429688); id=s_chevrolet_ck1500; yaw_deg_s=-22.19; turn_r=24.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 75.44,
+      "speed_kmh": 33.78,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=1.000; surf_avg=0.744; contact=1.000; deform=0.7443; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(281.9507141113281,-688.5145263671875); id=s_chevrolet_ck1500; yaw_deg_s=0.64",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 76.42,
+      "speed_kmh": 35.24,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=1.000; surf_avg=0.881; contact=1.000; deform=0.8805; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(276.7806091308594,-696.708984375); id=s_chevrolet_ck1500; yaw_deg_s=19.14; turn_r=29.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 77.39,
+      "speed_kmh": 37.11,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=1.000; surf_avg=0.754; contact=1.000; deform=0.7537; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(270.19989013671875,-704.0198364257812); id=s_chevrolet_ck1500; yaw_deg_s=11.81; turn_r=50.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 78.34,
+      "speed_kmh": 38.17,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=1.000; surf_avg=0.606; contact=1.000; deform=0.6056; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(262.14599609375,-710.2274169921875); id=s_chevrolet_ck1500; yaw_deg_s=-3.6; turn_r=168.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 79.3,
+      "speed_kmh": 38.14,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=1.000; surf_avg=0.579; contact=1.000; deform=0.5791; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(254.39849853515625,-716.3546752929688); id=s_chevrolet_ck1500; yaw_deg_s=-16.96; turn_r=35.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 80.23,
+      "speed_kmh": 36.37,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=1.000; surf_avg=0.726; contact=1.000; deform=0.7257; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(248.0812225341797,-723.5845336914062); id=s_chevrolet_ck1500; yaw_deg_s=-6.92; turn_r=83.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 81.19,
+      "speed_kmh": 36.63,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=1.000; surf_avg=0.835; contact=1.000; deform=0.8352; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(242.46267700195312,-731.6378173828125); id=s_chevrolet_ck1500; yaw_deg_s=6.84; turn_r=85.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 82.12,
+      "speed_kmh": 37.67,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=1.000; surf_avg=0.771; contact=1.000; deform=0.7706; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(235.97386169433594,-739.62548828125); id=s_chevrolet_ck1500; yaw_deg_s=-5.14; turn_r=116.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 83.09,
+      "speed_kmh": 39.17,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=1.000; surf_avg=0.760; contact=1.000; deform=0.7602; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(229.5215301513672,-747.3463745117188); id=s_chevrolet_ck1500; yaw_deg_s=0.76",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 84.03,
+      "speed_kmh": 40.26,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=1.000; surf_avg=0.770; contact=1.000; deform=0.7697; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(222.69943237304688,-755.668701171875); id=s_chevrolet_ck1500; yaw_deg_s=-0.25",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 84.97,
+      "speed_kmh": 41.22,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=1.000; surf_avg=0.776; contact=1.000; deform=0.7763; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(214.8456268310547,-764.5042114257812); id=s_chevrolet_ck1500; yaw_deg_s=10.59; turn_r=62.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 86.0,
+      "speed_kmh": 40.48,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=1.000; surf_avg=0.667; contact=1.000; deform=0.6673; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(206.85317993164062,-771.142333984375); id=s_chevrolet_ck1500; yaw_deg_s=12.48; turn_r=51.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 86.94,
+      "speed_kmh": 40.24,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=1.000; surf_avg=0.560; contact=1.000; deform=0.5605; mud_grade=dry_hard; load=vacio; mass_havok=1750; pos=(197.7523956298828,-776.3506469726562); id=s_chevrolet_ck1500; yaw_deg_s=15.18; turn_r=42.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 87.89,
+      "speed_kmh": 38.89,
+      "note": "terrain=hard_fast; surface=soft; kind=soft; grip=1.000; surf_avg=0.299; contact=1.000; deform=0.2991; mud_grade=soft_dirt; load=vacio; mass_havok=1750; pos=(188.0411376953125,-779.8409423828125); id=s_chevrolet_ck1500; yaw_deg_s=-22.88; turn_r=27.1m",
+      "terrain_kind": "soft",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 88.84,
+      "speed_kmh": 39.04,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.013; surf_avg=0.351; contact=0.574; deform=0.3510; mud_grade=mud_light; load=vacio; mass_havok=1750; pos=(178.30238342285156,-783.5242309570312); id=s_chevrolet_ck1500; yaw_deg_s=11.44; turn_r=54.3m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 89.8,
+      "speed_kmh": 40.67,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.013; surf_avg=0.373; contact=0.574; deform=0.3727; mud_grade=water_ford; load=vacio; mass_havok=1750; pos=(167.44117736816406,-787.23193359375); id=s_chevrolet_ck1500; yaw_deg_s=12.83; turn_r=50.5m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 90.78,
+      "speed_kmh": 40.76,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.013; surf_avg=0.432; contact=0.574; deform=0.2679; mud_grade=mud_light; load=vacio; mass_havok=1750; pos=(157.1914825439453,-789.1104125976562); id=s_chevrolet_ck1500; yaw_deg_s=18.37; turn_r=35.3m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 91.75,
+      "speed_kmh": 36.12,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.013; surf_avg=0.574; contact=0.574; deform=0.0726; mud_grade=mud_light; load=vacio; mass_havok=1750; pos=(148.01698303222656,-789.5335693359375); id=s_chevrolet_ck1500; yaw_deg_s=-8.4; turn_r=68.5m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 92.7,
+      "speed_kmh": 34.9,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.013; surf_avg=0.574; contact=0.574; deform=0.0848; mud_grade=mud_light; load=vacio; mass_havok=1750; pos=(138.51434326171875,-790.1625366210938); id=s_chevrolet_ck1500; yaw_deg_s=3.14; turn_r=177.1m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 93.69,
+      "speed_kmh": 32.96,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.013; surf_avg=0.574; contact=0.574; deform=0.0695; mud_grade=mud_light; load=vacio; mass_havok=1750; pos=(130.0821990966797,-790.1578979492188); id=s_chevrolet_ck1500; yaw_deg_s=-6.93; turn_r=75.7m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 94.69,
+      "speed_kmh": 27.11,
+      "note": "terrain=cruise; surface=mud; kind=mud; grip=0.013; surf_avg=0.574; contact=0.574; deform=0.0146; mud_grade=mud_light; load=vacio; mass_havok=1750; pos=(123.20419311523438,-789.8643188476562); id=s_chevrolet_ck1500; yaw_deg_s=18.19; turn_r=23.7m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 95.67,
+      "speed_kmh": 25.73,
+      "note": "terrain=cruise; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.2022; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(116.2082290649414,-788.7705078125); id=s_chevrolet_ck1500; yaw_deg_s=8.82; turn_r=46.4m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 96.64,
+      "speed_kmh": 27.42,
+      "note": "terrain=cruise; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.1348; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(108.41586303710938,-787.5569458007812); id=s_chevrolet_ck1500; yaw_deg_s=5.88; turn_r=74.3m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 97.62,
+      "speed_kmh": 30.04,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.2059; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(100.59463500976562,-785.7852172851562); id=s_chevrolet_ck1500; yaw_deg_s=0.26",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 98.61,
+      "speed_kmh": 26.82,
+      "note": "terrain=cruise; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.2597; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(93.75306701660156,-784.1622924804688); id=s_chevrolet_ck1500; yaw_deg_s=0.4",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 99.58,
+      "speed_kmh": 26.21,
+      "note": "terrain=cruise; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.3514; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(87.33882141113281,-783.2416381835938); id=s_chevrolet_ck1500; yaw_deg_s=0.18",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 100.56,
+      "speed_kmh": 19.2,
+      "note": "terrain=cruise; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.1843; mud_grade=water_ford; load=vacio; mass_havok=1750; pos=(82.18390655517578,-782.5532836914062); id=s_chevrolet_ck1500; yaw_deg_s=3.33; turn_r=91.6m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 101.53,
+      "speed_kmh": 22.73,
+      "note": "terrain=cruise; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.1726; mud_grade=water_ford; load=vacio; mass_havok=1750; pos=(74.94622039794922,-781.6222534179688); id=s_chevrolet_ck1500; yaw_deg_s=-3.14; turn_r=115.2m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 102.52,
+      "speed_kmh": 29.37,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.0786; mud_grade=mud_light; load=vacio; mass_havok=1750; pos=(66.76190185546875,-780.8259887695312); id=s_chevrolet_ck1500; yaw_deg_s=8.9; turn_r=52.5m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 103.53,
+      "speed_kmh": 30.19,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.1313; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(58.86051559448242,-779.566162109375); id=s_chevrolet_ck1500; yaw_deg_s=0.99",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 104.52,
+      "speed_kmh": 26.86,
+      "note": "terrain=cruise; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.0586; mud_grade=mud_light; load=vacio; mass_havok=1750; pos=(51.41569900512695,-778.8992919921875); id=s_chevrolet_ck1500; yaw_deg_s=1.68; turn_r=254.6m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 105.5,
+      "speed_kmh": 28.8,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.1479; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(43.836326599121094,-777.9566040039062); id=s_chevrolet_ck1500; yaw_deg_s=10.02; turn_r=45.7m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 106.47,
+      "speed_kmh": 28.43,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.1758; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(36.081111907958984,-776.8958740234375); id=s_chevrolet_ck1500; yaw_deg_s=-22.34; turn_r=20.3m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 107.45,
+      "speed_kmh": 27.59,
+      "note": "terrain=cruise; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.1492; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(28.30154800415039,-776.8792724609375); id=s_chevrolet_ck1500; yaw_deg_s=28.21; turn_r=15.6m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 108.44,
+      "speed_kmh": 28.14,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.0219; mud_grade=mud_light; load=vacio; mass_havok=1750; pos=(20.650264739990234,-775.7286987304688); id=s_chevrolet_ck1500; yaw_deg_s=-10.85; turn_r=41.3m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 109.42,
+      "speed_kmh": 28.06,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.0639; mud_grade=mud_light; load=vacio; mass_havok=1750; pos=(12.914263725280762,-774.7115478515625); id=s_chevrolet_ck1500; yaw_deg_s=14.23; turn_r=31.4m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 110.39,
+      "speed_kmh": 29.09,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.1420; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(5.373763084411621,-773.4607543945312); id=s_chevrolet_ck1500; yaw_deg_s=-3.17; turn_r=146.1m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 111.38,
+      "speed_kmh": 28.2,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.1292; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-2.689845323562622,-772.4774780273438); id=s_chevrolet_ck1500; yaw_deg_s=-5.6; turn_r=80.1m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 112.36,
+      "speed_kmh": 29.57,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.1391; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-10.861313819885254,-771.5133056640625); id=s_chevrolet_ck1500; yaw_deg_s=-9.63; turn_r=48.9m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 113.38,
+      "speed_kmh": 29.33,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.0558; mud_grade=mud_light; load=vacio; mass_havok=1750; pos=(-18.340267181396484,-771.2247924804688); id=s_chevrolet_ck1500; yaw_deg_s=-8.17; turn_r=57.1m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 114.34,
+      "speed_kmh": 24.54,
+      "note": "terrain=cruise; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=0.0843; mud_grade=mud_light; load=vacio; mass_havok=1750; pos=(-24.764404296875,-771.4332885742188); id=s_chevrolet_ck1500; yaw_deg_s=16.54; turn_r=23.6m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 115.33,
+      "speed_kmh": 23.39,
+      "note": "terrain=cruise; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.0169; mud_grade=mud_light; load=vacio; mass_havok=1750; pos=(-31.750354766845703,-770.3992919921875); id=s_chevrolet_ck1500; yaw_deg_s=4.21; turn_r=88.4m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 116.33,
+      "speed_kmh": 28.07,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.3095; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-39.36158752441406,-767.7474365234375); id=s_chevrolet_ck1500; yaw_deg_s=0.04",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 117.34,
+      "speed_kmh": 27.07,
+      "note": "terrain=cruise; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.3352; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-46.58831024169922,-765.83349609375); id=s_chevrolet_ck1500; yaw_deg_s=-9.51; turn_r=45.3m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 118.33,
+      "speed_kmh": 28.6,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.3067; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-53.72692108154297,-763.6708984375); id=s_chevrolet_ck1500; yaw_deg_s=-2.94; turn_r=155.0m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 119.3,
+      "speed_kmh": 26.75,
+      "note": "terrain=cruise; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.0829; mud_grade=mud_light; load=vacio; mass_havok=1750; pos=(-61.30396270751953,-761.6752319335938); id=s_chevrolet_ck1500; yaw_deg_s=-3.09; turn_r=137.8m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 120.36,
+      "speed_kmh": 26.63,
+      "note": "terrain=cruise; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.2377; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-68.04515838623047,-759.8657836914062); id=s_chevrolet_ck1500; yaw_deg_s=4.97; turn_r=85.2m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 121.34,
+      "speed_kmh": 24.38,
+      "note": "terrain=cruise; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.1967; mud_grade=water_ford; load=vacio; mass_havok=1750; pos=(-74.75643920898438,-757.8507080078125); id=s_chevrolet_ck1500; yaw_deg_s=-2.36; turn_r=164.5m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 122.33,
+      "speed_kmh": 26.35,
+      "note": "terrain=cruise; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.2912; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-81.55703735351562,-755.5075073242188); id=s_chevrolet_ck1500; yaw_deg_s=5.16; turn_r=81.3m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 123.28,
+      "speed_kmh": 27.02,
+      "note": "terrain=cruise; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.2481; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-88.28527069091797,-753.1067504882812); id=s_chevrolet_ck1500; yaw_deg_s=-16.59; turn_r=25.9m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 124.27,
+      "speed_kmh": 24.27,
+      "note": "terrain=cruise; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.2333; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-94.24198913574219,-751.727783203125); id=s_chevrolet_ck1500; yaw_deg_s=-1.76; turn_r=219.6m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 125.22,
+      "speed_kmh": 25.56,
+      "note": "terrain=cruise; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.0921; mud_grade=mud_light; load=vacio; mass_havok=1750; pos=(-100.13960266113281,-749.4459838867188); id=s_chevrolet_ck1500; yaw_deg_s=9.4; turn_r=43.3m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 126.2,
+      "speed_kmh": 23.5,
+      "note": "terrain=cruise; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.4920; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-105.86227416992188,-746.5585327148438); id=s_chevrolet_ck1500; yaw_deg_s=-9.44; turn_r=39.6m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 127.17,
+      "speed_kmh": 27.77,
+      "note": "terrain=cruise; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.3492; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-113.48023986816406,-743.4258422851562); id=s_chevrolet_ck1500; yaw_deg_s=-3.27; turn_r=135.3m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 128.17,
+      "speed_kmh": 30.64,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.3780; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-120.77604675292969,-739.764892578125); id=s_chevrolet_ck1500; yaw_deg_s=7.96; turn_r=61.2m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 129.17,
+      "speed_kmh": 28.64,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.5618; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-127.44695281982422,-735.4141845703125); id=s_chevrolet_ck1500; yaw_deg_s=-7.3; turn_r=62.4m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 130.14,
+      "speed_kmh": 29.52,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.4804; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-134.92462158203125,-731.4686889648438); id=s_chevrolet_ck1500; yaw_deg_s=8.66; turn_r=54.3m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 131.14,
+      "speed_kmh": 32.68,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.4794; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-142.94065856933594,-726.8379516601562); id=s_chevrolet_ck1500; yaw_deg_s=6.88; turn_r=75.5m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 132.11,
+      "speed_kmh": 36.1,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.013; surf_avg=0.573; contact=0.573; deform=-0.5365; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-151.54376220703125,-720.8560791015625); id=s_chevrolet_ck1500; yaw_deg_s=1.17; turn_r=489.0m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 133.12,
+      "speed_kmh": 39.25,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.012; surf_avg=0.522; contact=0.522; deform=-0.6092; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-160.68118286132812,-714.17626953125); id=s_chevrolet_ck1500; yaw_deg_s=-2.43; turn_r=256.6m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 134.11,
+      "speed_kmh": 42.07,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.011; surf_avg=0.369; contact=0.369; deform=-0.5695; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-170.3194580078125,-708.0446166992188); id=s_chevrolet_ck1500; yaw_deg_s=-9.22; turn_r=72.6m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 135.08,
+      "speed_kmh": 43.06,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.011; surf_avg=0.368; contact=0.368; deform=-0.4419; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-180.76983642578125,-703.6832275390625); id=s_chevrolet_ck1500; yaw_deg_s=-18.86; turn_r=36.3m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 136.05,
+      "speed_kmh": 41.89,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.011; surf_avg=0.369; contact=0.369; deform=-0.1371; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-192.11619567871094,-700.7283935546875); id=s_chevrolet_ck1500; yaw_deg_s=9.33; turn_r=71.5m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 137.06,
+      "speed_kmh": 42.33,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.011; surf_avg=0.369; contact=0.369; deform=-0.3419; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-202.5770721435547,-696.8770141601562); id=s_chevrolet_ck1500; yaw_deg_s=-5.91; turn_r=113.9m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 138.02,
+      "speed_kmh": 42.66,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.011; surf_avg=0.369; contact=0.369; deform=-0.3232; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-213.70628356933594,-693.3543701171875); id=s_chevrolet_ck1500; yaw_deg_s=-5.05; turn_r=134.4m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 138.98,
+      "speed_kmh": 44.3,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.010; surf_avg=0.369; contact=0.369; deform=-0.2140; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-225.03758239746094,-690.9080200195312); id=s_chevrolet_ck1500; yaw_deg_s=-0.3",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 139.94,
+      "speed_kmh": 45.25,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.010; surf_avg=0.369; contact=0.369; deform=-0.1462; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-237.53228759765625,-688.7499389648438); id=s_chevrolet_ck1500; yaw_deg_s=3.75; turn_r=192.2m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 140.92,
+      "speed_kmh": 45.03,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.010; surf_avg=0.369; contact=0.369; deform=-0.2214; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-249.2982635498047,-686.0321044921875); id=s_chevrolet_ck1500; yaw_deg_s=-2.44; turn_r=293.4m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 141.89,
+      "speed_kmh": 43.53,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.010; surf_avg=0.369; contact=0.369; deform=-0.2200; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-259.3110046386719,-683.57421875); id=s_chevrolet_ck1500; yaw_deg_s=-1.81; turn_r=382.5m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 142.86,
+      "speed_kmh": 31.88,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.011; surf_avg=0.369; contact=0.369; deform=-0.2767; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-266.47119140625,-681.4927368164062); id=s_chevrolet_ck1500; yaw_deg_s=-0.26",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 143.83,
+      "speed_kmh": 26.8,
+      "note": "terrain=cruise; surface=mud; kind=mud; grip=0.011; surf_avg=0.368; contact=0.368; deform=-0.2881; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-274.2920837402344,-679.7531127929688); id=s_chevrolet_ck1500; yaw_deg_s=-10.79; turn_r=39.5m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 144.81,
+      "speed_kmh": 31.69,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.011; surf_avg=0.368; contact=0.368; deform=-0.0911; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-283.03857421875,-678.4202880859375); id=s_chevrolet_ck1500; yaw_deg_s=8.2; turn_r=61.5m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 145.77,
+      "speed_kmh": 35.21,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.011; surf_avg=0.368; contact=0.368; deform=-0.2223; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-292.3554382324219,-675.54833984375); id=s_chevrolet_ck1500; yaw_deg_s=3.85; turn_r=145.6m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 146.73,
+      "speed_kmh": 37.71,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.011; surf_avg=0.368; contact=0.368; deform=-0.3646; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-302.1120300292969,-671.7608032226562); id=s_chevrolet_ck1500; yaw_deg_s=-25.38; turn_r=23.7m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 147.7,
+      "speed_kmh": 40.1,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.011; surf_avg=0.369; contact=0.369; deform=-0.2909; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-311.50140380859375,-670.1783447265625); id=s_chevrolet_ck1500; yaw_deg_s=-16.38; turn_r=39.0m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 148.69,
+      "speed_kmh": 29.73,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.011; surf_avg=0.369; contact=0.369; deform=0.1428; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-319.2601013183594,-670.8500366210938); id=s_chevrolet_ck1500; yaw_deg_s=-11.05; turn_r=42.8m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 149.67,
+      "speed_kmh": 27.04,
+      "note": "terrain=cruise; surface=mud; kind=mud; grip=0.011; surf_avg=0.369; contact=0.369; deform=0.1819; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-325.887451171875,-672.8809204101562); id=s_chevrolet_ck1500; yaw_deg_s=-12.13; turn_r=35.5m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 150.62,
+      "speed_kmh": 24.63,
+      "note": "terrain=cruise; surface=mud; kind=mud; grip=0.011; surf_avg=0.440; contact=0.369; deform=0.4402; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-329.80633544921875,-676.1284790039062); id=s_chevrolet_ck1500; yaw_deg_s=-41.56; turn_r=9.4m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 151.59,
+      "speed_kmh": 15.13,
+      "note": "terrain=crawl_deep; surface=mud; kind=mud; grip=0.011; surf_avg=0.873; contact=0.368; deform=0.8730; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-331.3023986816406,-679.7713012695312); id=s_chevrolet_ck1500; yaw_deg_s=7.63; turn_r=31.6m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 152.58,
+      "speed_kmh": 15.51,
+      "note": "terrain=crawl_deep; surface=mud; kind=mud; grip=0.012; surf_avg=0.914; contact=0.366; deform=0.9143; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-332.4095458984375,-683.359619140625); id=s_chevrolet_ck1500; yaw_deg_s=-23.98; turn_r=10.3m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 153.53,
+      "speed_kmh": 8.43,
+      "note": "terrain=crawl_deep; surface=mud; kind=mud; grip=0.015; surf_avg=0.955; contact=0.361; deform=0.9546; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-332.6067199707031,-684.181640625); id=s_chevrolet_ck1500; yaw_deg_s=-0.31",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 154.47,
+      "speed_kmh": 1.07,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.018; surf_avg=0.969; contact=0.355; deform=0.9687; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-332.68096923828125,-684.440185546875); id=s_chevrolet_ck1500; yaw_deg_s=0.4",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 155.44,
+      "speed_kmh": 0.81,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.021; surf_avg=0.972; contact=0.350; deform=0.9720; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-332.7337951660156,-684.6243286132812); id=s_chevrolet_ck1500; yaw_deg_s=-0.19",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 156.41,
+      "speed_kmh": 0.08,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.022; surf_avg=0.973; contact=0.349; deform=0.9734; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-332.73614501953125,-684.6256103515625); id=s_chevrolet_ck1500; yaw_deg_s=-0.09",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 157.39,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.022; surf_avg=0.974; contact=0.349; deform=0.9737; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-332.7561340332031,-684.7021484375); id=s_chevrolet_ck1500; yaw_deg_s=-1.19",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 158.34,
+      "speed_kmh": 1.29,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.022; surf_avg=0.974; contact=0.348; deform=0.9741; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-332.77593994140625,-684.7617797851562); id=s_chevrolet_ck1500; yaw_deg_s=-0.33",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 159.3,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.022; surf_avg=0.976; contact=0.348; deform=0.9756; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-332.7757568359375,-684.7546997070312); id=s_chevrolet_ck1500; yaw_deg_s=-0.16",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 160.23,
+      "speed_kmh": 0.14,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.021; surf_avg=0.976; contact=0.349; deform=0.9762; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-332.86444091796875,-684.9888916015625); id=s_chevrolet_ck1500; yaw_deg_s=-1.7",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 161.2,
+      "speed_kmh": 1.0,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.019; surf_avg=0.976; contact=0.353; deform=0.9765; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-332.911376953125,-685.2242431640625); id=s_chevrolet_ck1500; yaw_deg_s=-2.51",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 162.14,
+      "speed_kmh": 1.09,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.018; surf_avg=0.982; contact=0.355; deform=0.9825; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-332.9209289550781,-685.4376831054688); id=s_chevrolet_ck1500; yaw_deg_s=-1.41",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 163.11,
+      "speed_kmh": 0.72,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.018; surf_avg=0.993; contact=0.355; deform=0.9928; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-332.8995361328125,-685.5905151367188); id=s_chevrolet_ck1500; yaw_deg_s=-0.26",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 164.08,
+      "speed_kmh": 0.84,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.018; surf_avg=0.990; contact=0.355; deform=0.9902; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-332.93939208984375,-685.8526000976562); id=s_chevrolet_ck1500; yaw_deg_s=1.02",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 165.0,
+      "speed_kmh": 1.06,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.018; surf_avg=0.989; contact=0.355; deform=0.9891; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-332.9548645019531,-686.0682373046875); id=s_chevrolet_ck1500; yaw_deg_s=-0.34",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 165.94,
+      "speed_kmh": 0.73,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.018; surf_avg=0.986; contact=0.355; deform=0.9862; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-332.9704895019531,-686.1749267578125); id=s_chevrolet_ck1500; yaw_deg_s=-0.08",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 166.89,
+      "speed_kmh": 0.16,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.018; surf_avg=0.986; contact=0.355; deform=0.9856; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-332.9801025390625,-686.213623046875); id=s_chevrolet_ck1500; yaw_deg_s=-0.1",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 167.81,
+      "speed_kmh": 0.16,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.018; surf_avg=0.986; contact=0.355; deform=0.9858; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-332.9901428222656,-686.25244140625); id=s_chevrolet_ck1500; yaw_deg_s=-0.66",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 168.77,
+      "speed_kmh": 0.24,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.018; surf_avg=0.986; contact=0.355; deform=0.9859; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.0002746582031,-686.301025390625); id=s_chevrolet_ck1500; yaw_deg_s=-0.5",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 169.73,
+      "speed_kmh": 0.16,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.018; surf_avg=0.986; contact=0.355; deform=0.9861; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.0093078613281,-686.3416137695312); id=s_chevrolet_ck1500; yaw_deg_s=-0.08",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 170.67,
+      "speed_kmh": 0.14,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.018; surf_avg=0.986; contact=0.355; deform=0.9863; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.0153503417969,-686.3745727539062); id=s_chevrolet_ck1500; yaw_deg_s=-0.44",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 171.61,
+      "speed_kmh": 0.11,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.018; surf_avg=0.986; contact=0.355; deform=0.9865; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.0219421386719,-686.4088745117188); id=s_chevrolet_ck1500; yaw_deg_s=-0.12",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 172.59,
+      "speed_kmh": 0.1,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.018; surf_avg=0.987; contact=0.355; deform=0.9867; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.02752685546875,-686.4409790039062); id=s_chevrolet_ck1500; yaw_deg_s=-0.39",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 173.58,
+      "speed_kmh": 0.11,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.018; surf_avg=0.987; contact=0.355; deform=0.9870; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.0323486328125,-686.4705810546875); id=s_chevrolet_ck1500; yaw_deg_s=-0.4",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 174.56,
+      "speed_kmh": 0.11,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.018; surf_avg=0.987; contact=0.355; deform=0.9871; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.0372009277344,-686.4995727539062); id=s_chevrolet_ck1500; yaw_deg_s=-0.41",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 175.53,
+      "speed_kmh": 0.11,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.018; surf_avg=0.987; contact=0.355; deform=0.9872; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.0415344238281,-686.5289306640625); id=s_chevrolet_ck1500; yaw_deg_s=-0.32",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 176.48,
+      "speed_kmh": 0.12,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.018; surf_avg=0.987; contact=0.355; deform=0.9873; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.0461120605469,-686.55908203125); id=s_chevrolet_ck1500; yaw_deg_s=-0.4",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 177.45,
+      "speed_kmh": 0.11,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.018; surf_avg=0.987; contact=0.355; deform=0.9872; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.050537109375,-686.5877685546875); id=s_chevrolet_ck1500; yaw_deg_s=-0.37",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 178.42,
+      "speed_kmh": 0.1,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.018; surf_avg=0.987; contact=0.355; deform=0.9872; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.05535888671875,-686.6148681640625); id=s_chevrolet_ck1500; yaw_deg_s=0.14",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 179.38,
+      "speed_kmh": 0.11,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.018; surf_avg=0.987; contact=0.355; deform=0.9873; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.05615234375,-686.642822265625); id=s_chevrolet_ck1500; yaw_deg_s=-0.47",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 180.38,
+      "speed_kmh": 0.1,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.018; surf_avg=0.991; contact=0.355; deform=0.9906; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.0511779785156,-686.6704711914062); id=s_chevrolet_ck1500; yaw_deg_s=-0.38",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 181.34,
+      "speed_kmh": 0.11,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.017; surf_avg=0.991; contact=0.357; deform=0.9909; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.0458984375,-686.6976318359375); id=s_chevrolet_ck1500; yaw_deg_s=-0.41",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 182.3,
+      "speed_kmh": 0.11,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.016; surf_avg=0.991; contact=0.359; deform=0.9911; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.04132080078125,-686.7236938476562); id=s_chevrolet_ck1500; yaw_deg_s=-0.37",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 183.23,
+      "speed_kmh": 0.17,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.015; surf_avg=0.991; contact=0.360; deform=0.9914; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.0456237792969,-686.7489624023438); id=s_chevrolet_ck1500; yaw_deg_s=-0.26",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 184.2,
+      "speed_kmh": 0.12,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.014; surf_avg=0.989; contact=0.362; deform=0.9890; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.0500183105469,-686.7755126953125); id=s_chevrolet_ck1500; yaw_deg_s=0.26",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 185.16,
+      "speed_kmh": 0.09,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.014; surf_avg=0.989; contact=0.362; deform=0.9889; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.0581359863281,-686.8032836914062); id=s_chevrolet_ck1500; yaw_deg_s=0.19",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 186.11,
+      "speed_kmh": 0.1,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.014; surf_avg=0.989; contact=0.362; deform=0.9886; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.3228759765625,-686.7858276367188); id=s_chevrolet_ck1500; yaw_deg_s=3.95",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 187.08,
+      "speed_kmh": 0.27,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.015; surf_avg=0.969; contact=0.361; deform=0.9695; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.308837890625,-686.8348388671875); id=s_chevrolet_ck1500; yaw_deg_s=3.31",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 188.03,
+      "speed_kmh": 0.25,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.015; surf_avg=0.962; contact=0.361; deform=0.9625; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.36236572265625,-686.8457641601562); id=s_chevrolet_ck1500; yaw_deg_s=1.48",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 188.98,
+      "speed_kmh": 0.08,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.014; surf_avg=0.956; contact=0.362; deform=0.9555; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.36553955078125,-686.8480224609375); id=s_chevrolet_ck1500; yaw_deg_s=-0.55",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 189.94,
+      "speed_kmh": 0.0,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.014; surf_avg=0.955; contact=0.362; deform=0.9550; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.3659362792969,-686.8473510742188); id=s_chevrolet_ck1500; yaw_deg_s=0.21",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 190.92,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.014; surf_avg=0.955; contact=0.362; deform=0.9548; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.3653259277344,-686.8480224609375); id=s_chevrolet_ck1500; yaw_deg_s=-0.51",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 191.89,
+      "speed_kmh": 0.02,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.014; surf_avg=0.955; contact=0.362; deform=0.9549; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.3808288574219,-686.8440551757812); id=s_chevrolet_ck1500; yaw_deg_s=5.95",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 192.89,
+      "speed_kmh": 0.51,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.014; surf_avg=0.951; contact=0.362; deform=0.9508; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.6716003417969,-686.8131103515625); id=s_chevrolet_ck1500; yaw_deg_s=7.74",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 193.84,
+      "speed_kmh": 0.65,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.015; surf_avg=0.898; contact=0.361; deform=0.8983; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-333.8888854980469,-686.7513427734375); id=s_chevrolet_ck1500; yaw_deg_s=13.02",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 194.8,
+      "speed_kmh": 1.03,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.015; surf_avg=0.856; contact=0.361; deform=0.8562; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.08154296875,-686.6865234375); id=s_chevrolet_ck1500; yaw_deg_s=5.38",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 195.78,
+      "speed_kmh": 0.5,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.015; surf_avg=0.746; contact=0.361; deform=0.7456; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.1519775390625,-686.725830078125); id=s_chevrolet_ck1500; yaw_deg_s=-0.49",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 196.75,
+      "speed_kmh": 0.1,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.013; surf_avg=0.727; contact=0.364; deform=0.7271; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.17205810546875,-686.7489624023438); id=s_chevrolet_ck1500; yaw_deg_s=0.24",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 197.72,
+      "speed_kmh": 0.08,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.012; surf_avg=0.767; contact=0.366; deform=0.7671; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.18212890625,-686.7741088867188); id=s_chevrolet_ck1500; yaw_deg_s=5.21",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 198.69,
+      "speed_kmh": 0.08,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.011; surf_avg=0.733; contact=0.368; deform=0.7331; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.1982116699219,-686.79638671875); id=s_chevrolet_ck1500; yaw_deg_s=0.16",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 199.66,
+      "speed_kmh": 0.1,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.010; surf_avg=0.731; contact=0.369; deform=0.7306; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.21624755859375,-686.8173828125); id=s_chevrolet_ck1500; yaw_deg_s=-0.57",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 200.67,
+      "speed_kmh": 0.1,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.010; surf_avg=0.731; contact=0.369; deform=0.7314; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.2375183105469,-686.8408813476562); id=s_chevrolet_ck1500; yaw_deg_s=0.46",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 201.64,
+      "speed_kmh": 0.09,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.010; surf_avg=0.732; contact=0.369; deform=0.7325; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.25946044921875,-686.8652954101562); id=s_chevrolet_ck1500; yaw_deg_s=0.36",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 202.64,
+      "speed_kmh": 0.11,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.010; surf_avg=0.734; contact=0.369; deform=0.7339; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.2805480957031,-686.8887939453125); id=s_chevrolet_ck1500; yaw_deg_s=0.48",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 203.59,
+      "speed_kmh": 0.12,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.011; surf_avg=0.735; contact=0.368; deform=0.7354; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.3017272949219,-686.9127807617188); id=s_chevrolet_ck1500; yaw_deg_s=-0.7",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 204.58,
+      "speed_kmh": 0.11,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.012; surf_avg=0.737; contact=0.366; deform=0.7369; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.32305908203125,-686.9362182617188); id=s_chevrolet_ck1500; yaw_deg_s=-0.67",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 205.53,
+      "speed_kmh": 0.12,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.012; surf_avg=0.738; contact=0.367; deform=0.7384; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.3456726074219,-686.960205078125); id=s_chevrolet_ck1500; yaw_deg_s=0.38",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 206.5,
+      "speed_kmh": 0.1,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.010; surf_avg=0.740; contact=0.369; deform=0.7402; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.3663635253906,-686.9840087890625); id=s_chevrolet_ck1500; yaw_deg_s=-0.76",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 207.47,
+      "speed_kmh": 0.11,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.010; surf_avg=0.742; contact=0.369; deform=0.7420; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.3890686035156,-687.0090942382812); id=s_chevrolet_ck1500; yaw_deg_s=-0.68",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 208.44,
+      "speed_kmh": 0.11,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.012; surf_avg=0.744; contact=0.366; deform=0.7437; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.4126892089844,-687.0347290039062); id=s_chevrolet_ck1500; yaw_deg_s=-0.82",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 209.45,
+      "speed_kmh": 0.11,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.013; surf_avg=0.746; contact=0.364; deform=0.7456; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.4350280761719,-687.058349609375); id=s_chevrolet_ck1500; yaw_deg_s=-0.63",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 210.41,
+      "speed_kmh": 0.11,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.014; surf_avg=0.747; contact=0.362; deform=0.7475; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.45745849609375,-687.0828857421875); id=s_chevrolet_ck1500; yaw_deg_s=0.23",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 211.39,
+      "speed_kmh": 0.12,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.014; surf_avg=0.750; contact=0.362; deform=0.7496; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.479736328125,-687.1072998046875); id=s_chevrolet_ck1500; yaw_deg_s=0.26",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 212.34,
+      "speed_kmh": 0.1,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.014; surf_avg=0.752; contact=0.362; deform=0.7517; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.50140380859375,-687.131591796875); id=s_chevrolet_ck1500; yaw_deg_s=-0.71",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 213.34,
+      "speed_kmh": 0.1,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.014; surf_avg=0.754; contact=0.363; deform=0.7537; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.5237121582031,-687.1593017578125); id=s_chevrolet_ck1500; yaw_deg_s=-0.08",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 214.31,
+      "speed_kmh": 0.11,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.013; surf_avg=0.793; contact=0.365; deform=0.7933; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.5389709472656,-687.1819458007812); id=s_chevrolet_ck1500; yaw_deg_s=0.29",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 215.28,
+      "speed_kmh": 0.1,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.012; surf_avg=0.759; contact=0.367; deform=0.7592; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.5609130859375,-687.2074584960938); id=s_chevrolet_ck1500; yaw_deg_s=-0.68",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 216.23,
+      "speed_kmh": 0.11,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.010; surf_avg=0.761; contact=0.369; deform=0.7611; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.58197021484375,-687.2323608398438); id=s_chevrolet_ck1500; yaw_deg_s=0.23",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 217.23,
+      "speed_kmh": 0.07,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.010; surf_avg=0.763; contact=0.369; deform=0.7629; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.6009521484375,-687.255615234375); id=s_chevrolet_ck1500; yaw_deg_s=-0.75",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 218.2,
+      "speed_kmh": 0.13,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.011; surf_avg=0.765; contact=0.367; deform=0.7649; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.6234130859375,-687.2807006835938); id=s_chevrolet_ck1500; yaw_deg_s=0.28",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 219.19,
+      "speed_kmh": 0.11,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.013; surf_avg=0.767; contact=0.365; deform=0.7668; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.6451416015625,-687.3052368164062); id=s_chevrolet_ck1500; yaw_deg_s=0.21",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 220.16,
+      "speed_kmh": 0.11,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.013; surf_avg=0.769; contact=0.364; deform=0.7686; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-334.6874694824219,-687.3431396484375); id=s_chevrolet_ck1500; yaw_deg_s=0.02",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 221.16,
+      "speed_kmh": 0.39,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.012; surf_avg=0.805; contact=0.365; deform=0.8047; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-335.0292053222656,-687.2634887695312); id=s_chevrolet_ck1500; yaw_deg_s=10.03",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 222.16,
+      "speed_kmh": 1.56,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.014; surf_avg=0.662; contact=0.363; deform=0.6623; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-335.55419921875,-687.3378295898438); id=s_chevrolet_ck1500; yaw_deg_s=10.65",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 223.17,
+      "speed_kmh": 1.87,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.015; surf_avg=0.520; contact=0.360; deform=0.5199; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-336.1957092285156,-687.380126953125); id=s_chevrolet_ck1500; yaw_deg_s=6.07",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 224.17,
+      "speed_kmh": 1.71,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.016; surf_avg=0.378; contact=0.359; deform=0.3778; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-336.8427734375,-687.4163818359375); id=s_chevrolet_ck1500; yaw_deg_s=4.25",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 225.17,
+      "speed_kmh": 1.87,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.016; surf_avg=0.307; contact=0.358; deform=0.2487; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.0549621582031,-687.5385131835938); id=s_chevrolet_ck1500; yaw_deg_s=-0.18",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 226.17,
+      "speed_kmh": 0.46,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.018; surf_avg=0.355; contact=0.355; deform=0.2216; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.1826171875,-687.548828125); id=s_chevrolet_ck1500; yaw_deg_s=-0.78",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 227.12,
+      "speed_kmh": 0.46,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.021; surf_avg=0.351; contact=0.351; deform=0.2318; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.29058837890625,-687.5809326171875); id=s_chevrolet_ck1500; yaw_deg_s=-0.23",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 228.11,
+      "speed_kmh": 0.31,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.021; surf_avg=0.350; contact=0.350; deform=0.2342; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.3823547363281,-687.606201171875); id=s_chevrolet_ck1500; yaw_deg_s=0.03",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 229.08,
+      "speed_kmh": 0.31,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.021; surf_avg=0.349; contact=0.349; deform=0.2360; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.45941162109375,-687.627685546875); id=s_chevrolet_ck1500; yaw_deg_s=0.1",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 230.02,
+      "speed_kmh": 0.29,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.020; surf_avg=0.351; contact=0.351; deform=0.2382; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.5481872558594,-687.6511840820312); id=s_chevrolet_ck1500; yaw_deg_s=-0.61",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 231.02,
+      "speed_kmh": 0.35,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.020; surf_avg=0.352; contact=0.352; deform=0.2418; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.6470642089844,-687.6756591796875); id=s_chevrolet_ck1500; yaw_deg_s=-0.41",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 231.98,
+      "speed_kmh": 0.4,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.020; surf_avg=0.351; contact=0.351; deform=0.2460; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.7753601074219,-687.703369140625); id=s_chevrolet_ck1500; yaw_deg_s=-0.46",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 232.92,
+      "speed_kmh": 0.58,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.022; surf_avg=0.296; contact=0.348; deform=0.2499; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.9117126464844,-687.7200317382812); id=s_chevrolet_ck1500; yaw_deg_s=-0.05",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 233.88,
+      "speed_kmh": 0.44,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.022; surf_avg=0.254; contact=0.348; deform=0.2538; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.9788513183594,-687.739990234375); id=s_chevrolet_ck1500; yaw_deg_s=-0.92",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 234.83,
+      "speed_kmh": 0.13,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.022; surf_avg=0.310; contact=0.348; deform=0.3099; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-338.0152587890625,-687.773193359375); id=s_chevrolet_ck1500; yaw_deg_s=-0.66",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 235.77,
+      "speed_kmh": 0.14,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.021; surf_avg=0.325; contact=0.349; deform=0.3247; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-338.0549621582031,-687.8133544921875); id=s_chevrolet_ck1500; yaw_deg_s=-0.36",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 236.75,
+      "speed_kmh": 0.15,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.020; surf_avg=0.336; contact=0.351; deform=0.3355; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-338.10223388671875,-687.8619995117188); id=s_chevrolet_ck1500; yaw_deg_s=-0.89",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 237.69,
+      "speed_kmh": 0.16,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.019; surf_avg=0.347; contact=0.354; deform=0.3472; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-338.1325378417969,-687.8934936523438); id=s_chevrolet_ck1500; yaw_deg_s=-0.27",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 238.64,
+      "speed_kmh": 0.1,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.019; surf_avg=0.352; contact=0.354; deform=0.3525; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-338.1521911621094,-687.9107666015625); id=s_chevrolet_ck1500; yaw_deg_s=0.03",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 239.58,
+      "speed_kmh": 0.03,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.019; surf_avg=0.353; contact=0.354; deform=0.3527; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-338.1861572265625,-687.9285278320312); id=s_chevrolet_ck1500; yaw_deg_s=0.01",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 240.55,
+      "speed_kmh": 0.1,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.020; surf_avg=0.294; contact=0.351; deform=0.2945; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-338.2723083496094,-687.9580688476562); id=s_chevrolet_ck1500; yaw_deg_s=0.45",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 241.48,
+      "speed_kmh": 0.34,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.021; surf_avg=0.289; contact=0.349; deform=0.2886; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-338.3572082519531,-687.9879760742188); id=s_chevrolet_ck1500; yaw_deg_s=0.35",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 242.42,
+      "speed_kmh": 0.3,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.022; surf_avg=0.284; contact=0.348; deform=0.2843; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-338.439208984375,-688.0189819335938); id=s_chevrolet_ck1500; yaw_deg_s=0.1",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 243.38,
+      "speed_kmh": 0.12,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.022; surf_avg=0.282; contact=0.349; deform=0.2823; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-338.4808349609375,-688.032470703125); id=s_chevrolet_ck1500; yaw_deg_s=0.12",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 244.34,
+      "speed_kmh": 0.14,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.020; surf_avg=0.282; contact=0.352; deform=0.2817; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-338.5252685546875,-688.0463256835938); id=s_chevrolet_ck1500; yaw_deg_s=-0.16",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 245.33,
+      "speed_kmh": 0.17,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.018; surf_avg=0.281; contact=0.355; deform=0.2809; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-338.60211181640625,-688.0709838867188); id=s_chevrolet_ck1500; yaw_deg_s=-0.04",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 246.3,
+      "speed_kmh": 0.44,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.017; surf_avg=0.280; contact=0.358; deform=0.2799; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-338.7445373535156,-688.1226806640625); id=s_chevrolet_ck1500; yaw_deg_s=-0.5",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 247.27,
+      "speed_kmh": 0.73,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.016; surf_avg=0.277; contact=0.359; deform=0.2767; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-338.9481201171875,-688.1998901367188); id=s_chevrolet_ck1500; yaw_deg_s=-0.48",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 248.23,
+      "speed_kmh": 0.78,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.020; surf_avg=0.285; contact=0.351; deform=0.2849; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-339.135498046875,-688.2572631835938); id=s_chevrolet_ck1500; yaw_deg_s=-0.19",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 249.19,
+      "speed_kmh": 0.73,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.023; surf_avg=0.288; contact=0.347; deform=0.2875; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-339.2998962402344,-688.3214721679688); id=s_chevrolet_ck1500; yaw_deg_s=-0.47",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 250.16,
+      "speed_kmh": 0.54,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.024; surf_avg=0.291; contact=0.345; deform=0.2909; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-339.42938232421875,-688.3907470703125); id=s_chevrolet_ck1500; yaw_deg_s=-1.1",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 251.14,
+      "speed_kmh": 0.26,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.025; surf_avg=0.372; contact=0.343; deform=0.3725; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-339.465576171875,-688.435302734375); id=s_chevrolet_ck1500; yaw_deg_s=-0.46",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 252.14,
+      "speed_kmh": 0.16,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.024; surf_avg=0.327; contact=0.344; deform=0.3274; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-339.5809631347656,-688.4824829101562); id=s_chevrolet_ck1500; yaw_deg_s=-0.22",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 253.09,
+      "speed_kmh": 0.53,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.023; surf_avg=0.327; contact=0.346; deform=0.3275; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-339.7625732421875,-688.5520629882812); id=s_chevrolet_ck1500; yaw_deg_s=-1.62",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 254.08,
+      "speed_kmh": 0.75,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.021; surf_avg=0.362; contact=0.349; deform=0.3623; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-339.93109130859375,-688.6802978515625); id=s_chevrolet_ck1500; yaw_deg_s=-2.86",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 255.05,
+      "speed_kmh": 0.63,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.022; surf_avg=0.429; contact=0.347; deform=0.4291; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.02569580078125,-688.779296875); id=s_chevrolet_ck1500; yaw_deg_s=-1.38",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 256.05,
+      "speed_kmh": 0.34,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.024; surf_avg=0.455; contact=0.344; deform=0.4554; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.0679016113281,-688.8263549804688); id=s_chevrolet_ck1500; yaw_deg_s=-0.57",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 257.0,
+      "speed_kmh": 0.15,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.025; surf_avg=0.449; contact=0.342; deform=0.4493; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.10699462890625,-688.8629760742188); id=s_chevrolet_ck1500; yaw_deg_s=-0.57",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 257.95,
+      "speed_kmh": 0.16,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.458; contact=0.341; deform=0.4580; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.1579895019531,-688.8955078125); id=s_chevrolet_ck1500; yaw_deg_s=-0.15",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 258.94,
+      "speed_kmh": 0.44,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.431; contact=0.341; deform=0.4308; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.2679443359375,-688.9880981445312); id=s_chevrolet_ck1500; yaw_deg_s=-1.76",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 259.91,
+      "speed_kmh": 0.44,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.500; contact=0.341; deform=0.5002; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.3134460449219,-689.0342407226562); id=s_chevrolet_ck1500; yaw_deg_s=-0.2",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 260.86,
+      "speed_kmh": 0.13,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.456; contact=0.341; deform=0.4563; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.3551330566406,-689.05859375); id=s_chevrolet_ck1500; yaw_deg_s=-0.09",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 261.83,
+      "speed_kmh": 0.14,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.457; contact=0.341; deform=0.4573; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.3885498046875,-689.0975341796875); id=s_chevrolet_ck1500; yaw_deg_s=0.98",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 262.83,
+      "speed_kmh": 0.12,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.025; surf_avg=0.490; contact=0.343; deform=0.4905; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.4250793457031,-689.122314453125); id=s_chevrolet_ck1500; yaw_deg_s=-0.13",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 263.8,
+      "speed_kmh": 0.13,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.467; contact=0.341; deform=0.4670; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.46343994140625,-689.1444091796875); id=s_chevrolet_ck1500; yaw_deg_s=-0.12",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 264.77,
+      "speed_kmh": 0.15,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.468; contact=0.341; deform=0.4678; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.5045471191406,-689.167724609375); id=s_chevrolet_ck1500; yaw_deg_s=-0.16",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 265.73,
+      "speed_kmh": 0.14,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.025; surf_avg=0.469; contact=0.343; deform=0.4687; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.5512390136719,-689.1988525390625); id=s_chevrolet_ck1500; yaw_deg_s=-0.71",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 266.7,
+      "speed_kmh": 0.17,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.024; surf_avg=0.514; contact=0.345; deform=0.5141; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.5849609375,-689.2355346679688); id=s_chevrolet_ck1500; yaw_deg_s=-0.35",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 267.69,
+      "speed_kmh": 0.16,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.023; surf_avg=0.510; contact=0.347; deform=0.5099; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.62603759765625,-689.2791748046875); id=s_chevrolet_ck1500; yaw_deg_s=-1.23",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 268.67,
+      "speed_kmh": 0.15,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.022; surf_avg=0.545; contact=0.348; deform=0.5449; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.6719970703125,-689.325927734375); id=s_chevrolet_ck1500; yaw_deg_s=-1.25",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 269.67,
+      "speed_kmh": 0.3,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.022; surf_avg=0.555; contact=0.348; deform=0.5550; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.7051086425781,-689.366455078125); id=s_chevrolet_ck1500; yaw_deg_s=0.01",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 270.64,
+      "speed_kmh": 0.15,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.022; surf_avg=0.517; contact=0.348; deform=0.5171; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.7550964355469,-689.4232788085938); id=s_chevrolet_ck1500; yaw_deg_s=-0.65",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 271.62,
+      "speed_kmh": 0.15,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.022; surf_avg=0.576; contact=0.348; deform=0.5760; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.7992248535156,-689.4677124023438); id=s_chevrolet_ck1500; yaw_deg_s=-1.13",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 272.59,
+      "speed_kmh": 0.31,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.022; surf_avg=0.584; contact=0.348; deform=0.5845; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.8519287109375,-689.5304565429688); id=s_chevrolet_ck1500; yaw_deg_s=0.45",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 273.59,
+      "speed_kmh": 0.11,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.022; surf_avg=0.543; contact=0.348; deform=0.5431; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.887451171875,-689.5663452148438); id=s_chevrolet_ck1500; yaw_deg_s=-1.83",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 274.58,
+      "speed_kmh": 0.22,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.022; surf_avg=0.600; contact=0.347; deform=0.5996; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.91827392578125,-689.60791015625); id=s_chevrolet_ck1500; yaw_deg_s=-0.56",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 275.55,
+      "speed_kmh": 0.15,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.022; surf_avg=0.607; contact=0.348; deform=0.6075; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.95159912109375,-689.6405029296875); id=s_chevrolet_ck1500; yaw_deg_s=-0.18",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 276.5,
+      "speed_kmh": 0.14,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.022; surf_avg=0.560; contact=0.348; deform=0.5601; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.99139404296875,-689.6693725585938); id=s_chevrolet_ck1500; yaw_deg_s=-0.06",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 277.5,
+      "speed_kmh": 0.15,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.021; surf_avg=0.560; contact=0.349; deform=0.5605; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-341.0362243652344,-689.7010498046875); id=s_chevrolet_ck1500; yaw_deg_s=-0.67",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 278.52,
+      "speed_kmh": 0.43,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.022; surf_avg=0.562; contact=0.348; deform=0.5617; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-341.140625,-689.77587890625); id=s_chevrolet_ck1500; yaw_deg_s=-0.39",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 279.5,
+      "speed_kmh": 0.59,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.022; surf_avg=0.564; contact=0.348; deform=0.5641; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-341.3127746582031,-689.9068603515625); id=s_chevrolet_ck1500; yaw_deg_s=-2.63",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 280.5,
+      "speed_kmh": 0.83,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.021; surf_avg=0.610; contact=0.349; deform=0.6105; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-341.43341064453125,-690.0596313476562); id=s_chevrolet_ck1500; yaw_deg_s=-1.99",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 281.47,
+      "speed_kmh": 0.57,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.019; surf_avg=0.654; contact=0.353; deform=0.6542; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-341.527099609375,-690.2213745117188); id=s_chevrolet_ck1500; yaw_deg_s=-1.72",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 282.48,
+      "speed_kmh": 0.51,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.020; surf_avg=0.684; contact=0.352; deform=0.6836; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-341.5879211425781,-690.3300170898438); id=s_chevrolet_ck1500; yaw_deg_s=-1.17",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 283.5,
+      "speed_kmh": 0.39,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.022; surf_avg=0.703; contact=0.349; deform=0.7031; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-341.6559143066406,-690.4412231445312); id=s_chevrolet_ck1500; yaw_deg_s=-0.35",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 284.47,
+      "speed_kmh": 0.44,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.020; surf_avg=0.673; contact=0.351; deform=0.6725; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-341.7290344238281,-690.505615234375); id=s_chevrolet_ck1500; yaw_deg_s=-0.15",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 285.44,
+      "speed_kmh": 0.19,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.020; surf_avg=0.673; contact=0.351; deform=0.6735; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-341.770751953125,-690.5452880859375); id=s_chevrolet_ck1500; yaw_deg_s=-0.19",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 286.39,
+      "speed_kmh": 0.32,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.021; surf_avg=0.674; contact=0.349; deform=0.6744; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-341.86614990234375,-690.6353149414062); id=s_chevrolet_ck1500; yaw_deg_s=-0.33",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 287.36,
+      "speed_kmh": 0.42,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.021; surf_avg=0.696; contact=0.349; deform=0.6964; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-341.9359130859375,-690.751953125); id=s_chevrolet_ck1500; yaw_deg_s=-1.63",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 288.33,
+      "speed_kmh": 0.5,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.021; surf_avg=0.738; contact=0.349; deform=0.7377; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-341.9908752441406,-690.8638916015625); id=s_chevrolet_ck1500; yaw_deg_s=-1.68",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 289.3,
+      "speed_kmh": 0.47,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.021; surf_avg=0.754; contact=0.350; deform=0.7544; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-342.0434875488281,-690.976806640625); id=s_chevrolet_ck1500; yaw_deg_s=-1.0",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 290.27,
+      "speed_kmh": 0.41,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.020; surf_avg=0.772; contact=0.352; deform=0.7720; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-342.1022033691406,-691.1331176757812); id=s_chevrolet_ck1500; yaw_deg_s=-2.32",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 291.25,
+      "speed_kmh": 0.63,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.019; surf_avg=0.795; contact=0.353; deform=0.7945; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-342.15374755859375,-691.2720947265625); id=s_chevrolet_ck1500; yaw_deg_s=-1.11",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 292.25,
+      "speed_kmh": 0.46,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.019; surf_avg=0.812; contact=0.353; deform=0.8120; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-342.2008056640625,-691.3887939453125); id=s_chevrolet_ck1500; yaw_deg_s=-1.34",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 293.22,
+      "speed_kmh": 0.43,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.018; surf_avg=0.824; contact=0.355; deform=0.8236; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-342.2488708496094,-691.521728515625); id=s_chevrolet_ck1500; yaw_deg_s=-1.3",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 294.19,
+      "speed_kmh": 0.59,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.018; surf_avg=0.836; contact=0.355; deform=0.8361; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-342.3050842285156,-691.7186889648438); id=s_chevrolet_ck1500; yaw_deg_s=-2.21",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 295.16,
+      "speed_kmh": 0.75,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.019; surf_avg=0.856; contact=0.354; deform=0.8558; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-342.3542785644531,-691.9083251953125); id=s_chevrolet_ck1500; yaw_deg_s=-2.39",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 296.11,
+      "speed_kmh": 0.62,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.019; surf_avg=0.876; contact=0.354; deform=0.8758; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-342.4063415527344,-692.116943359375); id=s_chevrolet_ck1500; yaw_deg_s=-1.09",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 297.09,
+      "speed_kmh": 0.73,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.019; surf_avg=0.882; contact=0.354; deform=0.8816; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-342.48077392578125,-692.3175659179688); id=s_chevrolet_ck1500; yaw_deg_s=-1.33",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 298.05,
+      "speed_kmh": 0.8,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.019; surf_avg=0.892; contact=0.354; deform=0.8924; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-342.5363464355469,-692.4830322265625); id=s_chevrolet_ck1500; yaw_deg_s=-1.94",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 299.0,
+      "speed_kmh": 0.88,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.019; surf_avg=0.902; contact=0.354; deform=0.9020; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-342.5975646972656,-692.6880493164062); id=s_chevrolet_ck1500; yaw_deg_s=-1.61",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 299.98,
+      "speed_kmh": 0.74,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.019; surf_avg=0.913; contact=0.353; deform=0.9129; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-342.6361999511719,-692.8659057617188); id=s_chevrolet_ck1500; yaw_deg_s=-1.7",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 300.94,
+      "speed_kmh": 0.67,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.021; surf_avg=0.923; contact=0.350; deform=0.9232; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-342.6649169921875,-693.0667114257812); id=s_chevrolet_ck1500; yaw_deg_s=-2.19",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 301.94,
+      "speed_kmh": 0.73,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.021; surf_avg=0.935; contact=0.350; deform=0.9351; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-342.6954650878906,-693.271484375); id=s_chevrolet_ck1500; yaw_deg_s=-2.12",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 302.88,
+      "speed_kmh": 0.72,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.022; surf_avg=0.945; contact=0.347; deform=0.9453; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-342.7281188964844,-693.452392578125); id=s_chevrolet_ck1500; yaw_deg_s=-0.96",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 303.83,
+      "speed_kmh": 0.7,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.023; surf_avg=0.952; contact=0.346; deform=0.9525; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-342.7480163574219,-693.672119140625); id=s_chevrolet_ck1500; yaw_deg_s=-1.89",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 304.83,
+      "speed_kmh": 0.85,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.023; surf_avg=0.961; contact=0.346; deform=0.9609; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-342.74951171875,-693.8896484375); id=s_chevrolet_ck1500; yaw_deg_s=-4.2",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 305.77,
+      "speed_kmh": 0.92,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.023; surf_avg=0.975; contact=0.346; deform=0.9755; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-342.6971130371094,-694.1875); id=s_chevrolet_ck1500; yaw_deg_s=-7.1",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 306.73,
+      "speed_kmh": 1.37,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.023; surf_avg=0.989; contact=0.346; deform=0.9888; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-342.6081848144531,-694.5046997070312); id=s_chevrolet_ck1500; yaw_deg_s=-4.86",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 307.69,
+      "speed_kmh": 1.02,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.023; surf_avg=0.996; contact=0.346; deform=0.9961; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-342.491455078125,-694.8327026367188); id=s_chevrolet_ck1500; yaw_deg_s=-6.83",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 308.67,
+      "speed_kmh": 1.68,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.023; surf_avg=0.997; contact=0.346; deform=0.9974; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-342.24462890625,-695.3726806640625); id=s_chevrolet_ck1500; yaw_deg_s=-9.0",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 309.66,
+      "speed_kmh": 2.27,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.023; surf_avg=0.986; contact=0.346; deform=0.9864; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-341.94140625,-695.8783569335938); id=s_chevrolet_ck1500; yaw_deg_s=-6.31",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 310.61,
+      "speed_kmh": 1.99,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.023; surf_avg=0.957; contact=0.346; deform=0.9570; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-341.614501953125,-696.4222412109375); id=s_chevrolet_ck1500; yaw_deg_s=2.13",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 311.59,
+      "speed_kmh": 3.24,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.023; surf_avg=0.948; contact=0.346; deform=0.9479; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-341.3446960449219,-697.2265625); id=s_chevrolet_ck1500; yaw_deg_s=-0.04",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 312.56,
+      "speed_kmh": 3.24,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.024; surf_avg=0.947; contact=0.345; deform=0.9467; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.9994201660156,-698.093017578125); id=s_chevrolet_ck1500; yaw_deg_s=-4.73; turn_r=10.9m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 313.55,
+      "speed_kmh": 3.88,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.024; surf_avg=0.927; contact=0.345; deform=0.9271; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.5156555175781,-698.9757080078125); id=s_chevrolet_ck1500; yaw_deg_s=-4.17; turn_r=14.8m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 314.55,
+      "speed_kmh": 2.43,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.024; surf_avg=0.897; contact=0.344; deform=0.8969; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-340.2478332519531,-699.4976196289062); id=s_chevrolet_ck1500; yaw_deg_s=-2.13",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 315.52,
+      "speed_kmh": 1.95,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.024; surf_avg=0.893; contact=0.344; deform=0.8931; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-339.9549865722656,-700.0222778320312); id=s_chevrolet_ck1500; yaw_deg_s=-0.96",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 316.52,
+      "speed_kmh": 2.32,
+      "note": "terrain=crawl_deep; surface=mud; kind=mud; grip=0.024; surf_avg=0.876; contact=0.344; deform=0.8761; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-339.54327392578125,-700.8646850585938); id=s_chevrolet_ck1500; yaw_deg_s=-0.81",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 317.48,
+      "speed_kmh": 3.06,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.024; surf_avg=0.865; contact=0.344; deform=0.8651; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-339.0435485839844,-701.6994018554688); id=s_chevrolet_ck1500; yaw_deg_s=2.88; turn_r=16.9m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 318.45,
+      "speed_kmh": 2.09,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.024; surf_avg=0.876; contact=0.344; deform=0.8763; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-338.8475036621094,-702.15673828125); id=s_chevrolet_ck1500; yaw_deg_s=2.08",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 319.41,
+      "speed_kmh": 1.99,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.025; surf_avg=0.904; contact=0.343; deform=0.9040; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-338.63043212890625,-702.6701049804688); id=s_chevrolet_ck1500; yaw_deg_s=2.06",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 320.39,
+      "speed_kmh": 2.1,
+      "note": "terrain=crawl_deep; surface=mud; kind=mud; grip=0.025; surf_avg=0.910; contact=0.342; deform=0.9097; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-338.3789978027344,-703.532470703125); id=s_chevrolet_ck1500; yaw_deg_s=2.12",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 321.36,
+      "speed_kmh": 3.21,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.926; contact=0.341; deform=0.9260; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-338.14788818359375,-704.2276000976562); id=s_chevrolet_ck1500; yaw_deg_s=3.08; turn_r=16.6m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 322.33,
+      "speed_kmh": 2.39,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.945; contact=0.341; deform=0.9455; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.98968505859375,-704.910400390625); id=s_chevrolet_ck1500; yaw_deg_s=1.22",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 323.28,
+      "speed_kmh": 2.4,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.958; contact=0.341; deform=0.9584; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.8255310058594,-705.7169799804688); id=s_chevrolet_ck1500; yaw_deg_s=6.51",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 324.25,
+      "speed_kmh": 3.65,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.980; contact=0.341; deform=0.9800; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.7452087402344,-706.646484375); id=s_chevrolet_ck1500; yaw_deg_s=4.67; turn_r=12.4m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 325.2,
+      "speed_kmh": 3.73,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.991; contact=0.341; deform=0.9908; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.6939392089844,-707.5643310546875); id=s_chevrolet_ck1500; yaw_deg_s=1.0",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 326.17,
+      "speed_kmh": 3.43,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.997; contact=0.341; deform=0.9972; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.64007568359375,-708.4632568359375); id=s_chevrolet_ck1500; yaw_deg_s=3.37; turn_r=16.2m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 327.12,
+      "speed_kmh": 4.14,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.999; contact=0.341; deform=0.9989; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.5643310546875,-709.4967041015625); id=s_chevrolet_ck1500; yaw_deg_s=1.29; turn_r=51.3m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 328.09,
+      "speed_kmh": 3.55,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.999; contact=0.341; deform=0.9988; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.547119140625,-710.4327392578125); id=s_chevrolet_ck1500; yaw_deg_s=-1.41; turn_r=40.0m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 329.06,
+      "speed_kmh": 3.77,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.999; contact=0.341; deform=0.9993; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.5194396972656,-711.4406127929688); id=s_chevrolet_ck1500; yaw_deg_s=-0.53",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 330.02,
+      "speed_kmh": 4.06,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=1.000; contact=0.341; deform=0.9995; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.5011291503906,-712.3516235351562); id=s_chevrolet_ck1500; yaw_deg_s=1.12",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 330.97,
+      "speed_kmh": 3.25,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=1.000; contact=0.341; deform=0.9999; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.493408203125,-713.1334838867188); id=s_chevrolet_ck1500; yaw_deg_s=1.41; turn_r=36.8m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 331.92,
+      "speed_kmh": 2.5,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=1.000; contact=0.341; deform=0.9997; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.5062255859375,-713.8303833007812); id=s_chevrolet_ck1500; yaw_deg_s=0.13",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 332.86,
+      "speed_kmh": 2.73,
+      "note": "terrain=crawl_deep; surface=mud; kind=mud; grip=0.026; surf_avg=0.999; contact=0.341; deform=0.9994; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.5290832519531,-714.5712890625); id=s_chevrolet_ck1500; yaw_deg_s=-1.29",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 333.84,
+      "speed_kmh": 2.65,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.999; contact=0.341; deform=0.9989; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.536376953125,-715.102783203125); id=s_chevrolet_ck1500; yaw_deg_s=-0.44",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 334.83,
+      "speed_kmh": 1.65,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.999; contact=0.341; deform=0.9989; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.5484313964844,-715.4920043945312); id=s_chevrolet_ck1500; yaw_deg_s=-0.5",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 335.8,
+      "speed_kmh": 1.27,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.999; contact=0.341; deform=0.9994; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.5641784667969,-715.83203125); id=s_chevrolet_ck1500; yaw_deg_s=-0.33",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 336.75,
+      "speed_kmh": 1.02,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=1.000; contact=0.341; deform=0.9996; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.57373046875,-716.0571899414062); id=s_chevrolet_ck1500; yaw_deg_s=0.07",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 337.73,
+      "speed_kmh": 0.86,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=1.000; contact=0.341; deform=0.9997; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.57049560546875,-716.239013671875); id=s_chevrolet_ck1500; yaw_deg_s=-0.12",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 338.69,
+      "speed_kmh": 0.44,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=1.000; contact=0.341; deform=0.9995; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.5828857421875,-716.3439331054688); id=s_chevrolet_ck1500; yaw_deg_s=0.07",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 339.67,
+      "speed_kmh": 0.29,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=1.000; contact=0.341; deform=0.9997; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.5845642089844,-716.44091796875); id=s_chevrolet_ck1500; yaw_deg_s=0.27",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 340.61,
+      "speed_kmh": 0.41,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=1.000; contact=0.341; deform=0.9996; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.5868225097656,-716.5438842773438); id=s_chevrolet_ck1500; yaw_deg_s=0.17",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 341.59,
+      "speed_kmh": 0.41,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=1.000; contact=0.341; deform=0.9996; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.595703125,-716.6267700195312); id=s_chevrolet_ck1500; yaw_deg_s=-0.04",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 342.56,
+      "speed_kmh": 0.13,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.999; contact=0.341; deform=0.9990; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.5997619628906,-716.6632080078125); id=s_chevrolet_ck1500; yaw_deg_s=0.12",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 343.53,
+      "speed_kmh": 0.12,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.999; contact=0.341; deform=0.9987; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.6030578613281,-716.6983642578125); id=s_chevrolet_ck1500; yaw_deg_s=0.09",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 344.5,
+      "speed_kmh": 0.12,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.999; contact=0.341; deform=0.9985; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.618408203125,-716.7530517578125); id=s_chevrolet_ck1500; yaw_deg_s=1.09",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 345.48,
+      "speed_kmh": 0.21,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.991; contact=0.341; deform=0.9911; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.64996337890625,-716.8203125); id=s_chevrolet_ck1500; yaw_deg_s=0.61",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 346.45,
+      "speed_kmh": 0.14,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.989; contact=0.341; deform=0.9891; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.6702880859375,-716.8544311523438); id=s_chevrolet_ck1500; yaw_deg_s=0.16",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 347.42,
+      "speed_kmh": 0.14,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.997; contact=0.341; deform=0.9967; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.6614685058594,-716.8875122070312); id=s_chevrolet_ck1500; yaw_deg_s=-0.2",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 348.39,
+      "speed_kmh": 0.11,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.997; contact=0.341; deform=0.9974; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.6611328125,-716.9241943359375); id=s_chevrolet_ck1500; yaw_deg_s=0.6",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 349.39,
+      "speed_kmh": 0.13,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.988; contact=0.341; deform=0.9883; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.6793518066406,-716.9605102539062); id=s_chevrolet_ck1500; yaw_deg_s=0.5",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 350.36,
+      "speed_kmh": 0.11,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.987; contact=0.341; deform=0.9870; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.693115234375,-716.9959106445312); id=s_chevrolet_ck1500; yaw_deg_s=0.16",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 351.36,
+      "speed_kmh": 0.14,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.996; contact=0.341; deform=0.9960; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.6953125,-717.0213012695312); id=s_chevrolet_ck1500; yaw_deg_s=0.05",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 352.36,
+      "speed_kmh": 0.0,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.996; contact=0.341; deform=0.9960; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.69488525390625,-717.0211181640625); id=s_chevrolet_ck1500; yaw_deg_s=-0.07",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 353.33,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.996; contact=0.341; deform=0.9960; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.6947326660156,-717.0210571289062); id=s_chevrolet_ck1500; yaw_deg_s=0.02",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 354.31,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.996; contact=0.341; deform=0.9960; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.6946105957031,-717.0210571289062); id=s_chevrolet_ck1500; yaw_deg_s=0.1",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 355.3,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.996; contact=0.341; deform=0.9960; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.69464111328125,-717.0209350585938); id=s_chevrolet_ck1500; yaw_deg_s=0.07",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 356.28,
+      "speed_kmh": 0.0,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.996; contact=0.341; deform=0.9960; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.6944885253906,-717.0209350585938); id=s_chevrolet_ck1500; yaw_deg_s=0.03",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 357.25,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.996; contact=0.341; deform=0.9960; mud_grade=mud_deep; load=vacio; mass_havok=1750; pos=(-337.6945495605469,-717.0208740234375); id=s_chevrolet_ck1500; yaw_deg_s=-0.05",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    }
+  ]
+}

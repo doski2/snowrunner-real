@@ -130,8 +130,12 @@ def csv_to_session(
     location_note: str = "CE Havok log",
     rows: list[dict] | None = None,
     session_context: dict | None = None,
+    *,
+    dominant_terrain: str = "",
+    load_scenario_id: str | None = None,
 ) -> tuple[TelemetrySession, dict[str, int], str]:
     from datos.session_context import build_session_context, setup_from_protocol
+    from telemetria import dominant_terrain_kind_from_rows, surface_meta_from_terrain_kind
 
     protocol = next((p for p in TEST_PROTOCOLS if p.id == protocol_id), TEST_PROTOCOLS[0])
     data = rows if rows is not None else load_ce_csv(path)
@@ -139,6 +143,14 @@ def csv_to_session(
     detected_vehicle = game_id_to_vehicle(game_id) if game_id else ""
     if not detected_vehicle:
         detected_vehicle = protocol.vehicle_id
+
+    dom = dominant_terrain or dominant_terrain_kind_from_rows(data)
+    surface_kind, surface_label = (
+        surface_meta_from_terrain_kind(dom)
+        if dom
+        else (protocol.surface_kind, protocol.surface_label)
+    )
+    load_id = load_scenario_id if load_scenario_id else protocol.load_scenario_id
 
     ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
     notes = f"importado desde CE: {os.path.basename(path)}"
@@ -157,14 +169,14 @@ def csv_to_session(
         created_utc=datetime.now(timezone.utc).isoformat(),
         map_name=map_name,
         location_note=location_note,
-        surface_kind=protocol.surface_kind,
-        surface_label=protocol.surface_label,
+        surface_kind=surface_kind,
+        surface_label=surface_label,
         mod_applied=protocol.mod_applied,
         engine_id=protocol.engine_id,
         tire=protocol.tire,
         diff_lock=protocol.diff_lock,
         low_gear=protocol.low_gear,
-        load_scenario_id=protocol.load_scenario_id,
+        load_scenario_id=load_id,
         protocol_id=protocol_id,
         duration_s=protocol.duration_s,
         notes=notes,
@@ -252,11 +264,25 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument(
         "--auto",
+        dest="auto",
         action="store_true",
-        help="Elegir protocolo segun vehiculo y terreno dominante del CSV",
+        default=True,
+        help="Elegir protocolo segun vehiculo y terreno dominante (default)",
     )
-    parser.add_argument("--map", default="", help="Nombre del mapa")
-    parser.add_argument("--location", default="CE Havok log", help="Nota de ruta / tramo")
+    parser.add_argument(
+        "--no-auto",
+        dest="auto",
+        action="store_false",
+        help="Usar --protocol fijo en lugar de auto-detectar",
+    )
+    parser.add_argument("--map", default="", help="Nombre del mapa (auto si vacio)")
+    parser.add_argument(
+        "--auto-map",
+        action="store_true",
+        default=None,
+        help="Detectar mapa desde log (default si --map vacio)",
+    )
+    parser.add_argument("--location", default="", help="Ruta / tramo GPS")
     parser.add_argument("--clima", default="", help="Clima (Fase 7): seco, lluvia, noche")
     parser.add_argument("--hora-juego", default="", dest="hora_juego", help="Hora in-game")
     parser.add_argument(
@@ -272,6 +298,8 @@ def main(argv: list[str] | None = None) -> int:
         help="Indexar en calibracion.json tras importar (indexar_sesion.py)",
     )
     args = parser.parse_args(argv)
+    if args.auto_map is None:
+        args.auto_map = not bool(args.map.strip())
 
     csv_path = resolve_ce_log(args.csv)
     if not os.path.isfile(csv_path):
@@ -308,6 +336,32 @@ def main(argv: list[str] | None = None) -> int:
 
     from datos.catalog_lookup import setup_xml_from_catalog
     from datos.session_context import build_session_context
+    from datos.map_detect import format_map_line, resolve_map_context
+    from telemetria import (
+        dominant_terrain_kind_from_rows,
+        setup_hints_from_ce_rows,
+    )
+
+    dominant_terrain = dominant_terrain_kind_from_rows(rows)
+    map_name = args.map.strip()
+    location_note = args.location.strip()
+    map_ctx = None
+    if args.auto_map:
+        map_ctx = resolve_map_context(
+            map_arg=map_name,
+            location_arg=location_note,
+            rows=rows,
+        )
+        if map_ctx.map_name:
+            map_name = map_ctx.map_name
+        if map_ctx.location_note:
+            location_note = map_ctx.location_note
+    if not location_note:
+        location_note = "CE Havok log"
+    if map_ctx and map_ctx.ok:
+        print(format_map_line(map_ctx))
+    elif dominant_terrain:
+        print(f"terreno dominante CE: {dominant_terrain}")
 
     protocol_for_ctx = next((p for p in TEST_PROTOCOLS if p.id == protocol_id), TEST_PROTOCOLS[0])
     game_id_preview, _ = csv_vehicle_summary(rows)
@@ -320,23 +374,32 @@ def main(argv: list[str] | None = None) -> int:
         "load_scenario_id": protocol_for_ctx.load_scenario_id,
     }
     setup.update(setup_xml_from_catalog(vid_preview or protocol_for_ctx.vehicle_id))
+    setup.update(setup_hints_from_ce_rows(rows))
     ctx = build_session_context(
-        map_name=args.map,
-        location_note=args.location,
+        map_name=map_name,
+        location_note=location_note,
         clima=args.clima,
         hora_juego=args.hora_juego,
         baseline_tag=args.baseline_tag,
         capture_tool="importar_ce_csv.py",
         setup=setup,
+        extra={
+            "level_id": map_ctx.level_id if map_ctx else "",
+            "map_detect_source": map_ctx.source if map_ctx else "",
+            "terrain_kind_dominant": dominant_terrain,
+        },
     )
 
+    load_id = load_det.load_scenario_id if load_det and load_det.loaded else None
     session, terrain_counts, game_id = csv_to_session(
         csv_path,
         protocol_id,
-        args.map,
-        location_note=args.location,
+        map_name,
+        location_note=location_note,
         rows=rows,
         session_context=ctx,
+        dominant_terrain=dominant_terrain,
+        load_scenario_id=load_id,
     )
     if args.auto and load_det and load_det.loaded:
         session = TelemetrySession(

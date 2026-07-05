@@ -78,13 +78,13 @@ echo Setup en taller ANTES de diff/offroad/caja/remolque:
 echo   - Motor: AAT-8V 5,2 Custom (us_scout_old_engine_ck1500)
 echo   - Neumatico: Highway 31 stock
 echo   - Caja / diff / AWD: de serie (sin mejoras)
-echo   - Mapa: asfalto recto, vacio, WOT ~60 s
+echo   - Mapa: asfalto recto, vacio, WOT ~60 s (mapa auto-detectado)
 echo.
 echo Ctrl+C para parar - importa con protocolo f1_asfalto_aat8v
 echo.
 python grabar_ce.py --probe
 if errorlevel 1 goto PAUSE_ERR
-python grabar_ce.py --import --compare --index --live --protocol f1_asfalto_aat8v --map Michigan --location "Black River asfalto F1 AAT-8V" --baseline ck_aat8v_f1 %2 %3 %4 %5 %6 %7 %8 %9
+python grabar_ce.py --import --compare --index --live --protocol f1_asfalto_aat8v --baseline ck_aat8v_f1 %2 %3 %4 %5 %6 %7 %8 %9
 set ERR=%ERRORLEVEL%
 goto PAUSE_ERR
 
@@ -96,7 +96,7 @@ echo   Asfalto recto WOT ~60 s — Ctrl+C para parar
 echo.
 python grabar_ce.py --probe
 if errorlevel 1 goto PAUSE_ERR
-python grabar_ce.py --import --compare --index --live --protocol s8_f1_asfalto_aat6v --map Michigan --location "Black River asfalto F1 S800" --baseline s8_aat6v_f1 %2 %3 %4 %5 %6 %7 %8 %9
+python grabar_ce.py --import --compare --index --live --protocol s8_f1_asfalto_aat6v --baseline s8_aat6v_f1 %2 %3 %4 %5 %6 %7 %8 %9
 set ERR=%ERRORLEVEL%
 goto PAUSE_ERR
 
@@ -168,7 +168,7 @@ echo   - Para el camion quieto ~30 s y repite: grabar_telemetria.bat cargo
 echo   - No sigas hasta ver cargado y payload_kg ^> 300
 echo.
 
-python grabar_ce.py --import --compare --auto --index --live --map Michigan --location "Black River partida libre" --baseline play_free_v1 %*
+python grabar_ce.py --import --compare --auto --index --live --baseline play_free_v1 %*
 set ERR=%ERRORLEVEL%
 
 echo.

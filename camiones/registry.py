@@ -83,7 +83,7 @@ VEHICLES: dict[str, VehicleMod] = {
         patches=MARSHALL_PATCHES,
         sim_module="camiones.marshall.simulador",
         ce_id="s_khan_39_marshall",
-        notes="Scout UAZ/TREKOL; Kr 104; 45 TM II; AWD+diff",
+        notes="Scout UAZ/TREKOL; Kr 135-T; 45 TM II; AWD+diff",
     ),
     "kodiak": VehicleMod(
         id="kodiak",

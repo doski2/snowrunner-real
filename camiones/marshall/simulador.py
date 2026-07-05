@@ -1,5 +1,5 @@
 """
-Simulador KHAN 39 Marshall — Scout 4x4, Kr 104, 45\" TM II, 4WD+diff stock.
+Simulador KHAN 39 Marshall — Scout 4x4, Kr 104 / Kr 135-T, 45\" TM II, 4WD+diff stock.
 
 Referencia en juego: suspensión reptadora + mudtires_2 (wheels_scout_yar_871, Radius=1).
 
@@ -13,6 +13,7 @@ from dataclasses import replace
 
 from sim.core import (
     ENGINE_STOCK,
+    EngineConfig,
     SURFACES,
     SurfaceConfig,
     VehicleConfig,
@@ -54,6 +55,39 @@ ENGINE_REAL_KM = replace(
     fuel_consumption=0.75,
     responsiveness=0.035,
 )
+
+# Kr 135-T (ru_scout_old_engine_1): mismo ratio de nerfeo que Kr 104 (28/30)
+KM_NERF_RATIO = ENGINE_REAL_KM.torque / ENGINE_STOCK_KM.torque
+
+ENGINE_STOCK_KM_135 = replace(
+    ENGINE_STOCK_KM,
+    name="Kr 135-T stock",
+    torque=40000,
+    fuel_consumption=1.1,
+    responsiveness=0.09,
+)
+
+ENGINE_REAL_KM_135 = replace(
+    ENGINE_STOCK_KM_135,
+    name="Kr 135-T realista Marshall",
+    torque=int(40000 * KM_NERF_RATIO),
+    fuel_consumption=1.35,
+    responsiveness=0.08,
+)
+
+KM_ENGINE_XML_104 = "ru_scout_old_engine_0"
+KM_ENGINE_XML_135 = "ru_scout_old_engine_1"
+
+
+def engine_for_marshall(engine_id: str, engine_name_xml: str = "") -> EngineConfig:
+    """Motor sim/CE: protocolo km_kr135/km_kr104 o engine_name_xml del catalogo."""
+    xml = (engine_name_xml or "").strip()
+    use_135 = engine_id == "km_kr135" or xml == KM_ENGINE_XML_135
+    if engine_id == "km_stock":
+        return ENGINE_STOCK_KM_135 if use_135 else ENGINE_STOCK_KM
+    if use_135:
+        return ENGINE_REAL_KM_135
+    return ENGINE_REAL_KM
 
 VEHICLE_STOCK = VehicleConfig(
     "Marshall stock",
@@ -137,20 +171,26 @@ def main() -> None:
     mud = SurfaceConfig("Barro", "mud", viscosity=4.0)
     deep = SurfaceConfig("Barro profundo", "deep_mud", viscosity=4.0, water_depth=0.4)
     asphalt = SurfaceConfig("Asfalto", "asphalt")
-    accel = run_sim(VEHICLE_REAL, ENGINE_REAL_KM, asphalt, 90.0)
-    t097 = time_to_kmh(accel.speeds_kmh, accel.times, 97.0)
 
     print("=== KHAN 39 Marshall — mod realista ===\n")
     print(f"Masa stock/real: {VEHICLE_STOCK.mass_kg} / {VEHICLE_REAL.mass_kg} kg")
-    print(f"Kr 104 stock/real: {ENGINE_STOCK_KM.torque} / {ENGINE_REAL_KM.torque} Ncm")
+    print(
+        f"Kr 104 stock/real: {ENGINE_STOCK_KM.torque} / {ENGINE_REAL_KM.torque} Ncm"
+    )
+    print(
+        f"Kr 135-T stock/real: {ENGINE_STOCK_KM_135.torque} / {ENGINE_REAL_KM_135.torque} Ncm"
+    )
     print(f"TM II substance mod: {MUDTIRES_TM2_SUBSTANCE_MOD}\n")
 
-    print("--- Asfalto TM II + diff (km_f1_asfalto) ---")
+    eng = ENGINE_REAL_KM_135
+    print("--- Asfalto TM II + diff (km_f1_asfalto, Kr 135-T) ---")
+    accel = run_sim(VEHICLE_REAL, eng, asphalt, 90.0)
+    t097 = time_to_kmh(accel.speeds_kmh, accel.times, 97.0)
     print(f"  0-97 km/h: {t097}s | v60: {round(sample_at(accel, 60.0), 1)} km/h\n")
 
-    print("--- Barro marcha baja (km_f2_barro_tm2) ---")
+    print("--- Barro marcha baja (km_f2_barro_tm2, Kr 135-T) ---")
     for label, surf in (("barro", mud), ("barro profundo", deep)):
-        s = run_sim(VEHICLE_REAL, ENGINE_REAL_KM, surf, 120.0, low_gear=True)
+        s = run_sim(VEHICLE_REAL, eng, surf, 120.0, low_gear=True)
         print(
             f"  {label:<18} v30={sample_at(s, 30.0):.1f} "
             f"vmax={max(s.speeds_kmh):.1f} km/h"
@@ -161,7 +201,7 @@ def main() -> None:
         trailer_mass_kg=LOAD_TRAILER_MASS,
         trailer_cargo_mass_kg=LOAD_TRAILER_CARGO,
     )
-    s_load = run_sim(loaded, ENGINE_REAL_KM, mud, 120.0, low_gear=True)
+    s_load = run_sim(loaded, eng, mud, 120.0, low_gear=True)
     print(
         f"\n--- Remolque scout (~{LOAD_TRAILER_MASS + LOAD_TRAILER_CARGO} kg) barro (km_f3_carga) ---\n"
         f"  v30={sample_at(s_load, 30.0):.1f} vmax={max(s_load.speeds_kmh):.1f} km/h"

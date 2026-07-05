@@ -4,30 +4,30 @@
 
 ## Setup de referencia (tu camioneta)
 
-| Pieza | Juego | XML |
-|-------|-------|-----|
-| Motor | AAT-6V 4.0 | `us_scout_old_engine_0` (`e_us_scout_old.xml`) |
-| Neumatico | 33\" HS I | `wheels_scout_highway` / JAT HS I |
-| Diff | Siempre activo | `DiffLockType="Always"` en truck |
-| Caja | Stock | `g_scout_default` |
+| Pieza     | Juego          | XML                                            |
+|-----------|----------------|------------------------------------------------|
+| Motor     | AAT-6V 4.0     | `us_scout_old_engine_0` (`e_us_scout_old.xml`) |
+| Neumatico | 33\" HS I      | `wheels_scout_highway` / JAT HS I              |
+| Diff      | Siempre activo | `DiffLockType="Always"` en truck               |
+| Caja      | Stock          | `g_scout_default`                              |
 
 **No** reutilizar sesiones CK1500: otra masa, otro motor, diff distinto.
 
 ## Estado mod XML
 
-| Archivo | Cambio | Estado |
-|---------|--------|--------|
-| `international_scout_800.xml` | Responsiveness 0.04; masa 1600+750 | Aplicado (placeholder) |
-| `e_us_scout_old.xml` motor_0 | Nerfeo AAT-6V | **Pendiente** F1 CE |
-| `wheels_scout_highway.xml` | HS I barro | **Pendiente** F2 CE |
+| Archivo                       | Cambio                              | Estado                 |
+|-------------------------------|-------------------------------------|------------------------|
+| `international_scout_800.xml` | Responsiveness 0.04; masa 1600+750  | Aplicado (placeholder) |
+| `e_us_scout_old.xml` motor_0  | Nerfeo AAT-6V                       | **Pendiente** F1 CE    |
+| `wheels_scout_highway.xml`    | HS I barro                          | **Pendiente** F2 CE    |
 
 ## Protocolos CE
 
-| Fase | Protocolo | Que grabar |
-|------|-----------|------------|
-| F1 | `s8_f1_asfalto_aat6v` | Asfalto WOT ~60 s; solo motor+HS I |
-| F2 | `s8_f2_barro_hs` | Mismo tramo barro Michigan; diff+L |
-| F3 | `s8_f3_carga_barro` | Remolque scout + vigas |
+| Fase | Protocolo             | Que grabar                         |
+|------|-----------------------|------------------------------------|
+| F1   | `s8_f1_asfalto_aat6v` | Asfalto WOT ~60 s; solo motor+HS I |
+| F2   | `s8_f2_barro_hs`      | Mismo tramo barro Michigan; diff+L |
+| F3   | `s8_f3_carga_barro`   | Remolque scout + vigas             |
 
 ```powershell
 .\grabar_telemetria.bat motor_scout

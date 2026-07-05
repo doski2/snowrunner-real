@@ -84,6 +84,16 @@ class TestMarshallSim(unittest.TestCase):
         self.assertEqual(veh.mud_immersion_rate, KM_MUD_IMMERSION_RATE)
         self.assertEqual(veh.mud_resist_mult, KM_MUD_RESIST_MULT)
 
+    def test_engine_for_marshall_xml_name(self) -> None:
+        eng135 = sim_km.engine_for_marshall("km_kr135", "ru_scout_old_engine_1")
+        self.assertEqual(eng135.torque, sim_km.ENGINE_REAL_KM_135.torque)
+        eng104 = sim_km.engine_for_marshall("km_kr104", "ru_scout_old_engine_0")
+        self.assertEqual(eng104.torque, ENGINE_REAL_KM.torque)
+        self.assertGreater(
+            sim_km.engine_for_marshall("km_kr135").torque,
+            sim_km.engine_for_marshall("km_kr104").torque,
+        )
+
     def test_real_slower_than_stock_mud(self) -> None:
         a = run_sim(VEHICLE_STOCK, ENGINE_STOCK_KM, MUD, 60.0, low_gear=True)
         b = run_sim(VEHICLE_REAL, ENGINE_REAL_KM, MUD, 60.0, low_gear=True)

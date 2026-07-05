@@ -1,0 +1,1115 @@
+{
+  "meta": {
+    "id": "ce_fs_f1_asfalto_20260704_230631",
+    "created_utc": "2026-07-04T23:06:31.233823+00:00",
+    "map_name": "North Port",
+    "location_note": "North Port partida libre",
+    "surface_kind": "asphalt",
+    "surface_label": "Asfalto/firme",
+    "mod_applied": true,
+    "engine_id": "fs_real",
+    "tire": "highway",
+    "diff_lock": true,
+    "low_gear": false,
+    "load_scenario_id": "frame_cargado",
+    "protocol_id": "fs_f1_asfalto",
+    "duration_s": 268.19,
+    "notes": "importado desde CE: telemetria_ce_log.csv; game_id=s_fleetstar_f2070a",
+    "vehicle_id": "fleetstar",
+    "session_context": {
+      "build_juego": "Steam update jun-2026; initial.pak 28880896 B",
+      "mod_commit": "",
+      "map": "North Port",
+      "location_note": "North Port partida libre",
+      "clima": "",
+      "hora_juego": "",
+      "baseline_tag": "play_free_v1",
+      "capture_tool": "importar_ce_csv.py",
+      "setup": {
+        "engine_id": "fs_real",
+        "tire": "highway",
+        "diff_lock": true,
+        "low_gear": false,
+        "load_scenario_id": "vacio",
+        "catalog_source": "initial.pak.bak stock",
+        "steer_speed_xml": 0.033,
+        "responsiveness_xml": 0.1,
+        "default_suspension_xml": "fleetstar_f2070a_suspension_default",
+        "suspension_socket_xml": "s_fleetstar_f2070a",
+        "suspension_strength_front_xml": 0.05,
+        "suspension_strength_rear_xml": 0.08,
+        "suspension_height_front_xml": 0.05,
+        "suspension_height_rear_xml": 0.1,
+        "engine_socket_type_xml": "e_us_truck_old, e_us_truck_old_top",
+        "default_engine_xml": "us_truck_old_engine_0",
+        "engine_responsiveness_xml": 0.035,
+        "engine_name_xml": "us_truck_old_engine_0",
+        "gearbox_socket_type_xml": "gearboxes_trucks",
+        "default_gearbox_xml": "g_truck_default",
+        "gearbox_file_id_xml": "gearboxes_zikz_566a",
+        "gearbox_lower_gear_xml": true,
+        "gearbox_high_gear_xml": false,
+        "gearbox_fuel_consumption_xml": 3.8,
+        "gearbox_first_gear_ang_vel_xml": 1.5,
+        "gearbox_high_gear_ang_vel_xml": 7.5,
+        "ce_auto_detected": true,
+        "load_hint_ce": "cargado"
+      },
+      "level_id": "level_us_02_01",
+      "map_detect_source": "csv_map",
+      "terrain_kind_dominant": "hard"
+    }
+  },
+  "samples": [
+    {
+      "t_s": 0.0,
+      "speed_kmh": 0.0,
+      "note": "terrain=idle; surface=snow; kind=snow; grip=0.200; surf_avg=0.730; contact=0.804; deform=0.7298; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(720.7066650390625,-214.95306396484375); id=s_fleetstar_f2070a; yaw_deg_s=0.0",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 1.67,
+      "speed_kmh": 0.0,
+      "note": "terrain=idle; surface=snow; kind=snow; grip=0.200; surf_avg=0.730; contact=0.804; deform=0.7298; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(720.7066650390625,-214.95306396484375); id=s_fleetstar_f2070a; yaw_deg_s=0.0",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 3.33,
+      "speed_kmh": 0.0,
+      "note": "terrain=idle; surface=snow; kind=snow; grip=0.200; surf_avg=0.730; contact=0.804; deform=0.7298; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(720.7066650390625,-214.95306396484375); id=s_fleetstar_f2070a; yaw_deg_s=0.0",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 5.02,
+      "speed_kmh": 0.0,
+      "note": "terrain=idle; surface=snow; kind=snow; grip=0.200; surf_avg=0.730; contact=0.804; deform=0.7298; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(720.7064819335938,-214.95001220703125); id=s_fleetstar_f2070a; yaw_deg_s=0.01",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 6.77,
+      "speed_kmh": 0.02,
+      "note": "terrain=idle; surface=snow; kind=snow; grip=0.200; surf_avg=0.730; contact=0.804; deform=0.7296; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(720.6672973632812,-214.9906768798828); id=s_fleetstar_f2070a; yaw_deg_s=-0.0",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 8.48,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=snow; kind=snow; grip=0.200; surf_avg=0.730; contact=0.804; deform=0.7297; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(719.7841796875,-215.94334411621094); id=s_fleetstar_f2070a; yaw_deg_s=0.33",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 10.23,
+      "speed_kmh": 7.79,
+      "note": "terrain=crawl; surface=snow; kind=snow; grip=0.200; surf_avg=0.731; contact=0.804; deform=0.7309; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(716.80712890625,-219.12509155273438); id=s_fleetstar_f2070a; yaw_deg_s=-0.39",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 11.94,
+      "speed_kmh": 8.93,
+      "note": "terrain=crawl; surface=snow; kind=snow; grip=0.200; surf_avg=0.729; contact=0.804; deform=0.7292; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(714.2568359375,-221.87142944335938); id=s_fleetstar_f2070a; yaw_deg_s=-0.57",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 13.59,
+      "speed_kmh": 7.74,
+      "note": "terrain=crawl; surface=snow; kind=snow; grip=0.200; surf_avg=0.732; contact=0.804; deform=0.7318; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(711.7337646484375,-224.45834350585938); id=s_fleetstar_f2070a; yaw_deg_s=1.34; turn_r=91.8m",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 15.28,
+      "speed_kmh": 7.7,
+      "note": "terrain=crawl; surface=snow; kind=snow; grip=0.200; surf_avg=0.719; contact=0.804; deform=0.7192; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(709.0703125,-226.88795471191406); id=s_fleetstar_f2070a; yaw_deg_s=0.98",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 16.95,
+      "speed_kmh": 7.74,
+      "note": "terrain=crawl; surface=snow; kind=snow; grip=0.200; surf_avg=0.692; contact=0.804; deform=0.6921; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(706.3400268554688,-229.17532348632812); id=s_fleetstar_f2070a; yaw_deg_s=0.79",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 18.61,
+      "speed_kmh": 7.56,
+      "note": "terrain=crawl; surface=snow; kind=snow; grip=0.200; surf_avg=0.653; contact=0.804; deform=0.6530; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(703.300537109375,-230.71502685546875); id=s_fleetstar_f2070a; yaw_deg_s=-0.96",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 20.28,
+      "speed_kmh": 7.74,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.200; surf_avg=0.548; contact=0.804; deform=0.5481; mud_grade=mud_light; load=vacio; mass_havok=6650; pos=(700.3174438476562,-232.6278533935547); id=s_fleetstar_f2070a; yaw_deg_s=0.15",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 21.91,
+      "speed_kmh": 7.76,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.200; surf_avg=0.540; contact=0.804; deform=0.5401; mud_grade=mud_light; load=vacio; mass_havok=6650; pos=(697.3405151367188,-234.46429443359375); id=s_fleetstar_f2070a; yaw_deg_s=0.86",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 23.53,
+      "speed_kmh": 7.8,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.200; surf_avg=0.532; contact=0.804; deform=0.5321; mud_grade=mud_light; load=vacio; mass_havok=6650; pos=(694.281494140625,-236.3107147216797); id=s_fleetstar_f2070a; yaw_deg_s=0.74",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 25.19,
+      "speed_kmh": 7.85,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.200; surf_avg=0.524; contact=0.804; deform=0.5236; mud_grade=mud_light; load=vacio; mass_havok=6650; pos=(691.1687622070312,-238.0950927734375); id=s_fleetstar_f2070a; yaw_deg_s=-0.32",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 26.86,
+      "speed_kmh": 7.63,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.200; surf_avg=0.508; contact=0.804; deform=0.5080; mud_grade=mud_light; load=vacio; mass_havok=6650; pos=(688.0386962890625,-239.81813049316406); id=s_fleetstar_f2070a; yaw_deg_s=1.57; turn_r=77.4m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 28.53,
+      "speed_kmh": 7.73,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.200; surf_avg=0.493; contact=0.804; deform=0.4930; mud_grade=mud_light; load=vacio; mass_havok=6650; pos=(684.8583984375,-241.45501708984375); id=s_fleetstar_f2070a; yaw_deg_s=1.36; turn_r=90.5m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 30.2,
+      "speed_kmh": 7.79,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.200; surf_avg=0.471; contact=0.804; deform=0.4707; mud_grade=mud_light; load=vacio; mass_havok=6650; pos=(681.5130004882812,-242.82427978515625); id=s_fleetstar_f2070a; yaw_deg_s=3.22; turn_r=38.6m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 31.91,
+      "speed_kmh": 7.74,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.200; surf_avg=0.412; contact=0.804; deform=0.4116; mud_grade=mud_light; load=vacio; mass_havok=6650; pos=(678.1644287109375,-243.88963317871094); id=s_fleetstar_f2070a; yaw_deg_s=2.2; turn_r=56.0m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 33.55,
+      "speed_kmh": 7.73,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.200; surf_avg=0.343; contact=0.804; deform=0.3429; mud_grade=mud_light; load=vacio; mass_havok=6650; pos=(674.7384033203125,-244.5884246826172); id=s_fleetstar_f2070a; yaw_deg_s=3.36; turn_r=36.7m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 35.19,
+      "speed_kmh": 7.54,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.200; surf_avg=0.442; contact=0.804; deform=0.2531; mud_grade=mud_light; load=vacio; mass_havok=6650; pos=(671.2114868164062,-244.77943420410156); id=s_fleetstar_f2070a; yaw_deg_s=5.39; turn_r=22.3m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 36.84,
+      "speed_kmh": 7.58,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=0.1209; mud_grade=dry_hard; load=vacio; mass_havok=6650; pos=(667.7835693359375,-244.77435302734375); id=s_fleetstar_f2070a; yaw_deg_s=0.49",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 38.52,
+      "speed_kmh": 6.99,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=0.0642; mud_grade=dry_hard; load=vacio; mass_havok=6650; pos=(664.3414306640625,-244.99534606933594); id=s_fleetstar_f2070a; yaw_deg_s=-1.51; turn_r=73.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 40.14,
+      "speed_kmh": 10.26,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=0.0647; mud_grade=dry_hard; load=vacio; mass_havok=6650; pos=(656.5802612304688,-243.2846221923828); id=s_fleetstar_f2070a; yaw_deg_s=24.43; turn_r=6.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 41.83,
+      "speed_kmh": 23.06,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.3288; mud_grade=dry_hard; load=vacio; mass_havok=6650; pos=(646.9843139648438,-236.78013610839844); id=s_fleetstar_f2070a; yaw_deg_s=9.92; turn_r=37.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 43.52,
+      "speed_kmh": 24.72,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6048; mud_grade=dry_hard; load=vacio; mass_havok=6650; pos=(638.6522216796875,-228.40135192871094); id=s_fleetstar_f2070a; yaw_deg_s=-0.71",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 45.17,
+      "speed_kmh": 27.48,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6998; mud_grade=dry_hard; load=vacio; mass_havok=6650; pos=(630.2167358398438,-219.04364013671875); id=s_fleetstar_f2070a; yaw_deg_s=5.29; turn_r=82.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 46.78,
+      "speed_kmh": 28.24,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7786; mud_grade=dry_hard; load=vacio; mass_havok=6650; pos=(620.3601684570312,-210.4598846435547); id=s_fleetstar_f2070a; yaw_deg_s=-14.07; turn_r=31.9m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 48.48,
+      "speed_kmh": 29.44,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5563; mud_grade=dry_hard; load=vacio; mass_havok=6650; pos=(607.0474243164062,-205.89361572265625); id=s_fleetstar_f2070a; yaw_deg_s=3.42; turn_r=137.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 50.12,
+      "speed_kmh": 31.59,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.2805; mud_grade=dry_hard; load=vacio; mass_havok=6650; pos=(592.7733764648438,-202.7163543701172); id=s_fleetstar_f2070a; yaw_deg_s=1.11",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 51.81,
+      "speed_kmh": 32.07,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.1721; mud_grade=dry_hard; load=vacio; mass_havok=6650; pos=(576.6497802734375,-198.2889862060547); id=s_fleetstar_f2070a; yaw_deg_s=-1.56; turn_r=326.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 53.52,
+      "speed_kmh": 39.0,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.3376; mud_grade=dry_hard; load=vacio; mass_havok=6650; pos=(558.6815795898438,-194.7046661376953); id=s_fleetstar_f2070a; yaw_deg_s=-8.96; turn_r=69.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 55.19,
+      "speed_kmh": 39.94,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.0397; mud_grade=dry_hard; load=vacio; mass_havok=6650; pos=(544.7001342773438,-197.85919189453125); id=s_fleetstar_f2070a; yaw_deg_s=-33.66; turn_r=18.9m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 56.83,
+      "speed_kmh": 19.1,
+      "note": "terrain=cruise; surface=snow; kind=snow; grip=0.200; surf_avg=0.672; contact=0.804; deform=0.6722; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(542.3922119140625,-202.69561767578125); id=s_fleetstar_f2070a; yaw_deg_s=-1.97; turn_r=154.7m",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 58.53,
+      "speed_kmh": 6.3,
+      "note": "terrain=crawl; surface=snow; kind=snow; grip=0.200; surf_avg=0.850; contact=0.804; deform=0.8497; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(540.3255615234375,-205.71551513671875); id=s_fleetstar_f2070a; yaw_deg_s=8.0; turn_r=12.5m",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 60.19,
+      "speed_kmh": 11.01,
+      "note": "terrain=crawl; surface=snow; kind=snow; grip=0.200; surf_avg=0.821; contact=0.804; deform=0.8207; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(535.8297119140625,-209.0839080810547); id=s_fleetstar_f2070a; yaw_deg_s=2.08; turn_r=84.1m",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 66.69,
+      "speed_kmh": 27.01,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=0.1509; mud_grade=dry_hard; load=vacio; mass_havok=6650; pos=(496.8050842285156,-217.60147094726562); id=s_fleetstar_f2070a; yaw_deg_s=-4.93; turn_r=87.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 68.38,
+      "speed_kmh": 30.54,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=0.1474; mud_grade=dry_hard; load=vacio; mass_havok=6650; pos=(483.4349670410156,-221.3622283935547); id=s_fleetstar_f2070a; yaw_deg_s=-19.79; turn_r=24.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 70.08,
+      "speed_kmh": 29.16,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.200; surf_avg=0.442; contact=0.804; deform=0.4425; mud_grade=mud_light; load=vacio; mass_havok=6650; pos=(472.92889404296875,-229.6405792236328); id=s_fleetstar_f2070a; yaw_deg_s=-15.79; turn_r=29.4m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 71.8,
+      "speed_kmh": 26.32,
+      "note": "terrain=cruise; surface=snow; kind=snow; grip=0.200; surf_avg=0.739; contact=0.804; deform=0.7392; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(464.2850036621094,-238.89613342285156); id=s_fleetstar_f2070a; yaw_deg_s=0.35",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 73.5,
+      "speed_kmh": 29.02,
+      "note": "terrain=hard_fast; surface=snow; kind=snow; grip=0.200; surf_avg=0.717; contact=0.804; deform=0.7170; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(454.64288330078125,-248.85105895996094); id=s_fleetstar_f2070a; yaw_deg_s=-1.08",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 75.17,
+      "speed_kmh": 31.01,
+      "note": "terrain=hard_fast; surface=snow; kind=snow; grip=0.200; surf_avg=0.722; contact=0.804; deform=0.7215; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(444.0836486816406,-259.8701477050781); id=s_fleetstar_f2070a; yaw_deg_s=-0.69",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 76.86,
+      "speed_kmh": 34.0,
+      "note": "terrain=hard_fast; surface=snow; kind=snow; grip=0.200; surf_avg=0.721; contact=0.804; deform=0.7214; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(432.670166015625,-271.8418884277344); id=s_fleetstar_f2070a; yaw_deg_s=0.09",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 78.55,
+      "speed_kmh": 35.83,
+      "note": "terrain=hard_fast; surface=snow; kind=snow; grip=0.200; surf_avg=0.724; contact=0.804; deform=0.7243; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(420.77569580078125,-284.3599548339844); id=s_fleetstar_f2070a; yaw_deg_s=1.1",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 80.28,
+      "speed_kmh": 36.59,
+      "note": "terrain=hard_fast; surface=snow; kind=snow; grip=0.200; surf_avg=0.723; contact=0.804; deform=0.7231; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(407.7945556640625,-295.00042724609375); id=s_fleetstar_f2070a; yaw_deg_s=14.93; turn_r=39.0m",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 81.97,
+      "speed_kmh": 34.51,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.200; surf_avg=0.518; contact=0.804; deform=0.5183; mud_grade=mud_light; load=vacio; mass_havok=6650; pos=(394.05645751953125,-302.3218994140625); id=s_fleetstar_f2070a; yaw_deg_s=0.5",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 83.67,
+      "speed_kmh": 32.03,
+      "note": "terrain=hard_fast; surface=mud; kind=mud; grip=0.200; surf_avg=0.465; contact=0.804; deform=0.4646; mud_grade=mud_light; load=vacio; mass_havok=6650; pos=(383.9216613769531,-311.680908203125); id=s_fleetstar_f2070a; yaw_deg_s=-20.26; turn_r=25.2m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 85.38,
+      "speed_kmh": 25.16,
+      "note": "terrain=cruise; surface=snow; kind=snow; grip=0.200; surf_avg=0.869; contact=0.804; deform=0.8688; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(381.55792236328125,-322.7483825683594); id=s_fleetstar_f2070a; yaw_deg_s=-31.74; turn_r=12.6m",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 87.05,
+      "speed_kmh": 26.04,
+      "note": "terrain=cruise; surface=snow; kind=snow; grip=0.200; surf_avg=0.999; contact=0.804; deform=0.9990; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(386.65509033203125,-334.9151611328125); id=s_fleetstar_f2070a; yaw_deg_s=-0.24",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 88.72,
+      "speed_kmh": 30.96,
+      "note": "terrain=hard_fast; surface=snow; kind=snow; grip=0.200; surf_avg=0.932; contact=0.804; deform=0.9317; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(391.37042236328125,-347.8209533691406); id=s_fleetstar_f2070a; yaw_deg_s=5.1; turn_r=96.5m",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 90.39,
+      "speed_kmh": 27.27,
+      "note": "terrain=cruise; surface=snow; kind=snow; grip=0.200; surf_avg=0.953; contact=0.804; deform=0.9535; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(394.3758544921875,-357.28594970703125); id=s_fleetstar_f2070a; yaw_deg_s=-0.39",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 92.11,
+      "speed_kmh": 16.05,
+      "note": "terrain=cruise; surface=snow; kind=snow; grip=0.200; surf_avg=0.952; contact=0.804; deform=0.9519; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(395.3459777832031,-360.0582275390625); id=s_fleetstar_f2070a; yaw_deg_s=0.36",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 93.78,
+      "speed_kmh": 1.08,
+      "note": "terrain=idle; surface=snow; kind=snow; grip=0.200; surf_avg=0.938; contact=0.804; deform=0.9377; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(395.2025146484375,-359.69940185546875); id=s_fleetstar_f2070a; yaw_deg_s=0.21",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 95.47,
+      "speed_kmh": 0.1,
+      "note": "terrain=idle; surface=snow; kind=snow; grip=0.200; surf_avg=0.938; contact=0.804; deform=0.9381; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(395.20184326171875,-359.700439453125); id=s_fleetstar_f2070a; yaw_deg_s=0.04",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 97.17,
+      "speed_kmh": 0.02,
+      "note": "terrain=idle; surface=snow; kind=snow; grip=0.200; surf_avg=0.938; contact=0.804; deform=0.9382; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(395.20294189453125,-359.7027893066406); id=s_fleetstar_f2070a; yaw_deg_s=0.06",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 98.88,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=snow; kind=snow; grip=0.200; surf_avg=0.938; contact=0.804; deform=0.9381; mud_grade=snow_packed; load=vacio; mass_havok=6650; pos=(395.20758056640625,-359.7052307128906); id=s_fleetstar_f2070a; yaw_deg_s=0.04",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 100.55,
+      "speed_kmh": 0.04,
+      "note": "terrain=idle; surface=snow; kind=snow; grip=0.200; surf_avg=0.945; contact=0.804; deform=0.9453; mud_grade=snow_packed; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(395.1419372558594,-360.3399353027344); id=s_fleetstar_f2070a; yaw_deg_s=8.98",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 102.25,
+      "speed_kmh": 5.25,
+      "note": "terrain=crawl; surface=snow; kind=snow; grip=0.200; surf_avg=0.965; contact=0.804; deform=0.9649; mud_grade=snow_packed; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(394.137451171875,-364.262939453125); id=s_fleetstar_f2070a; yaw_deg_s=16.16; turn_r=5.2m",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 103.92,
+      "speed_kmh": 10.62,
+      "note": "terrain=crawl; surface=snow; kind=snow; grip=0.200; surf_avg=0.995; contact=0.804; deform=0.9947; mud_grade=snow_packed; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(390.372802734375,-368.4096374511719); id=s_fleetstar_f2070a; yaw_deg_s=22.49; turn_r=7.5m",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 105.55,
+      "speed_kmh": 12.89,
+      "note": "terrain=crawl; surface=snow; kind=snow; grip=0.200; surf_avg=0.786; contact=0.804; deform=0.7862; mud_grade=snow_packed; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(384.619384765625,-370.1728820800781); id=s_fleetstar_f2070a; yaw_deg_s=22.4; turn_r=9.2m",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 107.2,
+      "speed_kmh": 13.88,
+      "note": "terrain=crawl; surface=mud; kind=mud; grip=0.200; surf_avg=0.340; contact=0.804; deform=0.3396; mud_grade=mud_light; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(378.5711669921875,-367.5197448730469); id=s_fleetstar_f2070a; yaw_deg_s=24.62; turn_r=9.0m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 108.91,
+      "speed_kmh": 15.74,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.3720; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(373.46490478515625,-359.5251159667969); id=s_fleetstar_f2070a; yaw_deg_s=31.09; turn_r=8.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 110.62,
+      "speed_kmh": 23.9,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9048; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(374.6628112792969,-349.335693359375); id=s_fleetstar_f2070a; yaw_deg_s=18.03; turn_r=21.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 112.36,
+      "speed_kmh": 17.7,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9512; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(379.8932800292969,-344.9175720214844); id=s_fleetstar_f2070a; yaw_deg_s=14.4; turn_r=19.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 114.08,
+      "speed_kmh": 10.03,
+      "note": "terrain=crawl_deep; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6386; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(383.0433349609375,-343.650146484375); id=s_fleetstar_f2070a; yaw_deg_s=-10.23; turn_r=15.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 115.78,
+      "speed_kmh": 4.79,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5525; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(384.9620361328125,-341.25177001953125); id=s_fleetstar_f2070a; yaw_deg_s=-4.25; turn_r=17.9m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 117.52,
+      "speed_kmh": 7.42,
+      "note": "terrain=crawl_deep; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6978; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(386.1164245605469,-337.2566833496094); id=s_fleetstar_f2070a; yaw_deg_s=-16.75; turn_r=7.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 119.28,
+      "speed_kmh": 11.25,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9164; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(384.7702331542969,-330.9945983886719); id=s_fleetstar_f2070a; yaw_deg_s=-5.89; turn_r=30.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 120.97,
+      "speed_kmh": 18.48,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9921; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(382.8703918457031,-320.726318359375); id=s_fleetstar_f2070a; yaw_deg_s=1.8; turn_r=163.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 127.5,
+      "speed_kmh": 6.93,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5768; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(398.3614807128906,-302.3170471191406); id=s_fleetstar_f2070a; yaw_deg_s=8.59; turn_r=12.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 129.19,
+      "speed_kmh": 13.33,
+      "note": "terrain=crawl_deep; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5115; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(404.5799865722656,-298.7648010253906); id=s_fleetstar_f2070a; yaw_deg_s=-2.98; turn_r=71.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 130.91,
+      "speed_kmh": 17.67,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5269; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(411.56915283203125,-292.6052551269531); id=s_fleetstar_f2070a; yaw_deg_s=-5.21; turn_r=54.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 132.64,
+      "speed_kmh": 20.97,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7144; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(418.96771240234375,-284.909423828125); id=s_fleetstar_f2070a; yaw_deg_s=-0.76",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 134.33,
+      "speed_kmh": 26.02,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7229; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(428.1766662597656,-275.1493835449219); id=s_fleetstar_f2070a; yaw_deg_s=0.21",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 136.06,
+      "speed_kmh": 29.1,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7285; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(437.5115661621094,-265.22381591796875); id=s_fleetstar_f2070a; yaw_deg_s=-0.44",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 137.73,
+      "speed_kmh": 30.08,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7285; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(447.59320068359375,-254.3681182861328); id=s_fleetstar_f2070a; yaw_deg_s=-2.47; turn_r=193.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 139.45,
+      "speed_kmh": 31.29,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7377; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(457.9923400878906,-244.88827514648438); id=s_fleetstar_f2070a; yaw_deg_s=-9.65; turn_r=51.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 141.14,
+      "speed_kmh": 28.63,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6290; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(469.0998840332031,-235.31976318359375); id=s_fleetstar_f2070a; yaw_deg_s=-0.47",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 142.84,
+      "speed_kmh": 33.99,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6527; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(481.7119445800781,-224.71792602539062); id=s_fleetstar_f2070a; yaw_deg_s=7.86; turn_r=68.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 144.5,
+      "speed_kmh": 37.06,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6212; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(496.1309509277344,-216.08262634277344); id=s_fleetstar_f2070a; yaw_deg_s=38.93; turn_r=15.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 146.19,
+      "speed_kmh": 32.7,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.3058; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(508.56854248046875,-214.31529235839844); id=s_fleetstar_f2070a; yaw_deg_s=0.84",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 147.88,
+      "speed_kmh": 21.89,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.1221; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(516.2351684570312,-213.40789794921875); id=s_fleetstar_f2070a; yaw_deg_s=7.21; turn_r=48.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 149.58,
+      "speed_kmh": 12.26,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.0920; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(522.2219848632812,-213.12686157226562); id=s_fleetstar_f2070a; yaw_deg_s=0.16",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 151.25,
+      "speed_kmh": 14.28,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.0725; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(530.4982299804688,-211.68272399902344); id=s_fleetstar_f2070a; yaw_deg_s=-6.66; turn_r=34.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 152.94,
+      "speed_kmh": 22.27,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.1883; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(540.4868774414062,-206.32533264160156); id=s_fleetstar_f2070a; yaw_deg_s=0.2",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 154.62,
+      "speed_kmh": 26.85,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.4914; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(552.17041015625,-200.04440307617188); id=s_fleetstar_f2070a; yaw_deg_s=8.06; turn_r=53.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 156.33,
+      "speed_kmh": 28.8,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.4493; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(564.42138671875,-197.2023162841797); id=s_fleetstar_f2070a; yaw_deg_s=25.52; turn_r=18.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 157.98,
+      "speed_kmh": 26.8,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.0686; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(576.8309326171875,-199.12429809570312); id=s_fleetstar_f2070a; yaw_deg_s=6.82; turn_r=62.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 159.67,
+      "speed_kmh": 26.77,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=0.2010; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(589.156982421875,-202.5990447998047); id=s_fleetstar_f2070a; yaw_deg_s=0.96",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 161.33,
+      "speed_kmh": 27.88,
+      "note": "terrain=cruise; surface=mud; kind=mud; grip=0.200; surf_avg=0.282; contact=0.804; deform=0.2820; mud_grade=mud_light; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(601.6679077148438,-205.35220336914062); id=s_fleetstar_f2070a; yaw_deg_s=-23.33; turn_r=19.0m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 163.05,
+      "speed_kmh": 27.78,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=0.0746; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(614.7490234375,-203.98963928222656); id=s_fleetstar_f2070a; yaw_deg_s=-1.76; turn_r=250.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 164.73,
+      "speed_kmh": 28.32,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.1504; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(625.8291015625,-198.9153289794922); id=s_fleetstar_f2070a; yaw_deg_s=-29.68; turn_r=15.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 166.41,
+      "speed_kmh": 25.07,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6970; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(633.93017578125,-189.17459106445312); id=s_fleetstar_f2070a; yaw_deg_s=1.71; turn_r=233.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 168.12,
+      "speed_kmh": 27.93,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7423; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(643.444580078125,-178.76309204101562); id=s_fleetstar_f2070a; yaw_deg_s=-0.32",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 169.81,
+      "speed_kmh": 32.18,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7308; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(653.8804321289062,-167.61964416503906); id=s_fleetstar_f2070a; yaw_deg_s=2.82; turn_r=181.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 171.45,
+      "speed_kmh": 34.39,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7240; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(664.85107421875,-155.61355590820312); id=s_fleetstar_f2070a; yaw_deg_s=0.79",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 173.16,
+      "speed_kmh": 34.39,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7335; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(675.6995239257812,-144.10655212402344); id=s_fleetstar_f2070a; yaw_deg_s=0.74",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 174.81,
+      "speed_kmh": 35.56,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7051; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(687.144775390625,-132.56312561035156); id=s_fleetstar_f2070a; yaw_deg_s=-0.3",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 176.48,
+      "speed_kmh": 34.98,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7131; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(697.498291015625,-120.19859313964844); id=s_fleetstar_f2070a; yaw_deg_s=-7.51; turn_r=74.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 178.14,
+      "speed_kmh": 35.31,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8369; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(705.3621826171875,-106.74263763427734); id=s_fleetstar_f2070a; yaw_deg_s=-14.24; turn_r=39.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 179.78,
+      "speed_kmh": 31.64,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9003; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(705.7249145507812,-94.23553466796875); id=s_fleetstar_f2070a; yaw_deg_s=-10.01; turn_r=50.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 181.45,
+      "speed_kmh": 22.34,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9801; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(704.2268676757812,-86.61504364013672); id=s_fleetstar_f2070a; yaw_deg_s=-0.2",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 187.89,
+      "speed_kmh": 4.24,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9481; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(701.294921875,-78.00008392333984); id=s_fleetstar_f2070a; yaw_deg_s=-0.18",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 189.56,
+      "speed_kmh": 3.72,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9457; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(700.5875244140625,-75.87466430664062); id=s_fleetstar_f2070a; yaw_deg_s=-1.84; turn_r=32.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 191.25,
+      "speed_kmh": 5.04,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9442; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(699.13037109375,-73.19294738769531); id=s_fleetstar_f2070a; yaw_deg_s=-4.88; turn_r=16.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 192.89,
+      "speed_kmh": 7.58,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9054; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(697.5408325195312,-70.65918731689453); id=s_fleetstar_f2070a; yaw_deg_s=0.25",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 194.56,
+      "speed_kmh": 5.62,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8817; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(696.0936279296875,-68.48180389404297); id=s_fleetstar_f2070a; yaw_deg_s=-2.56; turn_r=35.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 196.19,
+      "speed_kmh": 5.02,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8559; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(695.0459594726562,-67.1153564453125); id=s_fleetstar_f2070a; yaw_deg_s=-1.78; turn_r=44.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 197.88,
+      "speed_kmh": 4.85,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8398; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(693.425048828125,-64.94525909423828); id=s_fleetstar_f2070a; yaw_deg_s=-0.8",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 199.59,
+      "speed_kmh": 6.04,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8223; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(691.7437744140625,-62.52960968017578); id=s_fleetstar_f2070a; yaw_deg_s=-0.5",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 201.25,
+      "speed_kmh": 6.74,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8197; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(689.760009765625,-59.82621383666992); id=s_fleetstar_f2070a; yaw_deg_s=-1.77; turn_r=60.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 202.94,
+      "speed_kmh": 7.72,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8108; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(687.8211059570312,-57.41830825805664); id=s_fleetstar_f2070a; yaw_deg_s=0.78",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 204.61,
+      "speed_kmh": 6.74,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7925; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(685.8252563476562,-54.89761734008789); id=s_fleetstar_f2070a; yaw_deg_s=1.8; turn_r=59.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 206.28,
+      "speed_kmh": 6.56,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7956; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(683.7498168945312,-51.88472366333008); id=s_fleetstar_f2070a; yaw_deg_s=6.56; turn_r=15.9m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 207.95,
+      "speed_kmh": 11.86,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8280; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(679.6611328125,-45.779727935791016); id=s_fleetstar_f2070a; yaw_deg_s=-1.52; turn_r=124.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 209.66,
+      "speed_kmh": 16.92,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8257; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(674.43408203125,-38.57643508911133); id=s_fleetstar_f2070a; yaw_deg_s=-5.59; turn_r=48.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 211.31,
+      "speed_kmh": 22.94,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7978; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(666.7351684570312,-30.593467712402344); id=s_fleetstar_f2070a; yaw_deg_s=0.35",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 212.92,
+      "speed_kmh": 25.79,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7102; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(657.0770263671875,-22.382898330688477); id=s_fleetstar_f2070a; yaw_deg_s=-10.55; turn_r=38.9m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 214.59,
+      "speed_kmh": 28.3,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5896; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(645.5247192382812,-15.27724838256836); id=s_fleetstar_f2070a; yaw_deg_s=0.18",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 216.28,
+      "speed_kmh": 29.66,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5312; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(633.72509765625,-7.596014976501465); id=s_fleetstar_f2070a; yaw_deg_s=0.64",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 217.94,
+      "speed_kmh": 31.82,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5524; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(622.9733276367188,1.988404631614685); id=s_fleetstar_f2070a; yaw_deg_s=-0.97",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 219.58,
+      "speed_kmh": 30.62,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7576; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(614.5118408203125,12.37033748626709); id=s_fleetstar_f2070a; yaw_deg_s=4.71; turn_r=103.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 221.16,
+      "speed_kmh": 31.15,
+      "note": "terrain=hard_fast; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7908; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(608.5841064453125,24.36160659790039); id=s_fleetstar_f2070a; yaw_deg_s=12.82; turn_r=38.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 222.8,
+      "speed_kmh": 25.94,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9606; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(607.8550415039062,34.94880676269531); id=s_fleetstar_f2070a; yaw_deg_s=13.44; turn_r=30.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 224.45,
+      "speed_kmh": 16.53,
+      "note": "terrain=cruise; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9991; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(609.5944213867188,40.916595458984375); id=s_fleetstar_f2070a; yaw_deg_s=-0.98",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 226.11,
+      "speed_kmh": 10.26,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9766; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(610.3941040039062,44.592342376708984); id=s_fleetstar_f2070a; yaw_deg_s=1.08",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 227.78,
+      "speed_kmh": 6.22,
+      "note": "terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9768; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(610.8230590820312,46.58763885498047); id=s_fleetstar_f2070a; yaw_deg_s=-0.32",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 229.44,
+      "speed_kmh": 1.9,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9767; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(610.8812255859375,46.852657318115234); id=s_fleetstar_f2070a; yaw_deg_s=-0.05",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 231.14,
+      "speed_kmh": 0.06,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9762; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(610.8746337890625,46.826602935791016); id=s_fleetstar_f2070a; yaw_deg_s=0.02",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 232.86,
+      "speed_kmh": 0.06,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9763; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(610.8670654296875,46.79702377319336); id=s_fleetstar_f2070a; yaw_deg_s=-0.01",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 234.53,
+      "speed_kmh": 0.06,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9763; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(610.8611450195312,46.771610260009766); id=s_fleetstar_f2070a; yaw_deg_s=0.01",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 236.17,
+      "speed_kmh": 0.03,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9764; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(610.8604125976562,46.76847457885742); id=s_fleetstar_f2070a; yaw_deg_s=-0.01",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 237.67,
+      "speed_kmh": 0.0,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9764; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(610.8601684570312,46.76813507080078); id=s_fleetstar_f2070a; yaw_deg_s=0.05",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 239.33,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9764; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(610.8601684570312,46.767845153808594); id=s_fleetstar_f2070a; yaw_deg_s=0.02",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 240.94,
+      "speed_kmh": 0.0,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9764; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(610.8600463867188,46.76736831665039); id=s_fleetstar_f2070a; yaw_deg_s=-0.01",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 242.56,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9764; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(610.8599243164062,46.76741409301758); id=s_fleetstar_f2070a; yaw_deg_s=-0.0",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 248.81,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9764; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(610.85986328125,46.76722717285156); id=s_fleetstar_f2070a; yaw_deg_s=-0.02",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 250.39,
+      "speed_kmh": 0.0,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9764; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(610.85986328125,46.76722717285156); id=s_fleetstar_f2070a; yaw_deg_s=-0.01",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 251.91,
+      "speed_kmh": 0.0,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9764; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(610.8598022460938,46.76722717285156); id=s_fleetstar_f2070a; yaw_deg_s=-0.0",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 253.45,
+      "speed_kmh": 0.0,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9764; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(610.8598022460938,46.76718521118164); id=s_fleetstar_f2070a; yaw_deg_s=0.0",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 255.0,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9764; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(610.8599243164062,46.76725387573242); id=s_fleetstar_f2070a; yaw_deg_s=-0.04",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 256.48,
+      "speed_kmh": 0.0,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9763; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(610.8597412109375,46.767215728759766); id=s_fleetstar_f2070a; yaw_deg_s=-0.01",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 257.91,
+      "speed_kmh": 0.0,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9764; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(610.8597412109375,46.76717758178711); id=s_fleetstar_f2070a; yaw_deg_s=0.01",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 259.39,
+      "speed_kmh": 0.0,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9764; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(610.8596801757812,46.76731872558594); id=s_fleetstar_f2070a; yaw_deg_s=-0.03",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 260.88,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9763; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(610.859619140625,46.7673454284668); id=s_fleetstar_f2070a; yaw_deg_s=-0.02",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 262.48,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9763; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(610.85986328125,46.767356872558594); id=s_fleetstar_f2070a; yaw_deg_s=0.0",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 263.95,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9763; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(610.859619140625,46.76741027832031); id=s_fleetstar_f2070a; yaw_deg_s=0.01",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 265.55,
+      "speed_kmh": 0.01,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9763; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(610.8595581054688,46.767372131347656); id=s_fleetstar_f2070a; yaw_deg_s=0.0",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 267.19,
+      "speed_kmh": 0.0,
+      "note": "terrain=idle; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9763; mud_grade=dry_hard; load=cargado; cargo_kg=3600; packed_slots=3; mass_havok=10250; pos=(610.8516235351562,46.740901947021484); id=s_fleetstar_f2070a; yaw_deg_s=-0.05",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    }
+  ]
+}

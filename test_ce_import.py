@@ -114,9 +114,44 @@ class TestTerrainClassifier(unittest.TestCase):
         sys.path.insert(0, os.path.join(os.path.dirname(__file__), "cheat_engine"))
         import memoria_havok as mh
 
-        # asfalto_fs.json — grip bajo UHD pero contact ~0.80
-        r = mh.classify_terrain_from_wheels([0.2] * 6, [0.804] * 6)
+        # asfalto_fs.json — grip bajo UHD pero deform negativo (no nieve)
+        r = mh.classify_terrain_from_wheels(
+            [0.2] * 6,
+            [0.804] * 6,
+            deforms=[-0.9315] * 6,
+        )
         self.assertEqual(r["terrain_kind"], "hard")
+
+    def test_alaska_snow_wheels(self) -> None:
+        import sys
+
+        sys.path.insert(0, os.path.join(os.path.dirname(__file__), "cheat_engine"))
+        import memoria_havok as mh
+
+        # North Port Alaska — grip ~0.2, deform +0.87, contact ~0.80
+        r = mh.classify_terrain_from_wheels(
+            [0.2] * 4,
+            [0.804] * 4,
+            deforms=[0.87, 0.92, 0.87, 0.92],
+        )
+        self.assertEqual(r["terrain_kind"], "snow")
+        grade, label = mh.classify_mud_grade("snow", 0.2, 0.804, 0.87)
+        self.assertEqual(label, "snow_packed")
+
+    def test_ice_wheels(self) -> None:
+        import sys
+
+        sys.path.insert(0, os.path.join(os.path.dirname(__file__), "cheat_engine"))
+        import memoria_havok as mh
+
+        r = mh.classify_terrain_from_wheels(
+            [0.04, 0.05, 0.03, 0.04],
+            [0.72, 0.71, 0.70, 0.69],
+            deforms=[0.2, 0.15, 0.18, 0.22],
+        )
+        self.assertEqual(r["terrain_kind"], "ice")
+        grade, label = mh.classify_mud_grade("ice", 0.04, 0.71, 0.18)
+        self.assertEqual(label, "ice")
 
     def test_mud_wheels(self) -> None:
         import sys
@@ -601,9 +636,12 @@ class TestDriveState(unittest.TestCase):
             "throttle": "0.450",
             "engine_rpm": "1200",
             "fuel_rate_pct_min": "2.50",
+            "map_name": "North Port",
+            "level_id": "level_us_02_01",
         }
         row = mh.format_csv_row(1.0, sample)
-        self.assertIn(",1,1,0,0.450,1200,2.50", row)
+        self.assertIn(",1,1,0,0.450,1200,2.50,North Port,level_us_02_01", row)
+        self.assertIn("map_name", mh.CSV_HEADER)
 
     def test_idle_fuel_consumption_at_zero_throttle(self) -> None:
         from sim.core import ENGINE_I6, SURFACES, VEHICLE_I6, run_sim

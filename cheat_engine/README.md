@@ -58,18 +58,18 @@ Mismo CSV que `grabar_ce.py` (mismos offsets en `memoria_havok.py`).
 
 ## Offsets actuales (2026-06-25)
 
-| Constante | Valor |
-|-----------|--------|
-| `TRUCK_CONTROL_OFF` | `0x2A8EDD8` (antes `0x2A876A8`) |
-| `DRIVE_LOGIC_OFF` | `0x2A8EDC8` |
-| `OFF_VEH_TRUCK` | `+0x8` |
-| `OFF_RB` | `+0x5D0` |
-| `OFF_RB_MOTION_PTR` | `+0xB8` → `motion+0xA4` = 1/masa (kg) |
-| `OFF_ID` | `+0xD10` |
-| `OFF_ADDON` | `+0x48` |
-| Velocidad | `rb+0x230`, `+0x238` (m/s) |
-| Rueda grip | `+0x2FC` |
-| Rueda sustancia | `+0x2EC` (contact_avg); `+0x2B4` (deformación) |
+| Constante           | Valor                                          |
+|---------------------|------------------------------------------------|
+| `TRUCK_CONTROL_OFF` | `0x2A8EDD8` (antes `0x2A876A8`)                |
+| `DRIVE_LOGIC_OFF`   | `0x2A8EDC8`                                    |
+| `OFF_VEH_TRUCK`     | `+0x8`                                         |
+| `OFF_RB`            | `+0x5D0`                                       |
+| `OFF_RB_MOTION_PTR` | `+0xB8` → `motion+0xA4` = 1/masa (kg)          |
+| `OFF_ID`            | `+0xD10`                                       |
+| `OFF_ADDON`         | `+0x48`                                        |
+| Velocidad           | `rb+0x230`, `+0x238` (m/s)                     |
+| Rueda grip          | `+0x2FC`                                       |
+| Rueda sustancia     | `+0x2EC` (contact_avg); `+0x2B4` (deformación) |
 
 **Lectura en vivo:** no hay caché en Python — cada muestra hace `ReadProcessMemory` fresco. Havok **suaviza** `+0x2EC` y `+0x2FC`: al cambiar de terreno el contacto puede tardar varios segundos en bajar (ej. 1.0 → 0.89 → 0.67). En tierra compacta Fleetstar puede quedarse en `contact=1.0` mucho rato (ver `wheel_snaps/tierra_seca.json`). La consola avisa drift de grip/contact aunque `terrain_kind` no cambie.
 
@@ -79,24 +79,24 @@ Detalle: `offsets_referencia.json` · código: `memoria_havok.py`.
 
 ## Archivos
 
-| Archivo | Uso |
-|---------|-----|
-| `memoria_havok.py` | Lectura Havok (compartida con `grabar_ce.py`) |
-| `grabar_ce.py` | **Logger sin CE** (raíz del proyecto) |
-| `TelemetryLogger.lua` | Logger CE (`quickStart()`) |
-| `probe_memoria.py` | Diagnóstico singleton |
-| `scan_singleton.py` | Re-buscar TRUCK_CONTROL tras parche |
-| `scan_veh_offsets.py` | Buscar rb/id/fuel si cambian |
-| `scan_wheel_substance.py` | Calibrar terreno por rueda |
-| `scan_suspension.py` | **Estudio** suspensión — pos_y, floats rueda, addon mecánico |
-| `scan_cargo.py` | Calibrar carga / remolque |
-| `scan_wheel_addons.py` | **Neumatico montado** (game_id Havok, no protocolo) |
-| `wheel_snaps/` | Referencias asfalto/barro (MH + Fleetstar) |
-| `wheel_addon_snaps/` | Snapshots neumatico (`scan_wheel_addons.py --save`) |
-| `suspension_snaps/` | Snapshots vacío/cargado/bounce (`scan_suspension.py`) |
-| `load_snaps/` | Snapshots vacío/cargado (`--save`, `--diff`) |
-| `drive_snaps/` | Snapshots diff/L/gas (`scan_drive_state.py`) |
-| `grabar_telemetria.ps1` | Alternativa PowerShell |
+| Archivo                   | Uso                                                          |
+|---------------------------|--------------------------------------------------------------|
+| `memoria_havok.py`        | Lectura Havok (compartida con `grabar_ce.py`)                |
+| `grabar_ce.py`            | **Logger sin CE** (raíz del proyecto)                        |
+| `TelemetryLogger.lua`     | Logger CE (`quickStart()`)                                   |
+| `probe_memoria.py`        | Diagnóstico singleton                                        |
+| `scan_singleton.py`       | Re-buscar TRUCK_CONTROL tras parche                          |
+| `scan_veh_offsets.py`     | Buscar rb/id/fuel si cambian                                 |
+| `scan_wheel_substance.py` | Calibrar terreno por rueda                                   |
+| `scan_suspension.py`      | **Estudio** suspensión — pos_y, floats rueda, addon mecánico |
+| `scan_cargo.py`           | Calibrar carga / remolque                                    |
+| `scan_wheel_addons.py`    | **Neumatico montado** (game_id Havok, no protocolo)          |
+| `wheel_snaps/`            | Referencias asfalto/barro (MH + Fleetstar)                   |
+| `wheel_addon_snaps/`      | Snapshots neumatico (`scan_wheel_addons.py --save`)          |
+| `suspension_snaps/`       | Snapshots vacío/cargado/bounce (`scan_suspension.py`)        |
+| `load_snaps/`             | Snapshots vacío/cargado (`--save`, `--diff`)                 |
+| `drive_snaps/`            | Snapshots diff/L/gas (`scan_drive_state.py`)                 |
+| `grabar_telemetria.ps1`   | Alternativa PowerShell                                       |
 
 ---
 
@@ -104,16 +104,16 @@ Detalle: `offsets_referencia.json` · código: `memoria_havok.py`.
 
 Por rueda (`TRUCK_WHEEL_MODEL`), cada ~0,5 s:
 
-| Campo CSV | Significado |
-|-----------|-------------|
-| `terrain_kind` | `hard`, `mud`, `soft`, `mixed` |
-| `mud_grade` / `mud_grade_label` | 0–4: seco → barro ligero → profundo → vado |
-| `surface_deform_avg` | Deformación `+0x2B4` (media ruedas; más negativo ≈ más hundido) |
-| `contact_min` / `contact_max` | Rango `+0x2EC` por rueda |
-| `contact_avg` | ~0.80 asfalto, ~0.55 barro, **~0.35 barro profundo** |
-| `wheel_grip` | ~1.0 asfalto MH; ~0.2 asfalto Fleetstar UHD |
-| `surface_avg` | Sustancia efectiva usada al clasificar |
-| `pos_x`, `pos_z` | Coordenadas mundo |
+| Campo CSV                       | Significado                                                     |
+|---------------------------------|-----------------------------------------------------------------|
+| `terrain_kind`                  | `hard`, `mud`, `soft`, `mixed`                                  |
+| `mud_grade` / `mud_grade_label` | 0–4: seco → barro ligero → profundo → vado                      |
+| `surface_deform_avg`            | Deformación `+0x2B4` (media ruedas; más negativo ≈ más hundido) |
+| `contact_min` / `contact_max`   | Rango `+0x2EC` por rueda                                        |
+| `contact_avg`                   | ~0.80 asfalto, ~0.55 barro, **~0.35 barro profundo**            |
+| `wheel_grip`                    | ~1.0 asfalto MH; ~0.2 asfalto Fleetstar UHD                     |
+| `surface_avg`                   | Sustancia efectiva usada al clasificar                          |
+| `pos_x`, `pos_z`                | Coordenadas mundo                                               |
 
 **Fleetstar:** en asfalto `+0x2B4` suele ser negativo; se usa `+0x2EC` para clasificar firme. Calibración: `wheel_snaps/asfalto_fs.json`.
 
@@ -129,17 +129,17 @@ Al importar con `--auto`, los tramos `mud` y `hard` se comparan con protocolos d
 
 ## Carga automática
 
-| Campo | Descripción |
-|-------|-------------|
-| `total_mass_kg` | Masa Havok chasis + piezas de carga (vector `+0x1E0`) |
-| `empty_mass_kg` | Masa vacía XML/sim (registry) |
-| `payload_kg` | Carga útil ≈ `total − vacío − 400` |
-| `cargo_mass_kg` | Máximo entre payload, slots BoneCargo y tipo `cargo_*` |
-| `load_hint` | `vacio`, `cargado`, `trailer_vacio`, `trailer_cargado` |
-| `packed_cargo_slots` | Slots `BoneCargo_*` en bastidor (attach+030) |
-| `path_cargo_type` | Tipo en registro runtime `veh+060` |
-| `attached_cargo_mass_kg` | Suma Havok de cuerpos de carga (vector addons `+0x1E0`) |
-| `trailer_id`, `trailer_mass_kg` | Remolque enganchado |
+| Campo                           | Descripción                                             |
+|---------------------------------|---------------------------------------------------------|
+| `total_mass_kg`                 | Masa Havok chasis + piezas de carga (vector `+0x1E0`)   |
+| `empty_mass_kg`                 | Masa vacía XML/sim (registry)                           |
+| `payload_kg`                    | Carga útil ≈ `total − vacío − 400`                      |
+| `cargo_mass_kg`                 | Máximo entre payload, slots BoneCargo y tipo `cargo_*`  |
+| `load_hint`                     | `vacio`, `cargado`, `trailer_vacio`, `trailer_cargado`  |
+| `packed_cargo_slots`            | Slots `BoneCargo_*` en bastidor (attach+030)            |
+| `path_cargo_type`               | Tipo en registro runtime `veh+060`                      |
+| `attached_cargo_mass_kg`        | Suma Havok de cuerpos de carga (vector addons `+0x1E0`) |
+| `trailer_id`, `trailer_mass_kg` | Remolque enganchado                                     |
 
 **Nota:** con bastidor lleno el chasis suele quedarse en ~6650 kg. La carga vive en **cuerpos Havok separados** (simulation island `rb+0x128`, vector addons `+0x1E0`). Si un frame falla, un **latch** mantiene `cargado` ~40 s.
 

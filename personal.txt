@@ -22,7 +22,7 @@ peso y carga? comportamiento del vehiculo y mirar el peso y tipo de cargar,
  Face 8:
  debemos revisar el peso y la distribucion de los remolques?
 
-consultas: detectamos el tipo de motor,caja de cambios,suspension,diferncial y traccion
+consultas: detectar correctamente la carga 
 
 
 pendiente: mas pruebas con KHAN 39 Marshall

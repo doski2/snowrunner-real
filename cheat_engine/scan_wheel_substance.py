@@ -119,7 +119,7 @@ def infer_terrain_from_snapshot(data: dict) -> dict[str, str]:
     ]
     if not surfaces:
         surfaces = deforms or contacts
-    terrain = mh.classify_terrain_from_wheels(grips, surfaces)
+    terrain = mh.classify_terrain_from_wheels(grips, surfaces, deforms=deforms or None)
     terrain.update(
         mh._terrain_grade_fields(
             terrain.get("terrain_kind", ""),

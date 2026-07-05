@@ -147,7 +147,8 @@ CSV_HEADER = (
     "load_hint,trailer_id,cargo_mass_kg,total_mass_kg,empty_mass_kg,payload_kg,"
     "trailer_mass_kg,truck_mass_kg,attached_cargo_mass_kg,yaw_rate_deg_s,turn_radius_m,"
     "packed_cargo_slots,path_cargo_type,frame_addon,"
-    "diff_lock_live,awd_live,low_gear_live,throttle,engine_rpm,fuel_rate_pct_min\n"
+    "diff_lock_live,awd_live,low_gear_live,throttle,engine_rpm,fuel_rate_pct_min,"
+    "map_name,level_id\n"
 )
 
 BASE_DIR = os.path.join(os.path.expanduser("~"), "Documents", "My Games", "SnowRunner", "base")
@@ -237,8 +238,25 @@ def _effective_surface(surface_b4: float, contact_ec: float) -> float:
     return contact_ec
 
 
-def _classify_wheel_contact(grip: float, surface: float) -> str:
-    """Clasifica una rueda: hard | mud | soft. Calibrado asfalto/barro + asfalto_fs 2026-06."""
+def _classify_wheel_contact(
+    grip: float,
+    surface: float,
+    *,
+    deform: float | None = None,
+) -> str:
+    """Clasifica una rueda: hard | mud | soft | snow | ice.
+
+  Calibrado asfalto/barro (2026-06) + nieve Alaska (deform +0x2B4 alto, grip bajo).
+  """
+    if grip < 0.06 and surface > 0.68:
+        return "ice"
+    if (
+        deform is not None
+        and deform > 0.55
+        and grip < 0.45
+        and surface > 0.55
+    ):
+        return "snow"
     if (grip > 0.45 and surface > 0.30) or (surface > 0.68 and grip > 0.12):
         return "hard"
     if grip < 0.25 or (surface < 0.62 and grip < 0.40):
@@ -278,8 +296,13 @@ def classify_mud_grade(
     """Grado barro/superficie (provisional — calibrar con scan_wheel_substance).
 
     0 dry_hard | 1 soft_dirt | 2 mud_light | 3 mud_deep | 4 water_ford
+    | 5 snow | 6 ice
     """
     kind = (terrain_kind or "").strip().lower()
+    if kind == "snow":
+        return (5, "snow_loose") if grip_avg < 0.15 else (5, "snow_packed")
+    if kind == "ice":
+        return 6, "ice"
     if kind == "hard":
         return 0, "dry_hard"
     if kind == "soft":
@@ -341,7 +364,12 @@ def _terrain_grade_fields(
     return out
 
 
-def classify_terrain_from_wheels(grips: list[float], surfaces: list[float]) -> dict[str, Any]:
+def classify_terrain_from_wheels(
+    grips: list[float],
+    surfaces: list[float],
+    *,
+    deforms: list[float] | None = None,
+) -> dict[str, Any]:
     """
     Terreno dominante desde contacto Havok por rueda.
 
@@ -362,7 +390,11 @@ def classify_terrain_from_wheels(grips: list[float], surfaces: list[float]) -> d
         }
 
     kinds = [
-        _classify_wheel_contact(g, surfaces[i] if i < len(surfaces) else 0.0)
+        _classify_wheel_contact(
+            g,
+            surfaces[i] if i < len(surfaces) else 0.0,
+            deform=(deforms[i] if deforms and i < len(deforms) else None),
+        )
         for i, g in enumerate(grips)
     ]
     grip_avg = sum(grips) / len(grips)
@@ -410,7 +442,7 @@ def read_wheel_terrain(h: int, veh: int, *, vel_y: float | None = None) -> dict[
         elif ec is not None:
             surfaces.append(ec)
             contacts.append(ec)
-    result = classify_terrain_from_wheels(grips, surfaces)
+    result = classify_terrain_from_wheels(grips, surfaces, deforms=deforms or None)
     if contacts:
         result["contact_avg"] = f"{sum(contacts) / len(contacts):.3f}"
     result.update(
@@ -2086,7 +2118,8 @@ def format_csv_row(
         f"{sample.get('frame_addon', '')},"
         f"{sample.get('diff_lock_live', '')},{sample.get('awd_live', '')},"
         f"{sample.get('low_gear_live', '')},{sample.get('throttle', '')},"
-        f"{sample.get('engine_rpm', '')},{sample.get('fuel_rate_pct_min', '')}\n"
+        f"{sample.get('engine_rpm', '')},{sample.get('fuel_rate_pct_min', '')},"
+        f"{sample.get('map_name', '')},{sample.get('level_id', '')}\n"
     )
 
 
