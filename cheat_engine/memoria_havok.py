@@ -26,6 +26,8 @@ _FALLBACK_EMPTY_MASS_KG: dict[str, float] = {
     "s_chevrolet_ck1500": 1750.0,
     "s_khan_39_marshall": 1780.0,
     "khan_39_marshall": 1780.0,
+    "s_tatra_t813": 14571.0,
+    "tatra_t813": 14571.0,
 }
 
 kernel32 = ctypes.windll.kernel32

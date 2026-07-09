@@ -36,8 +36,8 @@ class TestRegistryVehicles(unittest.TestCase):
     def test_merge_all_includes_every_xml(self) -> None:
         merged = merge_patches(default_vehicle_ids())
         for mod in VEHICLES.values():
-            arc = f"[media]/classes/trucks/{mod.xml_file}"
-            self.assertIn(arc, merged)
+            arcs = [a for a in merged if a.endswith("/" + mod.xml_file)]
+            self.assertTrue(arcs, f"sin parche truck para {mod.id}: {mod.xml_file}")
 
     def test_merge_unknown_raises(self) -> None:
         with self.assertRaises(KeyError):
@@ -78,6 +78,7 @@ class TestRegistryMass(unittest.TestCase):
         from camiones.marshall.simulador import VEHICLE_REAL as KM_REAL
         from camiones.scout800.simulador import VEHICLE_REAL as S8_REAL
         from camiones.mh9500.simulador import VEHICLE_REAL as MH_REAL
+        from camiones.t813.simulador import VEHICLE_REAL as T813_REAL
 
         expected = {
             "ck1500": VEHICLE_I6.mass_kg,
@@ -86,6 +87,7 @@ class TestRegistryMass(unittest.TestCase):
             "marshall": KM_REAL.mass_kg,
             "kodiak": KD_REAL.mass_kg,
             "scout800": S8_REAL.mass_kg,
+            "t813": T813_REAL.mass_kg,
         }
         self.assertEqual(EMPTY_MASS_KG, expected)
 

@@ -8,13 +8,13 @@
 
 ## 1. Problema que resolvemos
 
-| Hoy (jun-2026) | Con la base (objetivo) | Estado jun-2026 |
-|----------------|------------------------|-----------------|
-| Datos repartidos (JSON sueltos, CSV, memoria, docs FASE-*) | Índice único + historial | **Parcial** — `datos/` + `manifest.json` + `consultar_base.py`; `calibracion.json` vacío; sin sesiones en `telemetria/sesiones/` |
-| “¿Este parámetro XML hace algo?” → suposición | Antes/después con CE + referencia XML | **Parcial** — refs XML al importar (§2.5); faltan baselines F1/F2 y tags `baseline_mod_v1` / `patch_*` |
-| Calibrar `KM_MUD_*` sin baseline Marshall | Query: “barro TM II, vacío, Michigan” | **Parcial** — `indexar_sesion.py` hecho; falta volumen de sesiones/tramos en `calibracion.json` |
-| Fase 7 clima sin datos propios | Sesiones día/noche etiquetadas | **No** — campos `clima` / `hora_juego` en metadatos; cero sesiones `f7_*` |
-| Varios GB del `.pak` sin inventario | Catálogo searchable de clases | **Sí (stock)** — `auditar_pak_catalogo.py` (42 camiones, 125 motores, 76 cajas…); pendiente diff mod, `trailers.json` |
+| Hoy (jun-2026)                                             | Con la base (objetivo)                | Estado jun-2026 |
+|------------------------------------------------------------|---------------------------------------|-----------------|
+| Datos repartidos (JSON sueltos, CSV, memoria, docs FASE-*) | Índice único + historial              | **Parcial** — `datos/` + `manifest.json` + `consultar_base.py`; `calibracion.json` vacío; sin sesiones en `telemetria/sesiones/` |
+| “¿Este parámetro XML hace algo?” → suposición              | Antes/después con CE + referencia XML | **Parcial** — refs XML al importar (§2.5); faltan baselines F1/F2 y tags `baseline_mod_v1` / `patch_*` |
+| Calibrar `KM_MUD_*` sin baseline Marshall                  | Query: “barro TM II, vacío, Michigan” | **Parcial** — `indexar_sesion.py` hecho; falta volumen de sesiones/tramos en `calibracion.json` |
+| Fase 7 clima sin datos propios                             | Sesiones día/noche etiquetadas        | **No** — campos `clima` / `hora_juego` en metadatos; cero sesiones `f7_*` |
+| Varios GB del `.pak` sin inventario                        | Catálogo searchable de clases         | **Sí (stock)** — `auditar_pak_catalogo.py` (42 camiones, 125 motores, 76 cajas…); pendiente diff mod, `trailers.json` |
 
 **Lectura rápida:** Capa B (catálogo XML stock) operativa; Capa C (evidencia CE indexada) casi vacía. El §1 sigue siendo la motivación del plan, no un checklist cerrado.
 
@@ -35,15 +35,15 @@
 
 ### 2.2 Runtime (comportamiento — sesiones CE)
 
-| Campo / concepto                                          | Origen            | Frecuencia |
-|-----------------------------------------------------------|-------------------|------------|
-| `speed_kmh`, `t_s`                                        | Havok velocidad   | 0,5 s      |
-| `vehicle_id`, `terrain_kind`, `wheel_grip`, `contact_avg` | Ruedas            | 0,5 s      |
-| `load_hint`, `payload_kg`, `trailer_*`, `total_mass_kg`   | Masa / carga      | 0,5 s      |
+| Campo / concepto                                          | Origen            | Frecuencia         |
+|-----------------------------------------------------------|-------------------|--------------------|
+| `speed_kmh`, `t_s`                                        | Havok velocidad   | 0,5 s              |
+| `vehicle_id`, `terrain_kind`, `wheel_grip`, `contact_avg` | Ruedas            | 0,5 s              |
+| `load_hint`, `payload_kg`, `trailer_*`, `total_mass_kg`   | Masa / carga      | 0,5 s              |
 | `packed_cargo_slots`, `cargo_types` (bastidor)            | attach+030 slots  | 0,5 s *(jun-2026)* |
-| `pos_x/y/z`                                               | Posición (tramos) | 0,5 s      |
-| `ang_yaw` → `yaw_rate_deg_s`, `turn_radius_m`             | Giro Havok + masa | 0,5 s      |
-| Protocolo inferido                                        | `--auto`          | por sesión |
+| `pos_x/y/z`                                               | Posición (tramos) | 0,5 s              |
+| `ang_yaw` → `yaw_rate_deg_s`, `turn_radius_m`             | Giro Havok + masa | 0,5 s              |
+| Protocolo inferido                                        | `--auto`          | por sesión         |
 
 **Herramientas:** `grabar_ce.py`, `importar_ce_csv.py`, `telemetria/sesiones/*.json`
 
@@ -73,38 +73,38 @@ Sin esto, la base acumula ruido.
 
 Al importar CSV (`importar_ce_csv.py`), se rellenan desde `datos/catalogo/` vía `datos/catalog_lookup.py`:
 
-| Campo | XML origen | Notas |
-|-------|------------|-------|
-| `steer_speed_xml` | `TruckData` SteerSpeed | Constante diseño; giro real = `yaw_rate_deg_s` en CSV |
-| `responsiveness_xml` | `TruckData` Responsiveness | Chasis; no varía con carga en runtime |
-| `engine_responsiveness_xml` | motor default `EngineResponsiveness` | Usado en sim Python como filtro acelerador |
-| `default_suspension_xml` | `SuspensionSocket` Default | Variante de taller stock |
-| `suspension_socket_xml` | `SuspensionSocket` Type | Archivo en `suspensions.json` |
-| `suspension_strength_front_xml` | `Suspension` Strength (1.ª variante front) | Rigidez delantera stock |
-| `suspension_strength_rear_xml` | `Suspension` Strength (1.ª variante rear) | Rigidez trasera stock |
-| `suspension_damping_front_xml` | `Suspension` Damping (1.ª variante front) | Amortiguación delantera stock |
-| `suspension_damping_rear_xml` | `Suspension` Damping (1.ª variante rear) | Amortiguación trasera stock |
-| `suspension_height_front_xml` | `Suspension` Height (1.ª variante front) | Altura/neutral delantera stock |
-| `suspension_height_rear_xml` | `Suspension` Height (1.ª variante rear) | Altura/neutral trasera stock |
-| `default_engine_xml` | `EngineSocket` Default | Enlace al motor indexado |
-| `engine_socket_type_xml` | `EngineSocket` Type | Familias de motor compatibles (CSV) |
-| `engine_name_xml` | nombre variante en `engines.json` | — |
-| `default_gearbox_xml` | `GearboxSocket` Default | Caja stock default |
-| `gearbox_socket_type_xml` | `GearboxSocket` Type | Archivo de cajas compatible (ej. `gearboxes_scouts`) |
-| `gearbox_file_id_xml` | `gearboxes.json` | Resolución Default → archivo XML |
-| `gearbox_lower_gear_xml` / `gearbox_high_gear_xml` | `IsLowerGearExists` / `IsHighGearExists` | L− / H en taller |
-| `gearbox_first_gear_ang_vel_xml` | 1.ª `<Gear AngVel>` | Crawl / 1ª marcha |
-| `gearbox_high_gear_ang_vel_xml` | `<HighGear AngVel>` | Overdrive H |
-| `gearbox_fuel_consumption_xml` | `FuelConsumption` caja | — |
-| `catalog_source` | — | Siempre `initial.pak.bak stock` hasta diff mod |
+| Campo                                              | XML origen                                 | Notas                                                 |
+|----------------------------------------------------|--------------------------------------------|-------------------------------------------------------|
+| `steer_speed_xml`                                  | `TruckData` SteerSpeed                     | Constante diseño; giro real = `yaw_rate_deg_s` en CSV |
+| `responsiveness_xml`                               | `TruckData` Responsiveness                 | Chasis; no varía con carga en runtime                 |
+| `engine_responsiveness_xml`                        | motor default `EngineResponsiveness`       | Usado en sim Python como filtro acelerador            |
+| `default_suspension_xml`                           | `SuspensionSocket` Default                 | Variante de taller stock                              |
+| `suspension_socket_xml`                            | `SuspensionSocket` Type                    | Archivo en `suspensions.json`                         |
+| `suspension_strength_front_xml`                    | `Suspension` Strength (1.ª variante front) | Rigidez delantera stock                               |
+| `suspension_strength_rear_xml`                     | `Suspension` Strength (1.ª variante rear)  | Rigidez trasera stock                                 |
+| `suspension_damping_front_xml`                     | `Suspension` Damping (1.ª variante front)  | Amortiguación delantera stock                         |
+| `suspension_damping_rear_xml`                      | `Suspension` Damping (1.ª variante rear)   | Amortiguación trasera stock                           |
+| `suspension_height_front_xml`                      | `Suspension` Height (1.ª variante front)   | Altura/neutral delantera stock                        |
+| `suspension_height_rear_xml`                       | `Suspension` Height (1.ª variante rear)    | Altura/neutral trasera stock                          |
+| `default_engine_xml`                               | `EngineSocket` Default                     | Enlace al motor indexado                              |
+| `engine_socket_type_xml`                           | `EngineSocket` Type                        | Familias de motor compatibles (CSV)                   |
+| `engine_name_xml`                                  | nombre variante en `engines.json`          | —                                                     |
+| `default_gearbox_xml`                              | `GearboxSocket` Default                    | Caja stock default                                    |
+| `gearbox_socket_type_xml`                          | `GearboxSocket` Type                       | Archivo de cajas compatible (ej. `gearboxes_scouts`)  |
+| `gearbox_file_id_xml`                              | `gearboxes.json`                           | Resolución Default → archivo XML                      |
+| `gearbox_lower_gear_xml` / `gearbox_high_gear_xml` | `IsLowerGearExists` / `IsHighGearExists`   | L− / H en taller                                      |
+| `gearbox_first_gear_ang_vel_xml`                   | 1.ª `<Gear AngVel>`                        | Crawl / 1ª marcha                                     |
+| `gearbox_high_gear_ang_vel_xml`                    | `<HighGear AngVel>`                        | Overdrive H                                           |
+| `gearbox_fuel_consumption_xml`                     | `FuelConsumption` caja                     | —                                                     |
+| `catalog_source`                                   | —                                          | Siempre `initial.pak.bak stock` hasta diff mod        |
 
 **Live vs import (§2.5):**
 
-| Origen | Cuándo | Qué suspensión / chasis |
-|--------|--------|-------------------------|
-| **`--live` / CSV** | Cada 0,5 s en juego | `pos_y` (Havok), masa, giro — **no** Strength/Damping/Height XML |
-| **`catalog_lookup`** | Al importar CSV | `suspension_*_xml`, motor, caja — diseño stock del `.pak` |
-| **Taller instalado** | — | No leído en CE; caja/suspensión mod manual en metadatos *(futuro)* |
+| Origen               | Cuándo              | Qué suspensión / chasis                                            |
+|----------------------|---------------------|--------------------------------------------------------------------|
+| **`--live` / CSV**   | Cada 0,5 s en juego | `pos_y` (Havok), masa, giro — **no** Strength/Damping/Height XML   |
+| **`catalog_lookup`** | Al importar CSV     | `suspension_*_xml`, motor, caja — diseño stock del `.pak`          |
+| **Taller instalado** | —                   | No leído en CE; caja/suspensión mod manual en metadatos *(futuro)* |
 
 **Terreno Havok (`terrain_kind`):** por rueda (grip +0x2FC, contact +0x2EC). Etiqueta = **mayoría** de ruedas; `mixed` solo si empate (p. ej. 2+2). En `--live`, `ruedas=mud|mud|soft|hard` si hay desacuerdo. Grip/contact en pantalla son **medias** — usar `gripΔ=min-max` para ver ruedas distintas.
 
@@ -116,29 +116,29 @@ Al importar CSV (`importar_ce_csv.py`), se rellenan desde `datos/catalogo/` vía
 
 **¿Conviene?** Sí **estudiar**; **implementar en CSV** solo tras validar offsets (mismo enfoque que terreno +0x2EC).
 
-| Capa | Qué tenemos | Qué falta |
-|------|-------------|-----------|
-| **XML §2.5** | Strength/Damping/Height stock al importar | Variante taller instalada; diff mod |
-| **CE runtime** | `pos_y` chasis (Havok) | Compresión por rueda, travel, pitch bajo carga |
-| **Carga bastidor** | `load_hint: cargado`, slots `BoneCargo_*` (§2.5.2) | Remolque enganchado; masa Havok inv=0 a veces |
-| **Sim** | No modela suspensión XML | Calibrar con CE si hay señal estable |
+| Capa               | Qué tenemos                                        | Qué falta                                      |
+|--------------------|----------------------------------------------------|------------------------------------------------|
+| **XML §2.5**       | Strength/Damping/Height stock al importar          | Variante taller instalada; diff mod            |
+| **CE runtime**     | `pos_y` chasis (Havok)                             | Compresión por rueda, travel, pitch bajo carga |
+| **Carga bastidor** | `load_hint: cargado`, slots `BoneCargo_*` (§2.5.2) | Remolque enganchado; masa Havok inv=0 a veces  |
+| **Sim**            | No modela suspensión XML                           | Calibrar con CE si hay señal estable           |
 
 **Señales candidatas (por mapear):**
 
-| Fuente | Hipótesis |
-|--------|-----------|
-| `rb + OFF_POS_Y` | Hundimiento global (vacío vs cargado vs barro) — **ya grabado** |
-| `TRUCK_WHEEL_MODEL` | Floats de compresión/amortiguador por rueda — **sin offset** |
-| `addon + 0x1F8 / 0x210` | Pistones / elementos mecánicos — **sin offset** |
-| Correlación | Δpos_y vs `payload_kg`; mismo tramo vacío/cargado |
+| Fuente                  | Hipótesis                                                       |
+|-------------------------|-----------------------------------------------------------------|
+| `rb + OFF_POS_Y`        | Hundimiento global (vacío vs cargado vs barro) — **ya grabado** |
+| `TRUCK_WHEEL_MODEL`     | Floats de compresión/amortiguador por rueda — **sin offset**    |
+| `addon + 0x1F8 / 0x210` | Pistones / elementos mecánicos — **sin offset**                 |
+| Correlación             | Δpos_y vs `payload_kg`; mismo tramo vacío/cargado               |
 
 **Calibración Fleetstar (jun-2026)** — snapshots en `cheat_engine/suspension_snaps/`:
 
-| Snapshot | Escenario | `load_hint` | `pos_y` | Notas |
-|----------|-----------|-------------|---------|-------|
-| `vacio.json` | Sideboard vacío, parado | vacio | ~68.567 | Masa ~6650 kg |
-| `cargado.json` | Sideboard + **2×** piezas repuesto especiales empaquetadas | cargado | ~68.566 | Masa ~9050 kg; `packed_slots: 2` |
-| `bounce.json` | Badén / frenada fuerte | — | — | **Pendiente** |
+| Snapshot       | Escenario                                                  | `load_hint`| `pos_y` | Notas                            |
+|----------------|------------------------------------------------------------|------------|---------|----------------------------------|
+| `vacio.json`   | Sideboard vacío, parado                                    | vacio      | ~68.567 | Masa ~6650 kg                    |
+| `cargado.json` | Sideboard + **2×** piezas repuesto especiales empaquetadas | cargado    | ~68.566 | Masa ~9050 kg; `packed_slots: 2` |
+| `bounce.json`  | Badén / frenada fuerte                                     | —          | —       | **Pendiente**                    |
 
 **Resultado diff `vacio` → `cargado` (parado, mismo sitio):**
 

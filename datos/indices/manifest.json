@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_utc": "2026-06-28T16:08:05.619097+00:00",
-  "mod_commit": "",
+  "updated_utc": "2026-07-06T21:43:58.678244+00:00",
+  "mod_commit": "b90b267",
   "game_version": "Steam update jun-2026; initial.pak 28880896 B",
   "offsets_source": "scan_singleton.py brute + probe — build Steam 2026-06-25",
   "singletons": {
@@ -15,7 +15,10 @@
     "ck1500": 1750.0,
     "mh9500": 7500.0,
     "fleetstar": 6650.0,
-    "marshall": 1780.0
+    "marshall": 1780.0,
+    "kodiak": 7900.0,
+    "scout800": 2350.0,
+    "t813": 14571.0
   },
   "vehicles_mod": {
     "ck1500": {
@@ -53,18 +56,45 @@
       "sim_module": "camiones.marshall.simulador",
       "empty_mass_kg": 1780.0,
       "notes": "Scout UAZ/TREKOL; Kr 135-T; 45 TM II; AWD+diff"
+    },
+    "kodiak": {
+      "label": "Chevrolet Kodiak C70",
+      "game_id": "chevrolet_kodiakc70",
+      "ce_id": "s_chevrolet_kodiakc70",
+      "xml_file": "chevrolet_kodiakc70.xml",
+      "sim_module": "camiones.kodiak.simulador",
+      "empty_mass_kg": 7900.0,
+      "notes": "HEAVY_DUTY 4x4; Si-6V; 39\" UHD I; ~7900 kg mod"
+    },
+    "scout800": {
+      "label": "International Scout 800",
+      "game_id": "international_scout_800",
+      "ce_id": "s_international_scout_800",
+      "xml_file": "international_scout_800.xml",
+      "sim_module": "camiones.scout800.simulador",
+      "empty_mass_kg": 2350.0,
+      "notes": "Scout 4x4 ~1960s; AAT-6V; diff Always; HS I 33\""
+    },
+    "t813": {
+      "label": "Tatra T813",
+      "game_id": "tatra_t813",
+      "ce_id": "s_tatra_t813",
+      "xml_file": "tatra_t813.xml",
+      "sim_module": "camiones.t813.simulador",
+      "empty_mass_kg": 14571.0,
+      "notes": "HEAVY 8x8; KZGT-8 490; JAT MSH I 50\"; diff instalado"
     }
   },
   "pak": {
     "backup": {
       "path": "C:\\Users\\doski\\snowrunner real\\initial.pak.bak",
-      "size_bytes": 28880896,
-      "mtime_utc": "2026-06-25T20:35:24.262103+00:00"
+      "size_bytes": 28880927,
+      "mtime_utc": "2026-06-26T23:08:29.845380+00:00"
     },
     "mod_out": {
       "path": "C:\\Users\\doski\\snowrunner real\\initial.pak",
-      "size_bytes": 28880927,
-      "mtime_utc": "2026-06-26T23:08:29.845380+00:00"
+      "size_bytes": 28880937,
+      "mtime_utc": "2026-07-03T23:19:26.081472+00:00"
     }
   },
   "paths": {

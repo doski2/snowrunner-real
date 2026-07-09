@@ -88,6 +88,28 @@ class TestCompareSim(unittest.TestCase):
         cmp = compare_session_to_sim(_example_session())
         self.assertGreater(cmp["sim_v30_kmh"], 10.0)
 
+    def test_mixed_surface_kind_uses_protocol_surface(self) -> None:
+        from dataclasses import replace
+
+        from telemetria import compare_session_by_terrain
+
+        protocol = next(p for p in TEST_PROTOCOLS if p.id == "t813_f1_asfalto")
+        meta = meta_from_protocol(protocol)
+        meta = replace(meta, surface_kind="mixed", surface_label="Mixto")
+        samples = [
+            TelemetrySample(i * 0.5, 25.0 + i, "kind=mixed", terrain_kind="mixed")
+            for i in range(20)
+        ] + [
+            TelemetrySample(i * 0.5, 45.0, "kind=hard", terrain_kind="hard")
+            for i in range(20, 40)
+        ]
+        session = TelemetrySession(meta=meta, samples=samples)
+        cmp = compare_session_to_sim(session)
+        self.assertGreater(cmp["sim_v30_kmh"], 0)
+        report = compare_session_by_terrain(session)
+        self.assertIn("whole_session", report)
+        self.assertGreater(report["whole_session"]["mae_kmh"], 0)
+
     def test_export_report(self) -> None:
         report = export_comparison_report([_example_session()])
         self.assertIn("comparisons", report)

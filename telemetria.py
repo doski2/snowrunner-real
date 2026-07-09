@@ -2,7 +2,7 @@
 Telemetria SnowRunner — Fase 5-6.
 
 SnowRunner no publica telemetria (SimHub, API, UDP). Este modulo:
-  1. Protocolos de prueba (ck1500, mh9500, fleetstar, marshall, kodiak)
+  1. Protocolos de prueba (ck1500, mh9500, fleetstar, marshall, kodiak, t813)
   2. Grabacion manual HUD o import CSV Havok (grabar_ce.py)
   3. Comparacion juego vs sim (por tramo mud/hard)
   4. Lectura de game.log (errores mod, no fisica)
@@ -49,6 +49,7 @@ _SESSION_PREFIX_VEHICLE: dict[str, str] = {
     "f2": "ck1500",
     "f3": "ck1500",
     "s8": "scout800",
+    "t813": "t813",
 }
 
 
@@ -646,6 +647,54 @@ TEST_PROTOCOLS: tuple[TestProtocol, ...] = (
         "Comparar v30 con mh_f7_barro_dia.",
         "mh9500",
     ),
+    TestProtocol(
+        "t813_f1_asfalto",
+        "Tatra T813 F1 — asfalto KZGT + MSH I 50\"",
+        1,
+        "asphalt",
+        "Asfalto",
+        "msh_i",
+        True,
+        False,
+        "vacio",
+        True,
+        "t813_kzgt",
+        60.0,
+        "8x8 AWD+diff; WOT recto.",
+        "t813",
+    ),
+    TestProtocol(
+        "t813_f2_barro_msh",
+        "Tatra T813 F2 — barro MSH I 50\" + diff",
+        2,
+        "mud",
+        "Barro",
+        "msh_i",
+        True,
+        True,
+        "vacio",
+        True,
+        "t813_kzgt",
+        60.0,
+        "Marcha baja; calibrar T813_MUD_* con CE.",
+        "t813",
+    ),
+    TestProtocol(
+        "t813_f3_carga",
+        "Tatra T813 F3 — semirremolque barro",
+        3,
+        "mud",
+        "Barro",
+        "msh_i",
+        True,
+        True,
+        "semi_cargado",
+        True,
+        "t813_kzgt",
+        60.0,
+        "Semi + carga util; MSH I + diff.",
+        "t813",
+    ),
 )
 
 
@@ -657,6 +706,7 @@ DEFAULT_MUD_PROTOCOL: dict[str, str] = {
     "marshall": "km_f2_barro_tm2",
     "kodiak": "kd_f2_barro_uhd",
     "scout800": "s8_f2_barro_hs",
+    "t813": "t813_f2_barro_msh",
 }
 DEFAULT_ASPHALT_PROTOCOL: dict[str, str] = {
     "ck1500": "f1_asfalto_i6",
@@ -665,6 +715,7 @@ DEFAULT_ASPHALT_PROTOCOL: dict[str, str] = {
     "marshall": "km_f1_asfalto",
     "kodiak": "kd_f1_asfalto",
     "scout800": "s8_f1_asfalto_aat6v",
+    "t813": "t813_f1_asfalto",
 }
 DEFAULT_LOADED_MUD_PROTOCOL: dict[str, str] = {
     "ck1500": "f3_carga_barro",
@@ -673,6 +724,7 @@ DEFAULT_LOADED_MUD_PROTOCOL: dict[str, str] = {
     "marshall": "km_f3_carga",
     "kodiak": "kd_f3_carga",
     "scout800": "s8_f3_carga_barro",
+    "t813": "t813_f3_carga",
 }
 DEFAULT_SNOW_PROTOCOL: dict[str, str] = {
     "ck1500": "f4_nieve_highway",
@@ -776,6 +828,8 @@ def load_scenario_for_vehicle(vehicle_id: str, load_hint: str, *, loaded: bool) 
         return "trailer_metal_planks"
     if vehicle_id == "marshall":
         return "trailer_metal_planks"
+    if vehicle_id == "t813":
+        return "semi_cargado"
     return "vacio"
 
 
@@ -1187,7 +1241,7 @@ def compare_samples_to_sim(
     if not samples:
         return {"sample_count": 0, "mae_kmh": 0.0, "rows": []}
 
-    surface = _surface_for_kind(meta.surface_kind, meta.surface_label)
+    surface = _surface_for_meta(meta)
     vehicle = build_vehicle_for_session(meta)
     engine = _engine_for_session(meta)
     t_end = max(s.t_s for s in samples)
@@ -1323,6 +1377,25 @@ def _engine_for_id(engine_id: str) -> EngineConfig:
         from camiones.marshall.simulador import ENGINE_STOCK_KM
 
         return ENGINE_STOCK_KM
+    if engine_id == "t813_kzgt":
+        from camiones.t813.simulador import ENGINE_REAL_T813_KZGT
+
+        return ENGINE_REAL_T813_KZGT
+    if engine_id == "t813_kzgt_top":
+        from dataclasses import replace as dc_replace
+
+        from camiones.t813.simulador import ENGINE_REAL_T813_KZGT
+
+        return dc_replace(
+            ENGINE_REAL_T813_KZGT,
+            name="KZGT top realista T813",
+            torque=177000,
+            fuel_consumption=7.8,
+        )
+    if engine_id == "t813_stock":
+        from camiones.t813.simulador import ENGINE_STOCK_T813_KZGT
+
+        return ENGINE_STOCK_T813_KZGT
     if engine_id == "aat8v":
         from camiones.ck1500.engines import engine_for_ck1500
 
@@ -1367,6 +1440,10 @@ def _engine_for_session(meta: SessionMeta) -> EngineConfig:
         from camiones.marshall.simulador import engine_for_marshall
 
         return engine_for_marshall(meta.engine_id, _engine_name_xml_from_meta(meta))
+    if meta.vehicle_id == "t813":
+        from camiones.t813.simulador import engine_for_t813
+
+        return engine_for_t813(meta.engine_id, _engine_name_xml_from_meta(meta))
     return _engine_for_id(meta.engine_id)
 
 
@@ -1378,6 +1455,22 @@ def _surface_for_kind(kind: str, label: str) -> SurfaceConfig:
         if s.kind == kind:
             return s
     raise ValueError(f"superficie desconocida: {kind!r}")
+
+
+_SIM_SURFACE_KINDS = frozenset(s.kind for s in SURFACES)
+
+
+def _surface_for_meta(meta: SessionMeta) -> SurfaceConfig:
+    """Superficie sim: meta CE si es comparable; si no, la del protocolo (p. ej. mixed -> asfalto F1)."""
+    kind = (meta.surface_kind or "").strip().lower()
+    if kind in _SIM_SURFACE_KINDS:
+        return _surface_for_kind(meta.surface_kind, meta.surface_label)
+    protocol = next((p for p in TEST_PROTOCOLS if p.id == meta.protocol_id), None)
+    if protocol:
+        return _surface_for_kind(protocol.surface_kind, protocol.surface_label)
+    raise ValueError(
+        f"superficie desconocida: {meta.surface_kind!r} (protocolo {meta.protocol_id!r})"
+    )
 
 
 def _load_for_id(load_id: str) -> LoadScenario:
@@ -1414,6 +1507,13 @@ def build_vehicle_for_session(meta: SessionMeta) -> VehicleConfig:
 
         tire_key = meta.tire if meta.tire in KM_TIRES else "mudtires"
         base = make_vehicle(tire_key, diff_lock=meta.diff_lock, drive_layout="4wd")
+        return apply_load(base, _load_for_id(meta.load_scenario_id))
+    if meta.vehicle_id == "t813":
+        from camiones.t813.simulador import TIRES as T813_TIRES, make_vehicle
+
+        tire_key = meta.tire if meta.tire in T813_TIRES else "msh_i"
+        layout = "awd" if meta.diff_lock else "rwd"
+        base = make_vehicle(tire_key, diff_lock=meta.diff_lock, drive_layout=layout)
         return apply_load(base, _load_for_id(meta.load_scenario_id))
     if meta.vehicle_id == "scout800":
         from camiones.scout800.simulador import TIRES as S8_TIRES, make_vehicle
@@ -1515,7 +1615,7 @@ def sim_speed_at(series, t_s: float) -> float:
 def compare_session_to_sim(session: TelemetrySession) -> dict:
     """Compara muestras del juego con prediccion del simulador."""
     meta = session.meta
-    surface = _surface_for_kind(meta.surface_kind, meta.surface_label)
+    surface = _surface_for_meta(meta)
     vehicle = build_vehicle_for_session(meta)
     engine = _engine_for_session(meta)
     duration = max(meta.duration_s, max((s.t_s for s in session.samples), default=0.0) + 1.0)

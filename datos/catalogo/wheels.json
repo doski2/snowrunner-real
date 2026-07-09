@@ -1,7 +1,7 @@
 {
   "source": "C:\\Users\\doski\\snowrunner real\\initial.pak.bak",
   "counts": {
-    "trucks": 42,
+    "trucks": 116,
     "engines": 125,
     "wheels": 153,
     "gearboxes": 76,
@@ -4050,7 +4050,7 @@
           "name": "highway_1",
           "radius": null,
           "mass_kg": null,
-          "substance_friction": 0.4,
+          "substance_friction": 0.5,
           "body_friction": null,
           "template": "Highway"
         },
@@ -4234,7 +4234,7 @@
           "name": "highway_1",
           "radius": null,
           "mass_kg": null,
-          "substance_friction": 0.4,
+          "substance_friction": 0.5,
           "body_friction": null,
           "template": "ScoutHighway"
         },
@@ -4403,14 +4403,14 @@
           "radius": null,
           "mass_kg": null,
           "substance_friction": null,
-          "body_friction": 2.4,
+          "body_friction": 2.0,
           "template": "Mudtires"
         },
         {
           "name": "mudtires_2",
           "radius": null,
           "mass_kg": null,
-          "substance_friction": 2.4,
+          "substance_friction": 1.7,
           "body_friction": null,
           "template": "Mudtires"
         }

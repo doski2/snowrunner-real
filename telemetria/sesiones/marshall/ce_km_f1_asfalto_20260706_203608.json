@@ -1,0 +1,3343 @@
+{
+  "meta": {
+    "id": "ce_km_f1_asfalto_20260706_203608",
+    "created_utc": "2026-07-06T20:36:08.436341+00:00",
+    "map_name": "North Port",
+    "location_note": "North Port partida libre",
+    "surface_kind": "asphalt",
+    "surface_label": "Asfalto/firme",
+    "mod_applied": true,
+    "engine_id": "km_kr135",
+    "tire": "mudtires",
+    "diff_lock": true,
+    "low_gear": false,
+    "load_scenario_id": "vacio",
+    "protocol_id": "km_f1_asfalto",
+    "duration_s": 466.48,
+    "notes": "importado desde CE: telemetria_ce_log.csv; game_id=s_khan_39_marshall",
+    "vehicle_id": "marshall",
+    "session_context": {
+      "build_juego": "Steam update jun-2026; initial.pak 28880896 B",
+      "mod_commit": "",
+      "map": "North Port",
+      "location_note": "North Port partida libre",
+      "clima": "",
+      "hora_juego": "",
+      "baseline_tag": "play_free_v1",
+      "capture_tool": "importar_ce_csv.py",
+      "setup": {
+        "engine_id": "km_kr135",
+        "tire": "mudtires",
+        "diff_lock": true,
+        "low_gear": false,
+        "load_scenario_id": "vacio",
+        "catalog_source": "initial.pak.bak stock",
+        "steer_speed_xml": 0.03,
+        "responsiveness_xml": 0.6,
+        "default_suspension_xml": "khan_39_marshall_suspension_default",
+        "suspension_socket_xml": "s_khan_39_marshall",
+        "suspension_strength_front_xml": 0.016,
+        "suspension_strength_rear_xml": 0.014,
+        "suspension_damping_front_xml": 0.23,
+        "suspension_damping_rear_xml": 0.22,
+        "suspension_height_front_xml": 0.22,
+        "suspension_height_rear_xml": 0.2,
+        "engine_socket_type_xml": "e_ru_scout_old, e_ru_scout_modern",
+        "default_engine_xml": "ru_scout_old_engine_0",
+        "engine_responsiveness_xml": 0.04,
+        "engine_name_xml": "ru_scout_old_engine_0",
+        "gearbox_socket_type_xml": "gearboxes_scouts",
+        "default_gearbox_xml": "g_scout_default",
+        "gearbox_file_id_xml": "gearboxes_scouts",
+        "gearbox_lower_gear_xml": true,
+        "gearbox_high_gear_xml": false,
+        "gearbox_fuel_consumption_xml": 1.8,
+        "gearbox_first_gear_ang_vel_xml": 3.0,
+        "gearbox_high_gear_ang_vel_xml": 10.0,
+        "ce_auto_detected": true,
+        "load_hint_ce": "vacio"
+      },
+      "level_id": "level_us_02_01",
+      "map_detect_source": "csv_map",
+      "terrain_kind_dominant": "hard"
+    }
+  },
+  "samples": [
+    {
+      "t_s": 0.0,
+      "speed_kmh": 0.02,
+      "note": "fuel=0.0%; terrain=idle; surface=snow; kind=snow; grip=0.200; surf_avg=0.776; contact=0.804; deform=0.7755; mud_grade=snow_packed; load=vacio; mass_havok=1780; pos=(722.5055541992188,-213.01307678222656); id=s_khan_39_marshall; yaw_deg_s=0.02",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 1.0,
+      "speed_kmh": 0.01,
+      "note": "fuel=0.0%; terrain=idle; surface=snow; kind=snow; grip=0.200; surf_avg=0.776; contact=0.804; deform=0.7756; mud_grade=snow_packed; load=vacio; mass_havok=1780; pos=(722.5022583007812,-213.01522827148438); id=s_khan_39_marshall; yaw_deg_s=0.5",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 2.01,
+      "speed_kmh": 0.4,
+      "note": "fuel=0.0%; terrain=idle; surface=snow; kind=snow; grip=0.200; surf_avg=0.728; contact=0.804; deform=0.7282; mud_grade=snow_packed; load=vacio; mass_havok=1780; pos=(721.7085571289062,-213.8838653564453); id=s_khan_39_marshall; yaw_deg_s=-1.9",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 3.09,
+      "speed_kmh": 5.12,
+      "note": "fuel=0.0%; terrain=crawl; surface=snow; kind=snow; grip=0.200; surf_avg=0.731; contact=0.804; deform=0.7314; mud_grade=snow_packed; load=vacio; mass_havok=1780; pos=(720.7391357421875,-214.91864013671875); id=s_khan_39_marshall; yaw_deg_s=0.34",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 4.17,
+      "speed_kmh": 4.66,
+      "note": "fuel=0.0%; terrain=crawl; surface=snow; kind=snow; grip=0.200; surf_avg=0.732; contact=0.804; deform=0.7317; mud_grade=snow_packed; load=vacio; mass_havok=1780; pos=(719.7364501953125,-215.9933624267578); id=s_khan_39_marshall; yaw_deg_s=1.74; turn_r=42.6m",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 5.23,
+      "speed_kmh": 5.32,
+      "note": "fuel=0.0%; terrain=crawl; surface=snow; kind=snow; grip=0.200; surf_avg=0.730; contact=0.804; deform=0.7300; mud_grade=snow_packed; load=vacio; mass_havok=1780; pos=(718.6392211914062,-217.16607666015625); id=s_khan_39_marshall; yaw_deg_s=-0.13",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 6.33,
+      "speed_kmh": 5.35,
+      "note": "fuel=0.0%; terrain=crawl; surface=snow; kind=snow; grip=0.200; surf_avg=0.732; contact=0.804; deform=0.7319; mud_grade=snow_packed; load=vacio; mass_havok=1780; pos=(717.5609741210938,-218.330322265625); id=s_khan_39_marshall; yaw_deg_s=-0.53",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 7.39,
+      "speed_kmh": 5.4,
+      "note": "fuel=0.0%; terrain=crawl; surface=snow; kind=snow; grip=0.200; surf_avg=0.735; contact=0.804; deform=0.7352; mud_grade=snow_packed; load=vacio; mass_havok=1780; pos=(716.4306640625,-219.54884338378906); id=s_khan_39_marshall; yaw_deg_s=0.97",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 8.47,
+      "speed_kmh": 5.16,
+      "note": "fuel=0.0%; terrain=crawl; surface=snow; kind=snow; grip=0.200; surf_avg=0.740; contact=0.804; deform=0.7403; mud_grade=snow_packed; load=vacio; mass_havok=1780; pos=(715.371826171875,-220.70816040039062); id=s_khan_39_marshall; yaw_deg_s=-1.4; turn_r=58.8m",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 9.53,
+      "speed_kmh": 5.62,
+      "note": "fuel=0.0%; terrain=crawl; surface=snow; kind=snow; grip=0.200; surf_avg=0.736; contact=0.804; deform=0.7359; mud_grade=snow_packed; load=vacio; mass_havok=1780; pos=(714.2967529296875,-221.86978149414062); id=s_khan_39_marshall; yaw_deg_s=1.25; turn_r=71.5m",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 10.61,
+      "speed_kmh": 5.13,
+      "note": "fuel=0.0%; terrain=crawl; surface=snow; kind=snow; grip=0.200; surf_avg=0.719; contact=0.804; deform=0.7190; mud_grade=snow_packed; load=vacio; mass_havok=1780; pos=(713.1622924804688,-222.81185913085938); id=s_khan_39_marshall; yaw_deg_s=6.36; turn_r=12.8m",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 11.66,
+      "speed_kmh": 5.03,
+      "note": "fuel=0.0%; terrain=crawl; surface=snow; kind=snow; grip=0.200; surf_avg=0.638; contact=0.804; deform=0.6378; mud_grade=snow_packed; load=vacio; mass_havok=1780; pos=(711.8613891601562,-223.65628051757812); id=s_khan_39_marshall; yaw_deg_s=4.62; turn_r=17.3m",
+      "terrain_kind": "snow",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 12.75,
+      "speed_kmh": 5.25,
+      "note": "fuel=0.0%; terrain=crawl; surface=mixed; kind=mixed; grip=0.200; surf_avg=0.553; contact=0.804; deform=0.5531; mud_grade=mud_light; load=vacio; mass_havok=1780; pos=(710.5305786132812,-224.34217834472656); id=s_khan_39_marshall; yaw_deg_s=7.19; turn_r=11.6m",
+      "terrain_kind": "mixed",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 13.81,
+      "speed_kmh": 5.11,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.200; surf_avg=0.466; contact=0.804; deform=0.4661; mud_grade=mud_light; load=vacio; mass_havok=1780; pos=(709.1171264648438,-224.87550354003906); id=s_khan_39_marshall; yaw_deg_s=4.17; turn_r=19.5m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 14.89,
+      "speed_kmh": 5.14,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.200; surf_avg=0.358; contact=0.804; deform=0.3585; mud_grade=mud_light; load=vacio; mass_havok=1780; pos=(707.6725463867188,-225.39414978027344); id=s_khan_39_marshall; yaw_deg_s=-0.82",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 15.94,
+      "speed_kmh": 5.52,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.200; surf_avg=0.357; contact=0.804; deform=0.3567; mud_grade=mud_light; load=vacio; mass_havok=1780; pos=(706.2162475585938,-225.9495391845703); id=s_khan_39_marshall; yaw_deg_s=-0.33",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 16.97,
+      "speed_kmh": 5.41,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.200; surf_avg=0.360; contact=0.804; deform=0.3601; mud_grade=mud_light; load=vacio; mass_havok=1780; pos=(704.7402954101562,-226.5142364501953); id=s_khan_39_marshall; yaw_deg_s=1.05",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 18.03,
+      "speed_kmh": 5.54,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.200; surf_avg=0.352; contact=0.804; deform=0.3519; mud_grade=mud_light; load=vacio; mass_havok=1780; pos=(703.284423828125,-227.05149841308594); id=s_khan_39_marshall; yaw_deg_s=0.76",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 19.08,
+      "speed_kmh": 5.39,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.200; surf_avg=0.347; contact=0.804; deform=0.3465; mud_grade=mud_light; load=vacio; mass_havok=1780; pos=(701.8265991210938,-227.58897399902344); id=s_khan_39_marshall; yaw_deg_s=0.94",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 20.11,
+      "speed_kmh": 5.09,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.200; surf_avg=0.348; contact=0.804; deform=0.3478; mud_grade=mud_light; load=vacio; mass_havok=1780; pos=(700.3588256835938,-228.1237335205078); id=s_khan_39_marshall; yaw_deg_s=-0.26",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 21.17,
+      "speed_kmh": 5.59,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.200; surf_avg=0.342; contact=0.804; deform=0.3421; mud_grade=mud_light; load=vacio; mass_havok=1780; pos=(698.8549194335938,-228.6625518798828); id=s_khan_39_marshall; yaw_deg_s=-0.2",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 22.25,
+      "speed_kmh": 5.38,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.200; surf_avg=0.339; contact=0.804; deform=0.3394; mud_grade=mud_light; load=vacio; mass_havok=1780; pos=(697.3186645507812,-229.2120361328125); id=s_khan_39_marshall; yaw_deg_s=3.34; turn_r=25.6m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 23.33,
+      "speed_kmh": 5.17,
+      "note": "fuel=0.0%; terrain=crawl; surface=mixed; kind=mixed; grip=0.200; surf_avg=0.574; contact=0.804; deform=0.2862; mud_grade=mud_light; load=vacio; mass_havok=1780; pos=(695.88720703125,-229.35665893554688); id=s_khan_39_marshall; yaw_deg_s=10.7; turn_r=7.7m",
+      "terrain_kind": "mixed",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 24.41,
+      "speed_kmh": 4.85,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=0.1092; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(694.380859375,-229.35552978515625); id=s_khan_39_marshall; yaw_deg_s=1.22; turn_r=63.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 25.5,
+      "speed_kmh": 5.14,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=0.0565; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(692.774169921875,-229.4575958251953); id=s_khan_39_marshall; yaw_deg_s=1.22; turn_r=67.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 26.58,
+      "speed_kmh": 5.55,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=0.0662; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(691.1828002929688,-229.55154418945312); id=s_khan_39_marshall; yaw_deg_s=0.65",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 27.66,
+      "speed_kmh": 5.38,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=0.0545; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(689.6351928710938,-229.6495819091797); id=s_khan_39_marshall; yaw_deg_s=-0.39",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 28.69,
+      "speed_kmh": 5.54,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=0.0572; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(688.020751953125,-229.74180603027344); id=s_khan_39_marshall; yaw_deg_s=1.01",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 29.73,
+      "speed_kmh": 5.52,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=0.0607; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(686.4299926757812,-229.82638549804688); id=s_khan_39_marshall; yaw_deg_s=1.45; turn_r=60.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 30.81,
+      "speed_kmh": 5.35,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=0.0494; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(684.7653198242188,-229.9255828857422); id=s_khan_39_marshall; yaw_deg_s=-0.5",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 31.89,
+      "speed_kmh": 5.36,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=0.0593; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(683.1989135742188,-230.02127075195312); id=s_khan_39_marshall; yaw_deg_s=0.44",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 32.94,
+      "speed_kmh": 5.44,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=0.0592; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(681.5809936523438,-230.110107421875); id=s_khan_39_marshall; yaw_deg_s=-1.44; turn_r=60.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 34.0,
+      "speed_kmh": 5.45,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=0.0572; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(679.993408203125,-230.2007293701172); id=s_khan_39_marshall; yaw_deg_s=-1.92; turn_r=45.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 35.06,
+      "speed_kmh": 5.4,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=0.0682; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(678.3840942382812,-230.30455017089844); id=s_khan_39_marshall; yaw_deg_s=0.7",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 36.14,
+      "speed_kmh": 5.17,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=0.0663; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(676.7807006835938,-230.41004943847656); id=s_khan_39_marshall; yaw_deg_s=1.17; turn_r=70.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 37.22,
+      "speed_kmh": 5.57,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=0.0724; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(675.2221069335938,-230.52438354492188); id=s_khan_39_marshall; yaw_deg_s=-0.23",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 38.26,
+      "speed_kmh": 5.25,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=0.0820; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(673.6671752929688,-230.6500701904297); id=s_khan_39_marshall; yaw_deg_s=0.41",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 39.33,
+      "speed_kmh": 5.58,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=0.0756; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(672.10791015625,-230.76185607910156); id=s_khan_39_marshall; yaw_deg_s=3.13; turn_r=28.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 40.36,
+      "speed_kmh": 5.41,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=0.0627; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(670.6048583984375,-230.7680206298828); id=s_khan_39_marshall; yaw_deg_s=4.49; turn_r=19.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 41.42,
+      "speed_kmh": 5.19,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.0175; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(669.0936889648438,-230.5555419921875); id=s_khan_39_marshall; yaw_deg_s=7.39; turn_r=11.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 42.48,
+      "speed_kmh": 5.35,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.1307; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(667.6431274414062,-230.20111083984375); id=s_khan_39_marshall; yaw_deg_s=6.38; turn_r=13.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 43.53,
+      "speed_kmh": 5.12,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.2361; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(666.2257080078125,-229.70799255371094); id=s_khan_39_marshall; yaw_deg_s=5.76; turn_r=14.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 44.58,
+      "speed_kmh": 5.29,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.3275; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(664.80615234375,-229.05470275878906); id=s_khan_39_marshall; yaw_deg_s=5.01; turn_r=16.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 45.64,
+      "speed_kmh": 5.26,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.4128; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(663.509033203125,-228.28915405273438); id=s_khan_39_marshall; yaw_deg_s=4.07; turn_r=20.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 46.69,
+      "speed_kmh": 5.08,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5014; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(662.2523803710938,-227.44720458984375); id=s_khan_39_marshall; yaw_deg_s=-0.32",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 47.75,
+      "speed_kmh": 5.34,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5280; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(660.9326171875,-226.62750244140625); id=s_khan_39_marshall; yaw_deg_s=-2.55; turn_r=33.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 48.8,
+      "speed_kmh": 5.34,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5337; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(659.5806884765625,-225.7945098876953); id=s_khan_39_marshall; yaw_deg_s=2.63; turn_r=32.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 49.81,
+      "speed_kmh": 5.29,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5328; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(658.242431640625,-224.96424865722656); id=s_khan_39_marshall; yaw_deg_s=0.28",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 50.88,
+      "speed_kmh": 5.31,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5276; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(656.9398803710938,-224.1412811279297); id=s_khan_39_marshall; yaw_deg_s=-2.94; turn_r=28.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 51.91,
+      "speed_kmh": 5.04,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5319; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(655.6103515625,-223.33087158203125); id=s_khan_39_marshall; yaw_deg_s=3.22; turn_r=24.9m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 52.97,
+      "speed_kmh": 5.34,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5298; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(654.312744140625,-222.5275115966797); id=s_khan_39_marshall; yaw_deg_s=-0.45",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 54.0,
+      "speed_kmh": 5.49,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5296; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(652.9834594726562,-221.70416259765625); id=s_khan_39_marshall; yaw_deg_s=-1.38; turn_r=63.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 55.03,
+      "speed_kmh": 5.13,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5309; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(651.70458984375,-220.9213409423828); id=s_khan_39_marshall; yaw_deg_s=1.94; turn_r=42.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 56.05,
+      "speed_kmh": 5.39,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5278; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(650.3580322265625,-220.08270263671875); id=s_khan_39_marshall; yaw_deg_s=-1.56; turn_r=55.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 57.08,
+      "speed_kmh": 5.06,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5289; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(649.0655517578125,-219.28404235839844); id=s_khan_39_marshall; yaw_deg_s=1.14",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 58.11,
+      "speed_kmh": 5.16,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5301; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(647.7898559570312,-218.49903869628906); id=s_khan_39_marshall; yaw_deg_s=0.26",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 59.12,
+      "speed_kmh": 5.51,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5250; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(646.4342651367188,-217.66195678710938); id=s_khan_39_marshall; yaw_deg_s=-2.45; turn_r=35.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 60.17,
+      "speed_kmh": 5.07,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5290; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(645.1616821289062,-216.88560485839844); id=s_khan_39_marshall; yaw_deg_s=0.9",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 61.19,
+      "speed_kmh": 5.4,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5285; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(643.8267211914062,-216.0552215576172); id=s_khan_39_marshall; yaw_deg_s=0.45",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 62.22,
+      "speed_kmh": 5.11,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5273; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(642.6072387695312,-215.16342163085938); id=s_khan_39_marshall; yaw_deg_s=8.15; turn_r=10.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 63.3,
+      "speed_kmh": 4.87,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6209; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(641.6464233398438,-214.13299560546875); id=s_khan_39_marshall; yaw_deg_s=2.44; turn_r=31.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 64.34,
+      "speed_kmh": 4.82,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6838; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(640.7409057617188,-213.0020294189453); id=s_khan_39_marshall; yaw_deg_s=-1.54; turn_r=50.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 65.41,
+      "speed_kmh": 5.02,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7127; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(639.6492309570312,-211.90966796875); id=s_khan_39_marshall; yaw_deg_s=-0.7",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 66.44,
+      "speed_kmh": 5.31,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7105; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(638.5200805664062,-210.7625274658203); id=s_khan_39_marshall; yaw_deg_s=0.39",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 67.5,
+      "speed_kmh": 5.48,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7111; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(637.4130249023438,-209.6409454345703); id=s_khan_39_marshall; yaw_deg_s=1.3; turn_r=67.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 68.55,
+      "speed_kmh": 5.38,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7114; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(636.3009033203125,-208.5099639892578); id=s_khan_39_marshall; yaw_deg_s=-0.46",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 69.62,
+      "speed_kmh": 5.23,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7128; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(635.2167358398438,-207.41073608398438); id=s_khan_39_marshall; yaw_deg_s=-0.23",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 70.67,
+      "speed_kmh": 5.42,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7128; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(634.1064453125,-206.27601623535156); id=s_khan_39_marshall; yaw_deg_s=0.27",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 71.73,
+      "speed_kmh": 4.86,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7100; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(633.1248168945312,-205.281494140625); id=s_khan_39_marshall; yaw_deg_s=0.0",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 72.75,
+      "speed_kmh": 5.32,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7164; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(632.0904541015625,-204.18658447265625); id=s_khan_39_marshall; yaw_deg_s=0.59",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 73.76,
+      "speed_kmh": 4.88,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7272; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(631.1344604492188,-203.18284606933594); id=s_khan_39_marshall; yaw_deg_s=4.81; turn_r=16.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 74.76,
+      "speed_kmh": 5.3,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7502; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(630.24951171875,-202.0078125); id=s_khan_39_marshall; yaw_deg_s=5.66; turn_r=14.9m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 75.8,
+      "speed_kmh": 4.97,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7965; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.459228515625,-200.8054656982422); id=s_khan_39_marshall; yaw_deg_s=7.4; turn_r=10.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 76.8,
+      "speed_kmh": 4.94,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8462; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(628.8565673828125,-199.51634216308594); id=s_khan_39_marshall; yaw_deg_s=8.33; turn_r=9.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 77.83,
+      "speed_kmh": 4.85,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9102; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(628.4515380859375,-198.1002655029297); id=s_khan_39_marshall; yaw_deg_s=9.03; turn_r=8.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 78.84,
+      "speed_kmh": 4.92,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9534; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(628.2919921875,-196.73768615722656); id=s_khan_39_marshall; yaw_deg_s=5.96; turn_r=13.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 79.88,
+      "speed_kmh": 4.78,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9864; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(628.2964477539062,-195.40765380859375); id=s_khan_39_marshall; yaw_deg_s=8.25; turn_r=9.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 80.89,
+      "speed_kmh": 4.95,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9974; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(628.5399169921875,-194.01214599609375); id=s_khan_39_marshall; yaw_deg_s=8.09; turn_r=9.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 81.92,
+      "speed_kmh": 5.05,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9906; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(628.93310546875,-192.6941680908203); id=s_khan_39_marshall; yaw_deg_s=7.46; turn_r=10.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 82.95,
+      "speed_kmh": 4.69,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9621; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.5234985351562,-191.39889526367188); id=s_khan_39_marshall; yaw_deg_s=9.51; turn_r=7.9m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 83.98,
+      "speed_kmh": 4.76,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9123; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(630.2398071289062,-190.25973510742188); id=s_khan_39_marshall; yaw_deg_s=8.9; turn_r=8.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 85.03,
+      "speed_kmh": 4.67,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8388; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(631.0380249023438,-189.28167724609375); id=s_khan_39_marshall; yaw_deg_s=-0.97",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 86.05,
+      "speed_kmh": 4.61,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7810; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(631.8479614257812,-188.1435546875); id=s_khan_39_marshall; yaw_deg_s=1.34; turn_r=54.9m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 87.08,
+      "speed_kmh": 4.14,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7786; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(632.5626220703125,-187.14576721191406); id=s_khan_39_marshall; yaw_deg_s=-0.91",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 88.11,
+      "speed_kmh": 4.6,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7646; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(633.3789672851562,-186.1555938720703); id=s_khan_39_marshall; yaw_deg_s=1.76; turn_r=41.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 89.14,
+      "speed_kmh": 4.24,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7673; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(634.260986328125,-185.10922241210938); id=s_khan_39_marshall; yaw_deg_s=-2.54; turn_r=26.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 90.19,
+      "speed_kmh": 4.41,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7738; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(635.0924682617188,-184.0858612060547); id=s_khan_39_marshall; yaw_deg_s=-0.23",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 91.23,
+      "speed_kmh": 4.81,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7734; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(636.0337524414062,-182.96229553222656); id=s_khan_39_marshall; yaw_deg_s=1.59; turn_r=48.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 92.28,
+      "speed_kmh": 5.37,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7732; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(637.012451171875,-181.76417541503906); id=s_khan_39_marshall; yaw_deg_s=-1.55; turn_r=55.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 93.33,
+      "speed_kmh": 5.46,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7773; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(637.9927978515625,-180.54127502441406); id=s_khan_39_marshall; yaw_deg_s=2.02; turn_r=43.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 94.36,
+      "speed_kmh": 5.18,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7776; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(638.972900390625,-179.41998291015625); id=s_khan_39_marshall; yaw_deg_s=5.5; turn_r=15.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 95.39,
+      "speed_kmh": 5.29,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7497; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(640.0311279296875,-178.3334197998047); id=s_khan_39_marshall; yaw_deg_s=4.13; turn_r=20.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 96.42,
+      "speed_kmh": 5.01,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7288; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(641.0536499023438,-177.23777770996094); id=s_khan_39_marshall; yaw_deg_s=-2.52; turn_r=31.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 97.45,
+      "speed_kmh": 5.48,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7318; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(642.1051025390625,-176.09646606445312); id=s_khan_39_marshall; yaw_deg_s=-2.1; turn_r=41.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 98.48,
+      "speed_kmh": 5.33,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7334; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(643.1610107421875,-174.9381103515625); id=s_khan_39_marshall; yaw_deg_s=1.75; turn_r=48.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 99.51,
+      "speed_kmh": 5.47,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7330; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(644.2492065429688,-173.81130981445312); id=s_khan_39_marshall; yaw_deg_s=-0.61",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 100.55,
+      "speed_kmh": 5.33,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7382; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(645.0928955078125,-172.7089080810547); id=s_khan_39_marshall; yaw_deg_s=1.17; turn_r=72.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 101.53,
+      "speed_kmh": 5.33,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7361; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(646.0555419921875,-171.74984741210938); id=s_khan_39_marshall; yaw_deg_s=0.44",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 102.5,
+      "speed_kmh": 5.22,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7394; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(646.9248046875,-170.70864868164062); id=s_khan_39_marshall; yaw_deg_s=4.26; turn_r=19.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 103.47,
+      "speed_kmh": 4.7,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7364; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(647.8513793945312,-169.82278442382812); id=s_khan_39_marshall; yaw_deg_s=0.5",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 104.44,
+      "speed_kmh": 5.0,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6999; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(648.78662109375,-169.0246124267578); id=s_khan_39_marshall; yaw_deg_s=5.49; turn_r=14.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 105.39,
+      "speed_kmh": 5.04,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6673; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(649.7946166992188,-168.1192169189453); id=s_khan_39_marshall; yaw_deg_s=2.07; turn_r=38.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 106.36,
+      "speed_kmh": 5.43,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6704; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(650.8007202148438,-167.21343994140625); id=s_khan_39_marshall; yaw_deg_s=0.48",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 107.33,
+      "speed_kmh": 4.92,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6734; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(651.8206787109375,-166.2210235595703); id=s_khan_39_marshall; yaw_deg_s=-1.57; turn_r=49.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 108.28,
+      "speed_kmh": 5.02,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6803; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(652.7215576171875,-165.31173706054688); id=s_khan_39_marshall; yaw_deg_s=2.91; turn_r=27.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 109.23,
+      "speed_kmh": 5.12,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6987; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(653.72119140625,-164.24411010742188); id=s_khan_39_marshall; yaw_deg_s=-1.62; turn_r=50.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 110.23,
+      "speed_kmh": 5.05,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6937; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(654.6552124023438,-163.27960205078125); id=s_khan_39_marshall; yaw_deg_s=-0.01",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 111.23,
+      "speed_kmh": 5.28,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7048; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(655.6397094726562,-162.28948974609375); id=s_khan_39_marshall; yaw_deg_s=-2.49; turn_r=33.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 112.23,
+      "speed_kmh": 4.86,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7079; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(656.593017578125,-161.29574584960938); id=s_khan_39_marshall; yaw_deg_s=0.1",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 113.26,
+      "speed_kmh": 4.83,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6971; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(657.6820678710938,-160.23670959472656); id=s_khan_39_marshall; yaw_deg_s=2.41; turn_r=31.9m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 114.38,
+      "speed_kmh": 4.84,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6783; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(658.7099609375,-159.35874938964844); id=s_khan_39_marshall; yaw_deg_s=2.07; turn_r=37.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 115.38,
+      "speed_kmh": 4.88,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6538; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(659.7666015625,-158.40109252929688); id=s_khan_39_marshall; yaw_deg_s=-1.01",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 116.38,
+      "speed_kmh": 5.2,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6553; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(660.7651977539062,-157.4672393798828); id=s_khan_39_marshall; yaw_deg_s=-0.51",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 117.36,
+      "speed_kmh": 4.91,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6665; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(661.67529296875,-156.60060119628906); id=s_khan_39_marshall; yaw_deg_s=2.14; turn_r=36.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 118.38,
+      "speed_kmh": 4.28,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6689; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(662.5599975585938,-155.7234344482422); id=s_khan_39_marshall; yaw_deg_s=-2.44; turn_r=27.9m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 119.36,
+      "speed_kmh": 4.83,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6862; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(663.3787841796875,-154.9325408935547); id=s_khan_39_marshall; yaw_deg_s=1.02",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 120.36,
+      "speed_kmh": 3.39,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7010; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(664.1302490234375,-154.1879119873047); id=s_khan_39_marshall; yaw_deg_s=4.69; turn_r=11.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 121.36,
+      "speed_kmh": 4.39,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6653; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(665.0177612304688,-153.43011474609375); id=s_khan_39_marshall; yaw_deg_s=-0.41",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 122.34,
+      "speed_kmh": 4.48,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6549; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(666.0482788085938,-152.54881286621094); id=s_khan_39_marshall; yaw_deg_s=-2.16; turn_r=33.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 123.34,
+      "speed_kmh": 5.34,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6499; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(667.184814453125,-151.58871459960938); id=s_khan_39_marshall; yaw_deg_s=-0.1",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 124.33,
+      "speed_kmh": 5.33,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6490; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(668.3245849609375,-150.619384765625); id=s_khan_39_marshall; yaw_deg_s=1.38; turn_r=61.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 125.33,
+      "speed_kmh": 5.14,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6455; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(669.4545288085938,-149.667236328125); id=s_khan_39_marshall; yaw_deg_s=0.6",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 126.33,
+      "speed_kmh": 5.43,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6397; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(670.5927124023438,-148.7263641357422); id=s_khan_39_marshall; yaw_deg_s=-0.61",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 127.33,
+      "speed_kmh": 5.52,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6399; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(671.718994140625,-147.80865478515625); id=s_khan_39_marshall; yaw_deg_s=2.3; turn_r=38.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 128.31,
+      "speed_kmh": 5.33,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6340; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(672.8536987304688,-146.88150024414062); id=s_khan_39_marshall; yaw_deg_s=1.1",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 129.3,
+      "speed_kmh": 5.44,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6265; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(674.0172729492188,-145.95069885253906); id=s_khan_39_marshall; yaw_deg_s=-1.22; turn_r=70.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 130.28,
+      "speed_kmh": 5.3,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6267; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(675.1448974609375,-145.0452880859375); id=s_khan_39_marshall; yaw_deg_s=-1.35; turn_r=62.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 131.26,
+      "speed_kmh": 5.56,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6272; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(676.3150634765625,-144.13954162597656); id=s_khan_39_marshall; yaw_deg_s=2.47; turn_r=35.9m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 132.25,
+      "speed_kmh": 4.8,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6256; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(677.3209228515625,-143.42527770996094); id=s_khan_39_marshall; yaw_deg_s=3.08; turn_r=24.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 133.23,
+      "speed_kmh": 4.9,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6000; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(678.4198608398438,-142.5881805419922); id=s_khan_39_marshall; yaw_deg_s=1.0",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 134.22,
+      "speed_kmh": 4.41,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6007; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(679.4826049804688,-141.84153747558594); id=s_khan_39_marshall; yaw_deg_s=-0.84",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 135.2,
+      "speed_kmh": 4.82,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5985; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(680.5770874023438,-140.98239135742188); id=s_khan_39_marshall; yaw_deg_s=1.11",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 136.19,
+      "speed_kmh": 5.42,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5961; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(681.7567138671875,-140.11436462402344); id=s_khan_39_marshall; yaw_deg_s=-0.76",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 137.16,
+      "speed_kmh": 5.6,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5922; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(682.94921875,-139.2419891357422); id=s_khan_39_marshall; yaw_deg_s=1.12",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 138.14,
+      "speed_kmh": 5.18,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5857; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(684.1369018554688,-138.39955139160156); id=s_khan_39_marshall; yaw_deg_s=-0.42",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 139.12,
+      "speed_kmh": 5.4,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5809; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(685.288818359375,-137.56600952148438); id=s_khan_39_marshall; yaw_deg_s=-2.43; turn_r=35.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 140.09,
+      "speed_kmh": 5.16,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6011; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(686.2607421875,-136.6624755859375); id=s_khan_39_marshall; yaw_deg_s=-4.66; turn_r=17.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 141.06,
+      "speed_kmh": 4.88,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6646; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(687.2099609375,-135.6621551513672); id=s_khan_39_marshall; yaw_deg_s=-4.08; turn_r=19.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 142.05,
+      "speed_kmh": 5.11,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7191; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(688.06787109375,-134.58395385742188); id=s_khan_39_marshall; yaw_deg_s=-4.73; turn_r=17.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 143.01,
+      "speed_kmh": 4.76,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7576; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(688.9567260742188,-133.54737854003906); id=s_khan_39_marshall; yaw_deg_s=1.37; turn_r=55.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 144.0,
+      "speed_kmh": 5.38,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7578; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(689.9271240234375,-132.41629028320312); id=s_khan_39_marshall; yaw_deg_s=2.58; turn_r=33.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 144.97,
+      "speed_kmh": 5.54,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7593; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(690.9031982421875,-131.27870178222656); id=s_khan_39_marshall; yaw_deg_s=-1.06",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 145.95,
+      "speed_kmh": 5.45,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7619; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(691.81201171875,-130.1980438232422); id=s_khan_39_marshall; yaw_deg_s=-3.66; turn_r=23.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 146.92,
+      "speed_kmh": 5.17,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7661; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(692.7650756835938,-129.08299255371094); id=s_khan_39_marshall; yaw_deg_s=-0.77",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 147.89,
+      "speed_kmh": 5.39,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7651; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(693.6896362304688,-127.98345947265625); id=s_khan_39_marshall; yaw_deg_s=0.58",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 148.86,
+      "speed_kmh": 5.45,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7639; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(694.634033203125,-126.85758972167969); id=s_khan_39_marshall; yaw_deg_s=-0.99",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 149.83,
+      "speed_kmh": 5.63,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7629; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(695.5380249023438,-125.78429412841797); id=s_khan_39_marshall; yaw_deg_s=-1.3; turn_r=68.9m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 150.8,
+      "speed_kmh": 5.28,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7719; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(696.4660034179688,-124.65351867675781); id=s_khan_39_marshall; yaw_deg_s=-1.04",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 151.78,
+      "speed_kmh": 5.39,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7720; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(697.3423461914062,-123.59129333496094); id=s_khan_39_marshall; yaw_deg_s=-3.01; turn_r=28.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 152.75,
+      "speed_kmh": 5.17,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7776; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(698.2413940429688,-122.47981262207031); id=s_khan_39_marshall; yaw_deg_s=-1.49; turn_r=55.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 153.73,
+      "speed_kmh": 5.38,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7771; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(699.1451416015625,-121.3746109008789); id=s_khan_39_marshall; yaw_deg_s=-0.52",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 154.7,
+      "speed_kmh": 5.22,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7766; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(700.0225830078125,-120.27776336669922); id=s_khan_39_marshall; yaw_deg_s=-2.27; turn_r=36.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 155.69,
+      "speed_kmh": 5.09,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7800; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(700.8516235351562,-119.18206787109375); id=s_khan_39_marshall; yaw_deg_s=-4.43; turn_r=18.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 156.66,
+      "speed_kmh": 4.89,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8084; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(701.5169067382812,-118.07022857666016); id=s_khan_39_marshall; yaw_deg_s=-5.07; turn_r=15.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 157.64,
+      "speed_kmh": 4.69,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8484; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(702.1336059570312,-116.96083068847656); id=s_khan_39_marshall; yaw_deg_s=-1.65; turn_r=45.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 158.62,
+      "speed_kmh": 4.55,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8753; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(702.645751953125,-115.81900024414062); id=s_khan_39_marshall; yaw_deg_s=-6.68; turn_r=10.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 159.62,
+      "speed_kmh": 5.4,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9072; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(703.1424560546875,-114.51969146728516); id=s_khan_39_marshall; yaw_deg_s=-4.1; turn_r=21.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 160.61,
+      "speed_kmh": 4.46,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9309; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(703.603515625,-113.291259765625); id=s_khan_39_marshall; yaw_deg_s=-0.33",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 161.59,
+      "speed_kmh": 5.04,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9330; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(704.04345703125,-112.13223266601562); id=s_khan_39_marshall; yaw_deg_s=-2.88; turn_r=27.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 162.58,
+      "speed_kmh": 5.52,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9361; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(704.537353515625,-110.81853485107422); id=s_khan_39_marshall; yaw_deg_s=-1.39; turn_r=63.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 163.58,
+      "speed_kmh": 4.14,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9371; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(705.008544921875,-109.51101684570312); id=s_khan_39_marshall; yaw_deg_s=3.04; turn_r=21.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 164.56,
+      "speed_kmh": 4.89,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9398; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(705.4426879882812,-108.2941665649414); id=s_khan_39_marshall; yaw_deg_s=-3.01; turn_r=25.9m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 165.55,
+      "speed_kmh": 5.53,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9403; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(705.8802490234375,-107.07437133789062); id=s_khan_39_marshall; yaw_deg_s=1.16; turn_r=75.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 166.55,
+      "speed_kmh": 4.74,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9416; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(706.3193969726562,-105.82942962646484); id=s_khan_39_marshall; yaw_deg_s=-1.45; turn_r=52.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 167.53,
+      "speed_kmh": 4.26,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9408; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(706.7237548828125,-104.73458099365234); id=s_khan_39_marshall; yaw_deg_s=-0.04",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 168.5,
+      "speed_kmh": 4.17,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9423; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(707.1514282226562,-103.47108459472656); id=s_khan_39_marshall; yaw_deg_s=-3.69; turn_r=18.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 169.48,
+      "speed_kmh": 4.44,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9613; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(707.3101196289062,-102.23428344726562); id=s_khan_39_marshall; yaw_deg_s=-6.88; turn_r=10.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 170.47,
+      "speed_kmh": 4.7,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9885; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(707.298828125,-101.01701354980469); id=s_khan_39_marshall; yaw_deg_s=-6.84; turn_r=10.9m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 171.45,
+      "speed_kmh": 3.87,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9986; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(707.2562255859375,-99.94707489013672); id=s_khan_39_marshall; yaw_deg_s=-3.11; turn_r=19.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 172.44,
+      "speed_kmh": 3.44,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9998; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(707.2286987304688,-98.9886245727539); id=s_khan_39_marshall; yaw_deg_s=0.37",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 173.42,
+      "speed_kmh": 3.43,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-1.0000; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(707.2195434570312,-98.01441955566406); id=s_khan_39_marshall; yaw_deg_s=-0.68",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 174.41,
+      "speed_kmh": 3.71,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9997; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(707.1901245117188,-97.14051055908203); id=s_khan_39_marshall; yaw_deg_s=-2.52; turn_r=23.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 175.38,
+      "speed_kmh": 3.24,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9997; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(707.1539306640625,-96.36592864990234); id=s_khan_39_marshall; yaw_deg_s=-1.06",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 176.34,
+      "speed_kmh": 2.73,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9991; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(707.0775146484375,-95.56468200683594); id=s_khan_39_marshall; yaw_deg_s=-1.63",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 177.33,
+      "speed_kmh": 3.33,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9975; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(706.981201171875,-94.72859954833984); id=s_khan_39_marshall; yaw_deg_s=-0.99",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 178.31,
+      "speed_kmh": 3.03,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9958; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(706.8567504882812,-93.854248046875); id=s_khan_39_marshall; yaw_deg_s=-5.92; turn_r=8.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 179.3,
+      "speed_kmh": 3.19,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9842; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(706.6115112304688,-93.01907348632812); id=s_khan_39_marshall; yaw_deg_s=-3.33; turn_r=15.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 180.26,
+      "speed_kmh": 3.55,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9725; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(706.3650512695312,-92.18165588378906); id=s_khan_39_marshall; yaw_deg_s=0.24",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 181.23,
+      "speed_kmh": 3.03,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9663; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(706.1111450195312,-91.3530044555664); id=s_khan_39_marshall; yaw_deg_s=-1.87; turn_r=25.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 182.23,
+      "speed_kmh": 3.09,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9590; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(705.8231811523438,-90.50534057617188); id=s_khan_39_marshall; yaw_deg_s=-1.26; turn_r=39.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 183.2,
+      "speed_kmh": 2.72,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9534; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(705.528564453125,-89.66570281982422); id=s_khan_39_marshall; yaw_deg_s=0.15",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 184.17,
+      "speed_kmh": 3.26,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9572; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(705.2689208984375,-88.83138275146484); id=s_khan_39_marshall; yaw_deg_s=0.48",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 185.16,
+      "speed_kmh": 2.62,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9572; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(704.9742431640625,-88.0213394165039); id=s_khan_39_marshall; yaw_deg_s=0.8",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 186.14,
+      "speed_kmh": 3.24,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9604; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(704.7009887695312,-87.13457489013672); id=s_khan_39_marshall; yaw_deg_s=-0.39",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 187.14,
+      "speed_kmh": 3.18,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9572; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(704.4517211914062,-86.29350280761719); id=s_khan_39_marshall; yaw_deg_s=2.32; turn_r=21.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 188.12,
+      "speed_kmh": 3.39,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9670; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(704.2769165039062,-85.55937194824219); id=s_khan_39_marshall; yaw_deg_s=4.35; turn_r=12.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 189.11,
+      "speed_kmh": 2.79,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9851; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(704.1472778320312,-84.75960540771484); id=s_khan_39_marshall; yaw_deg_s=0.99",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 190.09,
+      "speed_kmh": 3.02,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9912; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(704.056884765625,-83.99172973632812); id=s_khan_39_marshall; yaw_deg_s=1.28; turn_r=37.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 191.08,
+      "speed_kmh": 2.96,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9950; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(704.0006103515625,-83.26348114013672); id=s_khan_39_marshall; yaw_deg_s=1.14",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 192.06,
+      "speed_kmh": 2.82,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9963; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(703.9100952148438,-82.54337310791016); id=s_khan_39_marshall; yaw_deg_s=-1.58",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 193.05,
+      "speed_kmh": 2.62,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9927; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(703.7696533203125,-81.8355941772461); id=s_khan_39_marshall; yaw_deg_s=-2.02",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 194.01,
+      "speed_kmh": 2.6,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9897; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(703.6195678710938,-81.12081909179688); id=s_khan_39_marshall; yaw_deg_s=-1.43",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 194.98,
+      "speed_kmh": 2.67,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9880; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(703.4595336914062,-80.41307830810547); id=s_khan_39_marshall; yaw_deg_s=-1.58",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 195.97,
+      "speed_kmh": 2.67,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9839; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(703.2911987304688,-79.69743347167969); id=s_khan_39_marshall; yaw_deg_s=-1.24",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 196.94,
+      "speed_kmh": 2.66,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9805; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(703.1198120117188,-78.9937973022461); id=s_khan_39_marshall; yaw_deg_s=-0.68",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 197.91,
+      "speed_kmh": 2.68,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9785; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(702.9447021484375,-78.27392578125); id=s_khan_39_marshall; yaw_deg_s=-0.54",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 198.89,
+      "speed_kmh": 2.71,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9759; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(702.756591796875,-77.56272888183594); id=s_khan_39_marshall; yaw_deg_s=-0.27",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 199.86,
+      "speed_kmh": 2.73,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9751; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(702.5738525390625,-76.83207702636719); id=s_khan_39_marshall; yaw_deg_s=-0.81",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 200.84,
+      "speed_kmh": 2.73,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9699; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(702.3403930664062,-76.10874938964844); id=s_khan_39_marshall; yaw_deg_s=-2.07",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 201.86,
+      "speed_kmh": 2.71,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9584; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(702.069580078125,-75.41422271728516); id=s_khan_39_marshall; yaw_deg_s=-1.74",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 202.83,
+      "speed_kmh": 2.72,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9488; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(701.7689819335938,-74.73616027832031); id=s_khan_39_marshall; yaw_deg_s=-1.84",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 203.81,
+      "speed_kmh": 2.68,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9386; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(701.4556274414062,-74.06377410888672); id=s_khan_39_marshall; yaw_deg_s=-1.98",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 204.8,
+      "speed_kmh": 2.7,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9266; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(701.1136474609375,-73.39307403564453); id=s_khan_39_marshall; yaw_deg_s=-1.8",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 205.8,
+      "speed_kmh": 2.69,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9134; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(700.7573852539062,-72.74578094482422); id=s_khan_39_marshall; yaw_deg_s=-1.89",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 206.78,
+      "speed_kmh": 2.67,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8993; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(700.3757934570312,-72.10758972167969); id=s_khan_39_marshall; yaw_deg_s=-2.15",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 207.76,
+      "speed_kmh": 2.64,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8832; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(699.9970703125,-71.5159683227539); id=s_khan_39_marshall; yaw_deg_s=-1.92",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 208.76,
+      "speed_kmh": 2.67,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8670; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(699.5686645507812,-70.9084243774414); id=s_khan_39_marshall; yaw_deg_s=-2.07",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 209.76,
+      "speed_kmh": 2.69,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8485; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(699.1343383789062,-70.31033325195312); id=s_khan_39_marshall; yaw_deg_s=-2.18",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 210.75,
+      "speed_kmh": 2.71,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8289; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(698.6987915039062,-69.69160461425781); id=s_khan_39_marshall; yaw_deg_s=-0.03",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 211.73,
+      "speed_kmh": 2.71,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8371; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(698.3002319335938,-69.09384155273438); id=s_khan_39_marshall; yaw_deg_s=0.02",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 212.7,
+      "speed_kmh": 2.7,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8368; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(697.9074096679688,-68.47772979736328); id=s_khan_39_marshall; yaw_deg_s=-0.08",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 213.67,
+      "speed_kmh": 2.71,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8383; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(697.4833984375,-67.83670806884766); id=s_khan_39_marshall; yaw_deg_s=0.18",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 214.69,
+      "speed_kmh": 2.72,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8382; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(697.07861328125,-67.21456909179688); id=s_khan_39_marshall; yaw_deg_s=0.05",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 215.66,
+      "speed_kmh": 2.71,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8386; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(696.6727905273438,-66.58783721923828); id=s_khan_39_marshall; yaw_deg_s=0.22",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 216.64,
+      "speed_kmh": 2.75,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8394; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(696.2638549804688,-65.96110534667969); id=s_khan_39_marshall; yaw_deg_s=-0.76",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 217.62,
+      "speed_kmh": 2.73,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8383; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(695.8558349609375,-65.33499908447266); id=s_khan_39_marshall; yaw_deg_s=0.03",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 218.61,
+      "speed_kmh": 2.74,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8383; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(695.4540405273438,-64.7015609741211); id=s_khan_39_marshall; yaw_deg_s=0.07",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 219.59,
+      "speed_kmh": 2.76,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8389; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(695.0531616210938,-64.08394622802734); id=s_khan_39_marshall; yaw_deg_s=0.08",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 220.56,
+      "speed_kmh": 2.74,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8391; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(694.6376342773438,-63.447078704833984); id=s_khan_39_marshall; yaw_deg_s=-0.07",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 221.55,
+      "speed_kmh": 2.75,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8392; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(694.2316284179688,-62.82207107543945); id=s_khan_39_marshall; yaw_deg_s=0.03",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 222.53,
+      "speed_kmh": 2.74,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8396; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(693.8305053710938,-62.20482635498047); id=s_khan_39_marshall; yaw_deg_s=0.21",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 223.5,
+      "speed_kmh": 2.76,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8398; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(693.4281616210938,-61.58366775512695); id=s_khan_39_marshall; yaw_deg_s=0.08",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 224.47,
+      "speed_kmh": 2.76,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8400; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(693.006103515625,-60.92548751831055); id=s_khan_39_marshall; yaw_deg_s=0.05",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 225.47,
+      "speed_kmh": 2.75,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8414; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(692.6058959960938,-60.295040130615234); id=s_khan_39_marshall; yaw_deg_s=-0.11",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 226.45,
+      "speed_kmh": 2.73,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8415; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(692.204345703125,-59.66944885253906); id=s_khan_39_marshall; yaw_deg_s=0.37",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 227.42,
+      "speed_kmh": 3.57,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8422; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(691.7709350585938,-58.98646545410156); id=s_khan_39_marshall; yaw_deg_s=0.61",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 228.39,
+      "speed_kmh": 2.64,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8417; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(691.3417358398438,-58.31590270996094); id=s_khan_39_marshall; yaw_deg_s=0.84",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 229.38,
+      "speed_kmh": 3.58,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8442; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(690.8095092773438,-57.45064163208008); id=s_khan_39_marshall; yaw_deg_s=0.83",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 230.38,
+      "speed_kmh": 3.78,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8567; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(690.3043823242188,-56.61079788208008); id=s_khan_39_marshall; yaw_deg_s=1.7; turn_r=35.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 231.36,
+      "speed_kmh": 3.52,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8649; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(689.7802124023438,-55.70813751220703); id=s_khan_39_marshall; yaw_deg_s=-0.05",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 232.36,
+      "speed_kmh": 4.08,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8617; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(689.2001342773438,-54.7647705078125); id=s_khan_39_marshall; yaw_deg_s=-0.15",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 233.36,
+      "speed_kmh": 4.12,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8519; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(688.5789794921875,-53.700439453125); id=s_khan_39_marshall; yaw_deg_s=1.16; turn_r=56.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 234.36,
+      "speed_kmh": 4.4,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8668; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(687.9324340820312,-52.61109924316406); id=s_khan_39_marshall; yaw_deg_s=-0.6",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 235.34,
+      "speed_kmh": 5.12,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8658; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(687.1866455078125,-51.319400787353516); id=s_khan_39_marshall; yaw_deg_s=2.09; turn_r=39.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 236.34,
+      "speed_kmh": 5.19,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8676; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(686.4646606445312,-50.057716369628906); id=s_khan_39_marshall; yaw_deg_s=3.08; turn_r=26.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 237.33,
+      "speed_kmh": 5.08,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8678; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(685.756103515625,-48.82204818725586); id=s_khan_39_marshall; yaw_deg_s=1.94; turn_r=41.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 238.3,
+      "speed_kmh": 5.37,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8689; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(685.0015258789062,-47.63168716430664); id=s_khan_39_marshall; yaw_deg_s=-1.86; turn_r=46.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 239.28,
+      "speed_kmh": 4.24,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8340; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(684.1654663085938,-46.57414245605469); id=s_khan_39_marshall; yaw_deg_s=-3.37; turn_r=20.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 240.28,
+      "speed_kmh": 4.95,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7896; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(683.2548217773438,-45.63173294067383); id=s_khan_39_marshall; yaw_deg_s=1.61; turn_r=49.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 241.25,
+      "speed_kmh": 5.18,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8003; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(682.40478515625,-44.459041595458984); id=s_khan_39_marshall; yaw_deg_s=-1.04",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 242.23,
+      "speed_kmh": 5.54,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8112; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(681.5457763671875,-43.30959701538086); id=s_khan_39_marshall; yaw_deg_s=1.39; turn_r=63.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 243.2,
+      "speed_kmh": 5.44,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8211; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(680.7115478515625,-42.10255432128906); id=s_khan_39_marshall; yaw_deg_s=0.99",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 244.19,
+      "speed_kmh": 5.12,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8166; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(679.8872680664062,-40.982200622558594); id=s_khan_39_marshall; yaw_deg_s=2.49; turn_r=32.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 245.16,
+      "speed_kmh": 5.28,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8302; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(679.025634765625,-39.863739013671875); id=s_khan_39_marshall; yaw_deg_s=-1.08",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 246.14,
+      "speed_kmh": 5.22,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7886; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(678.019287109375,-38.81865692138672); id=s_khan_39_marshall; yaw_deg_s=-4.19; turn_r=19.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 247.12,
+      "speed_kmh": 5.32,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7514; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(676.9930419921875,-37.75016784667969); id=s_khan_39_marshall; yaw_deg_s=-4.89; turn_r=17.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 248.12,
+      "speed_kmh": 5.19,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7140; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(675.935302734375,-36.82869338989258); id=s_khan_39_marshall; yaw_deg_s=-2.61; turn_r=31.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 249.11,
+      "speed_kmh": 5.29,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6624; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(674.7969360351562,-35.790382385253906); id=s_khan_39_marshall; yaw_deg_s=-1.2; turn_r=69.9m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 250.11,
+      "speed_kmh": 5.53,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6443; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(673.6420288085938,-34.83754348754883); id=s_khan_39_marshall; yaw_deg_s=-1.19; turn_r=74.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 251.11,
+      "speed_kmh": 5.28,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6343; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(672.5043334960938,-33.921627044677734); id=s_khan_39_marshall; yaw_deg_s=-0.81",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 252.12,
+      "speed_kmh": 5.34,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6349; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(671.3246459960938,-32.97941970825195); id=s_khan_39_marshall; yaw_deg_s=-1.8; turn_r=47.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 253.11,
+      "speed_kmh": 5.45,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5939; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(670.1142578125,-32.130470275878906); id=s_khan_39_marshall; yaw_deg_s=1.73; turn_r=50.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 254.11,
+      "speed_kmh": 5.3,
+      "note": "fuel=0.0%; terrain=crawl_deep; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5976; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(668.8999633789062,-31.22594451904297); id=s_khan_39_marshall; yaw_deg_s=2.68; turn_r=31.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 255.11,
+      "speed_kmh": 5.57,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5800; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(667.7010498046875,-30.361103057861328); id=s_khan_39_marshall; yaw_deg_s=-3.21; turn_r=27.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 256.12,
+      "speed_kmh": 5.5,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5843; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(666.5021362304688,-29.48349380493164); id=s_khan_39_marshall; yaw_deg_s=0.58",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 257.11,
+      "speed_kmh": 5.31,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5818; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(665.3365478515625,-28.622705459594727); id=s_khan_39_marshall; yaw_deg_s=0.28",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 258.08,
+      "speed_kmh": 5.28,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5644; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(664.187255859375,-27.847068786621094); id=s_khan_39_marshall; yaw_deg_s=-1.52; turn_r=55.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 259.05,
+      "speed_kmh": 5.28,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5742; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(662.9747314453125,-27.000213623046875); id=s_khan_39_marshall; yaw_deg_s=0.7",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 260.05,
+      "speed_kmh": 5.23,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5616; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(661.7702026367188,-26.173845291137695); id=s_khan_39_marshall; yaw_deg_s=0.36",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 261.01,
+      "speed_kmh": 5.46,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5577; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(660.5421142578125,-25.360149383544922); id=s_khan_39_marshall; yaw_deg_s=-0.78",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 262.0,
+      "speed_kmh": 5.57,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5441; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(659.3142700195312,-24.5676326751709); id=s_khan_39_marshall; yaw_deg_s=-2.72; turn_r=32.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 262.98,
+      "speed_kmh": 5.46,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5447; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(658.0667724609375,-23.754554748535156); id=s_khan_39_marshall; yaw_deg_s=0.43",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 263.95,
+      "speed_kmh": 5.33,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5472; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(656.814208984375,-22.953327178955078); id=s_khan_39_marshall; yaw_deg_s=-0.19",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 264.94,
+      "speed_kmh": 5.42,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5380; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(655.6090698242188,-22.155166625976562); id=s_khan_39_marshall; yaw_deg_s=0.14",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 265.91,
+      "speed_kmh": 5.4,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5402; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(654.3375244140625,-21.351119995117188); id=s_khan_39_marshall; yaw_deg_s=0.65",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 266.89,
+      "speed_kmh": 5.57,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5361; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(653.086181640625,-20.551164627075195); id=s_khan_39_marshall; yaw_deg_s=-0.95",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 267.88,
+      "speed_kmh": 5.4,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5286; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(651.8607177734375,-19.791187286376953); id=s_khan_39_marshall; yaw_deg_s=0.55",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 268.84,
+      "speed_kmh": 5.7,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5305; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(650.6175537109375,-19.01352310180664); id=s_khan_39_marshall; yaw_deg_s=-0.52",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 269.83,
+      "speed_kmh": 5.37,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5265; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(649.4117431640625,-18.263416290283203); id=s_khan_39_marshall; yaw_deg_s=0.7",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 270.8,
+      "speed_kmh": 5.46,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5304; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(648.175048828125,-17.501129150390625); id=s_khan_39_marshall; yaw_deg_s=-2.03; turn_r=42.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 271.76,
+      "speed_kmh": 5.26,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5241; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(646.9303588867188,-16.730403900146484); id=s_khan_39_marshall; yaw_deg_s=-0.6",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 272.75,
+      "speed_kmh": 5.09,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5272; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(645.6774291992188,-15.960533142089844); id=s_khan_39_marshall; yaw_deg_s=-0.41",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 273.73,
+      "speed_kmh": 5.44,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5231; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(644.3960571289062,-15.179984092712402); id=s_khan_39_marshall; yaw_deg_s=-1.98; turn_r=43.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 274.7,
+      "speed_kmh": 5.01,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5278; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(643.1768188476562,-14.422754287719727); id=s_khan_39_marshall; yaw_deg_s=0.06",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 275.67,
+      "speed_kmh": 5.34,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5267; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(641.92431640625,-13.657492637634277); id=s_khan_39_marshall; yaw_deg_s=-0.6",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 276.66,
+      "speed_kmh": 5.08,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5307; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(640.6912841796875,-12.882755279541016); id=s_khan_39_marshall; yaw_deg_s=1.85; turn_r=43.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 277.64,
+      "speed_kmh": 5.36,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5293; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(639.4430541992188,-12.100475311279297); id=s_khan_39_marshall; yaw_deg_s=-1.35; turn_r=63.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 278.62,
+      "speed_kmh": 5.26,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5337; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(638.1365356445312,-11.290160179138184); id=s_khan_39_marshall; yaw_deg_s=2.08; turn_r=40.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 279.64,
+      "speed_kmh": 5.59,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5250; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(636.8916015625,-10.52842903137207); id=s_khan_39_marshall; yaw_deg_s=-0.38",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 280.61,
+      "speed_kmh": 5.7,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5199; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(635.6556396484375,-9.765325546264648); id=s_khan_39_marshall; yaw_deg_s=1.99; turn_r=45.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 281.61,
+      "speed_kmh": 5.54,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5251; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(634.3862915039062,-8.987898826599121); id=s_khan_39_marshall; yaw_deg_s=-0.99",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 282.61,
+      "speed_kmh": 5.41,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5126; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(633.1758422851562,-8.209500312805176); id=s_khan_39_marshall; yaw_deg_s=3.09; turn_r=27.9m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 283.59,
+      "speed_kmh": 5.68,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5460; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(631.9327392578125,-7.351226806640625); id=s_khan_39_marshall; yaw_deg_s=2.23; turn_r=40.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 284.59,
+      "speed_kmh": 5.51,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5636; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(630.771484375,-6.475444793701172); id=s_khan_39_marshall; yaw_deg_s=-1.05",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 285.58,
+      "speed_kmh": 5.31,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5843; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.5949096679688,-5.570185661315918); id=s_khan_39_marshall; yaw_deg_s=2.89; turn_r=29.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 286.58,
+      "speed_kmh": 4.86,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6188; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(628.5745239257812,-4.698144435882568); id=s_khan_39_marshall; yaw_deg_s=-4.13; turn_r=18.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 287.58,
+      "speed_kmh": 4.48,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6023; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(627.5838623046875,-3.8645708560943604); id=s_khan_39_marshall; yaw_deg_s=1.71; turn_r=41.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 288.58,
+      "speed_kmh": 5.27,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5842; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(626.4278564453125,-2.9709272384643555); id=s_khan_39_marshall; yaw_deg_s=1.93; turn_r=43.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 289.59,
+      "speed_kmh": 4.85,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6336; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(625.5367431640625,-2.162282943725586); id=s_khan_39_marshall; yaw_deg_s=-1.87; turn_r=41.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 290.58,
+      "speed_kmh": 4.43,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5948; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(624.5283203125,-1.3573498725891113); id=s_khan_39_marshall; yaw_deg_s=0.91",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 291.56,
+      "speed_kmh": 4.87,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6018; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(623.5665893554688,-0.550679087638855); id=s_khan_39_marshall; yaw_deg_s=3.48; turn_r=22.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 292.53,
+      "speed_kmh": 4.41,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6446; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(622.6370849609375,0.33513474464416504); id=s_khan_39_marshall; yaw_deg_s=0.61",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 293.51,
+      "speed_kmh": 4.78,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6596; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(621.7113037109375,1.276994228363037); id=s_khan_39_marshall; yaw_deg_s=-1.16; turn_r=65.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 294.48,
+      "speed_kmh": 4.85,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6638; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(620.7501220703125,2.190192461013794); id=s_khan_39_marshall; yaw_deg_s=1.21; turn_r=63.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 295.47,
+      "speed_kmh": 5.09,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6943; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(619.739013671875,3.288367509841919); id=s_khan_39_marshall; yaw_deg_s=3.8; turn_r=21.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 296.45,
+      "speed_kmh": 5.16,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7278; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(618.8072509765625,4.421850204467773); id=s_khan_39_marshall; yaw_deg_s=6.21; turn_r=13.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 297.45,
+      "speed_kmh": 4.95,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7650; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(617.9887084960938,5.5091166496276855); id=s_khan_39_marshall; yaw_deg_s=1.43; turn_r=55.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 298.44,
+      "speed_kmh": 5.16,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7904; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(617.2222900390625,6.611885070800781); id=s_khan_39_marshall; yaw_deg_s=1.86; turn_r=44.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 299.42,
+      "speed_kmh": 5.13,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8322; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(616.5078735351562,7.842284679412842); id=s_khan_39_marshall; yaw_deg_s=3.81; turn_r=21.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 300.39,
+      "speed_kmh": 5.09,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8613; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(615.8688354492188,9.099486351013184); id=s_khan_39_marshall; yaw_deg_s=4.16; turn_r=19.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 301.36,
+      "speed_kmh": 5.2,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8844; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(615.2119750976562,10.332372665405273); id=s_khan_39_marshall; yaw_deg_s=3.09; turn_r=26.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 302.34,
+      "speed_kmh": 5.36,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8863; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(614.5263671875,11.619901657104492); id=s_khan_39_marshall; yaw_deg_s=-1.33; turn_r=64.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 303.31,
+      "speed_kmh": 5.61,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8812; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(613.8128051757812,12.945014953613281); id=s_khan_39_marshall; yaw_deg_s=0.47",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 304.28,
+      "speed_kmh": 5.3,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8789; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(613.1329345703125,14.210312843322754); id=s_khan_39_marshall; yaw_deg_s=2.74; turn_r=30.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 305.26,
+      "speed_kmh": 5.55,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8798; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(612.4278564453125,15.503074645996094); id=s_khan_39_marshall; yaw_deg_s=2.43; turn_r=36.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 306.23,
+      "speed_kmh": 5.48,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8787; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(611.74560546875,16.77507972717285); id=s_khan_39_marshall; yaw_deg_s=2.94; turn_r=29.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 307.22,
+      "speed_kmh": 4.8,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8826; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(611.1262817382812,18.00564956665039); id=s_khan_39_marshall; yaw_deg_s=2.02; turn_r=37.9m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 308.2,
+      "speed_kmh": 5.36,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9004; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(610.5568237304688,19.360137939453125); id=s_khan_39_marshall; yaw_deg_s=3.53; turn_r=24.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 309.19,
+      "speed_kmh": 5.33,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9207; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(610.096435546875,20.713918685913086); id=s_khan_39_marshall; yaw_deg_s=2.11; turn_r=40.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 310.17,
+      "speed_kmh": 5.29,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9432; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(609.70361328125,22.08177947998047); id=s_khan_39_marshall; yaw_deg_s=3.07; turn_r=27.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 311.16,
+      "speed_kmh": 5.45,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9611; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(609.4036865234375,23.489761352539062); id=s_khan_39_marshall; yaw_deg_s=4.37; turn_r=19.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 312.12,
+      "speed_kmh": 5.11,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9752; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(609.167724609375,24.883392333984375); id=s_khan_39_marshall; yaw_deg_s=1.31; turn_r=62.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 313.11,
+      "speed_kmh": 5.29,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9864; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(609.02587890625,26.310834884643555); id=s_khan_39_marshall; yaw_deg_s=1.97; turn_r=42.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 314.08,
+      "speed_kmh": 5.16,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9941; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(608.9654541015625,27.698923110961914); id=s_khan_39_marshall; yaw_deg_s=3.04; turn_r=27.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 315.06,
+      "speed_kmh": 5.11,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9983; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(608.9468383789062,29.121442794799805); id=s_khan_39_marshall; yaw_deg_s=3.27; turn_r=24.9m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 316.03,
+      "speed_kmh": 5.1,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9998; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(608.977783203125,30.49490737915039); id=s_khan_39_marshall; yaw_deg_s=1.45; turn_r=55.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 317.0,
+      "speed_kmh": 5.19,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9999; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(609.0322265625,31.88681983947754); id=s_khan_39_marshall; yaw_deg_s=2.34; turn_r=35.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 317.97,
+      "speed_kmh": 5.06,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9993; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(609.1105346679688,33.202945709228516); id=s_khan_39_marshall; yaw_deg_s=0.87",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 318.97,
+      "speed_kmh": 4.75,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9984; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(609.2293090820312,34.51508712768555); id=s_khan_39_marshall; yaw_deg_s=1.32; turn_r=57.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 319.95,
+      "speed_kmh": 4.47,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9961; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(609.3460693359375,35.74159240722656); id=s_khan_39_marshall; yaw_deg_s=1.86; turn_r=38.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 320.94,
+      "speed_kmh": 4.69,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9951; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(609.533447265625,37.007511138916016); id=s_khan_39_marshall; yaw_deg_s=1.0",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 321.94,
+      "speed_kmh": 4.73,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9883; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(609.8004760742188,38.3707389831543); id=s_khan_39_marshall; yaw_deg_s=3.36; turn_r=22.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 322.94,
+      "speed_kmh": 4.83,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9816; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(610.1243286132812,39.74214553833008); id=s_khan_39_marshall; yaw_deg_s=5.03; turn_r=15.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 323.92,
+      "speed_kmh": 5.4,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9725; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(610.5409545898438,41.21879196166992); id=s_khan_39_marshall; yaw_deg_s=1.58; turn_r=54.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 324.92,
+      "speed_kmh": 5.21,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9619; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(610.965576171875,42.516571044921875); id=s_khan_39_marshall; yaw_deg_s=4.58; turn_r=18.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 325.89,
+      "speed_kmh": 5.29,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9528; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(611.4402465820312,43.83863830566406); id=s_khan_39_marshall; yaw_deg_s=-0.87",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 326.88,
+      "speed_kmh": 5.23,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9404; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(611.9772338867188,45.13582992553711); id=s_khan_39_marshall; yaw_deg_s=2.12; turn_r=39.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 327.86,
+      "speed_kmh": 4.81,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9246; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(612.4642944335938,46.24044418334961); id=s_khan_39_marshall; yaw_deg_s=0.53",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 328.83,
+      "speed_kmh": 4.59,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9163; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(612.9871215820312,47.360069274902344); id=s_khan_39_marshall; yaw_deg_s=1.42; turn_r=51.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 329.8,
+      "speed_kmh": 4.91,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9046; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(613.5632934570312,48.47573471069336); id=s_khan_39_marshall; yaw_deg_s=4.24; turn_r=18.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 330.78,
+      "speed_kmh": 5.12,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8886; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(614.2716064453125,49.720703125); id=s_khan_39_marshall; yaw_deg_s=1.25; turn_r=65.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 331.8,
+      "speed_kmh": 4.7,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8691; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(614.933349609375,50.80160903930664); id=s_khan_39_marshall; yaw_deg_s=0.28",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 332.78,
+      "speed_kmh": 5.41,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8621; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(615.6831665039062,52.071250915527344); id=s_khan_39_marshall; yaw_deg_s=0.83",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 333.75,
+      "speed_kmh": 5.07,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8635; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(616.3924560546875,53.2840576171875); id=s_khan_39_marshall; yaw_deg_s=-0.98",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 334.73,
+      "speed_kmh": 5.18,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8668; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(617.0965576171875,54.516719818115234); id=s_khan_39_marshall; yaw_deg_s=-0.23",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 335.7,
+      "speed_kmh": 5.37,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8673; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(617.8564453125,55.8243522644043); id=s_khan_39_marshall; yaw_deg_s=-0.96",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 336.72,
+      "speed_kmh": 5.25,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8670; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(618.6343383789062,57.19811248779297); id=s_khan_39_marshall; yaw_deg_s=2.73; turn_r=30.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 337.76,
+      "speed_kmh": 5.61,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8674; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(619.38818359375,58.50919723510742); id=s_khan_39_marshall; yaw_deg_s=-0.49",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 338.76,
+      "speed_kmh": 5.48,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8715; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(620.1219482421875,59.80421829223633); id=s_khan_39_marshall; yaw_deg_s=1.08",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 339.76,
+      "speed_kmh": 5.63,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8717; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(620.8529663085938,61.109710693359375); id=s_khan_39_marshall; yaw_deg_s=-1.88; turn_r=47.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 340.76,
+      "speed_kmh": 5.44,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8728; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(621.572021484375,62.4183464050293); id=s_khan_39_marshall; yaw_deg_s=-0.16",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 341.76,
+      "speed_kmh": 5.29,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8768; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(622.2763061523438,63.696388244628906); id=s_khan_39_marshall; yaw_deg_s=-1.27; turn_r=66.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 342.75,
+      "speed_kmh": 5.39,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8779; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(622.9678344726562,64.97869110107422); id=s_khan_39_marshall; yaw_deg_s=0.89",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 343.73,
+      "speed_kmh": 5.37,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8783; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(623.668701171875,66.26806640625); id=s_khan_39_marshall; yaw_deg_s=1.81; turn_r=47.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 344.7,
+      "speed_kmh": 5.4,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8786; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(624.3692016601562,67.57234191894531); id=s_khan_39_marshall; yaw_deg_s=-0.35",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 345.69,
+      "speed_kmh": 5.46,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8819; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(625.1187744140625,68.95023345947266); id=s_khan_39_marshall; yaw_deg_s=0.98",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 346.76,
+      "speed_kmh": 5.2,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8807; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(625.8017578125,70.23867797851562); id=s_khan_39_marshall; yaw_deg_s=-1.01",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 347.75,
+      "speed_kmh": 5.49,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8827; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(626.4928588867188,71.5474624633789); id=s_khan_39_marshall; yaw_deg_s=-0.74",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 348.73,
+      "speed_kmh": 5.44,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8851; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(627.1957397460938,72.89237976074219); id=s_khan_39_marshall; yaw_deg_s=0.28",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 349.73,
+      "speed_kmh": 5.47,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8822; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(627.8942260742188,74.19210815429688); id=s_khan_39_marshall; yaw_deg_s=-0.11",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 350.72,
+      "speed_kmh": 5.32,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8873; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(628.5714111328125,75.49076843261719); id=s_khan_39_marshall; yaw_deg_s=-0.14",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 351.7,
+      "speed_kmh": 5.43,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8874; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.0899047851562,76.76080322265625); id=s_khan_39_marshall; yaw_deg_s=-8.1; turn_r=10.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 352.72,
+      "speed_kmh": 4.74,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9368; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.3411865234375,78.04806518554688); id=s_khan_39_marshall; yaw_deg_s=-7.54; turn_r=10.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 353.7,
+      "speed_kmh": 4.46,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9761; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.42578125,79.35269927978516); id=s_khan_39_marshall; yaw_deg_s=-8.72; turn_r=8.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 354.7,
+      "speed_kmh": 4.68,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9956; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.5112915039062,80.6331787109375); id=s_khan_39_marshall; yaw_deg_s=-2.61; turn_r=28.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 355.67,
+      "speed_kmh": 4.7,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9946; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.6455078125,81.85623931884766); id=s_khan_39_marshall; yaw_deg_s=1.18; turn_r=63.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 356.66,
+      "speed_kmh": 4.59,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9952; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.7533569335938,83.05706787109375); id=s_khan_39_marshall; yaw_deg_s=-0.4",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 357.66,
+      "speed_kmh": 4.16,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9950; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.8601684570312,84.25808715820312); id=s_khan_39_marshall; yaw_deg_s=1.59; turn_r=41.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 358.64,
+      "speed_kmh": 4.99,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9969; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.8875732421875,85.5539321899414); id=s_khan_39_marshall; yaw_deg_s=-3.33; turn_r=23.9m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 359.62,
+      "speed_kmh": 4.14,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9995; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.83447265625,86.93492126464844); id=s_khan_39_marshall; yaw_deg_s=1.03",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 360.59,
+      "speed_kmh": 4.83,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9999; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.8577880859375,88.18899536132812); id=s_khan_39_marshall; yaw_deg_s=0.84",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 361.58,
+      "speed_kmh": 5.11,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9999; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.8936767578125,89.42134094238281); id=s_khan_39_marshall; yaw_deg_s=1.54; turn_r=52.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 362.55,
+      "speed_kmh": 5.51,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9995; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.9268188476562,90.7187271118164); id=s_khan_39_marshall; yaw_deg_s=0.24",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 363.53,
+      "speed_kmh": 5.22,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9992; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.9345092773438,92.09171295166016); id=s_khan_39_marshall; yaw_deg_s=-1.13",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 364.5,
+      "speed_kmh": 4.16,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9999; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.8951416015625,93.4373550415039); id=s_khan_39_marshall; yaw_deg_s=-0.25",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 365.48,
+      "speed_kmh": 4.71,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9997; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.8692016601562,94.74803924560547); id=s_khan_39_marshall; yaw_deg_s=0.32",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 366.47,
+      "speed_kmh": 5.02,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9995; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.8466186523438,96.01891326904297); id=s_khan_39_marshall; yaw_deg_s=0.44",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 367.44,
+      "speed_kmh": 5.61,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9995; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.8070068359375,97.34146881103516); id=s_khan_39_marshall; yaw_deg_s=-1.7; turn_r=52.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 368.44,
+      "speed_kmh": 5.51,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9996; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.7930908203125,98.71884155273438); id=s_khan_39_marshall; yaw_deg_s=5.08; turn_r=17.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 369.42,
+      "speed_kmh": 4.84,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9999; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.789794921875,100.06497955322266); id=s_khan_39_marshall; yaw_deg_s=-0.71",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 370.39,
+      "speed_kmh": 4.04,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9999; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.8003540039062,101.26614379882812); id=s_khan_39_marshall; yaw_deg_s=0.55",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 371.38,
+      "speed_kmh": 5.34,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-1.0000; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.8048706054688,102.69306945800781); id=s_khan_39_marshall; yaw_deg_s=1.42; turn_r=59.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 372.38,
+      "speed_kmh": 4.84,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-1.0000; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.8034057617188,104.12138366699219); id=s_khan_39_marshall; yaw_deg_s=0.17",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 373.34,
+      "speed_kmh": 4.38,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9999; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.8160400390625,105.389404296875); id=s_khan_39_marshall; yaw_deg_s=0.5",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 374.34,
+      "speed_kmh": 5.17,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9999; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.8099975585938,106.68480682373047); id=s_khan_39_marshall; yaw_deg_s=-0.21",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 375.31,
+      "speed_kmh": 4.26,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-1.0000; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.806396484375,107.97618103027344); id=s_khan_39_marshall; yaw_deg_s=0.18",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 376.31,
+      "speed_kmh": 4.76,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-1.0000; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.7969360351562,109.28668212890625); id=s_khan_39_marshall; yaw_deg_s=-0.63",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 377.28,
+      "speed_kmh": 5.24,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-1.0000; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.811279296875,110.63944244384766); id=s_khan_39_marshall; yaw_deg_s=1.66; turn_r=50.2m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 378.26,
+      "speed_kmh": 4.87,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-1.0000; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.8184814453125,111.91492462158203); id=s_khan_39_marshall; yaw_deg_s=-0.09",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 379.25,
+      "speed_kmh": 4.8,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9999; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.8087768554688,113.15821075439453); id=s_khan_39_marshall; yaw_deg_s=-2.58; turn_r=29.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 380.23,
+      "speed_kmh": 4.61,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9995; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.6618041992188,114.4474868774414); id=s_khan_39_marshall; yaw_deg_s=-4.36; turn_r=16.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 381.22,
+      "speed_kmh": 4.61,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9947; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(629.3764038085938,115.66229248046875); id=s_khan_39_marshall; yaw_deg_s=-9.79; turn_r=7.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 382.2,
+      "speed_kmh": 4.96,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9700; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(628.8619995117188,116.84443664550781); id=s_khan_39_marshall; yaw_deg_s=-2.14; turn_r=37.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 383.19,
+      "speed_kmh": 4.54,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9404; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(628.3268432617188,118.08240509033203); id=s_khan_39_marshall; yaw_deg_s=-1.23; turn_r=58.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 384.19,
+      "speed_kmh": 5.18,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9302; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(627.8079833984375,119.24111938476562); id=s_khan_39_marshall; yaw_deg_s=-4.46; turn_r=18.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 385.19,
+      "speed_kmh": 4.01,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.9015; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(627.1988525390625,120.22675323486328); id=s_khan_39_marshall; yaw_deg_s=-3.41; turn_r=18.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 386.17,
+      "speed_kmh": 4.12,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8677; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(626.5570068359375,121.175048828125); id=s_khan_39_marshall; yaw_deg_s=-3.17; turn_r=20.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 387.16,
+      "speed_kmh": 3.55,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.8217; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(625.927490234375,121.98394012451172); id=s_khan_39_marshall; yaw_deg_s=-3.75; turn_r=15.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 388.16,
+      "speed_kmh": 3.73,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7813; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(625.2990112304688,122.71713256835938); id=s_khan_39_marshall; yaw_deg_s=-1.24; turn_r=48.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 389.14,
+      "speed_kmh": 3.58,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7539; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(624.61865234375,123.40081024169922); id=s_khan_39_marshall; yaw_deg_s=-3.6; turn_r=15.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 390.16,
+      "speed_kmh": 2.28,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7219; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(624.5054931640625,123.51377868652344); id=s_khan_39_marshall; yaw_deg_s=0.03",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 391.17,
+      "speed_kmh": 0.01,
+      "note": "fuel=0.0%; terrain=idle; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7147; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(624.3873901367188,123.62622833251953); id=s_khan_39_marshall; yaw_deg_s=-1.33",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 392.16,
+      "speed_kmh": 3.4,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7084; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(623.6852416992188,124.2826919555664); id=s_khan_39_marshall; yaw_deg_s=-4.71; turn_r=11.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 393.16,
+      "speed_kmh": 3.39,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6580; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(622.9193115234375,124.81869506835938); id=s_khan_39_marshall; yaw_deg_s=-2.74; turn_r=19.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 394.14,
+      "speed_kmh": 3.4,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6096; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(622.1416625976562,125.3021469116211); id=s_khan_39_marshall; yaw_deg_s=-1.83; turn_r=29.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 395.12,
+      "speed_kmh": 3.41,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5899; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(621.3408813476562,125.79067993164062); id=s_khan_39_marshall; yaw_deg_s=-3.29; turn_r=16.5m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 396.11,
+      "speed_kmh": 3.36,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5631; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(620.4779663085938,126.26972198486328); id=s_khan_39_marshall; yaw_deg_s=-1.86; turn_r=28.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 397.09,
+      "speed_kmh": 3.61,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5333; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(619.5608520507812,126.72350311279297); id=s_khan_39_marshall; yaw_deg_s=-3.89; turn_r=14.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 398.11,
+      "speed_kmh": 3.99,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.4638; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(618.5888671875,127.14051818847656); id=s_khan_39_marshall; yaw_deg_s=-2.57; turn_r=24.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 399.11,
+      "speed_kmh": 3.86,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.4365; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(617.6461181640625,127.5); id=s_khan_39_marshall; yaw_deg_s=-3.7; turn_r=16.6m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 400.11,
+      "speed_kmh": 3.27,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.3979; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(616.7507934570312,127.82292175292969); id=s_khan_39_marshall; yaw_deg_s=-2.36; turn_r=22.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 401.11,
+      "speed_kmh": 3.34,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.3574; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(615.8670654296875,128.1729278564453); id=s_khan_39_marshall; yaw_deg_s=-0.64",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 402.09,
+      "speed_kmh": 3.57,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.3456; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(614.9647216796875,128.50421142578125); id=s_khan_39_marshall; yaw_deg_s=0.36",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 403.09,
+      "speed_kmh": 3.36,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.3526; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(614.0614013671875,128.88479614257812); id=s_khan_39_marshall; yaw_deg_s=0.62",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 404.09,
+      "speed_kmh": 3.59,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.3497; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(613.125,129.22779846191406); id=s_khan_39_marshall; yaw_deg_s=0.23",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 405.08,
+      "speed_kmh": 3.38,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.3729; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(612.23974609375,129.59048461914062); id=s_khan_39_marshall; yaw_deg_s=-0.95",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 406.06,
+      "speed_kmh": 3.39,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.3861; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(611.3935546875,129.9715118408203); id=s_khan_39_marshall; yaw_deg_s=1.13",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 407.05,
+      "speed_kmh": 2.98,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.3963; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(610.5369873046875,130.3368682861328); id=s_khan_39_marshall; yaw_deg_s=-0.56",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 408.05,
+      "speed_kmh": 3.48,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.3818; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(609.6354370117188,130.6998748779297); id=s_khan_39_marshall; yaw_deg_s=1.23; turn_r=45.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 409.03,
+      "speed_kmh": 3.26,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.3813; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(608.7520141601562,131.05264282226562); id=s_khan_39_marshall; yaw_deg_s=0.29",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 410.03,
+      "speed_kmh": 3.39,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.3562; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(607.8519897460938,131.313720703125); id=s_khan_39_marshall; yaw_deg_s=-3.57; turn_r=15.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 411.01,
+      "speed_kmh": 3.65,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.2882; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(606.9285278320312,131.5498046875); id=s_khan_39_marshall; yaw_deg_s=-3.61; turn_r=16.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 412.0,
+      "speed_kmh": 3.28,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.2885; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(606.0711669921875,131.92735290527344); id=s_khan_39_marshall; yaw_deg_s=7.33; turn_r=7.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 412.98,
+      "speed_kmh": 3.67,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.3728; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(605.1914672851562,132.42674255371094); id=s_khan_39_marshall; yaw_deg_s=6.54; turn_r=8.9m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 413.98,
+      "speed_kmh": 3.28,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.4544; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(604.3796997070312,133.0511474609375); id=s_khan_39_marshall; yaw_deg_s=8.99; turn_r=5.8m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 414.98,
+      "speed_kmh": 3.34,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5652; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(603.6367797851562,133.6702117919922); id=s_khan_39_marshall; yaw_deg_s=-0.29",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 415.98,
+      "speed_kmh": 3.13,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5747; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(602.8583984375,134.24008178710938); id=s_khan_39_marshall; yaw_deg_s=-0.95",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 416.98,
+      "speed_kmh": 3.64,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5813; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(602.0958862304688,134.85137939453125); id=s_khan_39_marshall; yaw_deg_s=2.84; turn_r=20.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 417.98,
+      "speed_kmh": 3.43,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5790; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(601.35009765625,135.46629333496094); id=s_khan_39_marshall; yaw_deg_s=6.92; turn_r=7.9m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 419.0,
+      "speed_kmh": 3.51,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.5942; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(600.5936279296875,136.1175079345703); id=s_khan_39_marshall; yaw_deg_s=1.54; turn_r=36.4m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 419.98,
+      "speed_kmh": 3.28,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6305; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(599.9241333007812,136.71786499023438); id=s_khan_39_marshall; yaw_deg_s=-0.59",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 420.98,
+      "speed_kmh": 3.32,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6391; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(599.2933959960938,137.31332397460938); id=s_khan_39_marshall; yaw_deg_s=0.21",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 421.97,
+      "speed_kmh": 3.37,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6502; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(598.6723022460938,137.8974151611328); id=s_khan_39_marshall; yaw_deg_s=-0.41",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 422.95,
+      "speed_kmh": 2.81,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6738; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(598.0977172851562,138.42620849609375); id=s_khan_39_marshall; yaw_deg_s=-1.94",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 423.94,
+      "speed_kmh": 2.42,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6607; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(597.5211181640625,138.9514617919922); id=s_khan_39_marshall; yaw_deg_s=-4.98",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 424.89,
+      "speed_kmh": 3.46,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6340; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(596.8972778320312,139.4763946533203); id=s_khan_39_marshall; yaw_deg_s=2.95; turn_r=18.7m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 425.86,
+      "speed_kmh": 3.06,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6533; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(596.3439331054688,140.00592041015625); id=s_khan_39_marshall; yaw_deg_s=-0.2",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 426.83,
+      "speed_kmh": 2.91,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6553; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(595.7354125976562,140.61236572265625); id=s_khan_39_marshall; yaw_deg_s=1.17",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 427.81,
+      "speed_kmh": 3.01,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6489; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(595.0906372070312,141.2494659423828); id=s_khan_39_marshall; yaw_deg_s=2.51; turn_r=19.1m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 428.81,
+      "speed_kmh": 3.43,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.6687; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(594.5084228515625,141.9310760498047); id=s_khan_39_marshall; yaw_deg_s=4.55; turn_r=12.0m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 429.83,
+      "speed_kmh": 3.27,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.200; surf_avg=0.804; contact=0.804; deform=-0.7418; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(594.0725708007812,142.61410522460938); id=s_khan_39_marshall; yaw_deg_s=-1.66; turn_r=31.3m",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 430.8,
+      "speed_kmh": 2.35,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.156; surf_avg=0.688; contact=0.688; deform=-0.7598; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(593.5479736328125,143.28131103515625); id=s_khan_39_marshall; yaw_deg_s=-2.32",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 431.76,
+      "speed_kmh": 3.55,
+      "note": "fuel=0.0%; terrain=crawl; surface=hard; kind=hard; grip=0.156; surf_avg=0.688; contact=0.688; deform=-0.7098; mud_grade=dry_hard; load=vacio; mass_havok=1780; pos=(592.8965454101562,143.90887451171875); id=s_khan_39_marshall; yaw_deg_s=-0.29",
+      "terrain_kind": "hard",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 432.73,
+      "speed_kmh": 3.58,
+      "note": "fuel=0.0%; terrain=crawl; surface=mixed; kind=mixed; grip=0.113; surf_avg=0.573; contact=0.573; deform=-0.7161; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(592.2754516601562,144.5967254638672); id=s_khan_39_marshall; yaw_deg_s=2.25; turn_r=25.3m",
+      "terrain_kind": "mixed",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 433.7,
+      "speed_kmh": 3.19,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.069; surf_avg=0.457; contact=0.457; deform=-0.7254; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(591.6980590820312,145.28590393066406); id=s_khan_39_marshall; yaw_deg_s=4.21; turn_r=12.0m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 434.67,
+      "speed_kmh": 3.6,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.069; surf_avg=0.457; contact=0.457; deform=-0.7363; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(591.1114501953125,146.06591796875); id=s_khan_39_marshall; yaw_deg_s=6.34; turn_r=9.0m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 435.62,
+      "speed_kmh": 3.4,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8055; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(590.6040649414062,146.88754272460938); id=s_khan_39_marshall; yaw_deg_s=0.48",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 436.59,
+      "speed_kmh": 3.52,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8203; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(590.0388793945312,147.6757049560547); id=s_khan_39_marshall; yaw_deg_s=4.37; turn_r=12.8m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 437.56,
+      "speed_kmh": 3.86,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8212; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(589.4805908203125,148.5635528564453); id=s_khan_39_marshall; yaw_deg_s=-1.92; turn_r=31.9m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 438.53,
+      "speed_kmh": 3.8,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8319; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(588.9053344726562,149.47396850585938); id=s_khan_39_marshall; yaw_deg_s=0.35",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 439.5,
+      "speed_kmh": 4.06,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8271; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(588.3430786132812,150.31094360351562); id=s_khan_39_marshall; yaw_deg_s=-0.29",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 440.45,
+      "speed_kmh": 3.16,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8447; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(587.8345947265625,151.15484619140625); id=s_khan_39_marshall; yaw_deg_s=1.01",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 441.41,
+      "speed_kmh": 3.92,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8518; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(587.3512573242188,151.98204040527344); id=s_khan_39_marshall; yaw_deg_s=1.88; turn_r=33.2m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 442.38,
+      "speed_kmh": 3.43,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8408; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(586.8248901367188,152.7583770751953); id=s_khan_39_marshall; yaw_deg_s=-0.72",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 443.34,
+      "speed_kmh": 3.14,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8448; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(586.3712158203125,153.52288818359375); id=s_khan_39_marshall; yaw_deg_s=-0.21",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 444.3,
+      "speed_kmh": 3.26,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8400; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(585.8651123046875,154.2343292236328); id=s_khan_39_marshall; yaw_deg_s=-4.44; turn_r=11.7m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 445.25,
+      "speed_kmh": 3.32,
+      "note": "fuel=0.0%; terrain=crawl_deep; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8338; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(585.3993530273438,154.9827423095703); id=s_khan_39_marshall; yaw_deg_s=1.41; turn_r=37.5m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 446.22,
+      "speed_kmh": 3.4,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8311; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(584.9464721679688,155.6617889404297); id=s_khan_39_marshall; yaw_deg_s=-0.45",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 447.19,
+      "speed_kmh": 2.79,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8273; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(584.43408203125,156.34466552734375); id=s_khan_39_marshall; yaw_deg_s=-2.05",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 448.14,
+      "speed_kmh": 3.34,
+      "note": "fuel=0.0%; terrain=crawl_deep; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8126; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(583.9517822265625,157.0003204345703); id=s_khan_39_marshall; yaw_deg_s=-1.32; turn_r=40.4m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 449.09,
+      "speed_kmh": 3.07,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.7943; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(583.4860229492188,157.58961486816406); id=s_khan_39_marshall; yaw_deg_s=-6.16; turn_r=7.9m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 450.05,
+      "speed_kmh": 2.8,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.7833; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(583.115966796875,158.22735595703125); id=s_khan_39_marshall; yaw_deg_s=4.89",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 451.01,
+      "speed_kmh": 3.19,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8281; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(582.7970581054688,158.80357360839844); id=s_khan_39_marshall; yaw_deg_s=7.28; turn_r=7.0m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 451.95,
+      "speed_kmh": 2.18,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8758; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(582.5908813476562,159.5535125732422); id=s_khan_39_marshall; yaw_deg_s=-3.55",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 452.92,
+      "speed_kmh": 2.77,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8814; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(582.2036743164062,160.23536682128906); id=s_khan_39_marshall; yaw_deg_s=3.63",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 453.88,
+      "speed_kmh": 2.82,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8916; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(581.849853515625,160.9531707763672); id=s_khan_39_marshall; yaw_deg_s=1.34",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 454.84,
+      "speed_kmh": 2.65,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.9007; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(581.4915771484375,161.71315002441406); id=s_khan_39_marshall; yaw_deg_s=0.55",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 455.8,
+      "speed_kmh": 3.53,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8961; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(581.046630859375,162.46885681152344); id=s_khan_39_marshall; yaw_deg_s=-2.5; turn_r=22.5m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 456.76,
+      "speed_kmh": 3.21,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8803; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(580.6116943359375,163.23243713378906); id=s_khan_39_marshall; yaw_deg_s=0.21",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 457.73,
+      "speed_kmh": 3.66,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8787; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(580.16357421875,164.0907440185547); id=s_khan_39_marshall; yaw_deg_s=0.29",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 458.72,
+      "speed_kmh": 3.65,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8805; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(579.69580078125,164.98199462890625); id=s_khan_39_marshall; yaw_deg_s=0.17",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 459.67,
+      "speed_kmh": 3.91,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8846; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(579.2716064453125,165.8626708984375); id=s_khan_39_marshall; yaw_deg_s=-0.34",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 460.64,
+      "speed_kmh": 3.46,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8913; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(578.834716796875,166.773193359375); id=s_khan_39_marshall; yaw_deg_s=3.04; turn_r=18.1m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 461.61,
+      "speed_kmh": 3.72,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.9040; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(578.4457397460938,167.7011260986328); id=s_khan_39_marshall; yaw_deg_s=1.59; turn_r=37.2m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 462.58,
+      "speed_kmh": 3.92,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.9150; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(578.0632934570312,168.6643524169922); id=s_khan_39_marshall; yaw_deg_s=-0.75",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 463.59,
+      "speed_kmh": 3.47,
+      "note": "fuel=0.0%; terrain=crawl; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.9224; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(577.7028198242188,169.5037384033203); id=s_khan_39_marshall; yaw_deg_s=-6.74; turn_r=8.2m",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 464.56,
+      "speed_kmh": 1.47,
+      "note": "fuel=0.0%; terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8765; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(577.6766357421875,169.54978942871094); id=s_khan_39_marshall; yaw_deg_s=-0.09",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    },
+    {
+      "t_s": 465.48,
+      "speed_kmh": 0.05,
+      "note": "fuel=0.0%; terrain=idle; surface=mud; kind=mud; grip=0.026; surf_avg=0.341; contact=0.341; deform=-0.8685; mud_grade=mud_deep; load=vacio; mass_havok=1780; pos=(577.6815185546875,169.5453338623047); id=s_khan_39_marshall; yaw_deg_s=-0.05",
+      "terrain_kind": "mud",
+      "terrain_map": ""
+    }
+  ]
+}

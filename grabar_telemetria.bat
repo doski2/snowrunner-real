@@ -1,5 +1,15 @@
 @echo off
+setlocal EnableDelayedExpansion
 cd /d "%~dp0"
+set ERR=0
+
+set PY=python
+where python >nul 2>&1 || set PY=py -3
+where python >nul 2>&1 || where py >nul 2>&1 || (
+    echo Python no encontrado en PATH. Instala Python o usa "py -3".
+    set ERR=1
+    goto PAUSE_END
+)
 
 if /i "%1"=="probe" goto PROBE
 if /i "%1"=="snap" goto SNAP
@@ -16,25 +26,25 @@ goto RECORD
 
 :PROBE
 echo === Preflight CE (vehiculo + terreno + carga) ===
-python grabar_ce.py --probe
-set ERR=%ERRORLEVEL%
-if %ERR% neq 0 goto PAUSE_ERR
+%PY% grabar_ce.py --probe
+set ERR=!ERRORLEVEL!
+if !ERR! neq 0 goto PAUSE_ERR
 echo.
-python cheat_engine/scan_wheel_substance.py
+%PY% cheat_engine/scan_wheel_substance.py
 if errorlevel 1 set ERR=1
 echo.
-python cheat_engine/scan_cargo.py
+%PY% cheat_engine/scan_cargo.py
 if errorlevel 1 set ERR=1
 goto PAUSE_ERR
 
 :CARGO
-python cheat_engine/scan_cargo.py %2 %3 %4 %5 %6 %7 %8 %9
-set ERR=%ERRORLEVEL%
+%PY% cheat_engine/scan_cargo.py %2 %3 %4 %5 %6 %7 %8 %9
+set ERR=!ERRORLEVEL!
 goto PAUSE_ERR
 
 :DRIVE
-python cheat_engine/scan_drive_state.py %2 %3 %4 %5 %6 %7 %8 %9
-set ERR=%ERRORLEVEL%
+%PY% cheat_engine/scan_drive_state.py %2 %3 %4 %5 %6 %7 %8 %9
+set ERR=!ERRORLEVEL!
 goto PAUSE_ERR
 
 :DRIVE_SNAP
@@ -54,10 +64,13 @@ if "%2"=="" (
 echo === Snapshot DRIVE discover: %2 ===
 echo Motor ON, 0 km/h, togglear diff/L segun el nombre del snap.
 echo.
-python grabar_ce.py --probe
-if errorlevel 1 goto PAUSE_ERR
-python cheat_engine/scan_drive_state.py --discover --save %2
-set ERR=%ERRORLEVEL%
+%PY% grabar_ce.py --probe
+if errorlevel 1 (
+    set ERR=1
+    goto PAUSE_ERR
+)
+%PY% cheat_engine/scan_drive_state.py --discover --save %2
+set ERR=!ERRORLEVEL!
 goto PAUSE_ERR
 
 :DRIVE_DIFF
@@ -67,8 +80,8 @@ if "%3"=="" (
     echo   ej. grabar_telemetria.bat drive_diff diff_on low_on
     exit /b 1
 )
-python cheat_engine/scan_drive_state.py --diff %2 %3
-set ERR=%ERRORLEVEL%
+%PY% cheat_engine/scan_drive_state.py --diff %2 %3
+set ERR=!ERRORLEVEL!
 goto PAUSE_ERR
 
 :MOTOR
@@ -82,10 +95,13 @@ echo   - Mapa: asfalto recto, vacio, WOT ~60 s (mapa auto-detectado)
 echo.
 echo Ctrl+C para parar - importa con protocolo f1_asfalto_aat8v
 echo.
-python grabar_ce.py --probe
-if errorlevel 1 goto PAUSE_ERR
-python grabar_ce.py --import --compare --index --live --protocol f1_asfalto_aat8v --baseline ck_aat8v_f1 %2 %3 %4 %5 %6 %7 %8 %9
-set ERR=%ERRORLEVEL%
+%PY% grabar_ce.py --probe
+if errorlevel 1 (
+    set ERR=1
+    goto PAUSE_ERR
+)
+%PY% grabar_ce.py --import --compare --index --live --protocol f1_asfalto_aat8v --baseline ck_aat8v_f1 %2 %3 %4 %5 %6 %7 %8 %9
+set ERR=!ERRORLEVEL!
 goto PAUSE_ERR
 
 :MOTOR_SCOUT
@@ -94,10 +110,13 @@ echo.
 echo Setup: solo motor AAT-6V y neumatico HS I; diff siempre; caja stock; vacio.
 echo   Asfalto recto WOT ~60 s — Ctrl+C para parar
 echo.
-python grabar_ce.py --probe
-if errorlevel 1 goto PAUSE_ERR
-python grabar_ce.py --import --compare --index --live --protocol s8_f1_asfalto_aat6v --baseline s8_aat6v_f1 %2 %3 %4 %5 %6 %7 %8 %9
-set ERR=%ERRORLEVEL%
+%PY% grabar_ce.py --probe
+if errorlevel 1 (
+    set ERR=1
+    goto PAUSE_ERR
+)
+%PY% grabar_ce.py --import --compare --index --live --protocol s8_f1_asfalto_aat6v --baseline s8_aat6v_f1 %2 %3 %4 %5 %6 %7 %8 %9
+set ERR=!ERRORLEVEL!
 goto PAUSE_ERR
 
 :SNAP
@@ -108,10 +127,13 @@ if "%2"=="" (
     exit /b 1
 )
 echo === Snapshot TERR: %2 ===
-python grabar_ce.py --probe
-if errorlevel 1 goto PAUSE_ERR
-python cheat_engine/scan_wheel_substance.py --save %2
-set ERR=%ERRORLEVEL%
+%PY% grabar_ce.py --probe
+if errorlevel 1 (
+    set ERR=1
+    goto PAUSE_ERR
+)
+%PY% cheat_engine/scan_wheel_substance.py --save %2
+set ERR=!ERRORLEVEL!
 goto PAUSE_ERR
 
 :DIFF
@@ -120,13 +142,13 @@ if "%3"=="" (
     echo   ej. grabar_telemetria.bat diff tierra_seca barro_ligero
     exit /b 1
 )
-python cheat_engine/scan_wheel_substance.py --diff %2 %3
-set ERR=%ERRORLEVEL%
+%PY% cheat_engine/scan_wheel_substance.py --diff %2 %3
+set ERR=!ERRORLEVEL!
 goto PAUSE_ERR
 
 :TIRE
-python cheat_engine/scan_wheel_addons.py %2 %3 %4 %5 %6 %7 %8 %9
-set ERR=%ERRORLEVEL%
+%PY% cheat_engine/scan_wheel_addons.py %2 %3 %4 %5 %6 %7 %8 %9
+set ERR=!ERRORLEVEL!
 goto PAUSE_ERR
 
 :RECORD
@@ -153,27 +175,28 @@ echo   grabar_telemetria.bat motor_scout
 echo.
 
 echo Preflight CE...
-python grabar_ce.py --probe
+%PY% grabar_ce.py --probe
 if errorlevel 1 (
     echo.
     echo Abortado: entra al mapa conduciendo y reintenta.
+    set ERR=1
     goto PAUSE_ERR
 )
 echo.
 echo === Carga bastidor / remolque (quieto 30 s si F3) ===
-python cheat_engine/scan_cargo.py
+%PY% cheat_engine/scan_cargo.py
 echo.
 echo Si vas a grabar F3 con bastidor lleno y load_hint=vacio o payload ~0:
 echo   - Para el camion quieto ~30 s y repite: grabar_telemetria.bat cargo
 echo   - No sigas hasta ver cargado y payload_kg ^> 300
 echo.
 
-python grabar_ce.py --import --compare --auto --index --live --baseline play_free_v1 %*
-set ERR=%ERRORLEVEL%
+%PY% grabar_ce.py --import --compare --auto --index --live --baseline play_free_v1 %*
+set ERR=!ERRORLEVEL!
 
 echo.
-if %ERR% neq 0 (
-    echo Termino con error %ERR%.
+if !ERR! neq 0 (
+    echo Termino con error !ERR!.
     echo Si CSV vacio: grabar_telemetria.bat probe
 ) else (
     echo Listo.
@@ -185,7 +208,7 @@ goto PAUSE_END
 
 :PAUSE_ERR
 echo.
-if %ERR% neq 0 echo Termino con error %ERR%.
+if !ERR! neq 0 echo Termino con error !ERR!.
 :PAUSE_END
 pause
-exit /b %ERR%
+exit /b !ERR!

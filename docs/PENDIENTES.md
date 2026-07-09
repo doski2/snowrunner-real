@@ -37,6 +37,7 @@ telemetria/sesiones/
   marshall/     ← ce_km_*.json
   mh9500/
   scout800/     ← ce_s8_*.json
+  t813/         ← ce_t813_*.json
   _archivo/     ← sesiones inválidas / histórico
 ```
 
@@ -52,6 +53,7 @@ telemetria/sesiones/
 | KHAN 39 Marshall | `marshall` | F1 asfalto (F2 barro **hecho**) | `camiones/marshall/FASES.md` |
 | GMC MH9500 | `mh9500` | Re-grabar `mh_f2_barro_offroad` | `camiones/mh9500/FASES.md` |
 | International Scout 800 | `scout800` | F1 AAT-6V *(en espera)* | `camiones/scout800/FASES.md` |
+| Tatra T813 | `t813` | **F1 asfalto** (nuevo) | `camiones/t813/FASES.md` |
 
 **Mapa activo:** auto-detectado (`datos/map_detect.py`: CSV grabación → terreno nieve/cielo → posición). Solo override: `--map "North Port"`.
 
@@ -213,7 +215,7 @@ CE: `s_khan_39_marshall` · Masa mod **1780 kg** · **Kr 135-T** (setup objetivo
 
 | ID | Fase | Estado | Protocolo | Qué probar | Cierre |
 |----|------|--------|-----------|------------|--------|
-| KM-F2 | 2 | [x] | `km_f2_barro_tm2` | Barro, TM II, L+diff | MAE mud **5.3** — Kr **104** (`20260630`); re-calibrar con Kr 135-T opcional |
+| KM-F2 | 2 | [x] | `km_f2_barro_tm2` | Barro, TM II, L+diff | MAE mud **5.3** Michigan Kr104 (`20260630`); Alaska Kr135 ref. `20260706` |
 | KM-F1 | 1 | [ ] | `km_f1_asfalto` | Asfalto TM II, **Kr 135-T** | vmax; caja usada |
 | KM-F3 | 3 | [ ] | `km_f3_carga` | Remolque scout + carga | `scan_cargo` |
 | KM-CAJA | extra | [ ] | — | Caja **SnowRunner** (`g_scout_offroad`) en taller | L vs H barro/asfalto |
@@ -222,6 +224,7 @@ CE: `s_khan_39_marshall` · Masa mod **1780 kg** · **Kr 135-T** (setup objetivo
 
 | Archivo | Protocolo | MAE / notas |
 |---------|-----------|-------------|
+| `telemetria/sesiones/marshall/ce_km_f2_barro_tm2_20260706_213326.json` | `km_f2_barro_tm2` | **MAE sesión 3.8** / mud ~**7.9** (859 muestras); North Port; 81% mud + nieve/hielo; vmax ~6 km/h |
 | `telemetria/sesiones/marshall/ce_km_f2_barro_tm2_20260630_213602.json` | `km_f2_barro_tm2` | **MAE mud 5.3** (1384 muestras); Black River; motor **Kr 104** |
 | `telemetria/sesiones/marshall/ce_km_f2_barro_tm2_20260629_222234.json` | `km_f2_barro_tm2` | Archivo antiguo (MAE ~10–12); usar la de 202606-30 |
 
@@ -233,6 +236,38 @@ Setup: Kr 104, TM II, diff, L, Michigan Black River, vacío
 MAE mud=5.3 — mejor que sesión 20260629
 Revisar: session_context dice suspensión default, no reptadora — ¿setup en juego?
 Siguiente: KM-F1 asfalto con Kr 135-T (`ru_scout_old_engine_1`); sim `km_kr135`
+
+2026-07-06 | KM-F2 | km_f2_barro_tm2 | ce_km_f2_barro_tm2_20260706_213326
+Setup: TM II, diff, L, North Port Alaska (auto csv_map), vacío 1780 kg
+CE: load=vacio 1080× | mud 877, ice 89, snow 82 — exploración Alaska, no tramo barro limpio
+Motor meta: km_kr135 (protocolo) pero catalogo `engine_name_xml=ru_scout_old_engine_0` — confirmar Kr 135-T montado con probe
+Resultado: MAE sesión 3.8 | tramos mud MAE 4.9–14.9 (pond. ~7.9) | v30 juego ~3.6 | v30 sim 22.7 (Kr135 sin calibrar Alaska)
+vs Michigan 20260630: MAE mud 5.3, vmax ~12 km/h — Alaska más lento (nieve/hielo/barro)
+Siguiente: KM-F1 asfalto; opcional F2 Michigan con Kr 135-T para comparar motor
+```
+
+---
+
+## Tatra T813 (`t813`)
+
+CE: `s_tatra_t813` · Masa mod **14571 kg** · **KZGT-8 490** · JAT MSH I 50\" · 8×8 + diff
+
+| ID | Fase | Estado | Protocolo | Qué probar | Cierre |
+|----|------|--------|-----------|------------|--------|
+| T813-F1 | 1 | [ ] | `t813_f1_asfalto` | Asfalto MSH I, KZGT, diff | vmax; 0→97 km/h |
+| T813-F2 | 2 | [ ] | `t813_f2_barro_msh` | Barro marcha baja + diff | Calibrar `T813_MUD_*` |
+| T813-F3 | 3 | [ ] | `t813_f3_carga` | Semi cargado barro | `grabar_telemetria.bat cargo` |
+
+**Sesiones CE**
+
+| Archivo | Protocolo | MAE / notas |
+|---------|-----------|-------------|
+| *(ninguna indexada aún)* | | Aplicar mod: `python apply_mod.py --vehicle t813` |
+
+**Comentarios**
+
+```
+(fecha) T813-F1 — 
 ```
 
 ---

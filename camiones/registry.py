@@ -10,6 +10,7 @@ from camiones.kodiak.patches import PATCHES as KODIAK_PATCHES
 from camiones.marshall.patches import PATCHES as MARSHALL_PATCHES
 from camiones.mh9500.patches import PATCHES as MH9500_PATCHES
 from camiones.scout800.patches import PATCHES as SCOUT800_PATCHES
+from camiones.t813.patches import PATCHES as T813_PATCHES
 
 PatchRules = dict[str, list[tuple[str, str]]]
 
@@ -21,6 +22,7 @@ __all__ = [
     "MARSHALL_PATCHES",
     "MH9500_PATCHES",
     "SCOUT800_PATCHES",
+    "T813_PATCHES",
     "PatchRules",
     "VEHICLES",
     "VehicleMod",
@@ -105,6 +107,16 @@ VEHICLES: dict[str, VehicleMod] = {
         ce_id="s_international_scout_800",
         notes="Scout 4x4 ~1960s; AAT-6V; diff Always; HS I 33\"",
     ),
+    "t813": VehicleMod(
+        id="t813",
+        label="Tatra T813",
+        game_id="tatra_t813",
+        xml_file="tatra_t813.xml",
+        patches=T813_PATCHES,
+        sim_module="camiones.t813.simulador",
+        ce_id="s_tatra_t813",
+        notes="HEAVY 8x8; KZGT-8 490; JAT MSH I 50\"; diff instalado",
+    ),
 }
 
 
@@ -140,6 +152,8 @@ _CE_ID_ALIASES: dict[str, str] = {
     "chevrolet_kodiakc70": "kodiak",
     "s_international_scout_800": "scout800",
     "international_scout_800": "scout800",
+    "s_tatra_t813": "t813",
+    "tatra_t813": "t813",
 }
 
 
@@ -164,6 +178,7 @@ EMPTY_MASS_KG: dict[str, float] = {
     "marshall": 1780.0,
     "kodiak": 7900.0,
     "scout800": 2350.0,
+    "t813": 14571.0,
 }
 
 

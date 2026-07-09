@@ -54,6 +54,11 @@ class TestCeImport(unittest.TestCase):
         self.assertEqual(suggest_protocol("marshall", "f1_asfalto_i6"), "km_f1_asfalto")
         self.assertIsNone(suggest_protocol("marshall", "km_f2_barro_tm2"))
 
+    def test_suggest_protocol_t813(self) -> None:
+        self.assertEqual(suggest_protocol("t813", "f2_barro_offroad"), "t813_f2_barro_msh")
+        self.assertEqual(suggest_protocol("t813", "f1_asfalto_i6"), "t813_f1_asfalto")
+        self.assertEqual(suggest_protocol("t813", "f3_carga_barro"), "t813_f3_carga")
+
     def test_compare_imported_session(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             path = os.path.join(tmp, "log.csv")

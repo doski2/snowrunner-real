@@ -22,7 +22,9 @@ from repack_pak import BACKUP, split_zip_tail
 ROOT = os.path.dirname(os.path.abspath(__file__))
 CATALOGO_DIR = os.path.join(ROOT, "datos", "catalogo")
 
-MAIN_TRUCK_RE = re.compile(r"\[media\]/classes/trucks/[^/]+\.xml$")
+MAIN_TRUCK_RE = re.compile(
+    r"\[media\](?:/_dlc/[^/]+)?/classes/trucks/[^/]+\.xml$"
+)
 MASS_RE = re.compile(r'Mass="([0-9.]+)"')
 COG_RE = re.compile(r'CenterOfMassOffset="\(([^"]+)\)"')
 ATTR_RE = re.compile(r'(\w+)="([^"]*)"')

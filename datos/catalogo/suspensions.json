@@ -1,7 +1,7 @@
 {
   "source": "C:\\Users\\doski\\snowrunner real\\initial.pak.bak",
   "counts": {
-    "trucks": 42,
+    "trucks": 116,
     "engines": 125,
     "wheels": 153,
     "gearboxes": 76,
@@ -2593,7 +2593,7 @@
       "suspensions": [
         {
           "wheel_type": "front",
-          "strength": 0.035,
+          "strength": 0.045,
           "damping": 0.2,
           "height": 0.065,
           "suspension_min": -0.3
@@ -2804,14 +2804,14 @@
       "suspensions": [
         {
           "wheel_type": "front",
-          "strength": 0.05,
+          "strength": 0.058,
           "damping": null,
           "height": 0.05,
           "suspension_min": -0.3
         },
         {
           "wheel_type": "rear",
-          "strength": 0.08,
+          "strength": 0.092,
           "damping": null,
           "height": 0.1,
           "suspension_min": -0.2
@@ -2940,7 +2940,7 @@
       "suspensions": [
         {
           "wheel_type": "front",
-          "strength": 0.04,
+          "strength": 0.055,
           "damping": 0.3,
           "height": 0.2,
           "suspension_min": -0.4

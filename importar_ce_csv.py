@@ -94,6 +94,13 @@ def suggest_protocol(vehicle_id: str, protocol_id: str) -> str | None:
             return "s8_f1_asfalto_aat6v"
         if protocol_id.startswith("f3_"):
             return "s8_f3_carga_barro"
+    if vehicle_id == "t813":
+        if protocol_id == "f2_barro_offroad":
+            return "t813_f2_barro_msh"
+        if protocol_id == "f1_asfalto_i6":
+            return "t813_f1_asfalto"
+        if protocol_id.startswith("f3_"):
+            return "t813_f3_carga"
     return None
 
 
@@ -145,11 +152,10 @@ def csv_to_session(
         detected_vehicle = protocol.vehicle_id
 
     dom = dominant_terrain or dominant_terrain_kind_from_rows(data)
-    surface_kind, surface_label = (
-        surface_meta_from_terrain_kind(dom)
-        if dom
-        else (protocol.surface_kind, protocol.surface_label)
-    )
+    if dom and dom not in ("mixed", "unknown"):
+        surface_kind, surface_label = surface_meta_from_terrain_kind(dom)
+    else:
+        surface_kind, surface_label = protocol.surface_kind, protocol.surface_label
     load_id = load_scenario_id if load_scenario_id else protocol.load_scenario_id
 
     ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
@@ -456,9 +462,14 @@ def main(argv: list[str] | None = None) -> int:
             + ", ".join(f"{k or '?'}={v}" for k, v in surf.most_common())
         )
         print(
-            f"Comparacion vs sim usa superficie del protocolo: "
-            f"{session.meta.surface_label} ({session.meta.surface_kind})"
+            f"Comparacion vs sim (sesion completa): superficie del protocolo "
+            f"{protocol.surface_label} ({protocol.surface_kind})"
         )
+        dom_ce = max(kind_counts, key=kind_counts.get) if kind_counts else ""
+        if dom_ce in ("mixed", "unknown"):
+            print(
+                f"  Terreno dominante CE: {dom_ce} — comparacion por tramos hard/mud abajo"
+            )
         if "hard_fast" not in terrain_counts and max(terrain_counts.values()) > 0:
             print(
                 "  Con marcha reducida (10-15 km/h) terrain_hint suele ser "
