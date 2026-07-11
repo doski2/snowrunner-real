@@ -1,0 +1,492 @@
+{
+  "id": "extras_vehicles_find",
+  "source": "SnowRunner Extras",
+  "sheet": "Vehicles To Find",
+  "updated_utc": "2026-07-11T01:12:50.941657+00:00",
+  "items": [
+    {
+      "№": "1",
+      "Region": "Michigan",
+      "Level name": "Black River",
+      "Internal name": "US_01_01",
+      "Vehicle": "Chevrolet CK1500",
+      "Type": "Starter",
+      "Counters": "Starter",
+      "col_1": "1",
+      "col_2": "<- Truck the player starts a new game in"
+    },
+    {
+      "№": "2",
+      "Vehicle": "GMC MH9500",
+      "Type": "Free",
+      "Counters": "Free",
+      "col_1": "28",
+      "col_2": "<- Trucks that can be freely discovered"
+    },
+    {
+      "№": "3",
+      "Vehicle": "Fleetstar F2070A",
+      "Type": "Free",
+      "Counters": "Reward",
+      "col_1": "44",
+      "col_2": "<- Trucks awarded for completing a mission"
+    },
+    {
+      "№": "4",
+      "Vehicle": "Scout 800",
+      "Type": "Free",
+      "Counters": "Garage Reward",
+      "col_1": "1",
+      "col_2": "<- Trucks added to the garage after completing a mission"
+    },
+    {
+      "№": "5",
+      "Vehicle": "Chevrolet Kodiak C70",
+      "Type": "Free",
+      "Counters": "Total",
+      "col_1": "74"
+    },
+    {
+      "№": "6",
+      "Level name": "Smithville Dam",
+      "Internal name": "US_01_02",
+      "Vehicle": "Chevrolet CK1500",
+      "Type": "Free"
+    },
+    {
+      "№": "7",
+      "Vehicle": "International Transtar 4070A",
+      "Type": "Free"
+    },
+    {
+      "№": "8",
+      "Vehicle": "White Western Star 4964",
+      "Type": "Reward"
+    },
+    {
+      "№": "9",
+      "Level name": "Island Lake",
+      "Internal name": "US_01_03",
+      "Vehicle": "Western Star 6900 TwinSteer",
+      "Type": "Reward"
+    },
+    {
+      "№": "10",
+      "Level name": "Drummond Island",
+      "Internal name": "US_01_04_NEW",
+      "Vehicle": "Pacific P16",
+      "Type": "Free"
+    },
+    {
+      "№": "1",
+      "Region": "Alaska",
+      "Level name": "North Port",
+      "Internal name": "US_02_01",
+      "Vehicle": "Royal BM17",
+      "Type": "Free"
+    },
+    {
+      "№": "2",
+      "Vehicle": "Hummer H2",
+      "Type": "Reward"
+    },
+    {
+      "№": "3",
+      "Level name": "Mountain River",
+      "Internal name": "US_02_02",
+      "Vehicle": "Caterpillar 745С",
+      "Type": "Reward"
+    },
+    {
+      "№": "4",
+      "Level name": "White Valley",
+      "Internal name": "US_02_03",
+      "Vehicle": "Derry Longhorn 3194",
+      "Type": "Reward"
+    },
+    {
+      "№": "5",
+      "Level name": "Pedro Bay",
+      "Internal name": "US_02_04_NEW",
+      "Vehicle": "ANK MK38",
+      "Type": "Free"
+    },
+    {
+      "№": "1",
+      "Region": "Taymyr",
+      "Level name": "Quarry",
+      "Internal name": "RU_02_01",
+      "Vehicle": "DAN 96320",
+      "Type": "Reward"
+    },
+    {
+      "№": "2",
+      "Level name": "Drowned Lands",
+      "Internal name": "RU_02_02",
+      "Vehicle": "Tayga 6436",
+      "Type": "Reward"
+    },
+    {
+      "№": "3",
+      "Vehicle": "TUZ 166",
+      "Type": "Reward"
+    },
+    {
+      "№": "4",
+      "Level name": "Zimnegorsk",
+      "Internal name": "RU_02_03",
+      "Vehicle": "TUZ 420 \"Tatarin\"",
+      "Type": "Free"
+    },
+    {
+      "№": "5",
+      "Vehicle": "Step 310E",
+      "Type": "Reward"
+    },
+    {
+      "№": "6",
+      "Level name": "Rift",
+      "Internal name": "RU_02_04",
+      "Vehicle": "TUZ 420 \"Tatarin\"",
+      "Type": "Reward"
+    },
+    {
+      "№": "1",
+      "Region": "Kola Peninsula",
+      "Level name": "Lake Kovd",
+      "Internal name": "RU_03_01",
+      "Vehicle": "TUZ 16 \"Actaeon\"",
+      "Type": "Free"
+    },
+    {
+      "№": "2",
+      "Vehicle": "Ford F 750",
+      "Type": "Reward"
+    },
+    {
+      "№": "3",
+      "Level name": "Imandra",
+      "Internal name": "RU_03_02",
+      "Vehicle": "TUZ 108 \"Warthog\"",
+      "Type": "Free"
+    },
+    {
+      "№": "1",
+      "Region": "Yukon",
+      "Level name": "Flooded Foothills",
+      "Internal name": "US_04_01",
+      "Vehicle": "Caterpillar TH357",
+      "Type": "Free"
+    },
+    {
+      "№": "2",
+      "Vehicle": "Caterpillar 770G",
+      "Type": "Reward"
+    },
+    {
+      "№": "3",
+      "Vehicle": "Chevrolet Kodiak C70",
+      "Type": "Reward"
+    },
+    {
+      "№": "4",
+      "Level name": "Big Salmon Peak",
+      "Internal name": "US_04_02",
+      "Vehicle": "Caterpillar TH357",
+      "Type": "Free"
+    },
+    {
+      "№": "1",
+      "Region": "Wisconsin",
+      "Level name": "Black Badger Lake",
+      "Internal name": "US_03_01",
+      "Vehicle": "Pacific P512 PF",
+      "Type": "Free"
+    },
+    {
+      "№": "2",
+      "Vehicle": "Hummer H2",
+      "Type": "Reward"
+    },
+    {
+      "№": "3",
+      "Level name": "GrainwoodsRiver",
+      "Internal name": "US_03_02",
+      "Vehicle": "International Paystar 5600TS",
+      "Type": "Free"
+    },
+    {
+      "№": "1",
+      "Region": "Amur",
+      "Level name": "Urska River",
+      "Internal name": "RU_04_01",
+      "Vehicle": "KHAN 317 Sentinel",
+      "Type": "Reward"
+    },
+    {
+      "№": "2",
+      "Level name": "Cosmodrome",
+      "Internal name": "RU_04_02",
+      "Vehicle": "ZiKZ 605R",
+      "Type": "Reward"
+    },
+    {
+      "№": "1",
+      "Region": "Don",
+      "Level name": "Factory Grounds",
+      "Internal name": "RU_05_01",
+      "Vehicle": "Tatra FORCE T815-7",
+      "Type": "Reward"
+    },
+    {
+      "№": "2",
+      "Level name": "Antonovskiy Nature Reserve",
+      "Internal name": "RU_05_02",
+      "Vehicle": "Tatra PHOENIX",
+      "Type": "Reward"
+    },
+    {
+      "№": "1",
+      "Region": "Maine",
+      "Level name": "The Lowland",
+      "Internal name": "US_06_01",
+      "Vehicle": "Aramatsu Forester",
+      "Type": "Reward"
+    },
+    {
+      "№": "2",
+      "Vehicle": "Tayga 6455B",
+      "Type": "Garage Reward"
+    },
+    {
+      "№": "1",
+      "Region": "Tennessee",
+      "Level name": "Burning Mill",
+      "Internal name": "US_07_01",
+      "Vehicle": "Gor BY-4",
+      "Type": "Reward"
+    },
+    {
+      "№": "2",
+      "Vehicle": "Azov 43-191 \"Sprinter\"",
+      "Type": "Reward"
+    },
+    {
+      "№": "1",
+      "Region": "Belozersk Glades",
+      "Level name": "Crossroads",
+      "Internal name": "RU_08_01",
+      "Vehicle": "Chevrolet CK1500",
+      "Type": "Free"
+    },
+    {
+      "№": "2",
+      "Vehicle": "TUZ 166",
+      "Type": "Free"
+    },
+    {
+      "№": "3",
+      "Vehicle": "Tayga 6436",
+      "Type": "Free"
+    },
+    {
+      "№": "4",
+      "Vehicle": "Kirovets K-700",
+      "Type": "Reward"
+    },
+    {
+      "№": "5",
+      "Level name": "The Institute",
+      "Internal name": "RU_08_02",
+      "Vehicle": "DON 71",
+      "Type": "Free"
+    },
+    {
+      "№": "6",
+      "Vehicle": "Step 39331 \"Pike\"",
+      "Type": "Reward"
+    },
+    {
+      "№": "7",
+      "Level name": "Heartlands",
+      "Internal name": "RU_08_03",
+      "Vehicle": "Kirovets K-7M",
+      "Type": "Reward"
+    },
+    {
+      "№": "1",
+      "Region": "Ontario",
+      "Level name": "The Albany River",
+      "Internal name": "US_09_01",
+      "Vehicle": "Caterpillar TH357",
+      "Type": "Free"
+    },
+    {
+      "№": "2",
+      "Vehicle": "Scout 800",
+      "Type": "Reward"
+    },
+    {
+      "№": "3",
+      "Vehicle": "Hummer H2",
+      "Type": "Reward"
+    },
+    {
+      "№": "4",
+      "Vehicle": "Derry Special 15C-177",
+      "Type": "Reward"
+    },
+    {
+      "№": "5",
+      "Level name": "Burned Forest",
+      "Internal name": "US_09_02",
+      "Vehicle": "GMC MH9500",
+      "Type": "Free"
+    },
+    {
+      "№": "6",
+      "Vehicle": "ANK MK38 CIVILIAN",
+      "Type": "Free"
+    },
+    {
+      "№": "7",
+      "Vehicle": "Freightliner 114SD",
+      "Type": "Free"
+    },
+    {
+      "№": "8",
+      "Vehicle": "Fleetstar F2070A",
+      "Type": "Reward"
+    },
+    {
+      "№": "9",
+      "Vehicle": "ZiKZ 566A",
+      "Type": "Reward"
+    },
+    {
+      "№": "1",
+      "Region": "British Columbia",
+      "Level name": "Duncan Bay",
+      "Internal name": "US_10_01",
+      "Vehicle": "White Western Star 4964",
+      "Type": "Free"
+    },
+    {
+      "№": "2",
+      "Vehicle": "Kenworth 963",
+      "Type": "Reward"
+    },
+    {
+      "№": "3",
+      "Level name": "North Peak National Park",
+      "Internal name": "US_10_02",
+      "Vehicle": "Tayga 6436",
+      "Type": "Free"
+    },
+    {
+      "№": "4",
+      "Vehicle": "Mack Defense M917",
+      "Type": "Reward"
+    },
+    {
+      "№": "1",
+      "Region": "Scandinavia",
+      "Level name": "Mountain Ridge",
+      "Internal name": "US_11_01",
+      "Vehicle": "Burlak 6x6",
+      "Type": "Reward"
+    },
+    {
+      "№": "2",
+      "Level name": "By the Lake",
+      "Internal name": "US_11_02",
+      "Vehicle": "Voron AE-4380",
+      "Type": "Free"
+    },
+    {
+      "№": "3",
+      "Vehicle": "Neo Falcon 2000",
+      "Type": "Reward"
+    },
+    {
+      "№": "1",
+      "Region": "North Carolina",
+      "Level name": "Pineline Bay",
+      "Internal name": "US_12_01",
+      "Vehicle": "DON 71",
+      "Type": "Free"
+    },
+    {
+      "№": "2",
+      "Vehicle": "MTB 8106 (Rock Grinder)",
+      "Type": "Reward"
+    },
+    {
+      "№": "3",
+      "Level name": "Flatland",
+      "Internal name": "US_12_03",
+      "Vehicle": "Scout 800",
+      "Type": "Reward"
+    },
+    {
+      "№": "4",
+      "Level name": "Oviro Hills",
+      "Internal name": "US_12_04",
+      "Vehicle": "FEMM 37-AT",
+      "Type": "Reward"
+    },
+    {
+      "№": "1",
+      "Region": "Almaty Region",
+      "Level name": "Zherbai Quarries",
+      "Internal name": "RU_13_01",
+      "Vehicle": "AAC-58DW",
+      "Type": "Reward"
+    },
+    {
+      "№": "2",
+      "Vehicle": "PLAD 450",
+      "Type": "Reward"
+    },
+    {
+      "№": "1",
+      "Region": "Austria",
+      "Level name": "Unterfeld",
+      "Internal name": "US_14_01",
+      "Vehicle": "EarthRoamer LTi",
+      "Type": "Reward"
+    },
+    {
+      "№": "2",
+      "Vehicle": "Ankatra 1160",
+      "Type": "Reward"
+    },
+    {
+      "№": "3",
+      "Level name": "Foothills",
+      "Internal name": "US_14_02",
+      "Vehicle": "EarthRoamer SX",
+      "Type": "Reward"
+    },
+    {
+      "№": "4",
+      "Vehicle": "Futom 7290RA",
+      "Type": "Reward"
+    },
+    {
+      "№": "1",
+      "Region": "Quebec",
+      "Level name": "Harbor",
+      "Internal name": "US_15_01",
+      "Vehicle": "Sleiter ST 816 \"Elephant\"",
+      "Type": "Reward"
+    },
+    {
+      "№": "2",
+      "Level name": "Lake Ribière",
+      "Internal name": "US_15_02",
+      "Vehicle": "Mercer K520",
+      "Type": "Reward"
+    }
+  ]
+}

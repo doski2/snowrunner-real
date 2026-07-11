@@ -13,20 +13,21 @@ Lectura de **velocidad**, combustible, terreno por rueda, carga y ID de vehícul
 
 ```powershell
 python grabar_ce.py --probe
-grabar_telemetria.bat
+.\grabar_telemetria.bat
 ```
 
-`grabar_telemetria.bat` = 120 s, ruta mixta, `--auto` (camión + terreno + carga), importa y compara por tramos.
+`.\grabar_telemetria.bat` = 120 s, ruta mixta, `--auto` (camión + terreno + carga), importa y compara por tramos. En **PowerShell** usar `.\` delante del `.bat`.
 
 Subcomandos (sin grabar sesión):
 
 ```powershell
-grabar_telemetria.bat probe              # preflight + resumen terreno
-grabar_telemetria.bat snap barro_ligero  # snapshot TERR (calibracion mud_grade)
-grabar_telemetria.bat diff tierra_seca barro_ligero
-grabar_telemetria.bat tire               # neumatico montado (CE)
-grabar_telemetria.bat cargo              # carga bastidor / remolque (CE)
-grabar_telemetria.bat cargo --save cargado
+.\grabar_telemetria.bat probe              # preflight + resumen terreno
+.\grabar_telemetria.bat snap barro_ligero  # snapshot TERR (calibracion mud_grade)
+.\grabar_telemetria.bat diff tierra_seca barro_ligero
+.\grabar_telemetria.bat tire               # neumatico montado (CE)
+.\grabar_telemetria.bat cargo              # carga bastidor / remolque (CE)
+.\grabar_telemetria.bat cargo --save cargado
+.\grabar_telemetria.bat drive --watch 30   # throttle + rpm en vivo
 ```
 
 Antes de **F3**: quieto ~30 s con bastidor lleno → `cargo` debe mostrar `load_hint=cargado` y `payload_kg` > 300.
@@ -42,7 +43,43 @@ python cheat_engine/scan_drive_state.py
 python cheat_engine/scan_drive_state.py --watch 30
 ```
 
-**Tracción / diff:** calibrar offsets con `grabar_telemetria.bat drive --discover` (diff OFF/ON, `--save`, `--diff`). CSV: `fuel_rate_pct_min`, `diff_lock_live`, etc.
+### Tracción, gas y RPM *(calibrado 2026-07-09)*
+
+| Campo CSV / nota | Offset | Rango |
+|----------------|--------|-------|
+| `throttle` | `vehicle+0x760` (f32) | 0 = sin gas, 1 = a fondo |
+| `engine_rpm` | `vehicle+0x114` (f32) | ~350 ralentí, sube con gas |
+| `fuel_rate_pct_min` | derivado de `fuel_pct` | proxy de carga motor sin offset |
+
+Calibración gas + RPM (recomendado por camión; quieto ~0 km/h, motor ON):
+
+```powershell
+.\grabar_telemetria.bat drive_cal      # escanea, aplica y verifica hasta OK
+.\grabar_telemetria.bat drive_verify   # re-verificar gas off / gas fondo
+```
+
+**Banco de pruebas (independiente):** en la raíz del proyecto.
+
+```powershell
+.\banco_pedal.bat              # ventana: Ref 0% / Delta / Bases / Guia CE
+python cheat_engine/banco_drive.py --dump-bases   # hijos TRUCK_CONTROL en consola
+.\banco_pruebas.bat --scout
+```
+
+Escaneo profundo: singleton `TRUCK_CONTROL`, punteros hijos `tc+0xNN` (cada +8 hasta 0x200), `drive_logic`, `vehicle`. El pedal del mando suele estar en un hijo de TC, no en `vehicle+0x760`.
+
+Flujo manual (snapshots):
+
+```powershell
+.\grabar_telemetria.bat drive_snap gas_off   # pie del freno
+.\grabar_telemetria.bat drive_snap gas_full  # gas a fondo (freno o pared)
+.\grabar_telemetria.bat drive_diff gas_off gas_full
+python cheat_engine/calibrar_drive.py --from-snaps gas_off gas_full --apply --verify-live
+```
+
+Snapshots en `cheat_engine/drive_snaps/`. Offsets en `offsets_referencia.json` → `drive_runtime.candidates`. **Revalidar en T813** (Bandit usa `vehicle+0x760`; T813 puede necesitar otro offset).
+
+`diff_lock_live` / `low_gear_live`: offsets u8 aún **null** — usar `--discover` togglando diff/L como en `scan_drive_state.py`.
 
 ---
 
@@ -115,6 +152,8 @@ Por rueda (`TRUCK_WHEEL_MODEL`), cada ~0,5 s:
 | `surface_avg`                   | Sustancia efectiva usada al clasificar                          |
 | `pos_x`, `pos_z`                | Coordenadas mundo                                               |
 
+**Importación `mixed`:** si el terreno dominante CE es `mixed` (8×8, ruedas distintas), la comparación sim de sesión completa usa la superficie del **protocolo** (p. ej. asfalto en F1); los tramos `hard`/`mud` se comparan por separado (`compare_session_by_terrain`).
+
 **Fleetstar:** en asfalto `+0x2B4` suele ser negativo; se usa `+0x2EC` para clasificar firme. Calibración: `wheel_snaps/asfalto_fs.json`.
 
 ```powershell
@@ -145,7 +184,7 @@ Al importar con `--auto`, los tramos `mud` y `hard` se comparan con protocolos d
 
 **Antes de F3:** quieto 30 s con bastidor lleno → `python grabar_ce.py --probe` debe mostrar `cargado` y `cargo_kg` > 300.
 
-Masas vacías mod: Fleetstar **6650**, MH9500 **7500**, CK1500 **1750** kg.
+Masas vacías mod: Fleetstar **6650**, MH9500 **7500**, CK1500 **1750**, T813 **14571** kg.
 
 ```powershell
 python cheat_engine/scan_cargo.py --save vacio
@@ -165,7 +204,7 @@ python cheat_engine/scan_cargo.py --diff vacio cargado
 
 Cabecera completa (ver `memoria_havok.CSV_HEADER`):
 
-`t_s`, `speed_kmh`, `vel_*`, `ang_yaw`, `pos_*`, `fuel_pct`, `vehicle_id`, `terrain_kind`, `contact_avg`, `load_hint`, `payload_kg`, `total_mass_kg`, …
+`t_s`, `speed_kmh`, `vel_*`, `ang_yaw`, `pos_*`, `fuel_pct`, `vehicle_id`, `terrain_kind`, `contact_avg`, `throttle`, `engine_rpm`, `fuel_rate_pct_min`, `load_hint`, `payload_kg`, `total_mass_kg`, …
 
 Sesiones JSON: `telemetria/sesiones/<vehiculo>/`. Histórico inválido: `telemetria/sesiones/_archivo/`.
 

@@ -114,7 +114,7 @@ def print_terrain_sample(sample: dict, prefix: str = "") -> None:
     )
     deform = (sample.get("surface_deform_avg") or "").strip()
     if deform:
-        print(f"{prefix}  deform={deform} contactΔ={sample.get('contact_min')}-{sample.get('contact_max')}")
+        print(f"{prefix}  deform={deform} contact_d={sample.get('contact_min')}-{sample.get('contact_max')}")
     grade = (sample.get("mud_grade_label") or "").strip()
     if grade:
         print(f"{prefix}  mud_grade={sample.get('mud_grade')} ({grade})")
@@ -183,11 +183,11 @@ def format_live_line(t_elapsed: float, sample: dict) -> str:
     grip_min = sample.get("grip_min")
     grip_max = sample.get("grip_max")
     if grip_min and grip_max and grip_min != grip_max:
-        parts.append(f"gripΔ={grip_min}-{grip_max}")
+        parts.append(f"grip_d={grip_min}-{grip_max}")
     contact_min = sample.get("contact_min")
     contact_max = sample.get("contact_max")
     if contact_min and contact_max and contact_min != contact_max:
-        parts.append(f"contactΔ={contact_min}-{contact_max}")
+        parts.append(f"contact_d={contact_min}-{contact_max}")
     wk = sample.get("wheel_kinds") or ""
     if wk and (kind == "mixed" or sample.get("wheel_disagreement")):
         parts.append(f"ruedas={wk}")

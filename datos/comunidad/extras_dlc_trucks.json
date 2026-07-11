@@ -1,0 +1,204 @@
+{
+  "id": "extras_dlc_trucks",
+  "source": "SnowRunner Extras",
+  "sheet": "DLC Trucks",
+  "updated_utc": "2026-07-11T01:12:50.941657+00:00",
+  "items": [
+    {
+      "All DLC packs in Year Passes are available for purchase separately.": "Year 1 Pass",
+      "col_1": "Where to find",
+      "Keep in mind that you can preview any truck on the list from within the game. Scroll to the end in the Truck Store to fi": "Year 3 Pass",
+      "col_3": "Where to find",
+      "*On Hard Mode (or New Game+ with the appropriate rule enabled) all trucks with \"Added to Storage\" marking have to be pur": "Separate DLC packs",
+      "col_5": "Where to find"
+    },
+    {
+      "All DLC packs in Year Passes are available for purchase separately.": "High Roller Pack",
+      "col": "KHAN 39 Marshall",
+      "col_1": "Added to Storage*",
+      "Keep in mind that you can preview any truck on the list from within the game. Scroll to the end in the Truck Store to fi": "Season 9 - Ontario",
+      "col_2": "Derry Special 15C-177",
+      "col_3": "\"Looking for the fire monster\" contract",
+      "*On Hard Mode (or New Game+ with the appropriate rule enabled) all trucks with \"Added to Storage\" marking have to be pur": "Navistar 5000-MV (Unavailable on EGS)",
+      "col_4": "Navistar 5000-MV",
+      "col_5": "Added to Storage*"
+    },
+    {
+      "All DLC packs in Year Passes are available for purchase separately.": "Season 1 - Kola Peninsula",
+      "col": "Ford F 750",
+      "col_1": "\"Foreigner\" task on Lake Kovd",
+      "col_2": "ZiKZ 566A",
+      "col_3": "\"Help the Villagers 3\" task on Burned Forest",
+      "*On Hard Mode (or New Game+ with the appropriate rule enabled) all trucks with \"Added to Storage\" marking have to be pur": "Clasico Pack",
+      "col_4": "Chevrolet Apache"
+    },
+    {
+      "col": "TUZ 16 \"Actaeon\"",
+      "col_1": "Found on Lake Kovd",
+      "Keep in mind that you can preview any truck on the list from within the game. Scroll to the end in the Truck Store to fi": "Season 10 - British Columbia",
+      "col_2": "Kenworth 963",
+      "col_3": "\"Quid Pro Quo\" task on Duncan Bay",
+      "*On Hard Mode (or New Game+ with the appropriate rule enabled) all trucks with \"Added to Storage\" marking have to be pur": "Western Star 49X",
+      "col_4": "Western Star 49X"
+    },
+    {
+      "col": "TUZ 108 \"Warthog\"",
+      "col_1": "Found on Imandra",
+      "col_2": "Mack Defense M917",
+      "col_3": "\"Long Distance Haul\" task on North Peak NP",
+      "*On Hard Mode (or New Game+ with the appropriate rule enabled) all trucks with \"Added to Storage\" marking have to be pur": "GMC Brigadier",
+      "col_4": "GMC Brigadier 8000"
+    },
+    {
+      "All DLC packs in Year Passes are available for purchase separately.": "Season 2 - Yukon",
+      "col": "KRS 58 \"Bandit\"",
+      "col_1": "Added to Storage*",
+      "Keep in mind that you can preview any truck on the list from within the game. Scroll to the end in the Truck Store to fi": "Season 11 - Scandinavia",
+      "col_2": "Burlak 6x6",
+      "col_3": "\"Troll Tamer\" task on Mountain Ridge",
+      "*On Hard Mode (or New Game+ with the appropriate rule enabled) all trucks with \"Added to Storage\" marking have to be pur": "Anniversary DLC (free to claim)",
+      "col_4": "Caterpillar CT681"
+    },
+    {
+      "col": "Caterpillar TH357",
+      "col_1": "Found on Flooded Foothills or Big Salmon Peak",
+      "col_2": "Neo Falcon 2000",
+      "col_3": "\"A Rare Vehicle\" task on By The Lake",
+      "col_4": "International HX 520"
+    },
+    {
+      "col": "Caterpillar 770G",
+      "col_1": "\"Dump Truck for Dump Truck\" task on Flooded Foothills",
+      "Keep in mind that you can preview any truck on the list from within the game. Scroll to the end in the Truck Store to fi": "Season 12 - North Carolina",
+      "col_2": "FEMM 37-AT",
+      "col_3": "\"Abandoned Giant\" contract",
+      "*On Hard Mode (or New Game+ with the appropriate rule enabled) all trucks with \"Added to Storage\" marking have to be pur": "Jeep Dual Pack",
+      "col_4": "Jeep Wrangler"
+    },
+    {
+      "All DLC packs in Year Passes are available for purchase separately.": "Season 3 - Wisconsin",
+      "col": "BOAR 45318",
+      "col_1": "Purchase in Truck Store",
+      "col_2": "MTB 8106 (Rock Grinder)",
+      "col_3": "\"Vice-Like Grip\" contract",
+      "col_4": "Jeep CJ7 Renegade"
+    },
+    {
+      "col": "International Paystar 5600TS",
+      "col_1": "Found on Grainwoods River",
+      "Keep in mind that you can preview any truck on the list from within the game. Scroll to the end in the Truck Store to fi": "Year 4 Pass",
+      "col_3": "Where to find",
+      "*On Hard Mode (or New Game+ with the appropriate rule enabled) all trucks with \"Added to Storage\" marking have to be pur": "Crocodile Pack",
+      "col_4": "Step 33-64 \"Crocodile\""
+    },
+    {
+      "col": "Pacific P512 PF",
+      "col_1": "Found on Black Badger Lake",
+      "Keep in mind that you can preview any truck on the list from within the game. Scroll to the end in the Truck Store to fi": "Season 13 - Almaty Region",
+      "col_2": "AAC-58DW",
+      "col_3": "\"A Great Deal\" task on Zherbai Quarries",
+      "*On Hard Mode (or New Game+ with the appropriate rule enabled) all trucks with \"Added to Storage\" marking have to be pur": "Land Rover Dual Pack",
+      "col_4": "Land Rover Defender 90"
+    },
+    {
+      "All DLC packs in Year Passes are available for purchase separately.": "Season 4 - Amur",
+      "col": "ZiKZ 605R",
+      "col_1": "\"Stargazer\" task on Cosmodrome",
+      "col_2": "PLAD 450",
+      "col_3": "\"Not a Roller Coaster\" task on Zherbai Quarries",
+      "col_4": "Land Rover Defender 110"
+    },
+    {
+      "col": "KHAN 317 Sentinel",
+      "col_1": "Purchase in Truck Store",
+      "Keep in mind that you can preview any truck on the list from within the game. Scroll to the end in the Truck Store to fi": "Season 14 - Austria",
+      "col_2": "EarthRoamer LTi",
+      "col_3": "\"Taking Stock of the Damage\" contract",
+      "*On Hard Mode (or New Game+ with the appropriate rule enabled) all trucks with \"Added to Storage\" marking have to be pur": "Western Star Wolf Pack",
+      "col_4": "Western Star 47X NF 1424"
+    },
+    {
+      "All DLC packs in Year Passes are available for purchase separately.": "Year 2 Pass",
+      "col_1": "Where to find",
+      "col_2": "Ankatra 1160",
+      "col_3": "\"An Old Friend\" contract",
+      "col_4": "Western Star 47X NF 1430"
+    },
+    {
+      "All DLC packs in Year Passes are available for purchase separately.": "Tatra Dual Pack",
+      "col": "Tatra T813",
+      "col_1": "Added to Storage*",
+      "col_2": "EarthRoamer SX",
+      "col_3": "\"The Quick and the Crashed\" task on Foothills",
+      "col_4": "Western Star 57X"
+    },
+    {
+      "col": "Tatra 805",
+      "col_1": "Added to Storage*",
+      "col_2": "Futom 7290RA",
+      "col_3": "\"All Work and No Play\" contract",
+      "*On Hard Mode (or New Game+ with the appropriate rule enabled) all trucks with \"Added to Storage\" marking have to be pur": "Rezvani Hercules",
+      "col_4": "Rezvani Hercules 6x6"
+    },
+    {
+      "All DLC packs in Year Passes are available for purchase separately.": "Season 5 - Don",
+      "col": "Tatra FORCE T815-7",
+      "col_1": "\"The Sleeping King\" task on Factory Grounds",
+      "Keep in mind that you can preview any truck on the list from within the game. Scroll to the end in the Truck Store to fi": "Season 15 - Quebec",
+      "col_2": "Mercer K520",
+      "col_3": "\"Wormhole\" contract",
+      "*On Hard Mode (or New Game+ with the appropriate rule enabled) all trucks with \"Added to Storage\" marking have to be pur": "The Mastodon",
+      "col_4": "ZiKZ 612H"
+    },
+    {
+      "col": "Tatra PHOENIX",
+      "col_1": "\"Wipe Away The Debt\" task on Antonovskiy NR",
+      "col_2": "Sleiter ST 816 \"Elephant\"",
+      "col_3": "\"Fixable Solution\" contract",
+      "*On Hard Mode (or New Game+ with the appropriate rule enabled) all trucks with \"Added to Storage\" marking have to be pur": "Kenworth W990",
+      "col_4": "Kenworth W990"
+    },
+    {
+      "All DLC packs in Year Passes are available for purchase separately.": "Season 6 - Maine",
+      "col": "Aramatsu Forester",
+      "col_1": "\"Abandoned Titan\" task on Lowland",
+      "Keep in mind that you can preview any truck on the list from within the game. Scroll to the end in the Truck Store to fi": "Season 16 - ?",
+      "*On Hard Mode (or New Game+ with the appropriate rule enabled) all trucks with \"Added to Storage\" marking have to be pur": "The Atom",
+      "col_4": "Azov 67096 “Atom”"
+    },
+    {
+      "col": "Tayga 6455B",
+      "col_1": "\"Starting the Plank Production\" contract",
+      "*On Hard Mode (or New Game+ with the appropriate rule enabled) all trucks with \"Added to Storage\" marking have to be pur": "Rezvani Tank",
+      "col_4": "Rezvani Tank"
+    },
+    {
+      "All DLC packs in Year Passes are available for purchase separately.": "Season 7 - Tennessee",
+      "col": "Azov 43-191 \"Sprinter\"",
+      "col_1": "\"Racing Truck Delivery\" task on Burning Mill",
+      "*On Hard Mode (or New Game+ with the appropriate rule enabled) all trucks with \"Added to Storage\" marking have to be pur": "Kenworth Dual Pack",
+      "col_4": "Kenworth C500"
+    },
+    {
+      "col": "Gor BY-4",
+      "col_1": "\"Buggy Delivery\" task on Burning Mill",
+      "col_4": "Kenworth T880"
+    },
+    {
+      "All DLC packs in Year Passes are available for purchase separately.": "Season 8 - Belozersk Glades",
+      "col": "Kirovets K-700",
+      "col_1": "\"The Beast Rising\" contract",
+      "*On Hard Mode (or New Game+ with the appropriate rule enabled) all trucks with \"Added to Storage\" marking have to be pur": "Mack Dual Pack",
+      "col_4": "Mack Pinnacle"
+    },
+    {
+      "col": "Kirovets K-7M",
+      "col_1": "\"The Common Cause\" task on Heartlands",
+      "col_4": "Mack TerraPro"
+    },
+    {
+      "col": "Step 39331 \"Pike\"",
+      "col_1": "\"A Gift Horse\" task on The Institute"
+    }
+  ]
+}

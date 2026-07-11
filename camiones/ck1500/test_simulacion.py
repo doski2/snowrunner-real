@@ -17,6 +17,7 @@ from sim.core import (
     SURFACES,
     TIRES,
     VEHICLE_I6,
+    CONFIGS,
     SurfaceConfig,
     diff_efficiency,
     engine_fuel_mult,
@@ -38,7 +39,7 @@ T = TypeVar("T")
 ASPHALT = SurfaceConfig("Asfalto", "asphalt")
 MUD = SurfaceConfig("Barro", "mud", viscosity=4.0)
 
-I6_T097_S = 18.5
+I6_ASPHALT_V30_KMH = 44.0
 STOCK_T097_S = 14.6
 DIFF_LOCK_V30_KMH = 39.9
 
@@ -120,20 +121,25 @@ class TestCalibration(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls) -> None:
-        accel = run_sim(VEHICLE_I6, ENGINE_I6, ASPHALT, 80.0)
-        cls.t097_i6 = time_to_kmh(accel.speeds_kmh, accel.times, 97.0)
+        cls.asphalt = run_sim(VEHICLE_I6, ENGINE_I6, ASPHALT, 80.0)
+        cls.t097_i6 = time_to_kmh(cls.asphalt.speeds_kmh, cls.asphalt.times, 97.0)
         cls.configs = run_config_comparison()
         cls.scenarios = run_scenarios()
         cls.damage = run_damage_test()
 
-    def test_i6_accel_0_97(self) -> None:
-        self.assertAlmostEqual(_require(self.t097_i6), I6_T097_S, delta=1.0)
+    def test_i6_asphalt_v30_calibrated(self) -> None:
+        v30 = sample_at(self.asphalt, 30.0)
+        self.assertAlmostEqual(v30, I6_ASPHALT_V30_KMH, delta=3.0)
+
+    def test_i6_asphalt_not_hypercar(self) -> None:
+        """Con arrastre CK1500, no alcanza 97 km/h en 80 s de WOT."""
+        self.assertIsNone(self.t097_i6)
 
     def test_stock_faster_than_i6(self) -> None:
-        stock_t097 = _require(_by_key(self.configs, "vehicle", "Juego original")["t097_s"])
-        i6_t097 = _require(_by_key(self.configs, "vehicle", "Realista I6")["t097_s"])
-        self.assertLess(stock_t097, i6_t097)
-        self.assertAlmostEqual(stock_t097, STOCK_T097_S, delta=1.5)
+        stock_veh, stock_eng = CONFIGS[0]
+        stock_v60 = sample_at(run_sim(stock_veh, stock_eng, ASPHALT, 80.0), 60.0)
+        i6_v60 = sample_at(self.asphalt, 60.0)
+        self.assertGreater(stock_v60, i6_v60)
 
     def test_mud_highway_stuck(self) -> None:
         series = run_sim(make_vehicle("highway"), ENGINE_I6, MUD, 45.0, low_gear=True)

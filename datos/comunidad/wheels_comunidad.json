@@ -1,0 +1,2728 @@
+{
+  "id": "srinfo_wheels",
+  "source": "SR!NFO",
+  "sheet": "Wheels",
+  "updated_utc": "2026-07-11T01:12:50.941657+00:00",
+  "items": [
+    {
+      "name": "Wheel Highway",
+      "category": "",
+      "friction": {
+        "asphalt": null,
+        "body": null,
+        "substance": null
+      },
+      "rad_offs": null,
+      "soft_force_scl": null,
+      "width_single": null,
+      "width_double": null,
+      "weight": "Jack of All Treads Tire Pack Weight (S / D)",
+      "unlock_level": null,
+      "price": null
+    },
+    {
+      "name": "HMD I",
+      "category": "",
+      "friction": {
+        "asphalt": 3,
+        "body": 1,
+        "substance": 0.4
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.58,
+      "width_double": 1.132,
+      "weight": "200 / 400",
+      "unlock_level": 1,
+      "price": 3600
+    },
+    {
+      "name": "HMD II",
+      "category": "",
+      "friction": {
+        "asphalt": 3,
+        "body": 1.2,
+        "substance": 0.2
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.58,
+      "width_double": 1.132,
+      "weight": "200 / 400",
+      "unlock_level": 1,
+      "price": 4000
+    },
+    {
+      "name": "HMD III",
+      "category": "",
+      "friction": {
+        "asphalt": 3.2,
+        "body": 1,
+        "substance": 0.2
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.58,
+      "width_double": 1.132,
+      "weight": "200 / 400",
+      "unlock_level": 1,
+      "price": 4400
+    },
+    {
+      "name": "UHD I",
+      "category": "",
+      "friction": {
+        "asphalt": 3,
+        "body": 1,
+        "substance": 0.4
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.58,
+      "width_double": 1.132,
+      "weight": "100 / 200",
+      "unlock_level": 1,
+      "price": 2300
+    },
+    {
+      "name": "UHD II",
+      "category": "",
+      "friction": {
+        "asphalt": 3,
+        "body": 1.2,
+        "substance": 0.2
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.58,
+      "width_double": 1.132,
+      "weight": "100 / 200",
+      "unlock_level": 1,
+      "price": 2500
+    },
+    {
+      "name": "UHD III",
+      "category": "",
+      "friction": {
+        "asphalt": 3.2,
+        "body": 1,
+        "substance": 0.2
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.58,
+      "width_double": 1.132,
+      "weight": "100 / 200",
+      "unlock_level": 1,
+      "price": 2900
+    },
+    {
+      "name": "FHMD I (F-750)",
+      "category": "",
+      "friction": {
+        "asphalt": 3,
+        "body": 1,
+        "substance": 0.4
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.546,
+      "width_double": 1.158,
+      "weight": "100 / 200",
+      "unlock_level": 1,
+      "price": 2300
+    },
+    {
+      "name": "JAT HHD I",
+      "category": "",
+      "friction": {
+        "asphalt": 3,
+        "body": 1,
+        "substance": 0.4
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.45,
+      "width_double": 0.9,
+      "weight": "200 / 400",
+      "unlock_level": 1,
+      "price": 3600
+    },
+    {
+      "name": "JAT HHD II",
+      "category": "",
+      "friction": {
+        "asphalt": 3,
+        "body": 1.1,
+        "substance": 0.3
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.45,
+      "width_double": 0.9,
+      "weight": "200 / 400",
+      "unlock_level": 1,
+      "price": 4000
+    },
+    {
+      "name": "JAT HHD III",
+      "category": "",
+      "friction": {
+        "asphalt": 3.2,
+        "body": 0.9,
+        "substance": 0.4
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.45,
+      "width_double": 0.9,
+      "weight": "200 / 400",
+      "unlock_level": 1,
+      "price": 4400
+    },
+    {
+      "name": "JAT HMD I",
+      "category": "",
+      "friction": {
+        "asphalt": 3,
+        "body": 1,
+        "substance": 0.4
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.65,
+      "width_double": 1.3,
+      "weight": "100 / 200",
+      "unlock_level": 1,
+      "price": 2300
+    },
+    {
+      "name": "JAT HMD II",
+      "category": "",
+      "friction": {
+        "asphalt": 3,
+        "body": 1.1,
+        "substance": 0.3
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.65,
+      "width_double": 1.3,
+      "weight": "100 / 200",
+      "unlock_level": 1,
+      "price": 2500
+    },
+    {
+      "name": "JAT HMD III",
+      "category": "",
+      "friction": {
+        "asphalt": 3.2,
+        "body": 0.9,
+        "substance": 0.4
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.65,
+      "width_double": 1.3,
+      "weight": "100 / 200",
+      "unlock_level": 1,
+      "price": 2900
+    },
+    {
+      "name": "JAT HMS I",
+      "category": "",
+      "friction": {
+        "asphalt": 3,
+        "body": 1,
+        "substance": 0.4
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.65,
+      "width_double": null,
+      "weight": "100",
+      "unlock_level": 1,
+      "price": 2300
+    },
+    {
+      "name": "JAT HMS II",
+      "category": "",
+      "friction": {
+        "asphalt": 3,
+        "body": 1.1,
+        "substance": 0.3
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.65,
+      "width_double": null,
+      "weight": "100",
+      "unlock_level": 1,
+      "price": 2500
+    },
+    {
+      "name": "JAT HMS III",
+      "category": "",
+      "friction": {
+        "asphalt": 3.2,
+        "body": 0.9,
+        "substance": 0.4
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.65,
+      "width_double": null,
+      "weight": "100",
+      "unlock_level": 1,
+      "price": 2900
+    },
+    {
+      "name": "HS I",
+      "category": "",
+      "friction": {
+        "asphalt": 2,
+        "body": 0.8,
+        "substance": 0.4
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.509,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 1,
+      "price": 1000
+    },
+    {
+      "name": "HS II",
+      "category": "",
+      "friction": {
+        "asphalt": 2,
+        "body": 1,
+        "substance": 0.2
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.509,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 1,
+      "price": 1200
+    },
+    {
+      "name": "HS III",
+      "category": "",
+      "friction": {
+        "asphalt": 2.5,
+        "body": 0.8,
+        "substance": 0.2
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.509,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 1,
+      "price": 1400
+    },
+    {
+      "name": "JAT HS I",
+      "category": "",
+      "friction": {
+        "asphalt": 2.2,
+        "body": 0.7,
+        "substance": 0.3
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.57,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 1,
+      "price": 1200
+    },
+    {
+      "name": "JAT HS II",
+      "category": "",
+      "friction": {
+        "asphalt": 2.3,
+        "body": 1,
+        "substance": 0.2
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.57,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 1,
+      "price": 1400
+    },
+    {
+      "name": "ATMD I",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.9,
+        "body": 1.5,
+        "substance": 1
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.58,
+      "width_double": 1.132,
+      "weight": "200 / 400",
+      "unlock_level": 9,
+      "price": 4900
+    },
+    {
+      "name": "ATMD II",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.5,
+        "body": 1.5,
+        "substance": 1.2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.58,
+      "width_double": 1.132,
+      "weight": "200 / 400",
+      "unlock_level": 9,
+      "price": 5300
+    },
+    {
+      "name": "ATMD III",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.5,
+        "body": 1.7,
+        "substance": 1
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.58,
+      "width_double": 1.132,
+      "weight": "200 / 400",
+      "unlock_level": 9,
+      "price": 5700
+    },
+    {
+      "name": "UAD I",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.9,
+        "body": 1.5,
+        "substance": 1
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.58,
+      "width_double": 1.132,
+      "weight": "100 / 200",
+      "unlock_level": 6,
+      "price": 3800
+    },
+    {
+      "name": "UAD II",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.5,
+        "body": 1.5,
+        "substance": 1.2
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.58,
+      "width_double": 1.132,
+      "weight": "100 / 200",
+      "unlock_level": 6,
+      "price": 4200
+    },
+    {
+      "name": "UAD III",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.5,
+        "body": 1.7,
+        "substance": 1
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.58,
+      "width_double": 1.132,
+      "weight": "100 / 200",
+      "unlock_level": 6,
+      "price": 4500
+    },
+    {
+      "name": "ATHS I",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.5,
+        "body": 1.5,
+        "substance": 1.2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.65,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 1,
+      "price": 4900
+    },
+    {
+      "name": "SPO I (Azov Sprinter)",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.5,
+        "body": 1.5,
+        "substance": 2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.715,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 1,
+      "price": 4900
+    },
+    {
+      "name": "FEMM 37-AT (unfinished)",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.6,
+        "body": 1.7,
+        "substance": 1
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 1.26,
+      "width_double": null,
+      "weight": "600",
+      "unlock_level": 1,
+      "price": 4900
+    },
+    {
+      "name": "HIB Billert M816",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 2.92,
+        "body": 1.5,
+        "substance": 1
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.613,
+      "width_double": 1.28,
+      "weight": "220 / 440",
+      "unlock_level": 1,
+      "price": 3600
+    },
+    {
+      "name": "Kenworth 963",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.6,
+        "body": 1.7,
+        "substance": 1
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.84,
+      "width_double": null,
+      "weight": "600",
+      "unlock_level": 1,
+      "price": 4900
+    },
+    {
+      "name": "P12 AT",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.9,
+        "body": 1.5,
+        "substance": 1
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.622,
+      "width_double": null,
+      "weight": "300",
+      "unlock_level": 1,
+      "price": 4900
+    },
+    {
+      "name": "TrAT I (Yar 87)",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.5,
+        "body": 1.5,
+        "substance": 1
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.65,
+      "width_double": null,
+      "weight": "100",
+      "unlock_level": 1,
+      "price": 3400
+    },
+    {
+      "name": "UCD I (Step)",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.5,
+        "body": 1.4,
+        "substance": 1.5
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.459,
+      "width_double": 0.974,
+      "weight": "100 / 200",
+      "unlock_level": 1,
+      "price": 4900
+    },
+    {
+      "name": "Freightliner FLD 120",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 0.9,
+        "body": 1.4,
+        "substance": 1.7
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.574,
+      "width_double": 1.184,
+      "weight": "200 / 400",
+      "unlock_level": 1,
+      "price": 6000
+    },
+    {
+      "name": "Kenworth C500",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.8,
+        "body": 1.6,
+        "substance": 1.3
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.717,
+      "width_double": 1.05,
+      "weight": "200 / 400",
+      "unlock_level": 1,
+      "price": 7000
+    },
+    {
+      "name": "Kenworth T880",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.5,
+        "body": 1.6,
+        "substance": 1.9
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.58,
+      "width_double": 1.3,
+      "weight": "200 / 400",
+      "unlock_level": 1,
+      "price": 6600
+    },
+    {
+      "name": "Mack ZES",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.1,
+        "body": 1.5,
+        "substance": 2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.61,
+      "width_double": 1.254,
+      "weight": "200 / 400",
+      "unlock_level": 1,
+      "price": 6600
+    },
+    {
+      "name": "Western Star 6900XD",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.2,
+        "body": 1.4,
+        "substance": 1.6
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.613,
+      "width_double": 1.28,
+      "weight": "200 / 400",
+      "unlock_level": 1,
+      "price": 6800
+    },
+    {
+      "name": "JAT ATHD I",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.5,
+        "body": 1.7,
+        "substance": 1
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.62,
+      "width_double": 1.24,
+      "weight": "200 / 400",
+      "unlock_level": 1,
+      "price": 4900
+    },
+    {
+      "name": "JAT ATHD II",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.7,
+        "body": 1.5,
+        "substance": 1.1
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.62,
+      "width_double": 1.24,
+      "weight": "200 / 400",
+      "unlock_level": 1,
+      "price": 5300
+    },
+    {
+      "name": "JAT ATHD III",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.4,
+        "body": 1.5,
+        "substance": 1.4
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.62,
+      "width_double": 1.24,
+      "weight": "200 / 400",
+      "unlock_level": 1,
+      "price": 5700
+    },
+    {
+      "name": "JAT ATMD I",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.5,
+        "body": 1.7,
+        "substance": 1
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.65,
+      "width_double": 1.3,
+      "weight": "100 / 200",
+      "unlock_level": 1,
+      "price": 3800
+    },
+    {
+      "name": "JAT ATMD II",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.7,
+        "body": 1.5,
+        "substance": 1.1
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.65,
+      "width_double": 1.3,
+      "weight": "100 / 200",
+      "unlock_level": 1,
+      "price": 4200
+    },
+    {
+      "name": "JAT ATMD III",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.4,
+        "body": 1.5,
+        "substance": 1.4
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.65,
+      "width_double": 1.3,
+      "weight": "100 / 200",
+      "unlock_level": 1,
+      "price": 4500
+    },
+    {
+      "name": "JAT ATMS I",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.5,
+        "body": 1.7,
+        "substance": 1
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.65,
+      "width_double": null,
+      "weight": "100",
+      "unlock_level": 1,
+      "price": 3800
+    },
+    {
+      "name": "JAT ATMS II",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.7,
+        "body": 1.5,
+        "substance": 1.1
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.65,
+      "width_double": null,
+      "weight": "100",
+      "unlock_level": 1,
+      "price": 4200
+    },
+    {
+      "name": "JAT ATMS III",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.4,
+        "body": 1.5,
+        "substance": 1.4
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.65,
+      "width_double": null,
+      "weight": "100",
+      "unlock_level": 1,
+      "price": 4500
+    },
+    {
+      "name": "AS I",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1,
+        "body": 1.4,
+        "substance": 1
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.66,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 2,
+      "price": 2300
+    },
+    {
+      "name": "AS II",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1,
+        "body": 1,
+        "substance": 1.2
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.66,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 2,
+      "price": 2500
+    },
+    {
+      "name": "AS III",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.2,
+        "body": 1,
+        "substance": 1
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.66,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 2,
+      "price": 2900
+    },
+    {
+      "name": "Ultima AT I",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1,
+        "body": 1.1,
+        "substance": 1.4
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.73,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 1,
+      "price": 2800
+    },
+    {
+      "name": "Ultima AT II",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.1,
+        "body": 1.1,
+        "substance": 1.3
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.73,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 1,
+      "price": 3100
+    },
+    {
+      "name": "Ultima AT III",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1.1,
+        "body": 1.1,
+        "substance": 1.2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.73,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 1,
+      "price": 3400
+    },
+    {
+      "name": "Ultima AT IV",
+      "category": "All-Terrain",
+      "friction": {
+        "asphalt": 1,
+        "body": 1.3,
+        "substance": 1.1
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.73,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 1,
+      "price": 2800
+    },
+    {
+      "name": "OHD I",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.8,
+        "body": 3,
+        "substance": 1.9
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.52,
+      "width_double": 1.213,
+      "weight": "200 / 400",
+      "unlock_level": 11,
+      "price": 5900
+    },
+    {
+      "name": "OHD II",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.8,
+        "body": 3.2,
+        "substance": 1.5
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.52,
+      "width_double": 1.213,
+      "weight": "200 / 400",
+      "unlock_level": 11,
+      "price": 6200
+    },
+    {
+      "name": "OHD III",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1,
+        "body": 3,
+        "substance": 1.5
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.52,
+      "width_double": 1.213,
+      "weight": "200 / 400",
+      "unlock_level": 11,
+      "price": 6800
+    },
+    {
+      "name": "OHD I (P16)",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.8,
+        "body": 3,
+        "substance": 3.5
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.52,
+      "width_double": 1.213,
+      "weight": "300 / 630",
+      "unlock_level": 1,
+      "price": 5900
+    },
+    {
+      "name": "OHD I (P512)",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.8,
+        "body": 3,
+        "substance": 3.5
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.459,
+      "width_double": 1.092,
+      "weight": "200",
+      "unlock_level": 1,
+      "price": 6800
+    },
+    {
+      "name": "UOD I",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1,
+        "body": 3,
+        "substance": 1.5
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.58,
+      "width_double": 1.132,
+      "weight": "100 / 200",
+      "unlock_level": 8,
+      "price": 4900
+    },
+    {
+      "name": "UOD II",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.8,
+        "body": 3,
+        "substance": 1.9
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.58,
+      "width_double": 1.132,
+      "weight": "100 / 200",
+      "unlock_level": 8,
+      "price": 5100
+    },
+    {
+      "name": "UOD III",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.8,
+        "body": 3.2,
+        "substance": 1.5
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.58,
+      "width_double": 1.132,
+      "weight": "100 / 200",
+      "unlock_level": 8,
+      "price": 5700
+    },
+    {
+      "name": "UOD I (F-750)",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1,
+        "body": 3,
+        "substance": 1.5
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.546,
+      "width_double": 1.158,
+      "weight": "100 / 200",
+      "unlock_level": 5,
+      "price": 4400
+    },
+    {
+      "name": "UOD II (F-750)",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.8,
+        "body": 3,
+        "substance": 1.9
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.546,
+      "width_double": 1.158,
+      "weight": "100 / 200",
+      "unlock_level": 7,
+      "price": 4900
+    },
+    {
+      "name": "UOD III (F-750)",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.8,
+        "body": 3.2,
+        "substance": 1.5
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.546,
+      "width_double": 1.158,
+      "weight": "100 / 200",
+      "unlock_level": 10,
+      "price": 5700
+    },
+    {
+      "name": "OHS I",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1,
+        "body": 3,
+        "substance": 1.5
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.65,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 11,
+      "price": 5900
+    },
+    {
+      "name": "OHS II",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.8,
+        "body": 3,
+        "substance": 1.8
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.65,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 11,
+      "price": 6200
+    },
+    {
+      "name": "ANKO I (ANK MK38)",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.8,
+        "body": 3,
+        "substance": 1.7
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.706,
+      "width_double": null,
+      "weight": "100 / 200",
+      "unlock_level": 1,
+      "price": 5700
+    },
+    {
+      "name": "Burlak 6x6",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.6,
+        "body": 3.3,
+        "substance": 2.2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.79,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 2,
+      "price": 2300
+    },
+    {
+      "name": "Derry Special 15C-177",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1,
+        "body": 3,
+        "substance": 1.7
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.65,
+      "width_double": null,
+      "weight": "500",
+      "unlock_level": 1,
+      "price": 5500
+    },
+    {
+      "name": "EarthRoamer",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.9,
+        "body": 3.1,
+        "substance": 1.6
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.676,
+      "width_double": null,
+      "weight": "100 / 200",
+      "unlock_level": 1,
+      "price": 4500
+    },
+    {
+      "name": "HIB Billert 1980",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1.2,
+        "body": 2.7,
+        "substance": 1.6
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.657,
+      "width_double": null,
+      "weight": "100",
+      "unlock_level": 1,
+      "price": 5700
+    },
+    {
+      "name": "Mack Defense M917",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1.2,
+        "body": 2.8,
+        "substance": 1.8
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.706,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 1,
+      "price": 5700
+    },
+    {
+      "name": "Mercer K520",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.8,
+        "body": 3.1,
+        "substance": 1.8
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.706,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 1,
+      "price": 5700
+    },
+    {
+      "name": "Mercer R230",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1.05,
+        "body": 2.75,
+        "substance": 1.7
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.518,
+      "width_double": 1.09,
+      "weight": "220 / 440",
+      "unlock_level": 1,
+      "price": 6660
+    },
+    {
+      "name": "PLAD 440",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1,
+        "body": 3.1,
+        "substance": 1.9
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.622,
+      "width_double": 1.27,
+      "weight": "100 / 200",
+      "unlock_level": 1,
+      "price": 5700
+    },
+    {
+      "name": "PLAD 450",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1,
+        "body": 3,
+        "substance": 1.8
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.69,
+      "width_double": null,
+      "weight": "600",
+      "unlock_level": 1,
+      "price": 6800
+    },
+    {
+      "name": "Sleiter ST 833",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.8,
+        "body": 3,
+        "substance": 1.5
+      },
+      "rad_offs": 0.03,
+      "soft_force_scl": 0.12,
+      "width_single": 0.794,
+      "width_double": null,
+      "weight": "600",
+      "unlock_level": 1,
+      "price": 7500
+    },
+    {
+      "name": "TrO I (Yar 87)",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.8,
+        "body": 3,
+        "substance": 1.5
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.65,
+      "width_double": null,
+      "weight": "100",
+      "unlock_level": 1,
+      "price": 4700
+    },
+    {
+      "name": "Voron G-5352",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1,
+        "body": 3,
+        "substance": 1.8
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.595,
+      "width_double": null,
+      "weight": "285",
+      "unlock_level": 1,
+      "price": 7500
+    },
+    {
+      "name": "ZiKZ 566A",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.8,
+        "body": 3,
+        "substance": 1.3
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.618,
+      "width_double": null,
+      "weight": "100",
+      "unlock_level": 1,
+      "price": 7500
+    },
+    {
+      "name": "Azov 67096 \"Atom\"",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1,
+        "body": 3,
+        "substance": 1.8
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.665,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 1,
+      "price": 7500
+    },
+    {
+      "name": "Kenworth W990",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.8,
+        "body": 3.1,
+        "substance": 3.4
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.611,
+      "width_double": 1.254,
+      "weight": "200 / 400",
+      "unlock_level": 1,
+      "price": 6000
+    },
+    {
+      "name": "Mercedes-Benz Actros 3332",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.8,
+        "body": 3,
+        "substance": 1.7
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.615,
+      "width_double": 1.26,
+      "weight": "220 / 440",
+      "unlock_level": 1,
+      "price": 7200
+    },
+    {
+      "name": "JAT OHD I",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1,
+        "body": 3,
+        "substance": 1.7
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.62,
+      "width_double": 1.24,
+      "weight": "200 / 400",
+      "unlock_level": 1,
+      "price": 5900
+    },
+    {
+      "name": "JAT OHD II",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.8,
+        "body": 3.1,
+        "substance": 1.6
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.62,
+      "width_double": 1.24,
+      "weight": "200 / 400",
+      "unlock_level": 1,
+      "price": 6200
+    },
+    {
+      "name": "JAT OHD III",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.6,
+        "body": 3.2,
+        "substance": 1.6
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.62,
+      "width_double": 1.24,
+      "weight": "200 / 400",
+      "unlock_level": 1,
+      "price": 6800
+    },
+    {
+      "name": "JAT OHS I",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.8,
+        "body": 3,
+        "substance": 1.6
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.62,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 1,
+      "price": 4900
+    },
+    {
+      "name": "JAT OHS II",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1,
+        "body": 3.2,
+        "substance": 1.3
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.62,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 1,
+      "price": 5900
+    },
+    {
+      "name": "JAT OHS III",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.9,
+        "body": 3,
+        "substance": 1.7
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.62,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 1,
+      "price": 6200
+    },
+    {
+      "name": "JAT OMD I",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1,
+        "body": 3,
+        "substance": 1.7
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.65,
+      "width_double": 1.3,
+      "weight": "100 / 200",
+      "unlock_level": 1,
+      "price": 4900
+    },
+    {
+      "name": "JAT OMD II",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.8,
+        "body": 3.1,
+        "substance": 1.6
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.65,
+      "width_double": 1.3,
+      "weight": "100 / 200",
+      "unlock_level": 1,
+      "price": 5100
+    },
+    {
+      "name": "JAT OMD III",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.8,
+        "body": 3.1,
+        "substance": 1.8
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.65,
+      "width_double": 1.3,
+      "weight": "100 / 200",
+      "unlock_level": 1,
+      "price": 5700
+    },
+    {
+      "name": "JAT OMS I",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1,
+        "body": 3,
+        "substance": 1.7
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.65,
+      "width_double": null,
+      "weight": "100",
+      "unlock_level": 1,
+      "price": 4900
+    },
+    {
+      "name": "JAT OMS II",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.8,
+        "body": 3.1,
+        "substance": 1.6
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.65,
+      "width_double": null,
+      "weight": "100",
+      "unlock_level": 1,
+      "price": 5100
+    },
+    {
+      "name": "JAT OMS III",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.6,
+        "body": 3.2,
+        "substance": 1.6
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.65,
+      "width_double": null,
+      "weight": "100",
+      "unlock_level": 1,
+      "price": 5700
+    },
+    {
+      "name": "OS I",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1,
+        "body": 2,
+        "substance": 1.2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.66,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 4,
+      "price": 4200
+    },
+    {
+      "name": "AAC-58DW",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1,
+        "body": 2.1,
+        "substance": 1.2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.7,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 1,
+      "price": 4200
+    },
+    {
+      "name": "OG I (Gor BY-4)",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1,
+        "body": 2,
+        "substance": 2.1
+      },
+      "rad_offs": 0.1,
+      "soft_force_scl": 0.2,
+      "width_single": 0.715,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 7,
+      "price": 4900
+    },
+    {
+      "name": "Hummer H2",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 3,
+        "body": 2,
+        "substance": 1.2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.66,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 1,
+      "price": 4500
+    },
+    {
+      "name": "TO I (Apache)",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1,
+        "body": 2,
+        "substance": 1.2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.67,
+      "width_double": null,
+      "weight": "100",
+      "unlock_level": 1,
+      "price": 4700
+    },
+    {
+      "name": "OJ 1 (Jeep)",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 3,
+        "body": 2,
+        "substance": 1.2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.66,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 1,
+      "price": 4500
+    },
+    {
+      "name": "Land Rover",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 3,
+        "body": 2,
+        "substance": 1.2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.66,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 1,
+      "price": 4500
+    },
+    {
+      "name": "Rezvani Hercules 6x6",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 3,
+        "body": 2,
+        "substance": 1.2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.66,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 1,
+      "price": 4500
+    },
+    {
+      "name": "Rezvani Tank",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 2.6,
+        "body": 2.2,
+        "substance": 1.3
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.66,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 1,
+      "price": 4500
+    },
+    {
+      "name": "JAT OS I",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1,
+        "body": 2,
+        "substance": 1.2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.76,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 1,
+      "price": 4200
+    },
+    {
+      "name": "JAT OS II",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.8,
+        "body": 2.2,
+        "substance": 1.2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.76,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 1,
+      "price": 4600
+    },
+    {
+      "name": "JAT OS III",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1,
+        "body": 2.3,
+        "substance": 1.1
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.76,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 1,
+      "price": 5000
+    },
+    {
+      "name": "JAT OS IV",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1.1,
+        "body": 2.2,
+        "substance": 1.2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.76,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 1,
+      "price": 5200
+    },
+    {
+      "name": "Mudtires",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": null,
+        "body": null,
+        "substance": null
+      },
+      "rad_offs": null,
+      "soft_force_scl": null,
+      "width_single": null,
+      "width_double": null,
+      "weight": "",
+      "unlock_level": null,
+      "price": null
+    },
+    {
+      "name": "MSH I",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 1.7,
+        "substance": 3
+      },
+      "rad_offs": 0.03,
+      "soft_force_scl": 0.12,
+      "width_single": 0.78,
+      "width_double": null,
+      "weight": "600",
+      "unlock_level": 1,
+      "price": 7500
+    },
+    {
+      "name": "MSH II",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 1.7,
+        "substance": 3.2
+      },
+      "rad_offs": 0.03,
+      "soft_force_scl": 0.12,
+      "width_single": 0.78,
+      "width_double": null,
+      "weight": "600",
+      "unlock_level": 15,
+      "price": 8100
+    },
+    {
+      "name": "MSH III",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 2,
+        "substance": 3
+      },
+      "rad_offs": 0.03,
+      "soft_force_scl": 0.12,
+      "width_single": 0.78,
+      "width_double": null,
+      "weight": "600",
+      "unlock_level": 15,
+      "price": 9000
+    },
+    {
+      "name": "MSH IV",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.7,
+        "body": 1.7,
+        "substance": 3
+      },
+      "rad_offs": 0.03,
+      "soft_force_scl": 0.12,
+      "width_single": 0.78,
+      "width_double": null,
+      "weight": "600",
+      "unlock_level": 1,
+      "price": 7500
+    },
+    {
+      "name": "MSH I (Tatra T813)",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 1.7,
+        "substance": 3
+      },
+      "rad_offs": 0.03,
+      "soft_force_scl": 0.12,
+      "width_single": 0.78,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 1,
+      "price": 7500
+    },
+    {
+      "name": "MSH I (Tatra Force T815-7)",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 1.7,
+        "substance": 3
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.58,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 1,
+      "price": 7500
+    },
+    {
+      "name": "MSH I (Tatra Phoenix)",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 1.7,
+        "substance": 3
+      },
+      "rad_offs": 0.03,
+      "soft_force_scl": 0.12,
+      "width_single": 0.706,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 1,
+      "price": 7500
+    },
+    {
+      "name": "Caterpillar 770G",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 2,
+        "substance": 3.5
+      },
+      "rad_offs": 0.03,
+      "soft_force_scl": 0.12,
+      "width_single": 0.549,
+      "width_double": 1.2,
+      "weight": "600 / 1200",
+      "unlock_level": 1,
+      "price": 7900
+    },
+    {
+      "name": "Caterpillar TH357",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 1.7,
+        "substance": 3
+      },
+      "rad_offs": 0.03,
+      "soft_force_scl": 0.12,
+      "width_single": 0.762,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 1,
+      "price": 8300
+    },
+    {
+      "name": "Futom MHS I/II",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 1.7,
+        "substance": 3
+      },
+      "rad_offs": 0.065,
+      "soft_force_scl": 0.3,
+      "width_single": 0.73,
+      "width_double": 1.5,
+      "weight": "600 / 1200",
+      "unlock_level": 1,
+      "price": null
+    },
+    {
+      "name": "Kirovets K-700",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 1.7,
+        "substance": 3
+      },
+      "rad_offs": 0.03,
+      "soft_force_scl": 0.12,
+      "width_single": 0.731,
+      "width_double": null,
+      "weight": "600",
+      "unlock_level": 1,
+      "price": 7500
+    },
+    {
+      "name": "Kirovets K-7M MSH I/II",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 1.7,
+        "substance": 3
+      },
+      "rad_offs": 0.065,
+      "soft_force_scl": 0.3,
+      "width_single": 0.731,
+      "width_double": 1.57,
+      "weight": "600 / 1200",
+      "unlock_level": 1,
+      "price": 7500
+    },
+    {
+      "name": "Sleiter ST 816",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.8,
+        "body": 1.7,
+        "substance": 3
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.12,
+      "width_single": 0.973,
+      "width_double": null,
+      "weight": "600",
+      "unlock_level": 1,
+      "price": 6500
+    },
+    {
+      "name": "ZHM (ZiKZ 605R)",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 1.7,
+        "substance": 3
+      },
+      "rad_offs": 0.03,
+      "soft_force_scl": 0.12,
+      "width_single": 1.0,
+      "width_double": null,
+      "weight": "600",
+      "unlock_level": 1,
+      "price": 7500
+    },
+    {
+      "name": "AVENHORN A15",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 1.7,
+        "substance": 3.1
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.718,
+      "width_double": 1.51,
+      "weight": "400 / 800",
+      "unlock_level": 1,
+      "price": 7500
+    },
+    {
+      "name": "ZHM (ZiKZ 612H)",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.3,
+        "body": 2,
+        "substance": 3.35
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.18,
+      "width_single": 0.8,
+      "width_double": null,
+      "weight": "600",
+      "unlock_level": 1,
+      "price": 7500
+    },
+    {
+      "name": "JAT MSH I",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.6,
+        "body": 1.6,
+        "substance": 3
+      },
+      "rad_offs": 0.03,
+      "soft_force_scl": 0.12,
+      "width_single": 0.95,
+      "width_double": null,
+      "weight": "600",
+      "unlock_level": 1,
+      "price": 7500
+    },
+    {
+      "name": "JAT MSH II",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 1.7,
+        "substance": 3.2
+      },
+      "rad_offs": 0.03,
+      "soft_force_scl": 0.12,
+      "width_single": 0.95,
+      "width_double": null,
+      "weight": "600",
+      "unlock_level": 1,
+      "price": 8100
+    },
+    {
+      "name": "JAT MSH III",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 2,
+        "substance": 3.1
+      },
+      "rad_offs": 0.03,
+      "soft_force_scl": 0.12,
+      "width_single": 0.95,
+      "width_double": null,
+      "weight": "600",
+      "unlock_level": 1,
+      "price": 9000
+    },
+    {
+      "name": "MHS I",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 2,
+        "substance": 2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.65,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 13,
+      "price": 7000
+    },
+    {
+      "name": "MHS II",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 2,
+        "substance": 2.4
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.84,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 13,
+      "price": 7400
+    },
+    {
+      "name": "MHS III",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 2.4,
+        "substance": 2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.84,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 13,
+      "price": 7700
+    },
+    {
+      "name": "DMHS I",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 2,
+        "substance": 2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.65,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 15,
+      "price": 8500
+    },
+    {
+      "name": "DMHS II",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 2,
+        "substance": 2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.65,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 14,
+      "price": 7900
+    },
+    {
+      "name": "DMHS III",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 2,
+        "substance": 2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.65,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 14,
+      "price": 7500
+    },
+    {
+      "name": "AMHS I",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 2,
+        "substance": 2.4
+      },
+      "rad_offs": 0.03,
+      "soft_force_scl": 0.12,
+      "width_single": 1.118,
+      "width_double": null,
+      "weight": "100",
+      "unlock_level": 12,
+      "price": 7000
+    },
+    {
+      "name": "TMHS I",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 2,
+        "substance": 2.4
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 1.118,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 13,
+      "price": 7400
+    },
+    {
+      "name": "Ankatra MHS",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 2.2,
+        "substance": 2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.67,
+      "width_double": 1.36,
+      "weight": "200 / 400",
+      "unlock_level": 1,
+      "price": null
+    },
+    {
+      "name": "Jangsu RX600",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1.05,
+        "body": 1.8,
+        "substance": 2.12
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.56,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 1,
+      "price": 5700
+    },
+    {
+      "name": "TO I (TUZ 420)",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 3,
+        "substance": 8
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.67,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 1,
+      "price": 7200
+    },
+    {
+      "name": "TM I (Yar 87)",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 2.4,
+        "substance": 2
+      },
+      "rad_offs": 0.085,
+      "soft_force_scl": 0.12,
+      "width_single": 0.863,
+      "width_double": null,
+      "weight": "100",
+      "unlock_level": 1,
+      "price": 4900
+    },
+    {
+      "name": "TM II (Yar 87)",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 2,
+        "substance": 2.4
+      },
+      "rad_offs": 0.085,
+      "soft_force_scl": 0.12,
+      "width_single": 0.863,
+      "width_double": null,
+      "weight": "100",
+      "unlock_level": 12,
+      "price": 5300
+    },
+    {
+      "name": "TrM I (Yar 87)",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 2,
+        "substance": 2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.65,
+      "width_double": null,
+      "weight": "100",
+      "unlock_level": 12,
+      "price": 4900
+    },
+    {
+      "name": "Mercedes-Benz Zetros",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 2,
+        "substance": 2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.65,
+      "width_double": null,
+      "weight": "220",
+      "unlock_level": 1,
+      "price": 7200
+    },
+    {
+      "name": "Padera STD-4",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 2,
+        "substance": 2.18
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.726,
+      "width_double": 0.993,
+      "weight": "300 / 450",
+      "unlock_level": 1,
+      "price": 7500
+    },
+    {
+      "name": "JAT MHS I",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 1.8,
+        "substance": 2.2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.79,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 1,
+      "price": 6200
+    },
+    {
+      "name": "JAT MHS II",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.6,
+        "body": 2.3,
+        "substance": 2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.79,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 1,
+      "price": 6800
+    },
+    {
+      "name": "JAT MHS III",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.6,
+        "body": 1.9,
+        "substance": 2.4
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.79,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 1,
+      "price": 7400
+    },
+    {
+      "name": "JAT MHS IV",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.4,
+        "body": 1.8,
+        "substance": 2.6
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.79,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 1,
+      "price": 5200
+    },
+    {
+      "name": "JAT MHS V",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 2.4,
+        "substance": 2.1
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.79,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 1,
+      "price": 5600
+    },
+    {
+      "name": "JAT MHS VI",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.6,
+        "body": 1.8,
+        "substance": 2.5
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.79,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 1,
+      "price": 5900
+    },
+    {
+      "name": "JAT MMD I",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 2,
+        "substance": 2.2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.65,
+      "width_double": 1.3,
+      "weight": "100 / 200",
+      "unlock_level": 1,
+      "price": 5200
+    },
+    {
+      "name": "JAT MMD II",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.4,
+        "body": 2.2,
+        "substance": 2
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.65,
+      "width_double": 1.3,
+      "weight": "100 / 200",
+      "unlock_level": 1,
+      "price": 5600
+    },
+    {
+      "name": "JAT MMD III",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.4,
+        "body": 2.1,
+        "substance": 2.1
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.65,
+      "width_double": 1.3,
+      "weight": "100 / 200",
+      "unlock_level": 1,
+      "price": 5900
+    },
+    {
+      "name": "MS I",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 3,
+        "substance": 1.6
+      },
+      "rad_offs": 0.1,
+      "soft_force_scl": 0.2,
+      "width_single": 0.797,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 7,
+      "price": 5100
+    },
+    {
+      "name": "JAT MS I",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 2.7,
+        "substance": 1.8
+      },
+      "rad_offs": 0.1,
+      "soft_force_scl": 0.2,
+      "width_single": 0.93,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 1,
+      "price": 5100
+    },
+    {
+      "name": "JAT MS II",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.5,
+        "body": 2.4,
+        "substance": 2.1
+      },
+      "rad_offs": 0.1,
+      "soft_force_scl": 0.2,
+      "width_single": 0.93,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 1,
+      "price": 5500
+    },
+    {
+      "name": "JAT MS III",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.4,
+        "body": 2.1,
+        "substance": 2.5
+      },
+      "rad_offs": 0.1,
+      "soft_force_scl": 0.2,
+      "width_single": 0.93,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 1,
+      "price": 5900
+    },
+    {
+      "name": "Chains",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": null,
+        "body": null,
+        "substance": null
+      },
+      "rad_offs": null,
+      "soft_force_scl": null,
+      "width_single": null,
+      "width_double": null,
+      "weight": "",
+      "unlock_level": null,
+      "price": null
+    },
+    {
+      "name": "OHD II chains",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1.2,
+        "body": 3,
+        "substance": 1.3
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.52,
+      "width_double": 1.213,
+      "weight": "200 / 400",
+      "unlock_level": 14,
+      "price": 6800
+    },
+    {
+      "name": "UAD III chains",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1.2,
+        "body": 3,
+        "substance": 1.3
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.58,
+      "width_double": 1.132,
+      "weight": "100 / 200",
+      "unlock_level": 12,
+      "price": 6400
+    },
+    {
+      "name": "UAD III rear chains",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1.2,
+        "body": 3,
+        "substance": 1.3
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.58,
+      "width_double": 1.132,
+      "weight": "100 / 200",
+      "unlock_level": 12,
+      "price": 6400
+    },
+    {
+      "name": "UAD III chains (F-750)",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1.2,
+        "body": 3,
+        "substance": 1.3
+      },
+      "rad_offs": 0.02,
+      "soft_force_scl": 0.32,
+      "width_single": 0.546,
+      "width_double": 1.158,
+      "weight": "100 / 200",
+      "unlock_level": 10,
+      "price": 6000
+    },
+    {
+      "name": "MHS I chains",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1.2,
+        "body": 3,
+        "substance": 1.3
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.65,
+      "width_double": null,
+      "weight": "200",
+      "unlock_level": 14,
+      "price": 6800
+    },
+    {
+      "name": "TrC I (Yar 87)",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 1.2,
+        "body": 3,
+        "substance": 1.3
+      },
+      "rad_offs": 0.025,
+      "soft_force_scl": 0.24,
+      "width_single": 0.65,
+      "width_double": null,
+      "weight": "100",
+      "unlock_level": 12,
+      "price": 6000
+    },
+    {
+      "name": "CS I",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.9,
+        "body": 2,
+        "substance": 1.1
+      },
+      "rad_offs": 0.1,
+      "soft_force_scl": 0.2,
+      "width_single": 0.72,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 10,
+      "price": 5700
+    },
+    {
+      "name": "Ultima CS I",
+      "category": "Offroad",
+      "friction": {
+        "asphalt": 0.9,
+        "body": 1.3,
+        "substance": 1.2
+      },
+      "rad_offs": 0.1,
+      "soft_force_scl": 0.2,
+      "width_single": 0.746,
+      "width_double": null,
+      "weight": "75",
+      "unlock_level": 1,
+      "price": 5200
+    }
+  ]
+}

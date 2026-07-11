@@ -1,0 +1,271 @@
+{
+  "id": "extras_trailers_winches",
+  "source": "SnowRunner Extras",
+  "sheet": "Trailers & Winches",
+  "updated_utc": "2026-07-11T01:12:50.941657+00:00",
+  "items": [
+    {
+      "№": "1",
+      "Name": "Small Scout Flatbed",
+      "Type": "Scout",
+      "Cargo slots": "1",
+      "Winch": "Scout"
+    },
+    {
+      "№": "2",
+      "Name": "Scout Flatbed",
+      "Type": "Scout",
+      "Cargo slots": "2",
+      "Winch": "Stock Scout",
+      "Unlock rank": "1",
+      "Length": "14",
+      "Strength": "1.0"
+    },
+    {
+      "№": "3",
+      "Name": "Offroad Scout",
+      "Type": "Scout",
+      "Cargo slots": "2",
+      "Winch": "Autonomous Scout",
+      "Unlock rank": "1",
+      "Length": "14",
+      "Strength": "0.9"
+    },
+    {
+      "№": "4",
+      "Name": "Scout Fuel Carrier",
+      "Type": "Scout",
+      "Fuel": "900",
+      "Winch": "Extended Scout",
+      "Unlock rank": "6",
+      "Length": "21",
+      "Strength": "1.0"
+    },
+    {
+      "№": "5",
+      "Name": "Prototype Exploration Unit",
+      "Type": "Scout",
+      "Fuel": "120",
+      "Notes": "Works as a mobile watchtower, 20 L of fuel per use",
+      "Winch": "High-power Scout",
+      "Unlock rank": "10",
+      "Length": "14",
+      "Strength": "1.4"
+    },
+    {
+      "№": "6",
+      "Name": "Scout Service Trailer",
+      "Type": "Scout",
+      "Fuel": "150",
+      "Repair parts": "250",
+      "Spare wheels": "2",
+      "Winch": "Advanced Scout",
+      "Unlock rank": "14",
+      "Length": "21",
+      "Strength": "1.4"
+    },
+    {
+      "№": "7",
+      "Name": "Large Scout Service Trailer",
+      "Type": "Scout",
+      "Fuel": "220",
+      "Repair parts": "320",
+      "Spare wheels": "3",
+      "Winch": "Medium"
+    },
+    {
+      "№": "1",
+      "Name": "Flatbed",
+      "Type": "Trailer",
+      "Cargo slots": "2",
+      "Winch": "Stock Medium",
+      "Unlock rank": "1",
+      "Length": "14",
+      "Strength": "1.0"
+    },
+    {
+      "№": "2",
+      "Name": "Ramped Flatbed",
+      "Type": "Trailer",
+      "Cargo slots": "4",
+      "Notes": "Has ramps for loading vehicles",
+      "Winch": "Autonomous Medium",
+      "Unlock rank": "1",
+      "Length": "14",
+      "Strength": "0.8"
+    },
+    {
+      "№": "3",
+      "Name": "Fuel Carrier",
+      "Type": "Trailer",
+      "Fuel": "2000",
+      "Winch": "Extended Medium",
+      "Unlock rank": "8",
+      "Length": "18",
+      "Strength": "1.0"
+    },
+    {
+      "№": "4",
+      "Name": "Service",
+      "Type": "Trailer",
+      "Repair parts": "1500",
+      "Spare wheels": "8",
+      "Winch": "High-power Medium",
+      "Unlock rank": "12",
+      "Length": "14",
+      "Strength": "1.3"
+    },
+    {
+      "№": "5",
+      "Name": "Maintenance",
+      "Type": "Trailer",
+      "Fuel": "2000",
+      "Repair parts": "350",
+      "Spare wheels": "6",
+      "Winch": "Advanced Medium",
+      "Unlock rank": "16",
+      "Length": "18",
+      "Strength": "1.3"
+    },
+    {
+      "№": "6",
+      "Name": "Generator",
+      "Type": "Trailer",
+      "Fuel": "1500",
+      "Winch": "Heavy"
+    },
+    {
+      "№": "7",
+      "Name": "Log Trailer",
+      "Type": "Trailer",
+      "Winch": "Stock Heavy",
+      "Unlock rank": "1",
+      "Length": "14",
+      "Strength": "1.0"
+    },
+    {
+      "№": "8",
+      "Name": "Log Carrier Rear",
+      "Type": "Trailer",
+      "Notes": "Requires Log Carrier Front addon for coupling",
+      "Winch": "Extended Heavy",
+      "Unlock rank": "10",
+      "Length": "17",
+      "Strength": "1.0"
+    },
+    {
+      "№": "9",
+      "Name": "Water Carrier",
+      "Type": "Trailer",
+      "Water": "2000",
+      "Winch": "Twin-motor Heavy",
+      "Unlock rank": "14",
+      "Length": "14",
+      "Strength": "1.3"
+    },
+    {
+      "№": "1",
+      "Name": "Futom-S Logging Trailer",
+      "Type": "Log Trailer",
+      "Notes": "Can only be installed on select trucks, check compatibility in the Addons 2 sheet",
+      "Winch": "Advanced Heavy",
+      "Unlock rank": "20",
+      "Length": "17",
+      "Strength": "1.3"
+    },
+    {
+      "№": "2",
+      "Name": "Futom-M Logging Trailer",
+      "Type": "Log Trailer"
+    },
+    {
+      "№": "1",
+      "Name": "Flatbed Semi",
+      "Type": "Low saddle",
+      "Cargo slots": "5"
+    },
+    {
+      "№": "2",
+      "Name": "Sideboard Semi",
+      "Type": "Low saddle",
+      "Cargo slots": "5"
+    },
+    {
+      "№": "3",
+      "Name": "Stepdeck Semi",
+      "Type": "Low saddle",
+      "Cargo slots": "5"
+    },
+    {
+      "№": "4",
+      "Name": "Gooseneck Semi",
+      "Type": "Low saddle",
+      "Cargo slots": "4",
+      "Notes": "Has ramps for loading vehicles"
+    },
+    {
+      "№": "5",
+      "Name": "Fuel Carrier Semi",
+      "Type": "Low saddle",
+      "Fuel": "3700"
+    },
+    {
+      "№": "6",
+      "Name": "Heavy Water Carrier",
+      "Type": "Low saddle",
+      "Water": "3700"
+    },
+    {
+      "№": "7",
+      "Name": "(Flatbed 3)",
+      "Type": "Low saddle",
+      "Cargo slots": "3",
+      "Fuel": "120",
+      "Repair parts": "5500"
+    },
+    {
+      "№": "8",
+      "Name": "(Double Log)",
+      "Type": "Low saddle"
+    },
+    {
+      "№": "1",
+      "Name": "Heavy Duty Lowboy",
+      "Type": "High saddle",
+      "Cargo slots": "3",
+      "Notes": "Has ramps for loading vehicles"
+    },
+    {
+      "№": "2",
+      "Name": "Wide Flatbed Semi",
+      "Type": "High saddle",
+      "Cargo slots": "5"
+    },
+    {
+      "№": "3",
+      "Name": "Wide Flatbed 3-Axle Semi",
+      "Type": "High saddle",
+      "Cargo slots": "5"
+    },
+    {
+      "№": "4",
+      "Name": "Superheavy Semi",
+      "Type": "High saddle",
+      "Cargo slots": "8"
+    },
+    {
+      "№": "5",
+      "Name": "(Flatbed 6)",
+      "Type": "High saddle",
+      "Cargo slots": "6",
+      "Fuel": "240",
+      "Repair parts": "550"
+    },
+    {
+      "Name": "Heavy Fuel Tanker Semi",
+      "Type": "High saddle",
+      "Fuel": "5000",
+      "Notes": "Mission-exclusive"
+    }
+  ]
+}

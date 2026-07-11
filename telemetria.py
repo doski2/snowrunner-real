@@ -1231,6 +1231,72 @@ def split_session_by_terrain(
     return segments, skipped
 
 
+def dominant_mass_havok_from_samples(samples: list[TelemetrySample]) -> float | None:
+    """Masa Havok dominante en un tramo (telemetria CE)."""
+    from collections import Counter
+
+    masses: list[float] = []
+    for sample in samples:
+        raw = parse_note_field(sample.note, "mass_havok")
+        if not raw:
+            continue
+        try:
+            mass = float(raw)
+        except ValueError:
+            continue
+        if mass > 0:
+            masses.append(mass)
+    if not masses:
+        return None
+    return float(Counter(round(m, 0) for m in masses).most_common(1)[0][0])
+
+
+def apply_ce_mass_override(vehicle: VehicleConfig, mass_havok: float) -> VehicleConfig:
+    """Ajusta masa total al valor Havok CE (carga en bastidor, no escenario de protocolo)."""
+    chassis = vehicle.mass_kg + vehicle.addon_mass_kg
+    extra = mass_havok - chassis
+    base_label = vehicle.label.split(" — ")[0]
+    if extra <= 50:
+        return replace(
+            vehicle,
+            cargo_mass_kg=0.0,
+            trailer_mass_kg=0.0,
+            trailer_cargo_mass_kg=0.0,
+            label=f"{base_label} — vacio CE",
+        )
+    return replace(
+        vehicle,
+        cargo_mass_kg=extra,
+        trailer_mass_kg=0.0,
+        trailer_cargo_mass_kg=0.0,
+        label=f"{base_label} — CE {mass_havok:.0f} kg",
+    )
+
+
+def _sim_throttle_cap_for_compare(samples: list[TelemetrySample], surface: SurfaceConfig) -> float:
+    """Limita gas cuando el tramo CE no es sprint WOT (crawl, curvas, carga pesada)."""
+    if not samples:
+        return 1.0
+    peak = max(s.speed_kmh for s in samples)
+    if surface.kind == "asphalt":
+        if peak >= 50.0:
+            return 1.0
+        return max(0.12, min(1.0, peak / 42.0))
+    if surface.kind in ("mud", "deep_mud"):
+        if peak >= 35.0:
+            return 1.0
+        return max(0.15, min(1.0, peak / 38.0))
+    return 1.0
+
+
+def _vehicle_for_compare(samples: list[TelemetrySample], meta: SessionMeta) -> VehicleConfig:
+    vehicle = build_vehicle_for_session(meta)
+    mass_havok = dominant_mass_havok_from_samples(samples)
+    if mass_havok is not None:
+        vehicle = apply_ce_mass_override(vehicle, mass_havok)
+    return vehicle
+
+
 def compare_samples_to_sim(
     samples: list[TelemetrySample],
     meta: SessionMeta,
@@ -1242,11 +1308,21 @@ def compare_samples_to_sim(
         return {"sample_count": 0, "mae_kmh": 0.0, "rows": []}
 
     surface = _surface_for_meta(meta)
-    vehicle = build_vehicle_for_session(meta)
+    vehicle = _vehicle_for_compare(samples, meta)
     engine = _engine_for_session(meta)
     t_end = max(s.t_s for s in samples)
     duration = max(5.0, t_end - t_origin + 2.0)
-    series = run_sim(vehicle, engine, surface, duration, low_gear=meta.low_gear)
+    initial_speed_kmh = samples[0].speed_kmh if samples else 0.0
+    throttle_cap = _sim_throttle_cap_for_compare(samples, surface)
+    series = run_sim(
+        vehicle,
+        engine,
+        surface,
+        duration,
+        low_gear=meta.low_gear,
+        initial_speed_kmh=initial_speed_kmh,
+        throttle_cap=throttle_cap,
+    )
 
     rows: list[dict] = []
     for sample in samples:
@@ -1281,6 +1357,8 @@ def compare_samples_to_sim(
         "tire": meta.tire,
         "diff_lock": meta.diff_lock,
         "load": meta.load_scenario_id,
+        "mass_havok_ce": dominant_mass_havok_from_samples(samples),
+        "throttle_cap": throttle_cap,
         "surface": meta.surface_label,
     }
 
@@ -1296,8 +1374,6 @@ def compare_session_by_terrain(session: TelemetrySession) -> dict:
 
     for seg in segments:
         seg_meta = meta_with_protocol(session.meta, seg.protocol_id)
-        if is_loaded_session(session.meta):
-            seg_meta = replace(seg_meta, load_scenario_id=session.meta.load_scenario_id)
         cmp = compare_samples_to_sim(list(seg.samples), seg_meta, t_origin=seg.t_start)
         segment_comparisons.append(
             {
@@ -1614,31 +1690,8 @@ def sim_speed_at(series, t_s: float) -> float:
 
 def compare_session_to_sim(session: TelemetrySession) -> dict:
     """Compara muestras del juego con prediccion del simulador."""
+    cmp = compare_samples_to_sim(list(session.samples), session.meta)
     meta = session.meta
-    surface = _surface_for_meta(meta)
-    vehicle = build_vehicle_for_session(meta)
-    engine = _engine_for_session(meta)
-    duration = max(meta.duration_s, max((s.t_s for s in session.samples), default=0.0) + 1.0)
-    series = run_sim(vehicle, engine, surface, duration, low_gear=meta.low_gear)
-
-    rows: list[dict] = []
-    for sample in session.samples:
-        sim_v = round(sim_speed_at(series, sample.t_s), 1)
-        rows.append(
-            {
-                "t_s": sample.t_s,
-                "game_kmh": sample.speed_kmh,
-                "sim_kmh": sim_v,
-                "delta_kmh": round(sample.speed_kmh - sim_v, 1),
-                "note": sample.note,
-            }
-        )
-
-    deltas = [r["delta_kmh"] for r in rows]
-    mae = round(sum(abs(d) for d in deltas) / len(deltas), 1) if deltas else 0.0
-    game_v30 = next((r["game_kmh"] for r in rows if r["t_s"] >= 28), None)
-    sim_v30 = round(sim_speed_at(series, 30.0), 1)
-
     return {
         "session_id": meta.id,
         "protocol_id": meta.protocol_id,
@@ -1646,13 +1699,13 @@ def compare_session_to_sim(session: TelemetrySession) -> dict:
         "tire": meta.tire,
         "diff_lock": meta.diff_lock,
         "load": meta.load_scenario_id,
-        "total_mass_kg": total_mass_kg(vehicle),
-        "sample_count": len(rows),
-        "mae_kmh": mae,
-        "game_v30_kmh": game_v30,
-        "sim_v30_kmh": sim_v30,
-        "sim_v_end_kmh": round(series.speeds_kmh[-1], 1),
-        "rows": rows,
+        "total_mass_kg": cmp.get("total_mass_kg"),
+        "sample_count": cmp["sample_count"],
+        "mae_kmh": cmp["mae_kmh"],
+        "game_v30_kmh": cmp.get("game_v30_kmh"),
+        "sim_v30_kmh": cmp.get("sim_v30_kmh"),
+        "sim_v_end_kmh": cmp.get("sim_v_end_kmh"),
+        "rows": cmp["rows"],
     }
 
 

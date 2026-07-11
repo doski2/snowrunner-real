@@ -1,0 +1,559 @@
+{
+  "id": "usds_trailers",
+  "source": "USDS (Vlad Vulcan)",
+  "sheet": "Trailers",
+  "updated_utc": "2026-07-11T01:12:50.941657+00:00",
+  "items": [
+    {
+      "Cargo Trailers": "Small Scout Flatbed",
+      "Type": "Scout Trailer",
+      "Mass": "1 135",
+      "Axles": "1",
+      "Cargo Slots": "1",
+      "Price": "2 700",
+      "Excluded Trucks": "KHAN 39 Marshall"
+    },
+    {
+      "Cargo Trailers": "Scout Flatbed",
+      "Type": "Scout Trailer",
+      "Mass": "1 235",
+      "Axles": "2",
+      "Cargo Slots": "2",
+      "Price": "3 400",
+      "Excluded Trucks": "KHAN 39 Marshall"
+    },
+    {
+      "Cargo Trailers": "Offroad Scout Trailer",
+      "Type": "Scout Trailer",
+      "Mass": "1 820",
+      "Axles": "2",
+      "Cargo Slots": "2",
+      "Price": "3 400"
+    },
+    {
+      "Cargo Trailers": "Sideboard Trailer",
+      "Type": "Trailer",
+      "Mass": "2 800",
+      "Axles": "2",
+      "Cargo Slots": "2",
+      "Price": "3 400"
+    },
+    {
+      "Cargo Trailers": "Ramped Flatbed Trailer",
+      "Type": "Trailer",
+      "Mass": "5 598",
+      "Axles": "3",
+      "Cargo Slots": "4",
+      "Excluded Cargo": "CargoPlane, CargoWing1, CargoWing2",
+      "Price": "4 200",
+      "Excluded Trucks": "Burlak 6x6, Earthroamer LTi, Earthroamer SX"
+    },
+    {
+      "Cargo Trailers": "Flatbed Trailer",
+      "Type": "Trailer",
+      "Mass": "5 640",
+      "Axles": "4",
+      "Cargo Slots": "2",
+      "Price": "3 800"
+    },
+    {
+      "Cargo Trailers": "Stepdeck Semi-Trailer",
+      "Type": "Semi-Trailer",
+      "Mass": "3 149",
+      "Axles": "2",
+      "Cargo Slots": "5",
+      "Excluded Cargo": "CargoPlane, CargoWing1, CargoWing2",
+      "Price": "7 200",
+      "Excluded Trucks": "International Fleetstar F2070A"
+    },
+    {
+      "Cargo Trailers": "Sideboard Semi-Trailer",
+      "Type": "Semi-Trailer",
+      "Mass": "5 205",
+      "Axles": "2",
+      "Cargo Slots": "5",
+      "Excluded Cargo": "CargoPlane, CargoWing1, CargoWing2, CargoBoiler, CargoIronRoad",
+      "Price": "6 800"
+    },
+    {
+      "Cargo Trailers": "Flatbed Semi-Trailer",
+      "Type": "Semi-Trailer",
+      "Mass": "5 405",
+      "Axles": "2",
+      "Cargo Slots": "5",
+      "Excluded Cargo": "CargoPlane, CargoWing1, CargoWing2",
+      "Price": "6 600"
+    },
+    {
+      "Cargo Trailers": "Gooseneck Semi-Trailer",
+      "Type": "Semi-Trailer",
+      "Mass": "6 919",
+      "Axles": "4",
+      "Cargo Slots": "4",
+      "Excluded Cargo": "CargoPlane, CargoWing1, CargoWing2",
+      "Price": "5 700",
+      "Excluded Trucks": "International Fleetstar F2070A"
+    },
+    {
+      "Cargo Trailers": "Short Flatbed Semi-Trailer with Parts",
+      "Type": "Semi-Trailer",
+      "Mass": "4 215",
+      "Axles": "2",
+      "Cargo Slots": "3",
+      "Price": "4 200"
+    },
+    {
+      "Cargo Trailers": "Gooseneck Semi-Trailer with Parts",
+      "Type": "Semi-Trailer",
+      "Mass": "5 210",
+      "Axles": "2",
+      "Cargo Slots": "3",
+      "Price": "5 700",
+      "Excluded Trucks": "Mack Defense M917, Mack Pinnacle, Western Star 6900XD, TUZ 108 Warthog, KRS-58 \"Bandit\", Azov 73210, Chevrolet Kodiak C70, Derry Longhorn 3194, International Fleetstar F2070A, Royal BM17"
+    },
+    {
+      "Cargo Trailers": "Superheavy Semi-Trailer",
+      "Type": "High Saddle Semi-Trailer",
+      "Mass": "8 200",
+      "Axles": "5",
+      "Cargo Slots": "8",
+      "Excluded Cargo": "CargoPlane, CargoWing1, CargoWing2",
+      "Price": "9 400"
+    },
+    {
+      "Cargo Trailers": "Flatbed Semi-Trailer Loaded with Parts",
+      "Type": "High Saddle Semi-Trailer",
+      "Mass": "7 385",
+      "Axles": "4",
+      "Cargo Slots": "6",
+      "Excluded Cargo": "CargoPlane, CargoWing1, CargoWing2",
+      "Price": "8 300"
+    },
+    {
+      "Cargo Trailers": "Wide Flatbed Semi-Trailer",
+      "Type": "High Saddle Semi-Trailer",
+      "Mass": "6 620",
+      "Axles": "2",
+      "Cargo Slots": "5",
+      "Price": "7 500"
+    },
+    {
+      "Cargo Trailers": "Wide Flatbed 3-Axle Semi",
+      "Type": "High Saddle Semi-Trailer",
+      "Mass": "6 222",
+      "Axles": "3",
+      "Cargo Slots": "5",
+      "Price": "7 500",
+      "Excluded Trucks": "Pacific P16"
+    },
+    {
+      "Cargo Trailers": "Heavy Duty Lowboy Trailer",
+      "Type": "High Saddle Semi-Trailer",
+      "Mass": "8 604,0",
+      "Axles": "4",
+      "Cargo Slots": "3",
+      "Price": "6 400"
+    },
+    {
+      "Cargo Trailers": "Logging",
+      "Type": "Type",
+      "Excluded Cargo": "Log Type(s)",
+      "Excluded Trucks": "Pacific P16, Zikz 605R"
+    },
+    {
+      "Cargo Trailers": "Log Carrier Rear",
+      "Type": "Trailer",
+      "Mass": "2 300",
+      "Axles": "2",
+      "Excluded Cargo": "Long",
+      "Price": "14 100"
+    },
+    {
+      "Cargo Trailers": "Pacific P16 Logging Trailer",
+      "Type": "Trailer",
+      "Mass": "3 978",
+      "Axles": "2",
+      "Excluded Cargo": "Long",
+      "Price": "14 100",
+      "Excluded Trucks": "ANK Mk.38, Derry Longhorn 3194, Freigthliner M916A1, FEMM-37 AT"
+    },
+    {
+      "Cargo Trailers": "Log Trailer",
+      "Type": "Trailer",
+      "Mass": "4 693",
+      "Axles": "2",
+      "Excluded Cargo": "Medium",
+      "Price": "14 100",
+      "Excluded Trucks": "HIB Billert 1980, PLAD 440 “Buddy”, Sleiter ST 833 “Chimera”, Burlak 6x6, Caterpillar CT680, Caterpillar CT681, Chevrolet Kodiak C70, Ford CLT 9000, GMC 8000 Brigadier,\nGMC MH9500, Kenworth 963, Mack Pinnacle, Mack Terra Pro, Sleiter ST 816 \"Elephant\", Step 310E, Tatra 805, Tatra T813, ZiKZ 605R, Ford F750"
+    },
+    {
+      "Cargo Trailers": "Futom-S Logging Trailer",
+      "Type": "Log Trailer",
+      "Mass": "4 229",
+      "Axles": "2",
+      "Excluded Cargo": "Short",
+      "Price": "14 900"
+    },
+    {
+      "Cargo Trailers": "Futom-M Logging Trailer",
+      "Type": "Log Trailer",
+      "Mass": "4 235",
+      "Axles": "2",
+      "Excluded Cargo": "Medium",
+      "Price": "16 500",
+      "Excluded Trucks": "TUZ 108 \"Warthog\""
+    },
+    {
+      "Cargo Trailers": "Double Logging Semi-Trailer",
+      "Type": "Semi-Trailer",
+      "Mass": "11 600",
+      "Axles": "5",
+      "Excluded Cargo": "2 * Medium",
+      "Price": "25 400",
+      "Excluded Trucks": "Azov 73210, Chevrolet Kodiak C70, International Fleetstar F2070A, Mack Defense M917, Royal BM17"
+    },
+    {
+      "Cargo Trailers": "Forwood-LS Logging Semi-Trailer",
+      "Type": "Semi-Trailer",
+      "Mass": "11 450",
+      "Axles": "5",
+      "Excluded Cargo": "Short + Long",
+      "Price": "11 700"
+    },
+    {
+      "Cargo Trailers": "Foldable Logging Semi-Trailer",
+      "Type": "Hydrolift Saddle",
+      "Mass": "6 030,00",
+      "Axles": "3",
+      "Excluded Cargo": "Long",
+      "Price": "15 000"
+    },
+    {
+      "Cargo Trailers": "Utility",
+      "Type": "Type",
+      "Excluded Cargo": "in US gallons"
+    },
+    {
+      "Cargo Trailers": "Prototype Exploration Unit",
+      "Type": "Scout Trailer",
+      "Mass": "2 752",
+      "Axles": "2",
+      "Cargo Slots": "120",
+      "Excluded Cargo": "32",
+      "Price": "5 800"
+    },
+    {
+      "Cargo Trailers": "Scout Fuel Carrier",
+      "Type": "Scout Trailer",
+      "Mass": "2 785",
+      "col": "1 185",
+      "Axles": "1",
+      "Cargo Slots": "900",
+      "Excluded Cargo": "238",
+      "Price": "3 800"
+    },
+    {
+      "Cargo Trailers": "Scout Service Trailer",
+      "Type": "Scout Trailer",
+      "Mass": "1 385",
+      "Axles": "1",
+      "Cargo Slots": "150",
+      "Excluded Cargo": "40",
+      "col_1": "250",
+      "col_2": "2",
+      "Price": "3 400"
+    },
+    {
+      "Cargo Trailers": "Large Service Scout Trailer",
+      "Type": "Scout Trailer",
+      "Mass": "1 290",
+      "Axles": "2",
+      "Cargo Slots": "300",
+      "Excluded Cargo": "80",
+      "col_1": "400",
+      "col_2": "3",
+      "Price": "4 300"
+    },
+    {
+      "Cargo Trailers": "Service Trailer",
+      "Type": "Trailer",
+      "Mass": "6 002",
+      "Axles": "2",
+      "col_1": "1500",
+      "col_2": "8",
+      "Price": "6 400"
+    },
+    {
+      "Cargo Trailers": "Maintenance Trailer",
+      "Type": "Trailer",
+      "Mass": "5 836",
+      "Axles": "2",
+      "Cargo Slots": "2000",
+      "Excluded Cargo": "529",
+      "col_1": "350",
+      "col_2": "6",
+      "Price": "7 500"
+    },
+    {
+      "Cargo Trailers": "Fuel Carrier Trailer",
+      "Type": "Trailer",
+      "Mass": "2 560",
+      "col": "4 960",
+      "Axles": "3",
+      "Cargo Slots": "2000",
+      "Excluded Cargo": "529",
+      "Price": "4 900"
+    },
+    {
+      "Cargo Trailers": "Water Carrier Trailer",
+      "Type": "Trailer",
+      "Mass": "2 560",
+      "col": "3 260",
+      "Axles": "3",
+      "Cargo Slots": "2000",
+      "Excluded Cargo": "529",
+      "Price": "4 900",
+      "Excluded Trucks": "Freightliner M916A1, TUZ 108 \"Warthog\""
+    },
+    {
+      "Cargo Trailers": "Fuel Carrier Semi-Trailer",
+      "Type": "Semi-Trailer",
+      "Mass": "5 605",
+      "col": "5 305",
+      "Axles": "3",
+      "Cargo Slots": "3700",
+      "Excluded Cargo": "978",
+      "Price": "6 000",
+      "Excluded Trucks": "Freightliner M916A1, TUZ 108 \"Warthog\""
+    },
+    {
+      "Cargo Trailers": "Heavy Water Carrier Trailer",
+      "Type": "Semi-Trailer",
+      "Mass": "5 605",
+      "col": "5 305",
+      "Axles": "3",
+      "Cargo Slots": "3700",
+      "Excluded Cargo": "978",
+      "Price": "6 000"
+    },
+    {
+      "Cargo Trailers": "Heavy Fuel Tanker Semi-Trailer",
+      "Type": "High Saddle Semi-Trailer",
+      "Mass": "13 765",
+      "col": "7 765",
+      "Axles": "3",
+      "Cargo Slots": "5000",
+      "Excluded Cargo": "1321",
+      "Price": "7 200"
+    },
+    {
+      "Cargo Trailers": "Mission Trailers",
+      "Type": "Type",
+      "Excluded Cargo": "in US gallons"
+    },
+    {
+      "Cargo Trailers": "Fishing Trailer",
+      "Type": "Scout Trailer",
+      "Mass": "1 400",
+      "Axles": "2",
+      "Price": "2 700"
+    },
+    {
+      "Cargo Trailers": "Scout Curtainside Trailer",
+      "Type": "Scout Trailer",
+      "Mass": "1 823",
+      "Axles": "2",
+      "Price": "3 400"
+    },
+    {
+      "Cargo Trailers": "Scout Offroad Trailer",
+      "Type": "Scout Trailer",
+      "Mass": "2 300",
+      "Axles": "2",
+      "Price": "3 400"
+    },
+    {
+      "Cargo Trailers": "Driller Trailer",
+      "Type": "Trailer",
+      "Mass": "4 800",
+      "Axles": "2",
+      "Price": "3 800"
+    },
+    {
+      "Cargo Trailers": "Generator",
+      "Type": "Trailer",
+      "Mass": "6 092",
+      "Axles": "4",
+      "Cargo Slots": "1500",
+      "Excluded Cargo": "397",
+      "Price": "13 200"
+    },
+    {
+      "Cargo Trailers": "Curtainside Trailer",
+      "Type": "Trailer",
+      "Mass": "6 280",
+      "Axles": "4",
+      "Price": "3 400"
+    },
+    {
+      "Cargo Trailers": "Movie Star's Trailer",
+      "Type": "Semi-Trailer",
+      "Mass": "11 926",
+      "Axles": "2",
+      "Price": "6 800"
+    },
+    {
+      "Cargo Trailers": "Trailer Home",
+      "Type": "Semi-Trailer",
+      "Mass": "11 926",
+      "Axles": "2",
+      "Price": "6 800"
+    },
+    {
+      "Cargo Trailers": "Disassembled Caterpillar 770G",
+      "Type": "Semi-Trailer",
+      "Mass": "25 724",
+      "Axles": "4",
+      "Price": "11 700"
+    },
+    {
+      "Cargo Trailers": "Wind Turbine Blade Semi-Trailer",
+      "Type": "High Saddle Semi-Trailer",
+      "Mass": "14 200",
+      "Axles": "5",
+      "Price": "20 000"
+    },
+    {
+      "Cargo Trailers": "Oil Tank Semi-Trailer",
+      "Type": "High Saddle Semi-Trailer",
+      "Mass": "14 200",
+      "Axles": "5",
+      "Price": "12 200"
+    },
+    {
+      "Cargo Trailers": "Rocket Carrier Semi-Trailer",
+      "Type": "High Saddle Semi-Trailer",
+      "Mass": "14 200",
+      "Axles": "5",
+      "Price": "18 800"
+    },
+    {
+      "Cargo Trailers": "Assembled rocket",
+      "Type": "High Saddle Semi-Trailer",
+      "Mass": "14 200",
+      "Axles": "5",
+      "Price": "18 800"
+    },
+    {
+      "Cargo Trailers": "Oil Rig Salvage Semi-Trailer",
+      "Type": "High Saddle Semi-Trailer",
+      "Mass": "14 275",
+      "Axles": "5"
+    },
+    {
+      "Cargo Trailers": "Construction Rig Semi-Trailer",
+      "Type": "High Saddle Semi-Trailer",
+      "Mass": "21 627",
+      "Axles": "2",
+      "Price": "7 500"
+    },
+    {
+      "Cargo Trailers": "Coiled Tubing Semi-Trailer",
+      "Type": "High Saddle Semi-Trailer",
+      "Mass": "21 820",
+      "Axles": "2",
+      "Price": "4 700"
+    },
+    {
+      "Cargo Trailers": "Semi-Trailer with a Fishing Boat",
+      "Type": "High Saddle Semi-Trailer",
+      "Mass": "22 389",
+      "Axles": "4",
+      "Price": "11 700"
+    },
+    {
+      "Cargo Trailers": "Steam Turbine",
+      "Type": "High Saddle Semi-Trailer",
+      "Mass": "24 815",
+      "Axles": "4",
+      "Price": "12 200"
+    },
+    {
+      "Cargo Trailers": "Special Crane Trailer",
+      "Type": "High Saddle Semi-Trailer",
+      "Mass": "25 528",
+      "Axles": "4",
+      "Price": "12 200"
+    },
+    {
+      "Cargo Trailers": "Oil Platform Anchor",
+      "Type": "High Saddle Semi-Trailer",
+      "Mass": "30 160",
+      "Axles": "4",
+      "Price": "0"
+    },
+    {
+      "Cargo Trailers": "Turbo Generator Stator",
+      "Type": "High Saddle Semi-Trailer",
+      "Mass": "34 404",
+      "Axles": "3",
+      "Price": "12 200"
+    },
+    {
+      "Cargo Trailers": "Heavy Rock Trailer",
+      "Type": "Cat 770 Trailer",
+      "Mass": "23 788",
+      "Axles": "1",
+      "Price": "10 400"
+    },
+    {
+      "Cargo Trailers": "Diesel Locomotive",
+      "Type": "Train",
+      "Mass": "206 000",
+      "Axles": "6",
+      "Price": "18 800"
+    },
+    {
+      "Cargo Trailers": "Train Carriage",
+      "Type": "Train",
+      "Mass": "222 200",
+      "Axles": "12",
+      "Price": "18 800"
+    },
+    {
+      "Cargo Trailers": "Rocket Carrier Platform",
+      "Type": "Train",
+      "Mass": "335 000",
+      "Axles": "10",
+      "Price": "18 800"
+    },
+    {
+      "Cargo Trailers": "Farming",
+      "Type": "Type"
+    },
+    {
+      "Cargo Trailers": "Multi-row Planter",
+      "Type": "Farming",
+      "Mass": "6 450",
+      "Axles": "2",
+      "Price": "5 700"
+    },
+    {
+      "Cargo Trailers": "Cultivator",
+      "Type": "Farming",
+      "Mass": "6 200",
+      "Axles": "1",
+      "Price": "4 200"
+    },
+    {
+      "Cargo Trailers": "Potato Harvester",
+      "Type": "Farming",
+      "Mass": "2 800",
+      "Axles": "4",
+      "Price": "2 900"
+    },
+    {
+      "Cargo Trailers": "Data by Corhone, source: SR!NFO"
+    }
+  ]
+}

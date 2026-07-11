@@ -1,0 +1,391 @@
+{
+  "updated_utc": "2026-07-11T01:12:50.941657+00:00",
+  "books": {
+    "usds": {
+      "spreadsheet_id": "1_dNNE91snTCbY34YhWtG6mAK-GyCBTx4sIa9Ik9_Kjs",
+      "name": "USDS (Vlad Vulcan)",
+      "url": "https://docs.google.com/spreadsheets/d/1_dNNE91snTCbY34YhWtG6mAK-GyCBTx4sIa9Ik9_Kjs/edit"
+    },
+    "srinfo": {
+      "spreadsheet_id": "1TPla-u2zxpzFMhpxzymhwzxDU_x85Y_1SxylgRPonH0",
+      "name": "SR!NFO",
+      "url": "https://docs.google.com/spreadsheets/d/1TPla-u2zxpzFMhpxzymhwzxDU_x85Y_1SxylgRPonH0/edit"
+    },
+    "extras": {
+      "spreadsheet_id": "13e5VlopEefAsh5N9G1a9HFKpxxORTHPnzJC7CC6Blvw",
+      "name": "SnowRunner Extras",
+      "url": "https://docs.google.com/spreadsheets/d/13e5VlopEefAsh5N9G1a9HFKpxxORTHPnzJC7CC6Blvw/edit"
+    }
+  },
+  "sources": [
+    {
+      "id": "usds_trucks",
+      "book": "usds",
+      "book_name": "USDS (Vlad Vulcan)",
+      "title": "USDS — Trucks",
+      "sheet": "Trucks",
+      "csv": "usds_trucks.csv",
+      "url": "https://docs.google.com/spreadsheets/d/1_dNNE91snTCbY34YhWtG6mAK-GyCBTx4sIa9Ik9_Kjs/gviz/tq?tqx=out:csv&sheet=Trucks",
+      "parser": "table"
+    },
+    {
+      "id": "usds_trucks_ru",
+      "book": "usds",
+      "book_name": "USDS (Vlad Vulcan)",
+      "title": "USDS — Trucks (RU)",
+      "sheet": "Trucks (RU)",
+      "csv": "usds_trucks_ru.csv",
+      "url": "https://docs.google.com/spreadsheets/d/1_dNNE91snTCbY34YhWtG6mAK-GyCBTx4sIa9Ik9_Kjs/gviz/tq?tqx=out:csv&sheet=Trucks%20%28RU%29",
+      "parser": "table"
+    },
+    {
+      "id": "usds_trucks_region",
+      "book": "usds",
+      "book_name": "USDS (Vlad Vulcan)",
+      "title": "USDS — Trucks per Region",
+      "sheet": "Trucks per Region",
+      "csv": "usds_trucks_region.csv",
+      "url": "https://docs.google.com/spreadsheets/d/1_dNNE91snTCbY34YhWtG6mAK-GyCBTx4sIa9Ik9_Kjs/gviz/tq?tqx=out:csv&sheet=Trucks%20per%20Region",
+      "parser": "table"
+    },
+    {
+      "id": "usds_tires",
+      "book": "usds",
+      "book_name": "USDS (Vlad Vulcan)",
+      "title": "USDS — Tires",
+      "sheet": "Tires",
+      "csv": "usds_tires.csv",
+      "url": "https://docs.google.com/spreadsheets/d/1_dNNE91snTCbY34YhWtG6mAK-GyCBTx4sIa9Ik9_Kjs/gviz/tq?tqx=out:csv&sheet=Tires",
+      "parser": "table"
+    },
+    {
+      "id": "usds_engines",
+      "book": "usds",
+      "book_name": "USDS (Vlad Vulcan)",
+      "title": "USDS — Engines",
+      "sheet": "Engines",
+      "csv": "usds_engines.csv",
+      "url": "https://docs.google.com/spreadsheets/d/1_dNNE91snTCbY34YhWtG6mAK-GyCBTx4sIa9Ik9_Kjs/gviz/tq?tqx=out:csv&sheet=Engines",
+      "parser": "table"
+    },
+    {
+      "id": "usds_gearboxes",
+      "book": "usds",
+      "book_name": "USDS (Vlad Vulcan)",
+      "title": "USDS — Gearboxes",
+      "sheet": "Gearboxes",
+      "csv": "usds_gearboxes.csv",
+      "url": "https://docs.google.com/spreadsheets/d/1_dNNE91snTCbY34YhWtG6mAK-GyCBTx4sIa9Ik9_Kjs/gviz/tq?tqx=out:csv&sheet=Gearboxes",
+      "parser": "table"
+    },
+    {
+      "id": "usds_cargo",
+      "book": "usds",
+      "book_name": "USDS (Vlad Vulcan)",
+      "title": "USDS — Cargo",
+      "sheet": "Cargo",
+      "csv": "usds_cargo.csv",
+      "url": "https://docs.google.com/spreadsheets/d/1_dNNE91snTCbY34YhWtG6mAK-GyCBTx4sIa9Ik9_Kjs/gviz/tq?tqx=out:csv&sheet=Cargo",
+      "parser": "table"
+    },
+    {
+      "id": "usds_trailers",
+      "book": "usds",
+      "book_name": "USDS (Vlad Vulcan)",
+      "title": "USDS — Trailers",
+      "sheet": "Trailers",
+      "csv": "usds_trailers.csv",
+      "url": "https://docs.google.com/spreadsheets/d/1_dNNE91snTCbY34YhWtG6mAK-GyCBTx4sIa9Ik9_Kjs/gviz/tq?tqx=out:csv&sheet=Trailers",
+      "parser": "table"
+    },
+    {
+      "id": "usds_addons",
+      "book": "usds",
+      "book_name": "USDS (Vlad Vulcan)",
+      "title": "USDS — Addons",
+      "sheet": "Addons",
+      "csv": "usds_addons.csv",
+      "url": "https://docs.google.com/spreadsheets/d/1_dNNE91snTCbY34YhWtG6mAK-GyCBTx4sIa9Ik9_Kjs/gviz/tq?tqx=out:csv&sheet=Addons",
+      "parser": "table"
+    },
+    {
+      "id": "usds_trucks2",
+      "book": "usds",
+      "book_name": "USDS (Vlad Vulcan)",
+      "title": "USDS — Trucks2",
+      "sheet": "Trucks2",
+      "csv": "usds_trucks2.csv",
+      "url": "https://docs.google.com/spreadsheets/d/1_dNNE91snTCbY34YhWtG6mAK-GyCBTx4sIa9Ik9_Kjs/gviz/tq?tqx=out:csv&sheet=Trucks2",
+      "parser": "table"
+    },
+    {
+      "id": "srinfo_trucks",
+      "book": "srinfo",
+      "book_name": "SR!NFO",
+      "title": "SR!NFO — Trucks",
+      "sheet": "Trucks",
+      "csv": "srinfo_trucks.csv",
+      "url": "https://docs.google.com/spreadsheets/d/1TPla-u2zxpzFMhpxzymhwzxDU_x85Y_1SxylgRPonH0/gviz/tq?tqx=out:csv&sheet=Trucks",
+      "parser": "table"
+    },
+    {
+      "id": "srinfo_engines",
+      "book": "srinfo",
+      "book_name": "SR!NFO",
+      "title": "SR!NFO — Engines",
+      "sheet": "Engines",
+      "csv": "srinfo_engines.csv",
+      "url": "https://docs.google.com/spreadsheets/d/1TPla-u2zxpzFMhpxzymhwzxDU_x85Y_1SxylgRPonH0/gviz/tq?tqx=out:csv&sheet=Engines",
+      "parser": "table"
+    },
+    {
+      "id": "srinfo_gearboxes",
+      "book": "srinfo",
+      "book_name": "SR!NFO",
+      "title": "SR!NFO — Gearboxes",
+      "sheet": "Gearboxes",
+      "csv": "srinfo_gearboxes.csv",
+      "url": "https://docs.google.com/spreadsheets/d/1TPla-u2zxpzFMhpxzymhwzxDU_x85Y_1SxylgRPonH0/gviz/tq?tqx=out:csv&sheet=Gearboxes",
+      "parser": "table"
+    },
+    {
+      "id": "srinfo_wheels",
+      "book": "srinfo",
+      "book_name": "SR!NFO",
+      "title": "SR!NFO — Wheels",
+      "sheet": "Wheels",
+      "csv": "srinfo_wheels.csv",
+      "url": "https://docs.google.com/spreadsheets/d/1TPla-u2zxpzFMhpxzymhwzxDU_x85Y_1SxylgRPonH0/gviz/tq?tqx=out:csv&sheet=Wheels",
+      "parser": "wheels"
+    },
+    {
+      "id": "srinfo_addons",
+      "book": "srinfo",
+      "book_name": "SR!NFO",
+      "title": "SR!NFO — Addons",
+      "sheet": "Addons",
+      "csv": "srinfo_addons.csv",
+      "url": "https://docs.google.com/spreadsheets/d/1TPla-u2zxpzFMhpxzymhwzxDU_x85Y_1SxylgRPonH0/gviz/tq?tqx=out:csv&sheet=Addons",
+      "parser": "table"
+    },
+    {
+      "id": "srinfo_trailers",
+      "book": "srinfo",
+      "book_name": "SR!NFO",
+      "title": "SR!NFO — Trailers",
+      "sheet": "Trailers",
+      "csv": "srinfo_trailers.csv",
+      "url": "https://docs.google.com/spreadsheets/d/1TPla-u2zxpzFMhpxzymhwzxDU_x85Y_1SxylgRPonH0/gviz/tq?tqx=out:csv&sheet=Trailers",
+      "parser": "table"
+    },
+    {
+      "id": "srinfo_cargo",
+      "book": "srinfo",
+      "book_name": "SR!NFO",
+      "title": "SR!NFO — Cargo",
+      "sheet": "Cargo",
+      "csv": "srinfo_cargo.csv",
+      "url": "https://docs.google.com/spreadsheets/d/1TPla-u2zxpzFMhpxzymhwzxDU_x85Y_1SxylgRPonH0/gviz/tq?tqx=out:csv&sheet=Cargo",
+      "parser": "cargo"
+    },
+    {
+      "id": "srinfo_colors",
+      "book": "srinfo",
+      "book_name": "SR!NFO",
+      "title": "SR!NFO — Color Codes",
+      "sheet": "Color Codes",
+      "csv": "srinfo_colors.csv",
+      "url": "https://docs.google.com/spreadsheets/d/1TPla-u2zxpzFMhpxzymhwzxDU_x85Y_1SxylgRPonH0/gviz/tq?tqx=out:csv&sheet=Color%20Codes",
+      "parser": "truck_colors"
+    },
+    {
+      "id": "extras_truck_list",
+      "book": "extras",
+      "book_name": "SnowRunner Extras",
+      "title": "SnowRunner Extras — Truck List",
+      "sheet": "Truck List",
+      "csv": "extras_truck_list.csv",
+      "url": "https://docs.google.com/spreadsheets/d/13e5VlopEefAsh5N9G1a9HFKpxxORTHPnzJC7CC6Blvw/gviz/tq?tqx=out:csv&sheet=Truck%20List",
+      "parser": "table"
+    },
+    {
+      "id": "extras_addons",
+      "book": "extras",
+      "book_name": "SnowRunner Extras",
+      "title": "SnowRunner Extras — Addons",
+      "sheet": "Addons",
+      "csv": "extras_addons.csv",
+      "url": "https://docs.google.com/spreadsheets/d/13e5VlopEefAsh5N9G1a9HFKpxxORTHPnzJC7CC6Blvw/gviz/tq?tqx=out:csv&sheet=Addons",
+      "parser": "table"
+    },
+    {
+      "id": "extras_addons2",
+      "book": "extras",
+      "book_name": "SnowRunner Extras",
+      "title": "SnowRunner Extras — Addons 2",
+      "sheet": "Addons 2",
+      "csv": "extras_addons2.csv",
+      "url": "https://docs.google.com/spreadsheets/d/13e5VlopEefAsh5N9G1a9HFKpxxORTHPnzJC7CC6Blvw/gviz/tq?tqx=out:csv&sheet=Addons%202",
+      "parser": "table"
+    },
+    {
+      "id": "extras_gearboxes",
+      "book": "extras",
+      "book_name": "SnowRunner Extras",
+      "title": "SnowRunner Extras — Gearboxes",
+      "sheet": "Gearboxes",
+      "csv": "extras_gearboxes.csv",
+      "url": "https://docs.google.com/spreadsheets/d/13e5VlopEefAsh5N9G1a9HFKpxxORTHPnzJC7CC6Blvw/gviz/tq?tqx=out:csv&sheet=Gearboxes",
+      "parser": "table"
+    },
+    {
+      "id": "extras_tires",
+      "book": "extras",
+      "book_name": "SnowRunner Extras",
+      "title": "SnowRunner Extras — Tires",
+      "sheet": "Tires",
+      "csv": "extras_tires.csv",
+      "url": "https://docs.google.com/spreadsheets/d/13e5VlopEefAsh5N9G1a9HFKpxxORTHPnzJC7CC6Blvw/gviz/tq?tqx=out:csv&sheet=Tires",
+      "parser": "table"
+    },
+    {
+      "id": "extras_trailers_winches",
+      "book": "extras",
+      "book_name": "SnowRunner Extras",
+      "title": "SnowRunner Extras — Trailers & Winches",
+      "sheet": "Trailers & Winches",
+      "csv": "extras_trailers_winches.csv",
+      "url": "https://docs.google.com/spreadsheets/d/13e5VlopEefAsh5N9G1a9HFKpxxORTHPnzJC7CC6Blvw/gviz/tq?tqx=out:csv&sheet=Trailers%20%26%20Winches",
+      "parser": "table"
+    },
+    {
+      "id": "extras_cargo",
+      "book": "extras",
+      "book_name": "SnowRunner Extras",
+      "title": "SnowRunner Extras — Cargo",
+      "sheet": "Cargo",
+      "csv": "extras_cargo.csv",
+      "url": "https://docs.google.com/spreadsheets/d/13e5VlopEefAsh5N9G1a9HFKpxxORTHPnzJC7CC6Blvw/gviz/tq?tqx=out:csv&sheet=Cargo",
+      "parser": "table"
+    },
+    {
+      "id": "extras_vehicles_find",
+      "book": "extras",
+      "book_name": "SnowRunner Extras",
+      "title": "SnowRunner Extras — Vehicles To Find",
+      "sheet": "Vehicles To Find",
+      "csv": "extras_vehicles_find.csv",
+      "url": "https://docs.google.com/spreadsheets/d/13e5VlopEefAsh5N9G1a9HFKpxxORTHPnzJC7CC6Blvw/gviz/tq?tqx=out:csv&sheet=Vehicles%20To%20Find",
+      "parser": "table"
+    },
+    {
+      "id": "extras_missions",
+      "book": "extras",
+      "book_name": "SnowRunner Extras",
+      "title": "SnowRunner Extras — Missions and Payments",
+      "sheet": "Missions and Payments",
+      "csv": "extras_missions.csv",
+      "url": "https://docs.google.com/spreadsheets/d/13e5VlopEefAsh5N9G1a9HFKpxxORTHPnzJC7CC6Blvw/gviz/tq?tqx=out:csv&sheet=Missions%20and%20Payments",
+      "parser": "table"
+    },
+    {
+      "id": "extras_dlc_trucks",
+      "book": "extras",
+      "book_name": "SnowRunner Extras",
+      "title": "SnowRunner Extras — DLC Trucks",
+      "sheet": "DLC Trucks",
+      "csv": "extras_dlc_trucks.csv",
+      "url": "https://docs.google.com/spreadsheets/d/13e5VlopEefAsh5N9G1a9HFKpxxORTHPnzJC7CC6Blvw/gviz/tq?tqx=out:csv&sheet=DLC%20Trucks",
+      "parser": "table"
+    },
+    {
+      "id": "extras_dlc_releases",
+      "book": "extras",
+      "book_name": "SnowRunner Extras",
+      "title": "SnowRunner Extras — DLC Releases",
+      "sheet": "DLC Releases",
+      "csv": "extras_dlc_releases.csv",
+      "url": "https://docs.google.com/spreadsheets/d/13e5VlopEefAsh5N9G1a9HFKpxxORTHPnzJC7CC6Blvw/gviz/tq?tqx=out:csv&sheet=DLC%20Releases",
+      "parser": "table"
+    },
+    {
+      "id": "extras_addon_colors",
+      "book": "extras",
+      "book_name": "SnowRunner Extras",
+      "title": "SnowRunner Extras — Addon Color Matching",
+      "sheet": "Addon Color Matching",
+      "csv": "extras_addon_colors.csv",
+      "url": "https://docs.google.com/spreadsheets/d/13e5VlopEefAsh5N9G1a9HFKpxxORTHPnzJC7CC6Blvw/gviz/tq?tqx=out:csv&sheet=Addon%20Color%20Matching",
+      "parser": "addon_colors"
+    },
+    {
+      "id": "extras_gas_tanks",
+      "book": "extras",
+      "book_name": "SnowRunner Extras",
+      "title": "SnowRunner Extras — Gas Tank Volumes",
+      "sheet": "Gas Tank Volumes",
+      "csv": "extras_gas_tanks.csv",
+      "url": "https://docs.google.com/spreadsheets/d/13e5VlopEefAsh5N9G1a9HFKpxxORTHPnzJC7CC6Blvw/gviz/tq?tqx=out:csv&sheet=Gas%20Tank%20Volumes",
+      "parser": "table"
+    },
+    {
+      "id": "extras_jat_issues",
+      "book": "extras",
+      "book_name": "SnowRunner Extras",
+      "title": "SnowRunner Extras — JAT Issue List",
+      "sheet": "JAT Issue List",
+      "csv": "extras_jat_issues.csv",
+      "url": "https://docs.google.com/spreadsheets/d/13e5VlopEefAsh5N9G1a9HFKpxxORTHPnzJC7CC6Blvw/gviz/tq?tqx=out:csv&sheet=JAT%20Issue%20List",
+      "parser": "table"
+    },
+    {
+      "id": "extras_engines_wip",
+      "book": "extras",
+      "book_name": "SnowRunner Extras",
+      "title": "SnowRunner Extras — Engines (WIP)",
+      "sheet": "Engines (WIP)",
+      "csv": "extras_engines_wip.csv",
+      "url": "https://docs.google.com/spreadsheets/d/13e5VlopEefAsh5N9G1a9HFKpxxORTHPnzJC7CC6Blvw/gviz/tq?tqx=out:csv&sheet=Engines%20%28WIP%29",
+      "parser": "table"
+    }
+  ],
+  "counts": {
+    "usds_trucks": 115,
+    "usds_trucks_ru": 116,
+    "usds_trucks_region": 116,
+    "usds_tires": 207,
+    "usds_engines": 123,
+    "usds_gearboxes": 82,
+    "usds_cargo": 69,
+    "usds_trailers": 69,
+    "usds_addons": 95,
+    "usds_trucks2": 16,
+    "srinfo_trucks": 116,
+    "srinfo_engines": 120,
+    "srinfo_gearboxes": 82,
+    "srinfo_wheels": 170,
+    "srinfo_addons": 94,
+    "srinfo_trailers": 68,
+    "srinfo_cargo": 68,
+    "srinfo_colors": 572,
+    "extras_truck_list": 103,
+    "extras_addons": 103,
+    "extras_addons2": 103,
+    "extras_gearboxes": 84,
+    "extras_tires": 120,
+    "extras_trailers_winches": 32,
+    "extras_cargo": 60,
+    "extras_vehicles_find": 74,
+    "extras_missions": 20,
+    "extras_dlc_trucks": 25,
+    "extras_dlc_releases": 104,
+    "extras_addon_colors": 7,
+    "extras_gas_tanks": 112,
+    "extras_jat_issues": 11,
+    "extras_engines_wip": 43
+  },
+  "totals": {
+    "sheets": 33,
+    "records": 3299
+  }
+}

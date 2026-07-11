@@ -175,8 +175,19 @@ def main() -> int:
 
     print(f"PID={pid}")
     _print_snapshot(data)
-    if not any(data.get(k) for k in ("diff_lock_live", "awd_live", "low_gear_live")):
-        print("\nOffsets live sin calibrar — usa --discover y anota en offsets_referencia.json")
+    ref = mh.load_offsets_reference()
+    cands = (ref.get("drive_runtime") or {}).get("candidates") or {}
+    thr = cands.get("throttle_f32")
+    rpm = cands.get("engine_rpm_f32")
+    live_missing = not any(data.get(k) for k in ("diff_lock_live", "awd_live", "low_gear_live"))
+    if thr:
+        print(f"\nthrottle_f32: {thr['base']}{thr['offset']}")
+    else:
+        print("\nthrottle_f32 sin calibrar — .\\grabar_telemetria.bat drive_cal")
+    if rpm:
+        print(f"engine_rpm_f32: {rpm['base']}{rpm['offset']}")
+    if live_missing:
+        print("diff/L/AWD live sin calibrar — drive_snap + drive_diff (ver README)")
 
     if args.save:
         path = os.path.join(snap_dir, f"{args.save}.json")

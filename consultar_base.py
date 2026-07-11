@@ -17,6 +17,7 @@ import sys
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATOS = os.path.join(ROOT, "datos")
 CATALOGO = os.path.join(DATOS, "catalogo")
+COMUNIDAD = os.path.join(DATOS, "comunidad")
 INDICES = os.path.join(DATOS, "indices")
 
 if ROOT not in sys.path:
@@ -221,7 +222,127 @@ def cmd_stats(_: argparse.Namespace) -> int:
     n_cal = len((cal or {}).get("sessions", []))
     n_disk = len(iter_session_json_paths()) if os.path.isdir(TELEMETRY_DIR) else 0
     print(f"\nSesiones indexadas: {n_cal}  |  JSON en telemetria/sesiones: {n_disk}")
+    com = _load_json(os.path.join(COMUNIDAD, "fuentes.json"))
+    if com:
+        t = com.get("totals", {})
+        print(
+            f"\nComunidad: {t.get('sheets', 0)} hojas, "
+            f"{t.get('records', 0)} registros (USDS + SR!NFO + Extras)"
+        )
     return 0
+
+
+def cmd_comunidad(_: argparse.Namespace) -> int:
+    fuentes = _load_json(os.path.join(COMUNIDAD, "fuentes.json"))
+    if not fuentes:
+        print("Sin datos/comunidad — ejecuta: python datos/importar_comunidad.py --fetch")
+        return 1
+    print(f"Actualizado: {fuentes.get('updated_utc', '?')}")
+    totals = fuentes.get("totals", {})
+    print(f"Hojas: {totals.get('sheets', '?')}  |  Registros: {totals.get('records', '?')}")
+    print("\nLibros:")
+    for bid, meta in (fuentes.get("books") or {}).items():
+        print(f"  {bid}: {meta.get('name')}")
+        print(f"    {meta.get('url')}")
+    print("\nTop hojas:")
+    counts = sorted((fuentes.get("counts") or {}).items(), key=lambda x: -x[1])[:12]
+    for k, n in counts:
+        print(f"  {k}: {n}")
+    print("\nReimportar: python datos/importar_comunidad.py --fetch")
+    return 0
+
+
+def cmd_buscar(args: argparse.Namespace) -> int:
+    """Busca en combined_*.json y hojas sueltas."""
+    q = (args.query or "").strip().lower()
+    if not q:
+        print("Uso: consultar_base.py buscar <texto>")
+        return 1
+    topics = args.topic.split(",") if args.topic else [
+        "trucks", "engines", "gearboxes", "cargo", "trailers", "addons", "tires"
+    ]
+    hits: list[str] = []
+    for topic in topics:
+        data = _load_json(os.path.join(COMUNIDAD, f"combined_{topic.strip()}.json"))
+        if not data:
+            continue
+        for it in data.get("items", []):
+            blob = json.dumps(it, ensure_ascii=False).lower()
+            if q in blob:
+                src = it.get("_source", topic)
+                # primer campo legible
+                label = next((str(v) for v in it.values() if isinstance(v, str) and v), "?")
+                hits.append(f"[{topic}/{src}] {label[:80]}")
+                if len(hits) >= args.limit:
+                    break
+        if len(hits) >= args.limit:
+            break
+    if not hits:
+        print(f"Sin coincidencias para '{args.query}'")
+        return 1
+    for line in hits:
+        print(f"  {line}")
+    return 0
+
+
+def cmd_cargo(args: argparse.Namespace) -> int:
+    data = _load_json(os.path.join(COMUNIDAD, "cargo.json"))
+    if not data:
+        print("Falta cargo.json — python datos/importar_comunidad.py --fetch")
+        return 1
+    items = data.get("items", [])
+    q = (args.query or "").strip().lower()
+    if not q:
+        print(f"Cargo SR!NFO ({len(items)} tipos). Busca: consultar_base.py cargo <texto>")
+        return 0
+    hits = []
+    for it in items:
+        blob = " ".join(
+            [
+                it.get("label", ""),
+                " ".join(it.get("internal_names") or []),
+                it.get("notes", ""),
+            ]
+        ).lower()
+        if q in blob:
+            hits.append(it)
+    if not hits:
+        print(f"Sin coincidencias para '{args.query}'")
+        return 1
+    for it in hits[: args.limit]:
+        names = ", ".join(it.get("internal_names") or []) or "?"
+        print(
+            f"  {it.get('label')}: slots={it.get('slots')} "
+            f"packed={it.get('packed_mass_kg')} kg  xml={names}"
+        )
+        if it.get("notes"):
+            print(f"    nota: {it['notes']}")
+    if len(hits) > args.limit:
+        print(f"  ... +{len(hits) - args.limit} mas")
+    return 0
+
+
+def cmd_wheel(args: argparse.Namespace) -> int:
+    data = _load_json(os.path.join(COMUNIDAD, "wheels_comunidad.json"))
+    if not data:
+        print("Falta wheels_comunidad.json — python datos/importar_comunidad.py --fetch")
+        return 1
+    q = (args.query or "").strip().lower()
+    items = data.get("items", [])
+    if not q:
+        print(f"Ruedas SR!NFO ({len(items)}). Busca: consultar_base.py wheel <nombre>")
+        return 0
+    for it in items:
+        if q in it.get("name", "").lower():
+            fr = it.get("friction") or {}
+            print(f"  {it.get('name')} [{it.get('category')}]")
+            print(
+                f"    asphalt={fr.get('asphalt')} body={fr.get('body')} "
+                f"substance={fr.get('substance')}  price={it.get('price')}"
+            )
+            return 0
+    print(f"Rueda no encontrada: {args.query}")
+    return 1
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -258,6 +379,24 @@ def main(argv: list[str] | None = None) -> int:
 
     p_st = sub.add_parser("stats", help="Conteos catalogo y sesiones")
     p_st.set_defaults(func=cmd_stats)
+
+    p_co = sub.add_parser("comunidad", help="Fuentes SR!NFO / USDS / Extras importadas")
+    p_co.set_defaults(func=cmd_comunidad)
+
+    p_cg = sub.add_parser("cargo", help="Buscar carga por nombre o Cargo* XML")
+    p_cg.add_argument("query", nargs="?", default="", help="Texto a buscar")
+    p_cg.add_argument("--limit", type=int, default=12)
+    p_cg.set_defaults(func=cmd_cargo)
+
+    p_wh = sub.add_parser("wheel", help="Friccion rueda (datos SR!NFO comunidad)")
+    p_wh.add_argument("query", nargs="?", default="", help="Nombre rueda ej. UHD III")
+    p_wh.set_defaults(func=cmd_wheel)
+
+    p_bs = sub.add_parser("buscar", help="Buscar en combined trucks/engines/cargo/...")
+    p_bs.add_argument("query", help="Texto a buscar")
+    p_bs.add_argument("--topic", help="trucks,engines,cargo,... (coma)")
+    p_bs.add_argument("--limit", type=int, default=15)
+    p_bs.set_defaults(func=cmd_buscar)
 
     args = parser.parse_args(argv)
     return args.func(args)

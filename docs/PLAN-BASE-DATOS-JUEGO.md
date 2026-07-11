@@ -106,7 +106,7 @@ Al importar CSV (`importar_ce_csv.py`), se rellenan desde `datos/catalogo/` vía
 | **`catalog_lookup`** | Al importar CSV     | `suspension_*_xml`, motor, caja — diseño stock del `.pak`          |
 | **Taller instalado** | —                   | No leído en CE; caja/suspensión mod manual en metadatos *(futuro)* |
 
-**Terreno Havok (`terrain_kind`):** por rueda (grip +0x2FC, contact +0x2EC). Etiqueta = **mayoría** de ruedas; `mixed` solo si empate (p. ej. 2+2). En `--live`, `ruedas=mud|mud|soft|hard` si hay desacuerdo. Grip/contact en pantalla son **medias** — usar `gripΔ=min-max` para ver ruedas distintas.
+**Terreno Havok (`terrain_kind`):** por rueda (grip +0x2FC, contact +0x2EC). Etiqueta = **mayoría** de ruedas; `mixed` solo si empate (p. ej. 2+2). En `--live`, `ruedas=mud|mud|soft|hard` si hay desacuerdo. Grip/contact en pantalla son **medias** — usar `grip_d=min-max` en notas CSV para ver ruedas distintas.
 
 **Importante:** el catálogo actual es **stock Steam** (`initial.pak.bak`). Los parches mod (`patches.py`) pueden cambiar `Responsiveness` / `EngineResponsiveness`; comparar con `verify_pak` o catálogo mod *(futuro)*.
 
@@ -191,8 +191,9 @@ Carga empaquetada en **addon sideboard** (no remolque). Calibrado Fleetstar F207
 | **2.5 Refs XML** | Auto en `setup` al importar | **Hecho** — `catalog_lookup.py` |
 | **2.5.1 CE suspensión** | Estudio offsets | **Parcial** — snapshots Fleetstar vacio/cargado; sin CSV; falta `bounce` |
 | **2.5.2 CE carga bastidor** | Sideboard + slots BoneCargo | **Hecho** — `memoria_havok.py`, `scan_cargo.py` |
+| **2.8 CE gas/RPM** | Acelerador + régimen motor | **Parcial** — `throttle` veh+760, `engine_rpm` veh+114 (jul-2026, Bandit); diff/L u8 pendiente; T813 por revalidar |
 
-**Lectura rápida:** entran bien las fuentes *estáticas* y el *formato* de sesión; falta **volumen** en Capa C (jugar + grabar con `grabar_telemetria.bat` §4.1).
+**Lectura rápida:** entran bien las fuentes *estáticas* y el *formato* de sesión; Capa C crece con T813 y fleet (`telemetria/sesiones/`). Usar `.\grabar_telemetria.bat` en PowerShell.
 
 **Siguiente paso:** (1) `scan_suspension.py --save bounce` + diff vacio/bounce; (2) partidas `play_free_v1` en **Black River** → `calibracion.json` vía `--index`.
 
@@ -208,6 +209,29 @@ Carga empaquetada en **addon sideboard** (no remolque). Calibrado Fleetstar F207
 | Tramos / index | `terrain_kind` (CE) — ver `docs/PENDIENTES.md` TERR-1…4 |
 
 **Obsoleto (eliminado):** blend `level_us_02_01.pak`, `datos/terrain_map.py`, `ver_mapa_michigan.py`. El mapa pintado no refleja contacto por rueda ni barro profundo.
+
+### 2.8 Acelerador y RPM — CE drive_runtime *(jul-2026)*
+
+**Objetivo:** saber si conduces a fondo, medio gas o patinando (correlación con hundimiento en barro).
+
+| Campo | Offset | Calibración |
+|-------|--------|-------------|
+| `throttle` | `vehicle+0x760` f32 | `drive_snap` gas_off → 0, gas_full → 1.0 |
+| `engine_rpm` | `vehicle+0x114` f32 | Sube ~80 rpm gas_off → gas_full (ralentí) |
+| `fuel_rate_pct_min` | derivado `fuel_pct` | Sin offset; útil como proxy |
+
+```powershell
+.\grabar_telemetria.bat drive_snap gas_off
+.\grabar_telemetria.bat drive_snap gas_full
+.\grabar_telemetria.bat drive_diff gas_off gas_full
+.\grabar_telemetria.bat drive --watch 30
+```
+
+Detalle: `cheat_engine/README.md`, `offsets_referencia.json` → `drive_runtime`. Snapshots: `cheat_engine/drive_snaps/`.
+
+**Import sim con `mixed`:** `telemetria.py` usa superficie del protocolo si `terrain_kind` dominante es `mixed` (8×8); tramos `hard`/`mud` en `compare_session_by_terrain`.
+
+**Pendiente:** `diff_lock_live` / `low_gear_live` (u8); revalidar gas en **Tatra T813**; análisis CE gas vs `mud_grade` / v30.
 
 ---
 

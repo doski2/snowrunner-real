@@ -1,0 +1,1061 @@
+{
+  "id": "usds_trucks_region",
+  "source": "USDS (Vlad Vulcan)",
+  "sheet": "Trucks per Region",
+  "updated_utc": "2026-07-11T01:12:50.941657+00:00",
+  "items": [
+    {
+      "Make and Model": "AAC 58DW",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "YES",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO",
+      "col": "US: Michigan, Alaska, Yukon, Wisconsin, Maine, Tennessee, Ontario, Briitish Columbia, North Carolina, Quebec, Washington",
+      "col_2": "RU: Taymyr, Kola, Amur, Don",
+      "col_4": "CAS: Belozersk Glades, Almaty Region",
+      "col_6": "NE: Scandinavia",
+      "col_8": "CE: Austria",
+      "col_10": "WA: Zurdania"
+    },
+    {
+      "Make and Model": "ANK Mk.38",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO",
+      "col_2": "This page shows the regional trucks limitations for NG+ and Hard Mode -  where you can and can't buy every truck."
+    },
+    {
+      "Make and Model": "ANK Mk.38 Civilian",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO",
+      "col_2": "Here you can see a cross-check of regional tags per each and every truck."
+    },
+    {
+      "Make and Model": "Ankatra 1160",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "YES",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO",
+      "col_2": "If it is allowed to be bought in these regions, it has a green YES in cell; if not - a red NO."
+    },
+    {
+      "Make and Model": "Aramatsu Forester",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "AVENHORN A15",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Azov 42-40 Antarctic",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Azov 43-191 \"Sprinter\"",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Azov 5319",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Azov 64131",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Azov 67096-3N \"Atom\"",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Azov 73210",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Boar 45318",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Burlak 6x6",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Caterpillar 745C",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Caterpillar 770G",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Caterpillar CT680",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Caterpillar CT681",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Caterpillar TH357",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Chevrolet Apache",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Chevrolet CK1500",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Chevrolet Kodiak C70",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "DAN 96320",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Derry Longhorn 3194",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Derry Longhorn 4520",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Derry Special 15C-177",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "DON 71",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "EarthRoamer LTi",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "EarthRoamer SX",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "FEMM 37 AT",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Ford CLT 9000",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Ford F750",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Freightliner 114SD",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Freightliner FLD 120",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Freightliner M916A1",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Futom 7290RA",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "GMC 8000 Brigadier",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "GMC MH9500",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "GOR BY-4",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "HIB Billert 1980",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "HIB Billert M816",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Hummer H2",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "International Fleetstar F2070A",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "International HX 520",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "International Loadstar 1700",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "International Paystar 5070",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "International Paystar 5600TS",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "International Scout 800",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "International Transtar 4070A",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Jangsu RX600",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Jeep CJ7 Renegade",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Jeep Wrangler",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Kenworth 963",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Kenworth C500",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Kenworth T880",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Kenworth W990",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "KHAN 317 Sentinel",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "KHAN 39 Marshall",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "KHAN Lo4F",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Kirovets K-700",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Kirovets K-7M",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "KOLOB 74760",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "KOLOB 74941",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "KRS 58 \"Bandit\"",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Land Rover Defender 110",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Land Rover Defender 90",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Mack Defense M917",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Mack Pinnacle",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Mack Terra Pro",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Mercedes-Benz Actros 3332",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "YES",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Mercedes-Benz Zetros",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "YES",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Mercer K520",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Mercer R230",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "MTB 8106 Rock Grinder",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Navistar 5000-MV",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Neo Falcon 2000",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Pacific P12",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Pacific P16",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Pacific P512 PF",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Padera STD-4",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "YES",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "PLAD 440 “Buddy”",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "PLAD 450",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "YES",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Rezvani Hercules 6x6",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Rezvani Tank",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Royal BM17",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Sleiter ST 816 \"Elephant\"",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Sleiter ST 833 “Chimera”",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Step 310E",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Step 33-64 \"Crocodile\"",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Step 39331 \"Pike\"",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Tatra 805",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Tatra Force T815-7",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Tatra Phoenix",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Tatra T813",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Tayga 6436",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Tayga 6455B",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "TUZ 108 \"Warthog\"",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "TUZ 16 \"Actaeon\"",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "TUZ 166",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "TUZ 420 \"Tatarin\"",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Voron AE-4380",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Voron D-53233",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Voron G-5352",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Voron Grad",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "Western Star 47X NF1424",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Western Star 47X NF1430",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Western Star 49X",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Western Star 57X",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Western Star 6900 Twin Steer",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "Western Star 6900XD",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "White Western Star 4964",
+      "US": "YES",
+      "RU": "NO",
+      "CAS": "NO",
+      "NE": "YES",
+      "CE": "YES",
+      "WA": "NO"
+    },
+    {
+      "Make and Model": "YAR 87",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "ZIKZ 5368",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "ZiKZ 566A",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "ZiKZ 605R",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    },
+    {
+      "Make and Model": "ZiKZ 612H",
+      "US": "NO",
+      "RU": "YES",
+      "CAS": "YES",
+      "NE": "NO",
+      "CE": "NO",
+      "WA": "YES"
+    }
+  ]
+}

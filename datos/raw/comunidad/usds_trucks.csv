@@ -1,0 +1,755 @@
+"English Season 18 Last Updated:
+June 26th, 2026 This work was made possible thanks to J.S. Mill and his orignal spreadsheet here Make and Model","Support me: ko-fi.com/vladvulcan or donate directly to PayPal (recepient email address: vladvulcan578@gmail.com). Donations are very welcome!  DLC Required","Needs to be unlocked","Unlocked by","Rank
+requirement","Found in region","Found on map","Contract or task name for unlock","Vehicle Class","Truck Store Price","Drivetrain","All-wheel drive","Differential locking","Tire Diameter Stock (in)","Scale stock","Tire Diameter Max (in)","Scale max","Fuel Capacity (L)","Top Engine Torque","Total Mass with wheels","Torque to Mass Ratio","Gearboxes","Winches","Steering axles","Support me: ko-fi.com/vladvulcan or donate directly to PayPal (recepient email address: vladvulcan578@gmail.com). Donations are very welcome!  Raised Suspension","Custom Suspension","Crawler
+Suspension","Active Suspension","Double all-terrain tires","Single all-terrain tires","Double offroad tires","Single offroad tires","Mud tires","Flotation tires","Chained tires","Mass per tire","Rear axle mass scale (for doubles)","Recommended by VladVulcan","Truck Trailer","Scout Trailer","Farming Trailer","Saddle Low","Saddle Low Tankers","Saddle High","Saddle High Tanker","Loading Crane","Support me: ko-fi.com/vladvulcan or donate directly to PayPal (recepient email address: vladvulcan578@gmail.com). Donations are very welcome!  Big Crane","Superheavy Crane","Log Crane","1-slot Bed","2-slot Bed","3-slot Bed ","4-slot Bed ","Crane + Saddle combo ","Short Log Addon","Medium Log Addon","Log Carrier Front (Long logs)","LogCrane + LowSaddle Combo","Futom Logging Trailers","Foldable Logging Semitrailer (Long Logs)","Frame Fuel Tank (L)","Frame Water Tank (L)","Van Body Addon (Repairs - Wheels)","Frame Maintenance Addon (Repairs - Wheels - Fuel)","Multi-purpose Cargo Module
+(Repairs - Wheels - Fuel)","Support me: ko-fi.com/vladvulcan or donate directly to PayPal (recepient email address: vladvulcan578@gmail.com). Donations are very welcome!  Roof Rack with supplies (Repairs -Wheels - Fuel)","Maximum Supplies
+(Repairs -Wheels - Fuel)","Spare wheel addon (Pcs)","Seismic Vibrator","Metal Detector","Metal Detector+ anything combo","Towing Platform","Base Engine","Stock Torque","Torque-to-Mass ratio
+stock","Truck file name
+in the initial.pak","","",""
+"HIB Billert M816","Year 5
+Season 18","TRUE","Task","","Chiapas","Costa Atardecer","""Fix and fuel up the truck""","Highway","$34 800","6x6","Switchable","Switchable","46","0,58","49","0,62","280","182950","10256","17,84","Custom (M816)","Medium","1, front","Raised","","","","ATMD;
+JAT ATHD (DLC)
+M816 tires","","OHD;
+JAT OHD (DLC)","","","","OHD chains","220","x2","OHD I","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","SLEI-64","","","LP-4","1-slot cargo
+Bed +Crane +Trailer","","","","Both saddles + crane","","","LogCarrierFront","LogCrane + LowSaddle","Futom-S logging trailer
+Futom-M logging trailer","YES","","","800-6","","","150-0-200","","","","","","","","115808","11,29","hib_billert_m816.xml","","",""
+"Mercer R230","Year 5
+Season 18","TRUE","Task","","Chiapas","Sierra Fuerte","""Back to work""","Offroad","$95 400","6x6","Always On","Switchable","47","0,60","51","0,65","320","165240","10720","15,41","Special (R230)","Medium","1, front","Raised","","Crawler","","ATMD;
+JAT ATHD (DLC)","","OHD;
+JAT OHD (DLC)
+R230 tires","","","","OHD chains","200","x2","OHD I","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","","","IM50
+LC 3.8","","","LP-4","1-slot cargo
+Bed +Crane +Trailer","2-slot Cargo Bed","","","Saddle Low + crane","Short Logs Addon","","LogCarrierFront +LogCrane","LogCrane + LowSaddle","Futom-S logging trailer
+Futom-M logging trailer","","1800","1800","800-6","450-4-140","","","","2","SeismicVibrator +Trailer","","","Articulated Towing Platform","","120250","11,22","mercer_6x6r_230.xml","","",""
+"AAC 58DW","Year 4
+Season 13","TRUE","Task","","Almaty Region","Zherbai Quarries","""A Great Deal""","Scout","$24 000","4x4","Switchable","Always On","32","0,41","35","0,44","60","110000","4016","27,39","Scout+
+Special (AAC)","Scout","1, front","Raised","","","","","AS;
+Ultima AT (DLC)","","OS + JAT OS;
+AAC-58DW tires","MS;
+JAT MS (DLC)","","CS;
+Ultima CS (DLC)","75","","AAC 58DW tires
+JAT MS III","","Scout Trailer","","","","","","","","","","","","","","","","","","","","","","","","","","150-0-120","","2","","","","","AAT-6V 4,0","35000","8,72","aac_58dw.xml","","",""
+"ANK Mk.38","","TRUE"," Exploration","","Alaska","Pedro Bay","","Offroad","$75 000","6x6","Always On","Always On","47","0,60","51","0,65","200","210000","11010","19,07","Truck","Medium","1, front","Raised","Custom Tuned","","Active","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC)","ANKO","JAT MMD (DLC)","AMHS","UAD chains","100","x2","JAT MMD I","Truck Trailer","","","","","","","","","","","","2-slot cargo Bed +Trailer","","","","","","","","Futom-S logging trailer
+Futom-M logging trailer","","","","","","","","","2","","","","","A12V-780","175000","15,89","ank_mk38.xml","","",""
+"ANK Mk.38 Civilian","","FALSE","","","Ontario","Burned Forest","","Offroad","$75 000","6x6","Always On","Always On","47","0,60","51","0,65","200","210000","10816","19,42","Truck","Medium","1, front","Raised","","","Active","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC)","ANKO","JAT MMD (DLC)","JAT MMD (DLC)","UAD chains","100","x2","JAT MMD I","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","","","","","","","","","","","","","","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","","","","","2","","","","","A12V-780","175000","16,18","ank_mk38_ht.xml","","",""
+"Ankatra 1160","Year 4
+Season 14","TRUE","Contract","","Austria","Unterfeld","""An Old Friend""","Offroad","$130 300","6x6","Switchable","Switchable","47","0,60","47","0,60","180","150000","12213","12,28","Special (Ankantra)","Medium","1, front","","","","","","ATHS","","OHS;
+JAT OHS (DLC)","DMHS;
+JAT MHS (DLC);
+Ankatra MHS I","Ankatra MHS II","","","","Ankatra MHS II","Truck Trailer","","Farm Trailer","","","","","","","","Ankatra crane","","","","","","","","","","Futom-S logging trailer
+Futom-M logging trailer","","","","","","","","","","","","","","Metra V51-D70","115000","9,42","ankatra_1160.xml","","",""
+"Aramatsu Forester","Year 2 - Season 6","TRUE","Task","","Maine","The Lowland","""Abandoned Titan""","Heavy","$38 000","8x8","Always On","Switchable","52","0,66","52","0,66","340","192000","18600","10,32","Special","Heavy","0, articulated","","","","","","","","","MHS II;
+JAT MHS (DLC)","","","200","","JAT MHS IV","Truck Trailer","","","","","","","","","","Aramatsu crane","","","","","","Short Logs Addon +LogCrane +Trailer","Medium Logs Addon +LogCrane+Trailer","","","Futom-S logging trailer
+Futom-M logging trailer","","","","","","","","","","","","","","Si-8V / 2300","160000","8,60","aramatsu_forester.xml","","",""
+"AVENHORN A15","Dragon Wagons Dual Pack","FALSE","","","","","","Heavy","$177 700","8x8","Always On","Always On","57","0,73","57","0,73","400","270200","24474,6","11,04","Special (A15)","Heavy","2, front","","","","","ATMD;
+JAT ATHD (DLC)","","OHD;
+JAT OHD (DLC)","","AVENHORN A15 tires","","OHD chains","400","x2","AVENHORN A15","Truck Trailer","","","","","SaddleHigh","Fuel Heavy Semi (5000L)","SLEI-64","PC-320 (A15)","","LP-4","","2-slot cargo Bed +Trailer","","","Saddle High + crane","Short Logs Addon +Trailer","","LogCarrierFront +LogCrane","","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","300-2-300
+300-5-1400","","","","2","SeismicVibrator","","","Articulated Towing Platform","Columbus V12 302D","218150","8,91","avenhorn_a15.xml","","",""
+"Azov 42-40 Antarctic","","TRUE","Driver's Rank","26","","","","Heavy","$140 700","6x6","Always On","Switchable","71","0,90","71","0,90","340","260000","30650","8,48","Special","Heavy","0, articulated","","","","","","","","","MSH;
+JAT MSH (DLC)","","","600","","JAT MSH III","Truck Trailer","","","","","","","","","","LP-4","","2-slot cargo Bed +Trailer","","","","","","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","","","","","","","","","","","","","Ramped Towing Platform","KZGT-8 490","205000","6,69","azov_4220_antarctic","","",""
+"Azov 43-191 ""Sprinter""","Year 2 - Season 7","TRUE","Task","","Tennessee","","""Racing Truck Delivery""","Offroad","$82 100","4x4","Always On","Always On","47","0,60","47","0,60","350","250000","10318","24,23","Truck","Medium","1, front","","","","","","ATHS;
+SPO","","OHS;
+JAT OHS (DLC)","DMHS;
+JAT MHS (DLC)","","MHS chains","200","","OHS II","","","","","","","","","","","","","","","","","","","","","","","","","","","","350-4-200","350-4-200","","","","","","Azov AM-8 14","170000","16,48","azov_43_191_sprinter.xml","","",""
+"Azov 5319","","TRUE","Driver's Rank","14","","","","Offroad","$82 100","8x8","Always On","Always On","50","0,63","50","0,63","200","210000","16033","13,10","Truck","Medium","2, front","","","","","","ATHS","","OHS;
+JAT OHS (DLC)","DMHS;
+JAT MHS (DLC)","","MHS chains","200","","OHS II","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","IM50","Avto-23","LK-2NY","LP-4","Multi-purpose Cargo Module +Trailer","2-slot cargo 
+Bed +Crane +Trailer","","","Both saddles + crane","Short Logs Addon +LogCrane +Trailer","MediumLogs +Trailer","LogCarrierFront +LogCrane","","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","300-5-1400","450-4-250
++Crane +1SlotBed","","","2","SeismicVibrator","","","Ramped Towing Platform","Azov AM-8 14","170000","10,60","azov_5319.xml","","",""
+"Azov 64131","","FALSE","","","","","","Offroad","$93 800","8x8","Always On","Always On","47","0,60","47","0,60","350","210000","17794","11,80","Special","Medium","2, front","","","","","","ATHS","","OHS;
+JAT OHS (DLC)","DMHS;
+JAT MHS (DLC)","","MHS chains","200","","JAT MHS IV","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","IM50","Avto-23","","LP-4","","2-slot cargo Bed +Trailer","","","Both saddles + crane","","","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","300-5-1400","","","","2","SeismicVibrator","","","Ramped Towing Platform","Azov AM-8 14","170000","9,55","azov_64131.xml","","",""
+"Azov 67096-3N ""Atom""","The Atom DLC","FALSE","","","","","","Heavy","$151 000","8x8","Switchable","Always On","50","0,63","50","0,63","350","235000","17173","13,68","Special","Heavy","2, front","","","","","","ATHS","","OHS;
+JAT OHS (DLC);
+Azov Atom tires","DMHS;
+JAT MHS (DLC)","","MHS chains","200","","Atom tires
+JAT MHS IV","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","IM50","","LK-2NY","LP-4","","2-slot cargo 
+Bed +Crane +Trailer","3-slot cargo
+Bed +Crane +Trailer","","Both saddles + crane","Short Logs Addon +LogCrane +Trailer","MediumLogs +Trailer","","LogCrane + LowSaddle","Futom-S logging trailer
+Futom-M logging trailer","","","","","300-4-2500","","150-0-120","450-4-2620;
+150-0-2920","","","","","","Azov AM-8 14","170000","9,90","azov_670963n.xml","","",""
+"Azov 73210","","TRUE","Driver's Rank","20","","","","Heavy","$89 100","10x10","Always On","Always On","50","0,63","50","0,63","350","260000","20045","12,97","Special","Heavy","3, 2 front + 1 rear","","","","Active","","ATHS","","OHS;
+JAT OHS (DLC)","DMHS;
+JAT MHS (DLC)","","MHS chains","200","","JAT MHS IV","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","IM50","Avto-23","LK-2NY","LP-4","Multi-purpose Cargo Module +Trailer","2-slot cargo 
+Bed +Crane +Trailer","3-slot Cargo Bed","","Both saddles + crane","Short Logs Addon +Trailer","MediumLogs +Trailer","LogCarrierFront +LogCrane","LogCrane + LowSaddle","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","350-6-2000","450-4-250
++Crane +1SlotBed","","","4","SeismicVibrator","","","Ramped Towing Platform","KZGT-8 490","205000","10,23","azov_73210.xml","","",""
+"Boar 45318","Year 1 - Season 3","FALSE","","","","","","Heavy","$181 000","6x6","Switchable","Switchable","54","0,69","58","0,74","300","260000","21013","12,37","Truck","Heavy","1, front","Raised","","","","UAD;
+JAT ATMD (DLC)","","OHD;
+UOD;
+JAT OMD (DLC)","","","","OHD chains","","x2","OHD I","Truck Trailer","","","","","SaddleHigh","Fuel Heavy Semi (5000L)","","","","","","","","","","","","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","","","","800-6","","","","","","SeismicVibrator","","","","KZGT-8 490","205000","9,76","boar_45318.xml","","",""
+"Burlak 6x6","Year 3 - Season 11","TRUE","Task","","Scandinavia","Mountain Ridge","""Troll Tamer""","Scout","$115 600","6x6","Switchable","Switchable","69","0,88","69","0,88","280","80000","5239,5","15,27","Special","Scout","1, front","","","","","","","","","","Burlak tires","Burlak tires","200","","Burlak tires","Truck Trailer","Scout Trailer","","","","","","IM50 (Burlak)","","","","1-slot cargo
+Bed +Crane +Trailer","","","","","","","","","Futom-S logging trailer
+Futom-M logging trailer","","","","","150-1-100","","450-0-80","600-1-180","","","","","","TAG-404","80000","15,27","burlak_6x6.xml","","",""
+"Caterpillar 745C","","TRUE","Task","","Alaska","Mountain River","""Working Stiff""","Heavy","$129 400","6x6","Always On","Switchable","71","0,90","71","0,90","340","250000","28615","8,74","Special","Heavy","0, articulated","","","","","","","","","MSH;
+JAT MSH (DLC)","","","600","","JAT MSH III","Truck Trailer","","","","","SaddleHigh","Fuel Heavy Semi (5000L)","","","","","","2-slot cargo Bed +Trailer","","","","","MediumLogs +Trailer","","","Futom-S logging trailer
+Futom-M logging trailer","","1600","","","300-2-1100","","","","","","","","","A16V-2000","200000","6,99","cat_745c.xml","","",""
+"Caterpillar 770G","Year 1 - Season 2","TRUE","Contract","","Yukon","Flooded Foothills","""Dump Truck for Dump Truck""","Heavy","$169 800","4x2","None","Always On","74","0,94","74","0,94","530","250000","28868","8,66","Special","Heavy","1, front","","","","","","","CAT 770G tires","","JAT MSH (DLC)","","","600","x2","CAT 770G tires","Truck Trailer","","","CAT 770G saddle","","SaddleHigh","Fuel Heavy Semi (5000L)","","","","","","","","","","","","","","Futom-S logging trailer
+Futom-M logging trailer","","2000","","","500-3-900","","","","","","","","","A16V-2000","200000","6,93","cat_770g.xml","","",""
+"Caterpillar CT680","","TRUE","Driver's Rank","12","","","","Heavy Duty","$58 300","6x6","Switchable","Switchable","43","0,55","47","0,60","280","192000","8224","23,35","Truck","Medium","1, front","","","","","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC)","","","","UAD chains","100","x2","UOD II
+JAT OMD III","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","PC-320","","LP-4","","2-slot cargo Bed +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","MediumLogs","LogCarrierFront","","","YES","1800","1800","800-6","300-5-1400","","","","2","","Metal Detector","MD+SaddleLow","Ramped Towing Platform","Gb-8V 2300c","160000","19,46","cat_ct680.xml","","",""
+"Caterpillar CT681","Anniversary DLC (free)","FALSE","","","","","","Heavy Duty","$78 800","8x6","Switchable","Switchable","43","0,55","47","0,60","260","210000","8448","24,86","Truck","Medium","1, front","","","","Dead Axle","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC)","","","","UAD chains","100","x2","UOD II
+JAT OMD III","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","PC-320","","LP-4","","2-slot cargo 
+Bed +Crane +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","MediumLogs","LogCarrierFront","","","YES","1800","1800","800-6","300-5-1400","","","","","","","","Ramped Towing Platform","Gb-8V 2300c","160000","18,94","cat_ct681.xml","","",""
+"Caterpillar TH357","Year 1 - Season 2","TRUE"," Exploration","","Yukon
+Ontario","Flooded Foothills;
+Big Salmon Peak;
+The Albany River","","Scout","$123 800","4x4","Always On","Always On","51","0,65","51","0,65","110","90000","6505","13,84","Special","Scout","2, front+rear","","","","","","","","","CAT TH357 tires","","","200","","CAT TH357 tires","","","","","","","","Narrow/Wide Forks","","","","","","","","","","","","","","","","","","","","","","","","","","","Het/4 Ace 106kW","90000","13,84","cat_th357.xml","","",""
+"Chevrolet Apache","Classico Pack","FALSE","","","","","","Scout","$42 200","6x6","Switchable","Always On","44","0,56","44","0,56","95","62000","3020,5","20,53","Scout","Scout","1, front","","","","","","AS;
+Ultima AT (DLC)","","OS+ JAT OS;
+TO I (Apache)","MS;
+JAT MS (DLC)","","CS;
+Ultima CS (DLC)","100","","JAT MS III","","Scout Trailer","","","","","","","","","","","","","","","","","","","","","","","","150-2-80
+450-0-240","","150-4-120","300-6-200;
+600-4-380","","","","","","AAT-6V 4,0","35000","11,59","chevy_apache.xml","","",""
+"Chevrolet CK1500","","FALSE","","","Michigan
+Belozersk Glades","Black River;
+Smithville Dam;
+Crossroads","","Scout","$11 300","4x4","Switchable","Switchable","33","0,42","41","0,52","80","62000","2502","24,78","Scout","Scout","1, front","Raised","","Crawler","","","AS;
+Ultima AT (DLC)","","OS;
+JAT OS (DLC)","MS;
+JAT MS (DLC)","","CS;
+Ultima CS (DLC)","75","","JAT OS IV
+JAT MS III","","Scout Trailer","","","","","","","","","","","","","","","","","","","","","","","","150-2-0
+300-6-120","","0-2-40
+150-2-80","300-8-160;
+450-8-200","","","","","","AAT-6V 4,0","35000","13,99","chevrolet_ck1500.xml","","",""
+"Chevrolet Kodiak C70","","FALSE","","","Michigan
+Yukon","Black River;
+Flooded Foothills","""Lost en Route""","Heavy Duty","$33 800","4x4","Switchable","Switchable","39","0,50","43","0,55","200","145000","8121","17,85","Truck","Medium","1, front","Raised","","","","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC)","","","","UAD chains","100","x2","UOD II
+JAT OMD III","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","PC-320","","LP-4","","2-slot cargo Bed +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","","LogCarrierFront","","","","1800","1800","800-6","","","","","2","","Metal Detector","MD+SaddleHigh
+MD+SaddleLow","Articulated Towing Platform","Si-6V/1900","135000","16,62","chevrolet_kodiakc70.xml","","",""
+"DAN 96320","","TRUE","Task","","Taymyr","Quarry","""Lost In The Woods""","Heavy","$129 400","6x6","Always On","Always On","51","0,65","51","0,65","350","260000","16612","15,65","Special","Heavy","1, front","","","","Active","","ATHS","","OHS;
+JAT OHS (DLC)","DMHS;
+JAT MHS (DLC)","","MHS chains","200","","JAT MHS IV","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","","Avto-23","","","Multi-purpose Cargo Module +Trailer","2-slot cargo Bed +Trailer","","","","","","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","","450-4-250
++Crane +1SlotBed","","","2","","","","","KZGT-8 490","205000","12,34","dan_96320.xml","","",""
+"Derry Longhorn 3194","","TRUE","Task","","Alaska","White Valley","""Pluck The Stuck Truck""","Heavy","$133 900","8x6","Always On","Always On","52","0,66","52","0,66","370","210000","22432","9,36","Truck","Heavy","1, front","","","","Dead Axle","ATMD;
+JAT ATHD (DLC)","","OHD;
+JAT OHD (DLC)","","","","OHD chains","200","x2","OHD I","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","","","","","","","","","","","","","","Futom-S logging trailer
+Futom-M logging trailer","","","","","","","","","4","","","","","A12V-780","175000","7,80","derry_longhorn_3194.xml","","",""
+"Derry Longhorn 4520","","TRUE","Driver's Rank","24","","","","Heavy","$146 300","8x8","Switchable","Switchable","50","0,64","50","0,64","400","230000","26654","8,63","Truck","Heavy","2, 1 front +1 rear","","","","","","ATHS;
+ATMD singles","","OHS;
+JAT OHS (DLC);
+OHD singles;
+Derry 4520 tires","DMHS;
+JAT MHS (DLC)","","MHS chains","200","","OHS II
+JAT MHS IV","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","","","","","","","","","","","","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","","","","","","","","","2","","","","","Si-8V/2300","160000","6,00","derry_longhorn_4520.xml","","",""
+"Derry Special 15C-177","Year 3 - Season 9","TRUE","Contract","","Ontario","The Albany River","""Looking For The Fire Monster""","Heavy","$180 000","8x8","Always On","Switchable","55","0,70","55","0,70","380","280000","29097","9,62","Special","Heavy","2, front","","","","Active","","ATHS","","OHS;
+JAT OHS (DLC);
+Derry Special tires","MHS II;
+JAT MHS (DLC)","","MHS chains","500","","Derry Special tires
+MHS II","Truck Trailer","","","","","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","PC-320","LK-2NY","","Multi-purpose Cargo Module +Trailer","2-slot cargo 
+Bed +Crane +Trailer","","","Saddle High + crane","Short Logs Addon +Trailer","","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","YES","","2200","","300-5-1400","450-4-250
++Crane +1SlotBed","300-0-120","750-5-370;
+600-6-1520","2","SeismicVibrator","","","","A16V-2000","200000","6,87","derry_special_15c177.xml","","",""
+"DON 71","","FALSE","","","","","","Scout","$12 700","4x4","Switchable","Switchable","28","0,35","35","0,45","42","72000","1510","47,68","Scout","Scout","1, front","Raised","Custom Tuned","","","","AS;
+Ultima AT (DLC)","","OS;
+JAT OS (DLC)","MS;
+JAT MS (DLC)","","CS;
+Ultima CS (DLC)","75","","JAT OS IV
+JAT MS III","","Scout Trailer","","","","","","","","","","","","","","","","","","","","","","","","","","0-2-60
+150-2-40","","2","","","","","Kr 71.C","25000","16,56","don_71.xml","","",""
+"EarthRoamer LTi","Year 4
+Season 14","TRUE","Contract","","Austria","Unterfeld","""Taking Stock of the Damage""","Scout","$74 800","4x4","Switchable","Switchable","43","0,55","46","0,58","260","120000","6685","17,95","Scout","Scout","1, front","Raised","","","","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC)","EarthRoamer","","","UAD chains","100","x2","EarthRoamer","Truck Trailer","Scout Trailer","","","","","","","","","","","","","","","","","","","Futom-S logging trailer
+Futom-M logging trailer","","","","","450-4-160","","Radar","","2","","","","","Het/8V 5,8","90000","13,46","earthroamer_lti.xml","","",""
+"EarthRoamer SX","Year 4
+Season 14","TRUE","Task","","Austria","Foothills","""The Quick and the Crashed""","Scout","$79 100","4x4","Switchable","Always On","43","0,55","46","0,59","280","120000","8293","14,47","Scout","Scout","1, front","Raised","","","","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC)","EarthRoamer","","","UAD chains","100","x2","UOD II","Truck Trailer","Scout Trailer","","","","","","","","","","","","","","","","","","","Futom-S logging trailer
+Futom-M logging trailer","","","","","500-4-160","","Radar","","2","","","","","Het/8V 5,8","90000","10,85","earthroamer_sx.xml","","",""
+"FEMM 37 AT","Year 3 - Season 12","TRUE","Contract","","North Carolina","Oviro Hills","""Abandoned Giant""","Heavy","$208 600","6x6","Always On","Switchable","71","0,90","71","0,90","340","288000","29638","9,72","Special","Heavy","0, articulated","","","","","","","","","MSH;
+JAT MSH (DLC)","","","600","","JAT MSH III","Truck Trailer","","","","","SaddleHigh","Fuel Heavy Semi (5000L)","IM50","","LK-2NY","","","","3-slot cargo
+Bed +Crane +Trailer","4-slot cargo Bed +Trailer","Saddle High + crane","","","","","Futom-S logging trailer
+Futom-M logging trailer","","1800","1800","","350-6-2000","","150-0-140","500-6-2140","","","","","","KZGT-8 490","205000","6,92","femm_37at.xml","","",""
+"Ford CLT 9000","","FALSE","","","","","","Highway","$41 300","6x4","None","None","39","0,50","43","0,55","280","155000","8171","18,97","Truck","Medium","1, front","Raised","","","","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC)","","","","UAD chains","100","x2","JAT OMD I
+UOD I","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","PC-320","","LP-4","","2-slot cargo 
+Bed +Crane +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","","LogCarrierFront","","","YES","1800","1800","800-6","300-5-1400","","","","2","","Metal Detector","MD+SaddleHigh
+MD+SaddleLow","Ramped Towing Platform","Si-6V/1900","135000","16,52","ford_clt9000.xml","","",""
+"Ford F750","Year 1 - Season 1","TRUE","Task","","Kola Peninsula","Lake Kovd","""Foreigner""","Scout","$54 400","4x4","Switchable","Always On","37","0,47","45","0,57","140","120000","7114","16,87","Custom","Scout","1, front","Raised","Custom Tuned","","","","","UOD;
+JAT OMD (DLC)","","","","UAD chains","100","x2","UOD II","Truck Trailer","Scout Trailer","","","","","","LC 3.8","","","","1-slot cargo
+Bed +Crane +Trailer","","","","","","","","","","","","","","600-6-120
+900-8-240","","0-2-100 (roof);
+50-4-20 (crane slot)","650-12-240;
+950-14-360","","","","","","AAT-6V 4,0","35000","4,92","ford_f750.xml","","",""
+"Freightliner 114SD","","TRUE","Driver's Rank","20","Ontario","Burned Forest","","Offroad","$93 800","6x6","Switchable","Switchable","43","0,55","47","0,60","300","145000","9017","16,08","Truck","Medium","1, front","Raised","","","","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC)","","","","UAD chains","100","x2","UOD II
+JAT OMD III","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","PC-320","","LP-4","","2-slot cargo 
+Bed +Crane +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","MediumLogs +Trailer","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","300-5-1400","","","","2","SeismicVibrator","Metal Detector","MD+SaddleLow","Ramped Towing Platform","Si-6V/1900","135000","14,97","freightliner_114sd.xml","","",""
+"Freightliner FLD 120","Freightliner & Western Star Dual Pack","FALSE","","","","","","Heavy Duty","$84 100","6x6","Switchable","Switchable","43","0,54","46","0,58","310","192000","11067","17,35","Truck","Medium","1, front","Raised","","","","ATMD;
+JAT ATHD (DLC);
+Freightliner FLD","","OHD;
+JAT OHD (DLC)","","","","OHD chains","200","x2","OHD I","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","PC-320","","LP-4","","2-slot cargo 
+Bed +Crane +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","MediumLogs","LogCarrierFront +LogCrane","LogCrane + LowSaddle","Futom-S logging trailer
+Futom-M logging trailer","","1800","1800","","300-5-1400","","450-2-200;
+100-2-450","","2","SeismicVibrator","","","Articulated Towing Platform","Si-8V / 2300","160000","14,46","freightliner_fld120.xml","","",""
+"Freightliner M916A1","","TRUE","Driver's Rank","17","","","","Offroad","$89 100","6x6","Switchable","Always On","43","0,55","47","0,60","200","192000","12042,8","15,94","Unique offroad (M916)+
+Finetune (M916)","Medium","1, front","Raised","","","","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC)","","","","UAD chains","100","x2","UOD II
+JAT OMD III","Truck Trailer","","","SaddleLow","","SaddleHigh","","LC 3.8","","","","","","","","","","","","","Futom-S logging trailer
+Futom-M logging trailer","","","","","","","","","","","","","","Si-8V/2300","160000","13,29","freightliner_m916a1.xml","","",""
+"Futom 7290RA","Year 4
+Season 14","TRUE","Contract","","Austria","Foothills","""All Work and No Play""","Heavy","$209 700","4x4","Switchable","Switchable","79","1,00","79","1,00","400","180000","20024","8,99","Special","Heavy","2, front+rear","","","","","","","","","MSH
+JAT MSH (DLC)
+Futom MHS I","Futom MHS II","","","","Futom MHS II","Truck Trailer","","Farm Trailer","","","","","","","","Futom crane","","","","","","","","","","Futom-S logging trailer
+Futom-M logging trailer","","","","","","","","","","","","","","Pass 500L12","130000","6,49","futom_7290ra.xml","","",""
+"GMC 8000 Brigadier","Brigadier DLC","FALSE","","","","","","Heavy Duty","$107 200","6x6","Switchable","Switchable","39","0,50","46","0,58","285","170000","8000","21,25","Truck","Medium","1, front","Raised","Custom Tuned","","","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC)","","","","UAD chains","100","x2","UOD II
+JAT OMD III","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","PC-320","","LP-4","","2-slot cargo 
+Bed +Crane +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","","LogCarrierFront +LogCrane","","","YES","1800","1800","800-6","300-5-1400","","","","2","SeismicVibrator +Trailer","Metal Detector","MD+2-slotSB/FB
+MD+SaddleHigh
+MD+SaddleLow","Articulated Towing Platform","Si-6V/1900","135000","16,88","gmc_8000.xml","","",""
+"GMC MH9500","","TRUE"," Exploration","","Michigan
+Ontario","Black River;
+Burned Forest","","Highway","$26 300","6x6","Switchable","Switchable","43","0,55","47","0,60","240","145000","8020","18,08","Truck","Medium","1, front","Raised","","","","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC)","","","","UAD chains","100","x2","UOD II
+JAT OMD III","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","PC-320","PC-320","LP-4","","2-slot cargo 
+Bed +Crane +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","MediumLogs","LogCarrierFront","","","YES","1800","1800","800-6","300-5-1400","","","","2","SeismicVibrator","Metal Detector","MD+2-slotSB/FB
+MD+SaddleHigh
+MD+SaddleLow","Articulated Towing Platform","Westline V6 2420","140000","17,46","gmc_9500.xml","","",""
+"GOR BY-4","Year 2 - Season 7","TRUE","Task","","Tennessee","Burning Mill","""Buggy Delivery""","Scout","$17 700","4x4","Switchable","Switchable","29","0,37","31","0,39","50","72000","1458","49,38","Scout","Scout","1, front","Raised","","","","","AS;
+Ultima AT (DLC)","","OS+ JAT OS;
+OG","MS;
+JAT MS (DLC)","","CS;
+Ultima CS (DLC)","75","","OG I","","Scout Trailer","","","","","","","","","","","","","","","","","","","","","","","","","","0-0-60;
+0-2-60","","1","","","","","Kr 104","30000","20,58","gor_by4.xml","","",""
+"HIB Billert 1980","Year 4
+Season 16","TRUE","Task","","Washington","Selten River National Park","""Muddy Route""","Offroad","$74 100","4x4","Always On","Switchable","44","0,56","49","0,62","180","157000","7362","21,33","Truck","Medium +
+Autonomous","1, front","Raised","","","","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC)","HIB Billert tires","MHS II;
+JAT MHS (DLC)","","UAD chains","","x2","MHS II
+JAT MHS IV","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","","","LC 3.8","","","LP-4","1-slot cargo
+Bed +Crane +Trailer","2-slot cargo Bed +Trailer","","","Saddle Low + crane","","","","","","","","","","600-4-300","","350-0-120","950-5-420","2","","","","","Si-6V/1900","135000","18,34","hib_billert_1980.xml","","",""
+"Hummer H2","","TRUE","Task","","Alaska;
+Wisconsin;
+Ontario.","North Port;
+Black Badger Lake;
+The Albany River","""Drowned Hummer"";
+""Lost but not Forgotten"";
+""Bad trip""","Scout","$18 300","4x4","Switchable","Switchable","36","0,46","39","0,50","80","120000","3804","31,55","Scout","Scout","1, front","Raised","","","","","AS;
+Ultima AT (DLC)","","OS+ JAT OS;
+Hummer H2 tires","MS;
+JAT MS (DLC)","","CS;
+Ultima CS (DLC)","75","","Hummer tires
+JAT MS III","","Scout Trailer","","","","","","","","","","","","","","","","","","","","","","","","","","150-2-40;
+150-0-40","300-4-80","2","","","","","Het/8V 5,8","90000","23,66","hummer_h2.xml","","",""
+"International Fleetstar F2070A","","FALSE","","","Michigan
+Ontario","Black River;
+Burned Forest","""Support Local Rangers""","Heavy Duty","$30 000","6x6","Switchable","Switchable","42","0,53","45","0,57","240","155000","7313","21,20","Truck","Medium","1, front","Raised","","","","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC)","","","","UAD chains","100","x2","UOD II
+JAT OMD III","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","PC-320","","LP-4","","2-slot cargo 
+Bed +Crane +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","","1800","1800","800-6","300-5-1400","","","","2","","Metal Detector","MD+SaddleHigh
+MD+SaddleLow","Articulated Towing Platform","Si-6V/1900","135000","18,46","international_fleetstar_f2070a.xml","","",""
+"International HX 520","Anniversary DLC (free)","FALSE","","","","","","Heavy Duty","$172 300","6x6","Switchable","Switchable","43","0,55","47","0,60","280","210000","8564","24,52","Truck","Medium","1, front","","","","","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC)","","","","UAD chains","100","x2","UOD II
+JAT OMD III","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","PC-320","","LP-4","","2-slot cargo 
+Bed +Crane +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","MediumLogs +Trailer","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","300-5-1400","","","","","","","","Articulated Towing Platform","Si-8V/2300","160000","18,68","international_hx_520.xml","","",""
+"International Loadstar 1700","","FALSE","","","","","","Scout","$39 400","4x4","Always On","Always On","35","0,45","41","0,52","130","145000","5102","28,42","Truck","Scout","1, front","Raised","","","","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC)","","","","UAD chains","100","x2","UOD II
+JAT OMD III","","Scout Trailer","","","","","","LC 3.8","","","","","","","","","","","","","","","","","400-0","150-6-60","","","","","","","","","Si-6V/1900","135000","26,46","international_loadstar_1700.xml","","",""
+"International Paystar 5070","","FALSE","","","","","","Offroad","$82 100","6x6","Switchable","Switchable","46","0,58","46","0,58","240","150000","10209","14,69","Truck","Medium","1, front","Raised","","","","ATMD;
+JAT ATHD (DLC)","ATHS","OHD;
+JAT OHD (DLC)","OHS;
+JAT OHS (DLC)","DMHS;
+JAT MHS (DLC)","","OHD chains;
+MHS chains","200","x2","OHD I
+JAT MHS IV","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","PC-320","","LP-4","","2-slot cargo 
+Bed +Crane +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","MediumLogs","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","300-5-1400","","","","2","SeismicVibrator","Metal Detector","MD+SaddleLow","Ramped Towing Platform","Gb-8V 31 Special","150000","14,69","international_paystar_5070.xml","","",""
+"International Paystar 5600TS","Year 1 - Season 3","TRUE"," Exploration",""," Wisconsin","Grainwoods River","","Heavy","$126 600","10x10","Switchable","Switchable","43","0,55","50","0,63","280","250000","22602","11,06","Truck","Heavy","2, front","Raised","","","","ATMD;
+JAT ATHD (DLC)","ATHS","OHD;
+JAT OHD (DLC)","OHS;
+JAT OHS (DLC)","DMHS;
+MHS II;
+JAT MHS (DLC)","","OHD chains;
+MHS chains","200","x2","OHD I","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","","","LC 3.8","PC-320","LK-2NY","LP-4","","","3-slot cargo
+Bed +Crane +Trailer","","Saddle Low + crane","Short Logs Addon +LogCrane +Trailer","MediumLogs +Trailer","LogCarrierFront +LogCrane","LogCrane + LowSaddle","Futom-S logging trailer
+Futom-M logging trailer","YES","2800","2800","800-6","","","","","","","","","Ramped Towing Platform","A16V-2000","200000","8,85","paystar_5600ts.xml","","",""
+"International Scout 800","","TRUE","Exploration
+or Task","","Michigan
+Ontario
+North Carolina","Black River;
+ The Albany River;
+Flatland","""Abandoned Transport"";
+""Cliffhanger""","Scout","$12 700","4x4","Switchable","Always On","33","0,43","40","0,51","72","50000","3126","15,99","Scout","Scout","1, front","Raised","","Crawler","","","AS;
+Ultima AT (DLC)","","OS;
+JAT OS (DLC)","MS;
+JAT MS (DLC)","","CS;
+Ultima CS (DLC)","75","","JAT MS III","","Scout Trailer","","","","","","","","","","","","","","","","","","","","","","","","","","150-2-140;
+450-6-120","600-8-260","2","","","","","AAT-6V 4,0","35000","11,20","international_scout_800.xml","","",""
+"International Transtar 4070A","","TRUE","Driver's Rank or Exploration","6","Michigan","Smithville Dam","","Highway","$31 900","6x4","None","None","39","0,50","42","0,53","265","160000","7047","22,70","Truck","Medium","1, front","Raised","","","","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC)","","","","UAD chains","100","x2","JAT OMD I
+UOD I","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","PC-320","","LP-4","","2-slot cargo Bed +Trailer","","","Both saddles + crane","","","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","","","","","2","","Metal Detector","MD+SaddleLow","Ramped Towing Platform","Si-6V/1900","135000","19,16","international_transtar_4070a.xml","","",""
+"Jangsu RX600","Year 5
+Season 17","TRUE","Task","","Zurdania","Zurdanian Valley","""The Long Way Through a Shortcut""","Offroad","$93 900","6x6","Switchable","Always On","41","0,53","44","0,57","160","147150","9431,1","15,60","Jangsu special","Medium","1, front","Raised","","Crawler","","","ATHS","","OHS;
+JAT OHS (DLC);
+Jangsu tires","DMHS;
+MHS II;
+JAT MHS (DLC)","TMHS","MHS chains","200","","OHS II
+TMHS I","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","","","LC 3.8","","","LP-4","","2-slot cargo Bed +Trailer","","","Saddle Low + crane","","","LogCarrierFront +LogCrane","LogCrane + LowSaddle","Futom-S logging trailer
+Futom-M logging trailer","","900","","800-6","","","150-0-120","150-0-1020;
+950-6-120","2","SeismicVibrator +Trailer","","","Articulated Towing Platform","Columbus 6V-170X","115200","12,21","jangsu_rx600.xml","","",""
+"Jeep CJ7 Renegade","Jeep
+Dual Pack","FALSE","","","","","","Scout","$13 400","4x4","Switchable","Switchable","28","0,35","31","0,40","75","110000","2016","54,56","Scout","Scout","1, front","Raised","","","","","AS;
+Ultima AT (DLC)","","OS+ JAT OS;
+OJ","MS;
+JAT MS (DLC)","","CS;
+Ultima CS (DLC)","75","","OJ 1
+JAT MS III","","","","","","","","","","","","","","","","","","","","","","","","","","","","150-0-60","150-1-60","2","","","","","AAT-6V 4,0","35000","17,36","jeep_cj7_renegade.xml","","",""
+"Jeep Wrangler","Jeep
+Dual Pack","FALSE","","","","","","Scout","$20 100","4x4","Switchable","Switchable","32","0,41","36","0,46","80","120000","2319","51,75","Scout","Scout","1, front","Raised","Custom Tuned","Crawler","","","AS;
+Ultima AT (DLC)","","OS+ JAT OS;
+OJ","MS;
+JAT MS (DLC)","","CS;
+Ultima CS (DLC)","75","","OJ 1
+JAT MS III","","Scout Trailer","","","","","","","","","","","","","","","","","","","","","","","","","","150-2-40","150-4-40","2","","","","","Het/8V 5,8","90000","38,81","jeep_wrangler.xml","","",""
+"Kenworth 963","Year 3 - Season 10","TRUE","Task","","British Columbia","Duncan Bay","""Quid Pro Quo""","Heavy","$147 600","6x6","Switchable","Always On","71","0,90","71","0,90","510","265000","32636","8,12","Special (Kenworth 963)","Heavy","1, front","","","","","","Kenworth 963 tires","","","MSH;
+JAT MSH (DLC)","","","600","","Kenworth 963 tires
+JAT MSH III","Truck Trailer","","","","","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","","LK-2NY","LP-4","","2-slot cargo 
+Bed +Crane +Trailer","3-slot cargo
+Bed +Crane +Trailer","","Saddle High + crane","Short Logs Addon +LogCrane +Trailer","Medium Logs Addon +LogCrane+Trailer","LogCarrierFront +LogCrane","","","","","","","350-6-2000","","150-0-160","150-2-2960;
+500-6-2160","","","","","Ramped Towing Platform","A12V-780","175000","5,36","kenworth_963.xml","","",""
+"Kenworth C500","Kenworth Dual Pack","FALSE","","","","","","Heavy Duty","$153 100","6x6","Switchable","Always On","47","0,60","51","0,65","375","192000","12921","14,86","Truck","Medium","1, front","","","","","ATMD;
+JAT ATHD (DLC);
+Kenworth C500","","OHD;
+JAT OHD (DLC)","","","","OHD chains","200","x2","OHD I","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","PC-320","","LP-4","","2-slot cargo 
+Bed +Crane +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","MediumLogs +Trailer","LogCarrierFront +LogCrane","LogCrane + LowSaddle","Futom-S logging trailer
+Futom-M logging trailer","","1800","1800","800-6","300-5-1400","","150-0-80","150-4-1880;
+950-10-80;
+450-9-1480","","SeismicVibrator","","","Articulated Towing Platform
+Ramped Towing Platform","Si-8V / 2300","160000","12,38","kenworth_c500.xml","","",""
+"Kenworth T880","Kenworth Dual Pack","FALSE","","","","","","Highway","$153 500","6x4","None","Always On","44","0,56","46","0,59","350","288000","11518","25,00","Truck","Medium","1, front","Raised","","","","ATMD;
+JAT ATHD (DLC);
+Kenworth T880","","OHD;
+JAT OHD (DLC)","","","","OHD chains","200","x2","OHD I","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","PC-320","","LP-4","","2-slot cargo 
+Bed +Crane +Trailer","3-slot cargo Bed +Trailer","","Both saddles + crane","Short Logs Addon +Trailer","MediumLogs +Trailer","LogCarrierFront +LogCrane","LogCrane + LowSaddle","Futom-S logging trailer
+Futom-M logging trailer","","1800","1800","800-6","300-5-1400","","150-0-80","150-2-1880;
+950-8-80;
+450-7-1480","2","SeismicVibrator","","","Articulated Towing Platform
+Ramped Towing Platform","Prime C11","255000","22,14","kenworth_t880.xml","","",""
+"Kenworth W990","Kenworth W990","FALSE","","","","","","Highway","$124 400","8x4","None","Always On","44","0,56","52","0,66","380","228000","10435","21,85","Truck","Heavy","1, front","Raised","","","Dead Axle","ATMD;
+JAT ATHD (DLC)","","OHD;
+JAT OHD (DLC)","","W990 tires","","OHD chains","200","x2","W990 tires","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","PC-320","","LP-4","","2-slot cargo 
+Bed +Crane +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","MediumLogs","LogCarrierFront +LogCrane","LogCrane + LowSaddle","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","300-5-1400","","150-0-80","150-2-1880;
+950-8-80;
+450-7-1480","2","SeismicVibrator","","","Articulated Towing Platform","Si-8V / 2300","160000","15,33","kenworth_w990.xml","","",""
+"KHAN 317 Sentinel","Year 1 - Season 4","FALSE","","","Amur","Cosmodrome","""Treasure Hunter""","Scout","$40 200","4x4","Switchable","Switchable","45","0,57","45","0,57","80","90000","2457","36,63","Scout","Scout","1, front","Raised","Custom Tuned","","","","AS;
+Ultima AT (DLC)","","OS;
+JAT OS (DLC)","MS;
+JAT MS (DLC)","","CS;
+Ultima CS (DLC)","75","","JAT MS III","","Scout Trailer","","","","","","","","","","","","","","","","","","","","","","","","","","150-4-100","","","","","","","Kr 135-T","70000","28,49","khan_317_sentinel.xml","","",""
+"KHAN 39 Marshall","High Roller Pack","FALSE","","","","","","Scout","$20 900","4x4","Always On","Switchable","33","0,42","41","0,52","70","90000","1919","46,90","Scout","Scout","1, front","","","Crawler","","","","","","JAT MS (DLC)","TM","","100","","TM II
+JAT MS III","","Scout Trailer","","","","","","","","","","","","","","","","","","","","","","","","","","150-0-80","150-2-80","2","","","","","Kr 104","30000","15,63","khan_39_marshall.xml","","",""
+"KHAN Lo4F","","FALSE","","","","","","Scout","$11 300","4x4","Always On","Always On","30","0,38","35","0,45","80","72000","2154","33,43","Scout","Scout","1, front","Raised","","Crawler","","","AS;
+Ultima AT (DLC)","","OS;
+JAT OS (DLC)","MS;
+JAT MS (DLC)","","CS;
+Ultima CS (DLC)","75","","JAT MS III","","Scout Trailer","","","","","","","","","","","","","","","","","","","","","","","","","","150-2-140;
+450-8-240","600-12-380","2","","","","","Kr 104","30000","13,93","khan_lo4f.xml","","",""
+"Kirovets K-700","Year 2 - Season 8","TRUE","Contract","","Belozersk Glades","Crossroads","""The Beast Rising""","Heavy","$151 900","4x4","Always On","Switchable","63","0,80","63","0,80","340","175000","14413","12,14","Special","Heavy","0, articulated","","","","","","","","","JAT MSH (DLC);
+Stock tractor tires","","","600","","K-700 tires","Truck Trailer","","Farm Trailer","","","","","K-700 loader","","","","","","","","","","","","","Futom-S logging trailer
+Futom-M logging trailer","","","","800-6","","","","","","","","","","KZGT-8 490 (K-700)","130000","9,02","kirovets_k700.xml","","",""
+"Kirovets K-7M","Year 2 - Season 8","TRUE","Task","","Belozersk Glades","Heartlands","""The Common Cause""","Heavy","$196 900","4x4","Always On","Switchable","79","1,00","79","1,00","340","170000","22115","7,69","Special","Heavy","0, articulated","","","","","","","","","MSH I (K-7M)","MSH II (K-7M)","","600","","MSH II (K-7M)","Truck Trailer","","Farm Trailer","","","","","","","","","","","","","","","","","","Futom-S logging trailer
+Futom-M logging trailer","","","","","600-2-180","","","","","","","","","LAZ-8 T310 Tractor","115000","5,20","kirovets_k7m.xml","","",""
+"KOLOB 74760","","TRUE","Driver's Rank","22","","","","Heavy","$135 000","8x8","Always On","Always On","59","0,75","59","0,75","380","260000","33780","7,70","Special","Heavy","2, front","","","","Active","","","","","MSH;
+JAT MSH (DLC)","","","600","","JAT MSH III","Truck Trailer","","","","","SaddleHigh","Fuel Heavy Semi (5000L)","","","","","","","","","","","","","","Futom-S logging trailer
+Futom-M logging trailer","","","","","","","","","2","","","","","KZGT-8 490","205000","6,07","kolob_74760.xml","","",""
+"KOLOB 74941","","FALSE","","","","","","Heavy","$118 200","8x8","Switchable","Switchable","59","0,75","59","0,75","340","260000","31397","8,28","Special","Heavy","2, front","","","","Active","","","","","MSH;
+JAT MSH (DLC)","","","600","","JAT MSH III","Truck Trailer","","","","","SaddleHigh","Fuel Heavy Semi (5000L)","","","","","","","","","","","","","","Futom-S logging trailer
+Futom-M logging trailer","","","","","","","","","","","","","","KZGT-8 490","205000","6,53","kolob_74941.xml","","",""
+"KRS 58 ""Bandit""","Year 1 - Season 2","FALSE","","","","","","Offroad","$125 400","8x8","Always On","Always On","51","0,65","51","0,65","150","185000","7820,9","23,65","Truck","Medium","2, front","","","","","JAT ATMD (DLC)","UAD singles","JAT OMD (DLC)","UOD singles","","AMHS","UAD chains single","100","x2","AMHS I
+JAT OMD III","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","KRS-58","","","LP-4","","2-slot cargo 
+Bed +Crane +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","300-5-1400","","150-2-140","950-8-140;
+450-7-1540","","SeismicVibrator","","","Ramped Towing Platform","LAZ 6 T60","130000","16,62","krs_58_bandit.xml","","",""
+"Land Rover Defender 110","Land Rover Dual Pack","FALSE","","","","","","Scout","$19 200","4x4","Switchable","Switchable","31","0,40","33","0,42","80","120000","2652","45,25","Scout","Scout","1, front","Raised","","","","","AS;
+Ultima AT (DLC)","","OS+ JAT OS;
+LR tires","MS;
+JAT MS (DLC)","","CS;
+Ultima CS (DLC)","75","","Land Rover tires
+JAT MS III","","Scout Trailer","","","","","","","","","","","","","","","","","","","","","","","","","","150-0-100","","2","","","","","Het/8V 5,8","90000","33,94","land_rover_defender_110.xml","","",""
+"Land Rover Defender 90","Land Rover Dual Pack","FALSE","","","","","","Scout","$21 400","4x4","Switchable","Switchable","31","0,39","32","0,41","80","120000","2075","57,83","Scout","Scout","1, front","Raised","","","","","AS;
+Ultima AT (DLC)","","OS+ JAT OS;
+LR tires","MS;
+JAT MS (DLC)","","CS;
+Ultima CS (DLC)","75","","Land Rover tires
+JAT MS III","","Scout Trailer","","","","","","","","","","","","","","","","","","","","","","","","","","150-0-100","","2","","","","","Het/8V 5,8","90000","43,37","land_rover_defender_90.xml","","",""
+"Mack Defense M917","Year 3 - Season 10","TRUE","Task","","British Columbia","North Peak National Park","""Long Distance Haul""","Offroad","$127 500","8x8","Always On","Switchable","47","0,60","47","0,60","350","232000","17629","13,16","Truck+
+Multipurpose (M917)","Medium","1, front","Raised","","","Active","","ATHS","","OHS;
+JAT OHS (DLC);
+Mack M917 tires","DMHS;
+JAT MHS (DLC)","","UAD chains","200","","Mack tires","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","PC-320","","LP-4","","2-slot cargo 
+Bed +Crane +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","","LogCarrierFront +LogCrane","","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","300-5-1400","","150-0-80","950-7-80
+450-6-1480","1","SeismicVibrator","","","Articulated Towing Platform
+Ramped Towing Platform","MC-V6 11.0T","176500","10,01","mack_defense_m917.xml","","",""
+"Mack Pinnacle","Mack Dual Pack","FALSE","","","","","","Heavy Duty","$145 000","6x6","Switchable","Switchable","43","0,54","46","0,58","350","232000","13547","17,13","Truck+
+Multipurpose (Pinnacle)","Medium","1, front","Raised","","","","ATMD;
+JAT ATHD (DLC);
+Mack ZES","","OHD;
+JAT OHD (DLC)","","JAT MMD (DLC)","","OHD chains","","x2","OHD I","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","PC-320","","Pinnacle log crane","","2-slot cargo 
+Bed +Crane +Trailer","3-slot cargo Bed +Trailer","","Both saddles + crane","Short Logs Addon +LogCrane +Trailer","Medium Logs Addon +LogCrane+Trailer","LogCarrierFront","","","","1800","1800","800-6","300-5-1400","","150-0-80","150-8-1880
+950-14-80
+450-13-1480","","","","","Ramped Towing Platform","MC-V6 11.0T","176500","13,03","mack_pinnacle.xml","","",""
+"Mack Terra Pro","Mack Dual Pack","FALSE","","","","","","Highway","$129 800","6x4","None","Always On","44","0,56","47","0,60","280","232000","10570","21,95","Truck+
+Multipurpose (Terra Pro)","Medium","1, front","Raised","","","","ATMD;
+JAT ATHD (DLC);
+Mack ZES","","OHD;
+JAT OHD (DLC)","","JAT MMD (DLC)","","OHD chains","","x2","OHD I","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","PC-320","","LP-4","","2-slot cargo 
+Bed +Crane +Trailer","3-slot cargo Bed +Trailer","","Both saddles + crane","Short Logs Addon +LogCrane +Trailer","MediumLogs +Trailer","LogCarrierFront +LogCrane","LogCrane + LowSaddle","","","1800","1800","800-6","300-5-1400","","150-0-100","150-4-1900
+950-10-100
+450-9-1500","4","","","","Ramped Towing Platform","MC-V6 11.0T","176500","16,70","mack_terra_pro.xml","","",""
+"Mercedes-Benz Actros 3332","Mercedes-Benz Dual Pack","FALSE","","","","","","Offroad","$155 100","6x6","Switchable","Switchable","46","0,59","50","0,64","180","185200","13026","14,22","Truck (Actros)","Medium","1, front","Raised","","Crawler","","ATMD;
+JAT ATHD (DLC)","","OHD;
+JAT OHD (DLC);
+MB Actros tires","","","","OHD chains","220","x2","MB Actros tires
+OHD I","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8
+SLEI-64","PC-320","","LP-4","","2-slot cargo Bed +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","","LogCarrierFront +LogCrane","","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","","","150-0-260","950-6-260;
+150-0-2060","","SeismicVibrator +Trailer","","","","MEREX 6L-320","170950","13,12","mercedes_benz_actros_6x6.xml","","",""
+"Mercedes-Benz Zetros","Mercedes-Benz Dual Pack","FALSE","","","","","","Offroad","$159 000","6x6","Switchable","Switchable","46","0,59","48","0,62","360","257700","21161","12,18","Truck (Zetros)","Medium","1, front","Raised","","Crawler","","","ATHS","","OHS;
+JAT OHS (DLC)","DMHS;
+MHS II;
+JAT MHS (DLC);
+MB Zetros tires","TMHS","MHS chains","220","x2","OHS II
+JAT MHS IV","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8
+SLEI-64","PC-320","","LP-4","","2-slot cargo Bed +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","","LogCarrierFront +LogCrane","","Futom-S logging trailer
+Futom-M logging trailer","","1800","1800","800-6","","","150-0-140","950-6-140;
+150-0-1940","","SeismicVibrator +Trailer","","","","BRANDT V6-360","222270","10,50","mercedes_benz_zetros_6x6.xml","","",""
+"Mercer K520","Year 4
+Season 15","TRUE","Contract","","Quebec","Lake Ribiere","""Wormhole""","Offroad","$109 350","6x6","Switchable","Switchable","46","0,59","49","0,62","240","150000","9219","16,27","Truck+
+Custom (Mercer)","Medium","1, front","Raised","","","","ATMD;
+JAT ATHD (DLC)","","OHD;
+JAT OHD (DLC)","Mercer K520 tires","JAT MHS (DLC)","","OHD chains","200","x2","Mercer K520 tires
+OHD I","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","PC-320","","LP-4","","2-slot cargo Bed +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","","LogCarrierFront +LogCrane","","Futom-S logging trailer
+Futom-M logging trailer","","1800","1800","","600-2-220","","150-0-40","150-4-1840;
+750-6-260","4","","","","Articulated Towing Platform","Si-6V/1900","135000","14,64","mercer_k520.xml","","",""
+"MTB 8106 Rock Grinder","Year 3 - Season 12","TRUE","Contract","","North Carolina","Pineline Bay","""Vice-Like Grip""","Scout","$19 600","4x4","Always On","Switchable","35","0,44","36","0,46","80","58000","2710","21,40","Scout","Scout","1, front","Raised","","Crawler","","","AS;
+Ultima AT (DLC)","","OS;
+JAT OS (DLC)","MS;
+JAT MS (DLC)","","CS;
+Ultima CS (DLC)","75","","JAT MS III","","Scout Trailer","","","","","","","","","","","","","","","","","","","","","","","","","","150-2-160","","2","","","","","AAT-6V 4,0","35000","12,92","mtb_8106.xml","","",""
+"Navistar 5000-MV","Navistar DLC","FALSE","","","","","","Heavy","$113 600","6x6","Always On","None","44","0,56","49","0,62","340","210000","16015","13,11","Truck","Medium","1, front","Raised","","","","ATMD;
+JAT ATHD (DLC)","","OHD;
+JAT OHD (DLC)","","","","OHD chains","200","x2","OHD I","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","","","","","","","","","","","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","","","","","","","","","2","","","","","NavGlobal D12-T 900","175000","10,93","navistar_5000mv.xml","","",""
+"Neo Falcon 2000","Year 3 - Season 11","TRUE","Task","","Scandinavia","By the Lake","""A Rare Vehicle""","Scout","$17 800","4x4","Switchable","Switchable","36","0,46","38","0,48","90","50000","2414","20,71","Scout","Scout","1, front","Raised","","","","","AS;
+Ultima AT (DLC)","","OS;
+JAT OS (DLC)","MS;
+JAT MS (DLC)","","CS;
+Ultima CS (DLC)","75","","JAT MS III","","Scout Trailer","","","","","","","","","","","","","","","","","","","","","","","","","","150-0-100","","2","","","","","AAT-6V 4,0","35000","14,50","neo_falcon_2000.xml","","",""
+"Pacific P12","","FALSE","","","","","","Heavy","$126 600","6x6","Switchable","Always On","57","0,73","57","0,73","350","210000","26240","8,00","Special","Heavy","1, front","","","","","ATMD;
+JAT ATHD (DLC)","ATHS;
+Pacific P12 AT","OHD;
+JAT OHD (DLC)","OHS;
+JAT OHS (DLC)","DMHS;
+JAT MHS (DLC)","","OHD chains","300","x2,1","OHD I","Truck Trailer","","","","","SaddleHigh","Fuel Heavy Semi (5000L)","","PC-320","LK-2NY","LP-4","Multi-purpose Cargo Module +Trailer","","","","","Short Logs Addon +Trailer","MediumLogs +Trailer","LogCarrierFront +LogCrane","","Futom-S logging trailer
+Futom-M logging trailer","","1800","1800","","350-6-2000","450-4-250
++Crane +1SlotBed","","","4","","Metal Detector","MD+SaddleHigh","Ramped Towing Platform","A12V-780","175000","6,67","pacific_p12w.xml","","",""
+"Pacific P16","","TRUE"," Exploration","","Michigan","Drummond Island","","Heavy","$140 700","6x4","None","Always On","57","0,73","57","0,73","300","210000","27091","7,75","Special","Heavy","1, front","","","","","","","JAT OHD (DLC)","","OHD (P16)","","","300","x2,1","OHD I (P16)","Truck Trailer","","","","","SaddleHigh","Fuel Heavy Semi (5000L)","","","","","","","","","","","","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","","","","","","","","","","","","","","A12V-780","175000","6,46","pacific_p16.xml","","",""
+"Pacific P512 PF","Year 1 - Season 3","TRUE"," Exploration","","Wisconsin","Black Badger Lake","","Heavy","$135 000","6x4","None","Switchable","51","0,65","51","0,65","300","210000","13540","15,51","Truck","Medium","1, front","","","","","","","JAT OHD (DLC)","","OHD (P512)","","","200","","OHD I (P512)","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","PC-320","","LP-4","Multi-purpose Cargo Module +Trailer","2-slot cargo 
+Bed +Crane +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","MediumLogs +Trailer","LogCarrierFront +LogCrane","","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","300-5-1400","450-4-250
++Crane +1SlotBed","","","4","SeismicVibrator","Metal Detector","MD+LogCarrierFront
+MD+SaddleHigh
+MD+SaddleLow","Ramped Towing Platform","A12V-780","175000","12,92","pacific_p512.xml","","",""
+"Padera STD-4","Dragon Wagons Dual Pack","FALSE","","","","","","Heavy Duty","$147 600","8x8","Switchable","Switchable","46","0,59","50","0,63","250","202220","17350","11,66","Special (STD-4)","Medium","2, front","Raised","","","","ATMD;
+JAT ATHD (DLC)","","OHD;
+JAT OHD (DLC)","","Padera STD-4
+ tires","","OHD chains","300","x1,5","Padera STD-4
+ tires","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","SLEI-64
+LC 3.8","PC-320","LK-2NY","LP-4","Kung Sideboard","2-slot cargo 
+Bed +Crane +Trailer","","","Both saddles + crane","Short Logs Addon +LogCrane +Trailer","MediumLogs +Trailer","LogCarrierFront +LogCrane","LogCrane + LowSaddle","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","300-5-1400","400-4-400 +1SlotBed","150-0-120","950-6-120;
+450-5-1520;
+550-4-520","4","SeismicVibrator +Trailer","","","Articulated Towing Platform","KoRDA-820B","165200","9,52","padera_std4.xml","","",""
+"PLAD 440 “Buddy”","Year 4
+Season 16","TRUE","Task",""," Washington","Solace Bay","""Deliver at Any Cost""","Offroad","$108 900","6x6","Switchable","Switchable","46","0,58","47","0,60","240","165000","11533","14,31","Truck","Medium","1, front","Raised","","","","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC);
+PLAD 440 tires","UOD;
+JAT OMD (DLC);
+PLAD 440 tires","JAT MMD (DLC)","","UAD chains","100","x2","PLAD 440 tires","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","PC-320","","LP-4","","2-slot cargo Bed +Trailer","","","Both saddles + crane","","","LogCarrierFront +LogCrane","","","","1800","1800","800-6","","","150-0-80","150-4-1880;
+950-10-80","","","Metal Detector","","","Si-6V/1900","135000","11,71","plad_440.xml","","",""
+"PLAD 450","Year 4 - Season 13","TRUE","Task","","Almaty Region","Zherbai Quarries","""Not a Roller Coaster""","Heavy","$142 100","8x8","Switchable","Always On","59","0,75","63","0,80","300","245000","30856","7,94","Special+
+Multipurpose (PLAD)","Heavy","2, front","","","","","","ATHS","","OHS;
+JAT OHS;
+PLAD-450 tires","DMHS;
+JAT MHS (DLC)","","MHS chains","600","","PLAD tires
+JAT MSH III","Truck Trailer","","","","","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","","LK-2NY","LP-4","Multi-purpose Cargo Module +Trailer","2-slot cargo 
+Bed +Crane +Trailer","","","Saddle High + crane","Short Logs Addon +LogCrane +Trailer","MediumLogs +Trailer","LogCarrierFront +LogCrane","","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","","450-4-250
++Crane +1SlotBed","150-0-160","150-4-1960;
+600-4-410;
+950-8-160","4","","","","","A12V-780","175000","5,67","plad_450.xml","","",""
+"Rezvani Hercules 6x6","Rezvani Hercules DLC","FALSE","","","","","","Scout","$39 400","6x6","Switchable","Always On","37","0,47","39","0,49","80","120000","4461","26,90","Scout","Scout","1, front","Raised","","","","","AS;
+Ultima AT (DLC)","","OS+ JAT OS;
+Hercules tires","MS;
+JAT MS (DLC)","","CS;
+Ultima CS (DLC)","75","","Hercules tires
+JAT MS III","","","","","","","","","","","","","","","","","","","","","","","","","","","","450-4-320","450-4-320","","","","","","Het/8V 5,8","90000","20,17","rezvani_hercules_6x6.xml","","",""
+"Rezvani Tank","Rezvani Tank DLC","FALSE","","","","","","Scout","$20 500","4x4","Switchable","Switchable","37","0,47","39","0,49","80","120000","4016","29,88","Scout+
+Special (Tank)","Scout","1, front","Raised","","","","","AS;
+Ultima AT (DLC)","","OS+ JAT OS;
+Tank tires","MS;
+JAT MS (DLC)","","CS;
+Ultima CS (DLC)","75","","Tank tires
+JAT MS III","","","","","","","","","","","","","","","","","","","","","","","","","","","","150-0-0
+0-2-80","","","","","","","Het/8V 5,8","90000","22,41","rezvani_tank.xml","","",""
+"Royal BM17","","TRUE"," Exploration","","Alaska","North Port","","Offroad","$122 100","6x6","Switchable","None","47","0,60","51","0,65","280","192000","10500","18,29","Truck","Medium","1, front","Raised","","","","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC)","","","","UAD chains","100","x2","UOD II
+JAT OMD III","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","PC-320","","LP-4","","2-slot cargo Bed +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","MediumLogs","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","","1800","1800","800-6","300-5-1400","","","","2","SeismicVibrator","Metal Detector","","Articulated Towing Platform","Gb-8V 2300c","160000","15,24","royal_bm17.xml","","",""
+"Sleiter ST 816 ""Elephant""","Year 4
+Season 15","TRUE","Contract","","Quebec","Harbor","""Flexible Solution""","Heavy","$192 400","6x6","Switchable","Always On","67","0,85","67","0,85","380","245000","27721","8,84","Special+
+Multipurpose (Sleiter)","Heavy","1, front","","","","Active","","","","","MSH
+JAT MSH (DLC)
+Sleiter 816 tires","","","600","","Elephant tires
+JAT MSH III","Truck Trailer","","","","","SaddleHigh","Fuel Heavy Semi (5000L)","SLEI-64","","","","","","","","Saddle High + crane","","","","","","","","","","","","600-0-240","","2","","","","","A12V-780","175000","6,31","sleiter_mfk816.xml","","",""
+"Sleiter ST 833 “Chimera”","Year 4
+Season 16","TRUE","Contract",""," Washington","Selten River Mountains","""Patched-Up Behemoth""","Heavy","$181 700","6x6","Switchable","Always On","67","0,85","69","0,87","360","245000","28320","8,65","Special","Heavy","1, front","","","","","","","","Sleiter 833 tires","MSH;
+JAT MSH (DLC)","","","600","","JAT MSH III","Truck Trailer","","","","","SaddleHigh","Fuel Heavy Semi (5000L)","SLEI-64","","LK-2NY","LP-4","Multi-purpose Cargo Module +Trailer","2-slot cargo 
+Bed +Crane +Trailer","3-slot cargo Bed +Trailer","","Saddle High + crane","Short Logs Addon +Trailer","MediumLogs +Trailer","LogCarrierFront +LogCrane","","","","","","800-6","300-5-1400","450-4-250
++Crane +1SlotBed","0-0-120","","4","SeismicVibrator","","","Articulated Towing Platform
+Ramped Towing Platform","A12V-780","175000","6,18","sleiter_st833_chimera.xml","","",""
+"Step 310E","","TRUE","Task","","Taymyr","Zimnegorsk","""Truck Recovery""","Offroad","$89 100","6x6","Switchable","Switchable","39","0,50","43","0,55","220","185000","7538,5","24,54","Truck","Medium","1, front","Raised","","","","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC)","","","","UAD chains","100","x2","UOD II
+JAT OMD III","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","IM50","Avto-23","","LP-4","","2-slot cargo Bed +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","MediumLogs","LogCarrierFront","","","YES","1800","1800","800-6","300-5-1400","","","","2","","Metal Detector","MD+SaddleLow","Ramped Towing Platform","LAZ 6T173 ""Voin""","150000","19,90","step_310e.xml","","",""
+"Step 33-64 ""Crocodile""","Crocodile DLC","FALSE","","","","","","Offroad","$26 200","4x4","Always On","Always On","39","0,50","42","0,53","150","185000","5114","36,18","Truck","Medium","1, front","Raised","","","","UAD;
+JAT ATMD (DLC);
+UCD","","UOD;
+JAT OMD (DLC)","","JAT MMD (DLC)","TMHS","UAD chains","100","x2","TMHS I
+JAT MMD I","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","","","","","1-slot cargo Bed +Trailer","","","","","","","","","Futom-S logging trailer
+Futom-M logging trailer","","900","","500-2-60","","","0-0-60","500-3-120","2","","","","","LAZ 6 T60","130000","25,42","step_3364_crocodile.xml","","",""
+"Step 39331 ""Pike""","Year 2 - Season 8","TRUE","Task","","Belozersk Glades","The Institute","""A Gift Horse""","Offroad","$79 700","6x6","Always On","Always On","41","0,52","43","0,55","250","185000","9003","20,55","Truck","Medium","1, front","Raised","","","","UAD;
+JAT ATMD (DLC);
+UCD","","","","MHS II;
+JAT MHS (DLC)","","","100","x2","UCD I (Pike)
+JAT MHS IV","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","IM50","Avto-23","","LP-4","","2-slot cargo 
+Bed +Crane +Trailer","","","Both saddles + crane","","","LogCarrierFront +LogCrane","","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","","","150-0-80","950-6-80","2","SeismicVibrator","","","","LAZ 6 T60","130000","14,44","step_39331_pike.xml","","",""
+"Tatra 805","Tatra
+Dual Pack","FALSE","","","","","","Scout","$39 400","4x4","Switchable","Switchable","37","0,47","37","0,47","190","185000","2616","70,72","Truck","Scout","1, front","","","","","","UAD singles;
+JAT ATMS (DLC)","","UOD singles;
+JAT OMS (DLC)","","AMHS","UAD chains single","100","","JAT OMS III
+AMHS I","Truck Trailer","Scout Trailer","","","","","","","","","","1-slot cargo Bed +Trailer","","","","","","","","","","","900","","500-2","","","200-0-80","700-2-80","","","","","","LAZ 6 T60","130000","49,69","tatra_805.xml","","",""
+"Tatra Force T815-7","Year 2 - Season 5","TRUE","Task","","Don","Factory Grounds","""The Sleeping King""","Heavy","$211 000","8x8","Switchable","Switchable","50","0,64","50","0,64","380","260000","15651","16,61","Special","Heavy","2, front","","","","","","ATHS","","OHS;
+JAT OHS (DLC)","MSH (Force);
+DMHS;
+JAT MHS (DLC)","","MHS chains","200","","MSH I (Force)","Truck Trailer","","","","","SaddleHigh","Fuel Heavy Semi (5000L)","TAT-12","","","","Multi-purpose Cargo Module +Trailer","2-slot cargo 
+Bed +Crane +Trailer","","","Saddle High + crane","","","","","Futom-S logging trailer
+Futom-M logging trailer","YES","2000","","Tatra Tow Module (250-3)","","450-4-250
++Crane +1SlotBed","300-0-160","750-4-410","","","","","Tatra Tow Module","KZGT-8 490","205000","13,10","tatra_force_t815_7.xml","","",""
+"Tatra Phoenix","Year 2 - Season 5","TRUE","Task","","Don","Antonovskiy Nature Reserve","""Wipe Away The Debt""","Offroad","$96 900","8x8","Switchable","Switchable","46","0,58","46","0,58","345","235000","15620","15,04","Truck","Medium","4, front+rear","","","","","","ATHS","","OHS;
+JAT OHS (DLC)","MSH I (Phoenix);
+DMHS;
+JAT MHS (DLC)","","MHS chains","200","","OHS II
+MSH I (Phoenix)","Truck Trailer","","","","","SaddleHigh","Fuel Heavy Semi (5000L)","TAT-12","","","","","2-slot cargo 
+Bed +Crane +Trailer","","","Saddle High + crane","","","","","Futom-S logging trailer
+Futom-M logging trailer","YES","2000","","","","","","","2","","","","","Azov AM-8 14","170000","10,88","tatra_phoenix.xml","","",""
+"Tatra T813","Tatra
+Dual Pack","FALSE","","","","","","Heavy","$202 501","8x8","Switchable","Switchable","50","0,64","50","0,64","380","260000","15612","16,65","Special","Heavy","2, front","","","","","","ATHS","","OHS;
+JAT OHS (DLC)","MSH (T813);
+DMHS;
+JAT MHS (DLC)","","MHS chains","200","","MSH I (T813)","Truck Trailer","","","","","SaddleHigh","Fuel Heavy Semi (5000L)","","","","","","2-slot cargo Bed +Trailer","","","","","","","","","YES","","","","","","450-0-160","","","","","","Articulated Towing Platform","KZGT-8 490","205000","13,13","tatra_t813.xml","","",""
+"Tayga 6436","","TRUE","Exploration
+or Task","","Taymyr
+Belozersk Glades
+British Columbia","Drowned Lands;
+Crossroads;
+North Peak National Park","""SOS""","Offroad","$75 000","6x6","Always On","Always On","47","0,60","51","0,65","330","200000","13130","15,23","Truck","Medium","1, front","Raised","","","","ATMD;
+JAT ATHD (DLC)","ATHS","OHD;
+JAT OHD (DLC)","OHS;
+JAT OHS (DLC)","DMHS;
+MHS II;
+JAT MHS (DLC)","TMHS","OHD chains;
+MHS chains","200","x2","OHD I
+TMHS","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","IM50","Avto-23","","","","2-slot cargo Bed +Trailer","","","Both saddles + crane","Short Logs Addon","","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","","","","","2","SeismicVibrator","","","","LAZ 8 T260","160000","12,19","tayga_6436.xml","","",""
+"Tayga 6455B","Year 2 - Season 6","TRUE","Contract","","Maine","The Lowland","""Starting the Plank Production""","Offroad","$90 600","6x6","Always On","Always On","48","0,61","50","0,64","330","200000","13221","15,13","Truck","Medium","1, front","Raised","","","","","ATHS","","OHS;
+JAT OHS (DLC)","DMHS;
+MHS II;
+JAT MHS (DLC)","TMHS","MHS chains","200","","OHS II
+JAT MHS IV","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","IM50","Avto-23","","","","2-slot cargo 
+Bed +Crane +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","MediumLogs +Trailer","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","","","","","","SeismicVibrator","","","","LAZ 8 T260","160000","12,10","tayga_6455b.xml","","",""
+"TUZ 108 ""Warthog""","Year 1 - Season 1","TRUE"," Exploration","","Kola Peninsula","Imandra","","Offroad","$34 200","4x4","Switchable","Switchable","39","0,50","47","0,60","200","210000","4490","46,77","Truck","Medium +
+Autonomous","1, front","Raised","","","Active","JAT ATMD (DLC)","UAD singles","JAT OMD (DLC)","UOD singles","JAT MMD (DLC)","AMHS","UAD chains single","100","x2","JAT MMD I","Truck Trailer","","","SaddleLow","","","","IM50","","","","1-slot cargo Bed +Trailer","","","","","","","","","Futom-S logging trailer
+Futom-M logging trailer","","600","","500-2","","","150-2-60","","","","","","","Azov AM-8 14","170000","37,86","tuz_108_warthog.xml","","",""
+"TUZ 16 ""Actaeon""","Year 1 - Season 1","TRUE"," Exploration","","Kola Peninsula","Lake Kovd","","Offroad","$70 400","4x4","Switchable","Switchable","39","0,50","47","0,60","110","185000","3840","48,18","Truck","Medium +
+Autonomous","1, front","Raised","","","Active","JAT ATMD (DLC)","UAD singles","JAT OMD (DLC)","UOD singles","JAT MMD (DLC)","AMHS","UAD chains single","100","x2","UOD II
+AMHS","Truck Trailer","","","","","","","IM50","","","","1-slot cargo
+Bed +Crane +Trailer","","","","","","","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","","900","","500-2","","","150-0-80","650-3-80","2","","","","","LAZ 6 T60","130000","33,85","tuz_16_actaeon.xml","","",""
+"TUZ 166","","TRUE","Exploration
+or Task","","Taymyr
+Belozersk Glades","Drowned Lands;
+Crossroads","""Lost In The Rocks""","Scout","$15 500","4x4","Always On","Always On","31","0,40","39","0,50","60","72000","1855","38,81","Scout","Scout","1, front","Raised","Custom Tuned","","","","AS;
+Ultima AT (DLC)","","OS;
+JAT OS (DLC)","MS;
+JAT MS (DLC)","","CS;
+Ultima CS (DLC)","75","","JAT MS III","","Scout Trailer","","","","","","","","","","","","","","","","","","","","","","","","","","0-2-40","","1","","","","","Kr 37 model 166","20000","10,78","tuz_166.xml","","",""
+"TUZ 420 ""Tatarin""","","TRUE","Exploration
+or Task","","Taymyr","Zimnegorsk;
+Rift","""Pacifist""","Scout","$146 300","8x8","Always On","Always On","47","0,60","47","0,60","300","200000","15751","12,70","Special","Scout","2, front","","","","","","","","","TO
+JAT MHS (DLC)","","","200","","TO I","","","","","","","","","","","","","","","","","","","","","","","","","","","","150-2-120","","","","","","","IMZ-12 1000T","200000","12,70","tuz_420_tatarin.xml","","",""
+"Voron AE-4380","","FALSE","","","Scandinavia","By the Lake","","Offroad","$82 100","6x6","Always On","Always On","43","0,55","50","0,63","250","200000","10643","18,79","Truck","Medium","1, front","Raised","","","","ATMD;
+JAT ATHD (DLC)","ATHS","OHD;
+JAT OHD (DLC)","OHS;
+JAT OHS (DLC)","DMHS;
+MHS II;
+JAT MHS (DLC)","","OHD chains;
+MHS chains","200","x2","OHS II
+OHD I","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","IM50","Avto-23","","","","2-slot cargo 
+Bed +Crane +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","MediumLogs +Trailer","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","","","","","2","","Metal Detector","MD+SaddleLow","Articulated Towing Platform","LAZ 8 T260","160000","15,03","voron_ae4380.xml","","",""
+"Voron D-53233","","FALSE","","","","","","Offroad","$79 700","6x6","Always On","Always On","43","0,55","50","0,63","270","200000","13062,5","15,31","Unique offroad
+(Voron D)","Medium","1, front","Raised","","","","ATMD;
+JAT ATHD (DLC)","ATHS","OHD;
+JAT OHD (DLC)","OHS;
+JAT OHS (DLC)","DMHS;
+MHS II;
+JAT MHS (DLC)","","OHD chains;
+MHS chains","200","x2","OHD I","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","IM50","Avto-23","","LP-4","","2-slot cargo 
+Bed +Crane +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","MediumLogs +Trailer","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","300-5-1400","","","","2","","Metal Detector","MD+SaddleLow","Articulated Towing Platform","LAZ 8 T260","160000","12,25","voron_d53233.xml","","",""
+"Voron G-5352","Year 5
+Season 17","TRUE","Task","","Zurdania","The Valley of Falling Rocks","""Oldie But Goldie""","Heavy Duty","$152 900","8x8","Always On","Switchable","49","0,62","52","0,66","380","188220","14110,5","13,34","Voron G special","Medium","2, front","Raised","","","","","ATHS","","OHS;
+JAT OHS;
+Voron G tires","DMHS;
+MHS II;
+JAT MHS (DLC)","","MHS chains","285",""," Voron G tires
+MHS II","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","IM50
+LC 3.8","Avto-23","LK-2NY","LP-4","Multi-purpose Cargo Module +IM50+ Trailer","2-slot cargo 
+Bed +Crane +Trailer","","","","Short Logs Addon +LogCrane +Trailer","MediumLogs +Trailer","LogCarrierFront +LogCrane","LogCrane + LowSaddle","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","300-5-1400
+900-6-300","300-2-200
++1SlotBed","150-0-100","1050-6-400
+450-5-1500
+450-2-300","2","SeismicVibrator +Trailer","","","Articulated Towing Platform","IMZ-8 300-T","144870","10,27","voron_g5352.xml","","",""
+"Voron Grad","","TRUE","Driver's Rank","18","","","","Offroad","$84 400","6x6","Switchable","Switchable","43","0,55","50","0,63","330","235000","13150","17,87","Truck","Medium","1, front","Raised","","","","ATMD;
+JAT ATHD (DLC)","ATHS","OHD;
+JAT OHD (DLC)","OHS;
+JAT OHS (DLC)","DMHS;
+MHS II;
+JAT MHS (DLC)","","OHD chains;
+MHS chains","200","x2","OHD I","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","IM50","Avto-23","","","","2-slot cargo Bed +Trailer","","","Both saddles + crane","","","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","300-5-1400","","","","2","","","","Ramped Towing Platform","Azov AM-8 14","170000","12,93","voron_grad.xml","","",""
+"Western Star 47X NF1424","Wolf Pack DLC","FALSE","","","","","","Heavy","$113 500","6x6","Switchable","Switchable","44","0,56","48","0,61","290","220000","8340","26,38","Truck","Heavy","1, front","Raised","","","Active","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC)","","","","UAD chains","100","x2","UOD II
+JAT OMD III","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","","","","1-slot cargo
+Bed +Crane +Trailer","2-slot cargo Bed +Trailer","","","Both saddles + crane","","","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","YES","","","","300-5-1400","","150-2-120","450-7-1520","","","","","","Si-8V/2300","160000","19,18","western_star_nf1424.xml","","",""
+"Western Star 47X NF1430","Wolf Pack DLC","FALSE","","","","","","Heavy","$120 600","10x6","Switchable","None","44","0,56","44","0,56","290","220000","10140","21,70","Truck","Heavy","1, front","","","","Dead Axle","ATMD;
+JAT ATHD (DLC)","","OHD;
+JAT OHD (DLC)","","","","OHD chains","200","x2","OHD I","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","PC-320","LK-2NY","LP-4","","2-slot cargo 
+Bed +Crane +Trailer","","","Both saddles + crane","Short Logs Addon +LogCrane +Trailer","MediumLogs +Trailer","LogCarrierFront +LogCrane","LogCrane + LowSaddle","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","300-5-1400","","","","","SeismicVibrator","","","Ramped Towing Platform","Si-8V/2300","160000","15,78","western_star_nf1430.xml","","",""
+"Western Star 49X","Western Star 49X DLC","FALSE","","","","","","Heavy","$140 700","8x6","Switchable","Switchable","47","0,60","47","0,60","290","220000","9460","23,26","Truck","Heavy","1, front","","","","Dead Axle","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC)","","","","UAD chains","100","x2","UOD II
+JAT OMD III","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","","","LP-4","","2-slot cargo 
+Bed +Crane +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","MediumLogs +Trailer","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","","300-5-1400","","","","","SeismicVibrator","Metal Detector","MD+2-slotSB/FB
+MD+SaddleHigh
+MD+SaddleLow","Ramped Towing Platform","Si-8V/2300","160000","16,91","western_star_49x","","",""
+"Western Star 57X","Wolf Pack DLC","FALSE","","","","","","Highway","$115 700","6x6","Switchable","None","43","0,54","44","0,56","290","220000","8579","25,64","Truck","Heavy","1, front","Raised","","","","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC)","","","","UAD chains","100","x2","JAT OMD I
+UOD I","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","","","","","","","","","","","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","","","","","","","","","2","","","","","Si-8V/2300","160000","18,65","western_star_57x.xml","","",""
+"Western Star 6900 Twin Steer","","FALSE","","","Michigan","Island Lake","""No country for old truck""","Heavy","$118 200","8x8","Switchable","Switchable","55","0,70","63","0,80","360","250000","21715","11,51","Truck","Heavy","2, front","Raised","","","","ATMD;
+JAT ATHD (DLC)","ATHS","OHD;
+JAT OHD (DLC)","OHS;
+JAT OHS (DLC)","DMHS;
+JAT MHS (DLC)","","OHD chains;
+MHS chains","200","x2","OHD I (55"")
+JAT MHS IV","","","","","","","","","","","","","","","4-slot Cargo Bed","","","","","","","","","","","","","","","2","","","","","A16V-2000","200000","9,21","ws_6900xd_twin","","",""
+"Western Star 6900XD","Freightliner & Western Star Dual Pack","FALSE","","","","","","Heavy","$160 800","6x6","Switchable","Switchable","53","0,67","55","0,70","320","192000","19187","10,01","Truck","Heavy","1, front","Raised","","","","ATMD;
+JAT ATHD (DLC);
+WS 6900XD tires","","OHD;
+JAT OHD (DLC)","","","","OHD chains","200","x2","OHD I","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","","LK-2NY","LP-4","","2-slot cargo 
+Bed +Crane +Trailer","3-slot cargo Bed +Trailer","","Both saddles + crane","Short Logs Addon +Trailer","MediumLogs +Trailer","LogCarrierFront +LogCrane","","Futom-S logging trailer
+Futom-M logging trailer","","","","800-6","300-5-1400","","150-0-80","150-2-2880;
+950-8-80;
+450-7-1480","2","SeismicVibrator","","","Articulated Towing Platform
+Ramped Towing Platform
+Vehicle Extraction Kit","Si-8V / 2300","160000","8,34","western_star_6900xd.xml","","",""
+"White Western Star 4964","","TRUE","Exploration
+or Task","","Michigan
+British Columbia","Smithville Dam;
+Duncan Bay","""Fixer Upper""","Heavy Duty","$48 800","6x6","Switchable","Switchable","43","0,55","47","0,60","300","155000","9038","17,15","Truck","Medium","1, front","Raised","","","","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC)","","","","UAD chains","100","x2","UOD II
+JAT OMD III","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","LC 3.8","PC-320","","LP-4","","2-slot cargo Bed +Trailer","","","Both saddles + crane","Short Logs Addon +Trailer","MediumLogs +Trailer","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","1800","800-6","300-5-1400","","","","2","","","","Ramped Towing Platform","Si-6V/1900","135000","14,94","ws_4964_white","","",""
+"YAR 87","","TRUE","Driver's Rank","10","","","","Scout","$30 500","6x6","Switchable","Always On","49","0,62","49","0,62","110","90000","4915","18,31","Scout","Scout","1, front","","","","","","TrAT;
+Ultima AT (DLC)","","TrO","TrM
+JAT MS (DLC)","TM","TrC I;
+Ultima CS (DLC)","100","","TM II
+JAT MS III","","Scout Trailer","","","","","","","","","","","","","","","","","","","","","","","","","","150-2-120","","","","","","","Kr 135-T","70000","14,24","YAR_87","","",""
+"ZIKZ 5368","","FALSE","","","","","","Offroad","$31 900","4x4","Switchable","Switchable","42","0,53","47","0,60","190","185000","7141,5","25,90","Truck","Medium","1, front","Raised","","","","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC)","","JAT MMD (DLC)","AMHS","UAD chains","100","x2","JAT MMD I","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","","","IM50","","","LP-4","1-slot cargo
+Bed +Crane +Trailer","2-slot Cargo Bed","","","Saddle Low + crane","","","LogCarrierFront","","Futom-S logging trailer
+Futom-M logging trailer","","1800","1800","800-6
+500-2","","","","800-6","2","","Metal Detector","MD+1-slotSB","","LAZ 6 T60","130000","18,20","zikz_5368.xml","","",""
+"ZiKZ 566A","Year 3 - Season 9","TRUE","Task","","Ontario","Burned Forest","""Help The Villagers 3""","Offroad","$80 900","4x4","Always On","Switchable","43","0,55","47","0,60","150","200000","6935","28,84","Truck","Medium","1, front","Raised","","","","UAD;
+JAT ATMD (DLC)","","UOD;
+JAT OMD (DLC)","Zikz 566A tires","JAT MMD (DLC)","TMHS","UAD chains","100","x2","Zikz 566A tires
+JAT MMD I","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","","","IM50","","","","1-slot cargo
+Bed +Crane +Trailer","","","","Saddle Low + crane","","","","","Futom-S logging trailer
+Futom-M logging trailer","","900","1800","500-2","","","0-0-120","500-4-120","2","","","","","LAZ 6 T60","130000","18,75","zikz_566a.xml","","",""
+"ZiKZ 605R","Year 1 - Season 4","TRUE","Task","","Amur","Cosmodrome","""Stargazer""","Heavy","$191 600","8x8","Always On","Always On","61","0,77","61","0,78","380","260000","26416","9,84","Special","Heavy","2, front","","","","","","","","","ZHM;
+JAT MSH (DLC)","","","600","","ZHM I","Truck Trailer","","","","","SaddleHigh","Fuel Heavy Semi (5000L)","","Avto-23","","","","2-slot cargo Bed +Trailer","","","","Short Logs Addon +Trailer","","","","","YES","1800","1800","800-6","","","600-0-200","1400-6-200","2","SeismicVibrator +Trailer","","","","KZGT-8 490","205000","7,76","zikz_605r.xml","","",""
+"ZiKZ 612H","Mastodon DLC","FALSE","","","","","","Heavy","$228 400","8x8","Always On","Always On","61","0,77","61","0,78","500","265000","28824","9,19","Special (612H)","Heavy","2, front","","","","","","ATHS","","OHS","ZHM;
+JAT MSH;
+DMHS;
+MHS II","","MHS chains","600","","ZHM I (612H)
+JAT MSH III","Truck Trailer","","","SaddleLow","Fuel/Water Semi (3700L)","SaddleHigh","Fuel Heavy Semi (5000L)","IM50","Avto-23","LK-2NY","LP-4","Multi-purpose Cargo Module +Trailer","2-slot cargo 
+Bed +Crane +Trailer","3-slot Cargo Bed","","Both saddles + crane","Short Logs Addon +Trailer","MediumLogs +Trailer","LogCarrierFront +LogCrane","LogCrane + LowSaddle","Futom-S logging trailer
+Futom-M logging trailer","YES","1800","2500","800-6","","450-4-250
++Crane +1SlotBed","300-0-0
+300-0-180","600-4-2030
+1100-10-180
+750-6-430","4","SeismicVibrator","","","Ramped Towing Platform","TUSK12-530-P2","203000","7,04","zikz_612h_mastodont","","",""

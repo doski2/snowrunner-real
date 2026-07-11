@@ -1,0 +1,1166 @@
+{
+  "id": "extras_tires",
+  "source": "SnowRunner Extras",
+  "sheet": "Tires",
+  "updated_utc": "2026-07-11T01:12:50.941657+00:00",
+  "items": [
+    {
+      "For Trucks Templates": "Highway",
+      "Asphalt": "3",
+      "Ground/Rock": "1",
+      "Mud/Snow": "0.2",
+      "For Scouts Templates": "ScoutHighway",
+      "Asphalt_1": "2",
+      "Ground/Rock_1": "0.8",
+      "Mud/Snow_1": "0.2"
+    },
+    {
+      "For Trucks Templates": "Allterrain",
+      "Asphalt": "1.5",
+      "Ground/Rock": "1.5",
+      "Mud/Snow": "1",
+      "For Scouts Templates": "ScoutAllterain",
+      "Asphalt_1": "1",
+      "Ground/Rock_1": "1",
+      "Mud/Snow_1": "1"
+    },
+    {
+      "For Trucks Templates": "Offroad",
+      "Asphalt": "0.8",
+      "Ground/Rock": "3",
+      "Mud/Snow": "1.5",
+      "For Scouts Templates": "ScoutOffroad",
+      "Asphalt_1": "1",
+      "Ground/Rock_1": "2",
+      "Mud/Snow_1": "1.2"
+    },
+    {
+      "For Trucks Templates": "Mudtires",
+      "Asphalt": "0.5",
+      "Ground/Rock": "2",
+      "Mud/Snow": "2",
+      "For Scouts Templates": "ScoutMudtires",
+      "Asphalt_1": "0.5",
+      "Ground/Rock_1": "3",
+      "Mud/Snow_1": "1.6"
+    },
+    {
+      "For Trucks Templates": "HeavyMudtires",
+      "Asphalt": "0.5",
+      "Ground/Rock": "1.7",
+      "Mud/Snow": "3",
+      "For Scouts Templates": "ScoutChains",
+      "Asphalt_1": "0.9",
+      "Ground/Rock_1": "2",
+      "Mud/Snow_1": "1.1"
+    },
+    {
+      "For Trucks Templates": "Chains",
+      "Asphalt": "1.2",
+      "Ground/Rock": "3",
+      "Mud/Snow": "1.3",
+      "For Scouts Templates": "Highway"
+    },
+    {
+      "For Trucks Templates": "Highway",
+      "For Scouts Templates": "HS I",
+      "Asphalt_1": "2",
+      "Ground/Rock_1": "0.8",
+      "Mud/Snow_1": "0.4",
+      "Width_1": "0.509",
+      "Softness_1": "ScoutStiff"
+    },
+    {
+      "For Trucks Templates": "UHD I",
+      "Asphalt": "3",
+      "Ground/Rock": "1",
+      "Mud/Snow": "0.4",
+      "Width": "0.58",
+      "Width Rear": "1.132",
+      "Softness": "Stiff",
+      "For Scouts Templates": "HS II",
+      "Asphalt_1": "2",
+      "Ground/Rock_1": "1",
+      "Mud/Snow_1": "0.2"
+    },
+    {
+      "For Trucks Templates": "UHD II",
+      "Asphalt": "3",
+      "Ground/Rock": "1.2",
+      "Mud/Snow": "0.2",
+      "For Scouts Templates": "HS III",
+      "Asphalt_1": "2.5",
+      "Ground/Rock_1": "0.8",
+      "Mud/Snow_1": "0.2"
+    },
+    {
+      "For Trucks Templates": "UHD III",
+      "Asphalt": "3.2",
+      "Ground/Rock": "1",
+      "Mud/Snow": "0.2",
+      "For Scouts Templates": "JAT HS I",
+      "Asphalt_1": "2.2",
+      "Ground/Rock_1": "0.7",
+      "Mud/Snow_1": "0.3",
+      "Width_1": "0.57",
+      "Softness_1": "ScoutStiff"
+    },
+    {
+      "For Trucks Templates": "HMD I",
+      "Asphalt": "3",
+      "Ground/Rock": "1",
+      "Mud/Snow": "0.4",
+      "Width": "0.58",
+      "Width Rear": "1.132",
+      "Softness": "Stiff",
+      "For Scouts Templates": "JAT HS II",
+      "Asphalt_1": "2.3",
+      "Ground/Rock_1": "1",
+      "Mud/Snow_1": "0.2"
+    },
+    {
+      "For Trucks Templates": "HMD II",
+      "Asphalt": "3",
+      "Ground/Rock": "1.2",
+      "Mud/Snow": "0.2",
+      "For Scouts Templates": "All-Terrain"
+    },
+    {
+      "For Trucks Templates": "HMD III",
+      "Asphalt": "3.2",
+      "Ground/Rock": "1",
+      "Mud/Snow": "0.2",
+      "For Scouts Templates": "AS I",
+      "Asphalt_1": "1",
+      "Ground/Rock_1": "1.4",
+      "Mud/Snow_1": "1",
+      "Width_1": "0.66",
+      "Softness_1": "ScoutStiff"
+    },
+    {
+      "For Trucks Templates": "JAT HMS I",
+      "Asphalt": "3",
+      "Ground/Rock": "1",
+      "Mud/Snow": "0.4",
+      "Width": "0.65",
+      "Width Rear": "-",
+      "Softness": "Stiff",
+      "For Scouts Templates": "AS II",
+      "Asphalt_1": "1",
+      "Ground/Rock_1": "1",
+      "Mud/Snow_1": "1.2"
+    },
+    {
+      "For Trucks Templates": "JAT HMS II",
+      "Asphalt": "3",
+      "Ground/Rock": "1.1",
+      "Mud/Snow": "0.3",
+      "For Scouts Templates": "AS III",
+      "Asphalt_1": "1.2",
+      "Ground/Rock_1": "1",
+      "Mud/Snow_1": "1"
+    },
+    {
+      "For Trucks Templates": "JAT HMS III",
+      "Asphalt": "3.2",
+      "Ground/Rock": "0.9",
+      "Mud/Snow": "0.4",
+      "For Scouts Templates": "TrAT I (YAR 87)",
+      "Asphalt_1": "1.5",
+      "Ground/Rock_1": "1.5",
+      "Mud/Snow_1": "1",
+      "Width_1": "0.65",
+      "Softness_1": "Average"
+    },
+    {
+      "For Trucks Templates": "JAT HMD I",
+      "Asphalt": "3",
+      "Ground/Rock": "1",
+      "Mud/Snow": "0.4",
+      "Width": "0.65",
+      "Width Rear": "1.3",
+      "Softness": "Stiff",
+      "For Scouts Templates": "Ultima AT I",
+      "Asphalt_1": "1",
+      "Ground/Rock_1": "1.1",
+      "Mud/Snow_1": "1.4",
+      "Width_1": "0.73",
+      "Softness_1": "ScoutDefault"
+    },
+    {
+      "For Trucks Templates": "JAT HMD II",
+      "Asphalt": "3",
+      "Ground/Rock": "1.1",
+      "Mud/Snow": "0.3",
+      "For Scouts Templates": "Ultima AT II",
+      "Asphalt_1": "1.1",
+      "Ground/Rock_1": "1.1",
+      "Mud/Snow_1": "1.3"
+    },
+    {
+      "For Trucks Templates": "JAT HMD III",
+      "Asphalt": "3.2",
+      "Ground/Rock": "0.9",
+      "Mud/Snow": "0.4",
+      "For Scouts Templates": "Ultima AT III",
+      "Asphalt_1": "1.1",
+      "Ground/Rock_1": "1.1",
+      "Mud/Snow_1": "1.2"
+    },
+    {
+      "For Trucks Templates": "JAT HHD I",
+      "Asphalt": "3",
+      "Ground/Rock": "1",
+      "Mud/Snow": "0.4",
+      "Width": "0.45",
+      "Width Rear": "0.9",
+      "Softness": "Stiff",
+      "For Scouts Templates": "Ultima AT IV",
+      "Asphalt_1": "1",
+      "Ground/Rock_1": "1.3",
+      "Mud/Snow_1": "1.1"
+    },
+    {
+      "For Trucks Templates": "JAT HHD II",
+      "Asphalt": "3",
+      "Ground/Rock": "1.1",
+      "Mud/Snow": "0.3",
+      "For Scouts Templates": "Offroad"
+    },
+    {
+      "For Trucks Templates": "JAT HHD III",
+      "Asphalt": "3.2",
+      "Ground/Rock": "0.9",
+      "Mud/Snow": "0.4",
+      "For Scouts Templates": "OS I",
+      "Asphalt_1": "1",
+      "Ground/Rock_1": "2",
+      "Mud/Snow_1": "1.2",
+      "Width_1": "0.66",
+      "Softness_1": "ScoutDefault"
+    },
+    {
+      "For Trucks Templates": "All-Terrain",
+      "For Scouts Templates": "TrO I (YAR 87)",
+      "Asphalt_1": "0.8",
+      "Ground/Rock_1": "2",
+      "Mud/Snow_1": "1.2",
+      "Width_1": "0.65",
+      "Softness_1": "Average"
+    },
+    {
+      "For Trucks Templates": "UAD I",
+      "Asphalt": "1.9",
+      "Ground/Rock": "1.5",
+      "Mud/Snow": "1",
+      "Width": "0.58",
+      "Width Rear": "1.132",
+      "Softness": "Stiff",
+      "For Scouts Templates": "Hummer H2 Tires",
+      "Asphalt_1": "3",
+      "Ground/Rock_1": "2",
+      "Mud/Snow_1": "1.2",
+      "Width_1": "0.66",
+      "Softness_1": "ScoutDefault"
+    },
+    {
+      "For Trucks Templates": "UAD II",
+      "Asphalt": "1.5",
+      "Ground/Rock": "1.5",
+      "Mud/Snow": "1.2",
+      "For Scouts Templates": "TO I (Chevrolet Apache)",
+      "Asphalt_1": "1",
+      "Ground/Rock_1": "2",
+      "Mud/Snow_1": "1.2",
+      "Width_1": "0.67",
+      "Softness_1": "ScoutDefault"
+    },
+    {
+      "For Trucks Templates": "UAD III",
+      "Asphalt": "1.5",
+      "Ground/Rock": "1.7",
+      "Mud/Snow": "1",
+      "For Scouts Templates": "OJ 1 (Jeeps)",
+      "Asphalt_1": "3",
+      "Ground/Rock_1": "2",
+      "Mud/Snow_1": "1.2",
+      "Width_1": "0.66",
+      "Softness_1": "ScoutDefault"
+    },
+    {
+      "For Trucks Templates": "P12 AT",
+      "Asphalt": "1.9",
+      "Ground/Rock": "1.5",
+      "Mud/Snow": "1",
+      "Width": "0.622",
+      "Width Rear": "-",
+      "Softness": "Average",
+      "For Scouts Templates": "Land Rover",
+      "Asphalt_1": "3",
+      "Ground/Rock_1": "2",
+      "Mud/Snow_1": "1.2",
+      "Width_1": "0.66",
+      "Softness_1": "ScoutDefault"
+    },
+    {
+      "For Trucks Templates": "ATHS I",
+      "Asphalt": "1.5",
+      "Ground/Rock": "1.5",
+      "Mud/Snow": "1.2",
+      "Width": "0.65",
+      "Width Rear": "-",
+      "Softness": "Average",
+      "For Scouts Templates": "OG I (Gor BY-4)",
+      "Asphalt_1": "0.8",
+      "Ground/Rock_1": "3",
+      "Mud/Snow_1": "2.1",
+      "Width_1": "0.715",
+      "Softness_1": "ScoutSoft"
+    },
+    {
+      "For Trucks Templates": "ATMD I",
+      "Asphalt": "1.9",
+      "Ground/Rock": "1.5",
+      "Mud/Snow": "1",
+      "Width": "0.58",
+      "Width Rear": "1.132",
+      "Softness": "Average",
+      "For Scouts Templates": "Rezvani (Hercules)",
+      "Asphalt_1": "3",
+      "Ground/Rock_1": "2",
+      "Mud/Snow_1": "1.2",
+      "Width_1": "0.66",
+      "Softness_1": "ScoutDefault"
+    },
+    {
+      "For Trucks Templates": "ATMD II",
+      "Asphalt": "1.5",
+      "Ground/Rock": "1.5",
+      "Mud/Snow": "1.2",
+      "For Scouts Templates": "Burlak 6x6*",
+      "Asphalt_1": "0.6",
+      "Ground/Rock_1": "3.3",
+      "Mud/Snow_1": "2.2",
+      "Width_1": "0.79",
+      "Softness_1": "Average"
+    },
+    {
+      "For Trucks Templates": "ATMD III",
+      "Asphalt": "1.5",
+      "Ground/Rock": "1.7",
+      "Mud/Snow": "1",
+      "For Scouts Templates": "JAT OS I",
+      "Asphalt_1": "1",
+      "Ground/Rock_1": "2",
+      "Mud/Snow_1": "1.2",
+      "Width_1": "0.76",
+      "Softness_1": "ScoutDefault"
+    },
+    {
+      "For Trucks Templates": "UCD I (Crocodile, Pike)",
+      "Asphalt": "1.5",
+      "Ground/Rock": "1.4",
+      "Mud/Snow": "1.5",
+      "Width": "0.459",
+      "Width Rear": "0.974",
+      "Softness": "Stiff",
+      "For Scouts Templates": "JAT OS II",
+      "Asphalt_1": "0.8",
+      "Ground/Rock_1": "2.2",
+      "Mud/Snow_1": "1.2"
+    },
+    {
+      "For Trucks Templates": "SPO I (Sprinter)",
+      "Asphalt": "1.5",
+      "Ground/Rock": "1.5",
+      "Mud/Snow": "2",
+      "Width": "0.715",
+      "Width Rear": "-",
+      "Softness": "Average",
+      "For Scouts Templates": "JAT OS III",
+      "Asphalt_1": "1",
+      "Ground/Rock_1": "2.3",
+      "Mud/Snow_1": "1.1"
+    },
+    {
+      "For Trucks Templates": "Kenworth 963",
+      "Asphalt": "1.6",
+      "Ground/Rock": "1.7",
+      "Mud/Snow": "1",
+      "Width": "0.84",
+      "Width Rear": "-",
+      "Softness": "Average",
+      "For Scouts Templates": "JAT OS IV",
+      "Asphalt_1": "1.1",
+      "Ground/Rock_1": "2.2",
+      "Mud/Snow_1": "1.2"
+    },
+    {
+      "For Trucks Templates": "Kenworth C500",
+      "Asphalt": "1.8",
+      "Ground/Rock": "1.6",
+      "Mud/Snow": "1.3",
+      "Width": "0.717",
+      "Width Rear": "1.05",
+      "Softness": "Average",
+      "For Scouts Templates": "AAC-58DW Tires",
+      "Asphalt_1": "1",
+      "Ground/Rock_1": "2.1",
+      "Mud/Snow_1": "1.2",
+      "Width_1": "0.7",
+      "Softness_1": "ScoutDefault"
+    },
+    {
+      "For Trucks Templates": "Kenworth T880",
+      "Asphalt": "1.5",
+      "Ground/Rock": "1.6",
+      "Mud/Snow": "1.9",
+      "Width": "0.58",
+      "Width Rear": "1.3",
+      "Softness": "Average",
+      "For Scouts Templates": "Rezvani Tank",
+      "Asphalt_1": "2.6",
+      "Ground/Rock_1": "2.2",
+      "Mud/Snow_1": "1.3",
+      "Softness_1": "ScoutDefault"
+    },
+    {
+      "For Trucks Templates": "JAT ATMS I",
+      "Asphalt": "1.5",
+      "Ground/Rock": "1.7",
+      "Mud/Snow": "1",
+      "Width": "0.65",
+      "Width Rear": "-",
+      "Softness": "Stiff",
+      "For Scouts Templates": "Earthroamer",
+      "Asphalt_1": "0.9",
+      "Ground/Rock_1": "3.1",
+      "Mud/Snow_1": "1.6",
+      "Width_1": "0.676",
+      "Softness_1": "Stiff"
+    },
+    {
+      "For Trucks Templates": "JAT ATMS II",
+      "Asphalt": "1.7",
+      "Ground/Rock": "1.5",
+      "Mud/Snow": "1.1",
+      "For Scouts Templates": "Mudtires"
+    },
+    {
+      "For Trucks Templates": "JAT ATMS III",
+      "Asphalt": "1.4",
+      "Ground/Rock": "1.5",
+      "Mud/Snow": "1.4",
+      "For Scouts Templates": "MS I",
+      "Asphalt_1": "0.5",
+      "Ground/Rock_1": "3",
+      "Mud/Snow_1": "1.6",
+      "Width_1": "0.797",
+      "Softness_1": "ScoutSoft"
+    },
+    {
+      "For Trucks Templates": "JAT ATMD I",
+      "Asphalt": "1.5",
+      "Ground/Rock": "1.7",
+      "Mud/Snow": "1",
+      "Width": "0.65",
+      "Width Rear": "1.3",
+      "Softness": "Stiff",
+      "For Scouts Templates": "TM I",
+      "Asphalt_1": "0.5",
+      "Ground/Rock_1": "2.4",
+      "Mud/Snow_1": "2",
+      "Width_1": "0.863",
+      "Softness_1": "Soft"
+    },
+    {
+      "For Trucks Templates": "JAT ATMD II",
+      "Asphalt": "1.7",
+      "Ground/Rock": "1.5",
+      "Mud/Snow": "1.1",
+      "For Scouts Templates": "TM II",
+      "Asphalt_1": "0.5",
+      "Ground/Rock_1": "2",
+      "Mud/Snow_1": "2.4"
+    },
+    {
+      "For Trucks Templates": "JAT ATMD III",
+      "Asphalt": "1.4",
+      "Ground/Rock": "1.5",
+      "Mud/Snow": "1.4",
+      "For Scouts Templates": "TrM I (YAR 87)",
+      "Asphalt_1": "0.5",
+      "Ground/Rock_1": "2",
+      "Mud/Snow_1": "2",
+      "Width_1": "0.65",
+      "Softness_1": "Average"
+    },
+    {
+      "For Trucks Templates": "JAT ATHD I",
+      "Asphalt": "1.5",
+      "Ground/Rock": "1.7",
+      "Mud/Snow": "1",
+      "Width": "0.62",
+      "Width Rear": "1.24",
+      "Softness": "Stiff",
+      "For Scouts Templates": "TO I (TUZ 420 \"Tatarin\")",
+      "Asphalt_1": "0.5",
+      "Ground/Rock_1": "3",
+      "Mud/Snow_1": "8",
+      "Width_1": "0.67"
+    },
+    {
+      "For Trucks Templates": "JAT ATHD II",
+      "Asphalt": "1.7",
+      "Ground/Rock": "1.5",
+      "Mud/Snow": "1.1",
+      "For Scouts Templates": "Caterpillar TH357",
+      "Asphalt_1": "0.5",
+      "Ground/Rock_1": "2",
+      "Mud/Snow_1": "2",
+      "Width_1": "0.762",
+      "Softness_1": "Soft"
+    },
+    {
+      "For Trucks Templates": "JAT ATHD III",
+      "Asphalt": "1.4",
+      "Ground/Rock": "1.5",
+      "Mud/Snow": "1.4",
+      "For Scouts Templates": "JAT MS I",
+      "Asphalt_1": "0.5",
+      "Ground/Rock_1": "2.7",
+      "Mud/Snow_1": "1.8",
+      "Width_1": "0.93",
+      "Softness_1": "ScoutSoft"
+    },
+    {
+      "For Trucks Templates": "Mack ZES (Pinnacle/TerraPro)",
+      "Asphalt": "1.1",
+      "Ground/Rock": "1.5",
+      "Mud/Snow": "2",
+      "Width": "0.61",
+      "Width Rear": "1.254",
+      "Softness": "Average",
+      "For Scouts Templates": "JAT MS II",
+      "Asphalt_1": "0.5",
+      "Ground/Rock_1": "2.4",
+      "Mud/Snow_1": "2.1"
+    },
+    {
+      "For Trucks Templates": "Offroad",
+      "For Scouts Templates": "JAT MS III",
+      "Asphalt_1": "0.4",
+      "Ground/Rock_1": "2.1",
+      "Mud/Snow_1": "2.5"
+    },
+    {
+      "For Trucks Templates": "UOD I",
+      "Asphalt": "1",
+      "Ground/Rock": "3",
+      "Mud/Snow": "1.5",
+      "Width": "0.58",
+      "Width Rear": "1.132",
+      "Softness": "Stiff",
+      "For Scouts Templates": "Chains"
+    },
+    {
+      "For Trucks Templates": "UOD II",
+      "Asphalt": "0.8",
+      "Ground/Rock": "3",
+      "Mud/Snow": "1.9",
+      "For Scouts Templates": "CS I",
+      "Asphalt_1": "0.9",
+      "Ground/Rock_1": "2",
+      "Mud/Snow_1": "1.1",
+      "Width_1": "0.72",
+      "Softness_1": "ScoutSoft"
+    },
+    {
+      "For Trucks Templates": "UOD III",
+      "Asphalt": "0.8",
+      "Ground/Rock": "3.2",
+      "Mud/Snow": "1.5",
+      "For Scouts Templates": "TrC I (YAR 87)",
+      "Asphalt_1": "1.2",
+      "Ground/Rock_1": "3",
+      "Mud/Snow_1": "1.3",
+      "Width_1": "0.65",
+      "Softness_1": "Average"
+    },
+    {
+      "For Trucks Templates": "ANKO I",
+      "Asphalt": "0.5",
+      "Ground/Rock": "3",
+      "Mud/Snow": "1.7",
+      "Width": "0.706",
+      "Width Rear": "-",
+      "Softness": "Stiff",
+      "For Scouts Templates": "Ultima CS I",
+      "Asphalt_1": "0.9",
+      "Ground/Rock_1": "1.3",
+      "Mud/Snow_1": "1.2",
+      "Width_1": "0.746",
+      "Softness_1": "ScoutSoft"
+    },
+    {
+      "For Trucks Templates": "OHS I",
+      "Asphalt": "1",
+      "Ground/Rock": "3",
+      "Mud/Snow": "1.5",
+      "Width": "0.65",
+      "Width Rear": "-",
+      "Softness": "Average"
+    },
+    {
+      "For Trucks Templates": "OHS II",
+      "Asphalt": "0.8",
+      "Ground/Rock": "3",
+      "Mud/Snow": "1.8",
+      "For Scouts Templates": "Softness templates"
+    },
+    {
+      "For Trucks Templates": "OHD I",
+      "Asphalt": "0.8",
+      "Ground/Rock": "3",
+      "Mud/Snow": "1.9",
+      "Width": "0.52",
+      "Width Rear": "1.213",
+      "Softness": "Average",
+      "For Scouts Templates": "Stiff",
+      "Asphalt_1": "0.02",
+      "Ground/Rock_1": "0.32"
+    },
+    {
+      "For Trucks Templates": "OHD II",
+      "Asphalt": "0.8",
+      "Ground/Rock": "3.2",
+      "Mud/Snow": "1.5",
+      "For Scouts Templates": "Average",
+      "Asphalt_1": "0.025",
+      "Ground/Rock_1": "0.24"
+    },
+    {
+      "For Trucks Templates": "OHD III",
+      "Asphalt": "1",
+      "Ground/Rock": "3",
+      "Mud/Snow": "1.5",
+      "For Scouts Templates": "Soft",
+      "Asphalt_1": "0.03",
+      "Ground/Rock_1": "0.12"
+    },
+    {
+      "For Trucks Templates": "OHD I (Pacific P16)",
+      "Asphalt": "0.8",
+      "Ground/Rock": "3",
+      "Mud/Snow": "3.5",
+      "Width": "0.52",
+      "Width Rear": "1.23",
+      "Softness": "Average",
+      "For Scouts Templates": "ScoutStiff",
+      "Asphalt_1": "0.02",
+      "Ground/Rock_1": "0.2"
+    },
+    {
+      "For Trucks Templates": "OHD I (Pacific P512 PF)",
+      "Asphalt": "0.8",
+      "Ground/Rock": "3",
+      "Mud/Snow": "3.5",
+      "Width": "0.459",
+      "Width Rear": "1.092",
+      "Softness": "Average",
+      "For Scouts Templates": "ScoutDefault",
+      "Asphalt_1": "0.025",
+      "Ground/Rock_1": "0.24"
+    },
+    {
+      "For Trucks Templates": "Tires Derry Special 15C-177",
+      "Asphalt": "1",
+      "Ground/Rock": "3",
+      "Mud/Snow": "1.7",
+      "Width": "0.65",
+      "Width Rear": "-",
+      "Softness": "Average",
+      "For Scouts Templates": "ScoutSoft",
+      "Asphalt_1": "0.1",
+      "Ground/Rock_1": "0.2"
+    },
+    {
+      "For Trucks Templates": "Tires ZiKZ 566A",
+      "Asphalt": "0.8",
+      "Ground/Rock": "3",
+      "Mud/Snow": "1.3",
+      "Width": "0.618",
+      "Width Rear": "-",
+      "Softness": "Stiff"
+    },
+    {
+      "For Trucks Templates": "Mack Defense M917",
+      "Asphalt": "1.2",
+      "Ground/Rock": "2.8",
+      "Mud/Snow": "1.8",
+      "Width": "0.706",
+      "Width Rear": "-",
+      "Softness": "Average",
+      "For Scouts Templates": "The chart was originally lifted wholesale from this chart by bladechildx, rearranged for convenience and expanded with width and softness data"
+    },
+    {
+      "For Trucks Templates": "Kenworth W990",
+      "Asphalt": "0.8",
+      "Ground/Rock": "3.1",
+      "Mud/Snow": "3.4",
+      "Width": "0.611",
+      "Width Rear": "1.254",
+      "Softness": "Average"
+    },
+    {
+      "For Trucks Templates": "JAT OMS I",
+      "Asphalt": "1",
+      "Ground/Rock": "3",
+      "Mud/Snow": "1.7",
+      "Width": "0.65",
+      "Width Rear": "-",
+      "Softness": "Stiff",
+      "For Scouts Templates": "Asphalt, ground/rock and mud/snow values are friction coefficient for that type of surface"
+    },
+    {
+      "For Trucks Templates": "JAT OMS II",
+      "Asphalt": "0.8",
+      "Ground/Rock": "3.1",
+      "Mud/Snow": "1.6",
+      "For Scouts Templates": "Width is defined for each wheel at radius of 1 meter and scaled down with it"
+    },
+    {
+      "For Trucks Templates": "JAT OMS III",
+      "Asphalt": "0.6",
+      "Ground/Rock": "3.2",
+      "Mud/Snow": "1.6",
+      "For Scouts Templates": "Softness either template or custom values which correspond to radius offset and force scale respectively"
+    },
+    {
+      "For Trucks Templates": "JAT OMD I",
+      "Asphalt": "1",
+      "Ground/Rock": "3",
+      "Mud/Snow": "1.7",
+      "Width": "0.65",
+      "Width Rear": "1.3",
+      "Softness": "Stiff",
+      "For Scouts Templates": "Purple colored cells indicate tires belonging to a DLC vehicle"
+    },
+    {
+      "For Trucks Templates": "JAT OMD II",
+      "Asphalt": "0.8",
+      "Ground/Rock": "3.1",
+      "Mud/Snow": "1.6",
+      "For Scouts Templates": "UHD and UOD tires on Ford F 750 have width of 0,546 in the front and 1,158 in the rear"
+    },
+    {
+      "For Trucks Templates": "JAT OMD III",
+      "Asphalt": "0.8",
+      "Ground/Rock": "3.1",
+      "Mud/Snow": "1.8",
+      "For Scouts Templates": "ATHS / OHS / MHS I / DMHS tires on ZiKZ 612H have width of 0,75"
+    },
+    {
+      "For Trucks Templates": "JAT OHS I",
+      "Asphalt": "0.8",
+      "Ground/Rock": "3",
+      "Mud/Snow": "1.6",
+      "Width": "0.62",
+      "Width Rear": "-",
+      "Softness": "Average",
+      "For Scouts Templates": "Burlak 6x6 Tires prevent slipping on ice and icy roads, similar to chained tires"
+    },
+    {
+      "For Trucks Templates": "JAT OHS II",
+      "Asphalt": "1",
+      "Ground/Rock": "3.2",
+      "Mud/Snow": "1.3"
+    },
+    {
+      "For Trucks Templates": "JAT OHS III",
+      "Asphalt": "0.9",
+      "Ground/Rock": "3",
+      "Mud/Snow": "1.7"
+    },
+    {
+      "For Trucks Templates": "JAT OHD I",
+      "Asphalt": "1",
+      "Ground/Rock": "3",
+      "Mud/Snow": "1.7",
+      "Width": "0.62",
+      "Width Rear": "1.24",
+      "Softness": "Average"
+    },
+    {
+      "For Trucks Templates": "JAT OHD II",
+      "Asphalt": "0.8",
+      "Ground/Rock": "3.1",
+      "Mud/Snow": "1.6"
+    },
+    {
+      "For Trucks Templates": "JAT OHD III",
+      "Asphalt": "0.6",
+      "Ground/Rock": "3.2",
+      "Mud/Snow": "1.6"
+    },
+    {
+      "For Trucks Templates": "Azov 67096 “Atom”",
+      "Asphalt": "0.8",
+      "Ground/Rock": "3",
+      "Mud/Snow": "1.8",
+      "Width": "0.665",
+      "Width Rear": "-",
+      "Softness": "Average"
+    },
+    {
+      "For Trucks Templates": "PLAD 450",
+      "Asphalt": "1",
+      "Ground/Rock": "3",
+      "Mud/Snow": "1.8",
+      "Width": "0.69",
+      "Width Rear": "-",
+      "Softness": "Average"
+    },
+    {
+      "For Trucks Templates": "Mercer K520",
+      "Asphalt": "0.8",
+      "Ground/Rock": "3.1",
+      "Mud/Snow": "1.8",
+      "Width": "0.706",
+      "Width Rear": "-",
+      "Softness": "Average"
+    },
+    {
+      "For Trucks Templates": "Mudtires"
+    },
+    {
+      "For Trucks Templates": "MHS I",
+      "Asphalt": "0.5",
+      "Ground/Rock": "2",
+      "Mud/Snow": "2",
+      "Width": "0.65",
+      "Width Rear": "-",
+      "Softness": "Average"
+    },
+    {
+      "For Trucks Templates": "MHS II",
+      "Asphalt": "0.5",
+      "Ground/Rock": "2",
+      "Mud/Snow": "2.4",
+      "Width": "0.84",
+      "Width Rear": "-",
+      "Softness": "Average"
+    },
+    {
+      "For Trucks Templates": "MHS III",
+      "Asphalt": "0.5",
+      "Ground/Rock": "2.4",
+      "Mud/Snow": "2"
+    },
+    {
+      "For Trucks Templates": "DMHS I",
+      "Asphalt": "0.5",
+      "Ground/Rock": "2",
+      "Mud/Snow": "2",
+      "Width": "0.65",
+      "Width Rear": "-",
+      "Softness": "Average"
+    },
+    {
+      "For Trucks Templates": "DMHS II",
+      "Asphalt": "0.5",
+      "Ground/Rock": "2",
+      "Mud/Snow": "2"
+    },
+    {
+      "For Trucks Templates": "DMHS III",
+      "Asphalt": "0.5",
+      "Ground/Rock": "2",
+      "Mud/Snow": "2"
+    },
+    {
+      "For Trucks Templates": "AMHS I",
+      "Asphalt": "0.5",
+      "Ground/Rock": "2",
+      "Mud/Snow": "2.4",
+      "Width": "1.118",
+      "Width Rear": "-",
+      "Softness": "Soft"
+    },
+    {
+      "For Trucks Templates": "TMHS I",
+      "Asphalt": "0.5",
+      "Ground/Rock": "2",
+      "Mud/Snow": "2.4",
+      "Width": "1.118",
+      "Width Rear": "-",
+      "Softness": "Average"
+    },
+    {
+      "For Trucks Templates": "MSH I",
+      "Asphalt": "0.5",
+      "Ground/Rock": "1.7",
+      "Mud/Snow": "3",
+      "Width": "0.78",
+      "Width Rear": "-",
+      "Softness": "Soft"
+    },
+    {
+      "For Trucks Templates": "MSH II",
+      "Asphalt": "0.5",
+      "Ground/Rock": "1.7",
+      "Mud/Snow": "3.2"
+    },
+    {
+      "For Trucks Templates": "MSH III",
+      "Asphalt": "0.5",
+      "Ground/Rock": "2",
+      "Mud/Snow": "3"
+    },
+    {
+      "For Trucks Templates": "MSH IV",
+      "Asphalt": "0.7",
+      "Ground/Rock": "1.7",
+      "Mud/Snow": "3"
+    },
+    {
+      "For Trucks Templates": "Caterpillar 770G",
+      "Asphalt": "0.5",
+      "Ground/Rock": "2",
+      "Mud/Snow": "3.5",
+      "Width": "0.549",
+      "Width Rear": "1.2",
+      "Softness": "Soft"
+    },
+    {
+      "For Trucks Templates": "ZHM (ZiKZ 605R)",
+      "Asphalt": "0.5",
+      "Ground/Rock": "1.7",
+      "Mud/Snow": "3",
+      "Width": "1",
+      "Width Rear": "-",
+      "Softness": "Soft"
+    },
+    {
+      "For Trucks Templates": "MSH I (Tatra T813)",
+      "Asphalt": "0.5",
+      "Ground/Rock": "1.7",
+      "Mud/Snow": "3",
+      "Width": "0.78",
+      "Width Rear": "-",
+      "Softness": "Soft"
+    },
+    {
+      "For Trucks Templates": "MSH I (Tatra FORCE)",
+      "Asphalt": "0.5",
+      "Ground/Rock": "1.7",
+      "Mud/Snow": "3",
+      "Width": "0.58",
+      "Width Rear": "-",
+      "Softness": "Average"
+    },
+    {
+      "For Trucks Templates": "MSH I (Tatra PHOENIX)",
+      "Asphalt": "0.5",
+      "Ground/Rock": "1.7",
+      "Mud/Snow": "3",
+      "Width": "0.706",
+      "Width Rear": "-",
+      "Softness": "Soft"
+    },
+    {
+      "For Trucks Templates": "Stock Tractor (K-700)",
+      "Asphalt": "0.5",
+      "Ground/Rock": "1.7",
+      "Mud/Snow": "3",
+      "Width": "0.731",
+      "Width Rear": "-",
+      "Softness": "Soft"
+    },
+    {
+      "For Trucks Templates": "MSH I (K7M)",
+      "Asphalt": "0.5",
+      "Ground/Rock": "1.7",
+      "Mud/Snow": "3",
+      "Width": "0.731",
+      "Width Rear": "-",
+      "Softness": "0,065 / 0,3"
+    },
+    {
+      "For Trucks Templates": "MSH II (K7M)",
+      "Asphalt": "0.5",
+      "Ground/Rock": "1.7",
+      "Mud/Snow": "3",
+      "Width": "1.57",
+      "Width Rear": "-",
+      "Softness": "0,065 / 0,3"
+    },
+    {
+      "For Trucks Templates": "ZHM (ZiKZ 612H)",
+      "Asphalt": "0.3",
+      "Ground/Rock": "2",
+      "Mud/Snow": "3.35",
+      "Width": "0.8",
+      "Width Rear": "-",
+      "Softness": "0,025 / 0,18"
+    },
+    {
+      "For Trucks Templates": "JAT MMD I",
+      "Asphalt": "0.5",
+      "Ground/Rock": "2",
+      "Mud/Snow": "2.2",
+      "Width": "0.65",
+      "Width Rear": "1.3",
+      "Softness": "Average"
+    },
+    {
+      "For Trucks Templates": "JAT MMD II",
+      "Asphalt": "0.4",
+      "Ground/Rock": "2.2",
+      "Mud/Snow": "2"
+    },
+    {
+      "For Trucks Templates": "JAT MMD III",
+      "Asphalt": "0.4",
+      "Ground/Rock": "2.1",
+      "Mud/Snow": "2.1"
+    },
+    {
+      "For Trucks Templates": "JAT MHS I",
+      "Asphalt": "0.5",
+      "Ground/Rock": "1.8",
+      "Mud/Snow": "2.2",
+      "Width": "0.79",
+      "Width Rear": "-",
+      "Softness": "Average"
+    },
+    {
+      "For Trucks Templates": "JAT MHS II",
+      "Asphalt": "0.6",
+      "Ground/Rock": "2.3",
+      "Mud/Snow": "2"
+    },
+    {
+      "For Trucks Templates": "JAT MHS III",
+      "Asphalt": "0.6",
+      "Ground/Rock": "1.9",
+      "Mud/Snow": "2.4"
+    },
+    {
+      "For Trucks Templates": "JAT MHS IV",
+      "Asphalt": "0.4",
+      "Ground/Rock": "1.8",
+      "Mud/Snow": "2.6",
+      "Width": "0.79",
+      "Width Rear": "-",
+      "Softness": "Average"
+    },
+    {
+      "For Trucks Templates": "JAT MHS V",
+      "Asphalt": "0.5",
+      "Ground/Rock": "2.4",
+      "Mud/Snow": "2.1"
+    },
+    {
+      "For Trucks Templates": "JAT MHS VI",
+      "Asphalt": "0.6",
+      "Ground/Rock": "1.8",
+      "Mud/Snow": "2.5"
+    },
+    {
+      "For Trucks Templates": "JAT MSH I",
+      "Asphalt": "0.6",
+      "Ground/Rock": "1.6",
+      "Mud/Snow": "3",
+      "Width": "0.95",
+      "Width Rear": "-",
+      "Softness": "Soft"
+    },
+    {
+      "For Trucks Templates": "JAT MSH II",
+      "Asphalt": "0.5",
+      "Ground/Rock": "1.7",
+      "Mud/Snow": "3.2"
+    },
+    {
+      "For Trucks Templates": "JAT MSH III",
+      "Asphalt": "0.5",
+      "Ground/Rock": "2",
+      "Mud/Snow": "3.1"
+    },
+    {
+      "For Trucks Templates": "Ankatra MHS I",
+      "Asphalt": "0.5",
+      "Ground/Rock": "2.2",
+      "Mud/Snow": "2",
+      "Width": "0.67",
+      "Width Rear": "-",
+      "Softness": "Average"
+    },
+    {
+      "For Trucks Templates": "Ankatra MHS II",
+      "Asphalt": "0.5",
+      "Ground/Rock": "2.2",
+      "Mud/Snow": "2",
+      "Width": "1.36",
+      "Width Rear": "-",
+      "Softness": "Average"
+    },
+    {
+      "For Trucks Templates": "Futom MHS I",
+      "Asphalt": "0.5",
+      "Ground/Rock": "1.7",
+      "Mud/Snow": "3",
+      "Width": "0.73",
+      "Width Rear": "-",
+      "Softness": "0.065 / 0.3"
+    },
+    {
+      "For Trucks Templates": "Futom MHS II",
+      "Asphalt": "0.5",
+      "Ground/Rock": "1.7",
+      "Mud/Snow": "3",
+      "Width": "1.5",
+      "Width Rear": "-",
+      "Softness": "0.065 / 0.3"
+    },
+    {
+      "For Trucks Templates": "Sleiter ST 816 \"Elephant\"",
+      "Asphalt": "0.8",
+      "Ground/Rock": "1.7",
+      "Mud/Snow": "3",
+      "Width": "0.973",
+      "Width Rear": "-",
+      "Softness": "Soft"
+    },
+    {
+      "For Trucks Templates": "Chains"
+    },
+    {
+      "For Trucks Templates": "UAD III Chains",
+      "Asphalt": "1.2",
+      "Ground/Rock": "3",
+      "Mud/Snow": "1.3",
+      "Width": "0.58",
+      "Width Rear": "1.132",
+      "Softness": "Stiff"
+    },
+    {
+      "For Trucks Templates": "OHD II Chains",
+      "Asphalt": "1.2",
+      "Ground/Rock": "3",
+      "Mud/Snow": "1.3",
+      "Width": "0.52",
+      "Width Rear": "1.213",
+      "Softness": "Average"
+    },
+    {
+      "For Trucks Templates": "MHS I Chains",
+      "Asphalt": "1.2",
+      "Ground/Rock": "3",
+      "Mud/Snow": "1.3",
+      "Width": "0.65",
+      "Width Rear": "-"
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "vehicle_id": "s_tatra_t813",
+  "duration_s": 5.0,
+  "n_samples": 51,
+  "candidates": [
+    {
+      "base": "dl+028",
+      "offset": "+0x138",
+      "kind": "f32",
+      "vmin": 0.0,
+      "vmax": 1.0,
+      "span": 1.0,
+      "score": 3.77,
+      "spec": {
+        "base": "dl+028",
+        "offset": "+0x138",
+        "kind": "f32",
+        "chain": "DRIVE_LOGIC"
+      }
+    },
+    {
+      "base": "dl+048",
+      "offset": "+0x164",
+      "kind": "u8",
+      "vmin": 0.0118,
+      "vmax": 0.9765,
+      "span": 0.9647,
+      "score": 3.699,
+      "spec": {
+        "base": "dl+048",
+        "offset": "+0x164",
+        "kind": "u8",
+        "chain": "DRIVE_LOGIC"
+      }
+    },
+    {
+      "base": "dl+048",
+      "offset": "+0x1D8",
+      "kind": "u8",
+      "vmin": 0.0314,
+      "vmax": 0.9961,
+      "span": 0.9647,
+      "score": 3.699,
+      "spec": {
+        "base": "dl+048",
+        "offset": "+0x1D8",
+        "kind": "u8",
+        "chain": "DRIVE_LOGIC"
+      }
+    },
+    {
+      "base": "dl+048",
+      "offset": "+0x1E4",
+      "kind": "u8",
+      "vmin": 0.0078,
+      "vmax": 0.9804,
+      "span": 0.9725,
+      "score": 3.675,
+      "spec": {
+        "base": "dl+048",
+        "offset": "+0x1E4",
+        "kind": "u8",
+        "chain": "DRIVE_LOGIC"
+      }
+    },
+    {
+      "base": "dl+028",
+      "offset": "+0x138",
+      "kind": "u8",
+      "vmin": 0.0157,
+      "vmax": 0.9725,
+      "span": 0.9569,
+      "score": 3.644,
+      "spec": {
+        "base": "dl+028",
+        "offset": "+0x138",
+        "kind": "u8",
+        "chain": "DRIVE_LOGIC"
+      }
+    },
+    {
+      "base": "dl+048",
+      "offset": "+0x188",
+      "kind": "u8",
+      "vmin": 0.0314,
+      "vmax": 0.9961,
+      "span": 0.9647,
+      "score": 3.639,
+      "spec": {
+        "base": "dl+048",
+        "offset": "+0x188",
+        "kind": "u8",
+        "chain": "DRIVE_LOGIC"
+      }
+    },
+    {
+      "base": "dl+048",
+      "offset": "+0x184",
+      "kind": "u8",
+      "vmin": 0.0039,
+      "vmax": 0.9843,
+      "span": 0.9804,
+      "score": 3.631,
+      "spec": {
+        "base": "dl+048",
+        "offset": "+0x184",
+        "kind": "u8",
+        "chain": "DRIVE_LOGIC"
+      }
+    },
+    {
+      "base": "dl+048",
+      "offset": "+0x158",
+      "kind": "u8",
+      "vmin": 0.0039,
+      "vmax": 1.0,
+      "span": 0.9961,
+      "score": 3.622,
+      "spec": {
+        "base": "dl+048",
+        "offset": "+0x158",
+        "kind": "u8",
+        "chain": "DRIVE_LOGIC"
+      }
+    },
+    {
+      "base": "dl+048",
+      "offset": "+0x1EC",
+      "kind": "u8",
+      "vmin": 0.0078,
+      "vmax": 0.9608,
+      "span": 0.9529,
+      "score": 3.616,
+      "spec": {
+        "base": "dl+048",
+        "offset": "+0x1EC",
+        "kind": "u8",
+        "chain": "DRIVE_LOGIC"
+      }
+    },
+    {
+      "base": "dl+048",
+      "offset": "+0x15C",
+      "kind": "u8",
+      "vmin": 0.0196,
+      "vmax": 0.9608,
+      "span": 0.9412,
+      "score": 3.612,
+      "spec": {
+        "base": "dl+048",
+        "offset": "+0x15C",
+        "kind": "u8",
+        "chain": "DRIVE_LOGIC"
+      }
+    },
+    {
+      "base": "dl+048",
+      "offset": "+0x1DC",
+      "kind": "u8",
+      "vmin": 0.0039,
+      "vmax": 0.9647,
+      "span": 0.9608,
+      "score": 3.592,
+      "spec": {
+        "base": "dl+048",
+        "offset": "+0x1DC",
+        "kind": "u8",
+        "chain": "DRIVE_LOGIC"
+      }
+    },
+    {
+      "base": "dl+048",
+      "offset": "+0x160",
+      "kind": "u8",
+      "vmin": 0.0039,
+      "vmax": 0.9451,
+      "span": 0.9412,
+      "score": 3.572,
+      "spec": {
+        "base": "dl+048",
+        "offset": "+0x160",
+        "kind": "u8",
+        "chain": "DRIVE_LOGIC"
+      }
+    },
+    {
+      "base": "dl+048",
+      "offset": "+0x1E8",
+      "kind": "u8",
+      "vmin": 0.0314,
+      "vmax": 0.9882,
+      "span": 0.9569,
+      "score": 3.524,
+      "spec": {
+        "base": "dl+048",
+        "offset": "+0x1E8",
+        "kind": "u8",
+        "chain": "DRIVE_LOGIC"
+      }
+    },
+    {
+      "base": "drive_logic",
+      "offset": "+0x03C",
+      "kind": "u8",
+      "vmin": 0.0118,
+      "vmax": 1.0,
+      "span": 0.9882,
+      "score": 3.246,
+      "spec": {
+        "base": "drive_logic",
+        "offset": "+0x03C",
+        "kind": "u8"
+      }
+    },
+    {
+      "base": "drive_logic",
+      "offset": "+0x060",
+      "kind": "u8",
+      "vmin": 0.0196,
+      "vmax": 1.0,
+      "span": 0.9804,
+      "score": 3.191,
+      "spec": {
+        "base": "drive_logic",
+        "offset": "+0x060",
+        "kind": "u8"
+      }
+    },
+    {
+      "base": "drive_logic",
+      "offset": "+0x034",
+      "kind": "u8",
+      "vmin": 0.0078,
+      "vmax": 0.9882,
+      "span": 0.9804,
+      "score": 3.151,
+      "spec": {
+        "base": "drive_logic",
+        "offset": "+0x034",
+        "kind": "u8"
+      }
+    },
+    {
+      "base": "drive_logic",
+      "offset": "+0x05C",
+      "kind": "u8",
+      "vmin": 0.0039,
+      "vmax": 0.9843,
+      "span": 0.9804,
+      "score": 3.151,
+      "spec": {
+        "base": "drive_logic",
+        "offset": "+0x05C",
+        "kind": "u8"
+      }
+    },
+    {
+      "base": "drive_logic",
+      "offset": "+0x0BC",
+      "kind": "u8",
+      "vmin": 0.0118,
+      "vmax": 0.9804,
+      "span": 0.9686,
+      "score": 3.147,
+      "spec": {
+        "base": "drive_logic",
+        "offset": "+0x0BC",
+        "kind": "u8"
+      }
+    },
+    {
+      "base": "drive_logic",
+      "offset": "+0x030",
+      "kind": "u8",
+      "vmin": 0.0275,
+      "vmax": 0.9882,
+      "span": 0.9608,
+      "score": 3.132,
+      "spec": {
+        "base": "drive_logic",
+        "offset": "+0x030",
+        "kind": "u8"
+      }
+    },
+    {
+      "base": "drive_logic",
+      "offset": "+0x0B4",
+      "kind": "u8",
+      "vmin": 0.0353,
+      "vmax": 0.9843,
+      "span": 0.949,
+      "score": 3.128,
+      "spec": {
+        "base": "drive_logic",
+        "offset": "+0x0B4",
+        "kind": "u8"
+      }
+    }
+  ],
+  "rejected_motor_stuck": []
+}

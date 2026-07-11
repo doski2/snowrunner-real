@@ -20,6 +20,8 @@ if /i "%1"=="cargo" goto CARGO
 if /i "%1"=="drive" goto DRIVE
 if /i "%1"=="drive_snap" goto DRIVE_SNAP
 if /i "%1"=="drive_diff" goto DRIVE_DIFF
+if /i "%1"=="drive_cal" goto DRIVE_CAL
+if /i "%1"=="drive_verify" goto DRIVE_VERIFY
 if /i "%1"=="motor" goto MOTOR
 if /i "%1"=="motor_scout" goto MOTOR_SCOUT
 goto RECORD
@@ -81,6 +83,33 @@ if "%3"=="" (
     exit /b 1
 )
 %PY% cheat_engine/scan_drive_state.py --diff %2 %3
+set ERR=!ERRORLEVEL!
+goto PAUSE_ERR
+
+:DRIVE_CAL
+echo === Calibracion gas + RPM (throttle) ===
+echo Mismo camion, mapa, ~0 km/h, motor ON.
+echo   1. Suelta el gas - ENTER
+echo   2. Gas a fondo   - ENTER
+echo   3. Verificacion  - suelta / a fondo otra vez
+echo.
+%PY% grabar_ce.py --probe
+if errorlevel 1 (
+    set ERR=1
+    goto PAUSE_ERR
+)
+%PY% cheat_engine/calibrar_drive.py --interactive
+set ERR=!ERRORLEVEL!
+goto PAUSE_ERR
+
+:DRIVE_VERIFY
+echo === Verificar offsets gas/RPM actuales ===
+%PY% grabar_ce.py --probe
+if errorlevel 1 (
+    set ERR=1
+    goto PAUSE_ERR
+)
+%PY% cheat_engine/calibrar_drive.py --verify
 set ERR=!ERRORLEVEL!
 goto PAUSE_ERR
 
@@ -166,12 +195,16 @@ echo   grabar_telemetria.bat diff tierra_seca barro_ligero
 echo   grabar_telemetria.bat tire
 echo   grabar_telemetria.bat cargo
 echo   grabar_telemetria.bat cargo --save cargado
-echo   grabar_telemetria.bat drive
-echo   grabar_telemetria.bat drive --watch 30
-echo   grabar_telemetria.bat drive_snap diff_off
-echo   grabar_telemetria.bat drive_diff diff_off diff_on
-echo   grabar_telemetria.bat motor
-echo   grabar_telemetria.bat motor_scout
+echo   .\grabar_telemetria.bat drive
+echo   .\grabar_telemetria.bat drive --watch 30
+echo   .\grabar_telemetria.bat drive_cal      ^(calibrar gas+rpm hasta OK^)
+echo   .\grabar_telemetria.bat drive_verify
+echo   .\grabar_telemetria.bat drive_snap diff_off
+echo   .\grabar_telemetria.bat drive_diff diff_off diff_on
+echo   .\grabar_telemetria.bat motor
+echo   .\grabar_telemetria.bat motor_scout
+echo.
+echo PowerShell: antepone .\ al .bat  ^(ej. .\grabar_telemetria.bat drive_cal^)
 echo.
 
 echo Preflight CE...
@@ -181,6 +214,15 @@ if errorlevel 1 (
     echo Abortado: entra al mapa conduciendo y reintenta.
     set ERR=1
     goto PAUSE_ERR
+)
+echo.
+echo === Comprobar gas/RPM (parado, pie del freno) ===
+%PY% cheat_engine/calibrar_drive.py --preflight
+if errorlevel 1 (
+    echo.
+    echo AVISO: gas/RPM no verificado. Calibra antes de sesiones serias:
+    echo   .\grabar_telemetria.bat drive_cal
+    echo.
 )
 echo.
 echo === Carga bastidor / remolque (quieto 30 s si F3) ===

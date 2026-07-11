@@ -1,0 +1,1095 @@
+{
+  "id": "extras_gas_tanks",
+  "source": "SnowRunner Extras",
+  "sheet": "Gas Tank Volumes",
+  "updated_utc": "2026-07-11T01:12:50.941657+00:00",
+  "items": [
+    {
+      "Truck / Trailer": "AAC-58DW",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.788",
+      "Y (m)": "0.161",
+      "Z (m)": "0.395",
+      "Don't take this too seriously please Volume (L)": "50",
+      "Game volume (L)": "60",
+      "Difference": "9.89",
+      "Factor": "1.20"
+    },
+    {
+      "Truck / Trailer": "ANK MK38",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.106",
+      "Y (m)": "0.426",
+      "Z (m)": "0.609",
+      "Don't take this too seriously please Volume (L)": "574",
+      "Game volume (L)": "200",
+      "Difference": "-373.87",
+      "Factor": "0.35"
+    },
+    {
+      "Truck / Trailer": "ANK MK38 Civilian",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.106",
+      "Y (m)": "0.426",
+      "Z (m)": "0.609",
+      "Don't take this too seriously please Volume (L)": "574",
+      "Game volume (L)": "200",
+      "Difference": "-373.87",
+      "Factor": "0.35"
+    },
+    {
+      "Truck / Trailer": "Ankatra 1160"
+    },
+    {
+      "Truck / Trailer": "Aramatsu Forester",
+      "Game volume (L)": "340"
+    },
+    {
+      "Truck / Trailer": "Azov 42-20 Antarctic",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.089",
+      "Y (m)": "0.693",
+      "Z (m)": "0.705",
+      "Don't take this too seriously please Volume (L)": "1064",
+      "Game volume (L)": "340",
+      "Difference": "-724.09",
+      "Factor": "0.32"
+    },
+    {
+      "Truck / Trailer": "Azov 43-191 \"Sprinter\"",
+      "Game volume (L)": "350"
+    },
+    {
+      "Truck / Trailer": "Azov 5319",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.95",
+      "Y (m)": "0.53",
+      "Z (m)": "0.55",
+      "Don't take this too seriously please Volume (L)": "554",
+      "Game volume (L)": "200",
+      "Difference": "-353.85",
+      "Factor": "0.36"
+    },
+    {
+      "Truck / Trailer": "Azov 64131",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.35",
+      "Y (m)": "0.62",
+      "Z (m)": "0.49",
+      "Don't take this too seriously please Volume (L)": "820",
+      "Game volume (L)": "350",
+      "Difference": "-470.26",
+      "Factor": "0.43"
+    },
+    {
+      "Truck / Trailer": "Azov 67096 “Atom”",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.367",
+      "Y (m)": "0.584",
+      "Z (m)": "0.677",
+      "Don't take this too seriously please Volume (L)": "540",
+      "Game volume (L)": "350",
+      "Difference": "-190.47",
+      "Factor": "0.65"
+    },
+    {
+      "Truck / Trailer": "Azov 73210",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.706",
+      "Y (m)": "0.526",
+      "Z (m)": "0.575",
+      "Don't take this too seriously please Volume (L)": "427",
+      "Game volume (L)": "350",
+      "Difference": "-77.06",
+      "Factor": "0.82"
+    },
+    {
+      "Truck / Trailer": "BOAR 45318",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.111",
+      "Y (m)": "0.848",
+      "Z (m)": "0.802",
+      "Don't take this too seriously please Volume (L)": "1511",
+      "Game volume (L)": "300",
+      "Difference": "-1,211.17",
+      "Factor": "0.20"
+    },
+    {
+      "Truck / Trailer": "Burlak 6x6",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.742",
+      "Y (m)": "0.256",
+      "Z (m)": "0.735",
+      "Don't take this too seriously please Volume (L)": "279",
+      "Game volume (L)": "280",
+      "Difference": "0.77",
+      "Factor": "1.00"
+    },
+    {
+      "Truck / Trailer": "Caterpillar 745C",
+      "Game volume (L)": "340"
+    },
+    {
+      "Truck / Trailer": "Caterpillar 770G",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.878",
+      "Y (m)": "0.743",
+      "Z (m)": "0.675",
+      "Don't take this too seriously please Volume (L)": "440",
+      "Game volume (L)": "530",
+      "Difference": "89.66",
+      "Factor": "1.20"
+    },
+    {
+      "Truck / Trailer": "Caterpillar CT680",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.34",
+      "Y (m)": "0.33",
+      "Z (m)": "0.33",
+      "Don't take this too seriously please Volume (L)": "917",
+      "Game volume (L)": "280",
+      "Difference": "-636.88",
+      "Factor": "0.31"
+    },
+    {
+      "Truck / Trailer": "Caterpillar CT681",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.35",
+      "Y (m)": "0.336",
+      "Z (m)": "0.335",
+      "Don't take this too seriously please Volume (L)": "477",
+      "Game volume (L)": "260",
+      "Difference": "-217.38",
+      "Factor": "0.54"
+    },
+    {
+      "Truck / Trailer": "Caterpillar TH357",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.348",
+      "Y (m)": "0.439",
+      "Z (m)": "0.619",
+      "Don't take this too seriously please Volume (L)": "95",
+      "Game volume (L)": "110",
+      "Difference": "15.43",
+      "Factor": "1.16"
+    },
+    {
+      "Truck / Trailer": "Chevrolet Apache",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.67",
+      "Y (m)": "0.3",
+      "Z (m)": "0.484",
+      "Don't take this too seriously please Volume (L)": "195",
+      "Game volume (L)": "95",
+      "Difference": "-99.57",
+      "Factor": "0.49"
+    },
+    {
+      "Truck / Trailer": "Chevrolet CK1500",
+      "Game volume (L)": "80"
+    },
+    {
+      "Truck / Trailer": "Chevrolet Kodiak C70",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.943",
+      "Y (m)": "0.393",
+      "Z (m)": "0.553",
+      "Don't take this too seriously please Volume (L)": "410",
+      "Game volume (L)": "200",
+      "Difference": "-209.88",
+      "Factor": "0.49"
+    },
+    {
+      "Truck / Trailer": "DAN 96320",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.827",
+      "Y (m)": "0.853",
+      "Z (m)": "0.575",
+      "Don't take this too seriously please Volume (L)": "406",
+      "Game volume (L)": "350",
+      "Difference": "-495.87",
+      "Factor": "0.41"
+    },
+    {
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.936",
+      "Y (m)": "0.478",
+      "Z (m)": "0.984",
+      "Don't take this too seriously please Volume (L)": "440"
+    },
+    {
+      "Truck / Trailer": "Derry Longhorn 3194",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.875",
+      "Y (m)": "0.42",
+      "Z (m)": "0.636",
+      "Don't take this too seriously please Volume (L)": "467",
+      "Game volume (L)": "370",
+      "Difference": "-97.46",
+      "Factor": "0.79"
+    },
+    {
+      "Truck / Trailer": "Derry Longhorn 4520",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.893",
+      "Y (m)": "0.388",
+      "Z (m)": "0.388",
+      "Don't take this too seriously please Volume (L)": "422",
+      "Game volume (L)": "400",
+      "Difference": "-692.98",
+      "Factor": "0.37"
+    },
+    {
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.418",
+      "Y (m)": "0.388",
+      "Z (m)": "0.388",
+      "Don't take this too seriously please Volume (L)": "671"
+    },
+    {
+      "Truck / Trailer": "Derry Special 15C-177",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.526",
+      "Y (m)": "0.33",
+      "Z (m)": "0.33",
+      "Don't take this too seriously please Volume (L)": "522",
+      "Game volume (L)": "380",
+      "Difference": "-142.07",
+      "Factor": "0.73"
+    },
+    {
+      "Truck / Trailer": "DON 71",
+      "Game volume (L)": "42"
+    },
+    {
+      "Truck / Trailer": "EarthRoamer LTi"
+    },
+    {
+      "Truck / Trailer": "EarthRoamer SX"
+    },
+    {
+      "Truck / Trailer": "FEMM 37-AT",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.52",
+      "Y (m)": "0.57",
+      "Z (m)": "0.57",
+      "Don't take this too seriously please Volume (L)": "988",
+      "Game volume (L)": "340",
+      "Difference": "-647.70",
+      "Factor": "0.34"
+    },
+    {
+      "Truck / Trailer": "Fleetstar F2070A",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.958",
+      "Y (m)": "0.463",
+      "Z (m)": "0.584",
+      "Don't take this too seriously please Volume (L)": "259",
+      "Game volume (L)": "240",
+      "Difference": "-314.64",
+      "Factor": "0.43"
+    },
+    {
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.077",
+      "Y (m)": "0.466",
+      "Z (m)": "0.589",
+      "Don't take this too seriously please Volume (L)": "296"
+    },
+    {
+      "Truck / Trailer": "Ford CLT9000",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.58",
+      "Y (m)": "0.37",
+      "Z (m)": "0.37",
+      "Don't take this too seriously please Volume (L)": "1359",
+      "Game volume (L)": "280",
+      "Difference": "-1,079.07",
+      "Factor": "0.21"
+    },
+    {
+      "Truck / Trailer": "Ford F 750",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.904",
+      "Y (m)": "0.388",
+      "Z (m)": "0.573",
+      "Don't take this too seriously please Volume (L)": "402",
+      "Game volume (L)": "140",
+      "Difference": "-261.96",
+      "Factor": "0.35"
+    },
+    {
+      "Truck / Trailer": "Freightliner 114SD",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.182",
+      "Y (m)": "0.298",
+      "Z (m)": "0.314",
+      "Don't take this too seriously please Volume (L)": "347",
+      "Game volume (L)": "300",
+      "Difference": "-308.90",
+      "Factor": "0.49"
+    },
+    {
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.858",
+      "Y (m)": "0.55",
+      "Z (m)": "0.554",
+      "Don't take this too seriously please Volume (L)": "261"
+    },
+    {
+      "Truck / Trailer": "Freightliner M916A1",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.923",
+      "Y (m)": "0.338",
+      "Z (m)": "0.353",
+      "Don't take this too seriously please Volume (L)": "346",
+      "Game volume (L)": "200",
+      "Difference": "-145.97",
+      "Factor": "0.58"
+    },
+    {
+      "Truck / Trailer": "Futom 7290RA"
+    },
+    {
+      "Truck / Trailer": "GMC Brigadier 8000",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.806",
+      "Y (m)": "0.33",
+      "Z (m)": "0.33",
+      "Don't take this too seriously please Volume (L)": "276",
+      "Game volume (L)": "285",
+      "Difference": "-507.35",
+      "Factor": "0.36"
+    },
+    {
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.51",
+      "Y (m)": "0.33",
+      "Z (m)": "0.33",
+      "Don't take this too seriously please Volume (L)": "517"
+    },
+    {
+      "Truck / Trailer": "GMC MH9500",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.18",
+      "Y (m)": "0.33",
+      "Z (m)": "0.33",
+      "Don't take this too seriously please Volume (L)": "807",
+      "Game volume (L)": "240",
+      "Difference": "-567.40",
+      "Factor": "0.30"
+    },
+    {
+      "Truck / Trailer": "Gor BY-4",
+      "Game volume (L)": "50"
+    },
+    {
+      "Truck / Trailer": "Hummer H2",
+      "Game volume (L)": "80"
+    },
+    {
+      "Truck / Trailer": "International HX 520",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.724",
+      "Y (m)": "0.326",
+      "Z (m)": "0.326",
+      "Don't take this too seriously please Volume (L)": "576",
+      "Game volume (L)": "280",
+      "Difference": "-295.60",
+      "Factor": "0.49"
+    },
+    {
+      "Truck / Trailer": "International Loadstar 1700",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.925",
+      "Y (m)": "0.399",
+      "Z (m)": "0.567",
+      "Don't take this too seriously please Volume (L)": "419",
+      "Game volume (L)": "130",
+      "Difference": "-288.53",
+      "Factor": "0.31"
+    },
+    {
+      "Truck / Trailer": "International Paystar 5070",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.928",
+      "Y (m)": "0.366",
+      "Z (m)": "0.572",
+      "Don't take this too seriously please Volume (L)": "194",
+      "Game volume (L)": "240",
+      "Difference": "45.72",
+      "Factor": "1.24"
+    },
+    {
+      "Truck / Trailer": "International Paystar 5600TS",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.149",
+      "Y (m)": "0.307",
+      "Z (m)": "0.307",
+      "Don't take this too seriously please Volume (L)": "340",
+      "Game volume (L)": "280",
+      "Difference": "-60.21",
+      "Factor": "0.82"
+    },
+    {
+      "Truck / Trailer": "International Scout 800",
+      "Game volume (L)": "72"
+    },
+    {
+      "Truck / Trailer": "International Transtar 4070A",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.765",
+      "Y (m)": "0.349",
+      "Z (m)": "0.349",
+      "Don't take this too seriously please Volume (L)": "585",
+      "Game volume (L)": "265",
+      "Difference": "-320.45",
+      "Factor": "0.45"
+    },
+    {
+      "Truck / Trailer": "Jeep CJ7 Renegade",
+      "Game volume (L)": "75"
+    },
+    {
+      "Truck / Trailer": "Jeep Wrangler",
+      "Game volume (L)": "80"
+    },
+    {
+      "Truck / Trailer": "Kenworth 963",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "2.355",
+      "Y (m)": "0.393",
+      "Z (m)": "0.847",
+      "Don't take this too seriously please Volume (L)": "1568",
+      "Game volume (L)": "510",
+      "Difference": "-1,057.82",
+      "Factor": "0.33"
+    },
+    {
+      "Truck / Trailer": "Kenworth W990",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.401",
+      "Y (m)": "0.314",
+      "Z (m)": "0.314",
+      "Don't take this too seriously please Volume (L)": "434",
+      "Game volume (L)": "380",
+      "Difference": "-381.98",
+      "Factor": "0.50"
+    },
+    {
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.059",
+      "Y (m)": "0.314",
+      "Z (m)": "0.314",
+      "Don't take this too seriously please Volume (L)": "328"
+    },
+    {
+      "Truck / Trailer": "KHAN 317 Sentinel",
+      "Game volume (L)": "80"
+    },
+    {
+      "Truck / Trailer": "KHAN 39 Marshall",
+      "Game volume (L)": "40"
+    },
+    {
+      "Truck / Trailer": "KHAN Lo4F",
+      "Game volume (L)": "80"
+    },
+    {
+      "Truck / Trailer": "Kirovets K-700",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.605",
+      "Y (m)": "0.541",
+      "Z (m)": "0.262",
+      "Don't take this too seriously please Volume (L)": "172",
+      "Game volume (L)": "340",
+      "Difference": "89.31",
+      "Factor": "1.36"
+    },
+    {
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.682",
+      "Y (m)": "0.387",
+      "Z (m)": "0.3",
+      "Don't take this too seriously please Volume (L)": "79"
+    },
+    {
+      "Truck / Trailer": "Kirovets K-7M",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.1",
+      "Y (m)": "0.23",
+      "Z (m)": "1.1",
+      "Don't take this too seriously please Volume (L)": "278",
+      "Game volume (L)": "340",
+      "Difference": "61.70",
+      "Factor": "1.22"
+    },
+    {
+      "Truck / Trailer": "KOLOB 74760",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.787",
+      "Y (m)": "0.655",
+      "Z (m)": "0.82",
+      "Don't take this too seriously please Volume (L)": "845",
+      "Game volume (L)": "380",
+      "Difference": "-465.40",
+      "Factor": "0.45"
+    },
+    {
+      "Truck / Trailer": "KOLOB 74941",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.88",
+      "Y (m)": "0.655",
+      "Z (m)": "0.82",
+      "Don't take this too seriously please Volume (L)": "945",
+      "Game volume (L)": "340",
+      "Difference": "-605.30",
+      "Factor": "0.36"
+    },
+    {
+      "Truck / Trailer": "KRS 58 \"Bandit\"",
+      "Game volume (L)": "150"
+    },
+    {
+      "Truck / Trailer": "Land Rover Defender 90",
+      "Game volume (L)": "80"
+    },
+    {
+      "Truck / Trailer": "Land Rover Defender 110",
+      "Game volume (L)": "80"
+    },
+    {
+      "Truck / Trailer": "Mack Defense M917",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.036",
+      "Y (m)": "0.423",
+      "Z (m)": "0.514",
+      "Don't take this too seriously please Volume (L)": "225",
+      "Game volume (L)": "350",
+      "Difference": "124.75",
+      "Factor": "1.55"
+    },
+    {
+      "Truck / Trailer": "MTB 8106 (Rock Grinder)",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.5",
+      "Y (m)": "0.323",
+      "Z (m)": "0.778",
+      "Don't take this too seriously please Volume (L)": "126",
+      "Game volume (L)": "80",
+      "Difference": "-45.65",
+      "Factor": "0.64"
+    },
+    {
+      "Truck / Trailer": "Navistar 5000-MV",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.416",
+      "Y (m)": "0.395",
+      "Z (m)": "0.369",
+      "Don't take this too seriously please Volume (L)": "648",
+      "Game volume (L)": "340",
+      "Difference": "-1,009.47",
+      "Factor": "0.25"
+    },
+    {
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.416",
+      "Y (m)": "0.4",
+      "Z (m)": "0.394",
+      "Don't take this too seriously please Volume (L)": "701"
+    },
+    {
+      "Truck / Trailer": "Neo Falcon 2000",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.473",
+      "Y (m)": "0.28",
+      "Z (m)": "0.73",
+      "Don't take this too seriously please Volume (L)": "97",
+      "Game volume (L)": "90",
+      "Difference": "-6.68",
+      "Factor": "0.93"
+    },
+    {
+      "Truck / Trailer": "Pacific P512 PF",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.323",
+      "Y (m)": "0.311",
+      "Z (m)": "0.31",
+      "Don't take this too seriously please Volume (L)": "801",
+      "Game volume (L)": "200",
+      "Difference": "-601.42",
+      "Factor": "0.25"
+    },
+    {
+      "Truck / Trailer": "Pacific P12",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.522",
+      "Y (m)": "0.754",
+      "Z (m)": "0.62",
+      "Don't take this too seriously please Volume (L)": "1423",
+      "Game volume (L)": "350",
+      "Difference": "-1,073.01",
+      "Factor": "0.25"
+    },
+    {
+      "Truck / Trailer": "Pacific P16",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.256",
+      "Y (m)": "0.743",
+      "Z (m)": "1.866",
+      "Don't take this too seriously please Volume (L)": "355",
+      "Game volume (L)": "300",
+      "Difference": "-54.93",
+      "Factor": "0.85"
+    },
+    {
+      "Truck / Trailer": "Rezvani Hercules 6x6",
+      "Game volume (L)": "80"
+    },
+    {
+      "Truck / Trailer": "Royal BM17",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.05",
+      "Y (m)": "0.3",
+      "Z (m)": "0.3",
+      "Don't take this too seriously please Volume (L)": "594",
+      "Game volume (L)": "280",
+      "Difference": "-313.76",
+      "Factor": "0.47"
+    },
+    {
+      "Truck / Trailer": "Step 310E",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.856",
+      "Y (m)": "0.277",
+      "Z (m)": "0.526",
+      "Don't take this too seriously please Volume (L)": "249",
+      "Game volume (L)": "220",
+      "Difference": "-29.44",
+      "Factor": "0.88"
+    },
+    {
+      "Truck / Trailer": "Step 33-64 \"Crocodile\"",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.773",
+      "Y (m)": "0.336",
+      "Z (m)": "0.443",
+      "Don't take this too seriously please Volume (L)": "115",
+      "Game volume (L)": "150",
+      "Difference": "34.94",
+      "Factor": "1.30"
+    },
+    {
+      "Truck / Trailer": "Step 39331 \"Pike\"",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.921",
+      "Y (m)": "0.271",
+      "Z (m)": "0.519",
+      "Don't take this too seriously please Volume (L)": "259",
+      "Game volume (L)": "250",
+      "Difference": "-9.08",
+      "Factor": "0.96"
+    },
+    {
+      "Truck / Trailer": "Tatra 805",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.86",
+      "Y (m)": "0.389",
+      "Z (m)": "0.586",
+      "Don't take this too seriously please Volume (L)": "196",
+      "Game volume (L)": "190",
+      "Difference": "-6.04",
+      "Factor": "0.97"
+    },
+    {
+      "Truck / Trailer": "Tatra FORCE T815-7",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.262",
+      "Y (m)": "0.572",
+      "Z (m)": "0.622",
+      "Don't take this too seriously please Volume (L)": "449",
+      "Game volume (L)": "380",
+      "Difference": "-69.00",
+      "Factor": "0.85"
+    },
+    {
+      "Truck / Trailer": "Tatra PHOENIX",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.824",
+      "Y (m)": "0.497",
+      "Z (m)": "0.552",
+      "Don't take this too seriously please Volume (L)": "226",
+      "Game volume (L)": "345",
+      "Difference": "0.98",
+      "Factor": "1.00"
+    },
+    {
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.411",
+      "Y (m)": "0.508",
+      "Z (m)": "0.565",
+      "Don't take this too seriously please Volume (L)": "118"
+    },
+    {
+      "Truck / Trailer": "Tatra T813",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.623",
+      "Y (m)": "0.592",
+      "Z (m)": "0.598",
+      "Don't take this too seriously please Volume (L)": "441",
+      "Game volume (L)": "380",
+      "Difference": "-61.10",
+      "Factor": "0.86"
+    },
+    {
+      "Truck / Trailer": "Tayga 6436",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.38",
+      "Y (m)": "0.6",
+      "Z (m)": "0.67",
+      "Don't take this too seriously please Volume (L)": "555",
+      "Game volume (L)": "330",
+      "Difference": "-590.58",
+      "Factor": "0.36"
+    },
+    {
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.91",
+      "Y (m)": "0.6",
+      "Z (m)": "0.67",
+      "Don't take this too seriously please Volume (L)": "366"
+    },
+    {
+      "Truck / Trailer": "Tayga 6455B",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.9",
+      "Y (m)": "0.27",
+      "Z (m)": "0.27",
+      "Don't take this too seriously please Volume (L)": "412",
+      "Game volume (L)": "330",
+      "Difference": "-82.24",
+      "Factor": "0.80"
+    },
+    {
+      "Truck / Trailer": "TUZ 108 \"Warthog\"",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.936",
+      "Y (m)": "0.305",
+      "Z (m)": "0.522",
+      "Don't take this too seriously please Volume (L)": "298",
+      "Game volume (L)": "200",
+      "Difference": "-98.04",
+      "Factor": "0.67"
+    },
+    {
+      "Truck / Trailer": "TUZ 16 \"Actaeon\"",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.745",
+      "Y (m)": "0.271",
+      "Z (m)": "0.434",
+      "Don't take this too seriously please Volume (L)": "175",
+      "Game volume (L)": "110",
+      "Difference": "-65.24",
+      "Factor": "0.63"
+    },
+    {
+      "Truck / Trailer": "TUZ 166",
+      "Game volume (L)": "60"
+    },
+    {
+      "Truck / Trailer": "TUZ 420 \"Tatarin\"",
+      "Game volume (L)": "300"
+    },
+    {
+      "Truck / Trailer": "Voron AE-4380",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.678",
+      "Y (m)": "0.429",
+      "Z (m)": "0.64",
+      "Don't take this too seriously please Volume (L)": "186",
+      "Game volume (L)": "250",
+      "Difference": "63.85",
+      "Factor": "1.34"
+    },
+    {
+      "Truck / Trailer": "Voron D-53233",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.154",
+      "Y (m)": "0.516",
+      "Z (m)": "0.708",
+      "Don't take this too seriously please Volume (L)": "422",
+      "Game volume (L)": "270",
+      "Difference": "-151.59",
+      "Factor": "0.64"
+    },
+    {
+      "Truck / Trailer": "Voron Grad",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.154",
+      "Y (m)": "0.516",
+      "Z (m)": "0.708",
+      "Don't take this too seriously please Volume (L)": "422",
+      "Game volume (L)": "330",
+      "Difference": "-91.59",
+      "Factor": "0.78"
+    },
+    {
+      "Truck / Trailer": "Western Star 47X NF 1424",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.126",
+      "Y (m)": "0.317",
+      "Z (m)": "0.317",
+      "Don't take this too seriously please Volume (L)": "711",
+      "Game volume (L)": "290",
+      "Difference": "-420.95",
+      "Factor": "0.41"
+    },
+    {
+      "Truck / Trailer": "Western Star 47X NF 1430",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.187",
+      "Y (m)": "0.31",
+      "Z (m)": "0.31",
+      "Don't take this too seriously please Volume (L)": "358",
+      "Game volume (L)": "290",
+      "Difference": "-68.36",
+      "Factor": "0.81"
+    },
+    {
+      "Truck / Trailer": "Western Star 49X",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.227",
+      "Y (m)": "0.32",
+      "Z (m)": "0.319",
+      "Don't take this too seriously please Volume (L)": "393",
+      "Game volume (L)": "290",
+      "Difference": "-103.49",
+      "Factor": "0.74"
+    },
+    {
+      "Truck / Trailer": "Western Star 57X",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.122",
+      "Y (m)": "0.317",
+      "Z (m)": "0.317",
+      "Don't take this too seriously please Volume (L)": "708",
+      "Game volume (L)": "290",
+      "Difference": "-418.42",
+      "Factor": "0.41"
+    },
+    {
+      "Truck / Trailer": "Western Star 6900 TwinSteer",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.59",
+      "Y (m)": "0.39",
+      "Z (m)": "0.39",
+      "Don't take this too seriously please Volume (L)": "760",
+      "Game volume (L)": "360",
+      "Difference": "-2,516.57",
+      "Factor": "0.13"
+    },
+    {
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "2.215",
+      "Y (m)": "0.39",
+      "Z (m)": "0.39",
+      "Don't take this too seriously please Volume (L)": "2117"
+    },
+    {
+      "Truck / Trailer": "White Western Star 4964",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.529",
+      "Y (m)": "0.285",
+      "Z (m)": "0.285",
+      "Don't take this too seriously please Volume (L)": "390",
+      "Game volume (L)": "300",
+      "Difference": "-375.45",
+      "Factor": "0.44"
+    },
+    {
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.118",
+      "Y (m)": "0.285",
+      "Z (m)": "0.285",
+      "Don't take this too seriously please Volume (L)": "285"
+    },
+    {
+      "Truck / Trailer": "YAR 87",
+      "Game volume (L)": "110"
+    },
+    {
+      "Truck / Trailer": "ZiKZ 5368",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "2",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.055",
+      "Y (m)": "0.32",
+      "Z (m)": "0.576",
+      "Don't take this too seriously please Volume (L)": "389",
+      "Game volume (L)": "190",
+      "Difference": "-198.92",
+      "Factor": "0.49"
+    },
+    {
+      "Truck / Trailer": "ZiKZ 566A",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1",
+      "Y (m)": "0.382",
+      "Z (m)": "0.444",
+      "Don't take this too seriously please Volume (L)": "170",
+      "Game volume (L)": "150",
+      "Difference": "-19.61",
+      "Factor": "0.88"
+    },
+    {
+      "Truck / Trailer": "ZiKZ 605R",
+      "Reservoir type": "Box",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "0.932",
+      "Y (m)": "0.48",
+      "Z (m)": "0.192",
+      "Don't take this too seriously please Volume (L)": "86",
+      "Game volume (L)": "380",
+      "Difference": "294.11",
+      "Factor": "4.42"
+    },
+    {
+      "Truck / Trailer": "ZiKZ 612H"
+    },
+    {
+      "Truck / Trailer": "Scout Fuel Carrier",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "1.955",
+      "Y (m)": "0.5",
+      "Z (m)": "0.699",
+      "Don't take this too seriously please Volume (L)": "2147",
+      "Game volume (L)": "900",
+      "Difference": "-1,246.56",
+      "Factor": "0.42"
+    },
+    {
+      "Truck / Trailer": "Fuel Carrier",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "7.2",
+      "Y (m)": "0.802",
+      "Z (m)": "1.277",
+      "Don't take this too seriously please Volume (L)": "23166",
+      "Game volume (L)": "2000",
+      "Difference": "-21,165.82",
+      "Factor": "0.09"
+    },
+    {
+      "Truck / Trailer": "Fuel Carrier Semi",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "12",
+      "Y (m)": "1.27",
+      "Z (m)": "1.27",
+      "Don't take this too seriously please Volume (L)": "60805",
+      "Game volume (L)": "3700",
+      "Difference": "-57,104.90",
+      "Factor": "0.06"
+    },
+    {
+      "Truck / Trailer": "Heavy Fuel Tanker Semi",
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "12.088",
+      "Y (m)": "1.241",
+      "Z (m)": "1.55",
+      "Don't take this too seriously please Volume (L)": "73048",
+      "Game volume (L)": "5000",
+      "Difference": "-84,578.81",
+      "Factor": "0.06"
+    },
+    {
+      "Reservoir type": "Cylinder",
+      "Amount of reservoirs": "1",
+      "Dimensions taken from LimitedFluid tags X (m)": "4.739",
+      "Y (m)": "0.838",
+      "Z (m)": "1.325",
+      "Don't take this too seriously please Volume (L)": "16531"
+    }
+  ]
+}

@@ -248,6 +248,19 @@ def csv_to_session(
         gid = (row.get("vehicle_id") or "").strip()
         if gid:
             parts.append(f"id={gid}")
+        thr = (row.get("throttle") or "").strip()
+        if thr:
+            parts.append(f"thr={thr}")
+        rpm = (row.get("engine_rpm") or "").strip()
+        if rpm:
+            parts.append(f"rpm={rpm}")
+        rate = (row.get("fuel_rate_pct_min") or "").strip()
+        if rate:
+            try:
+                if float(rate) > 0.05:
+                    parts.append(f"fuel_rate={rate}%/min")
+            except ValueError:
+                pass
         parts.extend(_yaw_note_parts(row))
         samples.append(
             TelemetrySample(

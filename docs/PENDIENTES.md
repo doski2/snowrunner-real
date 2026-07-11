@@ -2,7 +2,7 @@
 
 Documento único para **no saltar de tema en tema**. Organizado **por camión**: abre solo la sección del vehículo en el que trabajas.
 
-**Reglas**
+Reglas
 
 1. **Un vehículo activo** a la vez. El resto en espera.
 2. Dentro del vehículo, sigue el orden **F1 → F2 → F3 → extras**.
@@ -16,13 +16,13 @@ Documento único para **no saltar de tema en tema**. Organizado **por camión**:
 python grabar_ce.py --probe                    # incluye mapa auto (log + memoria)
 python datos/map_detect.py --memory            # solo detectar mapa
 python importar_ce_csv.py --auto --compare --index
-grabar_telemetria.bat                  # grabación + preflight (mapa auto)
-grabar_telemetria.bat snap barro_ligero  # snapshot TERR (sin sesión)
-grabar_telemetria.bat diff tierra_seca barro_ligero
-grabar_telemetria.bat tire             # neumático montado (CE)
-grabar_telemetria.bat cargo            # carga bastidor / remolque (CE)
-grabar_telemetria.bat drive            # traccion / diff / fuel rate (CE)
-python importar_ce_csv.py --auto --compare --index
+.\grabar_telemetria.bat                        # grabación + preflight (PowerShell: .\ obligatorio)
+.\grabar_telemetria.bat snap barro_ligero      # snapshot TERR (sin sesión)
+.\grabar_telemetria.bat diff tierra_seca barro_ligero
+.\grabar_telemetria.bat tire                   # neumático montado (CE)
+.\grabar_telemetria.bat cargo                  # carga bastidor / remolque (CE)
+.\grabar_telemetria.bat drive --watch 30       # throttle + rpm en vivo
+.\grabar_telemetria.bat drive_snap gas_off     # calibrar gas (ver cheat_engine/README.md)
 python verify_pak.py
 python organizar_sesiones.py --apply   # solo si quedan JSON sueltos en sesiones/
 ```
@@ -45,15 +45,15 @@ telemetria/sesiones/
 
 ## Índice rápido
 
-| Vehículo | ID | Siguiente paso | Doc |
-|----------|-----|----------------|-----|
-| Chevrolet CK1500 | `ck1500` | F1 asfalto AAT-8V (F2o hecho; F3 sin sesión válida) | `camiones/ck1500/` |
-| International Fleetstar F2070A | `fleetstar` | MOT-2100 (F1) o **F3 carga** (F2 hecho) | `camiones/fleetstar/FASES.md` |
-| Chevrolet Kodiak C70 | `kodiak` | F1 asfalto | `camiones/kodiak/FASES.md` |
-| KHAN 39 Marshall | `marshall` | F1 asfalto (F2 barro **hecho**) | `camiones/marshall/FASES.md` |
-| GMC MH9500 | `mh9500` | Re-grabar `mh_f2_barro_offroad` | `camiones/mh9500/FASES.md` |
-| International Scout 800 | `scout800` | F1 AAT-6V *(en espera)* | `camiones/scout800/FASES.md` |
-| Tatra T813 | `t813` | **F1 asfalto** (nuevo) | `camiones/t813/FASES.md` |
+| Vehículo                       | ID          | Siguiente paso                                      | Doc                           |
+|--------------------------------|-------------|-----------------------------------------------------|-------------------------------|
+| Chevrolet CK1500               | `ck1500`    | F1 asfalto AAT-8V (F2o hecho; F3 sin sesión válida) | `camiones/ck1500/`            |
+| International Fleetstar F2070A | `fleetstar` | MOT-2100 (F1) o **F3 carga** (F2 hecho)             | `camiones/fleetstar/FASES.md` |
+| Chevrolet Kodiak C70           | `kodiak`    | F1 asfalto                                          | `camiones/kodiak/FASES.md`    |
+| KHAN 39 Marshall               | `marshall`  | F1 asfalto (F2 barro **hecho**)                     | `camiones/marshall/FASES.md`  |
+| GMC MH9500                     | `mh9500`    | Re-grabar `mh_f2_barro_offroad`                     | `camiones/mh9500/FASES.md`    |
+| International Scout 800        | `scout800`  | F1 AAT-6V *(en espera)*                             | `camiones/scout800/FASES.md`  |
+| Tatra T813                     | `t813`      | **F1 WOT** (F2 hecho; F3 grabado)                   | `camiones/t813/FASES.md`      |
 
 **Mapa activo:** auto-detectado (`datos/map_detect.py`: CSV grabación → terreno nieve/cielo → posición). Solo override: `--map "North Port"`.
 
@@ -69,22 +69,22 @@ telemetria/sesiones/
 
 Referencia Scout · CE: `s_chevrolet_ck1500` · Masa mod ~1750 kg
 
-| ID | Fase | Estado | Protocolo | Qué probar | Cierre |
-|----|------|--------|-----------|------------|--------|
-| CK-F1 | 1 | [ ] | `f1_asfalto_aat8v` | **AAT-8V 5.2** solo motor; highway stock; sin diff/caja | `grabar_telemetria.bat motor`; MAE asfalto |
-| CK-F1i6 | 1 | — | `f1_asfalto_i6` | Alias sim (mismo XML `us_scout_old_engine_ck1500` con mod) | Usar `f1_asfalto_aat8v` en CE |
-| CK-F2h | 2 | [ ] | F2 highway | Highway en barro ~0 km/h | Comentario sensación |
-| CK-F2o | 2 | [x] | `f2_barro_offroad` | Offroad + diff + L, barro Michigan | MAE mud **3.5** (sesión 2026-06-30) |
-| CK-F3 | 3 | [ ] | `f3_carga_barro` | Remolque scout + vigas en barro | **Sin sesión válida** — CE da falsos `cargado`; nunca remolque real en juego |
+| ID      | Fase | Estado | Protocolo          | Qué probar                                                 | Cierre                                                                       |
+|---------|------|--------|--------------------|------------------------------------------------------------|------------------------------------------------------------------------------|
+| CK-F1   | 1    | [ ]    | `f1_asfalto_aat8v` | **AAT-8V 5.2** solo motor; highway stock; sin diff/caja    | `grabar_telemetria.bat motor`; MAE asfalto                                   |
+| CK-F1i6 | 1    | —      | `f1_asfalto_i6`    | Alias sim (mismo XML `us_scout_old_engine_ck1500` con mod) | Usar `f1_asfalto_aat8v` en CE                                                |
+| CK-F2h  | 2    | [ ]    | F2 highway         | Highway en barro ~0 km/h                                   | Comentario sensación                                                         |
+| CK-F2o  | 2    | [x]    | `f2_barro_offroad` | Offroad + diff + L, barro Michigan                         | MAE mud **3.5** (sesión 2026-06-30)                                          |
+| CK-F3   | 3    | [ ]    | `f3_carga_barro`   | Remolque scout + vigas en barro                            | **Sin sesión válida** — CE da falsos `cargado`; nunca remolque real en juego |
 
 **Sesiones CE**
 
-| Archivo | Protocolo | MAE / notas |
-|---------|-----------|-------------|
-| `telemetria/sesiones/ck1500/ce_f2_barro_offroad_20260630_220307.json` | `f2_barro_offroad` | **MAE mud 3.5** (1260 muestras); crawl ~0–9 km/h (mediana 0.14); indexada |
-| `telemetria/sesiones/ck1500/ce_f2_barro_offroad_20260702_215951.json` | `f2_barro_offroad` | Mezcla hard/mud; CE neumático **allterrain** (`wheels_scout2`, AT I) — **no offroad**; re-grabar con OS I si cierras F2o de libro |
-| `telemetria/sesiones/ck1500/ce_f3_carga_barro_20260705_210047.json` | `f3_carga_barro` *(inválida)* | **Sin carga en juego** (confirmado); CE 258× `cargado` fantasma (mass 2950); no usar F3 |
-| `telemetria/sesiones/ck1500/ce_f3_carga_barro_20260703_223237.json` | `f3_carga_barro` *(inválida)* | Scout **sin carga** en juego; meta `trailer_metal_planks` erróneo; 232× falsos `cargado` — **no indexar F3** |
+| Archivo                                                               | Protocolo                     | MAE / notas                                                                                                                       |
+|-----------------------------------------------------------------------|-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| `telemetria/sesiones/ck1500/ce_f2_barro_offroad_20260630_220307.json` | `f2_barro_offroad`            | **MAE mud 3.5** (1260 muestras); crawl ~0–9 km/h (mediana 0.14); indexada                                                         |
+| `telemetria/sesiones/ck1500/ce_f2_barro_offroad_20260702_215951.json` | `f2_barro_offroad`            | Mezcla hard/mud; CE neumático **allterrain** (`wheels_scout2`, AT I) — **no offroad**; re-grabar con OS I si cierras F2o de libro |
+| `telemetria/sesiones/ck1500/ce_f3_carga_barro_20260705_210047.json`   | `f3_carga_barro` *(inválida)* | **Sin carga en juego** (confirmado); CE 258× `cargado` fantasma (mass 2950); no usar F3                                           |
+| `telemetria/sesiones/ck1500/ce_f3_carga_barro_20260703_223237.json`   | `f3_carga_barro` *(inválida)* | Scout **sin carga** en juego; meta `trailer_metal_planks` erróneo; 232× falsos `cargado` — **no indexar F3**                      |
 
 **Comentarios**
 
@@ -254,20 +254,30 @@ CE: `s_tatra_t813` · Masa mod **14571 kg** · **KZGT-8 490** · JAT MSH I 50\" 
 
 | ID | Fase | Estado | Protocolo | Qué probar | Cierre |
 |----|------|--------|-----------|------------|--------|
-| T813-F1 | 1 | [ ] | `t813_f1_asfalto` | Asfalto MSH I, KZGT, diff | vmax; 0→97 km/h |
-| T813-F2 | 2 | [ ] | `t813_f2_barro_msh` | Barro marcha baja + diff | Calibrar `T813_MUD_*` |
-| T813-F3 | 3 | [ ] | `t813_f3_carga` | Semi cargado barro | `grabar_telemetria.bat cargo` |
+| T813-F1 | 1 | [ ] | `t813_f1_asfalto` | Asfalto MSH I, KZGT, diff, **WOT marcha alta** | Regrabar (sesión crawl no válida) |
+| T813-F2 | 2 | [x] | `t813_f2_barro_msh` | Barro marcha baja + diff | MAE ~5.1; v30 juego 15.8 vs sim 2.6 |
+| T813-F3 | 3 | [ ] | `t813_f3_carga` | Semi cargado barro | Sesión indexada; validar carga real |
 
 **Sesiones CE**
 
 | Archivo | Protocolo | MAE / notas |
 |---------|-----------|-------------|
-| *(ninguna indexada aún)* | | Aplicar mod: `python apply_mod.py --vehicle t813` |
+| `telemetria/sesiones/t813/ce_t813_f1_asfalto_20260706_222602.json` | `t813_f1_asfalto` | MAE 14.0 — **crawl L**, no WOT; 47% mixed (8×8) |
+| `telemetria/sesiones/t813/ce_t813_f2_barro_msh_20260707_215916.json` | `t813_f2_barro_msh` | **MAE 5.1**; mud pond ~2.5; North Port |
+| `telemetria/sesiones/t813/ce_t813_f3_carga_20260707_214210.json` | `t813_f3_carga` | MAE 5.0; semi barro; confirmar payload con `cargo` |
 
 **Comentarios**
 
 ```
-(fecha) T813-F1 — 
+2026-07-06 | T813-F1 | ce_t813_f1_asfalto_20260706_222602
+Black River, 1616 muestras, crawl — NO sirve para calibrar 0-97. Repetir recto WOT.
+
+2026-07-07 | T813-F2 | ce_t813_f2_barro_msh_20260707_215916
+North Port, 605 muestras, MAE sesión 5.1, v30 juego 15.8 vs sim 2.6.
+
+2026-07-07 | T813-F3 | ce_t813_f3_carga_20260707_214210
+Black River, 1753 muestras, MAE 5.0 — verificar semi cargado en probe.
+Siguiente: F1 WOT; opcional revalidar throttle en T813 (calibrado en Bandit).
 ```
 
 ---

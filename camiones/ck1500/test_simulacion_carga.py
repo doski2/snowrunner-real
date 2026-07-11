@@ -100,9 +100,9 @@ class TestCargoPhysics(unittest.TestCase):
             _offroad_diff(),
             next(s for s in LOAD_SCENARIOS if s.id == "mision_pesada"),
         )
-        s_empty = run_sim(empty, ENGINE_I6, ASPHALT, 60.0)
-        s_loaded = run_sim(loaded, ENGINE_I6, ASPHALT, 60.0)
-        self.assertGreater(s_empty.speeds_kmh[-1], s_loaded.speeds_kmh[-1])
+        s_empty = run_sim(empty, ENGINE_I6, ASPHALT, 45.0)
+        s_loaded = run_sim(loaded, ENGINE_I6, ASPHALT, 45.0)
+        self.assertGreater(sample_at(s_empty, 30.0), sample_at(s_loaded, 30.0))
 
     def test_trailer_reduces_barro_speed(self) -> None:
         base = _offroad_diff()

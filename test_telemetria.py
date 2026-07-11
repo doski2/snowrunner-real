@@ -26,7 +26,7 @@ from telemetria import (
 
 
 def _example_session() -> TelemetrySession:
-    protocol = TEST_PROTOCOLS[2]  # f2_barro_offroad
+    protocol = TEST_PROTOCOLS[3]  # f2_barro_offroad
     meta = meta_from_protocol(protocol, "Michigan", "Ruta barro test")
     meta.id = "test_barro_offroad"
     return TelemetrySession(
@@ -78,6 +78,30 @@ class TestSessionIO(unittest.TestCase):
 
 
 class TestCompareSim(unittest.TestCase):
+    def test_ce_mass_override_clears_trailer_scenario(self) -> None:
+        from telemetria import (
+            TelemetrySample,
+            apply_ce_mass_override,
+            build_vehicle_for_session,
+            dominant_mass_havok_from_samples,
+            meta_from_protocol,
+        )
+
+        proto = next(p for p in TEST_PROTOCOLS if p.id == "f3_carga_barro")
+        meta = meta_from_protocol(proto)
+        loaded = build_vehicle_for_session(meta)
+        self.assertGreater(loaded.trailer_mass_kg, 0)
+        vacio = apply_ce_mass_override(loaded, 1750.0)
+        self.assertEqual(vacio.trailer_mass_kg, 0.0)
+        self.assertEqual(vacio.cargo_mass_kg, 0.0)
+        cargo = apply_ce_mass_override(loaded, 2950.0)
+        self.assertEqual(cargo.cargo_mass_kg, 1200.0)
+        samples = [
+            TelemetrySample(0.0, 5.0, "load=cargado; mass_havok=2950"),
+            TelemetrySample(1.0, 6.0, "load=cargado; mass_havok=2950"),
+        ]
+        self.assertEqual(dominant_mass_havok_from_samples(samples), 2950.0)
+
     def test_compare_returns_rows(self) -> None:
         cmp = compare_session_to_sim(_example_session())
         self.assertEqual(cmp["sample_count"], 4)

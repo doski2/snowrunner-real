@@ -1,0 +1,754 @@
+{
+  "id": "usds_addons",
+  "source": "USDS (Vlad Vulcan)",
+  "sheet": "Addons",
+  "updated_utc": "2026-07-11T01:12:50.941657+00:00",
+  "items": [
+    {
+      "Cargo Addons": "Oil Field Flatbed",
+      "Mass": "1 714",
+      "Cargo Slots": "3",
+      "Price": "5 700",
+      "Install Socket": "FlatbedKenworth1"
+    },
+    {
+      "Cargo Addons": "Long Sleiter Flatbed",
+      "Mass": "1 350",
+      "Cargo Slots": "3",
+      "Spare Wheels": "2",
+      "Price": "8 500",
+      "Install Socket": "SleiterST833ChimeraFlatbed3"
+    },
+    {
+      "Cargo Addons": "Kenworth T880 Long Flatbed",
+      "Mass": "1 020",
+      "Cargo Slots": "3",
+      "Price": "5 700",
+      "Install Socket": "FlatbedKenworthT880"
+    },
+    {
+      "Cargo Addons": "Long Flatbed",
+      "Mass": "510",
+      "Cargo Slots": "3",
+      "Price": "6 000",
+      "Install Socket": "FrameAddon3"
+    },
+    {
+      "Cargo Addons": "Oil Field Flatbed (Consumables)",
+      "Mass": "1 814",
+      "Cargo Slots": "2",
+      "Fuel/Water (L)": "120",
+      "in US gallons": "32",
+      "Repair Points": "150",
+      "Spare Wheels": "4",
+      "Price": "6 100",
+      "Install Socket": "FlatbedKenworth2"
+    },
+    {
+      "Cargo Addons": "Sleiter Flatbed",
+      "Mass": "1 710",
+      "Cargo Slots": "2",
+      "Fuel/Water (L)": "60",
+      "in US gallons": "16",
+      "Repair Points": "300",
+      "Spare Wheels": "4",
+      "Price": "9 700",
+      "Install Socket": "SleiterST833ChimeraFlatbed2"
+    },
+    {
+      "Cargo Addons": "Flatbed",
+      "Mass": "410",
+      "Cargo Slots": "2",
+      "Price": "4 200",
+      "Install Socket": "FrameAddon"
+    },
+    {
+      "Cargo Addons": "Kenworth C500 Flatbed",
+      "Mass": "400",
+      "Cargo Slots": "2",
+      "Price": "4 400",
+      "Install Socket": "FrameAddonFlatbedKenworthC500"
+    },
+    {
+      "Cargo Addons": "Small Flatbed",
+      "Mass": "200",
+      "Cargo Slots": "1",
+      "Price": "3 800",
+      "Install Socket": "FrameAddonFlatbed1"
+    },
+    {
+      "Cargo Addons": "FEMM Float Body",
+      "Mass": "1 100",
+      "Cargo Slots": "4",
+      "Price": "6 700",
+      "Install Socket": "FemmSideboard"
+    },
+    {
+      "Cargo Addons": "Long Sleiter Sideboard Bed",
+      "Mass": "1 256",
+      "Cargo Slots": "3",
+      "Price": "5 700",
+      "Install Socket": "SleiterST833ChimeraSideboard3"
+    },
+    {
+      "Cargo Addons": "Azov 67096 “Atom” Flat Body",
+      "Mass": "1 100",
+      "Cargo Slots": "3",
+      "Price": "5 700",
+      "Install Socket": "Azov670963nSideboard"
+    },
+    {
+      "Cargo Addons": "Long TerraPro Sideboard Bed",
+      "Mass": "600",
+      "Cargo Slots": "3",
+      "Price": "6 400",
+      "Install Socket": "FrameAddonMackTerraPro3"
+    },
+    {
+      "Cargo Addons": "Long Sideboard Bed",
+      "Mass": "600",
+      "Cargo Slots": "3",
+      "Price": "5 700",
+      "Install Socket": "FrameAddonSideboard3"
+    },
+    {
+      "Cargo Addons": "PLAD Float Body",
+      "Mass": "1 150",
+      "Cargo Slots": "2",
+      "Spare Wheels": "2",
+      "Price": "4 200",
+      "Install Socket": "Plad450Sideboard"
+    },
+    {
+      "Cargo Addons": "Voron Sideboard Bed",
+      "Mass": "1 050",
+      "Cargo Slots": "2",
+      "Price": "5 700",
+      "Install Socket": "VoronG5352Sideboard"
+    },
+    {
+      "Cargo Addons": "Sleiter Sideboard Bed",
+      "Mass": "900",
+      "Cargo Slots": "2",
+      "Price": "4 900",
+      "Install Socket": "SleiterST833ChimeraSideboard2"
+    },
+    {
+      "Cargo Addons": "Jangsu Sideboard Bed",
+      "Mass": "800",
+      "Cargo Slots": "2",
+      "Price": "4 900",
+      "Install Socket": "JangsuRX600Sideboard"
+    },
+    {
+      "Cargo Addons": "Mercer Sideboard Bed",
+      "Mass": "740",
+      "Cargo Slots": "2",
+      "Fuel/Water (L)": "40",
+      "in US gallons": "11",
+      "Repair Points": "100",
+      "Price": "5 200",
+      "Install Socket": "MercerK520Sideboard"
+    },
+    {
+      "Cargo Addons": "Sideboard Bed (745C)",
+      "Mass": "706",
+      "Cargo Slots": "2",
+      "Repair Points": "200",
+      "Price": "5 600",
+      "Install Socket": "Cat745CFlatbed"
+    },
+    {
+      "Cargo Addons": "Small Sideboard Bed (Pike)",
+      "Mass": "704",
+      "Cargo Slots": "2",
+      "Fuel/Water (L)": "60",
+      "in US gallons": "16",
+      "Price": "4 900",
+      "Install Socket": "Step39331PikeSideboard"
+    },
+    {
+      "Cargo Addons": "TerraPro Sideboard Bed",
+      "Mass": "650",
+      "Cargo Slots": "2",
+      "Spare Wheels": "2",
+      "Price": "5 300",
+      "Install Socket": "FrameAddonMackTerraPro"
+    },
+    {
+      "Cargo Addons": "Sideboard Bed",
+      "Mass": "610",
+      "Cargo Slots": "2",
+      "Price": "4 900",
+      "Install Socket": "FrameAddon, ankMk38FrameAddon"
+    },
+    {
+      "Cargo Addons": "PLAD Sideboard Bed",
+      "Mass": "605",
+      "Cargo Slots": "2",
+      "Price": "5 100",
+      "Install Socket": "Plad440Sideboard2"
+    },
+    {
+      "Cargo Addons": "Small Sideboard Bed (Crocodile)",
+      "Mass": "400",
+      "Cargo Slots": "1",
+      "Fuel/Water (L)": "60",
+      "in US gallons": "16",
+      "Price": "4 900",
+      "Install Socket": "Step3364CrocodileSideboard"
+    },
+    {
+      "Cargo Addons": "Small Sideboard Bed",
+      "Mass": "500",
+      "Cargo Slots": "1",
+      "Price": "4 500",
+      "Install Socket": "FrameAddonSideboard1"
+    },
+    {
+      "Cargo Addons": "Logging",
+      "Install Socket": "Install Socket"
+    },
+    {
+      "Cargo Addons": "Pacific P16 Pole Trailer Front",
+      "Mass": "1 121",
+      "Price": "6 000",
+      "Install Socket": "PacificP16BunkLog"
+    },
+    {
+      "Cargo Addons": "Log Carrier Front (745C)",
+      "Mass": "1 000",
+      "Price": "7 500",
+      "Install Socket": "Cat745CLogBunk"
+    },
+    {
+      "Cargo Addons": "Log Carrier Front",
+      "Mass": "927",
+      "Price": "6 000",
+      "Install Socket": "BunkLog"
+    },
+    {
+      "Cargo Addons": "Medium Logging Frame",
+      "Mass": "900",
+      "Price": "6 000",
+      "Install Socket": "FrameAddonLogMedium"
+    },
+    {
+      "Cargo Addons": "Short Logging Frame",
+      "Mass": "700",
+      "Price": "6 000",
+      "Install Socket": "FrameAddonLogShort"
+    },
+    {
+      "Cargo Addons": "Medium Log Carrier Addon (Pinnacle)",
+      "Mass": "500",
+      "Price": "6 400",
+      "Install Socket": "FrameAddonMackPinnacleLogMedium"
+    },
+    {
+      "Cargo Addons": "Short Log Carrier Addon (Pinnacle)",
+      "Mass": "500",
+      "Price": "6 400",
+      "Install Socket": "FrameAddonMackPinnacleLogsShort"
+    },
+    {
+      "Cargo Addons": "Utility",
+      "Install Socket": "Install Socket"
+    },
+    {
+      "Cargo Addons": "Multi-purpose Cargo Module",
+      "Mass": "11 920",
+      "col": "7 620",
+      "Cargo Slots": "1",
+      "Fuel/Water (L)": "250",
+      "in US gallons": "67",
+      "Repair Points": "450",
+      "Spare Wheels": "4",
+      "Price": "5 700",
+      "Install Socket": "HeavyRepairSmall, HeavyRepair"
+    },
+    {
+      "Cargo Addons": "Multi-purpose Cargo Module (G-5352)",
+      "Mass": "4 110",
+      "col": "570",
+      "Cargo Slots": "1",
+      "Fuel/Water (L)": "200",
+      "in US gallons": "53",
+      "Repair Points": "300",
+      "Spare Wheels": "2",
+      "Price": "8 100",
+      "Install Socket": "VoronG5352HeavyRepair"
+    },
+    {
+      "Cargo Addons": "Sideboard Bed Van Body (Padera)",
+      "Mass": "1 600",
+      "col": "1 220",
+      "Cargo Slots": "1",
+      "Fuel/Water (L)": "400",
+      "in US gallons": "106",
+      "Repair Points": "400",
+      "Spare Wheels": "4",
+      "Price": "6 700",
+      "Install Socket": "PaderaSTD4Kung"
+    },
+    {
+      "Cargo Addons": "Azov General Repair & Refuel Unit",
+      "Mass": "3 010",
+      "col": "7 010",
+      "Fuel/Water (L)": "2500",
+      "in US gallons": "661",
+      "Repair Points": "300",
+      "Spare Wheels": "4",
+      "Price": "7 000",
+      "Install Socket": "Azov670963nTank"
+    },
+    {
+      "Cargo Addons": "Large Maintenance Frame Addon",
+      "Mass": "5 036",
+      "col": "5 636",
+      "Fuel/Water (L)": "2000",
+      "in US gallons": "529",
+      "Repair Points": "350",
+      "Spare Wheels": "6",
+      "Price": "6 800",
+      "Install Socket": "FrameAddonMaintainerBig, KenworthFrameAddonMaintainerBig"
+    },
+    {
+      "Cargo Addons": "Maintenance Frame Addon",
+      "Mass": "3 025",
+      "col": "3 945",
+      "Fuel/Water (L)": "1400",
+      "in US gallons": "370",
+      "Repair Points": "300",
+      "Spare Wheels": "5",
+      "Price": "5 300",
+      "Install Socket": "FrameAddonMaintainer, FrameAddonMaintainer2"
+    },
+    {
+      "Cargo Addons": "Maintenance Frame Addon (745C)",
+      "Mass": "2 229",
+      "col": "3 109",
+      "Fuel/Water (L)": "1100",
+      "in US gallons": "291",
+      "Repair Points": "300",
+      "Spare Wheels": "2",
+      "Price": "7 500",
+      "Install Socket": "Cat745CService"
+    },
+    {
+      "Cargo Addons": "Voron Maintenance Frame Addon",
+      "Mass": "2 490",
+      "col": "1 050",
+      "Fuel/Water (L)": "300",
+      "in US gallons": "80",
+      "Repair Points": "900",
+      "Spare Wheels": "6",
+      "Price": "7 000",
+      "Install Socket": "VoronG5352Kung"
+    },
+    {
+      "Cargo Addons": "Van Body Addon",
+      "Mass": "3 012",
+      "Repair Points": "800",
+      "Spare Wheels": "6",
+      "Price": "4 500",
+      "Install Socket": "FrameAddonKung"
+    },
+    {
+      "Cargo Addons": "Van Body Addon (K-700)",
+      "Mass": "2 004",
+      "Repair Points": "800",
+      "Spare Wheels": "6",
+      "Price": "4 700",
+      "Install Socket": "KirovetsK700Kung"
+    },
+    {
+      "Cargo Addons": "HIB Billert Van Body Addon",
+      "Mass": "2 220",
+      "col": "1 560",
+      "Fuel/Water (L)": "300",
+      "in US gallons": "80",
+      "Repair Points": "600",
+      "Spare Wheels": "4",
+      "Price": "4 400",
+      "Install Socket": "HIBBillert1980Kung"
+    },
+    {
+      "Cargo Addons": "Maintenance Frame Addon (Mercer)",
+      "Mass": "3 344",
+      "col": "3 360",
+      "Fuel/Water (L)": "220",
+      "in US gallons": "59",
+      "Repair Points": "600",
+      "Spare Wheels": "2",
+      "Price": "5 700",
+      "Install Socket": "MercerK520Kung"
+    },
+    {
+      "Cargo Addons": "Van Body Addon (K-7M)",
+      "Mass": "2 160",
+      "Fuel/Water (L)": "180",
+      "in US gallons": "48",
+      "Repair Points": "600",
+      "Spare Wheels": "2",
+      "Price": "5 900",
+      "Install Socket": "KirovetsK7MKung"
+    },
+    {
+      "Cargo Addons": "Service Cab (FLD 120)",
+      "Mass": "1 250",
+      "Fuel/Water (L)": "450",
+      "in US gallons": "119",
+      "Repair Points": "100",
+      "Spare Wheels": "2",
+      "Price": "5 300",
+      "Install Socket": "FreightlinerFLD120Kung"
+    },
+    {
+      "Cargo Addons": "Van Body Addon (Crocodile)",
+      "Mass": "700",
+      "Fuel/Water (L)": "60",
+      "in US gallons": "16",
+      "Repair Points": "500",
+      "Spare Wheels": "2",
+      "Price": "4 900",
+      "Install Socket": "Step3364CrocodileKung"
+    },
+    {
+      "Cargo Addons": "Maintainer Frame Addon",
+      "Mass": "1 000",
+      "Repair Points": "500",
+      "Spare Wheels": "2",
+      "Price": "4 700",
+      "Install Socket": "FrameAddonMaintainerSmall"
+    },
+    {
+      "Cargo Addons": "Maintainer Frame Addon (805)",
+      "Mass": "1 000",
+      "Repair Points": "500",
+      "Spare Wheels": "2",
+      "Price": "3 800",
+      "Install Socket": "Tatra805Kung"
+    },
+    {
+      "Cargo Addons": "Service Cab (Loadstar)",
+      "Mass": "1 006",
+      "Repair Points": "400",
+      "Price": "3 800",
+      "Install Socket": "InternationalLoadstar1700ServiceBody"
+    },
+    {
+      "Cargo Addons": "Shield & Repair Supplies (FLD 120)",
+      "Mass": "645",
+      "col": "1 085",
+      "Fuel/Water (L)": "200",
+      "in US gallons": "53",
+      "Repair Points": "200",
+      "Spare Wheels": "2",
+      "Price": "4 200",
+      "Install Socket": "FreightlinerFLD120Repairs"
+    },
+    {
+      "Cargo Addons": "Universal Compartment (AVENHORN)",
+      "Mass": "600",
+      "col": "1 040",
+      "Fuel/Water (L)": "300",
+      "in US gallons": "80",
+      "Repair Points": "300",
+      "Spare Wheels": "2",
+      "Price": "9 700",
+      "Install Socket": "AvenhornA15Kung"
+    },
+    {
+      "Cargo Addons": "Service kit (612H)",
+      "Mass": "165",
+      "Fuel/Water (L)": "50",
+      "in US gallons": "14",
+      "Repair Points": "300",
+      "Price": "3 200",
+      "Install Socket": "MastodonElectricbox"
+    },
+    {
+      "Cargo Addons": "Expanded Fuel Tank",
+      "Mass": "601",
+      "col": "7 941",
+      "Fuel/Water (L)": "2800",
+      "in US gallons": "740",
+      "Price": "6 600",
+      "Install Socket": "FrameAddonTankLong"
+    },
+    {
+      "Cargo Addons": "TATRA Fuel Carrier",
+      "Mass": "600",
+      "col": "5 600",
+      "Fuel/Water (L)": "2000",
+      "in US gallons": "529",
+      "Price": "5 300",
+      "Install Socket": "TatraFrameAddonTank"
+    },
+    {
+      "Cargo Addons": "Heavy Fuel Carrier (770G)",
+      "Mass": "1 040",
+      "col": "5 640",
+      "Fuel/Water (L)": "2000",
+      "in US gallons": "529",
+      "Price": "8 500",
+      "Install Socket": "Cat770gTank"
+    },
+    {
+      "Cargo Addons": "Fuel Tank",
+      "Mass": "612",
+      "col": "5 052",
+      "Fuel/Water (L)": "1800",
+      "in US gallons": "476",
+      "Price": "5 300",
+      "Install Socket": "FrameAddonTank"
+    },
+    {
+      "Cargo Addons": "Fuel Carrier (745C)",
+      "Mass": "1 000",
+      "col": "4 480",
+      "Fuel/Water (L)": "1600",
+      "in US gallons": "423",
+      "Price": "8 500",
+      "Install Socket": "Cat745CFuelTank"
+    },
+    {
+      "Cargo Addons": "Fuel Tank (Crocodile)",
+      "Mass": "600",
+      "col": "2 520",
+      "Fuel/Water (L)": "900",
+      "in US gallons": "238",
+      "Price": "4 200",
+      "Install Socket": "Step3364CrocodileTank"
+    },
+    {
+      "Cargo Addons": "Small Fuel Carrier (805)",
+      "Mass": "600",
+      "col": "2 520",
+      "Fuel/Water (L)": "900",
+      "in US gallons": "238",
+      "Price": "5 300",
+      "Install Socket": "Tatra805Tank"
+    },
+    {
+      "Cargo Addons": "Small Fuel Carrier",
+      "Mass": "600",
+      "col": "2 520",
+      "Fuel/Water (L)": "900",
+      "in US gallons": "238",
+      "Price": "4 200",
+      "Install Socket": "FrameAddonTankSmall, FrameAddonTankSmall02"
+    },
+    {
+      "Cargo Addons": "Small Short Fuel Carrier",
+      "Mass": "400",
+      "col": "1 680",
+      "Fuel/Water (L)": "600",
+      "in US gallons": "159",
+      "Price": "4 200",
+      "Install Socket": "FrameAddonTankSmallShort"
+    },
+    {
+      "Cargo Addons": "Extended Water Tank",
+      "Mass": "601",
+      "col": "9 901",
+      "Fuel/Water (L)": "2800",
+      "in US gallons": "740",
+      "Price": "6 600",
+      "Install Socket": "FrameAddonTankLong"
+    },
+    {
+      "Cargo Addons": "Fire Tank (612H)",
+      "Mass": "1 161",
+      "col": "2 661",
+      "Fuel/Water (L)": "2500",
+      "in US gallons": "661",
+      "Price": "5 600",
+      "Install Socket": "FrameAddonTankMastodon"
+    },
+    {
+      "Cargo Addons": "Fire Tank (Derry Special)",
+      "Mass": "1 850",
+      "col": "3 350",
+      "Fuel/Water (L)": "2200",
+      "in US gallons": "582",
+      "Repair Points": "200",
+      "Price": "5 900",
+      "Install Socket": "FrameAddonDerryFirefighter"
+    },
+    {
+      "Cargo Addons": "Fire Tank (745C)",
+      "Mass": "1 000",
+      "col": "7 700",
+      "Fuel/Water (L)": "2000",
+      "in US gallons": "529",
+      "Price": "6 000",
+      "Install Socket": "Cat745CWaterTank"
+    },
+    {
+      "Cargo Addons": "Fire Tank (566A)",
+      "Mass": "1 010",
+      "col": "1 810",
+      "Fuel/Water (L)": "1800",
+      "in US gallons": "476",
+      "Price": "6 450",
+      "Install Socket": "ZiKZ566aFirefighterAddon"
+    },
+    {
+      "Cargo Addons": "Fire Tank",
+      "Mass": "1 511",
+      "col": "6 311",
+      "Fuel/Water (L)": "1800",
+      "in US gallons": "476",
+      "Price": "5 300",
+      "Install Socket": "FrameAddonTank"
+    },
+    {
+      "Cargo Addons": "Articulated Towing Platform",
+      "Mass": "1 720",
+      "Price": "3 400",
+      "Install Socket": "FrameAddonTow"
+    },
+    {
+      "Cargo Addons": "Ramped Towing Platform",
+      "Mass": "835",
+      "Price": "3 800",
+      "Install Socket": "FrameAddonTowPlatform"
+    },
+    {
+      "Cargo Addons": "TATRA Towing Platform",
+      "Mass": "3 250",
+      "Repair Points": "250",
+      "Spare Wheels": "3",
+      "Price": "4 200",
+      "Install Socket": "TatraFrameAddonTow"
+    },
+    {
+      "Cargo Addons": "Vehicle Extraction Kit (6900XD)",
+      "Mass": "8 242",
+      "col": "2 746",
+      "Fuel/Water (L)": "180",
+      "in US gallons": "48",
+      "Repair Points": "350",
+      "Spare Wheels": "3",
+      "Price": "5 700",
+      "Install Socket": "WS6900FrameAddonKung"
+    },
+    {
+      "Cargo Addons": "Padera Tow Truck Flatbed",
+      "Mass": "1 216",
+      "Repair Points": "120",
+      "Spare Wheels": "2",
+      "Price": "4 800",
+      "Install Socket": "PaderaSTD4Sideboard"
+    },
+    {
+      "Cargo Addons": "Hydrolift Saddle",
+      "Mass": "800",
+      "Price": "0",
+      "Install Socket": "SaddleMotorized"
+    },
+    {
+      "Cargo Addons": "Mission Addons",
+      "Install Socket": "Install Socket"
+    },
+    {
+      "Cargo Addons": "Seismic Vibrator Module",
+      "Mass": "4 764",
+      "Price": "0",
+      "Install Socket": "FrameAddonSeismicVibrator"
+    },
+    {
+      "Cargo Addons": "Metal Detector Module",
+      "Mass": "350",
+      "Price": "0",
+      "Install Socket": "MetalDetector"
+    },
+    {
+      "Cargo Addons": "Cranes",
+      "Install Socket": "Install Socket"
+    },
+    {
+      "Cargo Addons": "IM50 Loading Crane",
+      "Mass": "2 250",
+      "Price": "5 700",
+      "Install Socket": "MinicraneRU"
+    },
+    {
+      "Cargo Addons": "IM50 Loading Crane (Burlak)",
+      "Mass": "790",
+      "Price": "5 700",
+      "Install Socket": "BurlakMinicraneRU"
+    },
+    {
+      "Cargo Addons": "LC 3.8 Loading Crane",
+      "Mass": "4 310",
+      "Price": "5 700",
+      "Install Socket": "MinicraneUS"
+    },
+    {
+      "Cargo Addons": "KRS 58 Crane",
+      "Mass": "3 950",
+      "Price": "7 500",
+      "Install Socket": "CraneKrs58Bandit"
+    },
+    {
+      "Cargo Addons": "TAT-12 Loading Crane",
+      "Mass": "3 670",
+      "Price": "5 700",
+      "Install Socket": "TatraCrane"
+    },
+    {
+      "Cargo Addons": "SLEI-64 Loading Crane",
+      "Mass": "3 930",
+      "Price": "7 600",
+      "Install Socket": "CraneSleiterMFK816, SleiterST833ChimeraCrane, CraneAvenhornA15"
+    },
+    {
+      "Cargo Addons": "LP-4 Log-loader Crane",
+      "Mass": "3 780",
+      "Price": "7 900",
+      "Install Socket": "LogLift"
+    },
+    {
+      "Cargo Addons": "Ankatra Log Crane",
+      "Mass": "2 800",
+      "Price": "6 800",
+      "Install Socket": "Ankatra1160Crane"
+    },
+    {
+      "Cargo Addons": "Futom Log Crane",
+      "Mass": "4 200",
+      "Price": "6 800",
+      "Install Socket": "Futom7290RaCrane"
+    },
+    {
+      "Cargo Addons": "Pinnacle Log Crane",
+      "Mass": "4 290",
+      "Price": "7 500",
+      "Install Socket": "CraneMackPinnacle"
+    },
+    {
+      "Cargo Addons": "Avto-23 Heavy Crane",
+      "Mass": "10 310",
+      "Price": "7 500",
+      "Install Socket": "BigCraneRu"
+    },
+    {
+      "Cargo Addons": "PC-320 Heavy Crane",
+      "Mass": "6 810",
+      "Price": "7 500",
+      "Install Socket": "BigCraneUs, BigCraneUsAvenhornA15"
+    },
+    {
+      "Cargo Addons": "LK-2NY Heavy Crane",
+      "Mass": "18 060",
+      "Price": "9 400",
+      "Install Socket": "BigCrane, BigCraneVoronG5352"
+    },
+    {
+      "Cargo Addons": "Data by Corhone, source:SR!NFO"
+    }
+  ]
+}

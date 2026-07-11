@@ -1,0 +1,552 @@
+{
+  "id": "usds_cargo",
+  "source": "USDS (Vlad Vulcan)",
+  "sheet": "Cargo",
+  "updated_utc": "2026-07-11T01:12:50.941657+00:00",
+  "items": [
+    {
+      "Cargo": "Airplane Fuselage",
+      "Slots": "5",
+      "Packed Mass": "10 000",
+      "Unpacked": "2 000",
+      "Internal Name": "CargoPlane",
+      "Notes": "Can only be packed on the 5-slot Wide Semi-Trailers",
+      "Mass Per Slot": "2 000"
+    },
+    {
+      "Cargo": "Airplane Wing",
+      "Slots": "4",
+      "Packed Mass": "2 000",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoWing2",
+      "Notes": "Can only be packed on the 5-slot Wide Semi-Trailers",
+      "Mass Per Slot": "500"
+    },
+    {
+      "Cargo": "Airplane Wing with Engine",
+      "Slots": "5",
+      "Packed Mass": "2 000",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoWing1",
+      "Notes": "Can only be packed on the 5-slot Wide Semi-Trailers",
+      "Mass Per Slot": "400"
+    },
+    {
+      "Cargo": "BA-20 armored car",
+      "Slots": "2",
+      "Packed Mass": "3 000",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoBA20, CargoBA20Add",
+      "Mass Per Slot": "1 500"
+    },
+    {
+      "Cargo": "Bricks",
+      "Slots": "1",
+      "Packed Mass": "1 000",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoBricks",
+      "Mass Per Slot": "1 000"
+    },
+    {
+      "Cargo": "Cabin",
+      "Slots": "2",
+      "Packed Mass": "3 000",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoForkliftCaravanContainer2",
+      "Mass Per Slot": "1 500"
+    },
+    {
+      "Cargo": "Extended Crew Cabin",
+      "Slots": "4",
+      "Packed Mass": "10 000",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoForcklift",
+      "Mass Per Slot": "2 500"
+    },
+    {
+      "Cargo": "Portable Cabin",
+      "Unpacked": "2 200",
+      "Internal Name": "CargoCabin",
+      "Notes": "Can't be packed"
+    },
+    {
+      "Cargo": "Cable Car",
+      "Slots": "2",
+      "Packed Mass": "4 500",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoCableCar",
+      "Mass Per Slot": "2 250"
+    },
+    {
+      "Cargo": "Cargo Container",
+      "Slots": "2",
+      "Packed Mass": "3 000",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoContainerSmall",
+      "Mass Per Slot": "1 500"
+    },
+    {
+      "Cargo": "Cellulose",
+      "Slots": "1",
+      "Packed Mass": "1 500",
+      "Unpacked": "1 500",
+      "Internal Name": "CargoCellulose",
+      "Mass Per Slot": "1 500"
+    },
+    {
+      "Cargo": "Cement",
+      "Slots": "1",
+      "Packed Mass": "2 500",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoBags",
+      "Mass Per Slot": "2 500"
+    },
+    {
+      "Cargo": "Chemical Barrels",
+      "Slots": "1",
+      "Packed Mass": "2 500",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoBarrelsChemicals",
+      "Mass Per Slot": "2 500"
+    },
+    {
+      "Cargo": "Cistern",
+      "Slots": "5",
+      "Packed Mass": "1 000",
+      "Unpacked": "1 700",
+      "Internal Name": "CargoBigbar",
+      "Mass Per Slot": "200"
+    },
+    {
+      "Cargo": "Concrete Blocks",
+      "Slots": "1",
+      "Packed Mass": "3 000",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoConcreteBlocks",
+      "Mass Per Slot": "3 000"
+    },
+    {
+      "Cargo": "Concrete Slab",
+      "Slots": "2",
+      "Packed Mass": "6 000",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoConcreteSlab",
+      "Mass Per Slot": "3 000"
+    },
+    {
+      "Cargo": "Consumables",
+      "Slots": "1",
+      "Packed Mass": "2 500",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoCrateLarge",
+      "Mass Per Slot": "2 500"
+    },
+    {
+      "Cargo": "Data Buoy",
+      "Slots": "2",
+      "Packed Mass": "2 341",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoSensoryBuoy",
+      "Mass Per Slot": "1 171"
+    },
+    {
+      "Cargo": "Drilling Equipment",
+      "Slots": "4",
+      "Packed Mass": "10 000",
+      "Unpacked": "2 000",
+      "Internal Name": "CargoContainerLargeDrilling",
+      "Mass Per Slot": "2 500"
+    },
+    {
+      "Cargo": "Drilling Spare Parts",
+      "Slots": "1",
+      "Packed Mass": "1 000",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoServiceSparePartsSpecial",
+      "Mass Per Slot": "1 000"
+    },
+    {
+      "Cargo": "Empty Container",
+      "Slots": "2",
+      "Packed Mass": "3 200",
+      "Unpacked": "3 100",
+      "Internal Name": "CargoMetalJunkOpen",
+      "Mass Per Slot": "1 600"
+    },
+    {
+      "Cargo": "Filled Container",
+      "Slots": "2",
+      "Packed Mass": "3 000",
+      "Unpacked": "3 000",
+      "Internal Name": "CargoMetalJunk",
+      "Mass Per Slot": "1 500"
+    },
+    {
+      "Cargo": "Fertilizer",
+      "Slots": "1",
+      "Packed Mass": "1 500",
+      "Unpacked": "1 200",
+      "Internal Name": "CargoFertilizer",
+      "Mass Per Slot": "1 500"
+    },
+    {
+      "Cargo": "Freezer",
+      "Slots": "2",
+      "Packed Mass": "3 000",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoReeferContainer",
+      "Mass Per Slot": "1 500"
+    },
+    {
+      "Cargo": "Fuel Barrels",
+      "Slots": "1",
+      "Packed Mass": "1 500",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoBarrels",
+      "Mass Per Slot": "1 500"
+    },
+    {
+      "Cargo": "Garbage",
+      "Slots": "2",
+      "Packed Mass": "3 000",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoTrash",
+      "Mass Per Slot": "1 500"
+    },
+    {
+      "Cargo": "Gold",
+      "Slots": "1",
+      "Packed Mass": "3 120",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoGold",
+      "Mass Per Slot": "3 120"
+    },
+    {
+      "Cargo": "Hay Bale",
+      "Slots": "1",
+      "Packed Mass": "1 500",
+      "Unpacked": "500",
+      "Internal Name": "CargoStack",
+      "Mass Per Slot": "1 500"
+    },
+    {
+      "Cargo": "Industrial boiler",
+      "Slots": "5",
+      "Packed Mass": "10 000",
+      "Unpacked": "2 500",
+      "Internal Name": "CargoBoiler",
+      "Notes": "Can't be packed on the 5-slot Sideboard Semi-Trailer",
+      "Mass Per Slot": "2 000"
+    },
+    {
+      "Cargo": "Industrial Chiller",
+      "Slots": "6",
+      "Packed Mass": "5 000",
+      "Unpacked": "4 000",
+      "Internal Name": "CargoChiller",
+      "Mass Per Slot": "833"
+    },
+    {
+      "Cargo": "Mazut Barrels",
+      "Slots": "1",
+      "Packed Mass": "1 500",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoBarrelsMasut",
+      "Mass Per Slot": "1 500"
+    },
+    {
+      "Cargo": "Metal Beams",
+      "Slots": "2",
+      "Packed Mass": "5 000",
+      "Unpacked": "2 000",
+      "Internal Name": "CargoMetalPlanks",
+      "Mass Per Slot": "2 500"
+    },
+    {
+      "Cargo": "Metal Roll",
+      "Slots": "1",
+      "Packed Mass": "1 000",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoMetalRoll",
+      "Mass Per Slot": "1 000"
+    },
+    {
+      "Cargo": "Mine Cart",
+      "Slots": "2",
+      "Packed Mass": "4 500",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoMinecart",
+      "Mass Per Slot": "2 250"
+    },
+    {
+      "Cargo": "Multistage Pump",
+      "Slots": "2",
+      "Packed Mass": "5 750",
+      "Unpacked": "2 500",
+      "Internal Name": "CargoNPPPump",
+      "Mass Per Slot": "2 875"
+    },
+    {
+      "Cargo": "Oil Barrels",
+      "Slots": "1",
+      "Packed Mass": "1 500",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoBarrelsOil",
+      "Mass Per Slot": "1 500"
+    },
+    {
+      "Cargo": "Oil Rig Drill",
+      "Slots": "5",
+      "Packed Mass": "10 000",
+      "Unpacked": "2 000",
+      "Internal Name": "CargoBigDrill",
+      "Mass Per Slot": "2 000"
+    },
+    {
+      "Cargo": "Oversized Cargo",
+      "Slots": "4",
+      "Packed Mass": "10 000",
+      "Unpacked": "2 000",
+      "Internal Name": "CargoContainerLarge",
+      "Mass Per Slot": "2 500"
+    },
+    {
+      "Cargo": "Packaged Sand",
+      "Slots": "1",
+      "Packed Mass": "2 500",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoBags2",
+      "Mass Per Slot": "2 500"
+    },
+    {
+      "Cargo": "Pipe Large",
+      "Slots": "4",
+      "Packed Mass": "8 000",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoPipeLarge",
+      "Mass Per Slot": "2 000"
+    },
+    {
+      "Cargo": "Pipes Medium",
+      "Slots": "2",
+      "Packed Mass": "4 500",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoPipesMedium",
+      "Mass Per Slot": "2 250"
+    },
+    {
+      "Cargo": "Pipes Small",
+      "Slots": "2",
+      "Packed Mass": "3 500",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoPipesSmall",
+      "Mass Per Slot": "1 750"
+    },
+    {
+      "Cargo": "Long Planks",
+      "Slots": "4",
+      "Packed Mass": "2 000",
+      "Unpacked": "2 000",
+      "Internal Name": "CargoWoodenPlanks4",
+      "Mass Per Slot": "500"
+    },
+    {
+      "Cargo": "Medium Planks",
+      "Slots": "2",
+      "Packed Mass": "1 000",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoWoodenPlanks2",
+      "Mass Per Slot": "500"
+    },
+    {
+      "Cargo": "Wooden Planks",
+      "Slots": "1",
+      "Packed Mass": "500",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoWoodenPlanks",
+      "Mass Per Slot": "500"
+    },
+    {
+      "Cargo": "Potatoes",
+      "Slots": "1",
+      "Packed Mass": "2 500",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoPotato, CargoPotatoUS",
+      "Mass Per Slot": "2 500"
+    },
+    {
+      "Cargo": "Potato Samples",
+      "Slots": "1",
+      "Packed Mass": "2 500",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoPotatoGmo",
+      "Mass Per Slot": "2 500"
+    },
+    {
+      "Cargo": "Rail Section",
+      "Slots": "5",
+      "Packed Mass": "1 000",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoRailway",
+      "Mass Per Slot": "200"
+    },
+    {
+      "Cargo": "Rails",
+      "Slots": "4",
+      "Packed Mass": "10 000",
+      "Unpacked": "2 500",
+      "Internal Name": "CargoIronRoad",
+      "Notes": "Can't be packed on the 5-slot Sideboard Semi-Trailer or FEMM Float Body",
+      "Mass Per Slot": "2 500"
+    },
+    {
+      "Cargo": "Rocket Engine Assembly",
+      "Slots": "1",
+      "Packed Mass": "2 500",
+      "Unpacked": "2 500",
+      "Internal Name": "CargoRocketEngine",
+      "Mass Per Slot": "2 500"
+    },
+    {
+      "Cargo": "Rocket Stage 2 Fuel Tank",
+      "Slots": "3",
+      "Packed Mass": "1 500",
+      "Unpacked": "1 500",
+      "Internal Name": "CargoRocketPart2",
+      "Notes": "Can't be packed on Long TerraPro Sideboard Bed or “Atom” Flat Body",
+      "Mass Per Slot": "500"
+    },
+    {
+      "Cargo": "Rocket Stage 3 Fuel Tank",
+      "Slots": "3",
+      "Packed Mass": "2 100",
+      "Unpacked": "2 100",
+      "Internal Name": "CargoRocketPart1",
+      "Notes": "Can't be packed on Long TerraPro Sideboard Bed or “Atom” Flat Body",
+      "Mass Per Slot": "700"
+    },
+    {
+      "Cargo": "Secure Container",
+      "Slots": "1",
+      "Packed Mass": "1 000",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoRadioactive",
+      "Mass Per Slot": "1 000"
+    },
+    {
+      "Cargo": "Sequoia",
+      "Slots": "5",
+      "Packed Mass": "1 000",
+      "Unpacked": "1 700",
+      "Internal Name": "CargoSequoia",
+      "Mass Per Slot": "200"
+    },
+    {
+      "Cargo": "Service Spare Parts",
+      "Slots": "1",
+      "Packed Mass": "1 200",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoServiceSpareParts",
+      "Mass Per Slot": "1 200"
+    },
+    {
+      "Cargo": "Silver",
+      "Slots": "1",
+      "Packed Mass": "3 120",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoSilver",
+      "Mass Per Slot": "3 120"
+    },
+    {
+      "Cargo": "Slate Blocks",
+      "Slots": "2",
+      "Packed Mass": "7 000",
+      "Unpacked": "3 000",
+      "Internal Name": "CargoStoneBlock",
+      "Mass Per Slot": "3 500"
+    },
+    {
+      "Cargo": "Solar Panels",
+      "Slots": "1",
+      "Packed Mass": "2 500",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoSolarPanel",
+      "Mass Per Slot": "2 500"
+    },
+    {
+      "Cargo": "Soybeans",
+      "Slots": "1",
+      "Packed Mass": "2 500",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoSoyabean",
+      "Mass Per Slot": "2 500"
+    },
+    {
+      "Cargo": "Special Cargo",
+      "Slots": "2",
+      "Packed Mass": "3 000",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoContainerSmallSpecial",
+      "Mass Per Slot": "1 500"
+    },
+    {
+      "Cargo": "Tetrapod",
+      "Slots": "1",
+      "Packed Mass": "1 500",
+      "Unpacked": "1 500",
+      "Internal Name": "CargoTetrapod",
+      "Mass Per Slot": "1 500"
+    },
+    {
+      "Cargo": "Transformer",
+      "Slots": "3",
+      "Packed Mass": "2 200",
+      "Unpacked": "5 000",
+      "Internal Name": "CargoTransformer",
+      "Mass Per Slot": "733"
+    },
+    {
+      "Cargo": "Vehicle Spare Parts",
+      "Slots": "1",
+      "Packed Mass": "1 200",
+      "Unpacked": "1 000",
+      "Internal Name": "CargoVehiclesSpareParts",
+      "Mass Per Slot": "1 200"
+    },
+    {
+      "Cargo": "Water Pipe",
+      "Slots": "3",
+      "Packed Mass": "6 000",
+      "Unpacked": "1 500",
+      "Internal Name": "CargoWaterPipe",
+      "Mass Per Slot": "2 000"
+    },
+    {
+      "Cargo": "Long Logs",
+      "Packed Mass": "12 000",
+      "Unpacked": "800",
+      "Internal Name": "CargoLogsLong"
+    },
+    {
+      "Cargo": "Medium Logs",
+      "Packed Mass": "8 000",
+      "Unpacked": "500",
+      "Internal Name": "CargoLogsMedium"
+    },
+    {
+      "Cargo": "Short Logs",
+      "Packed Mass": "4 000",
+      "Unpacked": "500",
+      "Internal Name": "CargoLogsShort"
+    },
+    {
+      "Cargo": "Burnt Logs",
+      "Packed Mass": "5 000",
+      "Unpacked": "500",
+      "Internal Name": "CargoLogsMedium_Burnt"
+    },
+    {
+      "Cargo": "Data by Corhone, source:SR!NFO"
+    }
+  ]
+}

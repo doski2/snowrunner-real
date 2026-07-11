@@ -1,0 +1,137 @@
+{
+  "id": "extras_engines_wip",
+  "source": "SnowRunner Extras",
+  "sheet": "Engines (WIP)",
+  "updated_utc": "2026-07-11T01:12:50.941657+00:00",
+  "items": [
+    {
+      "Engine Group": "US Scout Old"
+    },
+    {
+      "Engine Group": "CK1500 / Apache"
+    },
+    {
+      "Engine Group": "Ford F 750"
+    },
+    {
+      "Engine Group": "MTB 8106"
+    },
+    {
+      "Engine Group": "CAT TH357"
+    },
+    {
+      "Engine Group": "US Scout Modern"
+    },
+    {
+      "Engine Group": "US Truck Old"
+    },
+    {
+      "Engine Group": "US Truck Old \"Top\""
+    },
+    {
+      "Engine Group": "GMC MH9500"
+    },
+    {
+      "Engine Group": "Transtar 4070"
+    },
+    {
+      "Engine Group": "Ford CLT9000"
+    },
+    {
+      "Engine Group": "Paystar 5070"
+    },
+    {
+      "Engine Group": "GMC 8000 Brigadier"
+    },
+    {
+      "Engine Group": "US Truck Modern"
+    },
+    {
+      "Engine Group": "CAT/Royal"
+    },
+    {
+      "Engine Group": "CAT CT681"
+    },
+    {
+      "Engine Group": "Derry 4520"
+    },
+    {
+      "Engine Group": "Navistar"
+    },
+    {
+      "Engine Group": "Western Star 49X"
+    },
+    {
+      "Engine Group": "Mack Defense M917"
+    },
+    {
+      "Engine Group": "Kenworth W990"
+    },
+    {
+      "Engine Group": "US Truck Old Heavy"
+    },
+    {
+      "Engine Group": "US Special"
+    },
+    {
+      "Engine Group": "Derry Special"
+    },
+    {
+      "Engine Group": "Kenworth 963"
+    },
+    {
+      "Engine Group": "RU Scout Old"
+    },
+    {
+      "Engine Group": "DON 71"
+    },
+    {
+      "Engine Group": "TUZ 166"
+    },
+    {
+      "Engine Group": "RU Scout Modern"
+    },
+    {
+      "Engine Group": "TUZ 420 \"Tatarin\""
+    },
+    {
+      "Engine Group": "Burlak 6x6"
+    },
+    {
+      "Engine Group": "RU Truck Old"
+    },
+    {
+      "Engine Group": "Step 310E"
+    },
+    {
+      "Engine Group": "ZiKZ 566A"
+    },
+    {
+      "Engine Group": "RU Truck Old Heavy"
+    },
+    {
+      "Engine Group": "RU Truck Modern"
+    },
+    {
+      "Engine Group": "Grad / Phoenix"
+    },
+    {
+      "Engine Group": "Azov \"Sprinter\""
+    },
+    {
+      "Engine Group": "RU Special"
+    },
+    {
+      "Engine Group": "Kirovets K-700"
+    },
+    {
+      "Engine Group": "Kirovets K-7M"
+    },
+    {
+      "Engine Group": "ZiKZ 612H"
+    },
+    {
+      "Engine Group": "FEMM 37-AT"
+    }
+  ]
+}

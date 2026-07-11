@@ -1712,6 +1712,19 @@ def load_offsets_reference() -> dict[str, Any]:
     return _OFFSETS_REF_CACHE
 
 
+def save_offsets_reference(data: dict[str, Any]) -> str:
+    """Escribe offsets_referencia.json e invalida cache."""
+    global _OFFSETS_REF_CACHE
+    path = os.path.join(os.path.dirname(__file__), "offsets_referencia.json")
+    with open(path, "w", encoding="utf-8") as f:
+        import json
+
+        json.dump(data, f, indent=2, ensure_ascii=False)
+        f.write("\n")
+    _OFFSETS_REF_CACHE = data
+    return path
+
+
 def _parse_hex_offset(raw: str | int | None) -> int | None:
     if raw is None:
         return None
@@ -1741,6 +1754,38 @@ def resolve_drive_logic(h: int, base: int) -> tuple[int, int, str]:
     if veh and veh > 0x10000:
         return singleton, veh, "DRIVE_LOGIC+8"
     return singleton, 0, "DRIVE_LOGIC"
+
+
+_CHILD_BASE_RE = re.compile(r"^(dl|tc)\+([0-9A-Fa-f]{3})(?:→vehicle)?$")
+
+
+def resolve_field_base_ptr(
+    h: int, base: int, base_name: str, *, veh_ptr: int | None = None
+) -> int | None:
+    """Resuelve ptr para vehicle, drive_logic, truck_control o hijo dl/tc+0xNN."""
+    if base_name == "drive_logic":
+        dl, _, _ = resolve_drive_logic(h, base)
+        return dl if dl and dl > 0x10000 else None
+    if base_name == "vehicle":
+        if veh_ptr and veh_ptr > 0x10000:
+            return veh_ptr
+        veh, _ = read_active_vehicle(h, base)
+        return veh
+    if base_name == "truck_control":
+        tc = read_u64(h, base + TRUCK_CONTROL_OFF)
+        return tc if tc and tc > 0x10000 else None
+    m = _CHILD_BASE_RE.match(base_name)
+    if m:
+        prefix, child_off = m.group(1), int(m.group(2), 16)
+        if prefix == "dl":
+            parent, _, _ = resolve_drive_logic(h, base)
+        else:
+            parent = read_u64(h, base + TRUCK_CONTROL_OFF)
+        if not parent or parent < 0x10000:
+            return None
+        child = read_u64(h, parent + child_off)
+        return child if child and child > 0x10000 else None
+    return None
 
 
 def _vehicle_mod_id(game_id: str) -> str:
@@ -1820,8 +1865,9 @@ def read_drive_state(h: int, base: int, veh: int | None = None) -> dict[str, Any
         if isinstance(spec, dict):
             base_name = spec.get("base", "drive_logic")
             off = spec.get("offset")
-            base_ptr = dl if base_name == "drive_logic" else veh
-            out[out_key] = _read_field_at(h, base_ptr, off, kind=kind)
+            kind = spec.get("kind", kind)
+            base_ptr = resolve_field_base_ptr(h, base, base_name, veh_ptr=veh)
+            out[out_key] = _read_field_at(h, base_ptr or 0, off, kind=kind)
         else:
             val = ""
             for base_name, base_ptr in bases:

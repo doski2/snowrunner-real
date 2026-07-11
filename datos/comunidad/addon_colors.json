@@ -1,0 +1,50 @@
+{
+  "sources": [
+    "SnowRunner Extras"
+  ],
+  "updated_utc": "2026-07-11T01:12:50.941657+00:00",
+  "extras_presets": [
+    {
+      "addon": "Fuel Tank 1",
+      "hue": 187,
+      "saturation": 10,
+      "brightness": 80
+    },
+    {
+      "addon": "Fuel Tank 2",
+      "hue": 2,
+      "saturation": 80,
+      "brightness": 32
+    },
+    {
+      "addon": "Maintenance Addon 1",
+      "hue": 40,
+      "saturation": 57,
+      "brightness": 49
+    },
+    {
+      "addon": "Maintenance Addon 2",
+      "hue": 5,
+      "saturation": 78,
+      "brightness": 38
+    },
+    {
+      "addon": "LK-2NY crane 1",
+      "hue": 37,
+      "saturation": 96,
+      "brightness": 51
+    },
+    {
+      "addon": "LK-2NY crane 2",
+      "hue": 60,
+      "saturation": 3,
+      "brightness": 76
+    },
+    {
+      "addon": "LK-2NY crane 3",
+      "hue": 3,
+      "saturation": 84,
+      "brightness": 36
+    }
+  ]
+}

@@ -1,0 +1,690 @@
+{
+  "id": "srinfo_cargo",
+  "source": "SR!NFO",
+  "sheet": "Cargo",
+  "updated_utc": "2026-07-11T01:12:50.941657+00:00",
+  "items": [
+    {
+      "label": "Airplane Fuselage",
+      "slots": 5,
+      "packed_mass_kg": 10000,
+      "unpacked_mass_kg": 2000,
+      "internal_names": [
+        "CargoPlane"
+      ],
+      "notes": "Can only be packed on the 5-slot Wide Semi-Trailers"
+    },
+    {
+      "label": "Airplane Wing",
+      "slots": 4,
+      "packed_mass_kg": 2000,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoWing2"
+      ],
+      "notes": "Can only be packed on the 5-slot Wide Semi-Trailers"
+    },
+    {
+      "label": "Airplane Wing with Engine",
+      "slots": 5,
+      "packed_mass_kg": 2000,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoWing1"
+      ],
+      "notes": "Can only be packed on the 5-slot Wide Semi-Trailers"
+    },
+    {
+      "label": "BA-20 armored car",
+      "slots": 2,
+      "packed_mass_kg": 3000,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoBA20",
+        "CargoBA20Add"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Bricks",
+      "slots": 1,
+      "packed_mass_kg": 1000,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoBricks"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Cabin",
+      "slots": 2,
+      "packed_mass_kg": 3000,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoForkliftCaravanContainer2"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Extended Crew Cabin",
+      "slots": 4,
+      "packed_mass_kg": 10000,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoForcklift"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Portable Cabin",
+      "slots": null,
+      "packed_mass_kg": null,
+      "unpacked_mass_kg": 2200,
+      "internal_names": [
+        "CargoCabin"
+      ],
+      "notes": "Can't be packed"
+    },
+    {
+      "label": "Cable Car",
+      "slots": 2,
+      "packed_mass_kg": 4500,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoCableCar"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Cargo Container",
+      "slots": 2,
+      "packed_mass_kg": 3000,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoContainerSmall"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Cellulose",
+      "slots": 1,
+      "packed_mass_kg": 1500,
+      "unpacked_mass_kg": 1500,
+      "internal_names": [
+        "CargoCellulose"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Cement",
+      "slots": 1,
+      "packed_mass_kg": 2500,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoBags"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Chemical Barrels",
+      "slots": 1,
+      "packed_mass_kg": 2500,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoBarrelsChemicals"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Cistern",
+      "slots": 5,
+      "packed_mass_kg": 1000,
+      "unpacked_mass_kg": 1700,
+      "internal_names": [
+        "CargoBigbar"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Concrete Blocks",
+      "slots": 1,
+      "packed_mass_kg": 3000,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoConcreteBlocks"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Concrete Slab",
+      "slots": 2,
+      "packed_mass_kg": 6000,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoConcreteSlab"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Consumables",
+      "slots": 1,
+      "packed_mass_kg": 2500,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoCrateLarge"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Data Buoy",
+      "slots": 2,
+      "packed_mass_kg": 2341,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoSensoryBuoy"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Drilling Equipment",
+      "slots": 4,
+      "packed_mass_kg": 10000,
+      "unpacked_mass_kg": 2000,
+      "internal_names": [
+        "CargoContainerLargeDrilling"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Drilling Spare Parts",
+      "slots": 1,
+      "packed_mass_kg": 1000,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoServiceSparePartsSpecial"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Empty Container",
+      "slots": 2,
+      "packed_mass_kg": 3200,
+      "unpacked_mass_kg": 3100,
+      "internal_names": [
+        "CargoMetalJunkOpen"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Filled Container",
+      "slots": 2,
+      "packed_mass_kg": 3000,
+      "unpacked_mass_kg": 3000,
+      "internal_names": [
+        "CargoMetalJunk"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Fertilizer",
+      "slots": 1,
+      "packed_mass_kg": 1500,
+      "unpacked_mass_kg": 1200,
+      "internal_names": [
+        "CargoFertilizer"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Freezer",
+      "slots": 2,
+      "packed_mass_kg": 3000,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoReeferContainer"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Fuel Barrels",
+      "slots": 1,
+      "packed_mass_kg": 1500,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoBarrels"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Garbage",
+      "slots": 2,
+      "packed_mass_kg": 3000,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoTrash"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Gold",
+      "slots": 1,
+      "packed_mass_kg": 3120,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoGold"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Hay Bale",
+      "slots": 1,
+      "packed_mass_kg": 1500,
+      "unpacked_mass_kg": 500,
+      "internal_names": [
+        "CargoStack"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Industrial boiler",
+      "slots": 5,
+      "packed_mass_kg": 10000,
+      "unpacked_mass_kg": 2500,
+      "internal_names": [
+        "CargoBoiler"
+      ],
+      "notes": "Can't be packed on the 5-slot Sideboard Semi-Trailer"
+    },
+    {
+      "label": "Industrial Chiller",
+      "slots": 6,
+      "packed_mass_kg": 5000,
+      "unpacked_mass_kg": 4000,
+      "internal_names": [
+        "CargoChiller"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Mazut Barrels",
+      "slots": 1,
+      "packed_mass_kg": 1500,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoBarrelsMasut"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Metal Beams",
+      "slots": 2,
+      "packed_mass_kg": 5000,
+      "unpacked_mass_kg": 2000,
+      "internal_names": [
+        "CargoMetalPlanks"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Metal Roll",
+      "slots": 1,
+      "packed_mass_kg": 1000,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoMetalRoll"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Mine Cart",
+      "slots": 2,
+      "packed_mass_kg": 4500,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoMinecart"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Multistage Pump",
+      "slots": 2,
+      "packed_mass_kg": 5750,
+      "unpacked_mass_kg": 2500,
+      "internal_names": [
+        "CargoNPPPump"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Oil Barrels",
+      "slots": 1,
+      "packed_mass_kg": 1500,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoBarrelsOil"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Oil Rig Drill",
+      "slots": 5,
+      "packed_mass_kg": 10000,
+      "unpacked_mass_kg": 2000,
+      "internal_names": [
+        "CargoBigDrill"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Oversized Cargo",
+      "slots": 4,
+      "packed_mass_kg": 10000,
+      "unpacked_mass_kg": 2000,
+      "internal_names": [
+        "CargoContainerLarge"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Packaged Sand",
+      "slots": 1,
+      "packed_mass_kg": 2500,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoBags2"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Pipe Large",
+      "slots": 4,
+      "packed_mass_kg": 8000,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoPipeLarge"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Pipes Medium",
+      "slots": 2,
+      "packed_mass_kg": 4500,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoPipesMedium"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Pipes Small",
+      "slots": 2,
+      "packed_mass_kg": 3500,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoPipesSmall"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Long Planks",
+      "slots": 4,
+      "packed_mass_kg": 2000,
+      "unpacked_mass_kg": 2000,
+      "internal_names": [
+        "CargoWoodenPlanks4"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Medium Planks",
+      "slots": 2,
+      "packed_mass_kg": 1000,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoWoodenPlanks2"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Wooden Planks",
+      "slots": 1,
+      "packed_mass_kg": 500,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoWoodenPlanks"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Potatoes",
+      "slots": 1,
+      "packed_mass_kg": 2500,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoPotato",
+        "CargoPotatoUS"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Potato Samples",
+      "slots": 1,
+      "packed_mass_kg": 2500,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoPotatoGmo"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Rail Section",
+      "slots": 5,
+      "packed_mass_kg": 1000,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoRailway"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Rails",
+      "slots": 4,
+      "packed_mass_kg": 10000,
+      "unpacked_mass_kg": 2500,
+      "internal_names": [
+        "CargoIronRoad"
+      ],
+      "notes": "Can't be packed on the 5-slot Sideboard Semi-Trailer or FEMM Float Body"
+    },
+    {
+      "label": "Rocket Engine Assembly",
+      "slots": 1,
+      "packed_mass_kg": 2500,
+      "unpacked_mass_kg": 2500,
+      "internal_names": [
+        "CargoRocketEngine"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Rocket Stage 2 Fuel Tank",
+      "slots": 3,
+      "packed_mass_kg": 1500,
+      "unpacked_mass_kg": 1500,
+      "internal_names": [
+        "CargoRocketPart2"
+      ],
+      "notes": "Can't be packed on Long TerraPro Sideboard Bed or “Atom” Flat Body"
+    },
+    {
+      "label": "Rocket Stage 3 Fuel Tank",
+      "slots": 3,
+      "packed_mass_kg": 2100,
+      "unpacked_mass_kg": 2100,
+      "internal_names": [
+        "CargoRocketPart1"
+      ],
+      "notes": "Can't be packed on Long TerraPro Sideboard Bed or “Atom” Flat Body"
+    },
+    {
+      "label": "Secure Container",
+      "slots": 1,
+      "packed_mass_kg": 1000,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoRadioactive"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Sequoia",
+      "slots": 5,
+      "packed_mass_kg": 1000,
+      "unpacked_mass_kg": 1700,
+      "internal_names": [
+        "CargoSequoia"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Service Spare Parts",
+      "slots": 1,
+      "packed_mass_kg": 1200,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoServiceSpareParts"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Silver",
+      "slots": 1,
+      "packed_mass_kg": 3120,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoSilver"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Slate Blocks",
+      "slots": 2,
+      "packed_mass_kg": 7000,
+      "unpacked_mass_kg": 3000,
+      "internal_names": [
+        "CargoStoneBlock"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Solar Panels",
+      "slots": 1,
+      "packed_mass_kg": 2500,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoSolarPanel"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Soybeans",
+      "slots": 1,
+      "packed_mass_kg": 2500,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoSoyabean"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Special Cargo",
+      "slots": 2,
+      "packed_mass_kg": 3000,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoContainerSmallSpecial"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Tetrapod",
+      "slots": 1,
+      "packed_mass_kg": 1500,
+      "unpacked_mass_kg": 1500,
+      "internal_names": [
+        "CargoTetrapod"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Transformer",
+      "slots": 3,
+      "packed_mass_kg": 2200,
+      "unpacked_mass_kg": 5000,
+      "internal_names": [
+        "CargoTransformer"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Vehicle Spare Parts",
+      "slots": 1,
+      "packed_mass_kg": 1200,
+      "unpacked_mass_kg": 1000,
+      "internal_names": [
+        "CargoVehiclesSpareParts"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Water Pipe",
+      "slots": 3,
+      "packed_mass_kg": 6000,
+      "unpacked_mass_kg": 1500,
+      "internal_names": [
+        "CargoWaterPipe"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Long Logs",
+      "slots": null,
+      "packed_mass_kg": 12000,
+      "unpacked_mass_kg": 800,
+      "internal_names": [
+        "CargoLogsLong"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Medium Logs",
+      "slots": null,
+      "packed_mass_kg": 8000,
+      "unpacked_mass_kg": 500,
+      "internal_names": [
+        "CargoLogsMedium"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Short Logs",
+      "slots": null,
+      "packed_mass_kg": 4000,
+      "unpacked_mass_kg": 500,
+      "internal_names": [
+        "CargoLogsShort"
+      ],
+      "notes": ""
+    },
+    {
+      "label": "Burnt Logs",
+      "slots": null,
+      "packed_mass_kg": 5000,
+      "unpacked_mass_kg": 500,
+      "internal_names": [
+        "CargoLogsMedium_Burnt"
+      ],
+      "notes": ""
+    }
+  ]
+}

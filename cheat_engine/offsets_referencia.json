@@ -34,8 +34,16 @@
     "TRUCK_WHEEL_MODEL_ui_label": "+0x124"
   },
   "hkpRigidBody": {
-    "position_xyz": ["+0x1A0", "+0x1A4", "+0x1A8"],
-    "linear_velocity_xyz": ["+0x230", "+0x234", "+0x238"],
+    "position_xyz": [
+      "+0x1A0",
+      "+0x1A4",
+      "+0x1A8"
+    ],
+    "linear_velocity_xyz": [
+      "+0x230",
+      "+0x234",
+      "+0x238"
+    ],
     "angular_velocity_y": "+0x244"
   },
   "terrain_runtime": {
@@ -44,7 +52,12 @@
     "surface_deform": "+0x2B4",
     "contact_substance": "+0x2EC",
     "note": "MH9500: +2B4 discrimina. Fleetstar: usar +2EC si +2B4 muy negativo",
-    "kinds": ["hard", "mud", "soft", "mixed"],
+    "kinds": [
+      "hard",
+      "mud",
+      "soft",
+      "mixed"
+    ],
     "mud_grade": {
       "0": "dry_hard",
       "1": "soft_dirt",
@@ -68,10 +81,23 @@
     "formula": "payload_kg = max(0, total_mass - empty_mass_xml - 400) [+ remolque]",
     "attach_manager": "+0x078",
     "cargo_manager": "+0x1E8",
-    "addon_physics_vector": ["+0x1E0", "+0x1E8"],
+    "addon_physics_vector": [
+      "+0x1E0",
+      "+0x1E8"
+    ],
     "simulation_island": "rb+0x128 -> bodies+0x60, count+0x68",
-    "hints": ["vacio", "cargado", "trailer_vacio", "trailer_cargado"],
-    "empty_mass_kg": {"ck1500": 1750, "fleetstar": 6650, "marshall": 1780, "mh9500": 7500},
+    "hints": [
+      "vacio",
+      "cargado",
+      "trailer_vacio",
+      "trailer_cargado"
+    ],
+    "empty_mass_kg": {
+      "ck1500": 1750,
+      "fleetstar": 6650,
+      "marshall": 1780,
+      "mh9500": 7500
+    },
     "calibrate": "scan_cargo.py --save <vacio|cargado>"
   },
   "wheel_addon_runtime": {
@@ -83,17 +109,38 @@
     "source": "DRIVE_LOGIC singleton + veh addon — calibrar con scan_drive_state.py",
     "singleton": "SnowRunner.exe+2A8EDC8",
     "vehicle_ptr": "+0x20",
-    "status": "candidates null hasta calibracion in-game",
+    "status": "throttle pedal T813 auto-hunt 2026-07-11; rpm vehicle+0x114",
+    "calibration_snaps": {
+      "gas_off": "cheat_engine/drive_snaps/gas_off.json",
+      "gas_full": "cheat_engine/drive_snaps/gas_full.json",
+      "pedal_sweep": "cheat_engine/drive_snaps/pedal_sweep_latest.json",
+      "note": "throttle [[DRIVE_LOGIC]+28]+0x138 f32 (mando); vehicle+760 = motor"
+    },
     "candidates": {
       "diff_lock_u8": null,
       "awd_active_u8": null,
       "low_gear_u8": null,
-      "throttle_f32": null,
-      "engine_rpm_f32": null
+      "throttle_f32": {
+        "base": "dl+028",
+        "offset": "+0x138",
+        "kind": "f32",
+        "chain": "DRIVE_LOGIC",
+        "note": "auto-hunt T813 span 0..1; ptr hijo DRIVE_LOGIC+0x28"
+      },
+      "engine_rpm_f32": {
+        "base": "vehicle",
+        "offset": "+0x114"
+      }
     },
     "discover": {
-      "drive_logic": ["0x0", "0x400"],
-      "vehicle": ["0x100", "0xA00"]
+      "drive_logic": [
+        "0x0",
+        "0x400"
+      ],
+      "vehicle": [
+        "0x0",
+        "0xC00"
+      ]
     },
     "csv_fields": [
       "diff_lock_live",

@@ -20,6 +20,8 @@ VEL_PER_ANGVEL = 1.85
 NUM_WHEELS = 4
 G = 9.81
 TORQUE_SCALE = 0.028
+# Arrastre extra v^2 en asfalto (CK1500 calibrado vs telemetria F1; 0 = sin efecto).
+CK1500_ASPHALT_DRAG_COEF = 18.0
 FUEL_UNIT_SCALE = 0.0011
 IDLE_FUEL_FRAC = 0.09  # ralenti motor encendido (~9 % del consumo a pleno gas)
 ANGVEL_RAMP = 120.0
@@ -114,6 +116,7 @@ class VehicleConfig:
     drive_layout: str = "4wd"  # 4wd | rwd | awd
     mud_immersion_rate: float = 1.0  # <1 = hunde menos (camiones pesados)
     mud_resist_mult: float = 1.0  # <1 = menos resistencia barro
+    asphalt_drag_coef: float = 0.0  # suma al coef. 0.42 en asfalto (solo superficie asphalt)
 
 
 def total_mass_kg(vehicle: VehicleConfig) -> float:
@@ -162,7 +165,14 @@ class SimSeries:
 
 ENGINE_STOCK = EngineConfig("CK1500 exclusivo", 62000, 3.3, 0.4, 10.0)
 ENGINE_I6 = EngineConfig("250/292 I6", 40000, 1.5, 0.28, 0.015)
-VEHICLE_I6 = VehicleConfig("Realista I6", 1750, 76, TIRES["highway"], "highway")
+VEHICLE_I6 = VehicleConfig(
+    "Realista I6",
+    1750,
+    76,
+    TIRES["highway"],
+    "highway",
+    asphalt_drag_coef=CK1500_ASPHALT_DRAG_COEF,
+)
 
 SURFACES = [
     SurfaceConfig("Asfalto", "asphalt"),
@@ -678,7 +688,10 @@ def step(
     if slip > 0.75 and surface.kind in ("asphalt", "gravel", "dirt"):
         net -= drive_raw * 0.2 * (slip - 0.75)
 
-    net -= 0.42 * v * abs(v)
+    drag_coef = 0.42
+    if surface.kind == "asphalt":
+        drag_coef += vehicle.asphalt_drag_coef
+    net -= drag_coef * v * abs(v)
 
     v_new = max(0.0, v + (net / mass) * dt)
     if surface.kind == "ice":
@@ -723,8 +736,13 @@ def run_sim(
     duration_s: float = 60.0,
     low_gear: bool = False,
     dt: float = DT,
+    *,
+    initial_speed_kmh: float = 0.0,
+    throttle_cap: float = 1.0,
 ) -> SimSeries:
     state = SimState()
+    state.ground_speed = max(0.0, initial_speed_kmh / 3.6)
+    cap = max(0.0, min(1.0, throttle_cap))
     if surface.kind in ("mud", "deep_mud"):
         state.mud_immersion = max(surface.water_depth, 0.08 if surface.kind == "mud" else 0.35)
     elif surface.kind == "water":
@@ -736,7 +754,7 @@ def run_sim(
 
     for i in range(steps):
         t = i * dt
-        throttle = 1.0 if t < throttle_until else 0.0
+        throttle = cap if t < throttle_until else 0.0
         step(state, vehicle, engine, surface, throttle, low_gear, dt)
         times.append(t)
         speeds.append(state.ground_speed * 3.6)
