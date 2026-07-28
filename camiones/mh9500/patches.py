@@ -7,14 +7,17 @@ PATCHES: dict[str, list[tuple[str, str]]] = {
         ('FuelCapacity="240"', 'FuelCapacity="220"'),
         ('Responsiveness="0.25"', 'Responsiveness="0.18"'),
         ('CenterOfMassOffset="(-1.5; 0; 0)"', 'CenterOfMassOffset="(-1.5; -0.2; 0)"'),
-        ('Mass="4000"', 'Mass="3800"'),
         (
-            'Mass="1500"\r\n\t\t\t\tModelFrame="BoneCabin_cdt"',
-            'Mass="1850"\r\n\t\t\t\tModelFrame="BoneCabin_cdt"',
+            'ImpactType="Truck"\r\n\t\t\tMass="3800"\r\n\t\t\tModelFrame="BoneChassis_cdt"',
+            'ImpactType="Truck"\r\n\t\t\tMass="4000"\r\n\t\t\tModelFrame="BoneChassis_cdt"',
         ),
         (
-            'Mass="1500"\r\n\t\t\t\t\tModelFrame="BoneCabinRagdoll_cdt"',
-            'Mass="1850"\r\n\t\t\t\t\tModelFrame="BoneCabinRagdoll_cdt"',
+            'ImpactType="Truck"\r\n\t\t\t\tMass="1850"\r\n\t\t\t\tModelFrame="BoneCabin_cdt"',
+            'ImpactType="Truck"\r\n\t\t\t\tMass="2100"\r\n\t\t\t\tModelFrame="BoneCabin_cdt"',
+        ),
+        (
+            'ImpactType="Truck"\r\n\t\t\t\t\tMass="1850"\r\n\t\t\t\t\tModelFrame="BoneCabinRagdoll_cdt"',
+            'ImpactType="Truck"\r\n\t\t\t\t\tMass="2100"\r\n\t\t\t\t\tModelFrame="BoneCabinRagdoll_cdt"',
         ),
     ],
     "[media]/classes/engines/e_us_truck_old_gmc9500.xml": [

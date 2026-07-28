@@ -45,7 +45,7 @@ class TestMh9500Patches(unittest.TestCase):
         self.assertEqual(vehicle_id_from_ce("s_gmc9500"), "mh9500")
 
     def test_empty_mass_for_ce(self) -> None:
-        self.assertEqual(EMPTY_MASS_KG["mh9500"], 7500.0)
+        self.assertEqual(EMPTY_MASS_KG["mh9500"], 8200.0)
         self.assertEqual(VEHICLE_REAL.mass_kg, EMPTY_MASS_KG["mh9500"])
 
     def test_merge_includes_gmc_files(self) -> None:

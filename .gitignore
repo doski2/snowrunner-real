@@ -28,6 +28,10 @@ credentials.json
 *.pak.bak
 initial.pak*
 
+# Cheat Engine scratch
+*.PTR
+*.PTR.results.*
+
 # OS / editor
 .DS_Store
 Thumbs.db

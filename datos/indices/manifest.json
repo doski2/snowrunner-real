@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_utc": "2026-07-06T21:43:58.678244+00:00",
-  "mod_commit": "b90b267",
+  "updated_utc": "2026-07-12T22:14:25.807021+00:00",
+  "mod_commit": "08ca0ab",
   "game_version": "Steam update jun-2026; initial.pak 28880896 B",
   "offsets_source": "scan_singleton.py brute + probe — build Steam 2026-06-25",
   "singletons": {
@@ -18,7 +18,8 @@
     "marshall": 1780.0,
     "kodiak": 7900.0,
     "scout800": 2350.0,
-    "t813": 14571.0
+    "t813": 14571.0,
+    "bandit": 7220.0
   },
   "vehicles_mod": {
     "ck1500": {
@@ -83,6 +84,15 @@
       "sim_module": "camiones.t813.simulador",
       "empty_mass_kg": 14571.0,
       "notes": "HEAVY 8x8; KZGT-8 490; JAT MSH I 50\"; diff instalado"
+    },
+    "bandit": {
+      "label": "KRS 58 Bandit",
+      "game_id": "krs_58_bandit",
+      "ce_id": "s_krs_58_bandit",
+      "xml_file": "krs_58_bandit.xml",
+      "sim_module": "camiones.bandit.simulador",
+      "empty_mass_kg": 7220.0,
+      "notes": "OFFROAD 8x8; LAZ 6 T60; 51\" UHD I; diff Always; ~7220 kg mod"
     }
   },
   "pak": {
@@ -93,8 +103,8 @@
     },
     "mod_out": {
       "path": "C:\\Users\\doski\\snowrunner real\\initial.pak",
-      "size_bytes": 28880937,
-      "mtime_utc": "2026-07-03T23:19:26.081472+00:00"
+      "size_bytes": 28880930,
+      "mtime_utc": "2026-07-06T21:44:49.744796+00:00"
     }
   },
   "paths": {

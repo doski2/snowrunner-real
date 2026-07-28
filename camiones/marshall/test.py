@@ -39,7 +39,7 @@ class TestMarshallRegistry(unittest.TestCase):
         self.assertEqual(VEHICLES["marshall"].ce_id, "s_khan_39_marshall")
 
     def test_empty_mass_for_ce(self) -> None:
-        self.assertEqual(EMPTY_MASS_KG["marshall"], 1780.0)
+        self.assertEqual(EMPTY_MASS_KG["marshall"], 2030.0)
         self.assertEqual(VEHICLE_REAL.mass_kg, EMPTY_MASS_KG["marshall"])
 
     def test_ce_id_alias(self) -> None:

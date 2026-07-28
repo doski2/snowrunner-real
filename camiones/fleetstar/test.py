@@ -46,7 +46,7 @@ class TestFleetstarPatches(unittest.TestCase):
         self.assertEqual(vehicle_id_from_ce("international_fleetstar_f2070a"), "fleetstar")
 
     def test_empty_mass_for_ce(self) -> None:
-        self.assertEqual(EMPTY_MASS_KG["fleetstar"], 6650.0)
+        self.assertEqual(EMPTY_MASS_KG["fleetstar"], 7400.0)
         self.assertEqual(VEHICLE_REAL.mass_kg, EMPTY_MASS_KG["fleetstar"])
 
     def test_merge_includes_fleetstar_files(self) -> None:

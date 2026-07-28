@@ -1,5 +1,11 @@
 # Cheat Engine — Kit telemetría Havok (Fase 6)
 
+> **ARCHIVADO (jul 2026):** este kit **no** forma parte del flujo activo. Validación = `verify_pak.py` + sim + juego. Ver **`docs/CE-ARCHIVADO.md`** y **`docs/METODO-PAK.md`**.
+
+---
+
+*Documento histórico — conservado por referencia.*
+
 Lectura de **velocidad**, combustible, terreno por rueda, carga y ID de vehículo → CSV → `importar_ce_csv.py` → comparación con sim.
 
 > Offsets validados build Steam **2026-06-25**. Tras parche del juego: RTTI + `offsets_referencia.json`. Ver `docs/FASE-6.md`.
@@ -47,7 +53,9 @@ python cheat_engine/scan_drive_state.py --watch 30
 
 | Campo CSV / nota | Offset | Rango |
 |----------------|--------|-------|
-| `throttle` | `vehicle+0x760` (f32) | 0 = sin gas, 1 = a fondo |
+| `throttle_input` | `tc+0E8+0xC8` (u8) — calibrar con barrido | Pedal volante/mando/teclado 0..1 |
+| `throttle_motor` | `vehicle+0x760` (f32) | Demanda motor (filtro Responsiveness) |
+| `throttle` | = `throttle_input` (legacy CSV) | Compat import antiguo |
 | `engine_rpm` | `vehicle+0x114` (f32) | ~350 ralentí, sube con gas |
 | `fuel_rate_pct_min` | derivado de `fuel_pct` | proxy de carga motor sin offset |
 
@@ -204,7 +212,7 @@ python cheat_engine/scan_cargo.py --diff vacio cargado
 
 Cabecera completa (ver `memoria_havok.CSV_HEADER`):
 
-`t_s`, `speed_kmh`, `vel_*`, `ang_yaw`, `pos_*`, `fuel_pct`, `vehicle_id`, `terrain_kind`, `contact_avg`, `throttle`, `engine_rpm`, `fuel_rate_pct_min`, `load_hint`, `payload_kg`, `total_mass_kg`, …
+`t_s`, `speed_kmh`, `vel_*`, `ang_yaw`, `pos_*`, `fuel_pct`, `vehicle_id`, `terrain_kind`, `contact_avg`, `diff_lock_live`, `throttle_input`, `throttle_motor`, `throttle`, `engine_rpm`, …
 
 Sesiones JSON: `telemetria/sesiones/<vehiculo>/`. Histórico inválido: `telemetria/sesiones/_archivo/`.
 

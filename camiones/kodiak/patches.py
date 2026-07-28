@@ -2,8 +2,7 @@
 
 from __future__ import annotations
 
-# Stock catalogo: ~7513 kg, fuel 200 L, Responsiveness 0.15
-# Mod: +~5 % masa, menos arcade; motor/ruedas comparten familia Fleetstar (e_us_truck_old)
+# Mod **8150 kg** (SR!NFO ~8201).
 
 PATCHES: dict[str, list[tuple[str, str]]] = {
     "[media]/classes/trucks/chevrolet_kodiakc70.xml": [
@@ -11,15 +10,15 @@ PATCHES: dict[str, list[tuple[str, str]]] = {
         ('Responsiveness="0.15"', 'Responsiveness="0.11"'),
         (
             'ImpactType="Truck"\r\n\t\t\tMass="4500"\r\n\t\t\tModelFrame="BoneChassis_cdt"',
-            'ImpactType="Truck"\r\n\t\t\tMass="4690"\r\n\t\t\tModelFrame="BoneChassis_cdt"',
+            'ImpactType="Truck"\r\n\t\t\tMass="4750"\r\n\t\t\tModelFrame="BoneChassis_cdt"',
         ),
         (
             'ImpactType="Truck"\r\n\t\t\t\tMass="1500"\r\n\t\t\t\tModelFrame="BoneCabin_cdt"',
-            'ImpactType="Truck"\r\n\t\t\t\tMass="1605"\r\n\t\t\t\tModelFrame="BoneCabin_cdt"',
+            'ImpactType="Truck"\r\n\t\t\t\tMass="1693"\r\n\t\t\t\tModelFrame="BoneCabin_cdt"',
         ),
         (
             'ImpactType="Truck"\r\n\t\t\t\t\tMass="1500"\r\n\t\t\t\t\tModelFrame="BoneCabinRagdoll_cdt"',
-            'ImpactType="Truck"\r\n\t\t\t\t\tMass="1605"\r\n\t\t\t\t\tModelFrame="BoneCabinRagdoll_cdt"',
+            'ImpactType="Truck"\r\n\t\t\t\t\tMass="1693"\r\n\t\t\t\t\tModelFrame="BoneCabinRagdoll_cdt"',
         ),
     ],
     "[media]/classes/engines/e_us_truck_old.xml": [

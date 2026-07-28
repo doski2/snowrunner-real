@@ -1,83 +1,144 @@
 # SnowRunner — KHAN 39 Marshall (mod realista)
 
-Metodología general: `docs/FASE-1.md` … `docs/FASE-8.md`.
+Metodología: `docs/METODO-PAK.md`, `docs/FASE-1.md` … `docs/FASE-4.md`.
+
+| Campo          | Valor                            |
+| -------------- | -------------------------------- |
+| ID mod         | `marshall`                       |
+| ID juego       | `khan_39_marshall`               |
+| Tipo           | Scout UAZ/TREKOL                 |
+| Masa vacía mod | **2030 kg**                      |
+| Parches        | `camiones/marshall/patches.py`   |
+| Simulador      | `camiones/marshall/simulador.py` |
 
 ---
 
-## Tu setup actual
+## Setup en juego (referencia)
 
-| Pieza           | En juego                                         | XML                                         |
-|-----------------|--------------------------------------------------|---------------------------------------------|
-| Motor           | **Kr 135-T** (objetivo) / Kr 104 (F2 `20260630`) | `ru_scout_old_engine_1` / `_0`              |
-| Suspensión      | **Reptadora** (Rock Crawler)                     | `khan_39_marshall_suspension_crawler`       |
-| Neumáticos      | **45" TM II**                                    | `mudtires_2` / `wheels_scout_yar_871`       |
-| Caja (prevista) | **SnowRunner**                                   | `g_scout_offroad` en `gearboxes_scouts.xml` |
-| Tracción        | AWD siempre + diff lock                          | stock                                       |
+| Pieza       | En juego              | XML / socket                                   |
+| ----------- | --------------------- | ---------------------------------------------- |
+| Motor       | **Kr 135-T**          | `ru_scout_old_engine_1`                        |
+| Suspensión  | **Reptadora**         | `khan_39_marshall_suspension_crawler` (taller) |
+| Neumáticos  | **45" TM II**         | `mudtires_2` / `wheels_scout_yar_871`          |
+| Tracción    | AWD + diff            | stock                                          |
+| Caja        | SnowRunner *(taller)* | `g_scout_offroad` — no parcheada               |
 
----
-
-## Qué hace el mod
-
-| Parámetro                 | Stock             | Mod                                                       |
-|---------------------------|-------------------|-----------------------------------------------------------|
-| Masa total                | 1500 kg           | **1780 kg**                                               |
-| `Responsiveness`          | 0.6               | **0.04**                                                  |
-| TM II `SubstanceFriction` | 2.4               | **1.7**                                                   |
-| TM I `BodyFriction`       | 2.4               | **2.0**                                                   |
-| Kr 104                    | sin cambio        | MaxDelta 0.01 ya OK                                       |
-| Kr 135-T                  | sin cambio en mod | `ru_scout_old_engine_1`; torque 40k stock; sim `km_kr135` |
-
-**No se toca:** suspensión reptadora (taller), motor compartido `e_ru_scout_old.xml` (afecta Lo4F / Gor BY-4).
-
-**Compartido:** `wheels_scout_yar_871.xml` también lo usan **Yar 87** y **Chevy Apache**.
-
-**Caja SnowRunner:** el mod **no parchea** `gearboxes_scouts.xml`. Instálala en taller; no hace falta repack.
-
-| Caja            | XML                | Uso recomendado                             |
-|-----------------|--------------------|---------------------------------------------|
-| Stock (default) | `g_scout_default`  | 5 marchas auto; solo L                      |
-| **SnowRunner**  | `g_scout_offroad`  | Barro/charcos: **L, L+, L−, H**; menos vmax |
-| Freeway         | `g_scout_highway`  | Carretera; no para tu setup                 |
-| Fine-tune       | `g_scout_finetune` | L manual fino; más consumo AWD              |
-
-En barro profundo: **L o L+**, diff ON, no pares. En asfalto: auto o **H** (máx ~16 angVel vs 20 stock).
+**Compartido:** `wheels_scout_yar_871.xml` (Yar 87, Chevy Apache).
 
 ---
 
-## Aplicar
+## Referencia real
+
+### Prototipo
+
+**KHAN 39 Marshall** — scout pesado del juego (UAZ / TREKOL). Motor **Kr** y neumático **TM II** =
+taller; suspensión **reptadora** = upgrade juego.
+
+### Ficha histórica ([Truck Encyclopedia — UAZ-469](https://truck-encyclopedia.com/coldwar/ussr/UAZ-469.php))
+
+Análogo scout ruso documentado: **UAZ-469** (sustituye GAZ-69, **1972–2007**, ~1 000 000 u.).
+
+| Campo       | UAZ-469 (TE)              |
+| ----------- | ------------------------- |
+| Dimensiones | 4025 × 1785 × 2050 mm     |
+| Masa        | **2380 kg**               |
+| Motor       | 2,4 L, **70 hp**          |
+| Vel. máx.   | **70 km/h**               |
+| Autonomía   | ~**600 km** (2×39 L)      |
+| Carga       | 6 pax / **600 kg** útil   |
+| GC          | **220–300 mm**            |
+
+Mod **2030 kg** cerca de masa UAZ; motor `e_ru_scout_old.xml` **no** parcheado (compartido).
+
+### Ficha comunidad (SR!NFO)
+
+| Campo            | Valor                            |
+| ---------------- | -------------------------------- |
+| Masa vacía       | **2029 kg**                      |
+| Torque stock/max | 30k / 90k Ncm                    |
+| Depósito         | 70 L                             |
+| Tracción         | 4×4, AWD Always, diff Switchable |
+
+### XML stock vs mod
+
+| Parámetro        | Catálogo          | Mod                            |
+| ---------------- | ----------------- | ------------------------------ |
+| Masa             | ~1792 kg          | **2030 kg**                    |
+| `Responsiveness` | 0.04 (stock bajo) | **0.04** (parcheado desde 0.6) |
+
+Mod sube masa hacia SR!NFO; motor `e_ru_scout_old.xml` **no** parcheado (compartido).
 
 ```powershell
-python apply_mod.py --vehicle marshall
-python verify_pak.py
-python -m camiones.marshall.simulador
-python -m unittest camiones.marshall.test -v
 ```
-
-Copiar `initial.pak` → `...\SnowRunner\preload\paks\client\`
 
 ---
 
-## Telemetría
+## Qué hace el mod (stock → realista)
 
-| Fase | Protocolo              | Notas                                                     |
-|------|------------------------|-----------------------------------------------------------|
-| F1   | `km_f1_asfalto`        | Kr 135-T + TM II + diff                                   |
-| F2   | `km_f2_barro_tm2`      | Kr 135-T; marcha baja (F2 indexado `20260630` fue Kr 104) |
-| F2b  | `km_f2_barro_profundo` | Barro tint oscuro / extrusion                             |
-| F3   | `km_f3_carga`          | Remolque scout + carga                                    |
+| Parámetro                 | Stock | Mod       | Fase   |
+| ------------------------- | ----- | --------- | ------ |
+| Masa total                | 1500  | **2030**  | 1 / 3  |
+| `Responsiveness`          | 0.6   | **0.04**  | 1      |
+| TM II `SubstanceFriction` | 2.4   | **1.7**   | 2 / 4  |
+| TM I `BodyFriction`       | 2.4   | **2.0**   | 2      |
+
+**No se toca:** suspensión reptadora (taller), motores en `e_ru_scout_old.xml`.
+
+---
+
+## Fases de prueba (en juego)
+
+### F1 — Asfalto
+
+| Condición  | Valor                              |
+| ---------- | ---------------------------------- |
+| Motor      | Kr 135-T                           |
+| Neumático  | 45" TM II                          |
+| Diff       | ON                                 |
+| Conducción | WOT, marcha alta, ~60 s recto      |
+
+**Cierre:** vmax contenido; caja SnowRunner en barro, H en asfalto si aplica.
+
+### F2 — Barro TM II
+
+| Condición  | Valor                    |
+| ---------- | ------------------------ |
+| Mapa       | Barro Michigan           |
+| Conducción | Marcha L o L+, diff ON   |
+
+**Cierre:** crawl lento pero avanza. Ajustar `KM_MUD_*` y/o `SubstanceFriction`.
+
+### F3 — Carga
+
+| Condición | Valor                    |
+| --------- | ------------------------ |
+| Carga     | Remolque scout + carga   |
+| Resto     | Igual que F2             |
+
+---
+
+## Aplicar y validar
 
 ```powershell
-python grabar_ce.py --probe
-grabar_telemetria.bat
-python importar_ce_csv.py --auto --compare
 ```
-
-CE ID: `s_khan_39_marshall` · Masa vacía mod: **1780 kg**
 
 ---
 
 ## Pendiente
 
-- [ ] Grabar baseline `km_f2_barro_tm2` con reptadora
-- [ ] Calibrar `KM_MUD_*` en sim si MAE &gt; 15 km/h
-- [ ] Validar carga Havok (`scan_cargo.py`)
+| ID    | Fase   | Estado   | Notas                 |
+| ----- | ------ | -------- | --------------------- |
+| KM-F1 | 1      | [ ]      | Asfalto Kr 135-T      |
+| KM-F2 | 2      | [ ]      | Barro TM II           |
+| KM-F3 | 3      | [ ]      | Remolque + carga      |
+
+---
+
+## Comentarios
+
+```text
+```
+
+---
+
+*Última revisión: 2026-07-29 — Truck Encyclopedia + Referencia real.*

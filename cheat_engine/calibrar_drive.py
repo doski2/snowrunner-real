@@ -383,13 +383,26 @@ def verify_throttle_rpm(
         and (v_full - v_off) >= 0.45
     )
     ok_rpm = True
+    rpm_note = ""
     if rpm_spec and rpm_off is not None and rpm_full is not None:
         ok_rpm = rpm_full - rpm_off >= 25.0
+        if ok_thr and not ok_rpm:
+            rpm_note = (
+                "\n  AVISO: gas OK pero rpm +"
+                f"{rpm_full - rpm_off:.0f} (<25) — freno/pared o ralenti; "
+                "prueba sin freno en marcha L."
+            )
 
-    ok = ok_thr and ok_rpm
+    ok = ok_thr
     detail = "\n".join(lines)
+    if not ok_thr and v_off is not None and v_full is not None and v_off >= 0.85 and v_full >= 0.85:
+        detail += (
+            "\n  Pista: throttle pegado ~1.0 en off y full — offset viejo (ej. dl+028+138 en Bandit). "
+            "Ejecuta: python cheat_engine/calibrar_drive.py --from-sweep --apply"
+        )
     if ok:
-        return True, detail + "\n  OK verificacion gas/RPM."
+        suffix = "\n  OK verificacion gas/RPM." if ok_rpm else rpm_note + "\n  OK gas (rpm no validado)."
+        return True, detail + suffix
     return False, detail + "\n  FALLO verificacion — offset incorrecto o pedal no cambiado."
 
 
@@ -404,10 +417,18 @@ def apply_candidates(
     drive = dict(ref.get("drive_runtime") or {})
     cands = dict(drive.get("candidates") or {})
     if thr_spec:
+        cands["throttle_input"] = thr_spec
         cands["throttle_f32"] = thr_spec
+    if not cands.get("throttle_motor_f32"):
+        cands["throttle_motor_f32"] = dict(mh.DEFAULT_THROTTLE_MOTOR_SPEC)
     if rpm_spec:
         cands["engine_rpm_f32"] = rpm_spec
     drive["candidates"] = cands
+    if vehicle_id and thr_spec:
+        from throttle_resolver import clear_throttle_cache, save_per_vehicle_throttle
+
+        save_per_vehicle_throttle(ref, vehicle_id, thr_spec)
+        clear_throttle_cache()
     drive["status"] = (
         f"throttle+rpm calibrados {time.strftime('%Y-%m-%d')} "
         f"veh={vehicle_id or '?'}"
@@ -605,10 +626,10 @@ def preflight_check(h: int, base: int) -> tuple[bool, str]:
     """Comprobacion rapida sin prompts: offsets presentes y throttle no pegado a 1.0 parado."""
     ref = mh.load_offsets_reference()
     cands = (ref.get("drive_runtime") or {}).get("candidates") or {}
-    thr_spec = cands.get("throttle_f32")
+    thr_spec = cands.get("throttle_input") or cands.get("throttle_f32")
     rpm_spec = cands.get("engine_rpm_f32")
     if not thr_spec:
-        return False, "throttle_f32 sin calibrar — ejecuta: .\\grabar_telemetria.bat drive_cal"
+        return False, "throttle_input sin calibrar — ejecuta: .\\grabar_telemetria.bat drive_cal"
 
     sample = mh.read_active_sample(h, base) or {}
     veh_ptr = _vehicle_ptr_from_sample(sample)
@@ -657,10 +678,10 @@ def preflight_only() -> int:
 def verify_only() -> int:
     ref = mh.load_offsets_reference()
     cands = (ref.get("drive_runtime") or {}).get("candidates") or {}
-    thr_spec = cands.get("throttle_f32")
+    thr_spec = cands.get("throttle_input") or cands.get("throttle_f32")
     rpm_spec = cands.get("engine_rpm_f32")
     if not thr_spec:
-        print("throttle_f32 sin calibrar — ejecuta: grabar_telemetria.bat drive_cal")
+        print("throttle_input sin calibrar — ejecuta: grabar_telemetria.bat drive_cal")
         return 1
 
     opened = mh.open_snowrunner()
@@ -686,6 +707,60 @@ def verify_only() -> int:
         from ctypes import windll
 
         windll.kernel32.CloseHandle(h)
+
+
+def from_sweep(
+    path: str | None = None,
+    *,
+    apply: bool,
+    verify_live: bool,
+    rank: int = 1,
+) -> int:
+    """Aplica candidato #N de pedal_sweep_latest.json (auto-hunt)."""
+    snaps_dir = os.path.join(os.path.dirname(__file__), "drive_snaps")
+    sweep_path = path or os.path.join(snaps_dir, "pedal_sweep_latest.json")
+    if not os.path.isfile(sweep_path):
+        print(f"No existe: {sweep_path}")
+        print("Ejecuta primero: .\\banco_auto_pedal.bat")
+        return 1
+    with open(sweep_path, encoding="utf-8") as f:
+        payload = json.load(f)
+    cands = payload.get("candidates") or []
+    if not cands:
+        print("Sin candidatos en el barrido — repite banco_auto_pedal con 0%% <-> 100%%.")
+        return 1
+    idx = max(1, rank) - 1
+    if idx >= len(cands):
+        print(f"Solo hay {len(cands)} candidatos; pediste rank {rank}.")
+        return 1
+    top = cands[idx]
+    thr_spec = dict(top.get("spec") or {})
+    if not thr_spec:
+        thr_spec = {
+            "base": top["base"],
+            "offset": top["offset"],
+            "kind": top.get("kind", "f32"),
+        }
+    thr_spec.setdefault("kind", top.get("kind", "f32"))
+    print(f"Barrido: {payload.get('vehicle_id')}  ({payload.get('n_samples')} muestras)")
+    print(
+        f"Candidato #{rank}: {top['base']}{top['offset']} ({thr_spec['kind']}) "
+        f"span={top.get('span')} vmin={top.get('vmin')} vmax={top.get('vmax')}"
+    )
+    rpm_spec = {"base": "vehicle", "offset": "+0x114", "kind": "f32"}
+    if apply:
+        out = apply_candidates(
+            thr_spec,
+            rpm_spec,
+            vehicle_id=str(payload.get("vehicle_id") or ""),
+            snap_note=f"from-sweep {os.path.basename(sweep_path)} #{rank}",
+        )
+        print(f"Guardado {out}")
+    else:
+        print("Dry-run — usa --apply para escribir offsets_referencia.json")
+    if verify_live and apply:
+        return verify_only()
+    return 0
 
 
 def from_snaps(name_off: str, name_full: str, *, apply: bool, verify_live: bool) -> int:
@@ -742,6 +817,19 @@ def main() -> int:
         metavar=("OFF", "FULL"),
         help="Analizar snapshots drive_snaps/ (sin juego)",
     )
+    parser.add_argument(
+        "--from-sweep",
+        nargs="?",
+        const="",
+        metavar="JSON",
+        help="Aplicar top candidato de pedal_sweep_latest.json (auto-hunt)",
+    )
+    parser.add_argument(
+        "--sweep-rank",
+        type=int,
+        default=1,
+        help="Candidato N del barrido (default 1)",
+    )
     parser.add_argument("--apply", action="store_true", help="Con --from-snaps: escribir offsets")
     parser.add_argument(
         "--verify-live",
@@ -756,6 +844,16 @@ def main() -> int:
         return verify_only()
     if args.from_snaps:
         return from_snaps(args.from_snaps[0], args.from_snaps[1], apply=args.apply, verify_live=args.verify_live)
+    if args.from_sweep is not None:
+        sweep_path = args.from_sweep or None
+        if not args.apply and not args.verify_live:
+            args.apply = True
+        return from_sweep(
+            sweep_path,
+            apply=args.apply,
+            verify_live=args.verify_live,
+            rank=args.sweep_rank,
+        )
     if args.interactive or len(sys.argv) == 1:
         return interactive_calibrate()
     parser.print_help()

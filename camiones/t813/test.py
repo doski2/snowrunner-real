@@ -38,7 +38,7 @@ class TestT813Registry(unittest.TestCase):
         self.assertEqual(VEHICLES["t813"].ce_id, "s_tatra_t813")
 
     def test_empty_mass_for_ce(self) -> None:
-        self.assertEqual(EMPTY_MASS_KG["t813"], 14571.0)
+        self.assertEqual(EMPTY_MASS_KG["t813"], 14000.0)
         self.assertEqual(VEHICLE_REAL.mass_kg, EMPTY_MASS_KG["t813"])
 
     def test_ce_id_alias(self) -> None:
@@ -68,8 +68,9 @@ class TestT813Patches(unittest.TestCase):
 
 
 class TestT813Sim(unittest.TestCase):
-    def test_real_heavier_than_stock(self) -> None:
-        self.assertGreater(VEHICLE_REAL.mass_kg, VEHICLE_STOCK.mass_kg)
+    def test_real_mass_te_reference(self) -> None:
+        self.assertEqual(VEHICLE_REAL.mass_kg, 14000.0)
+        self.assertLessEqual(VEHICLE_REAL.mass_kg, VEHICLE_STOCK.mass_kg)
 
     def test_msh_i_substance_mod(self) -> None:
         self.assertEqual(TIRES["msh_i"]["substance"], 2.2)

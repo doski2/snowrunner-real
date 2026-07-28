@@ -50,6 +50,20 @@ class TestGrabarCeHelpers(unittest.TestCase):
         }
         self.assertEqual(resolve_protocol(args, sample), "fs_f1_asfalto")
 
+    def test_load_csv_rows_large_field(self) -> None:
+        big = "x" * 200_000
+        csv_text = f"t_s,vehicle_id,chain\n0.0,s_gmc_9500,{big}\n"
+        with tempfile.NamedTemporaryFile("w", encoding="utf-8", delete=False, suffix=".csv") as f:
+            f.write(csv_text)
+            path = f.name
+        try:
+            rows = load_csv_rows(path)
+            self.assertEqual(len(rows[0]["chain"]), 200_000)
+        finally:
+            import os
+
+            os.unlink(path)
+
     def test_load_csv_rows_roundtrip(self) -> None:
         csv_text = "t_s,vehicle_id,speed_kmh\n0.0,s_gmc_9500,5.0\n"
         with tempfile.NamedTemporaryFile("w", encoding="utf-8", delete=False, suffix=".csv") as f:

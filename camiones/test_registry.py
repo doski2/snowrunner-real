@@ -60,6 +60,8 @@ class TestRegistryCeIds(unittest.TestCase):
             "s_chevrolet_kodiakc70": "kodiak",
             "chevrolet_ck1500": "ck1500",
             "s_international_scout_800": "scout800",
+            "s_krs_58_bandit": "bandit",
+            "krs_58_bandit": "bandit",
         }
         for game_id, expected in cases.items():
             with self.subTest(game_id=game_id):
@@ -79,6 +81,7 @@ class TestRegistryMass(unittest.TestCase):
         from camiones.scout800.simulador import VEHICLE_REAL as S8_REAL
         from camiones.mh9500.simulador import VEHICLE_REAL as MH_REAL
         from camiones.t813.simulador import VEHICLE_REAL as T813_REAL
+        from camiones.bandit.simulador import VEHICLE_REAL as BD_REAL
 
         expected = {
             "ck1500": VEHICLE_I6.mass_kg,
@@ -88,11 +91,12 @@ class TestRegistryMass(unittest.TestCase):
             "kodiak": KD_REAL.mass_kg,
             "scout800": S8_REAL.mass_kg,
             "t813": T813_REAL.mass_kg,
+            "bandit": BD_REAL.mass_kg,
         }
         self.assertEqual(EMPTY_MASS_KG, expected)
 
     def test_empty_mass_kg_helper(self) -> None:
-        self.assertEqual(empty_mass_kg("marshall"), 1780.0)
+        self.assertEqual(empty_mass_kg("marshall"), 2030.0)
         self.assertIsNone(empty_mass_kg(None))
         self.assertIsNone(empty_mass_kg("unknown"))
 

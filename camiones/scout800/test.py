@@ -25,4 +25,4 @@ class TestScout800(unittest.TestCase):
 
     def test_vehicle_diff_always(self) -> None:
         self.assertTrue(VEHICLE_REAL.diff_lock)
-        self.assertEqual(VEHICLE_REAL.mass_kg, 2350.0)
+        self.assertEqual(VEHICLE_REAL.mass_kg, 2100.0)

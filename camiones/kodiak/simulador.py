@@ -45,7 +45,7 @@ VEHICLE_STOCK = VehicleConfig(
 )
 VEHICLE_REAL = VehicleConfig(
     "Kodiak C70 realista",
-    7900,
+    8150,
     175,
     TIRES["highway"],
     "highway",

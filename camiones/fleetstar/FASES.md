@@ -1,139 +1,163 @@
-# SnowRunner — Fleetstar F2070A (mod realista)
+# SnowRunner — International Fleetstar F2070A (mod realista)
 
-Metodología general: `docs/FASE-1.md` … `docs/FASE-8.md` · MH9500: `camiones/mh9500/FASES.md`.
+Metodología: `docs/METODO-PAK.md`, `docs/FASE-1.md` … `docs/FASE-4.md`.
 
----
-
-## Tu setup actual (junio 2026)
-
-| Pieza | En juego |
-|-------|----------|
-| Motor | **Si-6V/1900** |
-| Neumáticos | **42" UHD I** (highway) |
-| Tracción | **AWD** + **bloqueo diferencial** |
-| Suspensión | Stock |
+| Campo          | Valor                             |
+| -------------- | --------------------------------- |
+| ID mod         | `fleetstar`                       |
+| ID juego       | `international_fleetstar_f2070a`  |
+| Tipo           | HEAVY 6×4                         |
+| Masa vacía mod | **7400 kg**                       |
+| Parches        | `camiones/fleetstar/patches.py`   |
+| Simulador      | `camiones/fleetstar/simulador.py` |
 
 ---
 
-## Qué hace el mod
+## Setup en juego (referencia)
 
-| Parámetro | Stock | Mod |
-|-----------|-------|-----|
-| Masa total | 6300 kg | **6650 kg** |
-| Combustible | 240 L | **210 L** |
-| Si-6V/1900 torque | 135000 | **92000** |
-| Si-6V/2100T torque | 145000 | **99000** |
-| Si-6V/2100T consumo | 6.0 | **3.9** |
-| `highway_1` Substance | 0.4 | **0.5** |
+| Pieza      | En juego              |
+| ---------- | --------------------- |
+| Motor      | **Si-6V/1900**        |
+| Neumáticos | **42" UHD I**         |
+| Tracción   | **AWD** + diff lock   |
+| Suspensión | stock                 |
 
-Los motores comparten `e_us_truck_old.xml` (`EngineResponsiveness` 0,024). El **2100T** usa el mismo ratio de nerfeo que el 1900 (92÷135 ≈ **68 %** del torque stock → 99k). Pendiente validar con CE `fs_f1_asfalto` cuando lo instales.
+**Motores alternativos** (mismo XML `e_us_truck_old.xml`):
 
-El parche afecta otros camiones con socket `e_us_truck_old` (p. ej. White Western 4964). Solo Fleetstar (chasis, ruedas, suspensión): `python apply_mod.py --vehicle fleetstar`.
+| Motor       | XML                     | Torque stock → mod (Ncm) |
+| ----------- | ----------------------- | ------------------------ |
+| Si-6V/1900  | `us_truck_old_engine_0` | 135000 → **92000**       |
+| Si-6V/2100T | `us_truck_old_engine_1` | 145000 → **99000**       |
+
+Parche compartido afecta otros camiones con socket `e_us_truck_old` (p. ej. White Western 4964).
+Solo chasis Fleetstar: `python apply_mod.py --vehicle fleetstar`.
 
 ---
 
-## Motores Si-6V (taller)
+## Referencia real
 
-| Nombre in-game | XML | Torque mod | Cuándo |
-|----------------|-----|------------|--------|
-| Si-6V/1900 | `us_truck_old_engine_0` | 92000 | Setup actual / telemetría histórica |
-| Si-6V/2100T | `us_truck_old_engine_1` | 99000 | Upgrade ~+7 % vs 1900 mod (ratio stock 145k/135k) |
+### Prototipo
 
-**Probar más adelante** (mismo tramo, UHD + AWD + diff):
+**International Fleetstar F2070A** — camión **6×4** civil IH/Navistar (1960s–1970s), entre Loadstar
+y Paystar. Motor juego **Si-6V** = `e_us_truck_old.xml`.
+
+### Truck Encyclopedia
+
+Sin artículo al **Fleetstar**. Fabricante en
+[US trucks WW2](https://truck-encyclopedia.com/ww2/us/us-trucks.php) (**International Harvester**)
+y [Cold War US](https://truck-encyclopedia.com/coldwar/us/coldwar-us-trucks.php).
+
+| Campo (F2070 civil) | Referencia histórica        |
+| ------------------- | --------------------------- |
+| Masa vacía          | ~**8200 kg** (18 000 lb)    |
+| GVWR máx.           | hasta ~**27 630 kg**        |
+| Motor típico        | Cummins **NTC-335**, 13 spd |
+| Configuración       | 6×4 tandem, cabina D        |
+
+Mod **7400 kg** vacío: por debajo del vacío civil (juego arcade).
+
+### Ficha comunidad (SR!NFO)
+
+| Campo            | Valor                    |
+| ---------------- | ------------------------ |
+| Masa vacía       | **7674 kg**              |
+| Torque stock/max | 135k / 155k Ncm          |
+| Depósito         | 240 L                    |
+| Tracción         | 6×6, AWD/diff Switchable |
+
+### XML stock vs mod
+
+| Parámetro        | Catálogo | Mod         |
+| ---------------- | -------- | ----------- |
+| Masa             | ~6658 kg | **7400 kg** |
+| Si-6V/1900       | 135k Ncm | **92k Ncm** |
+| `Responsiveness` | 0.085    | (stock)     |
+
+Torque mod ≈ **68 %** del stock (misma ratio que otros Si-6V del proyecto).
 
 ```powershell
-python apply_mod.py --vehicle fleetstar
-python verify_pak.py
-# Instalar 2100T en taller, luego:
-python grabar_ce.py --probe
-grabar_telemetria.bat
-python importar_ce_csv.py --auto --compare --index
 ```
-
-La comparación sim usa `engine_name_xml` del import si es `us_truck_old_engine_1`, o `engine_id` `fs_real_2100`. Sim: `python -m camiones.fleetstar.simulador` (muestra 1900 y 2100T en asfalto).
 
 ---
 
-## Aplicar
+## Qué hace el mod (stock → realista)
+
+| Parámetro             | Stock   | Mod         | Fase   |
+| --------------------- | ------- | ----------- | ------ |
+| Masa total            | 6300 kg | **7400 kg** | 1 / 3  |
+| Combustible           | 240 L   | **210 L**   | 1      |
+| Si-6V/1900 torque     | 135000  | **92000**   | 1      |
+| `highway_1` Substance | 0.4     | **0.5**     | 2 / 4  |
+
+---
+
+## Fases de prueba (en juego)
+
+### F1 — Asfalto
+
+| Condición  | Valor                         |
+| ---------- | ----------------------------- |
+| Motor      | Si-6V/1900 (o 2100T a probar) |
+| Neumático  | 42" UHD I                     |
+| AWD + diff | ON                            |
+| Conducción | WOT, marcha alta, ~60 s       |
+
+**Cierre:** aceleración diesel contenida; comparar 1900 vs 2100T en mismo tramo.
+
+### F2 — Barro UHD
+
+| Condición  | Valor                    |
+| ---------- | ------------------------ |
+| Mapa       | Barro Michigan           |
+| Conducción | Marcha L, diff ON        |
+
+**Cierre:** crawl ~2–3 km/h. Ajustar `FS_MUD_*` y/o `SubstanceFriction`.
+
+### F3 — Bastidor cargado
+
+| Condición | Valor              |
+| --------- | ------------------ |
+| Carga     | Bastidor lleno     |
+| Resto     | Igual que F2       |
+
+---
+
+## Referencia simulador
 
 ```powershell
-python apply_mod.py --vehicle fleetstar
-python verify_pak.py
-python -m camiones.fleetstar.simulador
-python -m unittest camiones.fleetstar.test -v
 ```
 
-Copiar `initial.pak` → `...\SnowRunner\preload\paks\client\`
+| Escenario        | Esperado (sim)      |
+| ---------------- | ------------------- |
+| Asfalto AWD      | ~0–97 en ~38 s      |
+| Barro UHD + diff | crawl ~2–3 km/h     |
+| Cargado 6 t      | más lento que vacío |
 
 ---
 
-## Fases — orden y telemetría
-
-| Fase | Qué hacer | Protocolo / grabación |
-|------|-----------|------------------------|
-| **1** | Asfalto vacío, AWD, acelerar | `fs_f1_asfalto` |
-| **2** | Barro UHD + AWD + diff, marcha baja | `fs_f2_barro_uhd` |
-| **2b** | (Futuro) Offroad mismo tramo | `fs_f2_barro_offroad` |
-| **3** | Bastidor cargado en barro | `fs_f3_carga` |
-| **5–6** | CE / comparación sim | `grabar_telemetria.bat` |
+## Aplicar y validar
 
 ```powershell
-python grabar_ce.py --probe
-grabar_telemetria.bat
-python importar_ce_csv.py --auto --compare
 ```
-
-`--auto` detecta Fleetstar, terreno y carga; no hace falta `--protocol fs_f3_carga` manual si `payload_kg` &gt; 300.
-
----
-
-## Sim de referencia
-
-```powershell
-python -m camiones.fleetstar.simulador
-```
-
-| Situación | Esperado (sim) |
-|-----------|----------------|
-| Asfalto AWD | ~0–97 en ~38 s |
-| Barro UHD + AWD + diff | crawl ~2–3 km/h |
-| Cargado 6 t barro | más lento que vacío |
-
----
-
-## CE / memoria
-
-| Campo | Valor |
-|-------|--------|
-| ID juego (CE) | `s_fleetstar_f2070a` |
-| Masa vacía mod | **6650 kg** (`registry.EMPTY_MASS_KG`) |
-| Offsets | Igual que CK1500/MH — `cheat_engine/README.md` |
-| Terreno asfalto | Usar `contact_avg` ~0.80 (`+0x2EC`); ver `wheel_snaps/asfalto_fs.json` |
-
-### Sesiones CE (jun 2026)
-
-| Sesión | Estado |
-|--------|--------|
-| `ce_fs_f1_asfalto_20260625_211942.json` | **Válida** — asfalto, `contact=0.804`, `kind=hard` |
-| `ce_fs_f2_barro_uhd_*` (varias) | Archivadas en `telemetria/sesiones/_archivo/` — re-grabar barro real |
-
----
-
-## Archivos
-
-| Archivo | Función |
-|---------|---------|
-| `camiones/fleetstar/patches.py` | Parches XML |
-| `camiones/fleetstar/apply_mod.py` | Solo Fleetstar |
-| `camiones/fleetstar/simulador.py` | Sim 6 ruedas |
-| `camiones/fleetstar/test.py` | Tests |
-| `grabar_telemetria.bat` | Grabación 120 s (todos los camiones) |
 
 ---
 
 ## Pendiente
 
-- [ ] Re-grabar `fs_f2_barro_uhd` en barro Michigan (tramo fijo)
-- [ ] Calibrar `FS_MUD_*` con telemetría real
-- [ ] Validar `fs_f3_carga` con bastidor lleno (`scan_cargo.py`)
-- [ ] Validar **Si-6V/2100T** (`us_truck_old_engine_1`) con `fs_f1_asfalto` tras instalar en taller
+| ID          | Fase   | Estado   | Notas                          |
+| ----------- | ------ | -------- | ------------------------------ |
+| FS-F1       | 1      | [ ]      | Asfalto WOT Si-6V/1900         |
+| FS-MOT-2100 | motor  | [ ]      | 2100T mismo tramo              |
+| FS-F2       | 2      | [ ]      | Barro UHD marcha L             |
+| FS-F3       | 3      | [ ]      | Bastidor lleno barro           |
+
+---
+
+## Comentarios
+
+```text
+```
+
+---
+
+*Última revisión: 2026-07-29 — Truck Encyclopedia + Referencia real.*

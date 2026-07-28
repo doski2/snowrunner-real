@@ -47,7 +47,9 @@ def _print_snapshot(data: dict) -> None:
     cat = data.get("diff_lock_catalog") or "-"
     print(f"  catalog diff: {cat}  awd_mod_xml={data.get('gearbox_awd_modifier_xml') or '-'}")
     print(f"  live diff={data.get('diff_lock_live') or '?'} awd={data.get('awd_live') or '?'} "
-          f"L={data.get('low_gear_live') or '?'} throttle={data.get('throttle') or '?'} "
+          f"L={data.get('low_gear_live') or '?'} "
+          f"thr_in={data.get('throttle_input') or '?'} "
+          f"thr_mot={data.get('throttle_motor') or '?'} "
           f"rpm={data.get('engine_rpm') or '?'}")
     if data.get("fuel_rate_pct_min"):
         print(f"  fuel_rate={data['fuel_rate_pct_min']} %/min")

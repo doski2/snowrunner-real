@@ -42,6 +42,7 @@ DRIVE_LOGIC_OFF = 0x2A8EDC8  # validado mismo build (antes 0x2E5DA08)
 OFF_VEH_TRUCK = 0x8
 OFF_VEH_DRIVE = 0x20
 OFF_RB = 0x5D0
+OFF_RB_ALT = 0x5C8  # legacy / algunos vehiculos DLC
 OFF_VX = 0x230
 OFF_VY = 0x234
 OFF_VZ = 0x238
@@ -63,6 +64,14 @@ OFF_WHEELS_END = 0x208
 OFF_WHEEL_GRIP = 0x2FC  # ~1.0 asfalto MH, ~0.2 asfalto FS UHD, ~0.01 barro
 OFF_WHEEL_SURFACE = 0x2B4  # ~+0.81 asfalto MH; en FS suele ser deformacion (~-0.9)
 OFF_WHEEL_CONTACT = 0x2EC  # firmeza sustancia: ~0.80 asfalto, ~0.55 barro (ambos camiones)
+OFF_WHEEL_SECONDARY = 0x2BC  # Bandit saturado: avg mas negativo en barro que en asfalto
+SAT_GRIP_MIN = 0.95
+SAT_CONTACT_MIN = 0.95
+SAT_DEFORM_MAX = -0.5
+SAT_BC_DEEP_MUD_THRESHOLD = -0.130
+SAT_BC_FIRM_MAX = -0.050
+SAT_BC_ASPHALT_MIN = -0.100
+SAT_DEFORM_DEEP_MUD_THRESHOLD = -0.9975
 OFF_WHEEL_LABEL = 0x124  # nombre UI parcial: "... AT I" / "... OS I" (scout, jun-2026)
 OFF_WHEEL_TYPE_XML = 0x140  # tipo rueda XML inline: wheels_scout2, wheels_medium_double, ...
 OFF_WHEEL_TYPE_SCAN_START = 0x120
@@ -149,7 +158,7 @@ CSV_HEADER = (
     "load_hint,trailer_id,cargo_mass_kg,total_mass_kg,empty_mass_kg,payload_kg,"
     "trailer_mass_kg,truck_mass_kg,attached_cargo_mass_kg,yaw_rate_deg_s,turn_radius_m,"
     "packed_cargo_slots,path_cargo_type,frame_addon,"
-    "diff_lock_live,awd_live,low_gear_live,throttle,engine_rpm,fuel_rate_pct_min,"
+    "diff_lock_live,awd_live,low_gear_live,throttle_input,throttle_motor,throttle,engine_rpm,fuel_rate_pct_min,"
     "map_name,level_id\n"
 )
 
@@ -157,6 +166,15 @@ BASE_DIR = os.path.join(os.path.expanduser("~"), "Documents", "My Games", "SnowR
 LOG_PRIMARY = os.path.join(BASE_DIR, "telemetria_ce_log.csv")
 LOG_FALLBACK = os.path.join(os.path.dirname(__file__), "telemetria_ce_log.csv")
 STATUS_PATH = os.path.join(BASE_DIR, "telemetria_ce_status.txt")
+
+
+DEFAULT_THROTTLE_MOTOR_SPEC: dict[str, str] = {
+    "base": "vehicle",
+    "offset": "+0x760",
+    "kind": "f32",
+    "chain": "TRUCK_CONTROL+8",
+    "note": "demanda motor (post-Responsiveness); no es pedal DirectInput",
+}
 
 
 def turn_metrics_from_yaw(speed_kmh: float, yaw_rate_rad_s: float) -> dict[str, float | str]:
@@ -207,7 +225,9 @@ def resolve_log_path() -> str:
     return LOG_PRIMARY
 
 
-def _iter_ptr_vector(h: int, begin: int, end: int, *, max_count: int = 32) -> list[int]:
+def _iter_ptr_vector(
+    h: int, begin: int | None, end: int | None, *, max_count: int = 32
+) -> list[int]:
     """Elementos de un std::vector de punteros (begin/end en bytes del objeto)."""
     if not begin or not end or end <= begin:
         return []
@@ -366,11 +386,45 @@ def _terrain_grade_fields(
     return out
 
 
+def _is_grip_contact_saturated(
+    grips: list[float],
+    contacts: list[float],
+    deforms: list[float],
+) -> bool:
+    if not grips or not contacts or not deforms:
+        return False
+    return (
+        min(grips) >= SAT_GRIP_MIN
+        and min(contacts) >= SAT_CONTACT_MIN
+        and max(deforms) < SAT_DEFORM_MAX
+    )
+
+
+def _classify_saturated_kind(deforms: list[float], bcs: list[float] | None) -> str:
+    """Bandit-like: +2BC negativo profundo, positivo o cluster ~-0.09 (asfalto)."""
+    bc_vals = list(bcs or [])
+    if not bc_vals:
+        return "hard"
+    bc_min = min(bc_vals)
+    deform_avg = sum(deforms) / len(deforms)
+    if bc_min > SAT_BC_FIRM_MAX:
+        return "mud"
+    if bc_min < SAT_BC_DEEP_MUD_THRESHOLD:
+        return "mud"
+    if bc_min >= SAT_BC_ASPHALT_MIN:
+        return "hard"
+    if deform_avg < SAT_DEFORM_DEEP_MUD_THRESHOLD:
+        return "mud"
+    return "hard"
+
+
 def classify_terrain_from_wheels(
     grips: list[float],
     surfaces: list[float],
     *,
     deforms: list[float] | None = None,
+    contacts: list[float] | None = None,
+    bcs: list[float] | None = None,
 ) -> dict[str, Any]:
     """
     Terreno dominante desde contacto Havok por rueda.
@@ -389,6 +443,32 @@ def classify_terrain_from_wheels(
             "grip_min": "",
             "grip_max": "",
             "wheel_kinds": "",
+        }
+
+    deform_list = list(deforms or [])
+    contact_list = list(contacts or [])
+    if (
+        deform_list
+        and contact_list
+        and len(contact_list) == len(grips)
+        and _is_grip_contact_saturated(grips, contact_list, deform_list)
+    ):
+        kind = _classify_saturated_kind(deform_list, bcs)
+        kinds = [kind] * len(grips)
+        grip_avg = sum(grips) / len(grips)
+        surf_avg = sum(surfaces) / len(surfaces) if surfaces else 0.0
+        terrain_kind, surface_wheel, wheel_disagreement = _resolve_dominant_kind(kinds)
+        return {
+            "surface_wheel": surface_wheel,
+            "wheel_grip": f"{grip_avg:.3f}",
+            "terrain_kind": terrain_kind,
+            "surface_avg": f"{surf_avg:.3f}",
+            "contact_avg": "",
+            "grip_min": f"{min(grips):.3f}",
+            "grip_max": f"{max(grips):.3f}",
+            "wheel_kinds": "|".join(kinds),
+            "wheel_disagreement": wheel_disagreement,
+            "terrain_source": "wheel_model;saturated_secondary",
         }
 
     kinds = [
@@ -428,10 +508,12 @@ def read_wheel_terrain(h: int, veh: int, *, vel_y: float | None = None) -> dict[
     surfaces: list[float] = []
     contacts: list[float] = []
     deforms: list[float] = []
+    bcs: list[float] = []
     for w in wheels:
         g = read_f32(h, w + OFF_WHEEL_GRIP)
         sb = read_f32(h, w + OFF_WHEEL_SURFACE)
         ec = read_f32(h, w + OFF_WHEEL_CONTACT)
+        bc = read_f32(h, w + OFF_WHEEL_SECONDARY)
         if g is not None:
             grips.append(g)
         if sb is not None:
@@ -444,7 +526,15 @@ def read_wheel_terrain(h: int, veh: int, *, vel_y: float | None = None) -> dict[
         elif ec is not None:
             surfaces.append(ec)
             contacts.append(ec)
-    result = classify_terrain_from_wheels(grips, surfaces, deforms=deforms or None)
+        if bc is not None:
+            bcs.append(bc)
+    result = classify_terrain_from_wheels(
+        grips,
+        surfaces,
+        deforms=deforms or None,
+        contacts=contacts or None,
+        bcs=bcs or None,
+    )
     if contacts:
         result["contact_avg"] = f"{sum(contacts) / len(contacts):.3f}"
     result.update(
@@ -515,6 +605,86 @@ def _read_named_string(h: int, addr: int, str_off: int) -> str:
     return ""
 
 
+def _looks_like_heap_ptr(val: int | None) -> bool:
+    if not val or val < 0x10000:
+        return False
+    return val <= 0x00007FFFFFFFFFFF
+
+
+def _entity_rigid_body_ptr(h: int, entity_addr: int) -> int | None:
+    for off in (OFF_RB, OFF_RB_ALT):
+        rb = read_u64(h, entity_addr + off)
+        if _looks_like_heap_ptr(rb):
+            return rb
+    return None
+
+
+def _scan_cargo_string_hits(h: int, root: int, *, max_nodes: int = 500) -> list[str]:
+    """DFS de strings cargo/BoneCargo/frame_addon bajo attach, registry o sub +030."""
+    if not root or root < 0x10000:
+        return []
+    seen: set[int] = set()
+    stack = [root]
+    found: set[str] = set()
+    str_offs = (OFF_CARGO_ENTRY_TYPE, 0x000, 0x070, 0x008, 0x010, 0x078, 0x050, 0x058)
+
+    while stack and len(seen) < max_nodes:
+        addr = stack.pop()
+        if addr in seen:
+            continue
+        seen.add(addr)
+        for str_off in str_offs:
+            name = _read_named_string(h, addr, str_off)
+            if not name:
+                continue
+            low = name.lower()
+            if name.startswith("BoneCargo_") and name.endswith("_cdt"):
+                found.add(name)
+            elif name.startswith("cargo_") and ".xml" not in name and "\\" not in name:
+                found.add(name)
+            elif "frame_addon" in low:
+                found.add(name)
+            elif "spare" in low and "part" in low:
+                found.add(name)
+        for off in range(0, 0x200, 8):
+            ptr = read_u64(h, addr + off)
+            if _looks_like_heap_ptr(ptr) and ptr not in seen:
+                stack.append(ptr)
+    return sorted(found)
+
+
+def _path_cargo_from_hits(hits: list[str]) -> str:
+    for name in hits:
+        if name.startswith("cargo_") and ".xml" not in name and "\\" not in name:
+            return name
+    return ""
+
+
+def _frame_addon_from_hits(hits: list[str]) -> str:
+    for name in hits:
+        if "frame_addon" in name.lower():
+            return name
+    return ""
+
+
+def _collect_cargo_string_hits(h: int, veh: int) -> list[str]:
+    hits: set[str] = set()
+    reg = read_u64(h, veh + OFF_LOAD_REGISTRY)
+    if reg:
+        hits.update(_scan_cargo_string_hits(h, reg))
+    attach = read_u64(h, veh + OFF_ATTACH_MANAGER)
+    if attach:
+        hits.update(_scan_cargo_string_hits(h, attach))
+        for sub_off in _ATTACH_CARGO_SUB_OFFS:
+            sub = read_u64(h, attach + sub_off)
+            if sub:
+                hits.update(_scan_cargo_string_hits(h, sub))
+    addon = read_u64(h, veh + OFF_ADDON)
+    if addon:
+        hits.update(_scan_cargo_string_hits(h, addon))
+    return sorted(hits)
+
+
 def _bone_cargo_label(h: int, slot: int) -> str:
     """BoneCargo_N_cdt en slot empaquetado (inline +0 o puntero +0/+70)."""
     if not slot or slot < 0x10000:
@@ -543,7 +713,7 @@ def _scan_frame_addon_name(h: int, root: int, *, max_nodes: int = 400) -> str:
                 if not name or len(name) > 80:
                     continue
                 low = name.lower()
-                if "frame_addon_sideboard" in low or name == "trucks_addons_frame_addon_sideboard_2":
+                if "frame_addon" in low:
                     return name
             if ptr and 0x10000 < ptr < 0x7FFFFFFFFFFF and ptr not in seen:
                 stack.append(ptr)
@@ -752,6 +922,7 @@ def _packed_cargo_from_attach(h: int, veh: int) -> tuple[int, list[str], str]:
     frame_addon = ""
     attach = read_u64(h, veh + OFF_ATTACH_MANAGER)
     addon = read_u64(h, veh + OFF_ADDON)
+    string_hits = _collect_cargo_string_hits(h, veh)
 
     if attach:
         frame_addon = _scan_frame_addon_name(h, attach)
@@ -769,6 +940,12 @@ def _packed_cargo_from_attach(h: int, veh: int) -> tuple[int, list[str], str]:
             frame_addon = _scan_frame_addon_name(h, addon)
         for name in _scan_bone_cargo_labels(h, addon):
             bones.add(name)
+
+    for hit in string_hits:
+        if hit.startswith("BoneCargo_") and hit.endswith("_cdt"):
+            bones.add(hit)
+    if not frame_addon:
+        frame_addon = _frame_addon_from_hits(string_hits)
 
     bone_list = sorted(bones)
     return len(bone_list), bone_list, frame_addon
@@ -861,9 +1038,7 @@ def _effective_packed_slots(packed_slots: int, packed_bones: list[str]) -> int:
     return len(packed_bones)
 
 
-def read_body_mass_kg(h: int, body_addr: int) -> float | None:
-    """Masa Havok (kg) desde objeto con rigid body en +0x5D0."""
-    rb = read_u64(h, body_addr + OFF_RB)
+def _mass_from_rigid_body(h: int, rb: int) -> float | None:
     if not rb or rb < 0x10000:
         return None
     motion = read_u64(h, rb + OFF_RB_MOTION_PTR)
@@ -873,9 +1048,22 @@ def read_body_mass_kg(h: int, body_addr: int) -> float | None:
     if inv is None or abs(inv) < 1e-7 or abs(inv) > 0.05:
         return None
     mass = 1.0 / inv
-    if mass < 200 or mass > 200_000:
+    if mass < 50 or mass > 200_000:
         return None
     return mass
+
+
+def read_body_mass_kg(h: int, body_addr: int) -> float | None:
+    """Masa Havok (kg): entidad juego (+0x5D0/+0x5C8) o hkpRigidBody directo (island)."""
+    if not body_addr or body_addr < 0x10000:
+        return None
+    rb = _entity_rigid_body_ptr(h, body_addr)
+    if rb:
+        mass = _mass_from_rigid_body(h, rb)
+        if mass is not None:
+            return mass
+    # Entradas del simulation island son punteros hkpRigidBody, no VehObj.
+    return _mass_from_rigid_body(h, body_addr)
 
 
 def read_total_mass_kg(h: int, veh: int) -> float | None:
@@ -1436,11 +1624,17 @@ def read_vehicle_load(h: int, veh: int) -> dict[str, Any]:
     slot_count = _effective_packed_slots(packed_slots, packed_bones)
     path_types = _scan_load_registry_cargo_types(h, veh)
     path_cargo_type = path_types[0] if path_types else _cargo_type_on_load_path(h, veh)
+    cargo_string_hits = _collect_cargo_string_hits(h, veh)
+    if not path_cargo_type:
+        path_cargo_type = _path_cargo_from_hits(cargo_string_hits)
     if path_cargo_type and path_cargo_type not in cargo_ids:
         cargo_ids.append(path_cargo_type)
     for extra_type in path_types[1:]:
         if extra_type not in cargo_ids:
             cargo_ids.append(extra_type)
+    for hit in cargo_string_hits:
+        if hit.startswith("cargo_") and hit not in cargo_ids:
+            cargo_ids.append(hit)
     if slot_count and not path_cargo_type:
         cargo_ids.append(f"packed_slots_x{slot_count}")
 
@@ -1450,24 +1644,25 @@ def read_vehicle_load(h: int, veh: int) -> dict[str, Any]:
         truck_mass if _is_sane_truck_mass(truck_mass, empty_mass) else None
     )
     truck_ref = sane_truck_mass if sane_truck_mass is not None else truck_mass
-    veh_rb = read_u64(h, veh + OFF_RB) or 0
+    veh_rb = _entity_rigid_body_ptr(h, veh) or 0
+    truck_ref_for_cargo = truck_ref if truck_ref is not None else empty_mass
     attached_cargo = 0.0
-    if truck_ref is not None:
+    if truck_ref_for_cargo is not None:
         attached_cargo = _attached_cargo_mass_kg(
             h,
             graph,
             my_id=my_id,
             veh_addr=veh,
             trailer_addr=trailer_addr,
-            truck_mass=truck_ref,
+            truck_mass=truck_ref_for_cargo,
         )
         attached_cargo = max(
             attached_cargo,
             _cargo_mass_from_addon_physics(
-                h, veh, my_id=my_id, truck_mass=truck_ref
+                h, veh, my_id=my_id, truck_mass=truck_ref_for_cargo
             ),
             _cargo_mass_from_island(
-                h, veh, truck_ref=truck_ref, veh_rb=veh_rb
+                h, veh, truck_ref=truck_ref_for_cargo, veh_rb=veh_rb
             ),
         )
     effective_truck_mass = (sane_truck_mass or 0.0) + attached_cargo
@@ -1560,6 +1755,127 @@ def read_vehicle_load(h: int, veh: int) -> dict[str, Any]:
         "frame_addon": frame_addon,
     }
     return _apply_load_latch(veh, result)
+
+
+def probe_vehicle_load(h: int, veh: int) -> dict[str, Any]:
+    """Diagnóstico de rutas de carga (calibrar camión/addon distinto a Fleetstar sideboard)."""
+    my_id = read_vehicle_id(h, veh)
+    empty_mass = _lookup_empty_mass_kg(my_id)
+    truck_mass = read_total_mass_kg(h, veh)
+    attach = read_u64(h, veh + OFF_ATTACH_MANAGER)
+    addon = read_u64(h, veh + OFF_ADDON)
+    load_reg = read_u64(h, veh + OFF_LOAD_REGISTRY)
+    veh_rb = _entity_rigid_body_ptr(h, veh) or 0
+
+    roots: list[tuple[int, str]] = [(veh, "veh")]
+    if addon:
+        roots.append((addon, "addon"))
+    if attach:
+        roots.append((attach, "attach"))
+    graph = _walk_vehicle_graph(h, roots)
+
+    cargo_graph = [
+        {"path": path, "id": game_id, "addr": f"0x{addr:X}"}
+        for path, game_id, addr in graph
+        if _id_looks_like_cargo(game_id)
+    ]
+    registry_types = _scan_load_registry_cargo_types(h, veh)
+    cargo_string_hits = _collect_cargo_string_hits(h, veh)
+    path_cargo_type = _cargo_type_on_load_path(h, veh) or _path_cargo_from_hits(cargo_string_hits)
+    packed_slots, packed_bones, frame_addon = _packed_cargo_from_attach(h, veh)
+
+    island_entries: list[dict[str, Any]] = []
+    island_total = 0.0
+    for body in _iter_island_rigid_bodies(h, veh):
+        mass = read_body_mass_kg(h, body)
+        game_id = read_vehicle_id(h, body)
+        entry = {
+            "rb": f"0x{body:X}",
+            "mass_kg": round(mass, 1) if mass is not None else None,
+            "id": game_id or "",
+            "is_truck_rb": body == veh_rb,
+        }
+        island_entries.append(entry)
+        if (
+            body != veh_rb
+            and mass is not None
+            and _ISLAND_CARGO_MASS_MIN_KG <= mass <= 15_000
+            and (not truck_mass or abs(mass - truck_mass) >= 500)
+        ):
+            island_total += mass
+
+    attach_subs: list[dict[str, Any]] = []
+    if attach:
+        for sub_off in _ATTACH_CARGO_SUB_OFFS:
+            sub = read_u64(h, attach + sub_off)
+            if sub and sub > 0x10000:
+                bones = _bone_cargo_from_sub(h, sub)
+                attach_subs.append({
+                    "off": f"+{sub_off:03X}",
+                    "ptr": f"0x{sub:X}",
+                    "bones": bones,
+                })
+
+    rb_5d0 = read_u64(h, veh + OFF_RB)
+    rb_5c8 = read_u64(h, veh + OFF_RB_ALT)
+    mass_chain: dict[str, Any] = {
+        "veh_rb_5d0": f"0x{rb_5d0:X}" if rb_5d0 else "",
+        "veh_rb_5c8": f"0x{rb_5c8:X}" if rb_5c8 else "",
+    }
+    for label, rb in (("5d0", rb_5d0), ("5c8", rb_5c8)):
+        if not rb:
+            continue
+        motion = read_u64(h, rb + OFF_RB_MOTION_PTR)
+        inv = read_f32(h, motion + OFF_MOTION_INV_MASS) if motion else None
+        mass_chain[f"motion_{label}"] = f"0x{motion:X}" if motion else ""
+        mass_chain[f"inv_mass_{label}"] = round(inv, 8) if inv is not None else None
+        mass_chain[f"mass_kg_{label}"] = (
+            round(1.0 / inv, 1) if inv and abs(inv) > 1e-7 else None
+        )
+
+    addon_phys: list[dict[str, Any]] = []
+    begin = read_u64(h, veh + OFF_ADDON_PHYS_BEGIN)
+    end = read_u64(h, veh + OFF_ADDON_PHYS_END)
+    for ptr in _iter_ptr_vector(h, begin, end, max_count=24):
+        mass = read_body_mass_kg(h, ptr)
+        addon_phys.append({
+            "ptr": f"0x{ptr:X}",
+            "id": read_vehicle_id(h, ptr) or "",
+            "mass_kg": round(mass, 1) if mass is not None else None,
+        })
+
+    island_cargo: list[dict[str, Any]] = [
+        e for e in island_entries
+        if e.get("mass_kg") is not None
+        and not e.get("is_truck_rb")
+        and _ISLAND_CARGO_MASS_MIN_KG <= float(e["mass_kg"]) <= 15_000
+    ]
+
+    return {
+        "vehicle_id": my_id,
+        "veh": f"0x{veh:X}",
+        "empty_mass_kg": empty_mass,
+        "truck_mass_havok_kg": round(truck_mass, 1) if truck_mass is not None else None,
+        "truck_mass_sane": _is_sane_truck_mass(truck_mass, empty_mass),
+        "mass_chain": mass_chain,
+        "attach": f"0x{attach:X}" if attach else "",
+        "addon": f"0x{addon:X}" if addon else "",
+        "load_registry": f"0x{load_reg:X}" if load_reg else "",
+        "frame_addon": frame_addon,
+        "packed_cargo_slots": packed_slots,
+        "packed_cargo_bones": packed_bones,
+        "path_cargo_type": path_cargo_type,
+        "registry_cargo_types": registry_types,
+        "cargo_string_hits": cargo_string_hits,
+        "attach_cargo_subs": attach_subs,
+        "addon_phys": addon_phys,
+        "cargo_graph_hits": cargo_graph[:24],
+        "island_bodies": island_entries,
+        "island_cargo_candidates": island_cargo[:16],
+        "island_cargo_mass_kg": round(island_total, 1),
+        "expected_loaded_1x_kg": (empty_mass or 0) + 1200 if empty_mass else None,
+        "expected_loaded_2x_kg": (empty_mass or 0) + 2400 if empty_mass else None,
+    }
 
 
 def terrain_hint(speed_kmh: float, vel_y: float) -> str:
@@ -1702,14 +2018,18 @@ def load_offsets_reference() -> dict[str, Any]:
     if _OFFSETS_REF_CACHE is not None:
         return _OFFSETS_REF_CACHE
     path = os.path.join(os.path.dirname(__file__), "offsets_referencia.json")
+    data: dict[str, Any] = {}
     try:
         with open(path, encoding="utf-8") as f:
             import json
 
-            _OFFSETS_REF_CACHE = json.load(f)
+            loaded = json.load(f)
+            if isinstance(loaded, dict):
+                data = loaded
     except OSError:
-        _OFFSETS_REF_CACHE = {}
-    return _OFFSETS_REF_CACHE
+        pass
+    _OFFSETS_REF_CACHE = data
+    return data
 
 
 def save_offsets_reference(data: dict[str, Any]) -> str:
@@ -1820,23 +2140,69 @@ def _read_field_at(
     addr = base_ptr + off
     if kind == "u8":
         v = read_u8(h, addr)
+        if v is None:
+            return ""
         if v in (0, 1):
             return "1" if v else "0"
+        if 0 < v <= 255:
+            return f"{v / 255.0:.3f}"
         return ""
     if kind == "f32":
         v = read_f32(h, addr)
-    if v is None or v != v or abs(v) > 1e6:
-        return ""
-    if 0.0 <= v <= 1.05:
-        return f"{v:.3f}"
-    return f"{v:.1f}"
+        if v is None or v != v or abs(v) > 1e6:
+            return ""
+        if 0.0 <= v <= 1.05:
+            return f"{v:.3f}"
+        return f"{v:.1f}"
     return ""
+
+
+def _normalized_drive_candidates(candidates: dict[str, Any]) -> dict[str, Any]:
+    """Alias legacy throttle_f32 -> throttle_input; motor fijo vehicle+760."""
+    out = dict(candidates or {})
+    if "throttle_input" not in out and out.get("throttle_f32"):
+        out["throttle_input"] = out["throttle_f32"]
+    if "throttle_motor_f32" not in out:
+        out["throttle_motor_f32"] = dict(DEFAULT_THROTTLE_MOTOR_SPEC)
+    return out
+
+
+def _read_drive_candidate(
+    h: int,
+    base: int,
+    veh: int,
+    candidates: dict[str, Any],
+    cand_key: str,
+    *,
+    default_kind: str = "f32",
+) -> str:
+    spec = candidates.get(cand_key)
+    if not spec:
+        return ""
+    dl, dl_veh, _ = resolve_drive_logic(h, base)
+    bases = [("drive_logic", dl), ("vehicle", veh or dl_veh)]
+    if isinstance(spec, dict):
+        base_name = spec.get("base", "drive_logic")
+        off = spec.get("offset")
+        kind = spec.get("kind", default_kind)
+        base_ptr = resolve_field_base_ptr(h, base, base_name, veh_ptr=veh)
+        return _read_field_at(h, base_ptr or 0, off, kind=kind)
+    val = ""
+    for base_name, base_ptr in bases:
+        if not base_ptr:
+            continue
+        val = _read_field_at(h, base_ptr, spec, kind=default_kind)
+        if val:
+            break
+    return val
 
 
 def read_drive_state(h: int, base: int, veh: int | None = None) -> dict[str, Any]:
     """Estado traccion/diff/marcha en vivo (offsets en offsets_referencia.json)."""
+    from throttle_resolver import per_vehicle_specs, resolve_throttle_input_spec
+
     drive_ref = load_offsets_reference().get("drive_runtime") or {}
-    candidates = drive_ref.get("candidates") or {}
+    candidates = _normalized_drive_candidates(drive_ref.get("candidates") or {})
     dl, dl_veh, chain = resolve_drive_logic(h, base)
     if veh is None or veh < 0x10000:
         veh = dl_veh
@@ -1849,34 +2215,42 @@ def read_drive_state(h: int, base: int, veh: int | None = None) -> dict[str, Any
     }
     out.update(_catalog_drive_hints(game_id))
 
-    bases = [("drive_logic", dl), ("vehicle", veh)]
+    thr_spec, thr_src = resolve_throttle_input_spec(
+        h,
+        base,
+        veh or 0,
+        game_id,
+        global_spec=candidates.get("throttle_input"),
+        per_vehicle=per_vehicle_specs(drive_ref),
+    )
+    if thr_spec:
+        base_ptr = resolve_field_base_ptr(h, base, thr_spec.get("base", ""), veh_ptr=veh) or 0
+        out["throttle_input"] = _read_field_at(
+            h,
+            base_ptr,
+            thr_spec.get("offset"),
+            kind=thr_spec.get("kind", "f32"),
+        )
+        out["throttle_input_src"] = thr_src
+        out["throttle_input_base"] = thr_spec.get("base", "")
+        out["throttle_input_offset"] = thr_spec.get("offset", "")
+    else:
+        out["throttle_input"] = ""
+        out["throttle_input_src"] = "none"
+
     field_map = (
         ("diff_lock_u8", "diff_lock_live", "u8"),
         ("awd_active_u8", "awd_live", "u8"),
         ("low_gear_u8", "low_gear_live", "u8"),
-        ("throttle_f32", "throttle", "f32"),
+        ("throttle_motor_f32", "throttle_motor", "f32"),
         ("engine_rpm_f32", "engine_rpm", "f32"),
     )
     for key, out_key, kind in field_map:
-        spec = candidates.get(key)
-        if not spec:
-            out[out_key] = ""
-            continue
-        if isinstance(spec, dict):
-            base_name = spec.get("base", "drive_logic")
-            off = spec.get("offset")
-            kind = spec.get("kind", kind)
-            base_ptr = resolve_field_base_ptr(h, base, base_name, veh_ptr=veh)
-            out[out_key] = _read_field_at(h, base_ptr or 0, off, kind=kind)
-        else:
-            val = ""
-            for base_name, base_ptr in bases:
-                if not base_ptr:
-                    continue
-                val = _read_field_at(h, base_ptr, spec, kind=kind)
-                if val:
-                    break
-            out[out_key] = val
+        out[out_key] = _read_drive_candidate(
+            h, base, veh or 0, candidates, key, default_kind=kind
+        )
+    # Columna legacy CSV: input del volante/mando; si falta, motor.
+    out["throttle"] = out.get("throttle_input") or out.get("throttle_motor") or ""
     return out
 
 
@@ -1992,6 +2366,8 @@ def enrich_drive_fields(
         "diff_lock_live",
         "awd_live",
         "low_gear_live",
+        "throttle_input",
+        "throttle_motor",
         "throttle",
         "engine_rpm",
         "diff_lock_catalog",
@@ -2136,38 +2512,50 @@ def open_snowrunner() -> tuple[int, int, int] | None:
     return h, base, pid
 
 
+def _csv_cell(value: Any) -> str:
+    """Celda CSV segura (sin comas/comillas/saltos que rompan DictReader)."""
+    if value is None or value == "":
+        return ""
+    s = str(value).replace(",", " ").replace("\n", " ").replace("\r", " ").replace('"', "'")
+    if len(s) > 240:
+        s = s[:240]
+    return s
+
+
 def format_csv_row(
     t_s: float,
     sample: dict[str, Any],
     event: str = "",
 ) -> str:
-    vid = (sample.get("vehicle_id") or "").replace(",", " ").replace("\n", " ")
+    vid = _csv_cell(sample.get("vehicle_id"))
     return (
         f"{t_s:.2f},{sample['speed_kmh']:.2f},"
         f"{sample['vel_x']:.4f},{sample['vel_y']:.4f},{sample['vel_z']:.4f},"
         f"{sample['ang_yaw']:.4f},{sample['pos_y']:.4f},"
-        f"{sample.get('fuel_pct', '')},{vid},"
-        f"{sample.get('surface_wheel', '')},{sample.get('wheel_grip', '')},"
-        f"{sample.get('terrain_hint', '')},{event},{sample.get('chain', '')},"
-        f"{sample.get('terrain_kind', '')},{sample.get('terrain_map', '')},"
-        f"{sample.get('pos_x', '')},{sample.get('pos_z', '')},"
-        f"{sample.get('surface_avg', '')},{sample.get('contact_avg', '')},"
-        f"{sample.get('grip_min', '')},{sample.get('grip_max', '')},"
-        f"{sample.get('surface_deform_avg', '')},{sample.get('contact_min', '')},"
-        f"{sample.get('contact_max', '')},{sample.get('mud_grade', '')},"
-        f"{sample.get('mud_grade_label', '')},"
-        f"{sample.get('load_hint', '')},{sample.get('trailer_id', '')},"
-        f"{sample.get('cargo_mass_kg', '')},"
-        f"{sample.get('total_mass_kg', '')},{sample.get('empty_mass_kg', '')},"
-        f"{sample.get('payload_kg', '')},{sample.get('trailer_mass_kg', '')},"
-        f"{sample.get('truck_mass_kg', '')},{sample.get('attached_cargo_mass_kg', '')},"
-        f"{sample.get('yaw_rate_deg_s', '')},{sample.get('turn_radius_m', '')},"
-        f"{sample.get('packed_cargo_slots', '')},{sample.get('path_cargo_type', '')},"
-        f"{sample.get('frame_addon', '')},"
-        f"{sample.get('diff_lock_live', '')},{sample.get('awd_live', '')},"
-        f"{sample.get('low_gear_live', '')},{sample.get('throttle', '')},"
-        f"{sample.get('engine_rpm', '')},{sample.get('fuel_rate_pct_min', '')},"
-        f"{sample.get('map_name', '')},{sample.get('level_id', '')}\n"
+        f"{_csv_cell(sample.get('fuel_pct'))},{vid},"
+        f"{_csv_cell(sample.get('surface_wheel'))},{_csv_cell(sample.get('wheel_grip'))},"
+        f"{_csv_cell(sample.get('terrain_hint'))},{_csv_cell(event)},{_csv_cell(sample.get('chain'))},"
+        f"{_csv_cell(sample.get('terrain_kind'))},{_csv_cell(sample.get('terrain_map'))},"
+        f"{_csv_cell(sample.get('pos_x'))},{_csv_cell(sample.get('pos_z'))},"
+        f"{_csv_cell(sample.get('surface_avg'))},{_csv_cell(sample.get('contact_avg'))},"
+        f"{_csv_cell(sample.get('grip_min'))},{_csv_cell(sample.get('grip_max'))},"
+        f"{_csv_cell(sample.get('surface_deform_avg'))},{_csv_cell(sample.get('contact_min'))},"
+        f"{_csv_cell(sample.get('contact_max'))},{_csv_cell(sample.get('mud_grade'))},"
+        f"{_csv_cell(sample.get('mud_grade_label'))},"
+        f"{_csv_cell(sample.get('load_hint'))},{_csv_cell(sample.get('trailer_id'))},"
+        f"{_csv_cell(sample.get('cargo_mass_kg'))},"
+        f"{_csv_cell(sample.get('total_mass_kg'))},{_csv_cell(sample.get('empty_mass_kg'))},"
+        f"{_csv_cell(sample.get('payload_kg'))},{_csv_cell(sample.get('trailer_mass_kg'))},"
+        f"{_csv_cell(sample.get('truck_mass_kg'))},{_csv_cell(sample.get('attached_cargo_mass_kg'))},"
+        f"{_csv_cell(sample.get('yaw_rate_deg_s'))},{_csv_cell(sample.get('turn_radius_m'))},"
+        f"{_csv_cell(sample.get('packed_cargo_slots'))},{_csv_cell(sample.get('path_cargo_type'))},"
+        f"{_csv_cell(sample.get('frame_addon'))},"
+        f"{_csv_cell(sample.get('diff_lock_live'))},{_csv_cell(sample.get('awd_live'))},"
+        f"{_csv_cell(sample.get('low_gear_live'))},"
+        f"{_csv_cell(sample.get('throttle_input'))},{_csv_cell(sample.get('throttle_motor'))},"
+        f"{_csv_cell(sample.get('throttle'))},"
+        f"{_csv_cell(sample.get('engine_rpm'))},{_csv_cell(sample.get('fuel_rate_pct_min'))},"
+        f"{_csv_cell(sample.get('map_name'))},{_csv_cell(sample.get('level_id'))}\n"
     )
 
 

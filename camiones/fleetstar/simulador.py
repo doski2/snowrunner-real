@@ -94,7 +94,7 @@ VEHICLE_STOCK = VehicleConfig(
 )
 VEHICLE_REAL = VehicleConfig(
     "Fleetstar realista",
-    6650,
+    7400,
     210,
     TIRES["highway"],
     "highway",

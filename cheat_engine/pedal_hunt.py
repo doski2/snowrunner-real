@@ -476,6 +476,35 @@ def save_sweep_report(path: str, payload: dict[str, Any]) -> None:
         json.dump(payload, f, indent=2, ensure_ascii=False)
 
 
+def load_sweep_watch_specs(
+    path: str | None = None, *, limit: int = 6
+) -> list[dict[str, str]]:
+    """Specs del top-N de pedal_sweep_latest.json para monitor en vivo."""
+    snaps_dir = os.path.join(os.path.dirname(__file__), "drive_snaps")
+    sweep_path = path or os.path.join(snaps_dir, "pedal_sweep_latest.json")
+    if not os.path.isfile(sweep_path):
+        return []
+    with open(sweep_path, encoding="utf-8") as f:
+        payload = json.load(f)
+    out: list[dict[str, str]] = []
+    for row in (payload.get("candidates") or [])[: max(0, limit)]:
+        spec = dict(row.get("spec") or {})
+        if not spec.get("base"):
+            spec = spec_from_hunt_row(
+                {
+                    "base": row["base"],
+                    "offset": int(str(row["offset"]).replace("+0x", "").replace("+0X", ""), 16)
+                    if isinstance(row.get("offset"), str)
+                    else row["offset"],
+                    "kind": row.get("kind", "f32"),
+                }
+            )
+        else:
+            spec.setdefault("kind", row.get("kind", "f32"))
+        out.append(spec)
+    return out
+
+
 def dump_bases_cli(h: int, base: int, veh_ptr: int) -> None:
     print("=== Bases escaneo pedal (profundo) ===")
     print(f"TRUCK_CONTROL slot: {base + mh.TRUCK_CONTROL_OFF:#x}")

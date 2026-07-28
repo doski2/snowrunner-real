@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-# Stock ~14020 kg (chasis 13000 + bastidor 1000). Mod ~14600 kg.
+# Stock ~14020 kg (chasis 13000 + bastidor 1000). Mod **14000 kg** (TE ~13800).
 # Motor e_ru_special.xml compartido (Tatra / ZiKZ / otros HEAVY special).
 # Neumatico MSH I: wheels_superheavy_mudtires.xml (50\" superheavy).
 
@@ -13,11 +13,6 @@ PATCHES: dict[str, list[tuple[str, str]]] = {
         (
             'CenterOfMassOffset="(-2.2; -0.5; 0)"',
             'CenterOfMassOffset="(-2.2; -0.55; 0)"',
-        ),
-        ('Mass="13000"', 'Mass="13500"'),
-        (
-            'Mass="1000"\r\n\t\t\t\tModelFrame="BoneAddonAttachment_cdt"',
-            'Mass="1050"\r\n\t\t\t\tModelFrame="BoneAddonAttachment_cdt"',
         ),
     ],
     "[media]/classes/engines/e_ru_special.xml": [

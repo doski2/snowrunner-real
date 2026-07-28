@@ -38,6 +38,21 @@ class TestBancoDrive(unittest.TestCase):
         self.assertAlmostEqual(tr.range("v75c"), 0.4)
         self.assertEqual(tr.best_tag(), "v75c")
 
+    def test_format_line_shows_motor(self) -> None:
+        line = format_banco_line(
+            t_s=1.0,
+            thr_cal=0.5,
+            thr_pedal=None,
+            pedal_tag="?",
+            cal_bad=False,
+            thr_motor=0.95,
+            rpm=800.0,
+            speed_kmh=10.0,
+            accel_kmh_s=2.0,
+        )
+        self.assertIn("mot 0.950", line)
+        self.assertIn("IN", line)
+
     def test_format_line(self) -> None:
         line = format_banco_line(
             t_s=1.5,

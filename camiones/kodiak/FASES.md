@@ -1,92 +1,142 @@
 # SnowRunner — Chevrolet Kodiak C70 (mod realista)
 
-Metodología: `docs/FASE-1.md` … `docs/FASE-8.md` · Referencia cercana: `camiones/fleetstar/FASES.md`.
+Metodología: `docs/METODO-PAK.md`, `docs/FASE-1.md` … `docs/FASE-4.md`.
+Referencia cercana: `camiones/fleetstar/FASES.md`.
+
+| Campo          | Valor                          |
+| -------------- | ------------------------------ |
+| ID mod         | `kodiak`                       |
+| ID juego       | `chevrolet_kodiakc70`          |
+| Tipo           | HEAVY_DUTY 4×4                 |
+| Masa vacía mod | **8150 kg**                    |
+| Parches        | `camiones/kodiak/patches.py`   |
+| Simulador      | `camiones/kodiak/simulador.py` |
 
 ---
 
-## Setup de referencia (catálogo stock, jun 2026)
+## Setup en juego (referencia)
 
-| Pieza | Stock XML / taller |
-|-------|---------------------|
-| Motor | **Si-6V/1900** (`us_truck_old_engine_0`) — opcional **2100T** |
-| Neumáticos | **39" UHD I** (`highway_1`, `wheels_medium_double`) |
-| (taller) | También 39/43" UHD II–III, UAD, UOD — ver abajo |
-| Tracción | **AWD** + **bloqueo diferencial** (instalar en taller) |
-| Suspensión | Stock (`chevrolet_kodiakC70_suspension_default`) |
-| Ruedas | **4** (no 6×4 como Fleetstar) |
+| Pieza      | En juego                              |
+| ---------- | ------------------------------------- |
+| Motor      | **Si-6V/1900** (opcional 2100T)       |
+| Neumáticos | **39" UHD I** (`highway_1`)           |
+| Tracción   | **AWD** + diff (instalar en taller)   |
+| Ruedas     | **4** (no 6×4 como Fleetstar)         |
 
-**No confundir con Fleetstar:** el F2070A lleva **42"** UHD; el Kodiak solo admite **39"** (y **43"** en taller), mismo archivo de ruedas `wheels_medium_double.xml` pero otro diámetro in-game.
+**No confundir con Fleetstar:** F2070A lleva **42"** UHD; Kodiak **39"** (y 43" en taller).
 
-| Familia | Talla Kodiak | XML sim (`tire`) |
-|---------|--------------|------------------|
-| Highway UHD | 39" / 43" UHD I | `highway` → `highway_1` |
-| Allterrain UAD | 39" / 43" UAD I | `allterrain` |
-| Offroad UOD | 39" / 43" UOD I | `offroad` |
-
-Protocolos CE actuales asumen **39" UHD I** + AWD + diff. Si conduces con **UOD**, graba con barro y revisa protocolo `offroad` en import.
+Parches compartidos: `e_us_truck_old.xml`, `wheels_medium_double.xml`.
 
 ---
 
-## Qué hace el mod (sin CE aún — valores de diseño)
+## Referencia real
 
-| Parámetro | Stock (catálogo) | Mod |
-|-----------|------------------|-----|
-| Masa total | ~7513 kg | **7900 kg** |
-| Combustible | 200 L | **175 L** |
-| Responsiveness | 0.15 | **0.11** |
-| Si-6V/1900 torque | 135000 | **92000** |
-| Si-6V/2100T torque | 145000 | **99000** |
-| `highway_1` Substance | 0.4 | **0.5** |
+### Prototipo
 
-Parches compartidos con familia Fleetstar: `e_us_truck_old.xml`, `wheels_medium_double.xml`.
+**Chevrolet Kodiak C70** — Class 7 **4×4** (serie Kodiak **1981–1989**). Mismo **Si-6V** que
+Fleetstar; neumático **39"** UHD (Fleetstar **42"**).
 
----
+### Truck Encyclopedia
 
-## Aplicar
+Sin artículo al **Kodiak C70**. Antecedente GM en TE:
+[Chevrolet G506](https://truck-encyclopedia.com/ww2/us/Chevrolet-G506-7101-1.5-ton-4x4-truck.php).
+C70 entre C/K y Brigadier; motor Caterpillar **3208** típico en gen. 1.
+
+| Kodiak C70 (histórico) | Valor                |
+| ---------------------- | -------------------- |
+| Clase                  | Class **7** (C7000)  |
+| Producción             | **1980–1989**        |
+| BBC cabina             | **92″** (elevada)    |
+| Tracción               | 4×4 / 6×6 opcional   |
+
+Calibrar Si-6V en Fleetstar y repetir F1 (`KD-MOT`).
+
+### Ficha comunidad (SR!NFO)
+
+| Campo            | Valor              |
+| ---------------- | ------------------ |
+| Masa vacía       | **8201 kg**        |
+| Torque stock/max | 135k / 145k Ncm    |
+| Depósito         | 200 L              |
+| Tracción         | 4×4, Switchable    |
+
+### XML stock vs mod
+
+| Parámetro  | Catálogo | Mod         |
+| ---------- | -------- | ----------- |
+| Masa       | ~7513 kg | **8150 kg** |
+| Si-6V/1900 | 135k Ncm | **92k Ncm** |
+
+Calibrar motor en Fleetstar y **repetir F1** aquí (`KD-MOT` en pendientes).
 
 ```powershell
-python camiones/kodiak/apply_mod.py
-python verify_pak.py
-python -m camiones.kodiak.simulador
-python -m unittest camiones.kodiak.test -v
 ```
-
-Copiar `initial.pak` → `...\SnowRunner\preload\paks\client\`
 
 ---
 
-## Fases — orden y telemetría
+## Qué hace el mod (stock → realista)
 
-| Fase | Qué hacer | Protocolo |
-|------|-----------|-----------|
-| **1** | Asfalto vacío, AWD+diff, acelerar | `kd_f1_asfalto` |
-| **2** | Barro UHD + AWD + diff, marcha L | `kd_f2_barro_uhd` |
-| **3** | Bastidor / carga en barro | `kd_f3_carga` |
-| **5–6** | CE + comparación sim | `grabar_telemetria.bat` |
-
-```powershell
-python grabar_ce.py --probe --map Michigan
-grabar_telemetria.bat
-python importar_ce_csv.py --auto --compare --index
-```
-
-ID Havok esperado: `s_chevrolet_kodiakc70`.
+| Parámetro             | Stock    | Mod         | Fase   |
+| --------------------- | -------- | ----------- | ------ |
+| Masa total            | ~7513 kg | **8150 kg** | 1 / 3  |
+| Combustible           | 200 L    | **175 L**   | 1      |
+| `Responsiveness`      | 0.15     | **0.11**    | 1      |
+| Si-6V/1900 torque     | 135000   | **92000**   | 1      |
+| `highway_1` Substance | 0.4      | **0.5**     | 2 / 4  |
 
 ---
 
-## Sim de referencia (sin calibrar CE)
+## Fases de prueba (en juego)
+
+### F1 — Asfalto
+
+| Condición  | Valor                    |
+| ---------- | ------------------------ |
+| Neumático  | 39" UHD I                |
+| AWD + diff | ON                       |
+| Conducción | WOT, marcha alta         |
+
+**Cierre:** comparar sensación con Fleetstar FS-F1 (mismo motor, +masa, 4 ruedas).
+
+### F2 — Barro UHD
+
+| Condición  | Valor             |
+| ---------- | ----------------- |
+| Conducción | Marcha L, diff ON |
+
+**Cierre:** afinar `KD_MUD_*` en sim y/o neumático en `patches.py`.
+
+### F3 — Carga
+
+| Condición | Valor              |
+| --------- | ------------------ |
+| Carga     | Bastidor en barro  |
+
+---
+
+## Aplicar y validar
 
 ```powershell
-python -m camiones.kodiak.simulador
 ```
-
-`KD_MUD_IMMERSION_RATE` / `KD_MUD_RESIST_MULT` son **estimación inicial** (4 ruedas, más masa que Fleetstar). Re-grabar `kd_f2_barro_uhd` para afinar.
 
 ---
 
 ## Pendiente
 
-- [ ] Validar parches XML con `verify_pak.py` (masas exactas en `chevrolet_kodiakc70.xml`)
-- [ ] CE `kd_f1_asfalto` y `kd_f2_barro_uhd`
-- [ ] Calibrar `KD_MUD_*` con telemetría
-- [ ] `kd_f3_carga` con bastidor lleno (`scan_cargo.py`)
+| ID     | Fase   | Estado   | Notas                              |
+| ------ | ------ | -------- | ---------------------------------- |
+| KD-F1  | 1      | [ ]      | Asfalto WOT                        |
+| KD-F2  | 2      | [ ]      | Barro UHD                          |
+| KD-F3  | 3      | [ ]      | Bastidor cargado                   |
+| KD-MOT | motor  | [ ]      | Repetir F1 tras cerrar FS-MOT-2100 |
+
+---
+
+## Comentarios
+
+```text
+```
+
+---
+
+*Última revisión: 2026-07-29 — Truck Encyclopedia + Referencia real.*

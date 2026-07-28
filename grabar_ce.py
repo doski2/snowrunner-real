@@ -21,6 +21,18 @@ CE_DIR = os.path.join(ROOT, "cheat_engine")
 sys.path.insert(0, ROOT)
 sys.path.insert(0, CE_DIR)
 
+
+def _configure_csv_field_limit() -> None:
+    """Telemetria CE: chain/path_cargo_type pueden superar 128 KiB por celda."""
+    target = max(csv.field_size_limit(), 4 * 1024 * 1024)
+    try:
+        csv.field_size_limit(target)
+    except OverflowError:
+        csv.field_size_limit(2**20)
+
+
+_configure_csv_field_limit()
+
 import memoria_havok as mh  # noqa: E402
 from ctypes import windll  # noqa: E402
 from datos.map_detect import format_map_line, resolve_map_context  # noqa: E402
@@ -229,9 +241,12 @@ def format_live_line(t_elapsed: float, sample: dict) -> str:
     lg = sample.get("low_gear_live")
     if lg not in (None, ""):
         parts.append(f"L={lg}")
-    thr = sample.get("throttle")
-    if thr not in (None, ""):
-        parts.append(f"thr={thr}")
+    thr_in = sample.get("throttle_input") or sample.get("throttle")
+    if thr_in not in (None, ""):
+        parts.append(f"in={thr_in}")
+    thr_mot = sample.get("throttle_motor")
+    if thr_mot not in (None, ""):
+        parts.append(f"mot={thr_mot}")
     return " | ".join(parts)
 
 

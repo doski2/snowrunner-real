@@ -39,6 +39,17 @@ DEFAULT_CE_LOG = os.path.join(
 DEFAULT_CE_LOG_FALLBACK = os.path.join(ROOT, "cheat_engine", "telemetria_ce_log.csv")
 
 
+def _configure_csv_field_limit() -> None:
+    target = max(csv.field_size_limit(), 4 * 1024 * 1024)
+    try:
+        csv.field_size_limit(target)
+    except OverflowError:
+        csv.field_size_limit(2**20)
+
+
+_configure_csv_field_limit()
+
+
 def _yaw_note_parts(row: dict) -> list[str]:
     """Notas de giro para correlacionar velocidad angular vs carga (Fase 3)."""
     parts: list[str] = []
@@ -101,6 +112,13 @@ def suggest_protocol(vehicle_id: str, protocol_id: str) -> str | None:
             return "t813_f1_asfalto"
         if protocol_id.startswith("f3_"):
             return "t813_f3_carga"
+    if vehicle_id == "bandit":
+        if protocol_id == "f2_barro_offroad":
+            return "bandit_f2_barro_uhd"
+        if protocol_id == "f1_asfalto_i6":
+            return "bandit_f1_asfalto"
+        if protocol_id.startswith("f3_"):
+            return "bandit_f3_carga"
     return None
 
 
@@ -248,9 +266,12 @@ def csv_to_session(
         gid = (row.get("vehicle_id") or "").strip()
         if gid:
             parts.append(f"id={gid}")
-        thr = (row.get("throttle") or "").strip()
-        if thr:
-            parts.append(f"thr={thr}")
+        thr_in = (row.get("throttle_input") or row.get("throttle") or "").strip()
+        thr_mot = (row.get("throttle_motor") or "").strip()
+        if thr_in:
+            parts.append(f"thr_in={thr_in}")
+        if thr_mot:
+            parts.append(f"thr_mot={thr_mot}")
         rpm = (row.get("engine_rpm") or "").strip()
         if rpm:
             parts.append(f"rpm={rpm}")

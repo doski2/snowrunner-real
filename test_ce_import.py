@@ -59,6 +59,11 @@ class TestCeImport(unittest.TestCase):
         self.assertEqual(suggest_protocol("t813", "f1_asfalto_i6"), "t813_f1_asfalto")
         self.assertEqual(suggest_protocol("t813", "f3_carga_barro"), "t813_f3_carga")
 
+    def test_suggest_protocol_bandit(self) -> None:
+        self.assertEqual(suggest_protocol("bandit", "f2_barro_offroad"), "bandit_f2_barro_uhd")
+        self.assertEqual(suggest_protocol("bandit", "f1_asfalto_i6"), "bandit_f1_asfalto")
+        self.assertEqual(suggest_protocol("bandit", "f3_carga_barro"), "bandit_f3_carga")
+
     def test_compare_imported_session(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             path = os.path.join(tmp, "log.csv")
@@ -638,6 +643,8 @@ class TestDriveState(unittest.TestCase):
             "diff_lock_live": "1",
             "awd_live": "1",
             "low_gear_live": "0",
+            "throttle_input": "0.450",
+            "throttle_motor": "0.920",
             "throttle": "0.450",
             "engine_rpm": "1200",
             "fuel_rate_pct_min": "2.50",
@@ -645,8 +652,18 @@ class TestDriveState(unittest.TestCase):
             "level_id": "level_us_02_01",
         }
         row = mh.format_csv_row(1.0, sample)
-        self.assertIn(",1,1,0,0.450,1200,2.50,North Port,level_us_02_01", row)
+        self.assertIn(",1,1,0,0.450,0.920,0.450,1200,2.50,North Port,level_us_02_01", row)
+        self.assertIn("throttle_input", mh.CSV_HEADER)
+        self.assertIn("throttle_motor", mh.CSV_HEADER)
         self.assertIn("map_name", mh.CSV_HEADER)
+
+    def test_normalized_drive_candidates_adds_motor_default(self) -> None:
+        import memoria_havok as mh
+
+        out = mh._normalized_drive_candidates({"throttle_f32": {"base": "tc+0E8", "offset": "+0x0C8"}})
+        self.assertIn("throttle_input", out)
+        self.assertIn("throttle_motor_f32", out)
+        self.assertEqual(out["throttle_motor_f32"]["offset"], "+0x760")
 
     def test_idle_fuel_consumption_at_zero_throttle(self) -> None:
         from sim.core import ENGINE_I6, SURFACES, VEHICLE_I6, run_sim

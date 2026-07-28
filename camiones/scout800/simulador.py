@@ -38,7 +38,7 @@ VEHICLE_STOCK = VehicleConfig(
 )
 VEHICLE_REAL = VehicleConfig(
     "Scout 800 realista",
-    2350.0,
+    2100.0,
     72.0,
     TIRE_HS_I,
     "highway_hs_i",
@@ -64,6 +64,6 @@ if __name__ == "__main__":
     surface = SurfaceConfig("Asfalto", "asphalt")
     for label, eng in (("stock", ENGINE_AAT6V_STOCK), ("real", ENGINE_AAT6V_REAL)):
         series = run_sim(VEHICLE_REAL, eng, surface, 80.0)
-        t60 = time_to_kmh(series, 60.0)
+        t60 = time_to_kmh(series.speeds_kmh, series.times, 60.0)
         print(f"--- S800 {label} HS I asfalto ---")
-        print(f"  v30={sample_at(series, 30):.1f} km/h  v60={sample_at(series, 60):.1f}  t0-60={t60}s")
+        print(f"  v30={sample_at(series, 30.0):.1f} km/h  v60={sample_at(series, 60.0):.1f}  t0-60={t60}s")

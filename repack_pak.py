@@ -197,7 +197,13 @@ def patch_bytes(data: bytes, rules: Iterable[tuple[str, str]]) -> bytes:
 
 def load_replacements(zip_bytes: bytes) -> dict[str, bytes]:
     with zipfile.ZipFile(io.BytesIO(zip_bytes)) as zf:
-        return {arc: patch_bytes(zf.read(arc), rules) for arc, rules in PATCHES.items()}
+        out: dict[str, bytes] = {}
+        for arc, rules in PATCHES.items():
+            orig = zf.read(arc)
+            patched = patch_bytes(orig, rules)
+            if patched != orig:
+                out[arc] = patched
+        return out
 
 
 def build_mod_pak(factory_raw: bytes) -> tuple[bytes, dict[str, bytes]]:

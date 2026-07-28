@@ -5,8 +5,10 @@ en el flujo de grabacion.
 
 Uso:
   .\\banco_pruebas.bat --gui
+  .\\banco_mando.bat
   .\\banco_pruebas.bat
   .\\banco_pruebas.bat --scout
+  python cheat_engine/banco_drive.py --mando
   python cheat_engine/banco_drive.py --gui
 """
 
@@ -41,6 +43,7 @@ from pedal_hunt import (  # noqa: E402
     dump_bases_cli,
     format_sweep_row,
     hunt_near_target,
+    load_sweep_watch_specs,
     rank_pedal_sweep,
     read_at,
     record_pedal_sweep,
@@ -200,6 +203,7 @@ def format_banco_line(
     thr_pedal: float | None,
     pedal_tag: str,
     cal_bad: bool,
+    thr_motor: float | None = None,
     rpm: float | None,
     speed_kmh: float | None,
     accel_kmh_s: float | None,
@@ -216,10 +220,12 @@ def format_banco_line(
         cal_s = f"{thr_cal:.3f}" if thr_cal is not None else "?"
         prefix = f"CAL={cal_s} ! | pedal? {pedal_tag} "
     else:
-        prefix = "thr "
+        prefix = "IN  "
 
-    line = (
-        f"{t_s:6.1f}s | {prefix}{format_bar(thr_show)} {thr_s} | "
+    line = f"{t_s:6.1f}s | {prefix}{format_bar(thr_show)} {thr_s} | "
+    if thr_motor is not None:
+        line += f"mot {thr_motor:.3f} | "
+    line += (
         f"rpm {format_rpm_bar(rpm)} {rpm_s} | "
         f"{spd_s} km/h | a={acc_s} km/h/s | {state}"
     )
@@ -247,7 +253,9 @@ def _read_thr_cal(
     thr_spec: dict | None,
     veh_ptr: int,
 ) -> float | None:
-    thr = _parse_f(sample.get("throttle"))
+    thr = _parse_f(sample.get("throttle_input"))
+    if thr is None:
+        thr = _parse_f(sample.get("throttle"))
     if thr is None and thr_spec:
         thr = read_live_field(h, base, thr_spec, veh_ptr=veh_ptr)
     return thr
@@ -327,9 +335,10 @@ class PedalRow:
 
 
 class PedalWindow:
-    """Ventana pedal: CAL + busqueda dinamica (mando / TRUCK_CONTROL)."""
+    """Ventana pedal: IN + MOT fijos + candidatos mando (TRUCK_CONTROL)."""
 
-    HUNT_SLOTS = 10
+    HUNT_SLOTS = 8
+    HUNT_ROW0 = 3
 
     def __init__(
         self,
@@ -338,13 +347,15 @@ class PedalWindow:
         *,
         veh_ptr: int,
         veh_id: str,
-        thr_spec: dict | None,
+        input_spec: dict | None,
+        motor_spec: dict | None,
         interval_ms: int = 100,
     ) -> None:
         self.h = h
         self.base = base
         self.veh_ptr = veh_ptr
-        self.thr_spec = thr_spec
+        self.input_spec = input_spec or {}
+        self.motor_spec = motor_spec or dict(mh.DEFAULT_THROTTLE_MOTOR_SPEC)
         self.interval_ms = interval_ms
         self.tracker = FieldTracker()
         self.stuck_hi_count = 0
@@ -357,7 +368,7 @@ class PedalWindow:
 
         self.root = tk.Tk()
         self.root.title("Banco pedal CE")
-        self.root.geometry("560x620")
+        self.root.geometry("580x680")
         self.root.configure(bg="#2b2b2b")
         self.root.attributes("-topmost", True)
         self.root.protocol("WM_DELETE_WINDOW", self._on_close)
@@ -424,22 +435,36 @@ class PedalWindow:
         body.columnconfigure(0, weight=1)
 
         self.rows: dict[str, PedalRow] = {}
-        cal_title = f"CAL {_offset_label(thr_spec)}"
-        self.rows["__cal__"] = PedalRow(body, 0, "__cal__", cal_title, is_cal=True)
+        self.rows["__in__"] = PedalRow(
+            body,
+            0,
+            "__in__",
+            f"IN  {_offset_label(self.input_spec)}",
+            is_cal=True,
+        )
+        self.rows["__mot__"] = PedalRow(
+            body,
+            1,
+            "__mot__",
+            f"MOT {_offset_label(self.motor_spec)}",
+            is_cal=False,
+        )
 
         tk.Label(
             body,
-            text="— candidatos cerca del % mando o delta vs ref —",
+            text="— candidatos barrido / delta vs ref ( * = mas varianza ) —",
             bg="#2b2b2b",
             fg="#666666",
             font=("Segoe UI", 8),
-        ).grid(row=1, column=0, sticky="w", padx=8, pady=(6, 2))
+        ).grid(row=2, column=0, sticky="w", padx=8, pady=(6, 2))
 
         self.hunt_rows: dict[str, PedalRow] = {}
         for i in range(self.HUNT_SLOTS):
             tag = f"hunt{i}"
-            self.hunt_rows[tag] = PedalRow(body, i + 2, tag, "—")
+            self.hunt_rows[tag] = PedalRow(body, i + self.HUNT_ROW0, tag, "—")
             self.hunt_meta[tag] = None
+
+        self._load_sweep_candidates()
 
         self.state_lbl = tk.Label(
             self.root,
@@ -452,7 +477,7 @@ class PedalWindow:
         self.state_lbl.pack(fill="x", side="bottom")
         self.warn_lbl = tk.Label(
             self.root,
-            text="vehicle+760 suele ser motor, no mando",
+            text="IN = mando/teclado | MOT = motor (vehicle+760) | Ref 0% + Delta si IN no mueve",
             bg="#2b2b2b",
             fg="#ff8888",
             font=("Segoe UI", 8),
@@ -461,6 +486,35 @@ class PedalWindow:
         self.warn_lbl.pack(pady=(0, 6))
 
         self.root.after(self.interval_ms, self._tick)
+
+    def _load_sweep_candidates(self) -> None:
+        specs = load_sweep_watch_specs(limit=self.HUNT_SLOTS)
+        inp_key = (
+            self.input_spec.get("base"),
+            self.input_spec.get("offset"),
+            self.input_spec.get("kind"),
+        )
+        results: list[dict] = []
+        for spec in specs:
+            key = (spec.get("base"), spec.get("offset"), spec.get("kind"))
+            if key == inp_key:
+                continue
+            off = mh._parse_hex_offset(spec.get("offset")) or 0
+            results.append(
+                {
+                    "base": spec["base"],
+                    "offset": off,
+                    "kind": spec.get("kind", "f32"),
+                }
+            )
+            if len(results) >= self.HUNT_SLOTS:
+                break
+        if results:
+            self._apply_hunt_results(results)
+            self.state_lbl.config(
+                text="Barrido cargado — pisa/suelta gas; * = candidato que varia",
+                fg="#55ff88",
+            )
 
     def _capture_ref(self) -> None:
         self.ref_snap = capture_pedal_map(self.h, self.base, self.veh_ptr)
@@ -581,25 +635,30 @@ class PedalWindow:
         self.veh_ptr = _vehicle_ptr_from_sample(sample) or self.veh_ptr
         mh.enrich_drive_fields(self.h, self.base, sample, t_s=t_s)
 
-        thr_cal = _read_thr_cal(self.h, self.base, sample, self.thr_spec, self.veh_ptr)
+        thr_in = _read_spec_live(self.h, self.base, self.veh_ptr, self.input_spec, sample, "throttle_input")
+        thr_mot = _read_spec_live(self.h, self.base, self.veh_ptr, self.motor_spec, sample, "throttle_motor")
 
         self._maybe_live_hunt(t_s)
 
-        if thr_cal is not None:
-            self.tracker.push(t_s, {"__cal__": thr_cal})
+        if thr_in is not None:
+            self.tracker.push(t_s, {"__in__": thr_in})
+        if thr_mot is not None:
+            self.tracker.push(t_s, {"__mot__": thr_mot})
 
-        if thr_cal is not None and thr_cal > 0.92:
+        if thr_in is not None and thr_in > 0.92:
             self.stuck_hi_count += 1
         else:
             self.stuck_hi_count = 0
 
         speed = _parse_f(sample.get("speed_kmh"))
         cal_bad, warn = cal_offset_stuck(
-            thr_cal, speed, self.stuck_hi_count, cal_label=_offset_label(self.thr_spec)
+            thr_in, speed, self.stuck_hi_count, cal_label=_offset_label(self.input_spec)
         )
 
-        d5_cal = self.tracker.range("__cal__")
-        self.rows["__cal__"].update(thr_cal, d5_cal, active=False, bad=cal_bad)
+        d_in = self.tracker.range("__in__")
+        d_mot = self.tracker.range("__mot__")
+        self.rows["__in__"].update(thr_in, d_in, active=True, bad=cal_bad)
+        self.rows["__mot__"].update(thr_mot, d_mot, active=False, bad=False)
 
         best_tag: str | None = None
         best_range = 0.0
@@ -620,26 +679,45 @@ class PedalWindow:
             if val is not None and abs(val - target) < 0.1:
                 self.hunt_rows[tag].val.config(fg="#55ff88")
 
-        show_thr = thr_cal
+        show_thr = thr_in
         if cal_bad and best_tag:
             show_thr = self.tracker.current(best_tag)
         state = throttle_label(show_thr)
         spd = f"{speed:.1f}" if speed is not None else "?"
         tgt = float(self.target_pct.get())
+        mot_s = f"{thr_mot:.2f}" if thr_mot is not None else "?"
         self.state_lbl.config(
-            text=f"{state.upper()}  |  {spd} km/h  |  obj {tgt:.0f}%",
+            text=f"{state.upper()}  |  IN {show_thr or 0:.2f}  MOT {mot_s}  |  {spd} km/h  |  obj {tgt:.0f}%",
             fg="#55ff88",
         )
         extra = warn or ""
         if cal_bad:
-            extra = (extra + " ").strip() + " Usa Ref 0% + Delta con mando al %."
-        self.warn_lbl.config(text=extra.strip() or "vehicle+760 = motor; busca en TRUCK_CONTROL")
+            extra = (extra + " ").strip() + " IN pegado — Ref 0% + Delta o --from-sweep."
+        self.warn_lbl.config(text=extra.strip() or self.warn_lbl.cget("text"))
 
     def run(self) -> None:
         self.root.mainloop()
 
 
+def _read_spec_live(
+    h: int,
+    base: int,
+    veh_ptr: int,
+    spec: dict[str, str],
+    sample: dict,
+    sample_key: str,
+) -> float | None:
+    v = _parse_f(sample.get(sample_key))
+    if v is not None:
+        return v
+    if spec:
+        return read_live_field(h, base, spec, veh_ptr=veh_ptr)
+    return None
+
+
 def run_gui(*, interval_ms: int = 100) -> int:
+    from throttle_resolver import per_vehicle_specs, resolve_throttle_input_spec
+
     opened = mh.open_snowrunner()
     if not opened:
         print("SnowRunner no corriendo — entra al mapa conduciendo.")
@@ -647,7 +725,9 @@ def run_gui(*, interval_ms: int = 100) -> int:
 
     h, base, _pid = opened
     ref = mh.load_offsets_reference()
-    thr_spec = (ref.get("drive_runtime") or {}).get("candidates", {}).get("throttle_f32")
+    drive_ref = ref.get("drive_runtime") or {}
+    cands = mh._normalized_drive_candidates(drive_ref.get("candidates") or {})
+    motor_spec = cands.get("throttle_motor_f32") or dict(mh.DEFAULT_THROTTLE_MOTOR_SPEC)
 
     try:
         sample = mh.read_active_sample(h, base)
@@ -656,12 +736,21 @@ def run_gui(*, interval_ms: int = 100) -> int:
             return 1
         veh_ptr = _vehicle_ptr_from_sample(sample)
         veh_id = sample.get("vehicle_id") or "?"
+        input_spec, _src = resolve_throttle_input_spec(
+            h,
+            base,
+            veh_ptr or 0,
+            veh_id,
+            global_spec=cands.get("throttle_input") or cands.get("throttle_f32"),
+            per_vehicle=per_vehicle_specs(drive_ref),
+        )
         app = PedalWindow(
             h,
             base,
             veh_ptr=veh_ptr,
             veh_id=veh_id,
-            thr_spec=thr_spec,
+            input_spec=input_spec,
+            motor_spec=motor_spec,
             interval_ms=interval_ms,
         )
         app.run()
@@ -845,7 +934,7 @@ def run_banco(*, interval: float = 0.1, duration: float | None = None, scout: bo
     h, base, pid = opened
     ref = mh.load_offsets_reference()
     cands = (ref.get("drive_runtime") or {}).get("candidates") or {}
-    thr_spec = cands.get("throttle_f32")
+    thr_spec = cands.get("throttle_input") or cands.get("throttle_f32")
     rpm_spec = cands.get("engine_rpm_f32")
 
     try:
@@ -863,7 +952,8 @@ def run_banco(*, interval: float = 0.1, duration: float | None = None, scout: bo
 
         print("=== Banco pruebas DRIVE (gas / RPM / aceleracion) ===")
         print(f"PID={pid}  vehiculo={veh_id}  chain={chain}  veh={sample.get('veh')}")
-        print(f"throttle CAL: {_offset_label(thr_spec)}")
+        print(f"throttle IN:  {_offset_label(thr_spec)}")
+        print(f"throttle MOT: vehicle+0x760 (fijo)")
         print(f"rpm:          {_offset_label(rpm_spec)}")
         print(f"intervalo={interval:.2f}s — Ctrl+C salir | --scout para buscar offset pedal")
         print(
@@ -894,6 +984,7 @@ def run_banco(*, interval: float = 0.1, duration: float | None = None, scout: bo
             mh.enrich_drive_fields(h, base, sample, t_s=t_s)
 
             thr_cal = _read_thr_cal(h, base, sample, thr_spec, veh_ptr)
+            thr_motor = _parse_f(sample.get("throttle_motor"))
 
             rpm = _parse_f(sample.get("engine_rpm"))
             if rpm is None and rpm_spec:
@@ -922,6 +1013,7 @@ def run_banco(*, interval: float = 0.1, duration: float | None = None, scout: bo
                 thr_pedal=thr_pedal,
                 pedal_tag=best or "?",
                 cal_bad=cal_bad,
+                thr_motor=thr_motor,
                 rpm=rpm,
                 speed_kmh=speed,
                 accel_kmh_s=accel,
@@ -962,6 +1054,11 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Banco en vivo gas/RPM/aceleracion")
     parser.add_argument("--interval", type=float, default=0.1)
     parser.add_argument("--duration", type=float, default=None, metavar="SEC")
+    parser.add_argument(
+        "--mando",
+        action="store_true",
+        help="Monitor consola IN/MOT + candidatos mando (mas claro que --gui)",
+    )
     parser.add_argument(
         "--gui",
         action="store_true",
@@ -1028,6 +1125,11 @@ def main() -> int:
             from ctypes import windll
 
             windll.kernel32.CloseHandle(h)
+
+    if args.mando:
+        from pedal_monitor import run_console_monitor
+
+        return run_console_monitor(interval=max(0.08, args.interval), duration=args.duration)
 
     if args.gui:
         ms = max(50, int(args.interval * 1000))

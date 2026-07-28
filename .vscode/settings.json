@@ -1,0 +1,13 @@
+{
+  "markdownlint.configFile": ".markdownlint.json",
+  "markdownlint.run": "onType",
+  "markdownlint.lintWorkspaceGlobs": [
+    "**/*.md",
+    "**/*.markdown"
+  ],
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true
+  }
+}

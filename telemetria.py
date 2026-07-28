@@ -2,7 +2,7 @@
 Telemetria SnowRunner — Fase 5-6.
 
 SnowRunner no publica telemetria (SimHub, API, UDP). Este modulo:
-  1. Protocolos de prueba (ck1500, mh9500, fleetstar, marshall, kodiak, t813)
+  1. Protocolos de prueba (ck1500, mh9500, fleetstar, marshall, kodiak, t813, bandit)
   2. Grabacion manual HUD o import CSV Havok (grabar_ce.py)
   3. Comparacion juego vs sim (por tramo mud/hard)
   4. Lectura de game.log (errores mod, no fisica)
@@ -50,6 +50,8 @@ _SESSION_PREFIX_VEHICLE: dict[str, str] = {
     "f3": "ck1500",
     "s8": "scout800",
     "t813": "t813",
+    "bd": "bandit",
+    "bandit": "bandit",
 }
 
 
@@ -695,6 +697,54 @@ TEST_PROTOCOLS: tuple[TestProtocol, ...] = (
         "Semi + carga util; MSH I + diff.",
         "t813",
     ),
+    TestProtocol(
+        "bandit_f1_asfalto",
+        "KRS 58 Bandit F1 — asfalto LAZ 6 T60 + UHD I 51\"",
+        1,
+        "asphalt",
+        "Asfalto",
+        "highway",
+        True,
+        False,
+        "vacio",
+        True,
+        "bandit_real",
+        60.0,
+        "8x8 diff Always; WOT recto.",
+        "bandit",
+    ),
+    TestProtocol(
+        "bandit_f2_barro_uhd",
+        "KRS 58 Bandit F2 — barro 51\" UHD I + diff",
+        2,
+        "mud",
+        "Barro",
+        "highway",
+        True,
+        True,
+        "vacio",
+        True,
+        "bandit_real",
+        60.0,
+        "Marcha baja; calibrar BANDIT_MUD_* con CE.",
+        "bandit",
+    ),
+    TestProtocol(
+        "bandit_f3_carga",
+        "KRS 58 Bandit F3 — bastidor cargado barro",
+        3,
+        "mud",
+        "Barro",
+        "highway",
+        True,
+        True,
+        "frame_cargado",
+        True,
+        "bandit_real",
+        60.0,
+        "Bastidor con carga util; UHD I + diff.",
+        "bandit",
+    ),
 )
 
 
@@ -707,6 +757,7 @@ DEFAULT_MUD_PROTOCOL: dict[str, str] = {
     "kodiak": "kd_f2_barro_uhd",
     "scout800": "s8_f2_barro_hs",
     "t813": "t813_f2_barro_msh",
+    "bandit": "bandit_f2_barro_uhd",
 }
 DEFAULT_ASPHALT_PROTOCOL: dict[str, str] = {
     "ck1500": "f1_asfalto_i6",
@@ -716,6 +767,7 @@ DEFAULT_ASPHALT_PROTOCOL: dict[str, str] = {
     "kodiak": "kd_f1_asfalto",
     "scout800": "s8_f1_asfalto_aat6v",
     "t813": "t813_f1_asfalto",
+    "bandit": "bandit_f1_asfalto",
 }
 DEFAULT_LOADED_MUD_PROTOCOL: dict[str, str] = {
     "ck1500": "f3_carga_barro",
@@ -725,6 +777,7 @@ DEFAULT_LOADED_MUD_PROTOCOL: dict[str, str] = {
     "kodiak": "kd_f3_carga",
     "scout800": "s8_f3_carga_barro",
     "t813": "t813_f3_carga",
+    "bandit": "bandit_f3_carga",
 }
 DEFAULT_SNOW_PROTOCOL: dict[str, str] = {
     "ck1500": "f4_nieve_highway",
@@ -830,6 +883,8 @@ def load_scenario_for_vehicle(vehicle_id: str, load_hint: str, *, loaded: bool) 
         return "trailer_metal_planks"
     if vehicle_id == "t813":
         return "semi_cargado"
+    if vehicle_id == "bandit":
+        return "frame_cargado"
     return "vacio"
 
 
@@ -1472,6 +1527,14 @@ def _engine_for_id(engine_id: str) -> EngineConfig:
         from camiones.t813.simulador import ENGINE_STOCK_T813_KZGT
 
         return ENGINE_STOCK_T813_KZGT
+    if engine_id == "bandit_real":
+        from camiones.bandit.simulador import ENGINE_REAL_BANDIT_LAZ
+
+        return ENGINE_REAL_BANDIT_LAZ
+    if engine_id == "bandit_stock":
+        from camiones.bandit.simulador import ENGINE_STOCK_BANDIT_LAZ
+
+        return ENGINE_STOCK_BANDIT_LAZ
     if engine_id == "aat8v":
         from camiones.ck1500.engines import engine_for_ck1500
 
@@ -1520,6 +1583,10 @@ def _engine_for_session(meta: SessionMeta) -> EngineConfig:
         from camiones.t813.simulador import engine_for_t813
 
         return engine_for_t813(meta.engine_id, _engine_name_xml_from_meta(meta))
+    if meta.vehicle_id == "bandit":
+        from camiones.bandit.simulador import engine_for_bandit
+
+        return engine_for_bandit(meta.engine_id, _engine_name_xml_from_meta(meta))
     return _engine_for_id(meta.engine_id)
 
 
@@ -1588,6 +1655,13 @@ def build_vehicle_for_session(meta: SessionMeta) -> VehicleConfig:
         from camiones.t813.simulador import TIRES as T813_TIRES, make_vehicle
 
         tire_key = meta.tire if meta.tire in T813_TIRES else "msh_i"
+        layout = "awd" if meta.diff_lock else "rwd"
+        base = make_vehicle(tire_key, diff_lock=meta.diff_lock, drive_layout=layout)
+        return apply_load(base, _load_for_id(meta.load_scenario_id))
+    if meta.vehicle_id == "bandit":
+        from camiones.bandit.simulador import TIRES as BD_TIRES, make_vehicle
+
+        tire_key = meta.tire if meta.tire in BD_TIRES else "highway"
         layout = "awd" if meta.diff_lock else "rwd"
         base = make_vehicle(tire_key, diff_lock=meta.diff_lock, drive_layout=layout)
         return apply_load(base, _load_for_id(meta.load_scenario_id))

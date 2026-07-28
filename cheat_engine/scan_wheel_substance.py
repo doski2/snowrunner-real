@@ -25,7 +25,7 @@ OFF_WHEELS_END = 0x208
 SCAN_END = 0x400
 
 # Offsets Havok calibrados — lo que discrimina terreno en classify_*
-KEY_WHEEL_OFFSETS = ("+2FC", "+2EC", "+2B4")
+KEY_WHEEL_OFFSETS = ("+2FC", "+2EC", "+2B4", "+2BC")
 TERRAIN_SUMMARY_KEYS = (
     "terrain_kind",
     "wheel_grip",

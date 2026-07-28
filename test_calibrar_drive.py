@@ -82,6 +82,15 @@ class TestCalibrarDrive(unittest.TestCase):
         self.assertTrue(ranked)
         self.assertEqual(ranked[0][1], ("vehicle", 0x114))
 
+    def test_from_sweep_loads_bandit_candidate(self) -> None:
+        from cheat_engine.calibrar_drive import from_sweep
+
+        path = os.path.join(SNAP_DIR, "pedal_sweep_latest.json")
+        if not os.path.isfile(path):
+            self.skipTest("pedal_sweep_latest.json no presente")
+        rc = from_sweep(path, apply=False, verify_live=False, rank=1)
+        self.assertEqual(rc, 0)
+
 
 if __name__ == "__main__":
     unittest.main()

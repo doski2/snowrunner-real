@@ -42,7 +42,7 @@ class TestKodiakPatches(unittest.TestCase):
         self.assertEqual(vehicle_id_from_ce("chevrolet_kodiakc70"), "kodiak")
 
     def test_empty_mass_for_ce(self) -> None:
-        self.assertEqual(EMPTY_MASS_KG["kodiak"], 7900.0)
+        self.assertEqual(EMPTY_MASS_KG["kodiak"], 8150.0)
         self.assertEqual(VEHICLE_REAL.mass_kg, EMPTY_MASS_KG["kodiak"])
 
     def test_merge_includes_kodiak_files(self) -> None:

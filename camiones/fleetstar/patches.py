@@ -7,16 +7,16 @@ PATCHES: dict[str, list[tuple[str, str]]] = {
         ('FuelCapacity="240"', 'FuelCapacity="210"'),
         ('Responsiveness="0.1"', 'Responsiveness="0.085"'),
         (
-            'ImpactType="Truck"\r\n\t\t\tMass="3500"\r\n\t\t\tModelFrame="BoneChassis_cdt"',
             'ImpactType="Truck"\r\n\t\t\tMass="3650"\r\n\t\t\tModelFrame="BoneChassis_cdt"',
+            'ImpactType="Truck"\r\n\t\t\tMass="4160"\r\n\t\t\tModelFrame="BoneChassis_cdt"',
         ),
         (
-            'ImpactType="Truck"\r\n\t\t\t\tMass="1500"\r\n\t\t\t\tModelFrame="BoneCabin_cdt"',
             'ImpactType="Truck"\r\n\t\t\t\tMass="1620"\r\n\t\t\t\tModelFrame="BoneCabin_cdt"',
+            'ImpactType="Truck"\r\n\t\t\t\tMass="1730"\r\n\t\t\t\tModelFrame="BoneCabin_cdt"',
         ),
         (
-            'ImpactType="Truck"\r\n\t\t\t\t\tMass="1300"\r\n\t\t\t\t\tModelFrame="BoneCabinRagdoll_cdt"',
             'ImpactType="Truck"\r\n\t\t\t\t\tMass="1380"\r\n\t\t\t\t\tModelFrame="BoneCabinRagdoll_cdt"',
+            'ImpactType="Truck"\r\n\t\t\t\t\tMass="1510"\r\n\t\t\t\t\tModelFrame="BoneCabinRagdoll_cdt"',
         ),
     ],
     "[media]/classes/engines/e_us_truck_old.xml": [

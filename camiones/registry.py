@@ -10,6 +10,7 @@ from camiones.kodiak.patches import PATCHES as KODIAK_PATCHES
 from camiones.marshall.patches import PATCHES as MARSHALL_PATCHES
 from camiones.mh9500.patches import PATCHES as MH9500_PATCHES
 from camiones.scout800.patches import PATCHES as SCOUT800_PATCHES
+from camiones.bandit.patches import PATCHES as BANDIT_PATCHES
 from camiones.t813.patches import PATCHES as T813_PATCHES
 
 PatchRules = dict[str, list[tuple[str, str]]]
@@ -22,6 +23,7 @@ __all__ = [
     "MARSHALL_PATCHES",
     "MH9500_PATCHES",
     "SCOUT800_PATCHES",
+    "BANDIT_PATCHES",
     "T813_PATCHES",
     "PatchRules",
     "VEHICLES",
@@ -95,7 +97,7 @@ VEHICLES: dict[str, VehicleMod] = {
         patches=KODIAK_PATCHES,
         sim_module="camiones.kodiak.simulador",
         ce_id="s_chevrolet_kodiakc70",
-        notes="HEAVY_DUTY 4x4; Si-6V; 39\" UHD I; ~7900 kg mod",
+        notes="HEAVY_DUTY 4x4; Si-6V; 39\" UHD I; ~8150 kg mod",
     ),
     "scout800": VehicleMod(
         id="scout800",
@@ -116,6 +118,16 @@ VEHICLES: dict[str, VehicleMod] = {
         sim_module="camiones.t813.simulador",
         ce_id="s_tatra_t813",
         notes="HEAVY 8x8; KZGT-8 490; JAT MSH I 50\"; diff instalado",
+    ),
+    "bandit": VehicleMod(
+        id="bandit",
+        label="KRS 58 Bandit",
+        game_id="krs_58_bandit",
+        xml_file="krs_58_bandit.xml",
+        patches=BANDIT_PATCHES,
+        sim_module="camiones.bandit.simulador",
+        ce_id="s_krs_58_bandit",
+        notes="OFFROAD 8x8; LAZ 6 T60; 51\" UHD I; diff Always; ~7600 kg mod",
     ),
 }
 
@@ -154,6 +166,8 @@ _CE_ID_ALIASES: dict[str, str] = {
     "international_scout_800": "scout800",
     "s_tatra_t813": "t813",
     "tatra_t813": "t813",
+    "s_krs_58_bandit": "bandit",
+    "krs_58_bandit": "bandit",
 }
 
 
@@ -173,12 +187,13 @@ def vehicle_id_from_ce(game_id: str) -> str | None:
 # Masa vacia del mod (suma XML / sim) — baseline para payload desde Havok
 EMPTY_MASS_KG: dict[str, float] = {
     "ck1500": 1750.0,
-    "mh9500": 7500.0,
-    "fleetstar": 6650.0,
-    "marshall": 1780.0,
-    "kodiak": 7900.0,
-    "scout800": 2350.0,
-    "t813": 14571.0,
+    "mh9500": 8200.0,
+    "fleetstar": 7400.0,
+    "marshall": 2030.0,
+    "kodiak": 8150.0,
+    "scout800": 2100.0,
+    "t813": 14000.0,
+    "bandit": 7600.0,
 }
 
 

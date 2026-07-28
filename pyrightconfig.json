@@ -1,0 +1,12 @@
+{
+  "include": ["."],
+  "exclude": ["**/__pycache__", "**/.venv"],
+  "extraPaths": ["."],
+  "pythonVersion": "3.11",
+  "executionEnvironments": [
+    {
+      "root": "cheat_engine",
+      "extraPaths": [".", ".."]
+    }
+  ]
+}
