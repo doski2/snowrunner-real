@@ -49,6 +49,7 @@ class TestMarshallRegistry(unittest.TestCase):
     def test_merge_includes_marshall_files(self) -> None:
         merged = merge_patches(["marshall"])
         self.assertIn("[media]/classes/trucks/khan_39_marshall.xml", merged)
+        self.assertIn("[media]/classes/engines/e_ru_scout_old.xml", merged)
         self.assertIn("[media]/classes/wheels/wheels_scout_yar_871.xml", merged)
 
 
@@ -60,6 +61,11 @@ class TestMarshallPatches(unittest.TestCase):
     def test_tm2_substance_nerfed(self) -> None:
         pairs = MARSHALL_PATCHES["[media]/classes/wheels/wheels_scout_yar_871.xml"]
         self.assertTrue(any('SubstanceFriction="1.7"' in new for _old, new in pairs))
+
+    def test_kr104_torque_patch(self) -> None:
+        pairs = MARSHALL_PATCHES["[media]/classes/engines/e_ru_scout_old.xml"]
+        self.assertTrue(any('Name="ru_scout_old_engine_0"' in new and 'Torque="28000"' in new for _o, new in pairs))
+        self.assertTrue(any('Name="ru_scout_old_engine_1"' in new and 'Torque="37333"' in new for _o, new in pairs))
 
 
 class TestMarshallSim(unittest.TestCase):

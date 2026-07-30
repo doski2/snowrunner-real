@@ -31,7 +31,7 @@ vacía. El §1 sigue siendo la motivación del plan, no un checklist cerrado.
 | ----------------------------- | -------------------- | --------------------------------------------------- | ---------------------------------- |
 | `initial.pak.bak` (Steam)     | ~29 MB ZIP + tail    | XML camiones, motores, ruedas, cajas, remolques     | `repack_pak.py`, `verify_pak.py`   |
 | Parches mod (`patches.py`)    | KB                   | Diff diseño vs stock                                | `camiones/*/patches.py`            |
-| `remolques_inventario.json`   | KB                   | Masas remolque, acople                              | `auditar_remolques.py`             |
+| `remolques_inventario.json`   | —                    | *(eliminado jul 2026)*                              | —                                  |
 | BinEditor Guides (Steam)      | PDF                  | Terreno mapa, no camión                             | ruta en `telemetria.py`            |
 
 **Pendiente:** inventario completo XML (ver §4.1).
@@ -203,7 +203,7 @@ Carga empaquetada en **addon sideboard** (no remolque). Calibrado Fleetstar F207
 
 | Subsección                  | Cobertura                              | Estado jun-2026                                                                                                                                                                                                              |
 | --------------------------- | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **2.1 Estáticas**           | Diseño XML stock + remolques + parches | **~70 %** — `auditar_pak_catalogo.py` → 5 JSON (`trucks`, `engines`, `wheels`, `gearboxes`, `suspensions`); parches mod solo manual; `remolques_inventario.json` sin merge a `catalogo/trailers.json`; BinEditor no indexado |
+| **2.1 Estáticas**           | Diseño XML stock + parches camión      | **~70 %** — `auditar_pak_catalogo.py` → 5 JSON; inventario remolques eliminado                                                                                                                                               |
 | **2.2 Runtime CE**          | Havok 0,5 s + protocolo `--auto`       | **Pipeline OK** — `grabar_ce.py --live`, import/index; carga bastidor (§2.5.2); falta volumen en `telemetria/sesiones/`                                                                                                      |
 | **2.3 Derivadas**           | Sim + MAE                              | **Parcial** — `simulacion_*.json` y `simulador.py` existen; `telemetria_comparacion.json` no persistido; MAE solo al vuelo con `--compare`                                                                                   |
 | **2.4 Metadatos**           | `session_context` obligatorio          | **Infra hecha** — `datos/session_context.py` cableado en import/grabar; `gearbox`/`suspension`/`trailer` del taller no se leen del juego (vacíos en protocolo)                                                               |
@@ -436,12 +436,12 @@ Metadatos XML al importar: `steer_speed_xml`, `responsiveness_xml`, `engine_resp
 | -------------------- | -------------------------------------- | ------------------------------------- |
 | **1 Motor/chasis**   | `engines.json` + CE v30 asfalto        | Torque, MaxDeltaAngVel                |
 | **2 Neumáticos**     | `wheels.json` + CE grip/contact        | SubstanceFriction por tipo            |
-| **3 Carga**          | `trailers.json` + CE payload           | Escenarios LOAD_SCENARIOS             |
+| **3 Carga**          | `trailers.json` + prueba F3 en juego   | No `cargo_*.xml`; sim por vehículo    |
 | **4 Terreno**        | CE terrain_kind por mapa + BinEditor   | Qué no parchear en camión             |
 | **5 Telemetría**     | `calibracion.json`                     | Protocolos válidos / MAE umbral       |
 | **6 Havok**          | `manifest.json` offsets                | Re-probe tras update Steam            |
 | **7 Clima**          | Sesiones `f7_*` mismo tramo            | Lluvia/noche vs seco                  |
-| **8 Remolques**      | `trailers.json` + CE trailer_mass      | No parchear vs ajustar camión         |
+| **8 Remolques**      | Prueba F3 en juego                     | No parchear trailers globales         |
 
 ### Oleada 5 — Cierre de sesión de estudio
 
@@ -463,7 +463,7 @@ No hace falta grabar vídeo. Sí acumular:
 | Bloque           | Tiempo                                      | Contenido                                            |
 | ---------------- | ------------------------------------------- | ---------------------------------------------------- |
 | A — Probe        | 2 min                                       | `grabar_ce.py --probe` × cada camión                 |
-| B — Catálogo     | 1 h (offline)                               | `auditar_pak_catalogo.py` + `auditar_remolques.py`   |
+| B — Catálogo     | 1 h (offline)                               | `auditar_pak_catalogo.py`                            |
 | C — Ruta mixta   | 120 s × N camiones **o juego libre (§4.1)** | `grabar_ce.py --auto` hasta Ctrl+C                   |
 | D — Barro puro   | 120 s                                       | mismo tramo barro, marcha L                          |
 | E — Carga        | 120 s                                       | semi / remolque scout                                |
@@ -506,8 +506,7 @@ activa por defecto.
 
 | Herramienta                           | Estado                        | Oleada   |
 | ------------------------------------- | ----------------------------- | -------- |
-| `auditar_remolques.py`                | Hecho                         | 1        |
-| `grabar_ce.py` / `.bat`               | Hecho                         | 2        |
+| `grabar_ce.py` / `.bat`               | Archivado                     | 2        |
 | `importar_ce_csv.py`                  | Hecho                         | 2        |
 | `comparar_telemetria.py`              | Hecho                         | 2        |
 | `verify_pak.py`                       | Hecho                         | 1        |
@@ -562,12 +561,12 @@ activa por defecto.
 | ---------------------------------------- | ----------------------------------------- |
 | [FASE-1.md](FASE-1.md)                   | Motor/chasis — consume catálogo engines   |
 | [FASE-2.md](FASE-2.md)                   | Neumáticos — consume wheels + CE grip     |
-| [FASE-3.md](FASE-3.md)                   | Carga — trailers + LOAD_SCENARIOS         |
+| [FASE-3.md](FASE-3.md)                   | Carga — trailers; sim por vehículo        |
 | [FASE-4.md](FASE-4.md)                   | Terreno mapa vs sim                       |
 | [FASE-5.md](FASE-5.md)                   | Protocolos telemetría                     |
 | [FASE-6.md](FASE-6.md)                   | Pipeline Havok                            |
 | [FASE-7.md](FASE-7.md)                   | Clima — sesiones etiquetadas              |
-| [FASE-8.md](FASE-8.md)                   | Remolques — inventario + CE               |
+| [FASE-8.md](FASE-8.md)                   | Remolques — archivado (sin inventario)    |
 | `camiones/registry.py`                   | Masas vacías, IDs CE                      |
 | `cheat_engine/offsets_referencia.json`   | Build → offsets                           |
 

@@ -20,6 +20,11 @@ PATCHES: dict[str, list[tuple[str, str]]] = {
         ),
     ],
     "[media]/classes/engines/e_ru_truck_old.xml": [
+        # RUTruckOldEngine no define EngineResponsiveness en stock (SR!NFO ~0.040).
+        (
+            'DamageCapacity="200"\r\n\t\t\tDamagedMinTorqueMultiplier="1.0"\r\n\t\t\tDamagedMaxTorqueMultiplier="0.5"\r\n\t\t\tMaxDeltaAngVel="0.01"',
+            'DamageCapacity="200"\r\n\t\t\tEngineResponsiveness="0.028"\r\n\t\t\tDamagedMinTorqueMultiplier="1.0"\r\n\t\t\tDamagedMaxTorqueMultiplier="0.5"\r\n\t\t\tMaxDeltaAngVel="0.01"',
+        ),
         (
             'FuelConsumption="4.5"\r\n\t\tName="ru_truck_old_engine_0"\r\n\t\tTorque="130000"',
             'FuelConsumption="3.1"\r\n\t\tName="ru_truck_old_engine_0"\r\n\t\tTorque="88500"',

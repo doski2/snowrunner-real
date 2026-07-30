@@ -66,8 +66,7 @@ Mod objetivo **2100 kg** — bajar desde ~2812 kg catálogo hacia Scout real.
 | Masa      | ~2812 kg | **2100 kg** objetivo registry |
 | Chasis    | 1900+900 | **1600+750** (parcheado)      |
 
-Motor `e_us_scout_old.xml` **pendiente** (compartido con CK1500). Masa mod aún por calibrar vs
-Scout real (~1,8–2,2 t según año).
+Motor AAT-6V en `e_us_scout_old.xml` (compartido scouts US; motor CK1500 dedicado en otro XML).
 
 ```powershell
 ```
@@ -80,9 +79,12 @@ Scout real (~1,8–2,2 t según año).
 | ------------------ | ----- | ---------------- | ------ |
 | `Responsiveness`   | 0.6   | **0.04**         | 1      |
 | Masa chasis        | 1900  | **1600**         | 1 / 3  |
-| Masa bastidor      | 900   | **750**          | 1 / 3  |
+| Masa bastidor      | 900   | **600**          | 1 / 3  |
+| AAT-6V `Torque`    | 35000 | **32000**        | 1      |
+| `MaxDeltaAngVel`   | 0.01  | **0.012**        | 1      |
 
-**No toca aún:** `e_us_scout_old.xml` (motor compartido), `wheels_scout_highway.xml`.
+**Compartido:** `e_us_scout_old.xml` afecta otros scouts US (no el motor CK1500 dedicado). HS I en
+`wheels_scout_highway.xml` pendiente.
 
 ---
 
@@ -133,7 +135,7 @@ Scout real (~1,8–2,2 t según año).
 | S8-F2 | 2      | [ ]      | Barro HS I — parche neumático      |
 | S8-F3 | 3      | [ ]      | Remolque + vigas                   |
 
-**Orden sugerido:** cerrar CK1500 F1 antes de motor compartido `e_us_scout_old.xml`.
+**Nota:** motor compartido aplicado; probar en juego con AAT-6V instalado.
 
 ---
 

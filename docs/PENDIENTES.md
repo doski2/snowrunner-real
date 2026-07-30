@@ -37,8 +37,9 @@ Copiar `initial.pak` → `...\Steam\steamapps\common\SnowRunner\preload\paks\cli
 | GMC MH9500              | `mh9500`    | 8200   | SR!NFO 8438                         |
 | Tatra T813              | `t813`      | 14000  | Tatra 813 TE ~13800                 |
 
-Torque nerfeado ~68 % en motores pesados (ver `patches.py` / FASES). Marshall y Scout 800: motor sin
-parche aún.
+Torque nerfeado ~68 % en motores pesados; scouts ~7–9 % (Kr 104 / AAT-6V). **8/8** vehículos con
+motor en `patches.py` (Marshall `e_ru_scout_old`, Scout 800 `e_us_scout_old`, Bandit
+`EngineResponsiveness` en plantilla `RUTruckOldEngine`). Ver `patches.py` / FASES.
 
 ---
 
@@ -46,7 +47,7 @@ parche aún.
 
 | Vehículo                | ID          | Activo   | Siguiente paso                            | Doc                           |
 | ----------------------- | ----------- | -------- | ----------------------------------------- | ----------------------------- |
-| **KRS 58 Bandit**       | `bandit`    | **sí**   | Aplicar pak + probar sensación nueva masa | `camiones/bandit/FASES.md`    |
+| **KRS 58 Bandit**       | `bandit`    | **sí**   | Copiar pak → juego; probar LAZ 6 T60      | `camiones/bandit/FASES.md`    |
 | Tatra T813              | `t813`      | no       | Aplicar pak (masa TE)                     | `camiones/t813/FASES.md`      |
 | Fleetstar F2070A        | `fleetstar` | no       | Aplicar pak                               | `camiones/fleetstar/FASES.md` |
 | KHAN 39 Marshall        | `marshall`  | no       | Aplicar pak                               | `camiones/marshall/FASES.md`  |
@@ -113,11 +114,11 @@ Solo tocar `simulador.py` cuando la prueba en juego y el sim diverjan de forma c
 
 ## En espera (no mezclar con vehículo activo)
 
-| Tema              | Doc                | Retomar cuando                           |
-| ----------------- | ------------------ | ---------------------------------------- |
-| Clima día/noche   | `docs/FASE-7.md`   | Barro estable en 2+ camiones             |
-| Remolques / hitch | `docs/FASE-8.md`   | Semi/bastidor validados en MH + Marshall |
-| Catálogo `.pak`   | `datos/README.md`  | Mantenimiento                            |
+| Tema              | Doc                          | Retomar cuando                            |
+| ----------------- | ---------------------------- | ----------------------------------------- |
+| Clima día/noche   | `docs/FASE-7.md`             | Barro estable en 2+ camiones              |
+| Remolques / hitch | `docs/FASE-8.md` (archivado) | F3 en juego: semi/bastidor/remolque scout |
+| Catálogo `.pak`   | `datos/README.md`            | Mantenimiento                             |
 
 ---
 
@@ -137,4 +138,4 @@ No forman parte del checklist actual. Ver `CE-ARCHIVADO.md`.
 | Catálogo XML     | `datos/README.md`        |
 | Notas personales | `personal.txt`           |
 
-*Última revisión: 2026-07-29 — masas TE/SR!NFO; sin protocolo F1–F3.*
+*Última revisión: 2026-07-31 — motores 8/8 en pak; Marshall + Scout 800 añadidos.*

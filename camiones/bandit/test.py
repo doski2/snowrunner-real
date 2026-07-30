@@ -54,6 +54,12 @@ class TestBanditPatches(unittest.TestCase):
         pairs = BANDIT_PATCHES[BANDIT_TRUCK_ARC]
         self.assertTrue(any('Responsiveness="0.18"' in new for _old, new in pairs))
 
+    def test_engine_template_responsiveness(self) -> None:
+        pairs = BANDIT_PATCHES["[media]/classes/engines/e_ru_truck_old.xml"]
+        self.assertTrue(
+            any('EngineResponsiveness="0.028"' in new for _old, new in pairs)
+        )
+
     def test_uhd_substance_nerfed(self) -> None:
         pairs = BANDIT_PATCHES[
             "[media]/classes/wheels/wheels_medium_double_front.xml"

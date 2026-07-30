@@ -26,7 +26,9 @@ TORQUE_MOD: dict[str, tuple[str, int, int]] = {
     "kodiak": ("us_truck_old_engine_0", 135000, 92000),
     "mh9500": ("gmc9500", 140000, 95000),
     "t813": ("ru_special_engine_1", 230000, 157000),
-    "ck1500": ("ck1500", 62000, 40000),
+    "ck1500": ("us_scout_old_engine_ck1500", 62000, 40000),
+    "marshall": ("ru_scout_old_engine_0", 30000, 28000),
+    "scout800": ("us_scout_old_engine_0", 35000, 32000),
 }
 
 

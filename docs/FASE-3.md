@@ -17,7 +17,7 @@ comportamiento con carga y simular tendencias.
 | Inventario masa chasis / addons / remolque / cargo en `.pak` | Hecho                                                     |
 | Referencia payload real K10 ~1971                            | Hecho                                                     |
 | Extender `simulador_ck1500.py` con carga y remolque          | Hecho                                                     |
-| `test_simulacion_carga.py` + `simular_carga.py`              | Hecho                                                     |
+| `test_simulacion_carga.py` + `simular_carga.py`              | **Archivado** (eliminado jul 2026)                        |
 | Parches XML de masas de carga                                | **No** (solo sim + doc)                                   |
 | Prueba en juego CK1500 con remolque                          | Parcial                                                   |
 | Escenarios semi MH9500 en sim                                | **Hecho** (`semi_vacio`, `semi_cargado`)                  |
@@ -123,24 +123,28 @@ error del mod.
 Remolque sin tracción: coeficientes extra `TRAILER_ROLL_COEF` y `TRAILER_HITCH_DRAG` (arrastre del
 enganche).
 
-### Escenarios precargados (`LOAD_SCENARIOS`)
+### Sim por vehículo (activo)
+
+Cada `camiones/<id>/simulador.py` puede usar `cargo_mass_kg` / `trailer_*` en `VehicleConfig` para
+comparar vacío vs cargado (ej. `LOAD_FRAME_FULL` en Bandit/Fleetstar). No hay matriz global ni
+`simulacion_carga.json`.
+
+### Escenarios precargados (`LOAD_SCENARIOS`) — archivado
+
+La matriz CK1500 (`simular_carga.py`, `LOAD_SCENARIOS`, `run_cargo_matrix`) se eliminó jul 2026.
+Referencia histórica de IDs:
 
 | ID                     | Descripción                | Masa total aprox.   |
 | ---------------------- | -------------------------- | ------------------- |
 | `vacio`                | Solo chasis mod            | 1750 kg             |
-| `addons`               | + portaequipajes y snorkel | 1970 kg             |
-| `trailer_vacio`        | + remolque scout vacío     | 2550 kg             |
-| `trailer_bricks`       | + ladrillos 1 slot         | 3550 kg             |
-| `trailer_spare_parts`  | + repuestos 1 slot         | 3750 kg             |
-| `trailer_metal_planks` | + vigas 2 slots            | 5050 kg             |
-| `mision_pesada`        | addons + remolque + vigas  | 5270 kg             |
+| `trailer_metal_planks` | + remolque + vigas 2 slots | 5050 kg remolque    |
+| `frame_cargado`        | Bastidor + 6 t util        | —                   |
+| `semi_cargado`         | Semi + 12 t util           | —                   |
 
-### Comandos
+### Comandos (histórico)
 
 ```powershell
 ```
-
-Salida JSON: `simulacion_carga.json`
 
 ---
 
@@ -153,13 +157,13 @@ Salida JSON: `simulacion_carga.json`
 | Bajar `Mass` en `cargo_*.xml`     | **No** — afecta todos los contratos del juego, no solo CK1500 |
 | Subir masa remolque / bajar carga | **No** — cambio global de balance de misiones                 |
 | Mantener chasis 1750 kg (Fase 1)  | **Sí** — ya alineado con K10 real                             |
-| Simular vacío vs cargado          | **Sí** — orienta expectativas en barro y cuestas              |
+| Matriz `simular_carga`            | **Archivado** — validar carga en juego (F3 en `FASES.md`)     |
 
 Si en juego el CK1500 con remolque lleno resulta **demasiado capaz** en barro, el ajuste fino iría
 en motor (Fase 1) o neumáticos (Fase 2), no en multiplicar cientos de XML de carga.
 
 **Fase 8** amplía esto: distribución longitudinal, tipo de acople (drawbar vs saddle) y masas reales
-de semi — ver **`FASE-8.md`**.
+de semi — ver **`FASE-8.md`** (archivado; validar F3 en juego).
 
 ---
 
@@ -174,23 +178,24 @@ de semi — ver **`FASE-8.md`**.
 
 ## Archivos del proyecto
 
-| Archivo                    | Rol                                                     |
-| -------------------------- | ------------------------------------------------------- |
-| `simulador_ck1500.py`      | `total_mass_kg`, `LOAD_SCENARIOS`, `run_cargo_matrix()` |
-| `test_simulacion_carga.py` | Tests unittest Fase 3                                   |
-| `simular_carga.py`         | Informe consola + JSON                                  |
-| `simulacion_carga.json`    | Resultados exportados                                   |
-| `FASE-3.md`                | Este documento                                          |
+| Archivo                   | Rol                                                         |
+| ------------------------- | ----------------------------------------------------------- |
+| `sim/core.py`             | `total_mass_kg()`, `cargo_mass_kg` / remolque en `step()`   |
+| `camiones/*/simulador.py` | Escenarios cargados puntuales (vacío vs bastidor/semi)      |
+| `FASE-3.md`               | Este documento                                              |
+
+Eliminados (jul 2026): `simular_carga.py`, `simulacion_carga.json`,
+`camiones/ck1500/test_simulacion_carga.py`.
 
 ---
 
 ## Validación en juego (Fases 1–4)
 
-| Qué comprobar | Cómo                                                         |
-| ------------- | ------------------------------------------------------------ |
-| Masa chasis   | Ya en Fase 1 (`patches.py`); no `cargo_*.xml`                |
-| Carga F3      | Mismo tramo barro vacío vs cargado; km/h HUD y sensación     |
-| Sim           | `LOAD_SCENARIOS`, `total_mass_kg()` orientan tendencia       |
+| Qué comprobar | Cómo                                                           |
+| ------------- | -------------------------------------------------------------- |
+| Masa chasis   | Ya en Fase 1 (`patches.py`); no `cargo_*.xml`                  |
+| Carga F3      | Mismo tramo barro vacío vs cargado; km/h HUD y sensación       |
+| Sim           | `camiones/*/simulador.py` (vacío vs cargado); no matriz global |
 
 Fases 5–6 (telemetría CE): **archivadas** — ver `CE-ARCHIVADO.md`.
 

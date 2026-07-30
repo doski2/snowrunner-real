@@ -54,7 +54,7 @@ Dentro del ZIP, las entradas usan **backslash**: `[media]\classes\trucks\chevrol
 | **5** Telemetría HUD | —                                                                            | `FASE-5.md` **archivado**                         |
 | **6** CE Havok       | —                                                                            | `FASE-6.md` **archivado** — ver `CE-ARCHIVADO.md` |
 | **7** Clima          | — (no editable en camión)                                                    | `FASE-7.md`                                       |
-| **8** Remolques      | Enganche en camión; remolques globales con cuidado                           | `FASE-8.md`                                       |
+| **8** Remolques      | F3 en juego; no `trailers/*.xml` globales                                    | `FASE-8.md` **archivado** (sin inventario)        |
 
 Detalle por camión: `camiones/<id>/FASES.md`.
 

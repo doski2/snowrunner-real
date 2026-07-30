@@ -25,4 +25,4 @@ peso y carga? comportamiento del vehiculo y mirar el peso y tipo de cargar,
 consultas: 
 
 
-pendiente:revisa mas archivos inecesario los .bat y todo lo de f1,2,3 memoria...
+pendiente:

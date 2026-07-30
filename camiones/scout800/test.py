@@ -18,6 +18,15 @@ class TestScout800(unittest.TestCase):
     def test_patches_include_truck_xml(self) -> None:
         merged = merge_patches(["scout800"])
         self.assertIn("[media]/classes/trucks/international_scout_800.xml", merged)
+        self.assertIn("[media]/classes/engines/e_us_scout_old.xml", merged)
+
+    def test_aat6v_torque_in_patches(self) -> None:
+        from camiones.scout800.patches import PATCHES
+
+        pairs = PATCHES["[media]/classes/engines/e_us_scout_old.xml"]
+        self.assertTrue(
+            any('Name="us_scout_old_engine_0"' in new and 'Torque="32000"' in new for _o, new in pairs)
+        )
 
     def test_aat6v_engine(self) -> None:
         self.assertIs(engine_for_scout800("aat6v"), ENGINE_AAT6V_REAL)

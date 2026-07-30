@@ -122,11 +122,11 @@ No hay PDF de fábrica del Bandit en el repo; validación = coherencia SR!NFO + 
 
 ## Archivos XML parcheados
 
-| Archivo en `initial.pak`                                | Cambios                                                   |
-| ------------------------------------------------------- | --------------------------------------------------------- |
-| `[media]/_dlc/dlc_2_2/classes/trucks/krs_58_bandit.xml` | Masa, `Responsiveness`, `FuelCapacity`                    |
-| `[media]/classes/engines/e_ru_truck_old.xml`            | Torque y consumo de los 4 motores `ru_truck_old_engine_*` |
-| `[media]/classes/wheels/wheels_medium_double_front.xml` | `highway_1` → `SubstanceFriction="0.5"`                   |
+| Archivo en `initial.pak`                                | Cambios                                                                                          |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| `[media]/_dlc/dlc_2_2/classes/trucks/krs_58_bandit.xml` | Masa, `Responsiveness`, `FuelCapacity`                                                           |
+| `[media]/classes/engines/e_ru_truck_old.xml`            | Plantilla `RUTruckOldEngine` → `EngineResponsiveness="0.028"`; torque y consumo de los 4 motores |
+| `[media]/classes/wheels/wheels_medium_double_front.xml` | `highway_1` → `SubstanceFriction="0.5"`                                                          |
 
 ---
 

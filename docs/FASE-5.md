@@ -88,12 +88,12 @@ Ambos métodos producen JSON en `telemetria/sesiones/` comparables con `comparar
 
 ### Qué va en el sim vs qué mide CE
 
-| Dato                   | Sim / XML        | CE runtime                              |
-| ---------------------- | ---------------- | --------------------------------------- |
-| Masa, motor, ruedas    | Sí               | Masa Havok + payload vs vacío XML       |
-| Velocidad, combustible | Predicción       | Sí                                      |
-| Terreno barro/firme    | `SurfaceConfig`  | `terrain_kind`, `contact_avg` por rueda |
-| Carga / remolque       | `LOAD_SCENARIOS` | `payload_kg`, `load_hint`, `trailer_id` |
+| Dato                   | Sim / XML                 | CE runtime                              |
+| ---------------------- | ------------------------- | --------------------------------------- |
+| Masa, motor, ruedas    | Sí                        | Masa Havok + payload vs vacío XML       |
+| Velocidad, combustible | Predicción                | Sí                                      |
+| Terreno barro/firme    | `SurfaceConfig`           | `terrain_kind`, `contact_avg` por rueda |
+| Carga / remolque       | `simulador.py` por camión | `payload_kg`, `load_hint`, `trailer_id` |
 
 ### Protocolos incluidos (`TEST_PROTOCOLS`)
 

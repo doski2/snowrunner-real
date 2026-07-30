@@ -48,7 +48,8 @@ Análogo scout ruso documentado: **UAZ-469** (sustituye GAZ-69, **1972–2007**,
 | Carga       | 6 pax / **600 kg** útil   |
 | GC          | **220–300 mm**            |
 
-Mod **2030 kg** cerca de masa UAZ; motor `e_ru_scout_old.xml` **no** parcheado (compartido).
+Mod **2030 kg** cerca de masa UAZ; motor Kr 104 / Kr 135-T en `e_ru_scout_old.xml` (compartido
+scouts RU).
 
 ### Ficha comunidad (SR!NFO)
 
@@ -66,7 +67,7 @@ Mod **2030 kg** cerca de masa UAZ; motor `e_ru_scout_old.xml` **no** parcheado (
 | Masa             | ~1792 kg          | **2030 kg**                    |
 | `Responsiveness` | 0.04 (stock bajo) | **0.04** (parcheado desde 0.6) |
 
-Mod sube masa hacia SR!NFO; motor `e_ru_scout_old.xml` **no** parcheado (compartido).
+Mod sube masa hacia SR!NFO; motor Kr 104 **30000→28000** Ncm, Kr 135-T **40000→37333** Ncm.
 
 ```powershell
 ```
@@ -81,8 +82,11 @@ Mod sube masa hacia SR!NFO; motor `e_ru_scout_old.xml` **no** parcheado (compart
 | `Responsiveness`          | 0.6   | **0.04**  | 1      |
 | TM II `SubstanceFriction` | 2.4   | **1.7**   | 2 / 4  |
 | TM I `BodyFriction`       | 2.4   | **2.0**   | 2      |
+| Kr 104 `Torque`           | 30000 | **28000** | 1      |
+| Kr 135-T `Torque`         | 40000 | **37333** | 1      |
 
-**No se toca:** suspensión reptadora (taller), motores en `e_ru_scout_old.xml`.
+**No se toca:** suspensión reptadora (taller). `e_ru_scout_old.xml` es **compartido** (otros scouts
+RU).
 
 ---
 
