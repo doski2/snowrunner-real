@@ -1,4 +1,4 @@
-"""Referencias XML stock (catalogo Capa B) para metadatos de sesion CE."""
+"""Referencias XML stock (catalogo Capa B) para consultas del mod."""
 
 from __future__ import annotations
 
@@ -98,7 +98,7 @@ def _default_suspension_wheels(socket_id: str) -> tuple[dict | None, dict | None
 
 
 def setup_xml_from_catalog(vehicle_mod_id: str) -> dict[str, float | str | bool]:
-    """Campos XML stock para session_context.setup (initial.pak.bak, no mod parcheado).
+    """Campos XML stock del catálogo (initial.pak.bak, no mod parcheado).
 
     Incluye SteerSpeed, Responsiveness, suspensión Strength/Damping/Height,
     motor/caja default (sockets Type + variante resuelta en gearboxes.json).

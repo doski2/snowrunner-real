@@ -8,7 +8,3 @@ target-version = "py311"
 [tool.pyright]
 pythonVersion = "3.11"
 extraPaths = ["."]
-
-[[tool.pyright.executionEnvironments]]
-root = "cheat_engine"
-extraPaths = [".", ".."]

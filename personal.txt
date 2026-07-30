@@ -22,11 +22,7 @@ peso y carga? comportamiento del vehiculo y mirar el peso y tipo de cargar,
  Face 8:
  debemos revisar el peso y la distribucion de los remolques?
 
-consultas: detectar correctamente la carga,aceleracion
-tenemos un banco de prueba usa lo para todo
-ahora estamos con el acelerador
-revisa camion por camio la base de datos y compara con lo que tenemos
+consultas: 
 
 
-pendiente: mas pruebas con KHAN 39 Marshall
-probar motor 6v 2100t y comentar
+pendiente:revisa mas archivos inecesario los .bat y todo lo de f1,2,3 memoria...
