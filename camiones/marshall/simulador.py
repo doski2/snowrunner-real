@@ -110,9 +110,6 @@ VEHICLE_REAL = VehicleConfig(
     mud_resist_mult=KM_MUD_RESIST_MULT,
 )
 
-LOAD_TRAILER_MASS = 800
-LOAD_TRAILER_CARGO = 1000
-
 
 def _with_km_mud_cal(veh: VehicleConfig) -> VehicleConfig:
     """4WD+diff sin calibracion explicita hereda KM_MUD_* (telemetria / make_vehicle)."""
@@ -142,15 +139,6 @@ def run_km_matrix() -> list[dict]:
     configs = [
         ("stock TM II AWD+diff", VEHICLE_STOCK, ENGINE_STOCK_KM),
         ("real TM II AWD+diff", VEHICLE_REAL, ENGINE_REAL_KM),
-        (
-            "real + remolque scout",
-            replace(
-                VEHICLE_REAL,
-                trailer_mass_kg=LOAD_TRAILER_MASS,
-                trailer_cargo_mass_kg=LOAD_TRAILER_CARGO,
-            ),
-            ENGINE_REAL_KM,
-        ),
     ]
     for label, veh, eng in configs:
         for surface in SURFACES:
@@ -195,17 +183,6 @@ def main() -> None:
             f"  {label:<18} v30={sample_at(s, 30.0):.1f} "
             f"vmax={max(s.speeds_kmh):.1f} km/h"
         )
-
-    loaded = replace(
-        VEHICLE_REAL,
-        trailer_mass_kg=LOAD_TRAILER_MASS,
-        trailer_cargo_mass_kg=LOAD_TRAILER_CARGO,
-    )
-    s_load = run_sim(loaded, eng, mud, 120.0, low_gear=True)
-    print(
-        f"\n--- Remolque scout (~{LOAD_TRAILER_MASS + LOAD_TRAILER_CARGO} kg) barro (km_f3_carga) ---\n"
-        f"  v30={sample_at(s_load, 30.0):.1f} vmax={max(s_load.speeds_kmh):.1f} km/h"
-    )
 
 
 if __name__ == "__main__":

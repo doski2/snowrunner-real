@@ -116,13 +116,17 @@ Definidos en `camiones/ck1500/patches.py`:
 
 #### Chasis — `chevrolet_ck1500.xml`
 
-| Parametro                 | Fabrica          | Mod I6          | Efecto                                          |
-| ------------------------- | ---------------- | --------------- | ----------------------------------------------- |
-| `Mass` chasis / trasero   | 1150 / 1050 kg   | **900 / 850**   | Total 1750 kg (cerca del K10 real)              |
-| `FuelCapacity`            | 80 L             | **76 L**        | 20 gal US                                       |
-| `CenterOfMassOffset Y`    | -0.15            | **-0.20**       | Centro de gravedad algo mas bajo                |
-| `DefaultTire`             | `highway_1`      | sin cambio      | Stock malo en barro (`SubstanceFriction=0.2`)   |
-| `DiffLockType`            | `Uninstalled`    | sin cambio      | Bloqueo es mejora de taller                     |
+| Parametro                 | Fabrica          | Mod I6          | Efecto                                               |
+| ------------------------- | ---------------- | --------------- | ---------------------------------------------------- |
+| `Mass` chasis / trasero   | 1150 / 1050 kg   | **900 / 850**   | Total 1750 kg (cerca del K10 real)                   |
+| `FuelCapacity`            | 80 L             | **76 L**        | 20 gal US                                            |
+| `CenterOfMassOffset Y`    | -0.15            | **-0.20**       | Centro de gravedad algo mas bajo                     |
+| `DefaultTire`             | `highway_1`      | sin cambio      | Stock malo en barro (`SubstanceFriction=0.2`)        |
+| `DiffLockType`            | `Uninstalled`    | sin cambio      | Bloqueo es mejora de taller; ver nota DiffLock abajo |
+
+> **No parchear** `Responsiveness` ni `SteerSpeed` en `<Truck>`: Saber los define como
+> **volante** [0–1], no motor ni tracción (`Integration of Trucks and Addons` §8, guía local
+> `docs/saber_guides/v1.9.21/`).
 
 #### Suspension default — `s_chevrolet_ck1500.xml`
 
@@ -133,12 +137,12 @@ Definidos en `camiones/ck1500/patches.py`:
 
 #### Motor exclusivo — `e_us_scout_old_ck1500.xml`
 
-| Parametro                | Fabrica   | Mod I6      | Notas                             |
-| ------------------------ | --------- | ----------- | --------------------------------- |
-| `Torque`                 | 62000     | **40000**   | I6, no V8                         |
-| `MaxDeltaAngVel`         | **10**    | **0.015**   | Fix critico (arcade → realista)   |
-| `FuelConsumption`        | 3.3       | **1.5**     |                                   |
-| `EngineResponsiveness`   | 0.4       | **0.28**    |                                   |
+| Parametro                | Fabrica   | Mod I6      | Notas                                                                        |
+| ------------------------ | --------- | ----------- | ---------------------------------------------------------------------------- |
+| `Torque`                 | 62000     | **40000**   | I6, no V8                                                                    |
+| `MaxDeltaAngVel`         | **10**    | **0.015**   | Límite aceleración **angular de ruedas** (Saber); stock 10 = casi sin límite |
+| `FuelConsumption`        | 3.3       | **1.5**     |                                                                              |
+| `EngineResponsiveness`   | 0.4       | **0.28**    | Subida de rpm del motor                                                      |
 
 ---
 
@@ -168,6 +172,44 @@ PDF](https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehi
 ---
 
 ## Fisica modelada
+
+### Atributos `<Truck>` vs `<Engine>` (Saber)
+
+| Atributo XML                    | Archivo                 | Qué controla                                                                        |
+| ------------------------------- | ----------------------- | ----------------------------------------------------------------------------------- |
+| `Responsiveness`                | `classes/trucks/*.xml`  | **Volante** (respuesta dirección), no motor                                         |
+| `SteerSpeed` / `BackSteerSpeed` | truck                   | Velocidad de giro / retorno del volante                                             |
+| `EngineResponsiveness`          | `classes/engines/*.xml` | Subida de rpm del motor [0.01–1]                                                    |
+| `MaxDeltaAngVel`                | motor                   | **Límite de aceleración angular de las ruedas**; menor = menos agresivo al acelerar |
+| `Torque`                        | motor                   | Par motor (Ncm Saber; no es cv)                                                     |
+
+`MaxDeltaAngVel` en juego: el motor no entrega par al instante; cada paso limita cuánto puede
+subir la velocidad angular de las ruedas. El CK1500 con motor taller en stock usa **10** (casi sin
+tope → aceleración arcade). El mod I6 usa **0.015** alineado con motores pesados vanilla (~0.01).
+
+En `sim/core.py`, `max_delta_ang_vel` modela ese tope (`max_change = max_delta_ang_vel * ANGVEL_RAMP
+
+ dt`).
+
+### `<Body>` en `<PhysicsModel>` (Havok) — referencia
+
+Fuente: `Integration of Trucks and Addons` §8.4.2 (`docs/saber_guides/v1.9.21/`). Parámetros que el
+mod **no parchea hoy** pero útiles para masa/CoG (Fase 8):
+
+| Atributo             | Default aprox. | Efecto                                                                                       |
+| -------------------- | -------------- | -------------------------------------------------------------------------------------------- |
+| `Mass`               | 0              | Masa del body [0; 1 000 000] kg — **sí parcheamos**                                          |
+| `CenterOfMassOffset` | —              | Desplaza CoG respecto al calculado por Havok desde la colisión                               |
+| `GravityFactor`      | 1              | Multiplicador de gravedad en el body                                                         |
+| `AngularDamping`     | 0.05           | “Viscosidad” en rotación                                                                     |
+| `LinearDamping`      | 0              | “Viscosidad” en traslación                                                                   |
+| `Friction`           | 0.5            | Fricción body↔body (no es `WheelFriction`)                                                   |
+| `ForceBodyParams`    | false          | Si `true`, fuerza interacción barro/agua en bodies “pequeños” (por defecto solo los grandes) |
+| `Collisions`         | Default        | Quién colisiona con quién (None, All, Internal, …)                                           |
+| `NetSync="pv"`       | —              | Sincronización multijugador de posición/velocidad del body                                   |
+
+`DiffLockType` en truck (`Installed` / `Uninstalled`): Saber indica que solo el valor funcional
+real es el bloqueo **Always** vía addon; el atributo del truck es etiqueta para modders.
 
 ### Cadena Saber (documentacion + XML)
 

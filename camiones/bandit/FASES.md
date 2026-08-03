@@ -107,13 +107,13 @@ No hay PDF de fábrica del Bandit en el repo; validación = coherencia SR!NFO + 
 | Parámetro                       | Stock      | Mod                | Fase   |
 | ------------------------------- | ---------- | ------------------ | ------ |
 | Masa chasis (cuerpos 4000+3000) | 7014 kg    | **7600 kg** (+206) | 1 / 3  |
-| `Responsiveness`                | 0.55       | **0.18**           | 1      |
 | Depósito                        | 150 L      | **135 L**          | 1      |
 | LAZ 6 T60 `Torque`              | 130000 Ncm | **88500 Ncm**      | 1      |
 | LAZ 6 T60 `FuelConsumption`     | 4.5        | **3.1**            | 1      |
 | UHD I `SubstanceFriction`       | 0.4        | **0.5**            | 2 / 4  |
 
-**No se toca:** suspensión, caja, diff lock, geometría de ruedas, remolques globales.
+**No se toca:** `Responsiveness` / `SteerSpeed` (volante, Saber §8), suspensión, caja, diff lock,
+geometría de ruedas, remolques globales.
 
 **Compartido con otros camiones:** `e_ru_truck_old.xml` (motores), `wheels_medium_double_front.xml`
 (51" UHD en varios 8×8).
@@ -124,7 +124,7 @@ No hay PDF de fábrica del Bandit en el repo; validación = coherencia SR!NFO + 
 
 | Archivo en `initial.pak`                                | Cambios                                                                                          |
 | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| `[media]/_dlc/dlc_2_2/classes/trucks/krs_58_bandit.xml` | Masa, `Responsiveness`, `FuelCapacity`                                                           |
+| `[media]/_dlc/dlc_2_2/classes/trucks/krs_58_bandit.xml` | Masa, `FuelCapacity`                                                                             |
 | `[media]/classes/engines/e_ru_truck_old.xml`            | Plantilla `RUTruckOldEngine` → `EngineResponsiveness="0.028"`; torque y consumo de los 4 motores |
 | `[media]/classes/wheels/wheels_medium_double_front.xml` | `highway_1` → `SubstanceFriction="0.5"`                                                          |
 
@@ -163,11 +163,11 @@ demasiado rápido → ajustar `BANDIT_MUD_*` en sim y/o `SubstanceFriction` en `
 
 ### F3 — Bastidor cargado (`bandit_f3_carga`)
 
-| Condición      | Valor                              |
-| -------------- | ---------------------------------- |
-| Carga          | Bastidor del Bandit lleno en barro |
-| Masa extra sim | +5050 kg (`LOAD_FRAME_FULL`)       |
-| Resto          | Igual que F2                       |
+| Condición   | Valor                                              |
+| ----------- | -------------------------------------------------- |
+| Carga       | Bastidor del Bandit lleno en barro                 |
+| Sim         | No modelado — validar solo en juego (~12 t total)  |
+| Resto       | Igual que F2                                       |
 
 **Cierre:** casi inmóvil o avance muy lento; coherente con peso total ~12 t.
 
@@ -177,12 +177,13 @@ demasiado rápido → ajustar `BANDIT_MUD_*` en sim y/o `SubstanceFriction` en `
 
 Salida de `python -m camiones.bandit.simulador` (LAZ 6 T60 mod, UHD I, diff AWD 8×8):
 
-| Escenario           | Métrica    | Valor sim        |
-| ------------------- | ---------- | ---------------- |
-| F1 asfalto WOT      | 0–97 km/h  | ~42 s            |
-| F1 asfalto WOT      | v a 60 s   | ~128 km/h        |
-| F2 barro L          | v30 / vmax | ~1.7 / ~2.0 km/h |
-| F3 bastidor barro L | v30 / vmax | ~0.1 / ~0.5 km/h |
+| Escenario      | Métrica    | Valor sim        |
+| -------------- | ---------- | ---------------- |
+| F1 asfalto WOT | 0–97 km/h  | ~42 s            |
+| F1 asfalto WOT | v a 60 s   | ~128 km/h        |
+| F2 barro L     | v30 / vmax | ~1.7 / ~2.0 km/h |
+
+F3 (bastidor cargado): solo prueba en juego.
 
 Constantes barro en sim: `BANDIT_MUD_IMMERSION_RATE = 0.52`, `BANDIT_MUD_RESIST_MULT = 1.12`.
 
@@ -193,11 +194,11 @@ Constantes barro en sim: `BANDIT_MUD_IMMERSION_RATE = 0.52`, `BANDIT_MUD_RESIST_
 ```powershell
 ```
 
-| Paso            | Qué comprueba                                |
-| --------------- | -------------------------------------------- |
-| `verify_pak.py` | Valores XML dentro del `.pak`                |
-| `simulador`     | Tendencias F1/F2/F3                          |
-| Prueba en juego | Sensación + km/h HUD en la ruta de cada fase |
+| Paso            | Qué comprueba                                 |
+| --------------- | --------------------------------------------- |
+| `verify_pak.py` | Valores XML dentro del `.pak`                 |
+| `simulador`     | Tendencias F1/F2 (vacío)                      |
+| Prueba en juego | Sensación + km/h HUD (F3 carga solo en juego) |
 
 ---
 

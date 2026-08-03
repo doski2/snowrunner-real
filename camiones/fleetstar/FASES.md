@@ -67,11 +67,11 @@ Mod **7400 kg** vacío: por debajo del vacío civil (juego arcade).
 
 ### XML stock vs mod
 
-| Parámetro        | Catálogo | Mod         |
-| ---------------- | -------- | ----------- |
-| Masa             | ~6658 kg | **7400 kg** |
-| Si-6V/1900       | 135k Ncm | **92k Ncm** |
-| `Responsiveness` | 0.085    | (stock)     |
+| Parámetro        | Catálogo                       | Mod                 |
+| ---------------- | ------------------------------ | ------------------- |
+| Masa             | ~6658 kg                       | **7400 kg**         |
+| Si-6V/1900       | 135k Ncm                       | **92k Ncm**         |
+| `Responsiveness` | 0.1 (volante; **no parchear**) |                     |
 
 Torque mod ≈ **68 %** del stock (misma ratio que otros Si-6V del proyecto).
 

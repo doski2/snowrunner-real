@@ -117,9 +117,6 @@ VEHICLE_REAL_OFFROAD = replace(
     mud_resist_mult=FS_MUD_RESIST_MULT,
 )
 
-LOAD_FRAME_EMPTY = 1800
-LOAD_FRAME_FULL = 8000
-
 
 def _with_fs_mud_cal(veh: VehicleConfig) -> VehicleConfig:
     """AWD+diff sin calibracion explicita hereda FS_MUD_* (telemetria / make_vehicle)."""
@@ -196,16 +193,6 @@ def main() -> None:
     ):
         s = run_sim(veh, ENGINE_REAL_FS, mud, 120.0, low_gear=True)
         print(f"  {label:<22} v30={sample_at(s, 30.0):.1f} vmax={max(s.speeds_kmh):.1f} km/h")
-
-    loaded = replace(
-        VEHICLE_REAL_AWD_HIGHWAY,
-        cargo_mass_kg=LOAD_FRAME_FULL,
-    )
-    s_load = run_sim(loaded, ENGINE_REAL_FS, mud, 120.0, low_gear=True)
-    print(
-        f"\n--- Bastidor cargado (~{LOAD_FRAME_FULL} kg util) barro UHD ---\n"
-        f"  v30={sample_at(s_load, 30.0):.1f} vmax={max(s_load.speeds_kmh):.1f} km/h"
-    )
 
 if __name__ == "__main__":
     main()

@@ -16,7 +16,6 @@ from camiones.registry import (
     default_vehicle_ids,
     empty_mass_kg,
     merge_patches,
-    trailer_tare_kg,
     vehicle_id_from_ce,
 )
 from sim.core import VEHICLE_I6
@@ -29,13 +28,15 @@ class TestRegistryVehicles(unittest.TestCase):
     def test_each_vehicle_has_patches_and_sim(self) -> None:
         for vid, mod in VEHICLES.items():
             self.assertEqual(mod.id, vid)
-            self.assertTrue(mod.patches)
+            self.assertIsInstance(mod.patches, dict)
             self.assertTrue(mod.xml_file.endswith(".xml"))
             importlib.import_module(mod.sim_module)
 
     def test_merge_all_includes_every_xml(self) -> None:
         merged = merge_patches(default_vehicle_ids())
         for mod in VEHICLES.values():
+            if not mod.patches:
+                continue
             arcs = [a for a in merged if a.endswith("/" + mod.xml_file)]
             self.assertTrue(arcs, f"sin parche truck para {mod.id}: {mod.xml_file}")
 
@@ -99,15 +100,6 @@ class TestRegistryMass(unittest.TestCase):
         self.assertEqual(empty_mass_kg("marshall"), 2030.0)
         self.assertIsNone(empty_mass_kg(None))
         self.assertIsNone(empty_mass_kg("unknown"))
-
-
-class TestRegistryTrailers(unittest.TestCase):
-    def test_trailer_tare_catalog(self) -> None:
-        self.assertEqual(trailer_tare_kg("semi_trailer"), 2500.0)
-        self.assertEqual(trailer_tare_kg("scout_small"), 800.0)
-        self.assertEqual(trailer_tare_kg("heavy_fuel_tank"), 1200.0)
-        self.assertEqual(trailer_tare_kg("fuel_tank_small"), 1200.0)
-        self.assertEqual(trailer_tare_kg("generic"), 1500.0)
 
 
 if __name__ == "__main__":

@@ -83,7 +83,7 @@ Al importar CSV (`importar_ce_csv.py`), se rellenan desde `datos/catalogo/` vía
 | Campo                                                | XML origen                                   | Notas                                                   |
 | ---------------------------------------------------- | -------------------------------------------- | ------------------------------------------------------- |
 | `steer_speed_xml`                                    | `TruckData` SteerSpeed                       | Constante diseño; giro real = `yaw_rate_deg_s` en CSV   |
-| `responsiveness_xml`                                 | `TruckData` Responsiveness                   | Chasis; no varía con carga en runtime                   |
+| `responsiveness_xml`                                 | `TruckData` Responsiveness                   | **Volante** (Saber); no parchear en mod                 |
 | `engine_responsiveness_xml`                          | motor default `EngineResponsiveness`         | Usado en sim Python como filtro acelerador              |
 | `default_suspension_xml`                             | `SuspensionSocket` Default                   | Variante de taller stock                                |
 | `suspension_socket_xml`                              | `SuspensionSocket` Type                      | Archivo en `suspensions.json`                           |
@@ -300,14 +300,14 @@ migrar a SQLite solo si superáis ~500 sesiones o queréis SQL.
 
 #### Atributos mínimos por tipo
 
-| Tipo XML                | Atributos a indexar                                                                       |
-| ----------------------- | ----------------------------------------------------------------------------------------- |
-| Truck                   | Mass bodies, CoG, FuelCapacity, Responsiveness, SteerSpeed, DefaultEngine/Gearbox/Wheel   |
-| Engine                  | Torque, MaxDeltaAngVel, EngineResponsiveness, FuelConsumption,                            |
-| Wheel / WheelFriction   | Radius, Mass, BodyFriction*, SubstanceFriction, template                                  |
-| Gearbox                 | Gears AngVel, FuelModifier, awd_modifier, IsLower*Exists                                  |
-| Suspension              | Strength, Damping, Height, SuspensionMin                                                  |
-| Trailer                 | Mass bodies, AttachType, wheel count                                                      |
+| Tipo XML                | Atributos a indexar                                                                               |
+| ----------------------- | ------------------------------------------------------------------------------------------------- |
+| Truck                   | Mass bodies, CoG, FuelCapacity, **SteerSpeed** (no `Responsiveness`), DefaultEngine/Gearbox/Wheel |
+| Engine                  | Torque, MaxDeltaAngVel, EngineResponsiveness, FuelConsumption,                                    |
+| Wheel / WheelFriction   | Radius, Mass, BodyFriction*, SubstanceFriction, template                                          |
+| Gearbox                 | Gears AngVel, FuelModifier, awd_modifier, IsLower*Exists                                          |
+| Suspension              | Strength, Damping, Height, SuspensionMin                                                          |
+| Trailer                 | Mass bodies, AttachType, wheel count                                                              |
 
 **Criterio de éxito:** responder en &lt;10 s: “¿Qué motores comparte el Fleetstar?” “¿MaxDeltaAngVel
 stock MH9500?”

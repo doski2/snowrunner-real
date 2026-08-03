@@ -11,7 +11,7 @@
 | No parchear `trailers/*.xml` ni `cargo_*.xml` globales       | `auditar_remolques.py`              |
 | Bastidor / semi en **prueba F3 en juego** (`FASES.md`)       | `remolques_inventario.json`         |
 | Masa chasis en `patches.py` (Fase 1)                         | Matriz inventario remolques en repo |
-| Sim opcional: `trailer_mass_kg` en `camiones/*/simulador.py` | FASE-8 como gate de catálogo        |
+| Sim: F1/F2 vacío en `camiones/*/simulador.py`                | FASE-8 como gate de catálogo        |
 
 Ver **`METODO-PAK.md`**.
 

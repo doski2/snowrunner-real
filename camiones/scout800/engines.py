@@ -16,7 +16,7 @@ ENGINE_AAT6V_STOCK = EngineConfig(
     0.01,
 )
 
-# Objetivo mod — alineado con patches.py (e_us_scout_old.xml)
+# Objetivo sim (PAK deja motor stock; solo masa en truck XML)
 ENGINE_AAT6V_REAL = EngineConfig(
     "AAT-6V 4.0 realista S800",
     32000.0,

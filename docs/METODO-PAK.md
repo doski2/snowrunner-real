@@ -8,13 +8,14 @@ instalar el `.pak`. CE y API quedan **archivados** (`CE-ARCHIVADO.md`).
 
 ## Qué modificamos y qué no
 
-| Sí (nuestro alcance)                          | No (archivado / fuera de alcance)     |
-| --------------------------------------------- | ------------------------------------- |
-| XML en `initial.pak` del cliente              | API HTTP / proyecto hermano           |
-| `camiones/<id>/patches.py`                    | **Cheat Engine / `grabar_ce.py`**     |
-| Motor, masa, neumáticos, suspensión, depósito | `importar_ce_csv`, MAE por telemetría |
-| `Responsiveness`, `Torque`, `MaxDeltaAngVel`  | Mapas `.pak` de zona                  |
-| Neumáticos `wheels_*.xml`                     | Masas globales `cargo_*.xml`          |
+| Sí (nuestro alcance)                          | No (archivado / fuera de alcance)               |
+| --------------------------------------------- | ----------------------------------------------- |
+| XML en `initial.pak` del cliente              | API HTTP / proyecto hermano                     |
+| `camiones/<id>/patches.py`                    | **Cheat Engine / `grabar_ce.py`**               |
+| **Masa** en truck XML (`Mass` en bodies)      | Motor, neumáticos, suspensión, depósito (stock) |
+| Sim Python (orientación; no es el `.pak`)     | `importar_ce_csv`, MAE por telemetría           |
+| `Responsiveness` / `SteerSpeed` en truck XML  | **No parchear** — solo volante (Saber)          |
+| Mapas `.pak` de zona                          | Masas globales `cargo_*.xml`                    |
 
 ---
 

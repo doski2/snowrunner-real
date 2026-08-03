@@ -77,7 +77,6 @@ Motor AAT-6V en `e_us_scout_old.xml` (compartido scouts US; motor CK1500 dedicad
 
 | Parámetro          | Stock | Mod (actual)     | Fase   |
 | ------------------ | ----- | ---------------- | ------ |
-| `Responsiveness`   | 0.6   | **0.04**         | 1      |
 | Masa chasis        | 1900  | **1600**         | 1 / 3  |
 | Masa bastidor      | 900   | **600**          | 1 / 3  |
 | AAT-6V `Torque`    | 35000 | **32000**        | 1      |

@@ -82,9 +82,6 @@ VEHICLE_REAL = VehicleConfig(
     mud_resist_mult=T813_MUD_RESIST_MULT,
 )
 
-LOAD_SEMI_EMPTY = 2500
-LOAD_SEMI_FULL = 12000
-
 
 def engine_for_t813(engine_id: str, engine_name_xml: str = "") -> EngineConfig:
     xml = (engine_name_xml or "").strip()
@@ -153,17 +150,6 @@ def main() -> None:
     print("--- Barro marcha baja (t813_f2_barro_msh) ---")
     print(
         f"  v30={sample_at(crawl, 30.0):.1f} vmax={max(crawl.speeds_kmh):.1f} km/h"
-    )
-
-    loaded = replace(
-        VEHICLE_REAL,
-        trailer_mass_kg=LOAD_SEMI_EMPTY,
-        trailer_cargo_mass_kg=LOAD_SEMI_FULL,
-    )
-    s_load = run_sim(make_vehicle("msh_i", base=loaded), eng, mud, 120.0, low_gear=True)
-    print(
-        f"\n--- Semi cargado barro (t813_f3_carga) ---\n"
-        f"  v30={sample_at(s_load, 30.0):.1f} vmax={max(s_load.speeds_kmh):.1f} km/h"
     )
 
 

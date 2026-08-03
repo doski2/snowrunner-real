@@ -21,7 +21,6 @@ ENGINE_REAL_FS_2100 = sim_fs.ENGINE_REAL_FS_2100
 ENGINE_STOCK_FS = sim_fs.ENGINE_STOCK_FS
 FS_MUD_IMMERSION_RATE = sim_fs.FS_MUD_IMMERSION_RATE
 FS_MUD_RESIST_MULT = sim_fs.FS_MUD_RESIST_MULT
-LOAD_FRAME_FULL = sim_fs.LOAD_FRAME_FULL
 TIRES = sim_fs.TIRES
 VEHICLE_REAL = sim_fs.VEHICLE_REAL
 VEHICLE_REAL_AWD = sim_fs.VEHICLE_REAL_AWD
@@ -49,22 +48,18 @@ class TestFleetstarPatches(unittest.TestCase):
         self.assertEqual(EMPTY_MASS_KG["fleetstar"], 7400.0)
         self.assertEqual(VEHICLE_REAL.mass_kg, EMPTY_MASS_KG["fleetstar"])
 
-    def test_merge_includes_fleetstar_files(self) -> None:
+    def test_merge_includes_fleetstar_truck_only(self) -> None:
         merged = merge_patches(["fleetstar"])
-        self.assertIn("[media]/classes/trucks/international_fleetstar_f2070a.xml", merged)
-        self.assertIn("[media]/classes/engines/e_us_truck_old.xml", merged)
-        self.assertIn("[media]/classes/wheels/wheels_medium_double.xml", merged)
+        truck = "[media]/classes/trucks/international_fleetstar_f2070a.xml"
+        self.assertIn(truck, merged)
+        self.assertEqual(len(merged), 1)
 
-    def test_engine_torque_reduced(self) -> None:
-        pairs = FLEETSTAR_PATCHES["[media]/classes/engines/e_us_truck_old.xml"]
-        block = next(p for p in pairs if "us_truck_old_engine_0" in p[0])
-        self.assertIn('Torque="92000"', block[1])
-
-    def test_engine_2100_torque_reduced(self) -> None:
-        pairs = FLEETSTAR_PATCHES["[media]/classes/engines/e_us_truck_old.xml"]
-        block = next(p for p in pairs if "us_truck_old_engine_1" in p[0])
-        self.assertIn('Torque="99000"', block[1])
-        self.assertIn('FuelConsumption="3.9"', block[1])
+    def test_mass_patches_on_truck_xml(self) -> None:
+        truck = "[media]/classes/trucks/international_fleetstar_f2070a.xml"
+        pairs = FLEETSTAR_PATCHES[truck]
+        self.assertTrue(any('Mass="4160"' in new for _old, new in pairs))
+        self.assertTrue(any('Mass="1730"' in new for _old, new in pairs))
+        self.assertTrue(any('Mass="1510"' in new for _old, new in pairs))
 
 
 class TestFleetstarSim(unittest.TestCase):
@@ -108,23 +103,7 @@ class TestFleetstarSim(unittest.TestCase):
         self.assertLess(v30, 8.0)
         self.assertGreater(v30, 0.0)
 
-    def test_loaded_slower(self) -> None:
-        empty = VEHICLE_REAL_AWD_HIGHWAY
-        loaded = replace(empty, cargo_mass_kg=6000)
-        self.assertGreater(
-            max(run_sim(empty, ENGINE_REAL_FS, MUD, 120.0, low_gear=True).speeds_kmh),
-            max(run_sim(loaded, ENGINE_REAL_FS, MUD, 120.0, low_gear=True).speeds_kmh),
-        )
-
-    def test_frame_full_load_stalls_uhd(self) -> None:
-        loaded = replace(VEHICLE_REAL_AWD_HIGHWAY, cargo_mass_kg=LOAD_FRAME_FULL)
-        v30 = sample_at(
-            run_sim(loaded, ENGINE_REAL_FS, MUD, 60.0, low_gear=True),
-            30.0,
-        )
-        self.assertLess(v30, 1.0)
-
-    def test_2100_stronger_than_1900_asphalt(self) -> None:
+    def test_engine_2100_faster_on_asphalt(self) -> None:
         asphalt = SurfaceConfig("Asfalto", "asphalt")
         a = run_sim(VEHICLE_REAL_AWD_HIGHWAY, ENGINE_REAL_FS, asphalt, 60.0)
         b = run_sim(VEHICLE_REAL_AWD_HIGHWAY, ENGINE_REAL_FS_2100, asphalt, 60.0)

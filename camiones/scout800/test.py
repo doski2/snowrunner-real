@@ -15,18 +15,17 @@ class TestScout800(unittest.TestCase):
         self.assertEqual(mod.ce_id, "s_international_scout_800")
         self.assertEqual(vehicle_id_from_ce("s_international_scout_800"), "scout800")
 
-    def test_patches_include_truck_xml(self) -> None:
+    def test_patches_include_truck_xml_only(self) -> None:
         merged = merge_patches(["scout800"])
         self.assertIn("[media]/classes/trucks/international_scout_800.xml", merged)
-        self.assertIn("[media]/classes/engines/e_us_scout_old.xml", merged)
+        self.assertEqual(len(merged), 1)
 
-    def test_aat6v_torque_in_patches(self) -> None:
+    def test_mass_patches_on_truck_xml(self) -> None:
         from camiones.scout800.patches import PATCHES
 
-        pairs = PATCHES["[media]/classes/engines/e_us_scout_old.xml"]
-        self.assertTrue(
-            any('Name="us_scout_old_engine_0"' in new and 'Torque="32000"' in new for _o, new in pairs)
-        )
+        pairs = PATCHES["[media]/classes/trucks/international_scout_800.xml"]
+        self.assertTrue(any('Mass="1500"' in new for _old, new in pairs))
+        self.assertTrue(any('Mass="600"' in new for _old, new in pairs))
 
     def test_aat6v_engine(self) -> None:
         self.assertIs(engine_for_scout800("aat6v"), ENGINE_AAT6V_REAL)

@@ -117,8 +117,6 @@ VEHICLE_REAL = VehicleConfig(
     mud_resist_mult=BANDIT_MUD_RESIST_MULT,
 )
 
-LOAD_FRAME_FULL = 5050
-
 
 def engine_for_bandit(engine_id: str, engine_name_xml: str = "") -> EngineConfig:
     xml = (engine_name_xml or "").strip()
@@ -180,13 +178,6 @@ def main() -> None:
     print("--- Barro marcha baja (bandit_f2_barro_uhd) ---")
     print(
         f"  v30={sample_at(crawl, 30.0):.1f} vmax={max(crawl.speeds_kmh):.1f} km/h"
-    )
-
-    loaded = replace(VEHICLE_REAL, cargo_mass_kg=LOAD_FRAME_FULL)
-    s_load = run_sim(make_vehicle("highway", base=loaded), eng, mud, 120.0, low_gear=True)
-    print(
-        f"\n--- Bastidor cargado barro (bandit_f3_carga) ---\n"
-        f"  v30={sample_at(s_load, 30.0):.1f} vmax={max(s_load.speeds_kmh):.1f} km/h"
     )
 
 

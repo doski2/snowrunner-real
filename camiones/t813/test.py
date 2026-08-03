@@ -28,7 +28,6 @@ run_sim = sim_t813.run_sim
 sample_at = sim_t813.sample_at
 
 MUD = SurfaceConfig("Barro", "mud", viscosity=4.0)
-T813_TRUCK_ARC = "[media]/_dlc/dlc_4/classes/trucks/tatra_t813.xml"
 
 
 class TestT813Registry(unittest.TestCase):
@@ -45,26 +44,14 @@ class TestT813Registry(unittest.TestCase):
         self.assertEqual(vehicle_id_from_ce("s_tatra_t813"), "t813")
         self.assertEqual(vehicle_id_from_ce("tatra_t813"), "t813")
 
-    def test_merge_includes_t813_files(self) -> None:
+    def test_merge_has_no_t813_patches(self) -> None:
         merged = merge_patches(["t813"])
-        self.assertIn(T813_TRUCK_ARC, merged)
-        self.assertIn("[media]/classes/engines/e_ru_special.xml", merged)
-        self.assertIn(
-            "[media]/_dlc/dlc_11/classes/wheels/wheels_superheavy_mudtires.xml",
-            merged,
-        )
+        self.assertEqual(merged, {})
 
 
 class TestT813Patches(unittest.TestCase):
-    def test_responsiveness_reduced(self) -> None:
-        pairs = T813_PATCHES[T813_TRUCK_ARC]
-        self.assertTrue(any('Responsiveness="0.14"' in new for _old, new in pairs))
-
-    def test_msh_i_substance_nerfed(self) -> None:
-        pairs = T813_PATCHES[
-            "[media]/_dlc/dlc_11/classes/wheels/wheels_superheavy_mudtires.xml"
-        ]
-        self.assertTrue(any('SubstanceFriction="2.2"' in new for _old, new in pairs))
+    def test_patches_empty_stock_mass_matches_mod(self) -> None:
+        self.assertEqual(T813_PATCHES, {})
 
 
 class TestT813Sim(unittest.TestCase):
@@ -94,17 +81,6 @@ class TestT813Sim(unittest.TestCase):
         a = run_sim(VEHICLE_STOCK, ENGINE_STOCK_T813_KZGT, MUD, 60.0, low_gear=True)
         b = run_sim(VEHICLE_REAL, ENGINE_REAL_T813_KZGT, MUD, 60.0, low_gear=True)
         self.assertGreater(max(a.speeds_kmh), max(b.speeds_kmh))
-
-    def test_loaded_slower(self) -> None:
-        loaded = replace(
-            VEHICLE_REAL,
-            trailer_mass_kg=sim_t813.LOAD_SEMI_EMPTY,
-            trailer_cargo_mass_kg=sim_t813.LOAD_SEMI_FULL,
-        )
-        self.assertGreater(
-            max(run_sim(VEHICLE_REAL, ENGINE_REAL_T813_KZGT, MUD, 90.0, low_gear=True).speeds_kmh),
-            max(run_sim(loaded, ENGINE_REAL_T813_KZGT, MUD, 90.0, low_gear=True).speeds_kmh),
-        )
 
 
 if __name__ == "__main__":

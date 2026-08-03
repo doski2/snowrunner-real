@@ -80,7 +80,6 @@ Calibrar motor en Fleetstar y **repetir F1** aquí (`KD-MOT` en pendientes).
 | --------------------- | -------- | ----------- | ------ |
 | Masa total            | ~7513 kg | **8150 kg** | 1 / 3  |
 | Combustible           | 200 L    | **175 L**   | 1      |
-| `Responsiveness`      | 0.15     | **0.11**    | 1      |
 | Si-6V/1900 torque     | 135000   | **92000**   | 1      |
 | `highway_1` Substance | 0.4      | **0.5**     | 2 / 4  |
 

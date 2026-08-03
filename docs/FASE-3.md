@@ -103,33 +103,27 @@ error del mod.
 
 ## Simulador Fase 3
 
-### Nuevos campos en `VehicleConfig`
+### `VehicleConfig` (solo vacío)
 
-| Campo                   | Descripción                                |
-| ----------------------- | ------------------------------------------ |
-| `mass_kg`               | Chasis seco (1750 mod)                     |
-| `addon_mass_kg`         | Portaequipajes, snorkel, etc.              |
-| `cargo_mass_kg`         | Carga sobre el camión (0 en CK1500 típico) |
-| `trailer_mass_kg`       | Chasis remolque vacío                      |
-| `trailer_cargo_mass_kg` | Mercancía en remolque                      |
+| Campo     | Descripción              |
+| --------- | ------------------------ |
+| `mass_kg` | Masa chasis mod (vacío)  |
 
-`total_mass_kg()` suma todo. La función `step()` usa esa masa en:
+`total_mass_kg()` devuelve `mass_kg`. La función `step()` usa esa masa en:
 
 - Fuerza normal → límite de tracción
 - Resistencia a la rodadura y pendiente
 - Hundimiento en barro (`sink`, `MUD_RESIST_COEF`)
 - Aceleración `F = ma`
 
-Remolque sin tracción: coeficientes extra `TRAILER_ROLL_COEF` y `TRAILER_HITCH_DRAG` (arrastre del
-enganche).
+Carga, bastidor lleno y remolques **no** se modelan en Python (jul 2026). Validar F3 en juego.
 
 ### Sim por vehículo (activo)
 
-Cada `camiones/<id>/simulador.py` puede usar `cargo_mass_kg` / `trailer_*` en `VehicleConfig` para
-comparar vacío vs cargado (ej. `LOAD_FRAME_FULL` en Bandit/Fleetstar). No hay matriz global ni
-`simulacion_carga.json`.
+Cada `camiones/<id>/simulador.py` cubre **F1 asfalto** y **F2 barro vacío**. No hay matriz global
+ni `simulacion_carga.json`.
 
-### Escenarios precargados (`LOAD_SCENARIOS`) — archivado
+### Matriz global (`LOAD_SCENARIOS`) — archivado
 
 La matriz CK1500 (`simular_carga.py`, `LOAD_SCENARIOS`, `run_cargo_matrix`) se eliminó jul 2026.
 Referencia histórica de IDs:
@@ -180,8 +174,8 @@ de semi — ver **`FASE-8.md`** (archivado; validar F3 en juego).
 
 | Archivo                   | Rol                                                         |
 | ------------------------- | ----------------------------------------------------------- |
-| `sim/core.py`             | `total_mass_kg()`, `cargo_mass_kg` / remolque en `step()`   |
-| `camiones/*/simulador.py` | Escenarios cargados puntuales (vacío vs bastidor/semi)      |
+| `sim/core.py`             | `total_mass_kg()` = `mass_kg`; `step()` sin remolque/carga  |
+| `camiones/*/simulador.py` | F1 asfalto + F2 barro vacío                                 |
 | `FASE-3.md`               | Este documento                                              |
 
 Eliminados (jul 2026): `simular_carga.py`, `simulacion_carga.json`,

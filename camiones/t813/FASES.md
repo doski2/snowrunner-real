@@ -95,7 +95,6 @@ Nm del T930).
 | Parámetro                     | Stock      | Mod              | Fase   |
 | ----------------------------- | ---------- | ---------------- | ------ |
 | Masa total                    | ~14021 kg  | **14000 kg**     | 1 / 3  |
-| `Responsiveness`              | 0.2        | **0.14**         | 1      |
 | Depósito                      | 380 L      | **340 L**        | 1      |
 | KZGT (`ru_special_engine_1`)  | 230000 Ncm | **157000 Ncm**   | 1      |
 | MSH I `SubstanceFriction`     | 3.0        | **2.2**          | 2 / 4  |
@@ -108,7 +107,7 @@ Nm del T930).
 
 | Archivo en `initial.pak`                                            | Cambios                           |
 | ------------------------------------------------------------------- | --------------------------------- |
-| `[media]/_dlc/dlc_4/classes/trucks/tatra_t813.xml`                  | Masa, `Responsiveness`, depósito  |
+| `[media]/_dlc/dlc_4/classes/trucks/tatra_t813.xml`                  | Masa, depósito                    |
 | `[media]/classes/engines/e_ru_special.xml`                          | Torque y consumo KZGT (y otros)   |
 | `[media]/_dlc/dlc_11/classes/wheels/wheels_superheavy_mudtires.xml` | `JAT MSH I` → `SubstanceFriction` |
 

@@ -42,29 +42,18 @@ class TestBanditRegistry(unittest.TestCase):
         self.assertEqual(vehicle_id_from_ce("s_krs_58_bandit"), "bandit")
         self.assertEqual(vehicle_id_from_ce("krs_58_bandit"), "bandit")
 
-    def test_merge_includes_bandit_files(self) -> None:
+    def test_merge_includes_bandit_truck_only(self) -> None:
         merged = merge_patches(["bandit"])
         self.assertIn(BANDIT_TRUCK_ARC, merged)
-        self.assertIn("[media]/classes/engines/e_ru_truck_old.xml", merged)
-        self.assertIn("[media]/classes/wheels/wheels_medium_double_front.xml", merged)
+        self.assertEqual(len(merged), 1)
 
 
 class TestBanditPatches(unittest.TestCase):
-    def test_responsiveness_reduced(self) -> None:
+    def test_mass_patches_only_truck_xml(self) -> None:
+        self.assertEqual(list(BANDIT_PATCHES.keys()), [BANDIT_TRUCK_ARC])
         pairs = BANDIT_PATCHES[BANDIT_TRUCK_ARC]
-        self.assertTrue(any('Responsiveness="0.18"' in new for _old, new in pairs))
-
-    def test_engine_template_responsiveness(self) -> None:
-        pairs = BANDIT_PATCHES["[media]/classes/engines/e_ru_truck_old.xml"]
-        self.assertTrue(
-            any('EngineResponsiveness="0.028"' in new for _old, new in pairs)
-        )
-
-    def test_uhd_substance_nerfed(self) -> None:
-        pairs = BANDIT_PATCHES[
-            "[media]/classes/wheels/wheels_medium_double_front.xml"
-        ]
-        self.assertTrue(any('SubstanceFriction="0.5"' in new for _old, new in pairs))
+        self.assertTrue(any('Mass="4320"' in new for _old, new in pairs))
+        self.assertTrue(any('Mass="3280"' in new for _old, new in pairs))
 
 
 class TestBanditSim(unittest.TestCase):
@@ -86,13 +75,6 @@ class TestBanditSim(unittest.TestCase):
         a = run_sim(VEHICLE_STOCK, ENGINE_STOCK_BANDIT_LAZ, MUD, 60.0, low_gear=True)
         b = run_sim(VEHICLE_REAL, ENGINE_REAL_BANDIT_LAZ, MUD, 60.0, low_gear=True)
         self.assertGreater(max(a.speeds_kmh), max(b.speeds_kmh))
-
-    def test_loaded_slower(self) -> None:
-        loaded = replace(VEHICLE_REAL, cargo_mass_kg=sim_bandit.LOAD_FRAME_FULL)
-        self.assertGreater(
-            max(run_sim(VEHICLE_REAL, ENGINE_REAL_BANDIT_LAZ, MUD, 90.0, low_gear=True).speeds_kmh),
-            max(run_sim(loaded, ENGINE_REAL_BANDIT_LAZ, MUD, 90.0, low_gear=True).speeds_kmh),
-        )
 
 
 if __name__ == "__main__":

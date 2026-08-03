@@ -20,8 +20,6 @@ ENGINE_REAL_KM = sim_km.ENGINE_REAL_KM
 ENGINE_STOCK_KM = sim_km.ENGINE_STOCK_KM
 KM_MUD_IMMERSION_RATE = sim_km.KM_MUD_IMMERSION_RATE
 KM_MUD_RESIST_MULT = sim_km.KM_MUD_RESIST_MULT
-LOAD_TRAILER_CARGO = sim_km.LOAD_TRAILER_CARGO
-LOAD_TRAILER_MASS = sim_km.LOAD_TRAILER_MASS
 TIRES = sim_km.TIRES
 VEHICLE_REAL = sim_km.VEHICLE_REAL
 VEHICLE_STOCK = sim_km.VEHICLE_STOCK
@@ -46,26 +44,17 @@ class TestMarshallRegistry(unittest.TestCase):
         self.assertEqual(vehicle_id_from_ce("s_khan_39_marshall"), "marshall")
         self.assertEqual(vehicle_id_from_ce("khan_39_marshall"), "marshall")
 
-    def test_merge_includes_marshall_files(self) -> None:
+    def test_merge_includes_marshall_truck_only(self) -> None:
         merged = merge_patches(["marshall"])
         self.assertIn("[media]/classes/trucks/khan_39_marshall.xml", merged)
-        self.assertIn("[media]/classes/engines/e_ru_scout_old.xml", merged)
-        self.assertIn("[media]/classes/wheels/wheels_scout_yar_871.xml", merged)
+        self.assertEqual(len(merged), 1)
 
 
 class TestMarshallPatches(unittest.TestCase):
-    def test_responsiveness_reduced(self) -> None:
+    def test_mass_patches_on_truck_xml(self) -> None:
         pairs = MARSHALL_PATCHES["[media]/classes/trucks/khan_39_marshall.xml"]
-        self.assertTrue(any('Responsiveness="0.04"' in new for _old, new in pairs))
-
-    def test_tm2_substance_nerfed(self) -> None:
-        pairs = MARSHALL_PATCHES["[media]/classes/wheels/wheels_scout_yar_871.xml"]
-        self.assertTrue(any('SubstanceFriction="1.7"' in new for _old, new in pairs))
-
-    def test_kr104_torque_patch(self) -> None:
-        pairs = MARSHALL_PATCHES["[media]/classes/engines/e_ru_scout_old.xml"]
-        self.assertTrue(any('Name="ru_scout_old_engine_0"' in new and 'Torque="28000"' in new for _o, new in pairs))
-        self.assertTrue(any('Name="ru_scout_old_engine_1"' in new and 'Torque="37333"' in new for _o, new in pairs))
+        self.assertTrue(any('Mass="1000"' in new for _old, new in pairs))
+        self.assertTrue(any('Mass="1030"' in new for _old, new in pairs))
 
 
 class TestMarshallSim(unittest.TestCase):
@@ -112,17 +101,6 @@ class TestMarshallSim(unittest.TestCase):
             30.0,
         )
         self.assertLess(v30, 45.0)
-
-    def test_loaded_slower(self) -> None:
-        loaded = replace(
-            VEHICLE_REAL,
-            trailer_mass_kg=LOAD_TRAILER_MASS,
-            trailer_cargo_mass_kg=LOAD_TRAILER_CARGO,
-        )
-        self.assertGreater(
-            max(run_sim(VEHICLE_REAL, ENGINE_REAL_KM, MUD, 90.0, low_gear=True).speeds_kmh),
-            max(run_sim(loaded, ENGINE_REAL_KM, MUD, 90.0, low_gear=True).speeds_kmh),
-        )
 
 
 if __name__ == "__main__":

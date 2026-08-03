@@ -31,7 +31,6 @@ __all__ = [
     "default_vehicle_ids",
     "empty_mass_kg",
     "merge_patches",
-    "trailer_tare_kg",
     "vehicle_id_from_ce",
 ]
 
@@ -201,15 +200,3 @@ def empty_mass_kg(vehicle_id: str | None) -> float | None:
     if not vehicle_id:
         return None
     return EMPTY_MASS_KG.get(vehicle_id)
-
-
-def trailer_tare_kg(trailer_id: str) -> float:
-    """Masa vacia estimada del remolque (catalogo sim)."""
-    low = (trailer_id or "").lower()
-    if any(tok in low for tok in ("semi", "sideboard", "lowboy", "logging")):
-        return 2500.0
-    if "fuel_tank" in low:
-        return 1200.0
-    if any(tok in low for tok in ("scout", "small", "caravan")):
-        return 800.0
-    return 1500.0

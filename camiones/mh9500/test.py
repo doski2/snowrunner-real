@@ -18,8 +18,6 @@ from sim.core import SurfaceConfig
 
 ENGINE_REAL_MH = sim_mh.ENGINE_REAL_MH
 ENGINE_STOCK_MH = sim_mh.ENGINE_STOCK_MH
-LOAD_SEMI_EMPTY = sim_mh.LOAD_SEMI_EMPTY
-LOAD_SEMI_FULL = sim_mh.LOAD_SEMI_FULL
 MH_MUD_IMMERSION_RATE = sim_mh.MH_MUD_IMMERSION_RATE
 MH_MUD_RESIST_MULT = sim_mh.MH_MUD_RESIST_MULT
 TIRES = sim_mh.TIRES
@@ -48,15 +46,15 @@ class TestMh9500Patches(unittest.TestCase):
         self.assertEqual(EMPTY_MASS_KG["mh9500"], 8200.0)
         self.assertEqual(VEHICLE_REAL.mass_kg, EMPTY_MASS_KG["mh9500"])
 
-    def test_merge_includes_gmc_files(self) -> None:
+    def test_merge_includes_gmc_truck_only(self) -> None:
         merged = merge_patches(["mh9500"])
         self.assertIn("[media]/classes/trucks/gmc_9500.xml", merged)
-        self.assertIn("[media]/classes/wheels/wheels_medium_double.xml", merged)
+        self.assertEqual(len(merged), 1)
 
-    def test_engine_torque_reduced(self) -> None:
-        pairs = MH9500_PATCHES["[media]/classes/engines/e_us_truck_old_gmc9500.xml"]
-        torque = next(p for p in pairs if "Torque" in p[0])
-        self.assertEqual(torque[1], 'Torque="95000"')
+    def test_mass_patches_on_truck_xml(self) -> None:
+        pairs = MH9500_PATCHES["[media]/classes/trucks/gmc_9500.xml"]
+        self.assertTrue(any('Mass="4000"' in new for _old, new in pairs))
+        self.assertTrue(any('Mass="2100"' in new for _old, new in pairs))
 
 
 class TestMh9500Sim(unittest.TestCase):
@@ -106,30 +104,6 @@ class TestMh9500Sim(unittest.TestCase):
         )
         self.assertLess(v30, 8.0)
         self.assertGreater(v30, 0.0)
-
-    def test_loaded_slower(self) -> None:
-        empty = VEHICLE_REAL_OFFROAD
-        loaded = replace(
-            empty,
-            trailer_mass_kg=LOAD_SEMI_EMPTY,
-            trailer_cargo_mass_kg=LOAD_SEMI_FULL,
-        )
-        self.assertGreater(
-            max(run_sim(empty, ENGINE_REAL_MH, MUD, 120.0, low_gear=True).speeds_kmh),
-            max(run_sim(loaded, ENGINE_REAL_MH, MUD, 120.0, low_gear=True).speeds_kmh),
-        )
-
-    def test_semi_full_load_stalls(self) -> None:
-        loaded = replace(
-            VEHICLE_REAL_OFFROAD,
-            trailer_mass_kg=LOAD_SEMI_EMPTY,
-            trailer_cargo_mass_kg=LOAD_SEMI_FULL,
-        )
-        v30 = sample_at(
-            run_sim(loaded, ENGINE_REAL_MH, MUD, 60.0, low_gear=True),
-            30.0,
-        )
-        self.assertLess(v30, 1.0)
 
 
 if __name__ == "__main__":

@@ -88,8 +88,8 @@ class EngineConfig:
     name: str
     torque: float
     fuel_consumption: float
-    responsiveness: float
-    max_delta_ang_vel: float
+    responsiveness: float  # EngineResponsiveness XML — subida rpm motor
+    max_delta_ang_vel: float  # MaxDeltaAngVel XML — tope aceleración angular ruedas
     damage_capacity: float = 100.0
     critical_threshold: float = 0.6
     damaged_min_torque_mult: float = 1.0
@@ -107,10 +107,6 @@ class VehicleConfig:
     tire_name: str = "highway"
     diff_lock: bool = False
     snorkel: bool = False
-    addon_mass_kg: float = 0.0
-    cargo_mass_kg: float = 0.0
-    trailer_mass_kg: float = 0.0
-    trailer_cargo_mass_kg: float = 0.0
     num_wheels: int = 4
     drive_layout: str = "4wd"  # 4wd | rwd | awd
     mud_immersion_rate: float = 1.0  # <1 = hunde menos (camiones pesados)
@@ -119,17 +115,7 @@ class VehicleConfig:
 
 
 def total_mass_kg(vehicle: VehicleConfig) -> float:
-    return (
-        vehicle.mass_kg
-        + vehicle.addon_mass_kg
-        + vehicle.cargo_mass_kg
-        + vehicle.trailer_mass_kg
-        + vehicle.trailer_cargo_mass_kg
-    )
-
-
-TRAILER_ROLL_COEF = 0.018
-TRAILER_HITCH_DRAG = 0.004
+    return vehicle.mass_kg
 
 
 @dataclass
@@ -622,6 +608,7 @@ def step(
     state.gear_idx = gear_idx
 
     target_spin = gear_ang_vel * state.throttle_filt
+    # MaxDeltaAngVel (XML motor): límite Saber de aceleración angular de ruedas por paso.
     max_change = engine.max_delta_ang_vel * ANGVEL_RAMP * dt
     delta = max(-max_change, min(max_change, target_spin - state.wheel_ang_vel))
     state.wheel_ang_vel = max(0.0, state.wheel_ang_vel + delta)
@@ -672,10 +659,6 @@ def step(
     )
 
     net = drive_force - roll - grade - sink
-    if vehicle.trailer_mass_kg > 0:
-        trailer_mass = vehicle.trailer_mass_kg + vehicle.trailer_cargo_mass_kg
-        roll += trailer_mass * G * TRAILER_ROLL_COEF
-        net -= trailer_mass * G * TRAILER_HITCH_DRAG * (1.0 + v * 0.15)
     if surface.kind in ("mud", "deep_mud", "water"):
         mud_k = MUD_RESIST_COEF.get(vehicle.tire_name, 6.0) * vehicle.mud_resist_mult
         if surface.kind == "water" and vehicle.snorkel:
@@ -866,8 +849,6 @@ def run_damage_test() -> dict:
     }
 
 
-# Carga/remolque: cargo_mass_kg y trailer_* en VehicleConfig; escenarios cargados
-# en camiones/*/simulador.py. Matriz CK1500 (simular_carga.py) archivada jul 2026.
 
 # --- Terreno (Fase 4) -------------------------------------------------------
 

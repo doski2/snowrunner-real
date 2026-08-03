@@ -73,9 +73,6 @@ VEHICLE_REAL = VehicleConfig(
 )
 VEHICLE_REAL_AWD = replace(VEHICLE_REAL, drive_layout="awd", diff_lock=True)
 
-LOAD_SEMI_EMPTY = 2500
-LOAD_SEMI_FULL = 12000
-
 
 def _with_mh_mud_cal(veh: VehicleConfig) -> VehicleConfig:
     """Offroad AWD+diff sin calibracion explicita hereda MH_MUD_* (telemetria / make_vehicle)."""
@@ -110,15 +107,6 @@ def run_mh_matrix() -> list[dict]:
         ("stock highway RWD", VEHICLE_STOCK, ENGINE_STOCK_MH),
         ("real highway RWD", VEHICLE_REAL, ENGINE_REAL_MH),
         ("real offroad AWD+diff", VEHICLE_REAL_OFFROAD, ENGINE_REAL_MH),
-        (
-            "real cargado 12t",
-            replace(
-                VEHICLE_REAL_OFFROAD,
-                trailer_mass_kg=LOAD_SEMI_EMPTY,
-                trailer_cargo_mass_kg=LOAD_SEMI_FULL,
-            ),
-            ENGINE_REAL_MH,
-        ),
     ]
     for label, veh, eng in configs:
         for surface in SURFACES:
@@ -158,17 +146,6 @@ def main() -> None:
             f"  {label:<18} v30={sample_at(s, 30.0):.1f} "
             f"vmax={max(s.speeds_kmh):.1f} km/h"
         )
-
-    loaded = replace(
-        VEHICLE_REAL_OFFROAD,
-        trailer_mass_kg=LOAD_SEMI_EMPTY,
-        trailer_cargo_mass_kg=LOAD_SEMI_FULL,
-    )
-    s_load = run_sim(loaded, ENGINE_REAL_MH, mud, 120.0, low_gear=True)
-    print(
-        f"\n--- Semi cargado (~{LOAD_SEMI_FULL} kg util) barro offroad (mh_f3_semi) ---\n"
-        f"  v30={sample_at(s_load, 30.0):.1f} vmax={max(s_load.speeds_kmh):.1f} km/h"
-    )
 
 
 if __name__ == "__main__":

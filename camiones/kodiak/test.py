@@ -19,7 +19,6 @@ from sim.core import SurfaceConfig
 ENGINE_REAL_FS = sim_kd.ENGINE_REAL_FS
 KD_MUD_IMMERSION_RATE = sim_kd.KD_MUD_IMMERSION_RATE
 KD_MUD_RESIST_MULT = sim_kd.KD_MUD_RESIST_MULT
-LOAD_FRAME_FULL = sim_kd.LOAD_FRAME_FULL
 TIRES = sim_kd.TIRES
 VEHICLE_REAL = sim_kd.VEHICLE_REAL
 VEHICLE_REAL_AWD_HIGHWAY = sim_kd.VEHICLE_REAL_AWD_HIGHWAY
@@ -45,16 +44,15 @@ class TestKodiakPatches(unittest.TestCase):
         self.assertEqual(EMPTY_MASS_KG["kodiak"], 8150.0)
         self.assertEqual(VEHICLE_REAL.mass_kg, EMPTY_MASS_KG["kodiak"])
 
-    def test_merge_includes_kodiak_files(self) -> None:
+    def test_merge_includes_kodiak_truck_only(self) -> None:
         merged = merge_patches(["kodiak"])
         self.assertIn("[media]/classes/trucks/chevrolet_kodiakc70.xml", merged)
-        self.assertIn("[media]/classes/engines/e_us_truck_old.xml", merged)
-        self.assertIn("[media]/classes/suspensions/s_chevrolet_kodiakC70.xml", merged)
+        self.assertEqual(len(merged), 1)
 
-    def test_engine_torque_reduced(self) -> None:
-        pairs = KODIAK_PATCHES["[media]/classes/engines/e_us_truck_old.xml"]
-        block = next(p for p in pairs if "us_truck_old_engine_0" in p[0])
-        self.assertIn('Torque="92000"', block[1])
+    def test_mass_patches_on_truck_xml(self) -> None:
+        pairs = KODIAK_PATCHES["[media]/classes/trucks/chevrolet_kodiakc70.xml"]
+        self.assertTrue(any('Mass="4750"' in new for _old, new in pairs))
+        self.assertTrue(any('Mass="1693"' in new for _old, new in pairs))
 
 
 class TestKodiakSim(unittest.TestCase):

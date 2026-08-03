@@ -62,10 +62,10 @@ scouts RU).
 
 ### XML stock vs mod
 
-| Parámetro        | Catálogo          | Mod                            |
-| ---------------- | ----------------- | ------------------------------ |
-| Masa             | ~1792 kg          | **2030 kg**                    |
-| `Responsiveness` | 0.04 (stock bajo) | **0.04** (parcheado desde 0.6) |
+| Parámetro        | Catálogo                       | Mod                            |
+| ---------------- | ------------------------------ | ------------------------------ |
+| Masa             | ~1792 kg                       | **2030 kg**                    |
+| `Responsiveness` | 0.6 (volante; **no parchear**) |                                |
 
 Mod sube masa hacia SR!NFO; motor Kr 104 **30000→28000** Ncm, Kr 135-T **40000→37333** Ncm.
 
@@ -79,7 +79,6 @@ Mod sube masa hacia SR!NFO; motor Kr 104 **30000→28000** Ncm, Kr 135-T **40000
 | Parámetro                 | Stock | Mod       | Fase   |
 | ------------------------- | ----- | --------- | ------ |
 | Masa total                | 1500  | **2030**  | 1 / 3  |
-| `Responsiveness`          | 0.6   | **0.04**  | 1      |
 | TM II `SubstanceFriction` | 2.4   | **1.7**   | 2 / 4  |
 | TM I `BodyFriction`       | 2.4   | **2.0**   | 2      |
 | Kr 104 `Torque`           | 30000 | **28000** | 1      |
